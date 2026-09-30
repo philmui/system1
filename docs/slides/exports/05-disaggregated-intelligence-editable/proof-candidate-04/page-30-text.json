@@ -1,0 +1,359 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "30 \u00b7 l: DISAGGREGATED INTELLIGENCE [p30-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "30 \u00b7 r: 30 / 36 [p30-text-0012]",
+    "text": "30 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.3249501722441,
+      59.87114327017716,
+      73.7666015625,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "30 \u00b7 splits-eyebrow: 08 / GENERALIZATION [p30-text-0013]",
+    "text": "08 / GENERALIZATION",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      251.70703125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "30 \u00b7 splits-title: Choose the split that matches the claim [p30-text-0014]",
+    "text": "Choose the split that matches the claim",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.16015625,
+      183.87628321850394,
+      1310.3642578125,
+      70.2001953125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "30 \u00b7 splits-text-1: Keep account families intact. [p30-text-0015]",
+    "text": "Keep account families intact.",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      125.7998046875,
+      404.81941529281494,
+      534.765625,
+      39.0
+    ],
+    "baseline": [
+      123.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "30 \u00b7 pill: A A A [p30-text-0016]",
+    "text": "A A A",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      148.775390625,
+      505.6748046875,
+      73.474609375,
+      17.4501953125
+    ],
+    "baseline": [
+      148.0,
+      523.125
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "30 \u00b7 pill: B B [p30-text-0017]",
+    "text": "B B",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      295.2001953125,
+      505.6748046875,
+      41.375,
+      17.4501953125
+    ],
+    "baseline": [
+      293.0,
+      523.125
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "30 \u00b7 pill: C C C [p30-text-0018]",
+    "text": "C C C",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      409.75,
+      505.375,
+      71.7001953125,
+      18.0498046875
+    ],
+    "baseline": [
+      408.0,
+      523.125
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "30 \u00b7 splits-text-2: Related cases and variants stay in one partition. [p30-text-0019]",
+    "text": "Related cases and variants",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      125.51953125,
+      594.072436023622,
+      336.533203125,
+      21.0283203125
+    ],
+    "baseline": [
+      123.0,
+      614.708178211122
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "30 \u00b7 splits-text-2: Related cases and variants stay in one partition. [p30-text-0019]",
+    "text": "stay in one partition.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.7001953125,
+      633.832436023622,
+      262.7255859375,
+      27.83203125
+    ],
+    "baseline": [
+      123.0,
+      654.468178211122
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "30 \u00b7 splits-text-3: Reserve a later-time cohort. [p30-text-0020]",
+    "text": "Reserve a later-time cohort.",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1049.7998046875,
+      404.81941529281494,
+      515.57421875,
+      30.0
+    ],
+    "baseline": [
+      1047.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "30 \u00b7 div: Earlier cases [p30-text-0021]",
+    "text": "Earlier cases",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1049.33984375,
+      507.3018334768701,
+      198.4794921875,
+      19.7607421875
+    ],
+    "baseline": [
+      1047.0,
+      526.7500756643701
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "30 \u00b7 div: Later test [p30-text-0022]",
+    "text": "Later test",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1356.9150778174212,
+      508.6016381643701,
+      150.9521484375,
+      18.4609375
+    ],
+    "baseline": [
+      1353.7949606299212,
+      526.7500756643701
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "30 \u00b7 splits-text-4: Declare boundary exclusions and duplicate handling. [p30-text-0023]",
+    "text": "Declare boundary exclusions",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1049.51953125,
+      600.572436023622,
+      368.3134765625,
+      27.83203125
+    ],
+    "baseline": [
+      1047.0,
+      621.208178211122
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "30 \u00b7 splits-text-4: Declare boundary exclusions and duplicate handling. [p30-text-0023]",
+    "text": "and duplicate handling.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1048.17578125,
+      640.332436023622,
+      302.90234375,
+      27.8310546875
+    ],
+    "baseline": [
+      1047.0,
+      660.968178211122
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "30 \u00b7 tag: UNSEEN ACCOUNTS [p30-text-0024]",
+    "text": "UNSEEN ACCOUNTS",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      124.6796875,
+      349.6149194143701,
+      200.0966796875,
+      15.162109375
+    ],
+    "baseline": [
+      123.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "30 \u00b7 tag: FUTURE TRAFFIC [p30-text-0025]",
+    "text": "FUTURE TRAFFIC",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1048.8896484375,
+      349.6149194143701,
+      186.203125,
+      15.162109375
+    ],
+    "baseline": [
+      1047.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "30 \u00b7 span: Tutorial evaluation protocol \u00b7 Jev-as-a-Judge [p30-text-0026]",
+    "text": "Tutorial evaluation protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      239.576171875,
+      18.6396484375
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "30 \u00b7 span: Tutorial evaluation protocol \u00b7 Jev-as-a-Judge [p30-text-0026]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      335.6708984375,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      329.2861328125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "30 \u00b7 span: Tutorial evaluation protocol \u00b7 Jev-as-a-Judge [p30-text-0026]",
+    "text": "Jev-as-a-Judge",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      344.2783203125,
+      974.391728284941,
+      124.1279296875,
+      18.3349609375
+    ],
+    "baseline": [
+      344.1640625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "30 \u00b7 span: Evaluation design; no completed experiment [p30-text-0027]",
+    "text": "Evaluation design; no completed experiment",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1438.6923231422245,
+      973.840947034941,
+      392.7568359375,
+      18.8857421875
+    ],
+    "baseline": [
+      1436.9823622047245,
+      987.843876722441
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "method": "Chromium reconstruction of independent SVG objects compared to original HTML → PDF → PNG pages; not an Office-render claim.",
+  "passed": true,
+  "slides": [
+    {
+      "slide": 6,
+      "id": "returns-comparison",
+      "objectCount": 53,
+      "meanAbsoluteChannelDifference": 0.5513411458333334,
+      "pixelsOver30Fraction": 0.004330632716049383,
+      "passed": true
+    },
+    {
+      "slide": 7,
+      "id": "returns-fallback",
+      "objectCount": 47,
+      "meanAbsoluteChannelDifference": 0.5783183834876543,
+      "pixelsOver30Fraction": 0.005563271604938271,
+      "passed": true
+    },
+    {
+      "slide": 8,
+      "id": "returns-policy",
+      "objectCount": 27,
+      "meanAbsoluteChannelDifference": 0.3879517103909465,
+      "pixelsOver30Fraction": 0.003208912037037037,
+      "passed": true
+    },
+    {
+      "slide": 35,
+      "id": "returns-components",
+      "objectCount": 25,
+      "meanAbsoluteChannelDifference": 0.36034304269547324,
+      "pixelsOver30Fraction": 0.0022231867283950615,
+      "passed": true
+    }
+  ]
+}

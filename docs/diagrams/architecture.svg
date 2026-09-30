@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="670" viewBox="0 0 1200 670" role="img" aria-labelledby="title desc">
+<title id="title">Who does each part of the work?</title>
+<desc id="desc">A browser sends commands to FastAPI. LangGraph calls Jev and OpenAI and uses local SQLite. Persisted events stream to the browser. Sanitized spans go to LangSmith.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#617082"/></marker></defs>
+<style>text {font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#213047} .title {font-size:26px;font-weight:650} .subtitle {font-size:15px;fill:#5d6878} .label {font-size:15px;font-weight:600} .body {font-size:13px;fill:#46546a} .edge-label {font-size:12px;fill:#4b596d} .lane {font-size:14px;font-weight:600}</style>
+<rect width="1200" height="670" rx="16" fill="#fff"/>
+<text class="title" x="32" y="42">Who does each part of the work?</text>
+<text class="subtitle" x="32" y="68">The browser follows execution records; the backend owns decisions and state.</text>
+<rect x="315" y="100" width="620" height="415" rx="16" fill="#fafbfd" stroke="#d3dbe6" stroke-dasharray="6 5"/>
+<text class="lane" x="333" y="125">Persistent backend service</text>
+<polyline points="270,180 350,180" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="291.0" y="157" width="38.0" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="310" y="170">HTTP</text>
+<polyline points="575,180 675,180" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="596.25" y="157" width="57.5" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="625" y="170">execute</text>
+<polyline points="905,172 965,172" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="850,235 850,288 965,288" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="790,235 790,370" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="738.5" y="302" width="103.0" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="790" y="315">read / persist</text>
+<polyline points="675,215 620,215 620,405 575,405" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="594.5" y="307" width="51.0" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="620" y="320">events</text>
+<polyline points="350,420 155,420 155,235" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="178.25" y="397" width="109.5" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="233" y="410">SSE + snapshots</text>
+<polyline points="905,215 940,215 940,488 965,488" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="5 5"/>
+<rect x="941.25" y="377" width="83.5" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="983" y="390">trace spans</text>
+<rect x="40" y="150" width="230" height="85" rx="11" fill="#edf4ff" stroke="#2563a0" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="155.0" y="178">React interface</text>
+<text class="body" text-anchor="middle" x="155.0" y="200">Library · Discover · Runs</text>
+<text class="body" text-anchor="middle" x="155.0" y="219">Vercel or local Vite</text>
+<rect x="350" y="150" width="225" height="85" rx="11" fill="#edf4ff" stroke="#2563a0" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="462.5" y="178">FastAPI</text>
+<text class="body" text-anchor="middle" x="462.5" y="200">Commands, uploads, SSE</text>
+<text class="body" text-anchor="middle" x="462.5" y="219">One backend process</text>
+<rect x="675" y="150" width="230" height="85" rx="11" fill="#e9f7f1" stroke="#20725c" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="790.0" y="178">LangGraph</text>
+<text class="body" text-anchor="middle" x="790.0" y="200">Dispatch · branch · join</text>
+<text class="body" text-anchor="middle" x="790.0" y="219">Checkpoint · resume</text>
+<rect x="965" y="135" width="200" height="76" rx="11" fill="#f4efff" stroke="#76539a" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="1065.0" y="163">Jev</text>
+<text class="body" text-anchor="middle" x="1065.0" y="185">Typed bounded judgments</text>
+<rect x="965" y="250" width="200" height="76" rx="11" fill="#f4efff" stroke="#76539a" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="1065.0" y="278">OpenAI</text>
+<text class="body" text-anchor="middle" x="1065.0" y="300">Plans and cited proposals</text>
+<rect x="350" y="370" width="225" height="95" rx="11" fill="#f2f4f7" stroke="#5d6878" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="462.5" y="398">Event log</text>
+<text class="body" text-anchor="middle" x="462.5" y="420">Ordered, persisted events</text>
+<text class="body" text-anchor="middle" x="462.5" y="439">Replay without model calls</text>
+<rect x="675" y="370" width="230" height="95" rx="11" fill="#f2f4f7" stroke="#5d6878" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="790.0" y="398">SQLite + stored files</text>
+<text class="body" text-anchor="middle" x="790.0" y="420">Documents, passages, FTS5</text>
+<text class="body" text-anchor="middle" x="790.0" y="439">Separate checkpoint DB</text>
+<rect x="965" y="450" width="200" height="76" rx="11" fill="#fff4db" stroke="#906419" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="1065.0" y="478">LangSmith</text>
+<text class="body" text-anchor="middle" x="1065.0" y="500">Sanitized operational spans</text>
+<text class="body" x="40" y="565">Provider credentials remain on the backend. Selected document context is sent to Jev and OpenAI.</text>
+<text class="body" x="40" y="586">Local event delivery remains usable when telemetry delivery is delayed. FTS5 provides lexical retrieval.</text>
+</svg>

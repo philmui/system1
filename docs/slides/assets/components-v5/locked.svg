@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="143" viewBox="28 381 140 143"><defs><marker id="arrow-ink" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#243E42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-plum" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#665180" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#2E6653" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-ochre" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#7A6025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-blue_ink" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#355F72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-rust" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#81533E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-muted" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#52676A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+</defs>
+<g data-component="locked" data-kind="illustration" aria-hidden="true" transform="translate(17 391) scale(0.8055555555555556)" fill="none" stroke="#243E42" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M49 71V47a39 39 0 0 1 78 0v24" fill="none" stroke-width="11" />
+            <rect x="30" y="66" width="118" height="83" rx="16" fill="#F4DFD3" />
+            <circle cx="88" cy="99" r="10" fill="#FFFFFF" />
+            <path d="M88 109v18" stroke-width="6" />
+            <circle cx="145" cy="120" r="26" fill="#FFFFFF" stroke="#81533E" stroke-width="3" />
+            <path d="m132 108 25 25m0-25-25 25" stroke="#81533E" stroke-width="5" />
+        
+</g>
+</svg>

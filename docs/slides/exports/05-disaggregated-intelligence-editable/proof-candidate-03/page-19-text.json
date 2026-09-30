@@ -1,0 +1,529 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "19 \u00b7 l: DISAGGREGATED INTELLIGENCE [p19-text-0012]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      62.07133858267716,
+      328.4951171875,
+      13.0
+    ],
+    "baseline": [
+      88.0,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "19 \u00b7 r: 19 / 36 [p19-text-0013]",
+    "text": "19 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1755.9636220472441,
+      60.07133858267716,
+      74.798828125,
+      17.0
+    ],
+    "baseline": [
+      1755.9636220472441,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "19 \u00b7 agentscript-eyebrow: 05 / STEP 4 [p19-text-0014]",
+    "text": "05 / STEP 4",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.0,
+      127.18913385826774,
+      130.603515625,
+      17.999999999999986
+    ],
+    "baseline": [
+      88.0,
+      143.18913385826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "19 \u00b7 agentscript-title: Availability and required execution differ [p19-text-0015]",
+    "text": "Availability and required execution differ",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      89.0,
+      184.04425196850394,
+      1316.083984375,
+      70.0
+    ],
+    "baseline": [
+      88.0,
+      237.04425196850394
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "19 \u00b7 agentscript-text-1: Control around the model choice. [p19-text-0016]",
+    "text": "Control around",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      124.0,
+      392.58015748031494,
+      282.123046875,
+      31.0
+    ],
+    "baseline": [
+      123.0,
+      422.58015748031494
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "19 \u00b7 agentscript-text-1: Control around the model choice. [p19-text-0016]",
+    "text": "the model choice.",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      123.0,
+      439.7801574803149,
+      328.84375,
+      31.0
+    ],
+    "baseline": [
+      123.0,
+      469.7801574803149
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "19 \u00b7 design-code: identity = verifySession() if identity != verified: return recovery purchase = [p19-text-0017]",
+    "text": "identity = verifySession()",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      150.0,
+      547.9500787401574,
+      383.0,
+      24.0
+    ],
+    "baseline": [
+      148.0,
+      566.9500787401574
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "19 \u00b7 design-code: identity = verifySession() if identity != verified: return recovery purchase = [p19-text-0017]",
+    "text": "if identity != verified: return ",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      150.0,
+      593.9500787401574,
+      461.0,
+      23.0
+    ],
+    "baseline": [
+      148.0,
+      611.9500787401574
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "19 \u00b7 design-code: identity = verifySession() if identity != verified: return recovery purchase = [p19-text-0017]",
+    "text": "recovery",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      149.0,
+      643.9500787401574,
+      118.0,
+      18.0
+    ],
+    "baseline": [
+      148.0,
+      656.9500787401574
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "19 \u00b7 design-code: identity = verifySession() if identity != verified: return recovery purchase = [p19-text-0017]",
+    "text": "purchase = requireOwnedOrder(identity)",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      150.0,
+      682.9500787401574,
+      563.0,
+      24.0
+    ],
+    "baseline": [
+      148.0,
+      701.9500787401574
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "19 \u00b7 design-code: identity = verifySession() if identity != verified: return recovery purchase = [p19-text-0017]",
+    "text": "tasks = interpretAndValidate(purchase)",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      148.0,
+      727.9500787401574,
+      565.0,
+      24.0
+    ],
+    "baseline": [
+      148.0,
+      746.9500787401574
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "19 \u00b7 design-code: identity = verifySession() if identity != verified: return recovery purchase = [p19-text-0017]",
+    "text": "run selectedHandler(tasks)",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      149.0,
+      772.9500787401574,
+      384.0,
+      22.0
+    ],
+    "baseline": [
+      148.0,
+      791.9500787401574
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "19 \u00b7 agentscript-text-2: Backend services also enforce access. This is an authoring sketch, not runnabl [p19-text-0018]",
+    "text": "Backend services also enforce access.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      125.0,
+      865.800157480315,
+      425.0,
+      19.0
+    ],
+    "baseline": [
+      123.0,
+      884.800157480315
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "19 \u00b7 agentscript-text-2: Backend services also enforce access. This is an authoring sketch, not runnabl [p19-text-0018]",
+    "text": "This is an authoring sketch, not runnable syntax.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      123.0,
+      902.040157480315,
+      550.0,
+      25.0
+    ],
+    "baseline": [
+      123.0,
+      921.040157480315
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "19 \u00b7 agentscript-text-3: run / procedure [p19-text-0019]",
+    "text": "run",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 30.94,
+    "bbox": [
+      862.7480314960629,
+      372.1377952755906,
+      50.48046875,
+      16.0
+    ],
+    "baseline": [
+      860.7480314960629,
+      388.1377952755906
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "19 \u00b7 agentscript-text-3: run / procedure [p19-text-0019]",
+    "text": " / procedure",
+    "font": "Manrope",
+    "fontSizePx": 34.0,
+    "bbox": [
+      928.6166123277559,
+      363.1377952755906,
+      181.4023437499999,
+      33.0
+    ],
+    "baseline": [
+      920.3763779527559,
+      388.1377952755906
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "19 \u00b7 agentscript-text-4: Use explicit procedure logic for checks that must execute. [p19-text-0020]",
+    "text": "Use explicit procedure logic for checks that must execute.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      856.56,
+      414.4036220472441,
+      719.0,
+      26.0
+    ],
+    "baseline": [
+      854.56,
+      433.4036220472441
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "19 \u00b7 agentscript-text-5: available when [p19-text-0021]",
+    "text": "available when",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 30.94,
+    "bbox": [
+      862.7480314960629,
+      599.4023622047245,
+      251.1230468750001,
+      22.0
+    ],
+    "baseline": [
+      860.7480314960629,
+      621.4023622047245
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "19 \u00b7 agentscript-text-6: Filter which actions the model may select. Availability does not force selecti [p19-text-0022]",
+    "text": "Filter which actions the model may select. Availability does not force",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      856.56,
+      648.1370078740157,
+      851.0,
+      26.0
+    ],
+    "baseline": [
+      854.56,
+      667.1370078740157
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "19 \u00b7 agentscript-text-6: Filter which actions the model may select. Availability does not force selecti [p19-text-0022]",
+    "text": "selection.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      854.56,
+      683.7770078740157,
+      119.0,
+      19.0
+    ],
+    "baseline": [
+      854.56,
+      702.7770078740157
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "19 \u00b7 agentscript-text-7: with / bound input [p19-text-0023]",
+    "text": "with",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 30.94,
+    "bbox": [
+      860.7480314960629,
+      833.6045669291337,
+      70.720703125,
+      22.0
+    ],
+    "baseline": [
+      860.7480314960629,
+      855.6045669291337
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "19 \u00b7 agentscript-text-7: with / bound input [p19-text-0023]",
+    "text": " / bound input",
+    "font": "Manrope",
+    "fontSizePx": 34.0,
+    "bbox": [
+      946.4301556348424,
+      830.6045669291337,
+      209.8828124999999,
+      33.0
+    ],
+    "baseline": [
+      938.1899212598424,
+      855.6045669291337
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "19 \u00b7 agentscript-text-8: Bind consequential inputs from trusted state. [p19-text-0024]",
+    "text": "Bind consequential inputs from trusted state.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      856.56,
+      881.8702362204723,
+      564.0,
+      26.0
+    ],
+    "baseline": [
+      854.56,
+      900.8702362204723
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "19 \u00b7 tag: DESIGN PSEUDOCODE [p19-text-0025]",
+    "text": "DESIGN PSEUDOCODE",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      125.0,
+      337.9996850393701,
+      233.0,
+      15.0
+    ],
+    "baseline": [
+      123.0,
+      352.9996850393701
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "19 \u00b7 tag: REQUIRED WORK [p19-text-0026]",
+    "text": "REQUIRED WORK",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      855.56,
+      323.9996850393701,
+      180.0,
+      19.0
+    ],
+    "baseline": [
+      854.56,
+      338.9996850393701
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "19 \u00b7 tag: PERMITTED CHOICES [p19-text-0027]",
+    "text": "PERMITTED CHOICES",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      855.56,
+      557.7329133858268,
+      235.0,
+      15.0
+    ],
+    "baseline": [
+      854.56,
+      572.7329133858268
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "19 \u00b7 tag: CONTROLLED ARGUMENTS [p19-text-0028]",
+    "text": "CONTROLLED ARGUMENTS",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      855.56,
+      791.4662992125984,
+      277.0,
+      15.0
+    ],
+    "baseline": [
+      854.56,
+      806.4662992125984
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "19 \u00b7 span: AgentScript control plane \u00b7 AgentScript specification [p19-text-0029]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.0,
+      972.996220472441,
+      228.0,
+      20.0
+    ],
+    "baseline": [
+      88.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "19 \u00b7 span: AgentScript control plane \u00b7 AgentScript specification [p19-text-0029]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      323.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      317.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "19 \u00b7 span: AgentScript control plane \u00b7 AgentScript specification [p19-text-0029]",
+    "text": "AgentScript specification",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      332.0,
+      972.996220472441,
+      222.0,
+      20.0
+    ],
+    "baseline": [
+      332.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "19 \u00b7 span: Verified constructs; no executable koa-action adapter [p19-text-0030]",
+    "text": "Verified constructs; no executable koa-action adapter",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1362.656220472441,
+      972.996220472441,
+      474.0,
+      20.0
+    ],
+    "baseline": [
+      1362.656220472441,
+      987.996220472441
+    ]
+  }
+]

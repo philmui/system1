@@ -1,0 +1,308 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "18 \u00b7 l: DISAGGREGATED INTELLIGENCE [p18-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "18 \u00b7 r: 18 / 36 [p18-text-0006]",
+    "text": "18 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "18 \u00b7 guided-eyebrow: 05 / NEURO-SYMBOLIC REASONING [p18-text-0007]",
+    "text": "05 / NEURO-SYMBOLIC REASONING",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      403.029296875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "18 \u00b7 guided-title: Guided determinism gives uncertainty a place [p18-text-0008]",
+    "text": "Guided determinism gives uncertainty a place",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.16015625,
+      183.87628321850394,
+      1505.2451171875,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "18 \u00b7 manifesto-top: Neural interpretation inside an authored process. [p18-text-0009]",
+    "text": "Neural interpretation",
+    "font": "Salesforce Sans",
+    "fontSizePx": 74.0,
+    "bbox": [
+      94.66015625,
+      304.8761014394685,
+      670.0244140625,
+      72.59375
+    ],
+    "baseline": [
+      88.0,
+      359.4141873769685
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "18 \u00b7 manifesto-top: Neural interpretation inside an authored process. [p18-text-0009]",
+    "text": "inside an authored process.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 74.0,
+    "bbox": [
+      93.4755859375,
+      387.7561014394685,
+      879.9521484375,
+      72.59375
+    ],
+    "baseline": [
+      88.0,
+      442.2941873769685
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "18 \u00b7 ink-banner-full: AgentScript defines where model choice is available. Agent Graph executes the  [p18-text-0010]",
+    "text": "AgentScript defines where model choice is available.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      132.1201171875,
+      547.4094140625,
+      724.4404296875,
+      29.8203125
+    ],
+    "baseline": [
+      132.0,
+      569.519765625
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "18 \u00b7 ink-banner-full: AgentScript defines where model choice is available. Agent Graph executes the  [p18-text-0010]",
+    "text": "Agent Graph executes the configured transitions.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      132.1201171875,
+      585.8694140625,
+      675.4208984375,
+      29.8203125
+    ],
+    "baseline": [
+      132.0,
+      607.979765625
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "18 \u00b7 guided-text-1: Interpretation [p18-text-0011]",
+    "text": "Interpretation",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      91.2001953125,
+      713.3000012303149,
+      259.9423828125,
+      38.8994140625
+    ],
+    "baseline": [
+      88.0,
+      742.5998059178149
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "18 \u00b7 guided-text-2: Fallible semantic judgment. [p18-text-0012]",
+    "text": "Fallible semantic judgment.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      90.25,
+      776.9800393700788,
+      315.076171875,
+      24.875
+    ],
+    "baseline": [
+      88.0,
+      795.4048440575788
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "18 \u00b7 guided-text-3: Procedure [p18-text-0013]",
+    "text": "Procedure",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      682.1331905142716,
+      713.8000012303149,
+      191.3798828125,
+      29.419921875
+    ],
+    "baseline": [
+      679.3333858267716,
+      742.5998059178149
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "18 \u00b7 guided-text-4: Required steps and state changes. [p18-text-0014]",
+    "text": "Required steps and state changes.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      681.5833858267716,
+      776.9800393700788,
+      389.7998046874999,
+      24.849609375
+    ],
+    "baseline": [
+      679.3333858267716,
+      795.4048440575788
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "18 \u00b7 guided-text-5: Authority [p18-text-0015]",
+    "text": "Authority",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1271.4664188607283,
+      713.3000012303149,
+      178.1220703125,
+      38.900390625
+    ],
+    "baseline": [
+      1270.6666141732283,
+      742.5998059178149
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "18 \u00b7 guided-text-6: Enforced by trusted services. [p18-text-0016]",
+    "text": "Enforced by trusted services.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1272.9166141732283,
+      776.9800393700788,
+      325.2236328125,
+      24.8505859375
+    ],
+    "baseline": [
+      1270.6666141732283,
+      795.4048440575788
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "18 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane [p18-text-0017]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      972.910282972441,
+      308.6396484375,
+      19.81640625
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "18 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane [p18-text-0017]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      404.6015625,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      398.216796875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "18 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane [p18-text-0017]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      413.1708984375,
+      973.840947034941,
+      222.9482421875,
+      18.8857421875
+    ],
+    "baseline": [
+      413.0947265625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "18 \u00b7 span: Documented architecture; illustrative workflow [p18-text-0018]",
+    "text": "Documented architecture; illustrative workflow",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1421.805708968996,
+      973.840947034941,
+      409.8525390625,
+      17.3662109375
+    ],
+    "baseline": [
+      1420.095748031496,
+      987.843876722441
+    ]
+  }
+]

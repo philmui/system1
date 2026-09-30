@@ -1,0 +1,296 @@
+{
+  "title": "Who does each part of the work?",
+  "subtitle": "The browser follows execution records; the backend owns decisions and state.",
+  "description": "A browser sends commands to FastAPI. LangGraph calls Jev and OpenAI and uses local SQLite. Persisted events stream to the browser. Sanitized spans go to LangSmith.",
+  "size": [
+    1200,
+    670
+  ],
+  "nodes": [
+    {
+      "rect": [
+        40,
+        150,
+        230,
+        85
+      ],
+      "label": "React interface",
+      "body": [
+        "Library \u00b7 Discover \u00b7 Runs",
+        "Vercel or local Vite"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        350,
+        150,
+        225,
+        85
+      ],
+      "label": "FastAPI",
+      "body": [
+        "Commands, uploads, SSE",
+        "One backend process"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        675,
+        150,
+        230,
+        85
+      ],
+      "label": "LangGraph",
+      "body": [
+        "Dispatch \u00b7 branch \u00b7 join",
+        "Checkpoint \u00b7 resume"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        965,
+        135,
+        200,
+        76
+      ],
+      "label": "Jev",
+      "body": [
+        "Typed bounded judgments"
+      ],
+      "color": "purple"
+    },
+    {
+      "rect": [
+        965,
+        250,
+        200,
+        76
+      ],
+      "label": "OpenAI",
+      "body": [
+        "Plans and cited proposals"
+      ],
+      "color": "purple"
+    },
+    {
+      "rect": [
+        350,
+        370,
+        225,
+        95
+      ],
+      "label": "Event log",
+      "body": [
+        "Ordered, persisted events",
+        "Replay without model calls"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        675,
+        370,
+        230,
+        95
+      ],
+      "label": "SQLite + stored files",
+      "body": [
+        "Documents, passages, FTS5",
+        "Separate checkpoint DB"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        965,
+        450,
+        200,
+        76
+      ],
+      "label": "LangSmith",
+      "body": [
+        "Sanitized operational spans"
+      ],
+      "color": "amber"
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          270,
+          180
+        ],
+        [
+          350,
+          180
+        ]
+      ],
+      "label": "HTTP",
+      "label_at": [
+        310,
+        170
+      ]
+    },
+    {
+      "points": [
+        [
+          575,
+          180
+        ],
+        [
+          675,
+          180
+        ]
+      ],
+      "label": "execute",
+      "label_at": [
+        625,
+        170
+      ]
+    },
+    {
+      "points": [
+        [
+          905,
+          172
+        ],
+        [
+          965,
+          172
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          850,
+          235
+        ],
+        [
+          850,
+          288
+        ],
+        [
+          965,
+          288
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          790,
+          235
+        ],
+        [
+          790,
+          370
+        ]
+      ],
+      "label": "read / persist",
+      "label_at": [
+        790,
+        315
+      ]
+    },
+    {
+      "points": [
+        [
+          675,
+          215
+        ],
+        [
+          620,
+          215
+        ],
+        [
+          620,
+          405
+        ],
+        [
+          575,
+          405
+        ]
+      ],
+      "label": "events",
+      "label_at": [
+        620,
+        320
+      ]
+    },
+    {
+      "points": [
+        [
+          350,
+          420
+        ],
+        [
+          155,
+          420
+        ],
+        [
+          155,
+          235
+        ]
+      ],
+      "label": "SSE + snapshots",
+      "label_at": [
+        233,
+        410
+      ]
+    },
+    {
+      "points": [
+        [
+          905,
+          215
+        ],
+        [
+          940,
+          215
+        ],
+        [
+          940,
+          488
+        ],
+        [
+          965,
+          488
+        ]
+      ],
+      "label": "trace spans",
+      "label_at": [
+        983,
+        390
+      ],
+      "dashed": true
+    }
+  ],
+  "groups": [
+    {
+      "rect": [
+        315,
+        100,
+        620,
+        415
+      ],
+      "label": "Persistent backend service"
+    }
+  ],
+  "notes": [
+    {
+      "at": [
+        40,
+        565
+      ],
+      "lines": [
+        "Provider credentials remain on the backend. Selected document context is sent to Jev and OpenAI.",
+        "Local event delivery remains usable when telemetry delivery is delayed. FTS5 provides lexical retrieval."
+      ]
+    }
+  ]
+}

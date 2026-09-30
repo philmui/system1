@@ -1,0 +1,74 @@
+{
+  "method": "Chromium with embedded Manrope and IBM Plex Mono",
+  "artifacts": [
+    {
+      "name": "returns-slide-comparison",
+      "textCount": 23,
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded",
+          "required": true
+        },
+        {
+          "family": "Plex",
+          "status": "loaded",
+          "required": true
+        }
+      ],
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "name": "returns-slide-fallback",
+      "textCount": 27,
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded",
+          "required": true
+        },
+        {
+          "family": "Plex",
+          "status": "unloaded",
+          "required": false
+        }
+      ],
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "name": "returns-slide-policy",
+      "textCount": 21,
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded",
+          "required": true
+        },
+        {
+          "family": "Plex",
+          "status": "unloaded",
+          "required": false
+        }
+      ],
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "outOfBounds": [],
+      "overlaps": []
+    }
+  ]
+}

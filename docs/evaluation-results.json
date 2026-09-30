@@ -1,0 +1,550 @@
+{
+  "checked_on": "2026-09-28",
+  "models": {
+    "jev": "jev-1.13.0",
+    "openai": "gpt-4.1-mini-2025-04-14"
+  },
+  "thresholds": {
+    "choice_confidence": 0.8,
+    "passage_relevance_noul": 0.7,
+    "claim_support_noul": 0.8
+  },
+  "conditions": "One observation per synthetic case. No threshold tuning. Discovery uses reference-indexed readable sample documents, excluding ambiguous and empty items. Live evaluation had telemetry disabled. Query eval-compare was run separately after adding the explicit complex-output case. Fixture outputs are simulated mechanics checks.",
+  "live": {
+    "mode": "live",
+    "split": "held-out; no threshold tuning",
+    "category_correct": 8,
+    "category_total": 8,
+    "escalation_correct": 8,
+    "cases": [
+      {
+        "id": "eval-invoice",
+        "expected": "invoice",
+        "observed": "invoice",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 321.8
+      },
+      {
+        "id": "eval-contract",
+        "expected": "contract",
+        "observed": "contract",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 168.1
+      },
+      {
+        "id": "eval-policy",
+        "expected": "policy",
+        "observed": "policy",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 130.1
+      },
+      {
+        "id": "eval-report",
+        "expected": "report",
+        "observed": "report",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 120.3
+      },
+      {
+        "id": "eval-correspondence",
+        "expected": "correspondence",
+        "observed": "correspondence",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 193.3
+      },
+      {
+        "id": "eval-other",
+        "expected": "other",
+        "observed": "other",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 155.8
+      },
+      {
+        "id": "eval-unknown",
+        "expected": "unknown",
+        "observed": "unknown",
+        "correct": true,
+        "expected_escalation": true,
+        "escalated": true,
+        "status": "awaiting_review",
+        "provider_calls": 2,
+        "elapsed_ms": 1503.7
+      },
+      {
+        "id": "eval-ambiguous",
+        "expected": "correspondence",
+        "observed": "correspondence",
+        "correct": true,
+        "expected_escalation": true,
+        "escalated": true,
+        "status": "awaiting_review",
+        "provider_calls": 2,
+        "elapsed_ms": 2153.9
+      }
+    ],
+    "discovery_cases": [
+      {
+        "id": "eval-date-boundary",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-invoice-march.md"
+        ],
+        "observed_filenames": [
+          "atlas-invoice-march.md"
+        ],
+        "relevant_returned": 1,
+        "returned_count": 1,
+        "reference_count": 1,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "missing_evidence": [],
+        "provider_calls": 3,
+        "elapsed_ms": 1828.5,
+        "relevance_checks": 1,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-overlap",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-northstar-service-agreement.md",
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-termination-status-report.md"
+        ],
+        "observed_filenames": [
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-northstar-service-agreement.md",
+          "atlas-termination-status-report.md"
+        ],
+        "relevant_returned": 4,
+        "returned_count": 4,
+        "reference_count": 4,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "missing_evidence": [],
+        "provider_calls": 5,
+        "elapsed_ms": 2733.1,
+        "relevance_checks": 20,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-missing",
+        "status": "succeeded",
+        "expected_relevant_filenames": [],
+        "observed_filenames": [],
+        "relevant_returned": 0,
+        "returned_count": 0,
+        "reference_count": 0,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "missing_evidence": [
+          "No passage passed the configured evidence policy for the requested fact."
+        ],
+        "provider_calls": 2,
+        "elapsed_ms": 269.6,
+        "relevance_checks": 8,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-injection",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-launch-correspondence.md",
+          "atlas-march-project-report.md"
+        ],
+        "observed_filenames": [
+          "atlas-launch-correspondence.md",
+          "atlas-march-project-report.md"
+        ],
+        "relevant_returned": 2,
+        "returned_count": 2,
+        "reference_count": 2,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "missing_evidence": [],
+        "provider_calls": 5,
+        "elapsed_ms": 1991.5,
+        "relevance_checks": 19,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-compare",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-northstar-service-agreement.md",
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-termination-status-report.md"
+        ],
+        "observed_filenames": [
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-northstar-service-agreement.md",
+          "atlas-termination-status-report.md"
+        ],
+        "relevant_returned": 4,
+        "returned_count": 4,
+        "reference_count": 4,
+        "citations_valid": 5,
+        "citations_total": 5,
+        "claims_retained": 3,
+        "claims": [
+          {
+            "text": "The Atlas Northstar service agreement requires 30 calendar days of written termination notice.",
+            "citations": [
+              {
+                "passage_id": "f286f9a9-e6b1-53ee-912b-55455669df83",
+                "quote": "The signed Northstar service agreement requires 30 calendar days of written termination notice."
+              },
+              {
+                "passage_id": "3c1133bc-51a0-5d4b-8d3f-2c7c8ec53550",
+                "quote": "Either party may terminate the Atlas Northstar service agreement with 30 calendar days of written notice."
+              }
+            ],
+            "conflicting": true
+          },
+          {
+            "text": "The Atlas Copperleaf service agreement requires 60 calendar days of written termination notice.",
+            "citations": [
+              {
+                "passage_id": "f286f9a9-e6b1-53ee-912b-55455669df83",
+                "quote": "The signed Copperleaf service agreement requires 60 calendar days of written termination notice."
+              },
+              {
+                "passage_id": "19ef2940-ceee-5fea-aa41-f1d8f7dffc0a",
+                "quote": "Either party may terminate the Atlas Copperleaf service agreement with 60 calendar days of written notice."
+              }
+            ],
+            "conflicting": false
+          },
+          {
+            "text": "An internal operations spreadsheet states the Atlas Northstar termination notice period is 45 calendar days, which conflicts with the signed agreement's 30 calendar days.",
+            "citations": [
+              {
+                "passage_id": "3c0e76d2-7570-53af-8bb6-94508219c5eb",
+                "quote": "The operations spreadsheet says the Atlas Northstar termination notice period is 45 calendar days.\nThis conflicts with the signed Northstar agreement, which states 30 calendar days."
+              }
+            ],
+            "conflicting": true
+          }
+        ],
+        "missing_evidence": [],
+        "provider_calls": 9,
+        "elapsed_ms": 7385.1,
+        "relevance_checks": 15,
+        "support_checks": 3,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      }
+    ],
+    "retrieval_condition": "Reference-labeled readable Atlas corpus; ambiguous and empty excluded.",
+    "note": "Fixture results verify mechanics only. Live results are a small labeled sample, not broad reliability."
+  },
+  "fixture": {
+    "mode": "test-fixture",
+    "split": "held-out; no threshold tuning",
+    "category_correct": 6,
+    "category_total": 8,
+    "escalation_correct": 7,
+    "cases": [
+      {
+        "id": "eval-invoice",
+        "expected": "invoice",
+        "observed": "invoice",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 73.6
+      },
+      {
+        "id": "eval-contract",
+        "expected": "contract",
+        "observed": "contract",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 71.7
+      },
+      {
+        "id": "eval-policy",
+        "expected": "policy",
+        "observed": "policy",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 77.9
+      },
+      {
+        "id": "eval-report",
+        "expected": "report",
+        "observed": "report",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 76.8
+      },
+      {
+        "id": "eval-correspondence",
+        "expected": "correspondence",
+        "observed": "correspondence",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 79.3
+      },
+      {
+        "id": "eval-other",
+        "expected": "other",
+        "observed": "other",
+        "correct": true,
+        "expected_escalation": false,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 71.6
+      },
+      {
+        "id": "eval-unknown",
+        "expected": "unknown",
+        "observed": "other",
+        "correct": false,
+        "expected_escalation": true,
+        "escalated": false,
+        "status": "succeeded",
+        "provider_calls": 1,
+        "elapsed_ms": 70.6
+      },
+      {
+        "id": "eval-ambiguous",
+        "expected": "correspondence",
+        "observed": "contract",
+        "correct": false,
+        "expected_escalation": true,
+        "escalated": true,
+        "status": "awaiting_review",
+        "provider_calls": 2,
+        "elapsed_ms": 143.9
+      }
+    ],
+    "discovery_cases": [
+      {
+        "id": "eval-date-boundary",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-invoice-march.md"
+        ],
+        "observed_filenames": [
+          "atlas-invoice-march.md"
+        ],
+        "relevant_returned": 1,
+        "returned_count": 1,
+        "reference_count": 1,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "claims": [],
+        "missing_evidence": [],
+        "provider_calls": 2,
+        "elapsed_ms": 125.0,
+        "relevance_checks": 1,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-overlap",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-northstar-service-agreement.md",
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-termination-status-report.md"
+        ],
+        "observed_filenames": [
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-northstar-service-agreement.md",
+          "atlas-termination-status-report.md"
+        ],
+        "relevant_returned": 4,
+        "returned_count": 4,
+        "reference_count": 4,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "claims": [],
+        "missing_evidence": [],
+        "provider_calls": 2,
+        "elapsed_ms": 128.9,
+        "relevance_checks": 8,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-missing",
+        "status": "succeeded",
+        "expected_relevant_filenames": [],
+        "observed_filenames": [],
+        "relevant_returned": 0,
+        "returned_count": 0,
+        "reference_count": 0,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "claims": [],
+        "missing_evidence": [
+          "No passage passed the configured evidence policy for the requested fact."
+        ],
+        "provider_calls": 3,
+        "elapsed_ms": 215.7,
+        "relevance_checks": 8,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-injection",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-launch-correspondence.md",
+          "atlas-march-project-report.md"
+        ],
+        "observed_filenames": [
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-invoice-january.md",
+          "atlas-invoice-march.md",
+          "atlas-invoice-undated.md",
+          "atlas-launch-correspondence.md",
+          "atlas-march-project-report.md",
+          "atlas-northstar-service-agreement.md"
+        ],
+        "relevant_returned": 2,
+        "returned_count": 7,
+        "reference_count": 2,
+        "citations_valid": 0,
+        "citations_total": 0,
+        "claims_retained": 0,
+        "claims": [],
+        "missing_evidence": [],
+        "provider_calls": 2,
+        "elapsed_ms": 140.0,
+        "relevance_checks": 8,
+        "support_checks": 0,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      },
+      {
+        "id": "eval-compare",
+        "status": "succeeded",
+        "expected_relevant_filenames": [
+          "atlas-northstar-service-agreement.md",
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-termination-status-report.md"
+        ],
+        "observed_filenames": [
+          "atlas-copperleaf-service-agreement.md",
+          "atlas-march-project-report.md",
+          "atlas-northstar-service-agreement.md",
+          "atlas-termination-status-report.md"
+        ],
+        "relevant_returned": 4,
+        "returned_count": 4,
+        "reference_count": 4,
+        "citations_valid": 4,
+        "citations_total": 4,
+        "claims_retained": 4,
+        "claims": [
+          {
+            "text": "atlas-copperleaf-service-agreement.md: Either party may terminate the Atlas Copperleaf service agreement with 60 calendar days of written notice.",
+            "citations": [
+              {
+                "passage_id": "19ef2940-ceee-5fea-aa41-f1d8f7dffc0a",
+                "quote": "Either party may terminate the Atlas Copperleaf service agreement with 60 calendar days of written notice."
+              }
+            ],
+            "conflicting": false
+          },
+          {
+            "text": "atlas-termination-status-report.md: The operations spreadsheet says the Atlas Northstar termination notice period is 45 calendar days.",
+            "citations": [
+              {
+                "passage_id": "3c0e76d2-7570-53af-8bb6-94508219c5eb",
+                "quote": "The operations spreadsheet says the Atlas Northstar termination notice period is 45 calendar days."
+              }
+            ],
+            "conflicting": true
+          },
+          {
+            "text": "atlas-northstar-service-agreement.md: Either party may terminate the Atlas Northstar service agreement with 30 calendar days of written notice.",
+            "citations": [
+              {
+                "passage_id": "3c1133bc-51a0-5d4b-8d3f-2c7c8ec53550",
+                "quote": "Either party may terminate the Atlas Northstar service agreement with 30 calendar days of written notice."
+              }
+            ],
+            "conflicting": false
+          },
+          {
+            "text": "atlas-march-project-report.md: The signed Northstar service agreement requires 30 calendar days of written termination notice.",
+            "citations": [
+              {
+                "passage_id": "f286f9a9-e6b1-53ee-912b-55455669df83",
+                "quote": "The signed Northstar service agreement requires 30 calendar days of written termination notice."
+              }
+            ],
+            "conflicting": false
+          }
+        ],
+        "missing_evidence": [],
+        "provider_calls": 9,
+        "elapsed_ms": 529.2,
+        "relevance_checks": 8,
+        "support_checks": 4,
+        "note": "Noul judgments are fallible checks, not independent ground truth."
+      }
+    ],
+    "retrieval_condition": "Reference-labeled readable Atlas corpus; ambiguous and empty excluded.",
+    "note": "Fixture results verify mechanics only. Live results are a small labeled sample, not broad reliability."
+  }
+}

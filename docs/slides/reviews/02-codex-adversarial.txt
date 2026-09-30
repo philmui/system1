@@ -1,0 +1,62 @@
+[codex] Starting Codex task thread.
+[codex] Thread ready (01a0ebb3-7ec0-7a22-932f-2987289ea0da).
+[codex] Turn started (01a0ebb3-7fe6-7932-958c-22c76062a51d).
+[codex] Assistant message captured: I’ll inspect the working tree, trace the synchronization and editing paths, and check the tut...
+[codex] Running command: /bin/zsh -lc "pwd && git status --short && git diff --stat && git diff --cached --stat && rg ...
+[codex] Running command: /bin/zsh -lc 'wc -l src/shell.html src/interactions.js src/deck-v2.json src/theme.css src/bui...
+[codex] Command completed: /bin/zsh -lc 'wc -l src/shell.html src/interactions.js src/deck-v2.json src/theme.css src/bui... (exit 0)
+[codex] Command completed: /bin/zsh -lc "pwd && git status --short && git diff --stat && git diff --cached --stat && rg ... (exit 0)
+[codex] Running command: /bin/zsh -lc "nl -ba research/source-ledger.md && nl -ba reviews/runtime-review.md && nl -ba ...
+[codex] Running command: /bin/zsh -lc "rg -n 'function |const .*=>|localStorage|BroadcastChannel|postMessage|message|s...
+[codex] Command completed: /bin/zsh -lc "rg -n 'function |const .*=>|localStorage|BroadcastChannel|postMessage|message|s... (exit 0)
+[codex] Command completed: /bin/zsh -lc "nl -ba research/source-ledger.md && nl -ba reviews/runtime-review.md && nl -ba ... (exit 0)
+[codex] Running command: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1630,1810p'"
+[codex] Running command: /bin/zsh -lc "python3 - <<'PY' import json,re,html p=json.load(open('src/deck-v2.json')) for ...
+[codex] Running command: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1310,1545p'"
+[codex] Command completed: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1630,1810p'" (exit 0)
+[codex] Command failed: /bin/zsh -lc "python3 - <<'PY' import json,re,html p=json.load(open('src/deck-v2.json')) for ... (exit 1)
+[codex] Command completed: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1310,1545p'" (exit 0)
+[codex] Running command: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1810,2042p'"
+[codex] Command completed: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1810,2042p'" (exit 0)
+[codex] Assistant message captured: The code contains guards for the four reported defects. I’m checking their limits now, partic...
+[codex] Running command: /bin/zsh -lc "python3 -c 'import json,re,html; p=json.load(open(\"src/deck-v2.json\")); [(pri...
+[codex] Running command: /bin/zsh -lc "command -v node python3 && node -e 'for (const m of [\"playwright\", \"puppetee...
+[codex] Running command: /bin/zsh -lc "rg -n 'ppt-presenter|ppt-preview|ppt-audience|ppt-frame|\\.slide\\{|#deck|conte...
+[codex] Command completed: /bin/zsh -lc "python3 -c 'import json,re,html; p=json.load(open(\"src/deck-v2.json\")); [(pri... (exit 0)
+[codex] Command completed: /bin/zsh -lc "rg -n 'ppt-presenter|ppt-preview|ppt-audience|ppt-frame|\\.slide\\{|#deck|conte... (exit 0)
+[codex] Command failed: /bin/zsh -lc "command -v node python3 && node -e 'for (const m of [\"playwright\", \"puppetee... (exit 1)
+[codex] Running command: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1574,1655p' && nl -ba src/build_deck.py && nl -...
+[codex] Running command: /bin/zsh -lc "rg --files /Users/pmui/.nvm/versions/node/v22.23.1/lib/node_modules /Users/pmui...
+[codex] Running command: /bin/zsh -lc "python3 -c 'import json,re,html; p=json.load(open(\"src/deck-v2.json\")); [(pri...
+[codex] Command completed: /bin/zsh -lc "nl -ba src/shell.html | sed -n '1574,1655p' && nl -ba src/build_deck.py && nl -... (exit 0)
+[codex] Command completed: /bin/zsh -lc "python3 -c 'import json,re,html; p=json.load(open(\"src/deck-v2.json\")); [(pri... (exit 0)
+[codex] Command completed: /bin/zsh -lc "rg --files /Users/pmui/.nvm/versions/node/v22.23.1/lib/node_modules /Users/pmui... (exit 0)
+[codex] Running command: /bin/zsh -lc "node -e ' const fs=require(\"fs\"),vm=require(\"vm\"); const source=fs.readFile...
+[codex] Command completed: /bin/zsh -lc "node -e ' const fs=require(\"fs\"),vm=require(\"vm\"); const source=fs.readFile... (exit 0)
+[codex] Assistant message captured: I’ve found two concrete runtime gaps: re-entering presenter mode can reuse stale preview stat...
+[codex] Running command: /bin/zsh -lc "python3 -c 'import json,re; from html.parser import HTMLParser class TextConten...
+[codex] Running command: /bin/zsh -lc "node -e ' const fs=require(\"fs\"),vm=require(\"vm\");const source=fs.readFileS...
+[codex] Command completed: /bin/zsh -lc "node -e ' const fs=require(\"fs\"),vm=require(\"vm\");const source=fs.readFileS... (exit 0)
+[codex] Command completed: /bin/zsh -lc "python3 -c 'import json,re; from html.parser import HTMLParser class TextConten... (exit 0)
+[codex] Assistant message captured: { "verdict": "needs-attention", "summary": "Do not ship yet: presenter re-entry can undo inte...
+[codex] Turn completion inferred after the main thread finished and subagent work drained.
+# Codex Adversarial Review
+
+Target: working tree diff
+Verdict: needs-attention
+
+Do not ship yet: presenter re-entry can undo interaction state, saved edits lose text boundaries, and the next preview traps keyboard focus.
+
+Findings:
+- [medium] Refresh retained previews before accepting their state (src/shell.html:1694-1695)
+  Present slide 19, exit, reveal the repair on slide 22, return to 19, re-enter presenter mode, and move the threshold. These guards skip refreshing the retained iframe because its slide index matches. Its next interaction sends the old complete snapshot, which receive() applies wholesale, hiding the repair again in the presenter and audience. A source-derived execution probe confirmed this rollback.
+  Recommendation: Rehydrate previews on every presenter entry and reject interaction messages until they reflect the current authoritative state.
+- [medium] Preserve line boundaries when persisting edits (src/shell.html:2029)
+  Append text to the opening heading, then reload or enter presenter mode. Saving textContent omits its <br>, and restoring through textContent produces “Disaggregatedintelligence”. The subtitle similarly becomes “withkoa-action” and “Graphand”. Downloading after restoration embeds the damaged text.
+  Recommendation: Preserve authored inline structure, or serialize explicit line breaks and restore them with newline-aware rendering.
+- [medium] Prevent the next-preview keyboard trap (src/shell.html:1940-1942)
+  The next-slide iframe contains focusable source links but lacks interactive=1. Once keyboard focus enters a link, this branch cancels Tab, Shift+Tab, and Escape. Keyboard users cannot return to presenter controls through normal focus navigation. Source-derived probes confirmed these keys are prevented.
+  Recommendation: Make the noninteractive preview inert and preserve Tab/Shift+Tab whenever iframe contents can receive focus.
+
+Next steps:
+- Fix these paths and add browser regressions for presenter re-entry, multiline edits, and iframe keyboard traversal. This review used source-derived probes; the browser suite was not rerun.

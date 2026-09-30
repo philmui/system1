@@ -1,0 +1,325 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "03 \u00b7 l: DISAGGREGATED INTELLIGENCE [p03-text-0008]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "03 \u00b7 r: 03 / 36 [p03-text-0009]",
+    "text": "03 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "03 \u00b7 case-eyebrow: 01 / SERVICE INVARIANT [p03-text-0010]",
+    "text": "01 / SERVICE INVARIANT",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      282.6279296875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "03 \u00b7 case-title: One customer, two obligations [p03-text-0011]",
+    "text": "One customer, two obligations",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.16015625,
+      183.87628321850394,
+      1005.103515625,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "03 \u00b7 quote: \u201cExchange these headphones and return the spare cable.\u201d [p03-text-0012]",
+    "text": "\u201cExchange these",
+    "font": "Salesforce Sans",
+    "fontSizePx": 58.0,
+    "bbox": [
+      140.5244140625,
+      363.61575633612205,
+      423.2607421875,
+      56.8974609375
+    ],
+    "baseline": [
+      136.0,
+      405.60794383612205
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "03 \u00b7 quote: \u201cExchange these headphones and return the spare cable.\u201d [p03-text-0012]",
+    "text": "headphones",
+    "font": "Salesforce Sans",
+    "fontSizePx": 58.0,
+    "bbox": [
+      141.0458984375,
+      437.04349071112205,
+      321.01953125,
+      55.216796875
+    ],
+    "baseline": [
+      136.0,
+      478.10794383612205
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "03 \u00b7 quote: \u201cExchange these headphones and return the spare cable.\u201d [p03-text-0012]",
+    "text": "and return the spare cable.\u201d",
+    "font": "Salesforce Sans",
+    "fontSizePx": 58.0,
+    "bbox": [
+      138.435546875,
+      508.5581391486221,
+      709.310546875,
+      56.2021484375
+    ],
+    "baseline": [
+      136.0,
+      550.6079438361221
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "03 \u00b7 case-text-1: The cable is a separately purchased item. [p03-text-0013]",
+    "text": "The cable is a separately purchased item.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      88.099609375,
+      651.9751574803149,
+      471.9775390625,
+      24.8505859375
+    ],
+    "baseline": [
+      88.0,
+      670.3999621678149
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "03 \u00b7 case-text-2: The case ledger [p03-text-0014]",
+    "text": "The case ledger",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1012.400390625,
+      313.519415292815,
+      293.4482421875,
+      39.6005859375
+    ],
+    "baseline": [
+      1012.0,
+      342.919805917815
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "03 \u00b7 span: Exchange [p03-text-0015]",
+    "text": "Exchange",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1014.51953125,
+      415.1521484375,
+      120.3720703125,
+      27.01953125
+    ],
+    "baseline": [
+      1012.0,
+      434.9763671875
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "03 \u00b7 span: Requested [p03-text-0016]",
+    "text": "Requested",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1291.8529170767717,
+      415.1521484375,
+      133.841796875,
+      26.65625
+    ],
+    "baseline": [
+      1289.3333858267717,
+      434.9763671875
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "03 \u00b7 status: Pending [p03-text-0017]",
+    "text": "Pending",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      1721.4715723425195,
+      413.57109375,
+      93.6318359375,
+      22.080078125
+    ],
+    "baseline": [
+      1719.4012598425195,
+      430.7751953125
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "03 \u00b7 span: Cable return [p03-text-0018]",
+    "text": "Cable return",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1013.3720703125,
+      495.5447776205708,
+      158.171875,
+      20.8037109375
+    ],
+    "baseline": [
+      1012.0,
+      515.8729026205708
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "03 \u00b7 span: Requested [p03-text-0019]",
+    "text": "Requested",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1291.8529170767717,
+      496.0486838705708,
+      133.841796875,
+      26.65625
+    ],
+    "baseline": [
+      1289.3333858267717,
+      515.8729026205708
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "03 \u00b7 status: Pending [p03-text-0020]",
+    "text": "Pending",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      1721.4715723425195,
+      494.46762918307087,
+      93.6318359375,
+      22.080078124999943
+    ],
+    "baseline": [
+      1719.4012598425195,
+      511.67173074557087
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "03 \u00b7 case-text-3: What must survive every transition? [p03-text-0021]",
+    "text": "What must survive",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      1012.5322265625,
+      618.9255477977363,
+      320.3291015625,
+      28.5380859375
+    ],
+    "baseline": [
+      1012.0,
+      646.9314071727363
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "03 \u00b7 case-text-3: What must survive every transition? [p03-text-0021]",
+    "text": "every transition?",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      1013.900390625,
+      672.1255477977363,
+      281.455078125,
+      37.7724609375
+    ],
+    "baseline": [
+      1012.0,
+      700.1314071727363
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "03 \u00b7 span: Agent Graph / guided determinism [p03-text-0022]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      972.910282972441,
+      308.6396484375,
+      19.81640625
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "03 \u00b7 span: Constructed service example [p03-text-0023]",
+    "text": "Constructed service example",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1578.2323963459646,
+      973.840947034941,
+      252.8359375,
+      18.6396484375
+    ],
+    "baseline": [
+      1577.3017322834646,
+      987.843876722441
+    ]
+  }
+]

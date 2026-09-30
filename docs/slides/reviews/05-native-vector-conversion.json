@@ -1,0 +1,75 @@
+{
+  "method": "Authored SVG to native DrawingML shapes, groups and text; Pango metrics; independently librsvg-rendered normalized geometry against original SVG. Does not claim native Office rendering.",
+  "files": [
+    {
+      "nativeGroups": 79,
+      "nativeShapes": 140,
+      "nativeTextBoxes": 25,
+      "pictures": 0,
+      "warnings": [],
+      "source": "docs/slides/assets/returns-slide-access.svg",
+      "sourceSha256": "9ab7a3f763cdd165c131e4cf26575936adf898a5e6d6386514fd872216c594fe",
+      "maxNativeId": 1243,
+      "normalizedGeometryMeanError255": 0.6090257226003749
+    },
+    {
+      "nativeGroups": 57,
+      "nativeShapes": 115,
+      "nativeTextBoxes": 24,
+      "pictures": 0,
+      "warnings": [],
+      "source": "docs/slides/assets/returns-slide-routing.svg",
+      "sourceSha256": "819056366b1d6f64bf5fce42b969a6776aa886f90e7189cda17d8b8d0af39c2d",
+      "maxNativeId": 1195,
+      "normalizedGeometryMeanError255": 0.628626566045181
+    },
+    {
+      "nativeGroups": 49,
+      "nativeShapes": 103,
+      "nativeTextBoxes": 21,
+      "pictures": 0,
+      "warnings": [],
+      "source": "docs/slides/assets/returns-slide-reasoning-gate.svg",
+      "sourceSha256": "4864b37bfbc4bfc397b83afb8301e979a689572a5098c0b9bb3b71f48ff00b32",
+      "maxNativeId": 1172,
+      "normalizedGeometryMeanError255": 0.46976823764427345
+    },
+    {
+      "nativeGroups": 30,
+      "nativeShapes": 125,
+      "nativeTextBoxes": 23,
+      "pictures": 0,
+      "warnings": [],
+      "source": "docs/slides/assets/returns-slide-whole-item-policy.svg",
+      "sourceSha256": "a8d5ac87e778e018c6d9501ad081bc5de6a659cd109619b61ef7e71eb2395623",
+      "maxNativeId": 1177,
+      "normalizedGeometryMeanError255": 0.6968450971687876
+    },
+    {
+      "nativeGroups": 26,
+      "nativeShapes": 95,
+      "nativeTextBoxes": 12,
+      "pictures": 0,
+      "warnings": [],
+      "source": "docs/slides/assets/returns-branching-component-library.svg",
+      "sourceSha256": "849ef40d3872af27cd3c4d249c7f4d12474a0aac3ed9300ece19b99491ad6e1b",
+      "maxNativeId": 1132,
+      "normalizedGeometryMeanError255": 0.31020518891190685
+    },
+    {
+      "nativeGroups": 27,
+      "nativeShapes": 38,
+      "nativeTextBoxes": 33,
+      "pictures": 0,
+      "warnings": [],
+      "source": "docs/slides/assets/training-pipeline.svg",
+      "sourceSha256": "474c3e04500a9e36c16d1a23b04f26938185f5ccfc118eaf2ca9a732fb524b18",
+      "maxNativeId": 1097,
+      "normalizedGeometryMeanError255": 1.4559495464852608
+    }
+  ],
+  "inlineSVGsPassed": 21,
+  "passed": true,
+  "unsupportedFeatures": "Fail closed; no bitmap/SVG fallback created",
+  "textWeightLimitation": "DrawingML regular/bold maps source weights below 600 to regular and 600 or above to bold; source weights remain in JSON and audit."
+}

@@ -1,0 +1,495 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "01 \u00b7 l: DISAGGREGATED INTELLIGENCE [p01-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.447265625,
+      56.99809639517716,
+      345.9423828125,
+      14.4541015625
+    ],
+    "baseline": [
+      88.0,
+      71.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "01 \u00b7 r: 01 / 36 [p01-text-0012]",
+    "text": "01 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.5573720472441,
+      56.97954170767716,
+      65.0947265625,
+      14.4443359375
+    ],
+    "baseline": [
+      1755.9636220472441,
+      71.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "01 \u00b7 opening-main: Disaggregated intelligence [p01-text-0013]",
+    "text": "Disaggregated",
+    "font": "Manrope",
+    "fontSizePx": 108.0,
+    "bbox": [
+      96.2265625,
+      248.26074864665355,
+      696.697265625,
+      101.724609375
+    ],
+    "baseline": [
+      88.0,
+      326.46582677165355
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "01 \u00b7 opening-main: Disaggregated intelligence [p01-text-0013]",
+    "text": "intelligence",
+    "font": "Manrope",
+    "fontSizePx": 108.0,
+    "bbox": [
+      95.224609375,
+      375.70074864665355,
+      548.6318359375,
+      101.724609375
+    ],
+    "baseline": [
+      88.0,
+      453.90582677165355
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "01 \u00b7 opening-text-1: Fast, focused judgment by default. Frontier reasoning for the exceptions. [p01-text-0014]",
+    "text": "Fast, focused judgment by default.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      90.13671875,
+      750.9016021776575,
+      382.5517578125,
+      23.71875
+    ],
+    "baseline": [
+      88.0,
+      769.0900787401575
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "01 \u00b7 opening-text-1: Fast, focused judgment by default. Frontier reasoning for the exceptions. [p01-text-0014]",
+    "text": "Frontier reasoning for the exceptions.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      90.13671875,
+      787.1416021776575,
+      413.5517578125,
+      23.71875
+    ],
+    "baseline": [
+      88.0,
+      805.3300787401575
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "01 \u00b7 opening-sub: Enterprise reasoning with koa-action, Agent Graph and AgentScript. [p01-text-0015]",
+    "text": "Enterprise reasoning with",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      91.2470703125,
+      552.282516609252,
+      417.595703125,
+      35.7548828125
+    ],
+    "baseline": [
+      88.0,
+      579.632125984252
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "01 \u00b7 opening-sub: Enterprise reasoning with koa-action, Agent Graph and AgentScript. [p01-text-0015]",
+    "text": "koa-action",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 34.58,
+    "bbox": [
+      97.07719580462599,
+      608.029391609252,
+      153.005859375,
+      25.4609375
+    ],
+    "baseline": [
+      94.91606299212599,
+      632.832125984252
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "01 \u00b7 opening-sub: Enterprise reasoning with koa-action, Agent Graph and AgentScript. [p01-text-0015]",
+    "text": ", Agent Graph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      310.5618559301181,
+      604.833102546752,
+      228.0908203125,
+      36.404296875
+    ],
+    "baseline": [
+      307.4075590551181,
+      632.832125984252
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "01 \u00b7 opening-sub: Enterprise reasoning with koa-action, Agent Graph and AgentScript. [p01-text-0015]",
+    "text": "and AgentScript.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      89.521484375,
+      658.033102546752,
+      270.6005859375,
+      36.404296875
+    ],
+    "baseline": [
+      88.0,
+      686.032125984252
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "01 \u00b7 mini: AUTHORED CONTROLS [p01-text-0016]",
+    "text": "AUTHORED CONTROLS",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1106.5485565329725,
+      244.13184270423227,
+      236.50390625,
+      14.3984375
+    ],
+    "baseline": [
+      1106.2702362204725,
+      258.13086614173227
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "01 \u00b7 strong: AgentScript [p01-text-0017]",
+    "text": "AgentScript",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1106.9557830954725,
+      277.9938899483268,
+      150.6474609375,
+      25.87890625
+    ],
+    "baseline": [
+      1106.2702362204725,
+      297.9929133858268
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "01 \u00b7 mini: STATE + TRANSITIONS [p01-text-0018]",
+    "text": "STATE + TRANSITIONS",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1107.1608612204725,
+      432.07089782234254,
+      224.8916015625,
+      14.3984375
+    ],
+    "baseline": [
+      1106.2702362204725,
+      446.06992125984254
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "01 \u00b7 strong: Agent Graph [p01-text-0019]",
+    "text": "Agent Graph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1106.9557830954725,
+      465.99853223425197,
+      160.0546875,
+      25.8134765625
+    ],
+    "baseline": [
+      1106.2702362204725,
+      485.93212598425197
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "01 \u00b7 strong: koa-action [p01-text-0020]",
+    "text": "koa-action",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1064.1138671875,
+      714.4388250492126,
+      131.0654296875,
+      20.052734375
+    ],
+    "baseline": [
+      1062.4,
+      733.9896062992126
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "01 \u00b7 small: Bounded judgment [p01-text-0021]",
+    "text": "Bounded judgment",
+    "font": "Salesforce Sans",
+    "fontSizePx": 20.0,
+    "bbox": [
+      1063.874609375,
+      756.0523978838582,
+      164.61328125,
+      18.818359375
+    ],
+    "baseline": [
+      1062.4,
+      770.4469291338582
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "01 \u00b7 strong: Frontier model [p01-text-0022]",
+    "text": "Frontier model",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1340.816640625,
+      701.9388250492126,
+      184.5341796875,
+      20.052734375
+    ],
+    "baseline": [
+      1338.76,
+      721.4896062992126
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "01 \u00b7 small: Reasoning exceptions [p01-text-0023]",
+    "text": "Reasoning",
+    "font": "Salesforce Sans",
+    "fontSizePx": 20.0,
+    "bbox": [
+      1340.5178125,
+      743.6012260088582,
+      91.0078125,
+      18.76953125
+    ],
+    "baseline": [
+      1338.76,
+      757.9469291338582
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "01 \u00b7 small: Reasoning exceptions [p01-text-0023]",
+    "text": "exceptions",
+    "font": "Salesforce Sans",
+    "fontSizePx": 20.0,
+    "bbox": [
+      1339.463125,
+      768.6012260088582,
+      93.57421875,
+      18.515625
+    ],
+    "baseline": [
+      1338.76,
+      782.9469291338582
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "01 \u00b7 strong: Services [p01-text-0024]",
+    "text": "Services",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1616.24109375,
+      713.9905828617126,
+      109.8671875,
+      20.5009765625
+    ],
+    "baseline": [
+      1615.12,
+      733.9896062992126
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "01 \u00b7 small: Facts + authority [p01-text-0025]",
+    "text": "Facts + authority",
+    "font": "Salesforce Sans",
+    "fontSizePx": 20.0,
+    "bbox": [
+      1616.828984375,
+      756.0523978838582,
+      148.056640625,
+      18.681640625
+    ],
+    "baseline": [
+      1615.12,
+      770.4469291338582
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "01 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p01-text-0026]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.2783203125,
+      969.997197034941,
+      292.3154296875,
+      18.2021484375
+    ],
+    "baseline": [
+      88.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "01 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p01-text-0026]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      388.4013671875,
+      976.305790784941,
+      2.375,
+      2.375
+    ],
+    "baseline": [
+      382.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "01 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p01-text-0026]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      397.2783203125,
+      969.997197034941,
+      214.462890625,
+      18.2021484375
+    ],
+    "baseline": [
+      397.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "01 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p01-text-0026]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      619.4013671875,
+      976.305790784941,
+      2.375,
+      2.375
+    ],
+    "baseline": [
+      613.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "01 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p01-text-0026]",
+    "text": "Composable AI",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      628.8349609375,
+      969.997197034941,
+      129.8955078125,
+      17.9609375
+    ],
+    "baseline": [
+      628.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "01 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p01-text-0026]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      766.4013671875,
+      976.305790784941,
+      2.375,
+      2.375
+    ],
+    "baseline": [
+      760.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "01 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p01-text-0026]",
+    "text": "Jev + LangGraph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      775.3251953125,
+      969.997197034941,
+      147.9990234375,
+      18.2021484375
+    ],
+    "baseline": [
+      775.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "01 \u00b7 span: Proposed Salesforce composition [p01-text-0027]",
+    "text": "Proposed Salesforce composition",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1540.0107950910433,
+      969.997197034941,
+      286.7001953125,
+      17.9609375
+    ],
+    "baseline": [
+      1538.3867716535433,
+      983.996220472441
+    ]
+  }
+]

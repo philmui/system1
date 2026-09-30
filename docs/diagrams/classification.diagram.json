@@ -1,0 +1,444 @@
+{
+  "title": "Follow one document through classification",
+  "subtitle": "A parent graph collects every worker outcome before one review pause.",
+  "description": "Documents fan out into compiled workers. Readable text receives a Jev category decision. Accepted categories bypass OpenAI. Ambiguous decisions get a proposal requiring review. Every handled path returns a keyed outcome; the parent joins and indexes accepted readable documents.",
+  "size": [
+    1320,
+    870
+  ],
+  "nodes": [
+    {
+      "rect": [
+        40,
+        120,
+        210,
+        75
+      ],
+      "label": "Validate and dispatch",
+      "body": [
+        "One worker per document"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        315,
+        120,
+        215,
+        75
+      ],
+      "label": "Read extraction + anchors",
+      "body": [
+        "Validated during ingestion"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        315,
+        265,
+        215,
+        75
+      ],
+      "label": "Readable content?",
+      "body": [
+        "Extraction status"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        615,
+        265,
+        240,
+        85
+      ],
+      "label": "Jev category judgment",
+      "body": [
+        "Choice + distribution",
+        "Record rubric and input"
+      ],
+      "color": "purple"
+    },
+    {
+      "rect": [
+        920,
+        265,
+        240,
+        85
+      ],
+      "label": "Apply policy",
+      "body": [
+        "Confidence, tie, unknown",
+        "Rules in policies.py"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        315,
+        420,
+        215,
+        75
+      ],
+      "label": "Extraction issue",
+      "body": [
+        "Unreadable, empty, scanned"
+      ],
+      "color": "red"
+    },
+    {
+      "rect": [
+        920,
+        120,
+        240,
+        75
+      ],
+      "label": "Accept category",
+      "body": [
+        "Valid label and threshold"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        920,
+        420,
+        240,
+        85
+      ],
+      "label": "OpenAI proposal",
+      "body": [
+        "Bounded interpretation",
+        "Always requires review"
+      ],
+      "color": "purple"
+    },
+    {
+      "rect": [
+        610,
+        580,
+        250,
+        75
+      ],
+      "label": "Return keyed outcome",
+      "body": [
+        "Success, proposal or error"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        40,
+        580,
+        235,
+        75
+      ],
+      "label": "Join every worker",
+      "body": [
+        "Expected IDs = outcome IDs"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        40,
+        730,
+        235,
+        75
+      ],
+      "label": "Parent review interrupt",
+      "body": [
+        "Review all proposals together"
+      ],
+      "color": "amber"
+    },
+    {
+      "rect": [
+        385,
+        730,
+        245,
+        75
+      ],
+      "label": "Index accepted documents",
+      "body": [
+        "Idempotent writes"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        745,
+        730,
+        230,
+        75
+      ],
+      "label": "Publish batch result",
+      "body": [
+        "Retain original + correction"
+      ],
+      "color": "blue"
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          250,
+          158
+        ],
+        [
+          315,
+          158
+        ]
+      ],
+      "label": "Send",
+      "label_at": [
+        282,
+        148
+      ]
+    },
+    {
+      "points": [
+        [
+          423,
+          195
+        ],
+        [
+          423,
+          265
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          530,
+          300
+        ],
+        [
+          615,
+          300
+        ]
+      ],
+      "label": "yes",
+      "label_at": [
+        572,
+        290
+      ]
+    },
+    {
+      "points": [
+        [
+          855,
+          307
+        ],
+        [
+          920,
+          307
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          423,
+          340
+        ],
+        [
+          423,
+          420
+        ]
+      ],
+      "label": "no",
+      "label_at": [
+        423,
+        383
+      ]
+    },
+    {
+      "points": [
+        [
+          1040,
+          265
+        ],
+        [
+          1040,
+          195
+        ]
+      ],
+      "label": "accept",
+      "label_at": [
+        1040,
+        230
+      ]
+    },
+    {
+      "points": [
+        [
+          1040,
+          350
+        ],
+        [
+          1040,
+          420
+        ]
+      ],
+      "label": "ambiguous",
+      "label_at": [
+        1040,
+        393
+      ]
+    },
+    {
+      "points": [
+        [
+          1160,
+          158
+        ],
+        [
+          1240,
+          158
+        ],
+        [
+          1240,
+          617
+        ],
+        [
+          860,
+          617
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          1040,
+          505
+        ],
+        [
+          1040,
+          550
+        ],
+        [
+          810,
+          550
+        ],
+        [
+          810,
+          580
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          423,
+          495
+        ],
+        [
+          423,
+          540
+        ],
+        [
+          675,
+          540
+        ],
+        [
+          675,
+          580
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          610,
+          617
+        ],
+        [
+          275,
+          617
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          157,
+          655
+        ],
+        [
+          157,
+          730
+        ]
+      ],
+      "label": "proposals",
+      "label_at": [
+        157,
+        700
+      ]
+    },
+    {
+      "points": [
+        [
+          275,
+          767
+        ],
+        [
+          385,
+          767
+        ]
+      ],
+      "label": "resume",
+      "label_at": [
+        330,
+        756
+      ]
+    },
+    {
+      "points": [
+        [
+          275,
+          635
+        ],
+        [
+          510,
+          635
+        ],
+        [
+          510,
+          730
+        ]
+      ],
+      "label": "no proposals",
+      "label_at": [
+        414,
+        680
+      ]
+    },
+    {
+      "points": [
+        [
+          630,
+          767
+        ],
+        [
+          745,
+          767
+        ]
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "rect": [
+        290,
+        88,
+        995,
+        590
+      ],
+      "label": "One compiled document worker; failures also produce a terminal outcome"
+    }
+  ]
+}

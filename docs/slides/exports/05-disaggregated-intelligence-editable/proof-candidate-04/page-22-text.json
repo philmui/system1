@@ -1,0 +1,359 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "22 \u00b7 l: DISAGGREGATED INTELLIGENCE [p22-text-0009]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "22 \u00b7 r: 22 / 36 [p22-text-0010]",
+    "text": "22 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "22 \u00b7 confidence-eyebrow: 06 / INSPECT THE SIGNAL [p22-text-0011]",
+    "text": "06 / INSPECT THE SIGNAL",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      292.6181640625,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "22 \u00b7 confidence-title: Confidence needs evidence in your domain [p22-text-0012]",
+    "text": "Confidence needs evidence in your domain",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.16015625,
+      183.87628321850394,
+      1411.388671875,
+      70.2001953125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "22 \u00b7 confidence-text-1: A concentrated distribution [p22-text-0013]",
+    "text": "A concentrated distribution",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      88.7998046875,
+      313.620001230315,
+      513.412109375,
+      29.919921875
+    ],
+    "baseline": [
+      88.0,
+      342.919805917815
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "22 \u00b7 div: Return [p22-text-0014]",
+    "text": "Return",
+    "font": "Salesforce Sans",
+    "fontSizePx": 23.0,
+    "bbox": [
+      106.0703125,
+      582.2459273499015,
+      67.8271484375,
+      16.6064453125
+    ],
+    "baseline": [
+      104.0,
+      598.5301070374015
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "22 \u00b7 div: Exchange [p22-text-0015]",
+    "text": "Exchange",
+    "font": "Salesforce Sans",
+    "fontSizePx": 23.0,
+    "bbox": [
+      275.0703125,
+      582.2459273499015,
+      98.8759765625,
+      22.1953125
+    ],
+    "baseline": [
+      273.0,
+      598.5301070374015
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "22 \u00b7 div: Other [p22-text-0016]",
+    "text": "Other",
+    "font": "Salesforce Sans",
+    "fontSizePx": 23.0,
+    "bbox": [
+      443.126953125,
+      581.8553023499015,
+      61.0654296875,
+      17.06640625
+    ],
+    "baseline": [
+      442.0,
+      598.5301070374015
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "22 \u00b7 confidence-text-2: Illustrative output shape. The highest option can still be wrong. [p22-text-0017]",
+    "text": "Illustrative output shape.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      89.349609375,
+      669.675157480315,
+      285.375,
+      24.5244140625
+    ],
+    "baseline": [
+      88.0,
+      688.099962167815
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "22 \u00b7 confidence-text-2: Illustrative output shape. The highest option can still be wrong. [p22-text-0017]",
+    "text": "The highest option can still be wrong.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      88.099609375,
+      705.915157480315,
+      430.701171875,
+      24.849609375
+    ],
+    "baseline": [
+      88.0,
+      724.339962167815
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "22 \u00b7 confidence-text-3: Compare signals with adjudicated labels. [p22-text-0018]",
+    "text": "Compare signals",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1048.2001953125,
+      404.81941529281494,
+      310.560546875,
+      39.6005859375
+    ],
+    "baseline": [
+      1047.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "22 \u00b7 confidence-text-3: Compare signals with adjudicated labels. [p22-text-0018]",
+    "text": "with adjudicated labels.",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1047.7998046875,
+      452.0194152928149,
+      438.669921875,
+      39.0009765625
+    ],
+    "baseline": [
+      1047.0,
+      481.4198059178149
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "22 \u00b7 confidence-text-4: Choose gates on development data. Report error alongside coverage. [p22-text-0019]",
+    "text": "Choose gates on development data.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1048.3720703125,
+      517.080053211122,
+      465.3046875,
+      27.5234375
+    ],
+    "baseline": [
+      1047.0,
+      537.408178211122
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "22 \u00b7 confidence-text-4: Choose gates on development data. Report error alongside coverage. [p22-text-0019]",
+    "text": "Report error alongside coverage.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1049.51953125,
+      556.532436023622,
+      415.4677734375,
+      27.8310546875
+    ],
+    "baseline": [
+      1047.0,
+      577.168178211122
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "22 \u00b7 confidence-text-5: Identity, permissions, and policy remain separate checks. [p22-text-0020]",
+    "text": "Identity, permissions, and policy",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1048.51171875,
+      698.292436023622,
+      415.798828125,
+      27.83203125
+    ],
+    "baseline": [
+      1047.0,
+      718.928178211122
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "22 \u00b7 confidence-text-5: Identity, permissions, and policy remain separate checks. [p22-text-0020]",
+    "text": "remain separate checks.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1049.2119140625,
+      738.052436023622,
+      308.5322265625,
+      27.4677734375
+    ],
+    "baseline": [
+      1047.0,
+      758.688178211122
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "22 \u00b7 tag: VALIDATE LOCALLY [p22-text-0021]",
+    "text": "VALIDATE LOCALLY",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1047.755859375,
+      349.6149194143701,
+      215.4814453125,
+      15.162109375
+    ],
+    "baseline": [
+      1047.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "22 \u00b7 span: Confidence routing \u00b7 Confidence semantics [p22-text-0022]",
+    "text": "Confidence routing",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.9306640625,
+      973.840947034941,
+      168.0556640625,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "22 \u00b7 span: Confidence routing \u00b7 Confidence semantics [p22-text-0022]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      263.80859375,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      257.423828125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "22 \u00b7 span: Confidence routing \u00b7 Confidence semantics [p22-text-0022]",
+    "text": "Confidence semantics",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      273.232421875,
+      973.840947034941,
+      192.6220703125,
+      14.326171875
+    ],
+    "baseline": [
+      272.3017578125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "22 \u00b7 span: Illustrative distribution; no calibration claim [p22-text-0023]",
+    "text": "Illustrative distribution; no calibration claim",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1449.9970758489173,
+      973.840947034941,
+      380.501953125,
+      17.3662109375
+    ],
+    "baseline": [
+      1448.9707086614173,
+      987.843876722441
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "editions": [
+    {
+      "version": 1,
+      "slides": 30,
+      "html": {
+        "file": "01-disaggregated-intelligence.html",
+        "bytes": 330125,
+        "sha256": "56a3b15be467b7a6d48134ec64f36a7abce9e08c11911c2b5b2665d824da353b"
+      },
+      "powerpoint": {
+        "file": "01-disaggregated-intelligence.pptx",
+        "bytes": 6513123,
+        "sha256": "c74259da0ebeaca50f5fd387572ef2bf3b3a30d3d88ed74932bd5d5db7298a3a"
+      },
+      "validation": "exports/01-disaggregated-intelligence/package-validation.json"
+    },
+    {
+      "version": 2,
+      "slides": 31,
+      "html": {
+        "file": "02-disaggregated-intelligence.html",
+        "bytes": 303177,
+        "sha256": "bb51871b0748f8d0e3b565bc64a0925c81da8b76618d26a404cce1aa3808d06a"
+      },
+      "powerpoint": {
+        "file": "02-disaggregated-intelligence.pptx",
+        "bytes": 6984528,
+        "sha256": "3532e07a18aeb31a1e0c53168f5dd5cc3a84ab85379272df7a698c1240a238ec"
+      },
+      "validation": "exports/02-disaggregated-intelligence/package-validation.json"
+    },
+    {
+      "version": 3,
+      "slides": 31,
+      "html": {
+        "file": "03-disaggregated-intelligence.html",
+        "bytes": 306570,
+        "sha256": "974d26b5263cf0bbfa6cfc8f5e4a86cd1630e9f677fbb9ba2076ed46277c49b6"
+      },
+      "powerpoint": {
+        "file": "03-disaggregated-intelligence.pptx",
+        "bytes": 7006257,
+        "sha256": "d45551aeacd2f24fb321bd8d33cd35ec0b78f7271b98affd2ce1a821c5b2bc43"
+      },
+      "validation": "exports/03-disaggregated-intelligence/package-validation.json"
+    }
+  ],
+  "preserved": true
+}

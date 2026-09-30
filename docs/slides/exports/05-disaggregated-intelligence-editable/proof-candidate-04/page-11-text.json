@@ -1,0 +1,563 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "11 \u00b7 l: DISAGGREGATED INTELLIGENCE [p11-text-0020]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "11 \u00b7 r: 11 / 36 [p11-text-0021]",
+    "text": "11 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "11 \u00b7 contract-eyebrow: 03 / STEP 1 [p11-text-0022]",
+    "text": "03 / STEP 1",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      127.4248046875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "11 \u00b7 contract-title: Separate the remedy, the unit and the uncertainty [p11-text-0023]",
+    "text": "Separate the remedy, the unit and the uncertainty",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.7724609375,
+      183.94854884350394,
+      1642.8984375,
+      70.1279296875
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "11 \u00b7 contract-text-1: What work is the customer requesting? [p11-text-0024]",
+    "text": "What work is",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      123.4599609375,
+      404.92000123031494,
+      236.3603515625,
+      29.8994140625
+    ],
+    "baseline": [
+      123.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "11 \u00b7 contract-text-1: What work is the customer requesting? [p11-text-0024]",
+    "text": "the customer requesting?",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      123.400390625,
+      452.0594543553149,
+      484.25,
+      39.560546875
+    ],
+    "baseline": [
+      123.0,
+      481.4198059178149
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "11 \u00b7 contract-text-2: Conversation prefix + verified candidate items. [p11-text-0025]",
+    "text": "Conversation prefix",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      124.3720703125,
+      516.772436023622,
+      249.734375,
+      27.4677734375
+    ],
+    "baseline": [
+      123.0,
+      537.408178211122
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "11 \u00b7 contract-text-2: Conversation prefix + verified candidate items. [p11-text-0025]",
+    "text": "+ verified candidate items.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      125.9404296875,
+      556.532436023622,
+      338.265625,
+      21.0283203125
+    ],
+    "baseline": [
+      123.0,
+      577.168178211122
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "11 \u00b7 caption: CONCEPTUAL LABELS \u00b7 BOUNDARY EXAMPLES [p11-text-0026]",
+    "text": "CONCEPTUAL LABELS \u00b7 BOUNDARY EXAMPLES",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 20.0,
+    "bbox": [
+      89.400390625,
+      658.5198046875,
+      441.4404296875,
+      14.4404296875
+    ],
+    "baseline": [
+      88.0,
+      672.72
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "11 \u00b7 td: \u201cSwap for blue.\u201d [p11-text-0027]",
+    "text": "\u201cSwap for blue.\u201d",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      97.9501953125,
+      715.3699227977362,
+      180.7490234375,
+      24.224609375
+    ],
+    "baseline": [
+      96.0,
+      733.4949227977362
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "11 \u00b7 td: exchange [p11-text-0028]",
+    "text": "exchange",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.76,
+    "bbox": [
+      756.0753118848426,
+      716.6638401205709,
+      106.2001953125,
+      21.6669921875
+    ],
+    "baseline": [
+      754.5499212598426,
+      733.5056369955709
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "11 \u00b7 td: \u201cOnly the kit cable.\u201d [p11-text-0029]",
+    "text": "\u201cOnly the kit cable.\u201d",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      97.9501953125,
+      781.0701181102362,
+      224.0234375,
+      24.8505859375
+    ],
+    "baseline": [
+      96.0,
+      799.4949227977362
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "11 \u00b7 td: component [p11-text-0030]",
+    "text": "component",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.76,
+    "bbox": [
+      756.4620306348426,
+      783.6189182455709,
+      119.3095703125,
+      20.4384765625
+    ],
+    "baseline": [
+      754.5499212598426,
+      799.5056369955709
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "11 \u00b7 td: \u201cReturn this one.\u201d [p11-text-0031]",
+    "text": "\u201cReturn this one.\u201d",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      97.9501953125,
+      863.5701181102362,
+      199.072265625,
+      18.775390625
+    ],
+    "baseline": [
+      96.0,
+      881.9949227977362
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "11 \u00b7 td: clarify unit [p11-text-0032]",
+    "text": "clarify",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.76,
+    "bbox": [
+      756.4620306348426,
+      848.4812229330709,
+      92.474609375,
+      21.576171875
+    ],
+    "baseline": [
+      754.5499212598426,
+      865.5056369955709
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "11 \u00b7 td: clarify unit [p11-text-0032]",
+    "text": "unit",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.76,
+    "bbox": [
+      752.09375,
+      881.4812229330709,
+      50.8466796875,
+      17.2978515625
+    ],
+    "baseline": [
+      750.0,
+      898.5056369955709
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "11 \u00b7 contract-text-3: Keep three fields distinct [p11-text-0033]",
+    "text": "Keep three fields distinct",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1014.7998046875,
+      313.519415292815,
+      462.5908203125,
+      39.0
+    ],
+    "baseline": [
+      1012.0,
+      342.919805917815
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "11 \u00b7 pill: Remedy [p11-text-0034]",
+    "text": "Remedy",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1039.25,
+      395.325,
+      86.4248046875,
+      23.5
+    ],
+    "baseline": [
+      1037.0,
+      413.825
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "11 \u00b7 pill: Unit [p11-text-0035]",
+    "text": "Unit",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1179.0,
+      395.1248046875,
+      56.1494140625,
+      19.0
+    ],
+    "baseline": [
+      1177.0,
+      413.825
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "11 \u00b7 pill: Interpretation [p11-text-0036]",
+    "text": "Interpretation",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1289.099609375,
+      395.1248046875,
+      205.6005859375,
+      23.7001953125
+    ],
+    "baseline": [
+      1287.0,
+      413.825
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "11 \u00b7 strong: Clear + supported [p11-text-0037]",
+    "text": "Clear + supported",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1042.3203125,
+      495.61992187500005,
+      255.2099609375,
+      29.16015625
+    ],
+    "baseline": [
+      1041.0,
+      517.459765625
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "11 \u00b7 contract-text-4: Graph selects the applicable handler. [p11-text-0038]",
+    "text": "Graph selects the applicable handler.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1042.3232421875,
+      544.9076002706693,
+      459.701171875,
+      26.4873046875
+    ],
+    "baseline": [
+      1041.0,
+      564.8070143331693
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "11 \u00b7 strong: Meaning unclear [p11-text-0039]",
+    "text": "Meaning unclear",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1043.400390625,
+      647.6396484375,
+      239.9111328125,
+      30.3310546875
+    ],
+    "baseline": [
+      1041.0,
+      670.259765625
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "11 \u00b7 contract-text-5: Ask one useful clarification. [p11-text-0040]",
+    "text": "Ask one useful clarification.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1041.1083984375,
+      697.7076002706693,
+      340.0107421875,
+      20.27734375
+    ],
+    "baseline": [
+      1041.0,
+      717.6070143331693
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "11 \u00b7 contract-text-6: Unsupported combinations use a configured specialist. Invalid output follows b [p11-text-0041]",
+    "text": "Unsupported combinations use a configured specialist.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1014.025390625,
+      778.775,
+      632.625,
+      24.849609375
+    ],
+    "baseline": [
+      1012.0,
+      797.1998046875
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "11 \u00b7 contract-text-6: Unsupported combinations use a configured specialist. Invalid output follows b [p11-text-0041]",
+    "text": "Invalid output follows bounded recovery.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1013.349609375,
+      815.015,
+      470.677734375,
+      24.8505859375
+    ],
+    "baseline": [
+      1012.0,
+      833.4398046875
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "11 \u00b7 tag: BOUNDED SEMANTIC QUESTION [p11-text-0042]",
+    "text": "BOUNDED SEMANTIC QUESTION",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      124.84765625,
+      349.6149194143701,
+      335.462890625,
+      18.353515625
+    ],
+    "baseline": [
+      123.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "11 \u00b7 span: TypeSafe quickstart \u00b7 Intent routing \u00b7 Structured decision criteria [p11-text-0043]",
+    "text": "TypeSafe quickstart",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      170.2607421875,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "11 \u00b7 span: TypeSafe quickstart \u00b7 Intent routing \u00b7 Structured decision criteria [p11-text-0043]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      265.2724609375,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      258.8876953125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "11 \u00b7 span: TypeSafe quickstart \u00b7 Intent routing \u00b7 Structured decision criteria [p11-text-0043]",
+    "text": "Intent routing",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      274.7919921875,
+      973.840947034941,
+      121.201171875,
+      18.8857421875
+    ],
+    "baseline": [
+      273.765625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "11 \u00b7 span: TypeSafe quickstart \u00b7 Intent routing \u00b7 Structured decision criteria [p11-text-0043]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      402.8154296875,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      396.4306640625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "11 \u00b7 span: TypeSafe quickstart \u00b7 Intent routing \u00b7 Structured decision criteria [p11-text-0043]",
+    "text": "Structured decision criteria",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      411.87890625,
+      973.840947034941,
+      235.7724609375,
+      14.326171875
+    ],
+    "baseline": [
+      411.30859375,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1045",
+    "name": "11 \u00b7 span: Illustrative application contract [p11-text-0044]",
+    "text": "Illustrative application contract",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1560.162115218996,
+      973.840947034941,
+      271.287109375,
+      18.6396484375
+    ],
+    "baseline": [
+      1559.135748031496,
+      987.843876722441
+    ]
+  }
+]

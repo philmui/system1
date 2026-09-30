@@ -1,0 +1,461 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "28 \u00b7 l: DISAGGREGATED INTELLIGENCE [p28-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "28 \u00b7 r: 28 / 36 [p28-text-0012]",
+    "text": "28 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "28 \u00b7 training-partitions-eyebrow: 08 / TRAINING PIPELINE \u2014 PRESERVE THE PARTITIONS [p28-text-0013]",
+    "text": "08 / TRAINING PIPELINE \u2014 PRESERVE THE PARTITIONS",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      615.3388671875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "28 \u00b7 training-partitions-title: Split examples before developing the decision [p28-text-0014]",
+    "text": "Split examples before developing the decision",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.7724609375,
+      183.87628321850394,
+      1510.56640625,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "28 \u00b7 strong: Decision-time snapshot [p28-text-0015]",
+    "text": "Decision-time snapshot",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      116.7197265625,
+      327.29793860728347,
+      380.900390625,
+      33.931640625
+    ],
+    "baseline": [
+      114.0,
+      352.93368079478347
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "28 \u00b7 small: Inputs stop at the decision. Versioned records and labels. [p28-text-0016]",
+    "text": "Inputs stop at the decision.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      115.6201171875,
+      385.2194928026575,
+      375.181640625,
+      29.4296875
+    ],
+    "baseline": [
+      114.0,
+      407.3298443651575
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "28 \u00b7 small: Inputs stop at the decision. Versioned records and labels. [p28-text-0016]",
+    "text": "Versioned records and labels.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      114.0595703125,
+      425.7194928026575,
+      404.3095703125,
+      22.5302734375
+    ],
+    "baseline": [
+      114.0,
+      447.8298443651575
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "28 \u00b7 strong: Group, then split [p28-text-0017]",
+    "text": "Group, then split",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      750.4968811515748,
+      327.29793860728347,
+      273.529296875,
+      33.931640625
+    ],
+    "baseline": [
+      749.0007874015748,
+      352.93368079478347
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "28 \u00b7 small: Before augmentation. Preserve record relationships. [p28-text-0018]",
+    "text": "Before augmentation.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      751.7009827140748,
+      385.2194928026575,
+      298.951171875,
+      29.8203125
+    ],
+    "baseline": [
+      749.0007874015748,
+      407.3298443651575
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "28 \u00b7 small: Before augmentation. Preserve record relationships. [p28-text-0018]",
+    "text": "Preserve record relationships.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      751.7009827140748,
+      425.7194928026575,
+      403.619140625,
+      29.4296875
+    ],
+    "baseline": [
+      749.0007874015748,
+      447.8298443651575
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "28 \u00b7 strong: Family rule [p28-text-0019]",
+    "text": "Family rule",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1436.7201990034448,
+      327.29793860728347,
+      174.0458984375,
+      34.3740234375
+    ],
+    "baseline": [
+      1434.0004724409448,
+      352.93368079478347
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "28 \u00b7 small: Source + its variants stay in one partition. [p28-text-0020]",
+    "text": "Source + its variants",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1434.9008630659448,
+      385.2194928026575,
+      274.408203125,
+      22.62109375
+    ],
+    "baseline": [
+      1434.0004724409448,
+      407.3298443651575
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "28 \u00b7 small: Source + its variants stay in one partition. [p28-text-0020]",
+    "text": "stay in one partition.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1434.7504724409448,
+      425.7194928026575,
+      281.490234375,
+      29.8212890625
+    ],
+    "baseline": [
+      1434.0004724409448,
+      447.8298443651575
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "28 \u00b7 node label: Separate sample partitions [p28-text-0021]",
+    "text": "Separate sample partitions",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      88.8095703125,
+      508.0773640501968,
+      333.3681640625,
+      26.4873046875
+    ],
+    "baseline": [
+      88.0,
+      527.9767781126968
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "28 \u00b7 strong: Train [p28-text-0022]",
+    "text": "Train",
+    "font": "Salesforce Sans",
+    "fontSizePx": 40.0,
+    "bbox": [
+      114.16015625,
+      642.1297674704724,
+      91.958984375,
+      30.7197265625
+    ],
+    "baseline": [
+      114.0,
+      672.2899237204724
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "28 \u00b7 small: Fit permitted components. Adaptation is optional. Augment training data only. [p28-text-0023]",
+    "text": "Fit permitted components.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      116.7001953125,
+      705.9193353223425,
+      367.8310546875,
+      29.4296875
+    ],
+    "baseline": [
+      114.0,
+      728.0296868848425
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "28 \u00b7 small: Fit permitted components. Adaptation is optional. Augment training data only. [p28-text-0023]",
+    "text": "Adaptation is optional.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      114.1201171875,
+      746.4193353223425,
+      313.08203125,
+      29.4296875
+    ],
+    "baseline": [
+      114.0,
+      768.5296868848425
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "28 \u00b7 small: Fit permitted components. Adaptation is optional. Augment training data only. [p28-text-0023]",
+    "text": "Augment training data only.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      114.1201171875,
+      786.9193353223425,
+      382.3203125,
+      29.8212890625
+    ],
+    "baseline": [
+      114.0,
+      809.0296868848425
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "28 \u00b7 strong: Development [p28-text-0024]",
+    "text": "Development",
+    "font": "Salesforce Sans",
+    "fontSizePx": 40.0,
+    "bbox": [
+      719.1994079109252,
+      664.2195324803149,
+      256.2392578125,
+      38.080078125
+    ],
+    "baseline": [
+      715.9992125984252,
+      692.5398449803149
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "28 \u00b7 small: Use separate subsets for calibration and gate selection. [p28-text-0025]",
+    "text": "Use separate subsets for",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      718.4289000984252,
+      726.6497253321851,
+      335.4326171875,
+      28.94921875
+    ],
+    "baseline": [
+      715.9992125984252,
+      748.2796081446851
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "28 \u00b7 small: Use separate subsets for calibration and gate selection. [p28-text-0025]",
+    "text": "calibration and gate selection.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      717.4992125984252,
+      766.6692565821851,
+      413.9716796875,
+      29.8203125
+    ],
+    "baseline": [
+      715.9992125984252,
+      788.7796081446851
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "28 \u00b7 strong: Locked test [p28-text-0026]",
+    "text": "Locked test",
+    "font": "Salesforce Sans",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1321.2001953125,
+      664.2195324803149,
+      214.9208984375,
+      28.8798828125
+    ],
+    "baseline": [
+      1318.0,
+      692.5398449803149
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "28 \u00b7 small: Keep examples untouched. No fitting or gate tuning. [p28-text-0027]",
+    "text": "Keep examples untouched.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1320.7001953125,
+      727.0393737696851,
+      374.732421875,
+      28.5595703125
+    ],
+    "baseline": [
+      1318.0,
+      748.2796081446851
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "28 \u00b7 small: Keep examples untouched. No fitting or gate tuning. [p28-text-0027]",
+    "text": "No fitting or gate tuning.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1320.7001953125,
+      766.6692565821851,
+      336.30078125,
+      29.8203125
+    ],
+    "baseline": [
+      1318.0,
+      788.7796081446851
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "28 \u00b7 node label: Route labels use decision-time evidence; later outcomes belong to separate tar [p28-text-0028]",
+    "text": "Route labels use decision-time evidence; later outcomes belong to separate targets.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      90.7001953125,
+      901.9191778420276,
+      1153.65625,
+      29.8203125
+    ],
+    "baseline": [
+      88.0,
+      924.0295294045276
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "28 \u00b7 span: Tutorial evaluation protocol [p28-text-0029]",
+    "text": "Tutorial evaluation protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      239.576171875,
+      18.6396484375
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1045",
+    "name": "28 \u00b7 span: Proposed task development; adaptation only where supported [p28-text-0030]",
+    "text": "Proposed task development; adaptation only where supported",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1282.7383073941928,
+      973.840947034941,
+      547.7802734375,
+      18.8857421875
+    ],
+    "baseline": [
+      1281.0283464566928,
+      987.843876722441
+    ]
+  }
+]

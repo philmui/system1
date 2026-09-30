@@ -1,0 +1,359 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "27 \u00b7 l: DISAGGREGATED INTELLIGENCE [p27-text-0007]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "27 \u00b7 r: 27 / 36 [p27-text-0008]",
+    "text": "27 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "27 \u00b7 dataset-eyebrow: 08 / STEP 6 [p27-text-0009]",
+    "text": "08 / STEP 6",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      127.8232421875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "27 \u00b7 dataset-title: Begin the dataset at the decision boundary [p27-text-0010]",
+    "text": "Begin the dataset at the decision boundary",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      184.05597071850394,
+      1414.3544921875,
+      71.1005859375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "27 \u00b7 dataset-text-1: At decision time [p27-text-0011]",
+    "text": "At decision time",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      88.7998046875,
+      313.620001230315,
+      299.009765625,
+      29.900390625
+    ],
+    "baseline": [
+      88.0,
+      342.919805917815
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "27 \u00b7 dataset-text-2: Conversation prefix Trusted facts available then Current policy version [p27-text-0012]",
+    "text": "Conversation prefix",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      124.3720703125,
+      469.57243602362206,
+      249.734375,
+      27.4677734375
+    ],
+    "baseline": [
+      123.0,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "27 \u00b7 dataset-text-2: Conversation prefix Trusted facts available then Current policy version [p27-text-0012]",
+    "text": "Trusted facts available then",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.1123046875,
+      509.3324360236221,
+      350.4169921875,
+      21.0283203125
+    ],
+    "baseline": [
+      123.0,
+      529.9681782111221
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "27 \u00b7 dataset-text-2: Conversation prefix Trusted facts available then Current policy version [p27-text-0012]",
+    "text": "Current policy version",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      124.3720703125,
+      549.0924360236221,
+      278.908203125,
+      27.83203125
+    ],
+    "baseline": [
+      123.0,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "27 \u00b7 dataset-text-3: Remedy, unit and task relationships supported by that evidence. [p27-text-0013]",
+    "text": "Remedy, unit and task relationships",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      125.51953125,
+      745.152436023622,
+      456.5673828125,
+      27.83203125
+    ],
+    "baseline": [
+      123.0,
+      765.788178211122
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "27 \u00b7 dataset-text-3: Remedy, unit and task relationships supported by that evidence. [p27-text-0013]",
+    "text": "supported by that evidence.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.7001953125,
+      784.912436023622,
+      359.37890625,
+      27.83203125
+    ],
+    "baseline": [
+      123.0,
+      805.548178211122
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "27 \u00b7 dataset-text-4: After the decision [p27-text-0014]",
+    "text": "After the decision",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1012.7998046875,
+      313.519415292815,
+      328.5244140625,
+      30.0009765625
+    ],
+    "baseline": [
+      1012.0,
+      342.919805917815
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "27 \u00b7 dataset-text-5: Useful for separate outcome labels. Excluded from the earlier input. [p27-text-0015]",
+    "text": "Useful for separate outcome labels.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1049.267578125,
+      470.01970164862206,
+      454.3291015625,
+      27.0205078125
+    ],
+    "baseline": [
+      1047.0,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "27 \u00b7 dataset-text-5: Useful for separate outcome labels. Excluded from the earlier input. [p27-text-0015]",
+    "text": "Excluded from the earlier input.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1049.51953125,
+      509.3324360236221,
+      407.0068359375,
+      27.4677734375
+    ],
+    "baseline": [
+      1047.0,
+      529.9681782111221
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "27 \u00b7 tag: INPUT SNAPSHOT [p27-text-0016]",
+    "text": "INPUT SNAPSHOT",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      124.763671875,
+      414.8149194143701,
+      187.1064453125,
+      15.162109375
+    ],
+    "baseline": [
+      123.0,
+      429.7250756643701
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "27 \u00b7 tag: REFERENCE LABEL [p27-text-0017]",
+    "text": "REFERENCE LABEL",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      124.8896484375,
+      690.3949194143701,
+      199.7392578125,
+      15.162109375
+    ],
+    "baseline": [
+      123.0,
+      705.3050756643701
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "27 \u00b7 tag: LATER TURNS AND OUTCOMES [p27-text-0018]",
+    "text": "LATER TURNS AND OUTCOMES",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1049.51953125,
+      414.8149194143701,
+      321.6533203125,
+      15.162109375
+    ],
+    "baseline": [
+      1047.0,
+      429.7250756643701
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "27 \u00b7 dataset-text-6: Preserve order, relationships, and provenance. [p27-text-0019]",
+    "text": "Preserve order,",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      1015.419921875,
+      640.0540394315944,
+      252.7841796875,
+      33.6298828125
+    ],
+    "baseline": [
+      1012.0,
+      666.9583363065944
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "27 \u00b7 dataset-text-6: Preserve order, relationships, and provenance. [p27-text-0019]",
+    "text": "relationships,",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      1015.001953125,
+      692.1524769315945,
+      226.9931640625,
+      37.2783203125
+    ],
+    "baseline": [
+      1012.0,
+      720.1583363065945
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "27 \u00b7 dataset-text-6: Preserve order, relationships, and provenance. [p27-text-0019]",
+    "text": "and provenance.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      1013.595703125,
+      746.4540394315945,
+      286.1103515625,
+      36.1767578125
+    ],
+    "baseline": [
+      1012.0,
+      773.3583363065945
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "27 \u00b7 span: Tutorial evaluation protocol [p27-text-0020]",
+    "text": "Tutorial evaluation protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      239.576171875,
+      18.6396484375
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "27 \u00b7 span: Proposed development protocol [p27-text-0021]",
+    "text": "Proposed development protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1548.646496370571,
+      974.391728284941,
+      281.7197265625,
+      18.0888671875
+    ],
+    "baseline": [
+      1546.936535433071,
+      987.843876722441
+    ]
+  }
+]

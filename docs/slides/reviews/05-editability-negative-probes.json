@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "method": "Independent inspector invoked against isolated, deliberately damaged OOXML packages",
+  "input": "docs/slides/exports/05-disaggregated-intelligence-editable/candidate-04.pptx",
+  "inputSha256": "fb31adb6115c535b73cbffefa43edd269600a961b79c9059b85bd0d52b017e03",
+  "inspectorSha256": "ee145d8bb05412e8cbe6c1dd3d4191a8394705331786ecb7168c710f47f2c6c4",
+  "unmodifiedCandidatePassed": true,
+  "negativeCases": [
+    {
+      "case": "text-order",
+      "rejected": true,
+      "reason": "Slide 1: Source phrases are changed or fragmented across native text objects: ['DISAGGREGATED INTELLIGENCE']"
+    },
+    {
+      "case": "picture",
+      "rejected": true,
+      "reason": "Slide 1: 1 picture objects remain instead of native components"
+    },
+    {
+      "case": "hidden-text",
+      "rejected": true,
+      "reason": "Slide 1: Text is transparent: 01 · l: DISAGGREGATED INTELLIGENCE [p01-text-0011]"
+    },
+    {
+      "case": "locked-text",
+      "rejected": true,
+      "reason": "Slide 1: A component is locked against customization: noTextEdit"
+    },
+    {
+      "case": "lost-click",
+      "rejected": true,
+      "reason": "Slide 1: A source hyperlink relationship has no clickable shape/text"
+    },
+    {
+      "case": "out-of-bounds",
+      "rejected": true,
+      "reason": "Slide 1: Component outside slide: 01 · l: DISAGGREGATED INTELLIGENCE [p01-text-0011]"
+    },
+    {
+      "case": "font-alias",
+      "rejected": true,
+      "reason": "Slide 1: CSS-only font alias must map to the actual PowerPoint font family: IBMPlexMono"
+    },
+    {
+      "case": "invalid-path",
+      "rejected": true,
+      "reason": "Slide 1: Non-integer custom path coordinate"
+    },
+    {
+      "case": "teaching-notes",
+      "rejected": true,
+      "reason": "Slide 1: Teaching notes changed beyond the PowerPoint-format disclosure"
+    }
+  ],
+  "inputUnchanged": true,
+  "temporaryCopiesRemoved": true
+}

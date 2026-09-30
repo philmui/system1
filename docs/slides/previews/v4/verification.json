@@ -1,0 +1,441 @@
+{
+  "input": "/Users/pmui/dev/brilliant/system1/docs/slides/04-disaggregated-intelligence.html",
+  "slides": [
+    {
+      "id": "opening",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "benefits",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "case",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "ownership",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "topology",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "returns-comparison",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "returns-fallback",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "returns-policy",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "layers",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "contract",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "primitives",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "semantics",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "endpointing",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "dependencies",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "context",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "mixed",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "guided",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "agentscript",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "trace",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "failures",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "confidence",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "gate",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "economics",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "latency",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "exercise",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "dataset",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "training-partitions",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "training-release",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "splits",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "acceptance",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "evaluation",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "diagnosis",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "close",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "sources",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    },
+    {
+      "id": "returns-components",
+      "active": 1,
+      "stage": {
+        "width": 1280,
+        "height": 720
+      },
+      "overflow": []
+    }
+  ],
+  "examples": {
+    "gate": [
+      {
+        "value": "0.5",
+        "coverage": "100%",
+        "error": "33%",
+        "review": "0"
+      },
+      {
+        "value": "0.75",
+        "coverage": "58%",
+        "error": "29%",
+        "review": "5"
+      },
+      {
+        "value": "0.99",
+        "coverage": "8%",
+        "error": "100%",
+        "review": "11"
+      },
+      {
+        "value": "1",
+        "coverage": "0%",
+        "error": "—",
+        "review": "12"
+      }
+    ],
+    "cost": [
+      {
+        "p": "20",
+        "total": "0.27 normalized units",
+        "saving": "73% lower"
+      },
+      {
+        "p": "93",
+        "total": "1.00 normalized units",
+        "saving": "Break-even"
+      },
+      {
+        "p": "100",
+        "total": "1.07 normalized units",
+        "saving": "7% higher"
+      }
+    ],
+    "trace": [
+      {
+        "billing": "Pending",
+        "outage": "Pending",
+        "event": "Classifier result: mixed. Both obligations recorded as pending."
+      },
+      {
+        "billing": "Active",
+        "outage": "Pending",
+        "event": "Customer chooses billing first."
+      },
+      {
+        "billing": "Active",
+        "outage": "Pending",
+        "event": "Trusted service confirms account access."
+      },
+      {
+        "billing": "Active",
+        "outage": "Pending",
+        "event": "Authorized invoice facts retrieved."
+      },
+      {
+        "billing": "Awaiting confirmation",
+        "outage": "Pending",
+        "event": "An explanation is delivered; resolution still needs confirmation."
+      },
+      {
+        "billing": "Resolved",
+        "outage": "Pending",
+        "event": "The customer confirms the billing issue is resolved."
+      },
+      {
+        "billing": "Resolved",
+        "outage": "Active",
+        "event": "The workflow resumes the unresolved outage task."
+      },
+      {
+        "billing": "Resolved",
+        "outage": "Handed off",
+        "event": "Technical support accepts the handoff; the outage remains unresolved."
+      }
+    ]
+  },
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 1080
+      }
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "stage": {
+        "x": 0,
+        "y": 312.3125,
+        "width": 390,
+        "height": 219.375
+      }
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "print": {
+    "visible": 35,
+    "heights": [
+      1080
+    ]
+  }
+}

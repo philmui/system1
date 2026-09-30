@@ -1,0 +1,3 @@
+[codex] Starting Codex task thread.
+[codex] Thread ready (01a0ebb1-27bb-76e2-b677-a601b71d9f1c).
+Input exceeds the maximum length of 1048576 characters.

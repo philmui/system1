@@ -1,0 +1,9 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+PYZBLM+Salesforce-Sans-Bold          CID TrueType      Identity-H       yes yes yes    276  0
+ATNRNZ+Manrope-Bold                  CID TrueType      Identity-H       yes yes yes    280  0
+QZWCIG+Salesforce-Sans               CID TrueType      Identity-H       yes yes yes    284  0
+IMDLEJ+IBMPlexMono                   CID TrueType      Identity-H       yes yes yes    288  0
+JQOHTU+Hiragino-Sans-Semi-Bold       CID Type 0C (OT)  Identity-H       yes yes yes    292  0
+ZRDQJE+Hiragino-Sans                 CID Type 0C (OT)  Identity-H       yes yes yes    296  0
+HHHHIV+Arial                         CID TrueType      Identity-H       yes yes yes    300  0

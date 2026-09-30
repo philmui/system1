@@ -1,0 +1,512 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "34 \u00b7 l: DISAGGREGATED INTELLIGENCE [p34-text-0009]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      62.07133858267716,
+      328.4951171875,
+      13.0
+    ],
+    "baseline": [
+      88.0,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "34 \u00b7 r: 34 / 36 [p34-text-0010]",
+    "text": "34 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1755.9636220472441,
+      60.07133858267716,
+      74.798828125,
+      17.0
+    ],
+    "baseline": [
+      1755.9636220472441,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "34 \u00b7 close-eyebrow: 10 / BUILD, MEASURE, REVISE [p34-text-0011]",
+    "text": "10 / BUILD, MEASURE, REVISE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      89.0,
+      127.18913385826774,
+      341.369140625,
+      19.999999999999986
+    ],
+    "baseline": [
+      88.0,
+      143.18913385826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "34 \u00b7 close-title: Start with one decision that changes the path [p34-text-0012]",
+    "text": "Start with one decision that changes the path",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.0,
+      184.04425196850394,
+      1493.3828125,
+      71.0
+    ],
+    "baseline": [
+      88.0,
+      237.04425196850394
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "34 \u00b7 h2: Specialize judgment. Author the controls. Keep every task accounted for. [p34-text-0013]",
+    "text": "Specialize judgment.",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.0,
+      392.02425196850396,
+      683.8037109375,
+      71.0
+    ],
+    "baseline": [
+      88.0,
+      445.02425196850396
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "34 \u00b7 h2: Specialize judgment. Author the controls. Keep every task accounted for. [p34-text-0013]",
+    "text": "Author the controls.",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      89.0,
+      478.424251968504,
+      660.8037109375,
+      54.0
+    ],
+    "baseline": [
+      88.0,
+      531.424251968504
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "34 \u00b7 h2: Specialize judgment. Author the controls. Keep every task accounted for. [p34-text-0013]",
+    "text": "Keep every task",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0,
+      565.824251968504,
+      513.802734375,
+      69.0
+    ],
+    "baseline": [
+      88.0,
+      617.824251968504
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "34 \u00b7 h2: Specialize judgment. Author the controls. Keep every task accounted for. [p34-text-0013]",
+    "text": "accounted for.",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.0,
+      651.224251968504,
+      468.6025390625,
+      54.0
+    ],
+    "baseline": [
+      88.0,
+      704.224251968504
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "34 \u00b7 step: 01Write one bounded route question. [p34-text-0014]",
+    "text": "01",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 24.0,
+    "bbox": [
+      1001.0,
+      434.53023622047243,
+      27.0,
+      17.0
+    ],
+    "baseline": [
+      1000.0,
+      451.53023622047243
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "34 \u00b7 step: 01Write one bounded route question. [p34-text-0014]",
+    "text": "Write one bounded route question.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1053.8007874015748,
+      426.53023622047243,
+      558.0,
+      33.0
+    ],
+    "baseline": [
+      1053.8007874015748,
+      451.53023622047243
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "34 \u00b7 step: 02Label remedies, units and relationships. [p34-text-0015]",
+    "text": "02",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 24.0,
+    "bbox": [
+      1001.0,
+      525.1181102362204,
+      26.0,
+      17.0
+    ],
+    "baseline": [
+      1000.0,
+      542.1181102362204
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "34 \u00b7 step: 02Label remedies, units and relationships. [p34-text-0015]",
+    "text": "Label remedies, units and relationships.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1056.8007874015748,
+      517.1181102362204,
+      621.0,
+      33.0
+    ],
+    "baseline": [
+      1053.8007874015748,
+      542.1181102362204
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "34 \u00b7 step: 03Declare the node\u2019s input view. [p34-text-0016]",
+    "text": "03",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 24.0,
+    "bbox": [
+      1001.0,
+      615.7059842519685,
+      26.0,
+      17.0
+    ],
+    "baseline": [
+      1000.0,
+      632.7059842519685
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "34 \u00b7 step: 03Declare the node\u2019s input view. [p34-text-0016]",
+    "text": "Declare the node\u2019s input view.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1056.8007874015748,
+      607.7059842519685,
+      468.0,
+      33.0
+    ],
+    "baseline": [
+      1053.8007874015748,
+      632.7059842519685
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "34 \u00b7 step: 04Draw the guarded failure route. [p34-text-0017]",
+    "text": "04",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 24.0,
+    "bbox": [
+      1001.0,
+      706.2940157480315,
+      27.0,
+      17.0
+    ],
+    "baseline": [
+      1000.0,
+      723.2940157480315
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "34 \u00b7 step: 04Draw the guarded failure route. [p34-text-0017]",
+    "text": "Draw the guarded failure route.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1056.8007874015748,
+      698.2940157480315,
+      491.0,
+      33.0
+    ],
+    "baseline": [
+      1053.8007874015748,
+      723.2940157480315
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "34 \u00b7 step: 05Define complete-case acceptance. [p34-text-0018]",
+    "text": "05",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 24.0,
+    "bbox": [
+      1001.0,
+      796.8818897637796,
+      26.0,
+      17.0
+    ],
+    "baseline": [
+      1000.0,
+      813.8818897637796
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "34 \u00b7 step: 05Define complete-case acceptance. [p34-text-0018]",
+    "text": "Define complete-case acceptance.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1056.8007874015748,
+      788.8818897637796,
+      538.0,
+      33.0
+    ],
+    "baseline": [
+      1053.8007874015748,
+      813.8818897637796
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "34 \u00b7 close-text-1: Agentforce coordinates the work within quality, cost and latency limits. [p34-text-0019]",
+    "text": "Agentforce coordinates the work",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      88.0,
+      773.8420472440945,
+      568.994140625,
+      38.0
+    ],
+    "baseline": [
+      88.0,
+      801.8420472440945
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "34 \u00b7 close-text-1: Agentforce coordinates the work within quality, cost and latency limits. [p34-text-0019]",
+    "text": "within quality, cost and latency limits.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      88.0,
+      827.0420472440945,
+      649.1923828125,
+      38.0
+    ],
+    "baseline": [
+      88.0,
+      855.0420472440945
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.0,
+      972.996220472441,
+      313.0,
+      20.0
+    ],
+    "baseline": [
+      88.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      408.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      402.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      417.0,
+      972.996220472441,
+      228.0,
+      20.0
+    ],
+    "baseline": [
+      417.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      652.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      646.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": "Composable AI",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      661.0,
+      973.996220472441,
+      136.0,
+      19.0
+    ],
+    "baseline": [
+      661.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      804.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      798.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": "Jev + LangGraph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      813.0,
+      973.996220472441,
+      146.0,
+      19.0
+    ],
+    "baseline": [
+      813.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      966.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      960.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "34 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Composable AI \u00b7 [p34-text-0020]",
+    "text": "Throughline source check",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      975.0,
+      972.996220472441,
+      231.0,
+      20.0
+    ],
+    "baseline": [
+      975.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "34 \u00b7 span: Synthesis [p34-text-0021]",
+    "text": "Synthesis",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1749.9188976377952,
+      972.996220472441,
+      83.0,
+      20.0
+    ],
+    "baseline": [
+      1749.9188976377952,
+      987.996220472441
+    ]
+  }
+]

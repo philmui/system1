@@ -1,0 +1,410 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "02 \u00b7 l: DISAGGREGATED INTELLIGENCE [p02-text-0013]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.447265625,
+      56.99809639517716,
+      345.9423828125,
+      14.4541015625
+    ],
+    "baseline": [
+      88.0,
+      71.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "02 \u00b7 r: 02 / 36 [p02-text-0014]",
+    "text": "02 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.5573720472441,
+      56.97954170767716,
+      65.0947265625,
+      14.4443359375
+    ],
+    "baseline": [
+      1755.9636220472441,
+      71.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "02 \u00b7 benefits-eyebrow: 01 / ALLOCATE INTELLIGENCE [p02-text-0015]",
+    "text": "01 / ALLOCATE INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.65625,
+      123.61393854576774,
+      345.4990234375,
+      15.996093749999986
+    ],
+    "baseline": [
+      88.0,
+      139.18913385826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "02 \u00b7 benefits-title: Four benefits. One service to measure. [p02-text-0016]",
+    "text": "Four benefits. One service to measure.",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.484375,
+      162.64190821850394,
+      1247.353515625,
+      54.84375
+    ],
+    "baseline": [
+      88.0,
+      216.04425196850394
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "02 \u00b7 benefits-text-1: Reliability [p02-text-0017]",
+    "text": "Reliability",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      126.18359375,
+      581.6153137303149,
+      175.78125,
+      37.578125
+    ],
+    "baseline": [
+      123.0,
+      610.5801574803149
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "02 \u00b7 benefits-text-2: Test decisions and enforce required checks. [p02-text-0018]",
+    "text": "Test decisions and enforce",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.451171875,
+      652.060717273622,
+      334.904296875,
+      20.931640625
+    ],
+    "baseline": [
+      123.0,
+      672.431811023622
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "02 \u00b7 benefits-text-2: Test decisions and enforce required checks. [p02-text-0018]",
+    "text": "required checks.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      124.873046875,
+      692.039467273622,
+      203.376953125,
+      25.990234375
+    ],
+    "baseline": [
+      123.0,
+      712.191811023622
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "02 \u00b7 benefits-text-3: Predictability [p02-text-0019]",
+    "text": "Predictability",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      568.68359375,
+      581.6153137303149,
+      235.501953125,
+      37.578125
+    ],
+    "baseline": [
+      565.5,
+      610.5801574803149
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "02 \u00b7 benefits-text-4: Bound outputs, paths, and recovery behavior. [p02-text-0020]",
+    "text": "Bound outputs, paths,",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      567.564453125,
+      652.279467273622,
+      274.185546875,
+      25.990234375
+    ],
+    "baseline": [
+      565.5,
+      672.431811023622
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "02 \u00b7 benefits-text-4: Bound outputs, paths, and recovery behavior. [p02-text-0020]",
+    "text": "and recovery behavior.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      566.62109375,
+      692.039467273622,
+      284.12890625,
+      26.154296875
+    ],
+    "baseline": [
+      565.5,
+      712.191811023622
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "02 \u00b7 benefits-text-5: Lower cost [p02-text-0021]",
+    "text": "Lower cost",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1011.046875,
+      581.7910949803149,
+      198.458984375,
+      29.53125
+    ],
+    "baseline": [
+      1008.0,
+      610.5801574803149
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "02 \u00b7 benefits-text-6: Avoid expensive work that the case does not need. [p02-text-0022]",
+    "text": "Avoid expensive work that",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1008.41015625,
+      652.279467273622,
+      327.712890625,
+      25.990234375
+    ],
+    "baseline": [
+      1008.0,
+      672.431811023622
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "02 \u00b7 benefits-text-6: Avoid expensive work that the case does not need. [p02-text-0022]",
+    "text": "the case does not need.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1008.314453125,
+      692.039467273622,
+      302.935546875,
+      20.712890625
+    ],
+    "baseline": [
+      1008.0,
+      712.191811023622
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "02 \u00b7 benefits-text-7: Faster inference [p02-text-0023]",
+    "text": "Faster inference",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1453.546875,
+      581.4981262303149,
+      290.689453125,
+      29.82421875
+    ],
+    "baseline": [
+      1450.5,
+      610.5801574803149
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "02 \u00b7 benefits-text-8: Use short decision steps on frequent routes. [p02-text-0024]",
+    "text": "Use short decision steps",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1452.82421875,
+      652.279467273622,
+      305.6640625,
+      25.990234375
+    ],
+    "baseline": [
+      1450.5,
+      672.431811023622
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "02 \u00b7 benefits-text-8: Use short decision steps on frequent routes. [p02-text-0024]",
+    "text": "on frequent routes.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1451.306640625,
+      691.820717273622,
+      236.443359375,
+      26.208984375
+    ],
+    "baseline": [
+      1450.5,
+      712.191811023622
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "02 \u00b7 tag: CORRECT OUTCOMES [p02-text-0025]",
+    "text": "CORRECT OUTCOMES",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      123.9228515625,
+      344.5270287893701,
+      242.099609375,
+      15.9140625
+    ],
+    "baseline": [
+      123.0,
+      359.9996850393701
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "02 \u00b7 tag: CONTROLLED VARIATION [p02-text-0026]",
+    "text": "CONTROLLED VARIATION",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      566.4228515625,
+      344.5270287893701,
+      274.6328125,
+      15.9140625
+    ],
+    "baseline": [
+      565.5,
+      359.9996850393701
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "02 \u00b7 tag: LESS TOTAL WORK [p02-text-0027]",
+    "text": "LESS TOTAL WORK",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1009.599609375,
+      344.5270287893701,
+      206.3251953125,
+      15.9140625
+    ],
+    "baseline": [
+      1008.0,
+      359.9996850393701
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "02 \u00b7 tag: SHORTER CRITICAL PATH [p02-text-0028]",
+    "text": "SHORTER CRITICAL PATH",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1451.484375,
+      344.5270287893701,
+      277.623046875,
+      15.9140625
+    ],
+    "baseline": [
+      1450.5,
+      359.9996850393701
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "02 \u00b7 span: Jev + LangGraph \u00b7 Composable AI [p02-text-0029]",
+    "text": "Jev + LangGraph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.3251953125,
+      969.997197034941,
+      147.9990234375,
+      18.2021484375
+    ],
+    "baseline": [
+      88.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "02 \u00b7 span: Jev + LangGraph \u00b7 Composable AI [p02-text-0029]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      244.4013671875,
+      976.305790784941,
+      2.375,
+      2.375
+    ],
+    "baseline": [
+      238.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "02 \u00b7 span: Jev + LangGraph \u00b7 Composable AI [p02-text-0029]",
+    "text": "Composable AI",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      253.8349609375,
+      969.997197034941,
+      129.8955078125,
+      17.9609375
+    ],
+    "baseline": [
+      253.0,
+      983.996220472441
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "02 \u00b7 span: Mechanisms and objectives; no koa-action benchmark [p02-text-0030]",
+    "text": "Mechanisms and objectives; no koa-action benchmark",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1352.9238868725395,
+      970.321415784941,
+      467.0244140625,
+      17.68359375
+    ],
+    "baseline": [
+      1351.5225196850395,
+      983.996220472441
+    ]
+  }
+]

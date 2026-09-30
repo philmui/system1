@@ -1,0 +1,274 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "14 \u00b7 l: DISAGGREGATED INTELLIGENCE [p14-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      62.07133858267716,
+      328.4951171875,
+      13.0
+    ],
+    "baseline": [
+      88.0,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "14 \u00b7 r: 14 / 36 [p14-text-0006]",
+    "text": "14 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1755.9636220472441,
+      60.07133858267716,
+      74.798828125,
+      17.0
+    ],
+    "baseline": [
+      1755.9636220472441,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "14 \u00b7 endpointing-eyebrow: 03 / A PREFIX IS THE INPUT [p14-text-0007]",
+    "text": "03 / A PREFIX IS THE INPUT",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.0,
+      127.18913385826774,
+      317.0087890625,
+      17.999999999999986
+    ],
+    "baseline": [
+      88.0,
+      143.18913385826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "14 \u00b7 endpointing-title: Endpointing is a decision in time [p14-text-0008]",
+    "text": "Endpointing is a decision in time",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0,
+      184.04425196850394,
+      1043.1875,
+      71.0
+    ],
+    "baseline": [
+      88.0,
+      237.04425196850394
+    ]
+  },
+  {
+    "shapeId": "1005",
+    "name": "14 \u00b7 endpointing-text-1: Cut too early [p14-text-0009]",
+    "text": "Cut too early",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      89.0,
+      707.280157480315,
+      240.8828125,
+      40.0
+    ],
+    "baseline": [
+      88.0,
+      737.280157480315
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "14 \u00b7 endpointing-text-2: The customer is interrupted. [p14-text-0010]",
+    "text": "The customer is interrupted.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      88.0,
+      770.9250393700787,
+      323.0,
+      25.0
+    ],
+    "baseline": [
+      88.0,
+      789.9250393700787
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "14 \u00b7 endpointing-text-3: Wait too long [p14-text-0011]",
+    "text": "Wait too long",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      679.3333858267716,
+      707.280157480315,
+      243.8828125,
+      41.0
+    ],
+    "baseline": [
+      679.3333858267716,
+      737.280157480315
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "14 \u00b7 endpointing-text-4: The response is delayed. [p14-text-0012]",
+    "text": "The response is delayed.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      679.3333858267716,
+      770.9250393700787,
+      279.0,
+      25.0
+    ],
+    "baseline": [
+      679.3333858267716,
+      789.9250393700787
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "14 \u00b7 endpointing-text-5: Keep the boundary [p14-text-0013]",
+    "text": "Keep the boundary",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1272.6666141732283,
+      708.280157480315,
+      349.84375,
+      39.0
+    ],
+    "baseline": [
+      1270.6666141732283,
+      737.280157480315
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "14 \u00b7 endpointing-text-6: Future audio may label the prefix. It cannot enter the input. [p14-text-0014]",
+    "text": "Future audio may label the prefix.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1272.6666141732283,
+      770.9250393700787,
+      383.0,
+      25.0
+    ],
+    "baseline": [
+      1270.6666141732283,
+      789.9250393700787
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "14 \u00b7 endpointing-text-6: Future audio may label the prefix. It cannot enter the input. [p14-text-0014]",
+    "text": "It cannot enter the input.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1271.6666141732283,
+      806.4250393700787,
+      287.0,
+      25.0
+    ],
+    "baseline": [
+      1270.6666141732283,
+      825.4250393700787
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "14 \u00b7 span: Available audio prefix [p14-text-0015]",
+    "text": "Available audio prefix",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      157.76,
+      391.5,
+      300.0,
+      30.0
+    ],
+    "baseline": [
+      157.76,
+      414.5
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "14 \u00b7 span: Future audio [p14-text-0016]",
+    "text": "Future audio",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1258.48,
+      391.5,
+      173.0,
+      23.0
+    ],
+    "baseline": [
+      1256.48,
+      414.5
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "14 \u00b7 tag: DECISION NOW [p14-text-0017]",
+    "text": "DECISION NOW",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      944.56,
+      609.29968503937,
+      164.0,
+      15.0
+    ],
+    "baseline": [
+      942.56,
+      624.29968503937
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "14 \u00b7 span: Building with System One [p14-text-0018]",
+    "text": "Building with System One",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      972.996220472441,
+      227.0,
+      20.0
+    ],
+    "baseline": [
+      88.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "14 \u00b7 span: Illustrative waveform; proposed evaluation [p14-text-0019]",
+    "text": "Illustrative waveform; proposed evaluation",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1458.2549606299212,
+      972.996220472441,
+      377.0,
+      20.0
+    ],
+    "baseline": [
+      1457.2549606299212,
+      987.996220472441
+    ]
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "method": "librsvg/Pango with registered bundled fonts; Poppler outlines. Text geometry from actual isolated glyph ink.",
+  "font": {
+    "family": "Manrope ExtraLight",
+    "sha256": "fd749a8e43703ef8a4557a85198ce41766121169c4268a54d8c15f70820359de"
+  },
+  "limits": "This is local vector rendering, not a browser or Microsoft Office render.",
+  "artifacts": [
+    {
+      "name": "returns-comparison-access",
+      "canvas": {
+        "width": 1900,
+        "height": 900
+      },
+      "textCount": 28,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "75292284600e248ba5b668f86069145d25155254683730f70e9a1ddd9c71ad0c",
+      "portableSha256": "0f5ebf93ebdbf07eb3b70f32f6ddf0e82fc19ebb33622fe9d45035d3ed5e7428"
+    },
+    {
+      "name": "returns-comparison-routing",
+      "canvas": {
+        "width": 1900,
+        "height": 900
+      },
+      "textCount": 28,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "bd75af758ef834ce190d704ee2c537b95c2762008e2e5c838d4391d4eb4f57a0",
+      "portableSha256": "7d9860994d7ea3cd849113be4b97708cb7c1c419488e00e9e9b47dd7c5e2de23"
+    },
+    {
+      "name": "returns-reasoning-gate",
+      "canvas": {
+        "width": 1900,
+        "height": 900
+      },
+      "textCount": 24,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "3ab20ffce923f9b6b6170f31378a83407f37e519e0a2459929fee1561d7ebbf1",
+      "portableSha256": "74cb4b2ddbf1229952635aecf23ee66f8211c45dfda55a6b41bf36c972793ea9"
+    },
+    {
+      "name": "returns-whole-item-policy",
+      "canvas": {
+        "width": 1900,
+        "height": 900
+      },
+      "textCount": 26,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "7bc467d3624091cdab5d7070d188937daa568904e7fbec6d55d4ac9293480a28",
+      "portableSha256": "ed14bc9e8441bbf6ef8c0e80f8daefc90da170c0ea38364591280480d1ac3fd4"
+    },
+    {
+      "name": "returns-slide-access",
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "textCount": 25,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "9ab7a3f763cdd165c131e4cf26575936adf898a5e6d6386514fd872216c594fe",
+      "portableSha256": "45c0ca959c491397a17c1b0daacb0af74e5e93114792f09b813b44ecb8b817f8"
+    },
+    {
+      "name": "returns-slide-routing",
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "textCount": 24,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "819056366b1d6f64bf5fce42b969a6776aa886f90e7189cda17d8b8d0af39c2d",
+      "portableSha256": "84b653bc8b73bf4ca2d96c17b6ab928d4524edcbe2c5f574b8e9df7bdc948040"
+    },
+    {
+      "name": "returns-slide-reasoning-gate",
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "textCount": 21,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "4864b37bfbc4bfc397b83afb8301e979a689572a5098c0b9bb3b71f48ff00b32",
+      "portableSha256": "117ee81ce90e891ae46153563d0cb723ed7438aca363c4cdff8aa99c73aabcd8"
+    },
+    {
+      "name": "returns-slide-whole-item-policy",
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "textCount": 23,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "a8d5ac87e778e018c6d9501ad081bc5de6a659cd109619b61ef7e71eb2395623",
+      "portableSha256": "0f22279b373a07870355eea00dee6e60ede22fb6d945e1789c01ec0bc83a03d0"
+    },
+    {
+      "name": "returns-branching-component-library",
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "textCount": 12,
+      "outOfBounds": [],
+      "overlaps": [],
+      "nativeVector": true,
+      "sourceSha256": "849ef40d3872af27cd3c4d249c7f4d12474a0aac3ed9300ece19b99491ad6e1b",
+      "portableSha256": "644d42dcaefe12720bc8883dafb88217853db3e7a8989e5b729226348f810b9e"
+    }
+  ],
+  "passed": true
+}

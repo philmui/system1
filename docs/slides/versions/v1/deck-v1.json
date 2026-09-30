@@ -1,0 +1,708 @@
+{
+  "title": "Disaggregated intelligence — koa-action, Agent Graph & AgentScript",
+  "version": 1,
+  "sources": {
+    "S1": [
+      "Agent Graph / guided determinism",
+      "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/"
+    ],
+    "S2": [
+      "Reliable enterprise agents",
+      "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/"
+    ],
+    "S3": [
+      "AgentScript control plane",
+      "https://www.salesforce.com/blog/agent-script-control-plane/"
+    ],
+    "S4": [
+      "Guided determinism tutorial",
+      "https://everythingagents.org/topics/guided-determinism"
+    ],
+    "S5": [
+      "AgentScript specification",
+      "https://github.com/salesforce/agentscript/blob/main/SPEC.md"
+    ],
+    "L1": [
+      "Jev + LangGraph",
+      "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+    ],
+    "L2": [
+      "A harness with Jev",
+      "https://www.langchain.com/blog/building-a-harness-with-jev"
+    ],
+    "L3": [
+      "Jev in LangSmith Evals",
+      "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals"
+    ],
+    "L4": [
+      "Jev-as-a-Judge",
+      "https://www.langchain.com/blog/jev-agent-evals-langsmith"
+    ],
+    "L5": [
+      "Runtime, framework, harness",
+      "https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph"
+    ],
+    "T1": [
+      "Composable AI",
+      "https://typesafe.ai/manifesto"
+    ],
+    "T2": [
+      "TypeSafe quickstart",
+      "https://docs.typesafe.ai/introduction/quickstart"
+    ],
+    "T3": [
+      "Confidence routing",
+      "https://docs.typesafe.ai/patterns/confidence-routing"
+    ],
+    "T4": [
+      "Intent routing",
+      "https://docs.typesafe.ai/patterns/intent-routing"
+    ],
+    "T5": [
+      "Structured decision criteria",
+      "https://docs.typesafe.ai/primitives/advanced"
+    ],
+    "T6": [
+      "Building with System One",
+      "https://docs.typesafe.ai/concepts/how-to-build-with-system-one"
+    ],
+    "T7": [
+      "Confidence semantics",
+      "https://docs.typesafe.ai/confidence"
+    ],
+    "T8": [
+      "Noul",
+      "https://docs.typesafe.ai/primitives/noul"
+    ],
+    "T9": [
+      "Score",
+      "https://docs.typesafe.ai/primitives/score"
+    ]
+  },
+  "slides": [
+    {
+      "id": "opening",
+      "title": "Disaggregated intelligence",
+      "eyebrow": "Enterprise AI / A practical tutorial",
+      "layout": "S03",
+      "theme": "hero light",
+      "body": "<div class=\"cover-split\"><div class=\"half\"><h1 data-edit-id=\"opening-main\">Disaggregated<br>intelligence</h1><p class=\"lead\" data-edit-id=\"opening-sub\">Enterprise reasoning with<br><code>koa-action</code>, Agent Graph<br>and AgentScript.</p><p class=\"small\" style=\"margin-top:40px\">Reliability and cost start with<br>how you allocate the work.</p></div><div class=\"half\" style=\"height:640px\"><div class=\"diagram\"><svg viewBox=\"0 0 900 630\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr1\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M450 110V185\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr1)\" /><path class=\"draw\" d=\"M450 300V375H135V445\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr1)\" /><path class=\"draw\" d=\"M450 375V445\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr1)\" /><path class=\"draw\" d=\"M450 375H765V445\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr1)\" /></svg><div class=\"node sand\" style=\"left:5.556%;top:1.587%;width:88.889%;height:15.873%\"><span class=\"mini\">Authored controls</span><strong>AgentScript</strong></div><div class=\"node mint\" style=\"left:5.556%;top:30.159%;width:88.889%;height:17.460%\"><span class=\"mini\">State + transitions</span><strong>Agent Graph</strong></div><div class=\"node lilac\" style=\"left:0.000%;top:71.429%;width:30.000%;height:23.016%\"><strong>koa-action</strong><small>Bounded judgment</small></div><div class=\"node mint\" style=\"left:35.000%;top:71.429%;width:30.000%;height:23.016%\"><strong>Reasoning model</strong><small>Open-ended work</small></div><div class=\"node blue\" style=\"left:70.000%;top:71.429%;width:30.000%;height:23.016%\"><strong>Services</strong><small>Facts + authority</small></div></div></div></div>",
+      "sources": [
+        "S1",
+        "T1"
+      ],
+      "purpose": "Introduce disaggregated intelligence as an engineering allocation problem.",
+      "talk": [
+        "System One is a useful engineering term for specialized models that answer bounded questions. It is not a claim about human cognition.",
+        "The tutorial will construct a service workflow, inspect its failure boundaries, and define how reliability, cost, and speed would be evaluated.",
+        "The Salesforce composition is proposed. Public sources do not establish a koa-action SDK, training interface, or measured benchmark."
+      ],
+      "transition": "First connect the architecture to the four benefits we want.",
+      "status": "Proposed Salesforce composition",
+      "minutes": 0.7
+    },
+    {
+      "id": "benefits",
+      "title": "Four benefits. One service to measure.",
+      "eyebrow": "01 / Allocate intelligence",
+      "layout": "S19",
+      "theme": "light",
+      "body": "<div class=\"four-cards\"><div class=\"card mint\"><span class=tag>Correct outcomes</span><div class=\"mini-visual\"><svg viewBox=\"0 0 190 140\" aria-hidden=\"true\"><g stroke=\"currentColor\" stroke-width=\"5\" fill=\"none\"><path d=\"M35 65L75 105L145 25\"/></g></svg></div><h3>Reliability</h3><p>Test decisions and enforce required checks.</p></div><div class=\"card lilac\"><span class=tag>Controlled variation</span><div class=\"mini-visual\"><svg viewBox=\"0 0 190 140\" aria-hidden=\"true\"><g stroke=\"currentColor\" stroke-width=\"5\" fill=\"none\"><rect x=\"35\" y=\"25\" width=\"110\" height=\"85\" rx=\"0\"/><path d=\"M35 55H145M65 55V110\"/></g></svg></div><h3>Predictability</h3><p>Bound outputs, paths, and recovery behavior.</p></div><div class=\"card sand\"><span class=tag>Less total work</span><div class=\"mini-visual\"><svg viewBox=\"0 0 190 140\" aria-hidden=\"true\"><g stroke=\"currentColor\" stroke-width=\"5\" fill=\"none\"><path d=\"M35 110V55H60V110M85 110V30H110V110M135 110V70H160V110\"/></g></svg></div><h3>Lower cost</h3><p>Avoid expensive work that the case does not need.</p></div><div class=\"card blue\"><span class=tag>Shorter critical path</span><div class=\"mini-visual\"><svg viewBox=\"0 0 190 140\" aria-hidden=\"true\"><g stroke=\"currentColor\" stroke-width=\"5\" fill=\"none\"><circle cx=\"90\" cy=\"68\" r=\"50\"/><path d=\"M90 25V68L125 90\"/></g></svg></div><h3>Faster inference</h3><p>Use short decision steps on frequent routes.</p></div></div>",
+      "sources": [
+        "L1",
+        "T1"
+      ],
+      "purpose": "Connect requested benefits to concrete mechanisms.",
+      "talk": [
+        "Significantly lower decision cost and faster inference are the opportunity behind specialization. Their size must be established for the deployed workload.",
+        "Reliability means acceptable outcomes. Predictability includes stable output contracts and controlled paths; it is not proof that the semantic answer is correct.",
+        "The same complete customer case remains the unit of value. Extra handoffs can consume a primitive-level saving."
+      ],
+      "transition": "Follow one case through the rest of the tutorial.",
+      "status": "Mechanisms and objectives; no koa-action benchmark",
+      "minutes": 1
+    },
+    {
+      "id": "case",
+      "title": "One customer, two obligations",
+      "eyebrow": "01 / Service invariant",
+      "layout": "S08",
+      "theme": "dark",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><div class=\"quote\">“Why was I charged twice,<br>and why is my service down?”</div><p class=\"small\" style=\"margin-top:32px\">One message creates two obligations.</p></div><div class=\"half\"><h3>The case ledger</h3><div class=\"ledger\"><div class=\"ledger-row\"><span>Invoice</span><span>Requested</span><span class=\"status\">Pending</span></div><div class=\"ledger-row\"><span>Outage</span><span>Requested</span><span class=\"status\">Pending</span></div></div><p class=\"lead\" style=\"margin-top:60px\">What must survive<br>every transition?</p></div></div>",
+      "sources": [
+        "S1"
+      ],
+      "purpose": "Establish the recurring case and its invariant.",
+      "talk": [
+        "Ask the audience to name the invariant: neither request should disappear when the agent changes topics.",
+        "A task may be resolved, withdrawn by the customer, or handed off with ownership recorded. These are different statuses; handoff does not equal resolution.",
+        "This is a constructed example used to explain state and routing, not a reported customer deployment."
+      ],
+      "transition": "Assign an owner to each kind of work.",
+      "status": "Constructed service example",
+      "minutes": 1.1
+    },
+    {
+      "id": "ownership",
+      "title": "Give each responsibility an owner",
+      "eyebrow": "01 / Architecture",
+      "layout": "S17",
+      "theme": "light",
+      "body": "<div class=\"diagram\"><svg viewBox=\"0 0 1600 600\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr2\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M800 85V155\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr2)\" /><path class=\"draw\" d=\"M800 245V300H182V340\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr2)\" /><path class=\"draw\" d=\"M800 300H592V340\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr2)\" /><path class=\"draw\" d=\"M800 300H1002V340\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr2)\" /><path class=\"draw\" d=\"M800 300H1412V340\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr2)\" /></svg><div class=\"node sand\" style=\"left:9.375%;top:0.000%;width:81.250%;height:14.167%\"><strong>AgentScript</strong><small>Defines contracts, sequencing, availability, and bound inputs</small></div><div class=\"node mint\" style=\"left:9.375%;top:26.667%;width:81.250%;height:14.167%\"><strong>Agent Graph</strong><small>Executes the workflow and retains task state</small></div><div class=\"node lilac\" style=\"left:0.000%;top:57.500%;width:22.812%;height:30.000%\"><span class=\"mini\">Interpret</span><strong>koa-action</strong><small>Bounded semantic decisions</small></div><div class=\"node mint\" style=\"left:25.625%;top:57.500%;width:22.812%;height:30.000%\"><span class=\"mini\">Reason</span><strong>Generative model</strong><small>Unfamiliar explanations</small></div><div class=\"node blue\" style=\"left:51.250%;top:57.500%;width:22.812%;height:30.000%\"><span class=\"mini\">Act</span><strong>Backend services</strong><small>Authoritative facts + permissions</small></div><div class=\"node peach\" style=\"left:76.875%;top:57.500%;width:22.812%;height:30.000%\"><span class=\"mini\">Review</span><strong>Human path</strong><small>When policy or ambiguity requires it</small></div></div>",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "purpose": "Distinguish models, execution, configuration, and authority.",
+      "talk": [
+        "AgentScript is the authoring and control language; Agent Graph is the managed runtime that executes configured behavior.",
+        "The models produce interpretations or explanations. Backend services retain authority over access and writes, while human review is an explicit branch.",
+        "The diagram denotes coordination, not ownership of every component by a model. Each case invokes only the components its configured path needs."
+      ],
+      "transition": "Now move process rules from prose into inspectable structure.",
+      "status": "Proposed composition; no native adapter asserted",
+      "minutes": 1
+    },
+    {
+      "id": "topology",
+      "title": "Process knowledge becomes topology",
+      "eyebrow": "02 / Encode the sequence",
+      "layout": "S08",
+      "theme": "hero light",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><p class=\"tag\">A process buried in instructions</p><div class=\"quote\" style=\"font-size:42px\">Before explaining an invoice, check account access. Keep other requests pending. Retrieve the invoice first. Do not infer the balance.</div><p class=\"small\" style=\"margin-top:30px\">Definitions and evidence still belong in node context.</p></div><div class=\"half\"><div class=\"diagram\"><svg viewBox=\"0 0 750 520\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr3\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M375 150V210\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr3)\" /><path class=\"draw\" d=\"M375 315V375\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr3)\" /></svg><div class=\"node blue\" style=\"left:8.000%;top:9.615%;width:84.000%;height:19.231%\"><strong>Verify caller + account access</strong></div><div class=\"node mint\" style=\"left:8.000%;top:41.346%;width:84.000%;height:19.231%\"><strong>Retrieve authorized invoice facts</strong></div><div class=\"node lilac\" style=\"left:8.000%;top:73.077%;width:84.000%;height:19.231%\"><strong>Explain the charge using those facts</strong></div></div></div></div>",
+      "sources": [
+        "L1",
+        "S1"
+      ],
+      "purpose": "Teach which decisions, in which order, over which state.",
+      "talk": [
+        "Topology encodes procedural domain knowledge: which step may run, what must precede it, and where its input facts come from.",
+        "The transformation does not remove all domain knowledge from prompts. Category definitions and authorized facts remain necessary within model calls.",
+        "A graph can enforce a poor process consistently. Review and test the topology itself."
+      ],
+      "transition": "Locate the runtime within the broader agent harness.",
+      "status": "Architectural pattern",
+      "minutes": 1
+    },
+    {
+      "id": "layers",
+      "title": "A runtime sits beneath the harness",
+      "eyebrow": "02 / Keep the layers distinct",
+      "layout": "S05",
+      "theme": "dark",
+      "body": "<div class=\"stack-row\"><div class=\"stack-block lilac\" style=\"background:var(--lilac);color:var(--ink)\"><h3>Harness</h3><div><p>The agent loop, context strategy, tools, and operating policy.</p><p class=\"small\" style=\"margin-top:12px\">Example in LangChain’s stack: Deep Agents.</p></div></div><div class=\"stack-block mint\" style=\"background:var(--mint);color:var(--ink)\"><h3>Runtime</h3><div><p>State transitions and the execution of the configured workflow.</p><p class=\"small\" style=\"margin-top:12px\">Agent Graph is analogous at this layer to LangGraph.</p></div></div><div class=\"stack-block sand\" style=\"background:var(--sand);color:var(--ink)\"><h3>Configuration</h3><div><p>The authored rules and bindings that shape behavior.</p><p class=\"small\" style=\"margin-top:12px\">AgentScript configures Salesforce’s runtime.</p></div></div></div>",
+      "sources": [
+        "L5",
+        "S3"
+      ],
+      "purpose": "Prevent runtime/harness/configuration conflation.",
+      "talk": [
+        "LangChain distinguishes its framework, LangGraph runtime, and Deep Agents harness. The comparison helps locate responsibilities.",
+        "In this Salesforce example the configured agent is the broader harness, with Agent Graph providing runtime execution and AgentScript authoring control.",
+        "This is an architectural analogy, not LangGraph API compatibility or a claim that Agent Graph ships Deep Agents defaults. The public AgentScript repo contains tooling, not the managed runtime."
+      ],
+      "transition": "Define the first decision before selecting its integration.",
+      "status": "Architectural comparison, not API equivalence",
+      "minutes": 1
+    },
+    {
+      "id": "contract",
+      "title": "Start with a decision contract",
+      "eyebrow": "03 / Step 1",
+      "layout": "S08",
+      "theme": "light",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><div class=\"card sand\"><span class=\"tag\">Question</span><h3>Which service route<br>is supported now?</h3><div class=\"rule-line\"></div><p>Read the conversation so far<br>and the relevant service context.</p></div><p class=\"small\" style=\"margin-top:30px\">Version the question and category definitions.</p></div><div class=\"half\"><h3>Allowed answers</h3><div><span class=\"pill\">billing</span><span class=\"pill\">technical</span><span class=\"pill\">account_access</span><span class=\"pill\">mixed</span><span class=\"pill\">unclear</span></div><div class=\"card peach\" style=\"margin-top:36px\"><span class=\"tag\">Unusable or ambiguous result</span><p>Clarify within a budget,<br>then use an explicit handoff.</p></div></div></div>",
+      "sources": [
+        "T2",
+        "T4",
+        "T5"
+      ],
+      "purpose": "Give a bounded task a testable contract.",
+      "talk": [
+        "The labels are application choices, not a documented koa-action response schema. Mixed and unclear are first-class outcomes.",
+        "Provide positive and negative examples at the category boundaries. The same contract controls labeling and evaluation.",
+        "A timeout or malformed result must not default into a business transaction. Specify its fallback separately from semantic ambiguity."
+      ],
+      "transition": "Match the question to the right primitive.",
+      "status": "Illustrative application contract",
+      "minutes": 1
+    },
+    {
+      "id": "primitives",
+      "title": "Four bounded decisions, four contracts",
+      "eyebrow": "03 / System One capabilities",
+      "layout": "S19",
+      "theme": "light",
+      "body": "<div class=\"four-cards\"><div class=\"card lilac\"><span class=tag>01</span><h3>Classification</h3><p>Which route?<br><br>Select a category.</p></div><div class=\"card sand\"><span class=tag>02</span><h3>Noul</h3><p>Cancellation requested?<br><br>Assess a yes/no proposition.</p></div><div class=\"card mint\"><span class=tag>03</span><h3>Scoring</h3><p>How urgent?<br><br>Use an anchored rubric.</p></div><div class=\"card blue\"><span class=tag>04</span><h3>Endpointing</h3><p>Has the turn ended?<br><br>Judge the available prefix.</p></div></div>",
+      "sources": [
+        "T2",
+        "T8",
+        "T9"
+      ],
+      "purpose": "Cover the four user-specified koa-action capabilities.",
+      "talk": [
+        "The user brief supplies classification, noul, scoring, and semantic endpointing as koa-action capabilities.",
+        "TypeSafe documents analogous decision concepts, but its SDK fields, batching, calibration, and training claims do not define a Salesforce interface.",
+        "Each primitive needs its own target and error measure. A rubric score and the probability of a binary proposition are not interchangeable."
+      ],
+      "transition": "Make that semantic distinction tangible.",
+      "status": "koa-action capabilities: supplied brief; interfaces unspecified",
+      "minutes": 1
+    },
+    {
+      "id": "semantics",
+      "title": "Probability and intensity answer different questions",
+      "eyebrow": "03 / Give every number a meaning",
+      "layout": "S08",
+      "theme": "dark",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><div class=\"card sand\"><span class=\"tag\">Noul · TypeSafe semantics</span><h3>Was cancellation requested?</h3><p>A probability-valued<br>yes/no judgment.</p><div class=\"rule-line\"></div><p class=\"small\">An uncertain answer does not mean<br>“a medium amount of cancellation.”</p></div></div><div class=\"half\"><div class=\"card mint\"><span class=\"tag\">Score · illustrative rubric</span><h3>How urgent is the issue?</h3><div class=\"ledger\"><p style=\"padding:14px 0\">Can wait</p><p style=\"padding:14px 0;border-top:1px solid #7c9b91\">Work disrupted</p><p style=\"padding:14px 0;border-top:1px solid #7c9b91\">Critical service blocked</p></div></div></div></div>",
+      "sources": [
+        "T8",
+        "T9"
+      ],
+      "purpose": "Explain binary proposition estimates versus severity rubrics.",
+      "talk": [
+        "TypeSafe’s Noul is the probability of the yes answer; its Score uses ordered rubric levels and can be fractional.",
+        "A mean rubric score can hide different distributions. Preserve the output meaning that the downstream rule actually uses.",
+        "The corresponding koa-action fields, ranges, and calibration require their own verified contract. No numeric Salesforce response is shown here."
+      ],
+      "transition": "A decision about when to respond has an additional time boundary.",
+      "status": "TypeSafe semantics / proposed Salesforce use",
+      "minutes": 1
+    },
+    {
+      "id": "endpointing",
+      "title": "Endpointing is a decision in time",
+      "eyebrow": "03 / A prefix is the input",
+      "layout": "S17",
+      "theme": "hero light",
+      "body": "<div class=\"system-diagram\"><div style=\"height:370px;position:relative\"><svg viewBox=\"0 0 1600 350\" style=\"width:100%;height:100%\" aria-hidden=\"true\"><rect x=\"0\" y=\"45\" width=\"990\" height=\"265\" fill=\"#d3e8df\"/><rect x=\"1000\" y=\"45\" width=\"600\" height=\"265\" fill=\"#dfe4f4\" opacity=\".55\"/><polyline points=\"20,185 45,252 70,111 95,246 120,117 145,240 170,123 195,234 220,129 245,228 270,135 295,222 320,141 345,216 370,147 395,290 420,153 445,284 470,159 495,278 520,165 545,272 570,171 595,266 620,177 645,260 670,183 695,254 720,109 745,248 770,115 795,242 820,121 845,236 870,127 895,230 920,133 945,224 970,139 995,218 1020,145 1045,292 1070,151 1095,286 1120,157 1145,280 1170,163 1195,274 1220,169 1245,268 1270,175 1295,262 1320,181 1345,256 1370,107 1395,250 1420,113 1445,244 1470,119 1495,238\" fill=\"none\" stroke=\"#35594d\" stroke-width=\"4\"/><path d=\"M990 20V335\" stroke=\"#243e42\" stroke-width=\"4\" stroke-dasharray=\"8 8\"/></svg><span style=\"position:absolute;left:4%;top:25%;font-size:30px\">Available audio prefix</span><span style=\"position:absolute;left:67%;top:25%;font-size:30px\">Future audio</span><span class=\"tag\" style=\"position:absolute;left:49%;bottom:2%\">Decision now</span></div><div class=\"hero-stats\" style=\"margin-top:36px\"><div><h3>Cut too early</h3><p>The customer is interrupted.</p></div><div><h3>Wait too long</h3><p>The response is delayed.</p></div><div><h3>Keep the boundary</h3><p>Future audio supplies labels only.</p></div></div></div>",
+      "sources": [
+        "T6"
+      ],
+      "purpose": "Explain semantic endpointing and temporal leakage.",
+      "talk": [
+        "The waveform is illustrative. The task asks whether a spoken turn has ended using only the available prefix.",
+        "Future speech may establish the reference label, but it must not become part of the earlier input.",
+        "Measure premature cutoff and delay separately. Keep all prefixes of a conversation together when splitting data."
+      ],
+      "transition": "Next decide which decisions may run in parallel.",
+      "status": "Illustrative waveform; proposed evaluation",
+      "minutes": 1
+    },
+    {
+      "id": "dependencies",
+      "title": "Split work along information dependencies",
+      "eyebrow": "04 / Step 2",
+      "layout": "S08",
+      "theme": "light",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><div class=\"diagram\"><svg viewBox=\"0 0 750 520\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr4\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M375 100V165H170V225\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr4)\" /><path class=\"draw\" d=\"M375 165H580V225\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr4)\" /></svg><div class=\"node sand\" style=\"left:17.333%;top:1.923%;width:65.333%;height:17.308%\"><strong>Same decision-time snapshot</strong></div><div class=\"node lilac\" style=\"left:0.000%;top:44.231%;width:45.333%;height:30.769%\"><strong>Intent</strong><small>Which route?</small></div><div class=\"node lilac\" style=\"left:54.667%;top:44.231%;width:45.333%;height:30.769%\"><strong>Cancellation</strong><small>Requested or not?</small></div><div class=\"node label\" style=\"left:4.000%;top:81.731%;width:93.333%;height:17.308%;font-size:24px\">Independent execution can still produce correlated errors.</div></div></div><div class=\"half\"><div class=\"diagram\"><svg viewBox=\"0 0 750 520\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr5\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M375 110V180\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr5)\" /><path class=\"draw\" d=\"M375 285V355\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr5)\" /></svg><div class=\"node blue\" style=\"left:6.000%;top:1.923%;width:88.000%;height:19.231%\"><strong>Verify account access</strong></div><div class=\"node mint\" style=\"left:6.000%;top:35.577%;width:88.000%;height:19.231%\"><strong>Retrieve invoice facts</strong></div><div class=\"node lilac\" style=\"left:6.000%;top:69.231%;width:88.000%;height:19.231%\"><strong>Explain the invoice</strong></div></div></div></div>",
+      "sources": [
+        "T6",
+        "L2"
+      ],
+      "purpose": "Separate execution independence from causality.",
+      "talk": [
+        "Independent questions can read the same snapshot; a later step that needs a new fact must wait for that fact.",
+        "This is a workflow-design pattern, not a claim about a native koa-action batching API.",
+        "Parallel question execution does not imply statistically independent errors. Missing evidence can affect several judgments at once."
+      ],
+      "transition": "Make each node’s evidence window explicit.",
+      "status": "Proposed scheduling pattern",
+      "minutes": 1
+    },
+    {
+      "id": "context",
+      "title": "Each node sees a different view of the case",
+      "eyebrow": "04 / Context is part of topology",
+      "layout": "S17",
+      "theme": "dark",
+      "body": "<div class=\"diagram\"><svg viewBox=\"0 0 1600 610\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr6\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M400 130H540V110H635\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr6)\" /><path class=\"draw\" d=\"M400 285H635\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr6)\" /><path class=\"draw\" d=\"M400 455H540V500H635\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr6)\" /></svg><div class=\"node sand\" style=\"left:0.000%;top:8.197%;width:25.000%;height:78.689%\"><span class=\"mini\">Case state</span><strong>Conversation<br><br>Trusted identity<br><br>Invoice facts<br><br>Pending tasks</strong></div><div class=\"node lilac\" style=\"left:40.000%;top:6.557%;width:57.500%;height:22.951%\"><strong>Route decision</strong><small>Reads the request + category definitions</small></div><div class=\"node blue\" style=\"left:40.000%;top:38.525%;width:57.500%;height:22.951%\"><strong>Access check</strong><small>Reads trusted principal + account relationship</small></div><div class=\"node mint\" style=\"left:40.000%;top:70.492%;width:57.500%;height:22.951%\"><strong>Explanation</strong><small>Reads the request + authorized invoice facts</small></div></div>",
+      "sources": [
+        "S1",
+        "S3",
+        "T6"
+      ],
+      "purpose": "Teach context boundaries as authored data dependencies.",
+      "talk": [
+        "Graph design determines what information exists before a node runs and which part of state it receives.",
+        "A customer-provided account identifier does not become a verified identity because it appears in a model output.",
+        "Narrowing context can reduce unnecessary processing, but removing a required fact can reduce quality. Version and evaluate the context selection."
+      ],
+      "transition": "Use that state to preserve the mixed request.",
+      "status": "Proposed node contracts",
+      "minutes": 1
+    },
+    {
+      "id": "mixed",
+      "title": "State preserves work across a branch",
+      "eyebrow": "04 / Step 3",
+      "layout": "S17",
+      "theme": "light",
+      "body": "<div class=\"diagram\"><svg viewBox=\"0 0 1600 610\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr7\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M340 170H465\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr7)\" /><path class=\"draw\" d=\"M890 170H970V110H1035\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr7)\" /><path class=\"draw\" d=\"M1305 190V325\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr7)\" /><path class=\"draw\" d=\"M680 240V385\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr7)\" stroke-dasharray=\"8 6\"/></svg><div class=\"node lilac\" style=\"left:0.000%;top:16.393%;width:21.250%;height:22.951%\"><strong>Route = mixed</strong><small>Both requests retained</small></div><div class=\"node sand\" style=\"left:29.375%;top:16.393%;width:26.250%;height:22.951%\"><strong>Clarify priority</strong><small>Customer chooses billing</small></div><div class=\"node mint\" style=\"left:65.000%;top:4.918%;width:33.125%;height:26.230%\"><strong>Billing active</strong><small>Explain, then check resolution</small></div><div class=\"node blue\" style=\"left:65.000%;top:54.098%;width:33.125%;height:26.230%\"><strong>Outage pending</strong><small>Resume or record explicit reprioritization</small></div><div class=\"node peach\" style=\"left:28.125%;top:63.934%;width:26.875%;height:22.951%\"><strong>Clarification budget</strong><small>Then a recorded handoff</small></div></div>",
+      "sources": [
+        "S1"
+      ],
+      "purpose": "Make persistent obligations visible.",
+      "talk": [
+        "The application records requested, active, resolved, and handed-off task states separately.",
+        "An explanation is an event, not a proof of resolution. The completion rule should reference the actual business outcome or customer confirmation.",
+        "The clarification loop has a time or turn budget. A handoff retains outstanding work and receiving ownership."
+      ],
+      "transition": "This is where neural interpretation meets explicit control.",
+      "status": "Constructed mixed-request path",
+      "minutes": 1
+    },
+    {
+      "id": "guided",
+      "title": "Guided determinism gives uncertainty a place",
+      "eyebrow": "05 / Neuro-symbolic reasoning",
+      "layout": "S12",
+      "theme": "hero dark",
+      "body": "<div class=\"manifesto-top\">Neural interpretation<br>inside an authored process.</div><div class=\"ink-banner-full\" style=\"background:var(--mint);color:var(--ink)\">AgentScript defines where model choice is available.<br>Agent Graph executes the configured transitions.</div><div class=\"hero-stats\" style=\"margin-top:55px\"><div><h3>Interpretation</h3><p>Fallible semantic judgment.</p></div><div><h3>Procedure</h3><p>Required steps and state changes.</p></div><div><h3>Authority</h3><p>Enforced by trusted services.</p></div></div>",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "purpose": "Explain neuro-symbolic reasoning in plain terms.",
+      "talk": [
+        "Neuro-symbolic reasoning combines learned interpretation with explicit software rules and state.",
+        "Guided determinism describes constraints on the effect of model judgments. It does not guarantee perfect classification, identical prose, or eventual completion.",
+        "The configuration and the model can evolve independently when their boundary is explicit and tested."
+      ],
+      "transition": "Three AgentScript concepts make that boundary concrete.",
+      "status": "Documented architecture; illustrative workflow",
+      "minutes": 1
+    },
+    {
+      "id": "agentscript",
+      "title": "Availability and required execution differ",
+      "eyebrow": "05 / Step 4",
+      "layout": "S13",
+      "theme": "light",
+      "body": "<div class=\"three-forces\"><div class=\"card ink\"><span class=\"tag\">The service boundary</span><h3 style=\"font-size:64px;margin-top:60px\">A model signal<br>cannot grant<br>account access.</h3><p style=\"margin-top:50px\">The backend rechecks<br>the caller and policy<br>before a write.</p></div><div class=\"force-list\"><div class=\"card mint\"><span class=tag>Required work</span><h3><code>run</code> / procedure</h3><p>Use explicit procedure logic for checks that must execute.</p></div><div class=\"card lilac\"><span class=tag>Permitted choices</span><h3><code>available when</code></h3><p>Filter which actions the model may select. Availability does not force selection.</p></div><div class=\"card blue\"><span class=tag>Controlled arguments</span><h3><code>with</code> / bound input</h3><p>Bind consequential inputs from trusted state.</p></div></div></div>",
+      "sources": [
+        "S3",
+        "S5"
+      ],
+      "purpose": "Teach precise AgentScript control semantics.",
+      "talk": [
+        "These are language constructs, not a runnable integration. Action definitions, dialect, and deployment configuration are omitted.",
+        "An availability guard controls the offered action set. Required verification belongs in deterministic procedure logic and must also be enforced by the business service.",
+        "Bind trusted account context rather than allowing model extraction to establish authority. No email-found lookup alone is sufficient authentication."
+      ],
+      "transition": "Walk the proposed request through all of its owners.",
+      "status": "Verified constructs; no executable koa-action adapter",
+      "minutes": 1
+    },
+    {
+      "id": "trace",
+      "title": "Follow one complete service trace",
+      "eyebrow": "05 / Step 5",
+      "layout": "S11",
+      "theme": "light",
+      "body": "<div class=\"interaction\" data-interaction=\"trace\"><div class=\"timeline-h\"><div class=\"tl-h-node trace-step\" data-trace-step=\"0\"><span class=\"num\">1</span><h3>Interpret</h3><p>koa-action</p></div><div class=\"tl-h-node trace-step\" data-trace-step=\"1\"><span class=\"num\">2</span><h3>Prioritize</h3><p>Customer + graph</p></div><div class=\"tl-h-node trace-step\" data-trace-step=\"2\"><span class=\"num\">3</span><h3>Verify</h3><p>Trusted service</p></div><div class=\"tl-h-node trace-step\" data-trace-step=\"3\"><span class=\"num\">4</span><h3>Retrieve</h3><p>Authorized lookup</p></div><div class=\"tl-h-node trace-step\" data-trace-step=\"4\"><span class=\"num\">5</span><h3>Explain</h3><p>Reasoning model</p></div><div class=\"tl-h-node trace-step\" data-trace-step=\"5\"><span class=\"num\">6</span><h3>Resume</h3><p>Agent Graph</p></div></div><div class=\"trace-state\"><div class=\"card mint\"><span class=\"tag\">Invoice</span><h3 data-trace-billing>Pending</h3><p data-trace-event>Both requests captured.</p></div><div class=\"card blue\"><span class=\"tag\">Outage</span><h3 data-trace-outage>Pending</h3><p>Retained throughout the billing path.</p></div></div><div style=\"margin-top:30px;display:flex;gap:20px;align-items:center\"><button type=\"button\" data-trace-next>Next event →</button><button type=\"button\" data-trace-reset>Reset</button><span class=\"small\" data-trace-caption aria-live=\"polite\">Event 1 of 6</span></div></div>",
+      "sources": [
+        "S1",
+        "S2"
+      ],
+      "purpose": "Make ordered state transitions concrete.",
+      "talk": [
+        "This is an interactive constructed trace. Advance through owners and watch both ledger entries.",
+        "In the favorable path the customer confirms the invoice explanation. Without confirmation or another declared resolution condition, it stays open.",
+        "An accepted handoff records ownership and work remaining; it should not be counted as a resolved task."
+      ],
+      "transition": "Now design the non-happy paths.",
+      "status": "Constructed trace; click Next event",
+      "minutes": 1.4
+    },
+    {
+      "id": "failures",
+      "title": "Failure routes are part of the program",
+      "eyebrow": "05 / Recover without losing the case",
+      "layout": "S19",
+      "theme": "dark",
+      "body": "<div class=\"four-cards\"><div class=\"card lilac\"><span class=tag>Contract failure</span><h3>Invalid output</h3><p>Validate the result before branching. Use a defined fallback.</p></div><div class=\"card sand\"><span class=tag>Dependency failure</span><h3>Timeout</h3><p>Bound retries and retain every pending obligation.</p></div><div class=\"card blue\"><span class=tag>Authority boundary</span><h3>Unauthorized write</h3><p>The service rejects the action under current policy.</p></div><div class=\"card peach\"><span class=tag>Side effect</span><h3>Repeated write</h3><p>Use transaction safeguards; record the actual result.</p></div></div>",
+      "sources": [
+        "S2",
+        "S5"
+      ],
+      "purpose": "Connect reliability to failure contracts.",
+      "talk": [
+        "A graph needs meaningful timeout, invalid-output, and handoff routes rather than a default business action.",
+        "A resumed workflow can reuse a recorded decision, but this alone does not guarantee exactly-once external side effects.",
+        "Transaction-specific safeguards belong in the service performing the write. Recovery must retain the unfinished tasks."
+      ],
+      "transition": "A valid decision can still be semantically wrong.",
+      "status": "Proposed failure behavior",
+      "minutes": 1
+    },
+    {
+      "id": "confidence",
+      "title": "Confidence needs evidence in your domain",
+      "eyebrow": "06 / Inspect the signal",
+      "layout": "S08",
+      "theme": "light",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><h3>A concentrated distribution</h3><div style=\"display:flex;gap:24px;height:230px;align-items:end;margin:40px 0\"><div style=\"width:115px;height:200px;background:var(--lilac);color:var(--ink);display:flex;align-items:end;padding:16px;font-size:23px\">Billing</div><div style=\"width:115px;height:50px;background:var(--lilac);color:var(--ink);display:flex;align-items:end;padding:16px;font-size:23px\">Tech</div><div style=\"width:115px;height:30px;background:var(--lilac);color:var(--ink);display:flex;align-items:end;padding:16px;font-size:23px\">Mixed</div></div><p class=\"small\">Illustrative output shape.<br>The highest option can still be wrong.</p></div><div class=\"half\"><div class=\"card mint\"><span class=\"tag\">Validate locally</span><h3>Compare signals<br>with adjudicated labels.</h3><p>Choose gates on development data.<br>Report error alongside coverage.</p></div><div class=\"card blue\" style=\"margin-top:24px\"><p>Identity, permissions, and policy<br>remain separate checks.</p></div></div></div>",
+      "sources": [
+        "T3",
+        "T7"
+      ],
+      "purpose": "Distinguish signal concentration from correctness and permission.",
+      "talk": [
+        "TypeSafe defines Choice and Score confidence from distribution concentration. Noul has no separate confidence field.",
+        "The picture is schematic and does not display a returned koa-action distribution. Any provider signal needs a specified meaning and local validation.",
+        "A score cannot authorize a business action. Numerical gates are application operating points, not universal constants."
+      ],
+      "transition": "Explore what a stricter gate does to a small labeled sample.",
+      "status": "Illustrative distribution; no calibration claim",
+      "minutes": 1
+    },
+    {
+      "id": "gate",
+      "title": "A stricter gate moves work somewhere",
+      "eyebrow": "06 / Interactive operating point",
+      "layout": "S08",
+      "theme": "light",
+      "body": "<div class=\"interaction\" data-interaction=\"gate\"><div class=\"duo-compare\"><div class=\"half\"><h3>Twelve labeled examples</h3><div class=\"sample-dots\" data-gate-dots></div><p class=\"small\" style=\"margin-top:27px\">✓ correct route · × wrong route<br>Faded examples go to review.</p></div><div class=\"half\"><span class=\"tag\">Synthetic sample / uncalibrated signal</span><label for=\"gate-threshold\">Automatic-route threshold: <output id=\"gate-value\">0.75</output></label><input id=\"gate-threshold\" type=\"range\" min=\"0.5\" max=\"1\" step=\"0.01\" value=\"0.75\"><div class=\"stat-grid\"><div class=\"stat\"><strong data-gate-coverage>—</strong><span>Coverage</span></div><div class=\"stat\"><strong data-gate-error>—</strong><span>Auto error</span></div><div class=\"stat\"><strong data-gate-review>—</strong><span>To review</span></div></div><p class=\"interactive-note\">Inspect the high-scoring mistake.<br>A stricter gate need not remove it.</p></div></div></div>",
+      "sources": [
+        "T3",
+        "T7"
+      ],
+      "purpose": "Teach selection, error rate, and coverage without fabricated evidence.",
+      "talk": [
+        "All twelve cases and their scores are constructed teaching data. The signal is uncalibrated and is not a real koa-action field.",
+        "Automatic coverage is accepted cases divided by twelve. Automatic error uses only accepted cases; at zero accepted cases it is undefined.",
+        "A high-scoring error remains when the threshold rises. Escalations still consume capacity, and errors need not decline monotonically on this sample."
+      ],
+      "transition": "Next account for the work that the routing gate adds and avoids.",
+      "status": "Synthetic teaching data; drag the threshold",
+      "minutes": 1.3
+    },
+    {
+      "id": "economics",
+      "title": "Avoided work must exceed added work",
+      "eyebrow": "06 / Interactive break-even",
+      "layout": "S08",
+      "theme": "hero dark",
+      "body": "<div class=\"interaction\" data-interaction=\"cost\"><div class=\"duo-compare\"><div class=\"half\"><span class=\"tag\">Normalized decision-path model</span><div class=\"formula\">Baseline = G<br>Candidate = D + O + pG</div><p class=\"small\" style=\"margin-top:30px\">G = 1.00 generative-stage unit<br>D = 0.03 decision cost<br>O = 0.04 orchestration overhead</p><label for=\"fallback-rate\">Fraction still using G: <output id=\"fallback-value\">20%</output></label><input id=\"fallback-rate\" type=\"range\" min=\"0\" max=\"100\" step=\"1\" value=\"20\"></div><div class=\"half\"><div class=\"cost-bar-row\"><span>Baseline</span><div class=\"cost-track\"><div style=\"width:100%;background:var(--lilac)\"></div></div></div><div class=\"cost-bar-row\"><span>Candidate</span><div class=\"cost-track\"><div style=\"width:3%;background:var(--sand)\"></div><div style=\"width:4%;background:var(--mint)\"></div><div data-cost-variable style=\"width:20%;background:var(--lilac)\"></div></div></div><div class=\"cost-metric\" data-cost-saving>73% lower</div><p class=\"cost-label\" data-cost-total>0.27 normalized units</p><p class=\"small\" style=\"margin-top:30px\">Break-even: D + O &lt; (1 − p)G<br>Excludes changed service and human costs.</p></div></div></div>",
+      "sources": [
+        "T1",
+        "T6"
+      ],
+      "purpose": "Explain conditional economics with transparent algebra.",
+      "talk": [
+        "The numbers are arbitrary normalized units for illustration, not prices, measurements, or a koa-action performance estimate.",
+        "The model assumes the same generative-stage cost G whenever invoked. Candidate cost is decision cost plus added orchestration plus p times G.",
+        "When p approaches one, the added decision can make the path more expensive. Evaluate whole-case costs separately, including tools, retries, human handling, and unresolved obligations."
+      ],
+      "transition": "Inference latency has an equally important boundary.",
+      "status": "Illustrative arithmetic; not a benchmark",
+      "minutes": 1.3
+    },
+    {
+      "id": "latency",
+      "title": "Fast inference helps the path that uses it",
+      "eyebrow": "06 / Measure the critical path",
+      "layout": "S17",
+      "theme": "light",
+      "body": "<div class=\"diagram\"><svg viewBox=\"0 0 1600 620\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr8\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M340 145H435V85H525\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr8)\" /><path class=\"draw\" d=\"M980 85H1135\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr8)\" /><path class=\"draw\" d=\"M340 145H435V405H525\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr8)\" /></svg><div class=\"node lilac\" style=\"left:0.000%;top:12.903%;width:21.250%;height:20.968%\"><strong>Fast decision</strong><small>Measure call latency</small></div><div class=\"node blue\" style=\"left:33.125%;top:3.226%;width:28.125%;height:20.968%\"><strong>Authorized lookup</strong><small>Required dependency</small></div><div class=\"node mint\" style=\"left:71.250%;top:3.226%;width:28.125%;height:20.968%\"><strong>Explanation</strong><small>Measure response latency</small></div><div class=\"node peach\" style=\"left:33.125%;top:53.226%;width:66.250%;height:24.194%\"><strong>Review queue + human handling</strong><small>Can dominate the time to resolution</small></div><div class=\"node label\" style=\"left:0.000%;top:87.097%;width:100.000%;height:11.290%;font-size:24px\">Track decision time, response time, and time to completed service separately.</div></div>",
+      "sources": [
+        "L1"
+      ],
+      "purpose": "Separate primitive speed from workflow speed.",
+      "talk": [
+        "Specialized inference can shorten a repeated semantic step. A faster classifier does not by itself establish faster service resolution.",
+        "Client-observed call latency includes transport and retries; parallel branches affect critical-path duration differently from serial dependencies.",
+        "Measure distribution tails as well as typical latency at the relevant load. Include unfinished cases when reporting resolution, rather than averaging completed cases alone."
+      ],
+      "transition": "Apply the control model to a deliberately incomplete design.",
+      "status": "Mechanism illustration; no timing benchmark",
+      "minutes": 1
+    },
+    {
+      "id": "exercise",
+      "title": "Find the missing boundary",
+      "eyebrow": "07 / Exercise",
+      "layout": "S17",
+      "theme": "light",
+      "body": "<div data-exercise><div class=\"bad-path\" style=\"height:270px\"><div class=\"diagram\"><svg viewBox=\"0 0 1500 300\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr9\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M430 145H1050\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr9)\" /></svg><div class=\"node lilac\" style=\"left:0.000%;top:23.333%;width:28.667%;height:50.000%\"><strong>Credit requested</strong><small>Strong model score</small></div><div class=\"node blue\" style=\"left:70.667%;top:23.333%;width:29.333%;height:50.000%\"><strong>Issue credit</strong><small>Business transaction</small></div></div></div><button class=\"exercise-button\" type=\"button\" data-reveal-answer aria-expanded=\"false\">Reveal the repair</button><div class=\"hidden-answer\" style=\"margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:25px\"><div class=\"card mint\"><h3>Verify access</h3><p>Trusted principal and account context.</p></div><div class=\"card sand\"><h3>Check policy</h3><p>Required procedure before the action.</p></div><div class=\"card blue\"><h3>Enforce in service</h3><p>Recheck authorization and record outcome.</p></div></div></div>",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "purpose": "Check whether the learner can separate prediction from authority.",
+      "talk": [
+        "Allow a short pause before revealing the repair. The initial diagram is intentionally incomplete.",
+        "The strongest answer identifies both authored ordering and independent backend enforcement. Raising the classifier threshold alone does not repair the design.",
+        "Also retain pending tasks and specify a bounded fallback. A credit operation has consequences outside the model response."
+      ],
+      "transition": "Training examples must respect the same decision boundaries.",
+      "status": "Constructed design exercise",
+      "minutes": 1.3
+    },
+    {
+      "id": "dataset",
+      "title": "Begin the dataset at the decision boundary",
+      "eyebrow": "08 / Step 6",
+      "layout": "S08",
+      "theme": "dark",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><h3>At decision time</h3><div class=\"card mint\"><span class=\"tag\">Input snapshot</span><p>Conversation prefix<br>Trusted facts available then<br>Current policy version</p></div><div class=\"card sand\" style=\"margin-top:26px\"><span class=\"tag\">Reference label</span><p>Next route supported by that evidence.</p></div></div><div class=\"half\"><h3>After the decision</h3><div class=\"card peach\"><span class=\"tag\">Later turns and outcomes</span><p>Useful for separate outcome labels.<br>Excluded from the earlier input.</p></div><p class=\"lead\" style=\"margin-top:48px\">Preserve order,<br>relationships,<br>and provenance.</p></div></div>",
+      "sources": [
+        "T6"
+      ],
+      "purpose": "Prevent future information leaking into model features.",
+      "talk": [
+        "Freeze the source snapshot and reconstruct what the routing node could actually access at the timestamp.",
+        "Use independently adjudicated route labels, including mixed and unclear cases. Reviewers labeling the next step see the decision-time evidence.",
+        "Record redaction, filtering, and derived examples. Preserving the source does not mean transformations leave the model-visible distribution unchanged."
+      ],
+      "transition": "Separate fitting and selection from final evaluation.",
+      "status": "Proposed development protocol",
+      "minutes": 1
+    },
+    {
+      "id": "training",
+      "title": "Build a pipeline that protects the test",
+      "eyebrow": "08 / Step 7",
+      "layout": "S22",
+      "theme": "light",
+      "body": "<div class=\"image-hero\"><div class=\"hero-img-wrap\"><img data-image-slot=\"s22-hero-21x9\" src=\"ASSET:training-pipeline.svg\" alt=\"Separate sample partitions feed fitting, validation, and locked testing. Frozen artifacts qualify for a randomized pilot before rollout; reviewed feedback enters future data only.\"></div><div class=\"hero-stats\"><p>Group before augmentation.</p><p>Test a frozen candidate.</p><p>Pilot before wider rollout.</p></div></div>",
+      "sources": [
+        "T6"
+      ],
+      "purpose": "Explain the complete leakage-resistant task-development pipeline.",
+      "talk": [
+        "This is a proposed development pipeline, not koa-action pretraining. Direct adaptation is optional and conditional on supported access.",
+        "Train data fits permitted components. Development data uses separate calibration and gate-selection subsets. Locked test data evaluates the frozen model and policy.",
+        "Offline gates qualify the candidate for a randomized service pilot. Broader rollout needs pilot quality and economic evidence; reviewed feedback enters only a future dataset."
+      ],
+      "transition": "The split itself must match the deployment claim.",
+      "status": "Proposed task development; adaptation only where supported",
+      "minutes": 1.3
+    },
+    {
+      "id": "splits",
+      "title": "Choose the split that matches the claim",
+      "eyebrow": "08 / Generalization",
+      "layout": "S08",
+      "theme": "hero light",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><div class=\"card mint\"><span class=\"tag\">Unseen accounts</span><h3>Keep account families intact.</h3><div style=\"display:flex;gap:20px;margin:36px 0\"><div class=\"pill\">A A A</div><div class=\"pill\">B B</div><div class=\"pill\">C C C</div></div><p>Related cases and variants<br>stay in one partition.</p></div></div><div class=\"half\"><div class=\"card blue\"><span class=\"tag\">Future traffic</span><h3>Reserve a later-time cohort.</h3><div style=\"display:flex;align-items:center;margin:42px 0;font:26px var(--mono)\">Earlier cases <span style=\"border-left:4px solid var(--ink);height:65px;margin:0 24px\"></span> Later test</div><p>Declare boundary exclusions<br>and duplicate handling.</p></div></div></div>",
+      "sources": [
+        "L4"
+      ],
+      "purpose": "Distinguish independent cases from repeated observations.",
+      "talk": [
+        "Unseen-account performance and future-traffic performance are different claims and may need separate tests.",
+        "Assign related cases and near duplicates together, and generate training augmentations only after partitioning.",
+        "One conversation evaluated many times still represents one customer situation. Repeated judgments estimate repeatability, not generalization over new cases."
+      ],
+      "transition": "Define what evidence would earn a rollout.",
+      "status": "Evaluation design; no completed experiment",
+      "minutes": 1
+    },
+    {
+      "id": "acceptance",
+      "title": "Predeclare what would earn a rollout",
+      "eyebrow": "09 / Step 8",
+      "layout": "S19",
+      "theme": "dark",
+      "body": "<div class=\"four-cards\"><div class=\"card mint\"><span class=tag>Must pass</span><h3>Quality</h3><p>Upper uncertainty bound on failure-rate increase<br><br><strong>&lt; allowed margin</strong></p></div><div class=\"card sand\"><span class=tag>Must pass</span><h3>Cost</h3><p>Lower uncertainty bound on saving per incoming case<br><br><strong>&gt; required gain</strong></p></div><div class=\"card blue\"><span class=tag>Must pass</span><h3>Consequences</h3><p>Separate limits for harmful actions, assessed on fixed cohorts.</p></div><div class=\"card peach\"><span class=tag>Must pass</span><h3>Latency</h3><p>Required response and resolution constraints, including unfinished cases.</p></div></div>",
+      "sources": [
+        "S2"
+      ],
+      "purpose": "Make reliability and cost a joint acceptance question.",
+      "talk": [
+        "The null is unacceptable quality loss OR insufficient saving. A nonsignificant quality difference does not establish acceptable equivalence.",
+        "Define a failed case as an incorrect outcome or any requested task unresolved by the fixed deadline. Count every incoming case once.",
+        "Choose sample size and uncertainty methods before testing. Define consequential-error cohorts from independent evidence, not each model’s selected action branch."
+      ],
+      "transition": "Use offline and service experiments for different questions.",
+      "status": "Proposed acceptance criteria; no measured intervals",
+      "minutes": 1
+    },
+    {
+      "id": "evaluation",
+      "title": "Evaluate the decision, then the service",
+      "eyebrow": "09 / Two experiments",
+      "layout": "S08",
+      "theme": "light",
+      "body": "<div class=\"duo-compare\"><div class=\"half\"><div class=\"card lilac\"><span class=\"tag\">Paired offline comparison</span><h3>Evaluate the decision.</h3><p>Same held-out snapshots.<br>Same route question.<br>Fixed permissions and tools.</p><div class=\"rule-line\"></div><p class=\"small\">Each model’s gate is selected<br>on development data.</p></div></div><div class=\"half\"><div class=\"card mint\"><span class=\"tag\">Controlled service pilot</span><h3>Evaluate the complete case.</h3><p>Randomized case/account assignment.<br>Consistent treatment and horizon.<br>Costs, queues, and unresolved work.</p><div class=\"rule-line\"></div><p class=\"small\">Pilot evidence must precede<br>wider rollout.</p></div></div></div>",
+      "sources": [
+        "L4"
+      ],
+      "purpose": "Prevent offline results being overextended to service economics.",
+      "talk": [
+        "Offline replay isolates the bounded decision. It cannot estimate how changed dialogue affects customers or how escalations affect queue capacity.",
+        "In the pilot, keep assignment stable and account for related cases and interference through shared queues. Use the same observation horizon in both arms.",
+        "Report observed operating cost per incoming case with resolution and coverage. Disclose setup and maintenance costs separately; total ownership estimates need an explicit volume and horizon."
+      ],
+      "transition": "When an outcome fails, diagnose the responsible boundary.",
+      "status": "Proposed controlled evaluation",
+      "minutes": 1
+    },
+    {
+      "id": "diagnosis",
+      "title": "Diagnose the boundary that failed",
+      "eyebrow": "09 / Improve the responsible component",
+      "layout": "S17",
+      "theme": "light",
+      "body": "<div class=\"diagram\"><svg viewBox=\"0 0 1600 610\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><defs><marker id=\"arr10\" markerWidth=\"8\" markerHeight=\"8\" refX=\"7\" refY=\"4\" orient=\"auto\"><path d=\"M0 0L8 4L0 8Z\" fill=\"#789b8e\"/></marker></defs><path class=\"draw\" d=\"M800 115V200H235V275\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr10)\" /><path class=\"draw\" d=\"M800 200V275\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr10)\" /><path class=\"draw\" d=\"M800 200H1355V275\" fill=\"none\" stroke=\"#789b8e\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\" marker-end=\"url(#arr10)\" /></svg><div class=\"node peach\" style=\"left:28.750%;top:0.000%;width:43.125%;height:18.852%\"><strong>Invoice explained; outage lost</strong><small>Inspect the recorded route and state changes</small></div><div class=\"node lilac\" style=\"left:0.000%;top:45.902%;width:29.375%;height:37.705%\"><span class=\"mini\">Route = billing</span><strong>Decision boundary</strong><small>Inspect input evidence,<br>labels, and category definition.</small></div><div class=\"node mint\" style=\"left:35.000%;top:45.902%;width:29.375%;height:37.705%\"><span class=\"mini\">Route = mixed</span><strong>Workflow boundary</strong><small>Inspect the transition that<br>dropped the pending task.</small></div><div class=\"node blue\" style=\"left:70.000%;top:45.902%;width:29.375%;height:37.705%\"><span class=\"mini\">Trace looks correct</span><strong>Outcome boundary</strong><small>Inspect services and the<br>resolution condition.</small></div></div>",
+      "sources": [
+        "L3",
+        "L4"
+      ],
+      "purpose": "Connect disaggregation to targeted learning from failure.",
+      "talk": [
+        "A wrong route can motivate better decision data. A correct mixed route followed by dropped state calls for a workflow repair.",
+        "Offline semantic judges can prioritize traces, but require validation against independent references. Repeatability is a separate property from correctness.",
+        "Sample apparent successes as well as escalations. A post-run evaluation score cannot prevent an action that has already happened."
+      ],
+      "transition": "Finish by identifying one worthwhile first change.",
+      "status": "Constructed failure diagnosis",
+      "minutes": 1
+    },
+    {
+      "id": "close",
+      "title": "Start with one decision that changes the path",
+      "eyebrow": "10 / Build, measure, revise",
+      "layout": "S10",
+      "theme": "hero dark",
+      "body": "<div class=\"closing-split\"><div><h2>Give each decision<br>a purpose.<br>Give the workflow<br>a contract.</h2><p class=\"lead\" style=\"margin-top:42px\">Complete both customer requests<br>within the reliability and cost limits.</p></div><div><div class=\"step\"><span style=\"font:24px var(--mono);color:var(--mint);margin-right:25px\">01</span>Choose a bounded decision.</div><div class=\"step\"><span style=\"font:24px var(--mono);color:var(--mint);margin-right:25px\">02</span>Define its evidence and outputs.</div><div class=\"step\"><span style=\"font:24px var(--mono);color:var(--mint);margin-right:25px\">03</span>Encode sequence and state in the graph.</div><div class=\"step\"><span style=\"font:24px var(--mono);color:var(--mint);margin-right:25px\">04</span>Keep authority in trusted services.</div><div class=\"step\"><span style=\"font:24px var(--mono);color:var(--mint);margin-right:25px\">05</span>Earn expansion with measured outcomes.</div></div></div>",
+      "sources": [
+        "T1",
+        "S1"
+      ],
+      "purpose": "Give the audience a bounded practical next step.",
+      "talk": [
+        "The tutorial’s central claim is an allocation principle: specialize judgment where it earns its place, retain general reasoning where needed, and make control explicit.",
+        "Predictable contracts and runtime paths create an inspectable system; correctness and economics still require evidence from complete cases.",
+        "The next engineering artifact is a decision contract and a small graph, followed by held-out evaluation and a controlled pilot."
+      ],
+      "transition": "Use the source notes and full blog for the details behind this tutorial.",
+      "status": "Synthesis",
+      "minutes": 0.7
+    },
+    {
+      "id": "sources",
+      "title": "Read the evidence behind the architecture",
+      "eyebrow": "Reference / Further study",
+      "layout": "S16",
+      "theme": "light",
+      "body": "<div class=\"brief-grid\"><div class=\"brief-card\"><h3>Salesforce control</h3><ul><li><a href=\"https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\" target=\"_blank\" rel=\"noopener\">Agent Graph / guided determinism ↗</a></li><li><a href=\"https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/\" target=\"_blank\" rel=\"noopener\">Reliable enterprise agents ↗</a></li><li><a href=\"https://www.salesforce.com/blog/agent-script-control-plane/\" target=\"_blank\" rel=\"noopener\">AgentScript control plane ↗</a></li><li><a href=\"https://github.com/salesforce/agentscript/blob/main/SPEC.md\" target=\"_blank\" rel=\"noopener\">AgentScript specification ↗</a></li></ul></div><div class=\"brief-card\"><h3>Agent architecture</h3><ul><li><a href=\"https://www.langchain.com/blog/building-prod-with-jev-and-langgraph\" target=\"_blank\" rel=\"noopener\">Jev + LangGraph ↗</a></li><li><a href=\"https://www.langchain.com/blog/building-a-harness-with-jev\" target=\"_blank\" rel=\"noopener\">A harness with Jev ↗</a></li><li><a href=\"https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals\" target=\"_blank\" rel=\"noopener\">Jev in LangSmith Evals ↗</a></li><li><a href=\"https://www.langchain.com/blog/jev-agent-evals-langsmith\" target=\"_blank\" rel=\"noopener\">Jev-as-a-Judge ↗</a></li><li><a href=\"https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph\" target=\"_blank\" rel=\"noopener\">Runtime, framework, harness ↗</a></li></ul></div><div class=\"brief-card\"><h3>Decision patterns</h3><ul><li><a href=\"https://typesafe.ai/manifesto\" target=\"_blank\" rel=\"noopener\">Composable AI ↗</a></li><li><a href=\"https://docs.typesafe.ai/introduction/quickstart\" target=\"_blank\" rel=\"noopener\">TypeSafe quickstart ↗</a></li><li><a href=\"https://docs.typesafe.ai/patterns/confidence-routing\" target=\"_blank\" rel=\"noopener\">Confidence routing ↗</a></li><li><a href=\"https://docs.typesafe.ai/patterns/intent-routing\" target=\"_blank\" rel=\"noopener\">Intent routing ↗</a></li><li><a href=\"https://docs.typesafe.ai/primitives/advanced\" target=\"_blank\" rel=\"noopener\">Structured decision criteria ↗</a></li><li><a href=\"https://docs.typesafe.ai/concepts/how-to-build-with-system-one\" target=\"_blank\" rel=\"noopener\">Building with System One ↗</a></li></ul></div></div>",
+      "sources": [
+        "S4",
+        "T7"
+      ],
+      "purpose": "Provide inspectable source provenance and product boundaries.",
+      "talk": [
+        "The complete research ledger covers all sixteen requested web resources plus the final local blog and supplementary primary documentation.",
+        "The Salesforce stack roles are grounded in the user brief and public graph/language resources; integration examples and training protocols remain proposals.",
+        "No koa-action benchmark, SDK contract, fine-tuning access, or native adapter is asserted. The diagrams and numeric interactions are independently authored teaching examples."
+      ],
+      "transition": "End of tutorial.",
+      "status": "Sources link to original pages",
+      "minutes": 0.5
+    }
+  ]
+}

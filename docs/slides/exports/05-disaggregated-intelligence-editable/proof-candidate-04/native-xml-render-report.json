@@ -1,0 +1,413 @@
+{
+  "method": "Actual PPTX native DrawingML to independent SVG/PNG; Pango logical/ink metrics, librsvg painting. No source HTML/layout-manifest positioning used.",
+  "limitations": [
+    "Not Microsoft Office rendering; paragraph metrics are a local Pango interpretation of explicit native XML.",
+    "Office/font-version-specific shaping and layout can differ."
+  ],
+  "pptx": "/Users/pmui/dev/brilliant/system1/docs/slides/exports/05-disaggregated-intelligence-editable/candidate-04.pptx",
+  "pptxSha256": "fb31adb6115c535b73cbffefa43edd269600a961b79c9059b85bd0d52b017e03",
+  "rendererSha256": "5a612f98d316732d02e360a18f21a891b750737f96e83944a6460bd2155dedd5",
+  "size": [
+    1920,
+    1080
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "nativeShapes": 33,
+      "nativeGroups": 17,
+      "nativeTextRuns": 29,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.5449209104938272,
+        "fractionPixelsAnyChannelOver30": 0.004465663580246914
+      }
+    },
+    {
+      "slide": 2,
+      "nativeShapes": 35,
+      "nativeGroups": 23,
+      "nativeTextRuns": 24,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.7710881237139918,
+        "fractionPixelsAnyChannelOver30": 0.009437692901234567
+      }
+    },
+    {
+      "slide": 3,
+      "nativeShapes": 22,
+      "nativeGroups": 5,
+      "nativeTextRuns": 19,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.6146485982510288,
+        "fractionPixelsAnyChannelOver30": 0.005112364969135802
+      }
+    },
+    {
+      "slide": 4,
+      "nativeShapes": 40,
+      "nativeGroups": 20,
+      "nativeTextRuns": 26,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.6011828060699589,
+        "fractionPixelsAnyChannelOver30": 0.004037422839506173
+      }
+    },
+    {
+      "slide": 5,
+      "nativeShapes": 31,
+      "nativeGroups": 16,
+      "nativeTextRuns": 24,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.943792438271605,
+        "fractionPixelsAnyChannelOver30": 0.009667245370370371
+      }
+    },
+    {
+      "slide": 6,
+      "nativeShapes": 173,
+      "nativeGroups": 82,
+      "nativeTextRuns": 37,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 2.3204068608539097,
+        "fractionPixelsAnyChannelOver30": 0.021617476851851853
+      }
+    },
+    {
+      "slide": 7,
+      "nativeShapes": 147,
+      "nativeGroups": 60,
+      "nativeTextRuns": 36,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 2.6360201260288068,
+        "fractionPixelsAnyChannelOver30": 0.023283179012345678
+      }
+    },
+    {
+      "slide": 8,
+      "nativeShapes": 132,
+      "nativeGroups": 52,
+      "nativeTextRuns": 31,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 1.8412397119341564,
+        "fractionPixelsAnyChannelOver30": 0.017546778549382715
+      }
+    },
+    {
+      "slide": 9,
+      "nativeShapes": 156,
+      "nativeGroups": 33,
+      "nativeTextRuns": 31,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 2.263479777520576,
+        "fractionPixelsAnyChannelOver30": 0.019554398148148147
+      }
+    },
+    {
+      "slide": 10,
+      "nativeShapes": 20,
+      "nativeGroups": 6,
+      "nativeTextRuns": 17,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.6237411586934156,
+        "fractionPixelsAnyChannelOver30": 0.0058709490740740744
+      }
+    },
+    {
+      "slide": 11,
+      "nativeShapes": 46,
+      "nativeGroups": 12,
+      "nativeTextRuns": 33,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.9792049254115226,
+        "fractionPixelsAnyChannelOver30": 0.007817322530864198
+      }
+    },
+    {
+      "slide": 12,
+      "nativeShapes": 29,
+      "nativeGroups": 11,
+      "nativeTextRuns": 27,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.5504941486625514,
+        "fractionPixelsAnyChannelOver30": 0.004892457561728395
+      }
+    },
+    {
+      "slide": 13,
+      "nativeShapes": 25,
+      "nativeGroups": 7,
+      "nativeTextRuns": 19,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.8392258230452675,
+        "fractionPixelsAnyChannelOver30": 0.007295524691358025
+      }
+    },
+    {
+      "slide": 14,
+      "nativeShapes": 21,
+      "nativeGroups": 4,
+      "nativeTextRuns": 16,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.49735226980452674,
+        "fractionPixelsAnyChannelOver30": 0.0039009452160493827
+      }
+    },
+    {
+      "slide": 15,
+      "nativeShapes": 31,
+      "nativeGroups": 19,
+      "nativeTextRuns": 17,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.7350297389403292,
+        "fractionPixelsAnyChannelOver30": 0.0057807677469135805
+      }
+    },
+    {
+      "slide": 16,
+      "nativeShapes": 27,
+      "nativeGroups": 16,
+      "nativeTextRuns": 17,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.7598795974794239,
+        "fractionPixelsAnyChannelOver30": 0.006078800154320988
+      }
+    },
+    {
+      "slide": 17,
+      "nativeShapes": 36,
+      "nativeGroups": 19,
+      "nativeTextRuns": 21,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.6326773083847737,
+        "fractionPixelsAnyChannelOver30": 0.0040080054012345675
+      }
+    },
+    {
+      "slide": 18,
+      "nativeShapes": 17,
+      "nativeGroups": 3,
+      "nativeTextRuns": 18,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.8030639146090535,
+        "fractionPixelsAnyChannelOver30": 0.007151331018518519
+      }
+    },
+    {
+      "slide": 19,
+      "nativeShapes": 33,
+      "nativeGroups": 11,
+      "nativeTextRuns": 31,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.7655769354423868,
+        "fractionPixelsAnyChannelOver30": 0.006806520061728395
+      }
+    },
+    {
+      "slide": 20,
+      "nativeShapes": 55,
+      "nativeGroups": 15,
+      "nativeTextRuns": 42,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.9191636123971193,
+        "fractionPixelsAnyChannelOver30": 0.007473476080246914
+      }
+    },
+    {
+      "slide": 21,
+      "nativeShapes": 29,
+      "nativeGroups": 11,
+      "nativeTextRuns": 28,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.6528758359053498,
+        "fractionPixelsAnyChannelOver30": 0.005749421296296296
+      }
+    },
+    {
+      "slide": 22,
+      "nativeShapes": 24,
+      "nativeGroups": 6,
+      "nativeTextRuns": 21,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.7754414223251029,
+        "fractionPixelsAnyChannelOver30": 0.006238425925925926
+      }
+    },
+    {
+      "slide": 23,
+      "nativeShapes": 70,
+      "nativeGroups": 25,
+      "nativeTextRuns": 46,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.7882738554526749,
+        "fractionPixelsAnyChannelOver30": 0.006201774691358025
+      }
+    },
+    {
+      "slide": 24,
+      "nativeShapes": 25,
+      "nativeGroups": 4,
+      "nativeTextRuns": 23,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.73040139531893,
+        "fractionPixelsAnyChannelOver30": 0.0058892746913580245
+      }
+    },
+    {
+      "slide": 25,
+      "nativeShapes": 27,
+      "nativeGroups": 14,
+      "nativeTextRuns": 15,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.6846616190843622,
+        "fractionPixelsAnyChannelOver30": 0.004825906635802469
+      }
+    },
+    {
+      "slide": 26,
+      "nativeShapes": 28,
+      "nativeGroups": 14,
+      "nativeTextRuns": 20,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.534908532664609,
+        "fractionPixelsAnyChannelOver30": 0.003794849537037037
+      }
+    },
+    {
+      "slide": 27,
+      "nativeShapes": 23,
+      "nativeGroups": 6,
+      "nativeTextRuns": 21,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.7616544495884774,
+        "fractionPixelsAnyChannelOver30": 0.0061086998456790125
+      }
+    },
+    {
+      "slide": 28,
+      "nativeShapes": 37,
+      "nativeGroups": 18,
+      "nativeTextRuns": 27,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.9668092528292181,
+        "fractionPixelsAnyChannelOver30": 0.008004436728395061
+      }
+    },
+    {
+      "slide": 29,
+      "nativeShapes": 41,
+      "nativeGroups": 21,
+      "nativeTextRuns": 32,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.9192144097222222,
+        "fractionPixelsAnyChannelOver30": 0.007238618827160494
+      }
+    },
+    {
+      "slide": 30,
+      "nativeShapes": 28,
+      "nativeGroups": 6,
+      "nativeTextRuns": 21,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.5974504886831276,
+        "fractionPixelsAnyChannelOver30": 0.005324556327160493
+      }
+    },
+    {
+      "slide": 31,
+      "nativeShapes": 39,
+      "nativeGroups": 5,
+      "nativeTextRuns": 26,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.9640795396090535,
+        "fractionPixelsAnyChannelOver30": 0.008635223765432099
+      }
+    },
+    {
+      "slide": 32,
+      "nativeShapes": 22,
+      "nativeGroups": 7,
+      "nativeTextRuns": 20,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.659885384516461,
+        "fractionPixelsAnyChannelOver30": 0.005542534722222222
+      }
+    },
+    {
+      "slide": 33,
+      "nativeShapes": 29,
+      "nativeGroups": 14,
+      "nativeTextRuns": 22,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 0.6371121077674897,
+        "fractionPixelsAnyChannelOver30": 0.004404417438271605
+      }
+    },
+    {
+      "slide": 34,
+      "nativeShapes": 20,
+      "nativeGroups": 3,
+      "nativeTextRuns": 30,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 1.079051568930041,
+        "fractionPixelsAnyChannelOver30": 0.010563271604938272
+      }
+    },
+    {
+      "slide": 35,
+      "nativeShapes": 36,
+      "nativeGroups": 9,
+      "nativeTextRuns": 30,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 2.0515747170781893,
+        "fractionPixelsAnyChannelOver30": 0.014698109567901234
+      }
+    },
+    {
+      "slide": 36,
+      "nativeShapes": 115,
+      "nativeGroups": 29,
+      "nativeTextRuns": 18,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 1.4475766782407407,
+        "fractionPixelsAnyChannelOver30": 0.01240210262345679
+      }
+    }
+  ],
+  "nativeGeometryProofOnly": true
+}

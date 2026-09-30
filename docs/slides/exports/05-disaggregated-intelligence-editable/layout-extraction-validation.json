@@ -1,0 +1,308 @@
+{
+  "method": "All original layout text leaves (including absolute placeholders) compared to actual paint hooks; translated Pango glyph ink checked against page bounds and other HTML text.",
+  "coverage": {
+    "visibleTextLeavesInLayout": 810,
+    "paintedTextRuns": 810,
+    "allVisibleTextCaptured": true,
+    "duplicatePaintedTextRuns": 0
+  },
+  "transforms": [
+    {
+      "page": 20,
+      "id": "p20-e0019",
+      "matrices": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "translationsOnly": true
+    },
+    {
+      "page": 31,
+      "id": "p31-text-0024",
+      "matrices": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          -74.802246,
+          0.0
+        ]
+      ],
+      "translationsOnly": true
+    },
+    {
+      "page": 31,
+      "id": "p31-text-0025",
+      "matrices": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          -236.626953,
+          0.0
+        ]
+      ],
+      "translationsOnly": true
+    },
+    {
+      "page": 31,
+      "id": "p31-text-0027",
+      "matrices": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          -95.316406,
+          0.0
+        ]
+      ],
+      "translationsOnly": true
+    },
+    {
+      "page": 31,
+      "id": "p31-text-0028",
+      "matrices": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          -284.883789,
+          0.0
+        ]
+      ],
+      "translationsOnly": true
+    }
+  ],
+  "textGeometry": [
+    {
+      "index": 1,
+      "textInkBoxes": 29,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 2,
+      "textInkBoxes": 24,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 3,
+      "textInkBoxes": 19,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 4,
+      "textInkBoxes": 26,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 5,
+      "textInkBoxes": 24,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 6,
+      "textInkBoxes": 12,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 7,
+      "textInkBoxes": 12,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 8,
+      "textInkBoxes": 10,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 9,
+      "textInkBoxes": 8,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 10,
+      "textInkBoxes": 17,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 11,
+      "textInkBoxes": 33,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 12,
+      "textInkBoxes": 27,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 13,
+      "textInkBoxes": 19,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 14,
+      "textInkBoxes": 16,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 15,
+      "textInkBoxes": 17,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 16,
+      "textInkBoxes": 17,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 17,
+      "textInkBoxes": 21,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 18,
+      "textInkBoxes": 18,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 19,
+      "textInkBoxes": 31,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 20,
+      "textInkBoxes": 42,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 21,
+      "textInkBoxes": 28,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 22,
+      "textInkBoxes": 21,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 23,
+      "textInkBoxes": 46,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 24,
+      "textInkBoxes": 23,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 25,
+      "textInkBoxes": 15,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 26,
+      "textInkBoxes": 20,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 27,
+      "textInkBoxes": 21,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 28,
+      "textInkBoxes": 27,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 29,
+      "textInkBoxes": 32,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 30,
+      "textInkBoxes": 21,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 31,
+      "textInkBoxes": 26,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 32,
+      "textInkBoxes": 20,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 33,
+      "textInkBoxes": 22,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 34,
+      "textInkBoxes": 30,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 35,
+      "textInkBoxes": 30,
+      "outside": [],
+      "overlaps": []
+    },
+    {
+      "index": 36,
+      "textInkBoxes": 6,
+      "outside": [],
+      "overlaps": []
+    }
+  ],
+  "passed": true,
+  "limits": "SVG text is retained in original source assets and audited by the native-vector converter; this check does not render Office text.",
+  "manifestSha256": "bf47e507edc2db736dbecf11692acc1c51aa827f363bfa48cffcea1336d80846",
+  "manifest": "layout-manifest.json"
+}

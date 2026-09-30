@@ -1,0 +1,342 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "32 \u00b7 l: DISAGGREGATED INTELLIGENCE [p32-text-0008]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "32 \u00b7 r: 32 / 36 [p32-text-0009]",
+    "text": "32 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.3249501722441,
+      59.87114327017716,
+      73.7666015625,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "32 \u00b7 evaluation-eyebrow: 09 / TWO EXPERIMENTS [p32-text-0010]",
+    "text": "09 / TWO EXPERIMENTS",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      272.1982421875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "32 \u00b7 evaluation-title: Evaluate the decision, then the service [p32-text-0011]",
+    "text": "Evaluate the decision, then the service",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1269.0009765625,
+      62.8203125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "32 \u00b7 evaluation-text-1: Evaluate the decision. [p32-text-0012]",
+    "text": "Evaluate the decision.",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      125.7998046875,
+      404.81941529281494,
+      404.1640625,
+      30.0205078125
+    ],
+    "baseline": [
+      123.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "32 \u00b7 evaluation-text-2: Same held-out snapshots. Same route question. Fixed permissions and tools. [p32-text-0013]",
+    "text": "Same held-out snapshots.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.83984375,
+      469.93571727362206,
+      333.8994140625,
+      27.1044921875
+    ],
+    "baseline": [
+      123.0,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "32 \u00b7 evaluation-text-2: Same held-out snapshots. Same route question. Fixed permissions and tools. [p32-text-0013]",
+    "text": "Same route question.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.83984375,
+      509.3324360236221,
+      276.052734375,
+      27.4677734375
+    ],
+    "baseline": [
+      123.0,
+      529.9681782111221
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "32 \u00b7 evaluation-text-2: Same held-out snapshots. Same route question. Fixed permissions and tools. [p32-text-0013]",
+    "text": "Fixed permissions and tools.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      125.51953125,
+      549.0924360236221,
+      362.6005859375,
+      27.4677734375
+    ],
+    "baseline": [
+      123.0,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "32 \u00b7 evaluation-text-3: Each model\u2019s gate is selected on development data. [p32-text-0014]",
+    "text": "Each model\u2019s gate is selected",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      125.25,
+      639.255157480315,
+      331.8759765625,
+      24.849609375
+    ],
+    "baseline": [
+      123.0,
+      657.679962167815
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "32 \u00b7 evaluation-text-3: Each model\u2019s gate is selected on development data. [p32-text-0014]",
+    "text": "on development data.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      124.25,
+      676.219766855315,
+      253.501953125,
+      23.7998046875
+    ],
+    "baseline": [
+      123.0,
+      693.919962167815
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "32 \u00b7 evaluation-text-4: Evaluate the complete case. [p32-text-0015]",
+    "text": "Evaluate the complete case.",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1049.7998046875,
+      404.81941529281494,
+      517.353515625,
+      39.0
+    ],
+    "baseline": [
+      1047.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "32 \u00b7 evaluation-text-5: Randomized case/account assignment. Consistent treatment and horizon. Costs, q [p32-text-0016]",
+    "text": "Randomized case/account assignment.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1049.51953125,
+      468.20036571112206,
+      503.77734375,
+      29.203125
+    ],
+    "baseline": [
+      1047.0,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "32 \u00b7 evaluation-text-5: Randomized case/account assignment. Consistent treatment and horizon. Costs, q [p32-text-0016]",
+    "text": "Consistent treatment and horizon.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1048.3720703125,
+      509.3324360236221,
+      440.1064453125,
+      21.111328125
+    ],
+    "baseline": [
+      1047.0,
+      529.9681782111221
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "32 \u00b7 evaluation-text-5: Randomized case/account assignment. Consistent treatment and horizon. Costs, q [p32-text-0016]",
+    "text": "Costs, queues, and unresolved work.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1048.3720703125,
+      549.4000532111221,
+      470.84765625,
+      27.16015625
+    ],
+    "baseline": [
+      1047.0,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "32 \u00b7 evaluation-text-6: Pilot evidence must precede wider rollout. [p32-text-0017]",
+    "text": "Pilot evidence must precede",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1049.25,
+      639.255157480315,
+      324.5009765625,
+      24.5244140625
+    ],
+    "baseline": [
+      1047.0,
+      657.679962167815
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "32 \u00b7 evaluation-text-6: Pilot evidence must precede wider rollout. [p32-text-0017]",
+    "text": "wider rollout.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1047.4248046875,
+      675.495157480315,
+      151.6767578125,
+      18.775390625
+    ],
+    "baseline": [
+      1047.0,
+      693.919962167815
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "32 \u00b7 tag: PAIRED OFFLINE COMPARISON [p32-text-0018]",
+    "text": "PAIRED OFFLINE COMPARISON",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      124.8896484375,
+      349.6149194143701,
+      335.4208984375,
+      15.162109375
+    ],
+    "baseline": [
+      123.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "32 \u00b7 tag: CONTROLLED SERVICE PILOT [p32-text-0019]",
+    "text": "CONTROLLED SERVICE PILOT",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1048.4697265625,
+      349.6149194143701,
+      323.396484375,
+      15.162109375
+    ],
+    "baseline": [
+      1047.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "32 \u00b7 span: Tutorial evaluation protocol [p32-text-0020]",
+    "text": "Tutorial evaluation protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      239.576171875,
+      18.6396484375
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "32 \u00b7 span: Proposed controlled evaluation [p32-text-0021]",
+    "text": "Proposed controlled evaluation",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1558.6983073941929,
+      973.840947034941,
+      271.80078125,
+      18.6396484375
+    ],
+    "baseline": [
+      1556.9883464566929,
+      987.843876722441
+    ]
+  }
+]

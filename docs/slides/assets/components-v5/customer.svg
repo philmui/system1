@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="158" viewBox="24 74 140 158"><defs><marker id="arrow-ink" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#243E42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-plum" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#665180" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-green" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#2E6653" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-ochre" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#7A6025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-blue_ink" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#355F72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-rust" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#81533E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+<marker id="arrow-muted" markerWidth="10" markerHeight="10" refX="8.5" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8.5 5 L1 9" fill="none" stroke="#52676A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></marker>
+</defs>
+<g data-component="customer" data-kind="illustration" aria-hidden="true" transform="translate(14 83) scale(0.8722222222222222)" fill="none" stroke="#243E42" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+
+          <ellipse cx="92" cy="151" rx="66" ry="6" fill="#E2EEF3" stroke="none" />
+          <path d="M60 113 56 145H78l7-30m22-2 7 32h20l-16-40" fill="#243E42" />
+          <path d="M53 146h26v7H46c0-4 3-6 7-7m60 0h24l8 7h-32Z" fill="#FFFFFF" />
+          <path d="M52 70q6-17 29-18h16q23 2 28 23l-9 46H62Z" fill="#E2EEF3" />
+          <path d="M63 62 46 81l15 20m51-41 22 22-8 22" fill="none" stroke-width="9" stroke="#E2EEF3" />
+          <circle cx="86" cy="33" r="23" fill="#F4DFD3" />
+          <path d="M64 30q-5-24 21-25 28-1 26 27l-10-6-3-12q-13 11-34 10Z" fill="#243E42" />
+          <path d="M83 30v7m15-7v7" stroke-width="2.6" />
+          <path d="M84 44q6 4 11-1" fill="none" />
+          <path d="m55 92 54-18 34 19-54 20Z" fill="#F6EAC8" />
+          <path d="m55 92 34 21v34l-34-20Zm34 21 54-20v35l-54 19Z" fill="#F6EAC8" />
+          <path d="m80 84 36 20v16l-10 4v-16L70 88" fill="#FFFFFF" />
+          <circle cx="60" cy="99" r="7" fill="#F4DFD3" />
+          <circle cx="131" cy="103" r="7" fill="#F4DFD3" />
+        
+</g>
+</svg>

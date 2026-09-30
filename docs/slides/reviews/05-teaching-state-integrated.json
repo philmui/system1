@@ -1,0 +1,120 @@
+{
+  "input": "/Users/pmui/dev/brilliant/system1/docs/slides/05-disaggregated-intelligence.html",
+  "inputSha256": "bb0f3f1b1423bb9db8d26559bca9c1b5efc09c040abba0e214a9e2fef0f23610",
+  "scriptOrigin": "/Users/pmui/dev/brilliant/system1/docs/slides/05-disaggregated-intelligence.html#teaching-script",
+  "scriptSha256": "1a88dc2e7e33a4cb8c617d426b09f278fbc7f6fec166f343adba02aa37858be4",
+  "method": "Actual v5 teaching script executed with a minimal DOM adapter over authored markup.",
+  "limitations": [
+    "No layout or pixel rendering check.",
+    "No real browser keyboard, media, export, or presenter-window check."
+  ],
+  "gate": [
+    {
+      "threshold": 0.5,
+      "coverage": "100%",
+      "error": "33%",
+      "review": "0"
+    },
+    {
+      "threshold": 0.75,
+      "coverage": "58%",
+      "error": "29%",
+      "review": "5"
+    },
+    {
+      "threshold": 0.99,
+      "coverage": "8%",
+      "error": "100%",
+      "review": "11"
+    },
+    {
+      "threshold": 1,
+      "coverage": "0%",
+      "error": "—",
+      "review": "12"
+    }
+  ],
+  "cost": [
+    {
+      "fallback": 20,
+      "total": "0.27 normalized units",
+      "saving": "73% lower"
+    },
+    {
+      "fallback": 93,
+      "total": "1.00 normalized units",
+      "saving": "Break-even"
+    },
+    {
+      "fallback": 100,
+      "total": "1.07 normalized units",
+      "saving": "7% higher"
+    }
+  ],
+  "trace": [
+    {
+      "exchange": "Pending",
+      "cableReturn": "Pending",
+      "event": "The identity service verifies the customer before protected order lookup."
+    },
+    {
+      "exchange": "Pending",
+      "cableReturn": "Pending",
+      "event": "The purchase service matches both owned line items; the spare cable was purchased separately."
+    },
+    {
+      "exchange": "Pending",
+      "cableReturn": "Pending",
+      "event": "System One records two AND tasks: exchange the headphones and return the separately purchased spare cable."
+    },
+    {
+      "exchange": "Active",
+      "cableReturn": "Pending",
+      "event": "The customer chooses the headphone exchange first; the cable return stays pending."
+    },
+    {
+      "exchange": "Awaiting confirmation",
+      "cableReturn": "Pending",
+      "event": "The exchange service checks its own policy and stock, then quotes the exchange terms."
+    },
+    {
+      "exchange": "Confirmed",
+      "cableReturn": "Pending",
+      "event": "The customer confirms the quoted exchange terms; service authorization is still pending."
+    },
+    {
+      "exchange": "Authorized",
+      "cableReturn": "Pending",
+      "event": "The service issues an exchange ID after rechecking authority, policy, stock, and accepted terms; the cable return remains pending."
+    },
+    {
+      "exchange": "Authorized",
+      "cableReturn": "Active",
+      "event": "Agent Graph resumes the cable return. Its policy, confirmation, and authorization are unfinished."
+    }
+  ],
+  "state": {
+    "reset": true,
+    "serializedRestoration": true,
+    "exerciseRestoration": true,
+    "unknownVersionIgnored": true,
+    "boundsApplied": true,
+    "changeNotifications": 18
+  },
+  "freeze": {
+    "output": "/Users/pmui/dev/brilliant/system1/docs/slides/exports/05-disaggregated-intelligence/static-frozen.html",
+    "sha256": "28f930067da01da2d8518cd8a03b9df468a2b81863cc52301915773cc2aa5be2",
+    "state": {
+      "version": 1,
+      "gateThreshold": 0.75,
+      "fallbackPercent": 20,
+      "traceIndex": 7,
+      "reveals": {
+        "exercise": true
+      }
+    },
+    "scriptsOmitted": true,
+    "sourcePreserved": true
+  },
+  "passed": true
+}

@@ -1,0 +1,133 @@
+{
+  "checked_on": "2026-09-28",
+  "conditions": "One bounded comparison over four previously indexed synthetic documents. Separate from held-out evaluation. Request elapsed time includes client/network time; different tasks do not form a controlled provider speed benchmark.",
+  "status": "succeeded",
+  "mode": "live",
+  "synthetic_only": true,
+  "provider_calls": 8,
+  "jev_requests": 6,
+  "jev_elapsed_ms": {
+    "min": 106.61108396016061,
+    "median": 125.25929199182428,
+    "max": 257.1167919668369,
+    "sum": 891.9889189419337
+  },
+  "openai_requests": 2,
+  "claims": 3,
+  "citations": 4,
+  "telemetry_status": "delivered",
+  "trace_available": true,
+  "measured_stages": 16,
+  "provider_requests": [
+    {
+      "instance": "intent",
+      "provider": "jev",
+      "configured_model": "jev-1.13.0",
+      "returned_model": "jev-1.13.0",
+      "elapsed_ms": 257.1167919668369,
+      "usage": {
+        "input_tokens": 567,
+        "output_tokens": 47
+      }
+    },
+    {
+      "instance": "plan",
+      "provider": "openai",
+      "configured_model": "gpt-4.1-mini",
+      "returned_model": "gpt-4.1-mini-2025-04-14",
+      "elapsed_ms": 2303.223708004225,
+      "usage": {
+        "input_tokens": 564,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 154,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 718
+      }
+    },
+    {
+      "instance": "task-2:screen",
+      "provider": "jev",
+      "configured_model": "jev-1.13.0",
+      "returned_model": "jev-1.13.0",
+      "elapsed_ms": 109.62012503296137,
+      "usage": {
+        "input_tokens": 1551,
+        "output_tokens": 187
+      }
+    },
+    {
+      "instance": "task-1:screen",
+      "provider": "jev",
+      "configured_model": "jev-1.13.0",
+      "returned_model": "jev-1.13.0",
+      "elapsed_ms": 168.1223339983262,
+      "usage": {
+        "input_tokens": 1250,
+        "output_tokens": 139
+      }
+    },
+    {
+      "instance": "synthesize",
+      "provider": "openai",
+      "configured_model": "gpt-4.1-mini",
+      "returned_model": "gpt-4.1-mini-2025-04-14",
+      "elapsed_ms": 3243.1860420037992,
+      "usage": {
+        "input_tokens": 803,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 325,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1128
+      }
+    },
+    {
+      "instance": "support:claim-1",
+      "provider": "jev",
+      "configured_model": "jev-1.13.0",
+      "returned_model": "jev-1.13.0",
+      "elapsed_ms": 137.03137496486306,
+      "usage": {
+        "input_tokens": 549,
+        "output_tokens": 20
+      }
+    },
+    {
+      "instance": "support:claim-2",
+      "provider": "jev",
+      "configured_model": "jev-1.13.0",
+      "returned_model": "jev-1.13.0",
+      "elapsed_ms": 113.4872090187855,
+      "usage": {
+        "input_tokens": 569,
+        "output_tokens": 20
+      }
+    },
+    {
+      "instance": "support:claim-3",
+      "provider": "jev",
+      "configured_model": "jev-1.13.0",
+      "returned_model": "jev-1.13.0",
+      "elapsed_ms": 106.61108396016061,
+      "usage": {
+        "input_tokens": 789,
+        "output_tokens": 20
+      }
+    }
+  ],
+  "telemetry_readback": {
+    "completed_root": true,
+    "span_count": 24,
+    "provider_span_count": 8,
+    "forbidden_text_fields_found": false
+  }
+}

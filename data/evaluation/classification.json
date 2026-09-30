@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "split": "held-out",
+  "note": "Independently authored labels, distinct from Atlas walkthrough texts and routing fixtures. Not used to tune thresholds.",
+  "cases": [
+    {
+      "id": "eval-invoice",
+      "text": "Invoice RG-18. Issue date 2026-05-02. Supplier Riverglass Studio. Customer Cedar Lab. Design services USD 950. Total due USD 950, payable within 30 days.",
+      "expected_category": "invoice",
+      "expect_escalation": false
+    },
+    {
+      "id": "eval-contract",
+      "text": "Service agreement between Willow Archive and Cedar Lab. Both parties have signed. The archive supplies cataloguing services for six months. Either party may terminate on 20 days written notice.",
+      "expected_category": "contract",
+      "expect_escalation": false
+    },
+    {
+      "id": "eval-policy",
+      "text": "Cedar Lab visitor policy. Every visitor must sign in and wear a temporary badge. The host must accompany visitors in the specimen room. Exceptions require the lab manager's approval.",
+      "expected_category": "policy",
+      "expect_escalation": false
+    },
+    {
+      "id": "eval-report",
+      "text": "Cedar Lab field report, 2026-05-04. We examined 12 sampling locations. Eight passed the moisture threshold and four require repeat measurements. The team completed the planned survey.",
+      "expected_category": "report",
+      "expect_escalation": false
+    },
+    {
+      "id": "eval-correspondence",
+      "text": "From: Taylor at Cedar Lab. To: Rowan. Subject: Tuesday meeting. Hello Rowan, please bring the draft agenda on Tuesday. We will choose the next field visit date then. Thanks, Taylor.",
+      "expected_category": "correspondence",
+      "expect_escalation": false
+    },
+    {
+      "id": "eval-other",
+      "text": "A recipe for pear compote. Slice four pears, add a spoon of sugar and a little water, and simmer for fifteen minutes. Serve warm with oats.",
+      "expected_category": "other",
+      "expect_escalation": false
+    },
+    {
+      "id": "eval-unknown",
+      "text": "[missing text] ... unclear fragment ...",
+      "expected_category": "unknown",
+      "expect_escalation": true
+    },
+    {
+      "id": "eval-ambiguous",
+      "text": "From: Rowan. To: Cedar Lab. Subject: proposed service agreement. Draft terms: six months of cataloguing for USD 400 per month. Please reply to accept; we have not yet approved these terms. This email includes an unsigned agreement draft.",
+      "expected_category": "correspondence",
+      "expect_escalation": true
+    }
+  ]
+}

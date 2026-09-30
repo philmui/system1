@@ -1,0 +1,26 @@
+{
+  "powerpoint": "05-disaggregated-intelligence.pptx",
+  "manifest": "manifest.json",
+  "passed": true,
+  "checks": {
+    "slideCount": 36,
+    "componentSlideCount": 5,
+    "movableObjectCount": 208,
+    "selectedSVGCount": 213,
+    "selectedPNGFallbackCount": 213,
+    "selectedVectorPathCount": 1839,
+    "sourceHyperlinksOnComponentSlides": 8,
+    "relationshipsChecked": 758,
+    "preservedBaseMembersChecked": 217,
+    "sizeEMU": [
+      12192000,
+      6858000
+    ],
+    "selectionPaneNamesMatch": true,
+    "selectedArtworkMatchesSources": true,
+    "originalNotesPreservedExceptDisclosure": true,
+    "unselectedSlidesPreservedExactly": true
+  },
+  "errors": [],
+  "limits": "Structural validation of selected movable SVG/PNG objects and unchanged base members. Legacy unselected artwork is preserved, not certified raster-free. This does not claim a Microsoft PowerPoint render, an automatic connector rerouting test, or visual reconstruction agreement."
+}

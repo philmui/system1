@@ -1,0 +1,4 @@
+Warnings:
+- Slide 30: heading inside a custom fr/fr grid. Confirm this is copied from the original Sxx skeleton, not a centered title hack.
+- Rendered measurement skipped: Playwright is not resolvable from the skill folder or current project. Static Swiss checks still ran.
+Swiss deck validation passed: 35 slide(s).

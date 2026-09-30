@@ -1,0 +1,27 @@
+[
+  {
+    "file": "05-disaggregated-intelligence.pptx",
+    "bytes": 11610577,
+    "sha256": "ebedf78a586cc1379a46eaee93f82739c270116056091ebf09334bde3aab9b3b"
+  },
+  {
+    "file": "artifact-integrity.json",
+    "bytes": 4700,
+    "sha256": "96b7dcbb6cbdc8f2b4ceee296e05d1a66fb9087b1a3853e5ce041fe7526e1037"
+  },
+  {
+    "file": "verification.md",
+    "bytes": 9286,
+    "sha256": "61d024cf4be6b94a6c8d31248109b5e1ca0b3d9103522722a9a0455d2e0e3e8a"
+  },
+  {
+    "file": "POWERPOINT-EXPORT.md",
+    "bytes": 9731,
+    "sha256": "730f98bcf9c5983d3990c751d94cec770614540eb2bd43a473721857b06a3d92"
+  },
+  {
+    "file": "README.md",
+    "bytes": 6534,
+    "sha256": "05bf777341aab72472ce1ef959ba1f002d09293ef3db25e45a84945ce928dc8d"
+  }
+]

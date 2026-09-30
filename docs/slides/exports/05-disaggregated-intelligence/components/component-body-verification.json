@@ -1,0 +1,46 @@
+{
+  "method": "Independent librsvg renders of outlined SVG objects reconstructed from manifest coordinates and compared to complete raw source SVGs; not an Office-render claim.",
+  "passed": true,
+  "slides": [
+    {
+      "slide": 6,
+      "id": "returns-access",
+      "objectCount": 51,
+      "meanAbsoluteChannelDifference": 0.10025186199072704,
+      "pixelsOver30Fraction": 0.0010034403669724771,
+      "passed": true
+    },
+    {
+      "slide": 7,
+      "id": "returns-routing",
+      "objectCount": 55,
+      "meanAbsoluteChannelDifference": 0.1569038546907369,
+      "pixelsOver30Fraction": 0.0017599511689849068,
+      "passed": true
+    },
+    {
+      "slide": 8,
+      "id": "returns-fallback",
+      "objectCount": 47,
+      "meanAbsoluteChannelDifference": 0.11946735967248692,
+      "pixelsOver30Fraction": 0.0013151080201242971,
+      "passed": true
+    },
+    {
+      "slide": 9,
+      "id": "returns-policy",
+      "objectCount": 30,
+      "meanAbsoluteChannelDifference": 0.0858658256880734,
+      "pixelsOver30Fraction": 0.0009192808523231725,
+      "passed": true
+    },
+    {
+      "slide": 36,
+      "id": "returns-components",
+      "objectCount": 25,
+      "meanAbsoluteChannelDifference": 0.01607107625530236,
+      "pixelsOver30Fraction": 0.0,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "06 \u00b7 l: DISAGGREGATED INTELLIGENCE [p06-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      62.07133858267716,
+      328.4951171875,
+      13.0
+    ],
+    "baseline": [
+      88.0,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "06 \u00b7 r: 06 / 36 [p06-text-0006]",
+    "text": "06 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1755.9636220472441,
+      60.07133858267716,
+      74.798828125,
+      17.0
+    ],
+    "baseline": [
+      1755.9636220472441,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "06 \u00b7 returns-access-eyebrow: STEP 01 / ONE RETURN, TWO ALLOCATIONS \u00b7 A [p06-text-0007]",
+    "text": "STEP 01 / ONE RETURN, TWO ALLOCATIONS \u00b7 A",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.0,
+      127.18913385826774,
+      538.4140625,
+      19.999999999999986
+    ],
+    "baseline": [
+      88.0,
+      143.18913385826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "06 \u00b7 returns-access-title: Start with identity and an owned purchase [p06-text-0008]",
+    "text": "Start with identity and an owned purchase",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.0,
+      184.04425196850394,
+      1381.984375,
+      70.0
+    ],
+    "baseline": [
+      88.0,
+      237.04425196850394
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "text \u00b7 2",
+    "text": "Same",
+    "font": "Manrope",
+    "fontSizePx": 25.0,
+    "bbox": [
+      146.49992125984252,
+      312.0,
+      67.0,
+      18.0
+    ],
+    "baseline": [
+      146.49992125984252,
+      330.0
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "text \u00b7 4",
+    "text": "safeguards",
+    "font": "Manrope",
+    "fontSizePx": 25.0,
+    "bbox": [
+      112.99992125984252,
+      349.0,
+      134.0,
+      24.0
+    ],
+    "baseline": [
+      111.99992125984252,
+      367.0
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "text \u00b7 6",
+    "text": "Check identity",
+    "font": "Manrope",
+    "fontSizePx": 33.0,
+    "bbox": [
+      308.4999212598425,
+      322.0,
+      234.0,
+      31.0
+    ],
+    "baseline": [
+      308.4999212598425,
+      345.0
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "text \u00b7 8",
+    "text": "Match purchase",
+    "font": "Manrope",
+    "fontSizePx": 33.0,
+    "bbox": [
+      711.9999212598425,
+      322.0,
+      255.0,
+      31.0
+    ],
+    "baseline": [
+      709.9999212598425,
+      345.0
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "text \u00b7 21",
+    "text": "Verified",
+    "font": "Manrope",
+    "fontSizePx": 28.0,
+    "bbox": [
+      576.4999212598425,
+      405.0,
+      104.0,
+      21.0
+    ],
+    "baseline": [
+      576.4999212598425,
+      426.0
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "text \u00b7 23",
+    "text": "Matched",
+    "font": "Manrope",
+    "fontSizePx": 28.0,
+    "bbox": [
+      947.4999212598425,
+      405.0,
+      117.0,
+      21.0
+    ],
+    "baseline": [
+      946.4999212598425,
+      426.0
+    ]
+  },
+  {
+    "shapeId": "1052",
+    "name": "text \u00b7 34",
+    "text": "Denied",
+    "font": "Manrope",
+    "fontSizePx": 28.0,
+    "bbox": [
+      170.24992125984252,
+      611.0,
+      93.99999999999997,
+      21.0
+    ],
+    "baseline": [
+      169.24992125984252,
+      632.0
+    ]
+  },
+  {
+    "shapeId": "1054",
+    "name": "text \u00b7 36",
+    "text": "No login",
+    "font": "Manrope",
+    "fontSizePx": 28.0,
+    "bbox": [
+      444.7499212598425,
+      602.0,
+      108.0,
+      28.0
+    ],
+    "baseline": [
+      443.7499212598425,
+      623.0
+    ]
+  },
+  {
+    "shapeId": "1056",
+    "name": "text \u00b7 38",
+    "text": "Recheck",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      632.7499212598425,
+      653.0,
+      114.0,
+      19.0
+    ],
+    "baseline": [
+      631.7499212598425,
+      672.0
+    ]
+  },
+  {
+    "shapeId": "1068",
+    "name": "text \u00b7 46",
+    "text": "Missing /",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      860.7499212598425,
+      591.0,
+      118.0,
+      25.0
+    ],
+    "baseline": [
+      859.7499212598425,
+      610.0
+    ]
+  },
+  {
+    "shapeId": "1070",
+    "name": "text \u00b7 48",
+    "text": "mismatch",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      860.7499212598425,
+      631.0,
+      129.0,
+      19.0
+    ],
+    "baseline": [
+      859.7499212598425,
+      650.0
+    ]
+  },
+  {
+    "shapeId": "1072",
+    "name": "text \u00b7 50",
+    "text": "Recheck",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1079.7499212598425,
+      677.0,
+      114.0,
+      19.0
+    ],
+    "baseline": [
+      1078.7499212598425,
+      696.0
+    ]
+  },
+  {
+    "shapeId": "1139",
+    "name": "text \u00b7 117",
+    "text": "Customer",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      109.99992125984252,
+      545.0,
+      139.0,
+      21.0
+    ],
+    "baseline": [
+      109.99992125984252,
+      566.0
+    ]
+  },
+  {
+    "shapeId": "1141",
+    "name": "text \u00b7 119",
+    "text": "Stop",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      143.49992125984252,
+      869.0,
+      68.0,
+      29.0
+    ],
+    "baseline": [
+      142.49992125984252,
+      891.0
+    ]
+  },
+  {
+    "shapeId": "1143",
+    "name": "text \u00b7 121",
+    "text": "Sign in",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      381.9999212598425,
+      869.0,
+      95.0,
+      29.0
+    ],
+    "baseline": [
+      380.9999212598425,
+      891.0
+    ]
+  },
+  {
+    "shapeId": "1145",
+    "name": "text \u00b7 123",
+    "text": "Verify purchase",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      733.4999212598425,
+      869.0,
+      225.0,
+      29.0
+    ],
+    "baseline": [
+      733.4999212598425,
+      891.0
+    ]
+  },
+  {
+    "shapeId": "1148",
+    "name": "text \u00b7 126",
+    "text": "B",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      1087.9999212598425,
+      448.0,
+      18.0,
+      23.0
+    ],
+    "baseline": [
+      1085.9999212598425,
+      471.0
+    ]
+  },
+  {
+    "shapeId": "1150",
+    "name": "text \u00b7 128",
+    "text": "Choose request",
+    "font": "Manrope",
+    "fontSizePx": 26.0,
+    "bbox": [
+      995.4999212598425,
+      332.0,
+      201.0,
+      25.0
+    ],
+    "baseline": [
+      995.4999212598425,
+      351.0
+    ]
+  },
+  {
+    "shapeId": "1152",
+    "name": "text \u00b7 130",
+    "text": "route",
+    "font": "Manrope",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1062.4999212598425,
+      369.0,
+      67.0,
+      19.0
+    ],
+    "baseline": [
+      1061.4999212598425,
+      388.0
+    ]
+  },
+  {
+    "shapeId": "1157",
+    "name": "text \u00b7 135",
+    "text": "Wrapper intelligence",
+    "font": "Manrope",
+    "fontSizePx": 33.0,
+    "bbox": [
+      1245.7499212598425,
+      323.0,
+      330.0,
+      31.0
+    ],
+    "baseline": [
+      1245.7499212598425,
+      346.0
+    ]
+  },
+  {
+    "shapeId": "1205",
+    "name": "text \u00b7 179",
+    "text": "Frontier every step",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1396.9999212598425,
+      558.0,
+      270.0,
+      29.0
+    ],
+    "baseline": [
+      1394.9999212598425,
+      580.0
+    ]
+  },
+  {
+    "shapeId": "1207",
+    "name": "text \u00b7 181",
+    "text": "Disaggregated",
+    "font": "Manrope",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1247.7499212598425,
+      629.0,
+      239.0,
+      34.0
+    ],
+    "baseline": [
+      1245.7499212598425,
+      654.0
+    ]
+  },
+  {
+    "shapeId": "1209",
+    "name": "text \u00b7 183",
+    "text": "System One",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1443.9999212598425,
+      674.0,
+      155.0,
+      25.0
+    ],
+    "baseline": [
+      1442.9999212598425,
+      693.0
+    ]
+  },
+  {
+    "shapeId": "1246",
+    "name": "text \u00b7 216",
+    "text": "Agent Graph executes",
+    "font": "Manrope",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1380.4999212598425,
+      846.0,
+      301.0,
+      28.0
+    ],
+    "baseline": [
+      1380.4999212598425,
+      867.0
+    ]
+  },
+  {
+    "shapeId": "1248",
+    "name": "text \u00b7 218",
+    "text": "AgentScript authors",
+    "font": "Manrope",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1403.9999212598425,
+      891.0,
+      254.0,
+      25.0
+    ],
+    "baseline": [
+      1403.9999212598425,
+      910.0
+    ]
+  },
+  {
+    "shapeId": "1250",
+    "name": "06 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript control plane \u00b7 Jev + LangGraph \u00b7 Acc [p06-text-0009]",
+    "text": "Reliable enterprise agents",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      972.996220472441,
+      229.0,
+      20.0
+    ],
+    "baseline": [
+      88.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1250",
+    "name": "06 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript control plane \u00b7 Jev + LangGraph \u00b7 Acc [p06-text-0009]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      324.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      318.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1250",
+    "name": "06 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript control plane \u00b7 Jev + LangGraph \u00b7 Acc [p06-text-0009]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      333.0,
+      972.996220472441,
+      228.0,
+      20.0
+    ],
+    "baseline": [
+      333.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1250",
+    "name": "06 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript control plane \u00b7 Jev + LangGraph \u00b7 Acc [p06-text-0009]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      568.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      562.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1250",
+    "name": "06 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript control plane \u00b7 Jev + LangGraph \u00b7 Acc [p06-text-0009]",
+    "text": "Jev + LangGraph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      577.0,
+      973.996220472441,
+      146.0,
+      19.0
+    ],
+    "baseline": [
+      577.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1250",
+    "name": "06 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript control plane \u00b7 Jev + LangGraph \u00b7 Acc [p06-text-0009]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      730.0,
+      979.996220472441,
+      3.0,
+      3.0
+    ],
+    "baseline": [
+      724.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1250",
+    "name": "06 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript control plane \u00b7 Jev + LangGraph \u00b7 Acc [p06-text-0009]",
+    "text": "Access and allocation \u00b7 A",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      739.0,
+      972.996220472441,
+      217.0,
+      15.0
+    ],
+    "baseline": [
+      739.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1251",
+    "name": "06 \u00b7 span: Proposed design \u00b7 same service safeguards [p06-text-0010]",
+    "text": "Proposed design \u00b7 same service safeguards",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1458.5595275590551,
+      972.996220472441,
+      373.0,
+      20.0
+    ],
+    "baseline": [
+      1457.5595275590551,
+      987.996220472441
+    ]
+  }
+]

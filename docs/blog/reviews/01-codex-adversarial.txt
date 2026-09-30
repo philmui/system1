@@ -1,0 +1,51 @@
+[codex] Starting Codex task thread.
+[codex] Thread ready (01a0eb85-713a-7c23-8dcb-00ceaa3044da).
+[codex] Turn started (01a0eb85-72c7-7600-b21e-8b5942ceda48).
+[codex] Assistant message captured: I’ll inspect the draft and research notes, then check the product claims and proposed evaluat...
+[codex] Running command: /bin/zsh -lc 'git diff -- 01-building-prod.md research/langchain-sources.md research/typesafe...
+[codex] Running command: /bin/zsh -lc pwd
+[codex] Running command: /bin/zsh -lc 'cat /Users/pmui/.codex/skills/plain-research-writing/SKILL.md'
+[codex] Running command: /bin/zsh -lc "rg --files -g AGENTS.md -g SKILL.md -g '01-building-prod.md' -g 'research/*'"
+[codex] Command completed: /bin/zsh -lc pwd (exit 0)
+[codex] Running command: /bin/zsh -lc 'git status --short --untracked-files=all'
+[codex] Running command: /bin/zsh -lc 'git diff --cached -- 01-building-prod.md research/langchain-sources.md research...
+[codex] Command completed: /bin/zsh -lc 'git diff -- 01-building-prod.md research/langchain-sources.md research/typesafe... (exit 0)
+[codex] Command completed: /bin/zsh -lc 'cat /Users/pmui/.codex/skills/plain-research-writing/SKILL.md' (exit 0)
+[codex] Command completed: /bin/zsh -lc 'git status --short --untracked-files=all' (exit 0)
+[codex] Command completed: /bin/zsh -lc 'git diff --cached -- 01-building-prod.md research/langchain-sources.md research... (exit 0)
+[codex] Command completed: /bin/zsh -lc "rg --files -g AGENTS.md -g SKILL.md -g '01-building-prod.md' -g 'research/*'" (exit 0)
+[codex] Assistant message captured: I’m applying the plain-research-writing skill to check whether the claims match the evidence....
+[codex] Searching:
+[codex] Running command: /bin/zsh -lc 'git diff --no-index -- /dev/null 01-building-prod.md'
+[codex] Running command: /bin/zsh -lc 'nl -ba 01-building-prod.md'
+[codex] Running command: /bin/zsh -lc "python3 - <<'PY' from pathlib import Path p = Path.cwd() for parent in [p, *p.p...
+[codex] Running command: /bin/zsh -lc 'cat research/langchain-sources.md research/typesafe-sources.md'
+[codex] Command completed: /bin/zsh -lc 'nl -ba 01-building-prod.md' (exit 0)
+[codex] Command failed: /bin/zsh -lc 'git diff --no-index -- /dev/null 01-building-prod.md' (exit 1)
+[codex] Command failed: /bin/zsh -lc "python3 - <<'PY' from pathlib import Path p = Path.cwd() for parent in [p, *p.p... (exit 1)
+[codex] Command completed: /bin/zsh -lc 'cat research/langchain-sources.md research/typesafe-sources.md' (exit 0)
+[codex] Searching:
+[codex] Running command: /bin/zsh -lc 'nl -ba research/typesafe-sources.md'
+[codex] Running command: /bin/zsh -lc "python3 - <<'PY' from pathlib import Path p=Path.cwd() found=[] for parent in [...
+[codex] Running command: /bin/zsh -lc 'nl -ba research/langchain-sources.md'
+[codex] Command failed: /bin/zsh -lc "python3 - <<'PY' from pathlib import Path p=Path.cwd() found=[] for parent in [... (exit 1)
+[codex] Command completed: /bin/zsh -lc 'nl -ba research/typesafe-sources.md' (exit 0)
+[codex] Command completed: /bin/zsh -lc 'nl -ba research/langchain-sources.md' (exit 0)
+[codex] Assistant message captured: The draft explicitly separates confidence from authorization and rules out LangGraph API comp...
+[codex] Running command: /bin/zsh -lc "python3 -c 'from pathlib import Path; p=Path.cwd(); files=[q/\"AGENTS.md\" for ...
+[codex] Command completed: /bin/zsh -lc "python3 -c 'from pathlib import Path; p=Path.cwd(); files=[q/\"AGENTS.md\" for ... (exit 0)
+[codex] Running command: /bin/zsh -lc "rg -n 'future|prefix|timestamp|decision time|time|context|snapshot|partition|fr...
+[codex] Command completed: /bin/zsh -lc "rg -n 'future|prefix|timestamp|decision time|time|context|snapshot|partition|fr... (exit 0)
+[codex] Assistant message captured: { "verdict": "needs-attention", "summary": "Hold publication until the proposed evaluation pr...
+[codex] Turn completion inferred after the main thread finished and subagent work drained.
+# Codex Adversarial Review
+
+Target: working tree diff
+Verdict: needs-attention
+
+Hold publication until the proposed evaluation protocol explicitly excludes future information from decision inputs.
+
+Findings:
+- [medium] Restrict examples to information available at decision time (01-building-prod.md:35-37)
+  Grouping conversations prevents cross-partition leakage, but the protocol never excludes later turns or case resolutions from an earlier decision's input. If complete transcripts become examples, intake routing can see later clarifications and semantic endpointing can see whether speech continued. This could inflate held-out accuracy and produce unsafe routing thresholds even with a frozen candidate. The research notes explicitly identify this separate leakage risk in research/typesafe-sources.md:83 and :95.
+  Recommendation: Require each example to use only the conversation prefix and account-state snapshot available at the decision timestamp. Keep subsequent events available for labeling only, and retain all prefixes and derived variants in the same partition.

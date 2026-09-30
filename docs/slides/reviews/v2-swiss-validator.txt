@@ -1,0 +1,3 @@
+Warnings:
+- Rendered measurement skipped: Playwright is not resolvable from the skill folder or current project. Static Swiss checks still ran.
+Swiss deck validation passed: 31 slide(s).

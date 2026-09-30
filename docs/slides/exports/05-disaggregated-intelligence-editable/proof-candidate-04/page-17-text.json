@@ -1,0 +1,359 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "17 \u00b7 l: DISAGGREGATED INTELLIGENCE [p17-text-0010]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "17 \u00b7 r: 17 / 36 [p17-text-0011]",
+    "text": "17 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "17 \u00b7 mixed-eyebrow: 04 / STEP 3 [p17-text-0012]",
+    "text": "04 / STEP 3",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      127.298828125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "17 \u00b7 mixed-title: State preserves work across a branch [p17-text-0013]",
+    "text": "State preserves work across a branch",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.7724609375,
+      183.94854884350394,
+      1225.2109375,
+      70.1279296875
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "17 \u00b7 strong: Two AND tasks [p17-text-0014]",
+    "text": "Two AND tasks",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      116.1162109375,
+      468.4414932947834,
+      206.2177734375,
+      20.9375
+    ],
+    "baseline": [
+      116.0,
+      488.9737198572834
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "17 \u00b7 small: Record exchange + cable return [p17-text-0015]",
+    "text": "Record exchange + cable return",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      117.98046875,
+      515.4811177411418,
+      318.4033203125,
+      21.2294921875
+    ],
+    "baseline": [
+      116.0,
+      531.0572896161418
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "17 \u00b7 strong: Clarify priority [p17-text-0016]",
+    "text": "Clarify priority",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      618.6763671875,
+      467.1075089197834,
+      197.373046875,
+      29.3193359375
+    ],
+    "baseline": [
+      617.4,
+      488.9737198572834
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "17 \u00b7 small: Ask which task to start [p17-text-0017]",
+    "text": "Ask which task to start",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      617.487890625,
+      514.8434224286418,
+      226.662109375,
+      16.5224609375
+    ],
+    "baseline": [
+      617.4,
+      531.0572896161418
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "17 \u00b7 strong: Exchange active [p17-text-0018]",
+    "text": "Exchange active",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1317.3203125,
+      367.33506797490156,
+      220.544921875,
+      29.3193359375
+    ],
+    "baseline": [
+      1315.0,
+      389.20127891240156
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "17 \u00b7 small: Cable return stays pending [p17-text-0019]",
+    "text": "Cable return stays pending",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1316.078125,
+      415.0708240034449,
+      270.5068359375,
+      21.8671875
+    ],
+    "baseline": [
+      1315.0,
+      431.2846911909449
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "17 \u00b7 strong: Cable return active [p17-text-0020]",
+    "text": "Cable return active",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1316.2763671875,
+      788.0207372662402,
+      262.451171875,
+      22.4169921875
+    ],
+    "baseline": [
+      1315.0,
+      809.8869482037402
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "17 \u00b7 small: Resume after exchange authorization [p17-text-0021]",
+    "text": "Resume after exchange authorization",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1316.98046875,
+      835.7564932947835,
+      376.173828125,
+      21.8671875
+    ],
+    "baseline": [
+      1315.0,
+      851.9703604822835
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "17 \u00b7 strong: Recorded handoff [p17-text-0022]",
+    "text": "Recorded handoff",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      619.7203125,
+      799.7363456569882,
+      249.2822265625,
+      21.3447265625
+    ],
+    "baseline": [
+      617.4,
+      820.6748222194882
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "17 \u00b7 small: Retain all outstanding work [p17-text-0023]",
+    "text": "Retain all outstanding work",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      619.38046875,
+      846.5445247908465,
+      276.0947265625,
+      21.8671875
+    ],
+    "baseline": [
+      617.4,
+      862.7583919783465
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "17 \u00b7 node label: exchange selected [p17-text-0024]",
+    "text": "exchange selected",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1032.0912598425198,
+      331.61535740649606,
+      210.6748046875,
+      24.125
+    ],
+    "baseline": [
+      1030.8412598425198,
+      349.31555271899606
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "17 \u00b7 node label: no choice [p17-text-0025]",
+    "text": "no choice",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      591.374609375,
+      623.9984645669291,
+      109.8515625,
+      18.7744140625
+    ],
+    "baseline": [
+      589.4,
+      642.4232692544291
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "17 \u00b7 node label: within budget [p17-text-0026]",
+    "text": "within budget",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      589.8248046875,
+      684.9984645669291,
+      160.099609375,
+      24.849609375
+    ],
+    "baseline": [
+      589.4,
+      703.4232692544291
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "17 \u00b7 node label: exchange [p17-text-0027]",
+    "text": "exchange",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1604.35,
+      576.1824440206693,
+      107.875,
+      24.125
+    ],
+    "baseline": [
+      1603.1,
+      593.8826393331693
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "17 \u00b7 node label: authorized [p17-text-0028]",
+    "text": "authorized",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1604.1498046875,
+      636.4578346456693,
+      121.17578125,
+      18.775390625
+    ],
+    "baseline": [
+      1603.1,
+      654.8826393331693
+    ]
+  },
+  {
+    "shapeId": "1043",
+    "name": "17 \u00b7 span: Agent Graph / guided determinism [p17-text-0029]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      972.910282972441,
+      308.6396484375,
+      19.81640625
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "17 \u00b7 span: Constructed mixed-request path [p17-text-0030]",
+    "text": "Constructed mixed-request path",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1546.5605853223426,
+      973.840947034941,
+      283.939453125,
+      18.6396484375
+    ],
+    "baseline": [
+      1545.6299212598426,
+      987.843876722441
+    ]
+  }
+]

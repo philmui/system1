@@ -1,0 +1,28 @@
+{
+  "powerpoint": "artwork-base.pptx",
+  "source": "Disaggregated intelligence \u00b7 Building reliable Agentforce workflows \u00b7 v5",
+  "passed": true,
+  "checks": {
+    "slideCount": 36,
+    "editableNotesCount": 36,
+    "vectorArtworkCount": 36,
+    "pngFallbackCount": 36,
+    "vectorPathCount": 11695,
+    "clickableWebSourceCount": 77,
+    "externalRelationshipCount": 77,
+    "relationshipsChecked": 342,
+    "sourceHyperlinkTargetsMatch": true,
+    "originalSpeakerNotesPreserved": true,
+    "sizeEMU": [
+      12192000,
+      6858000
+    ],
+    "allObjectsWithinCanvas": true,
+    "glyphsOutlined": true,
+    "pdfEmbeddedFontCount": 7,
+    "maxMeanImageDifference": 0.5875950038580247,
+    "maxPixelsOver30Fraction": 0.005486111111111111
+  },
+  "errors": [],
+  "limits": "No Microsoft PowerPoint or LibreOffice renderer is installed. Validation covers OOXML/ZIP consistency, bounds, exact packaged-image identity, and independent SVG/PDF raster agreement; it does not claim an Office render."
+}

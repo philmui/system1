@@ -1,0 +1,784 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "23 \u00b7 l: DISAGGREGATED INTELLIGENCE [p23-text-0031]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "23 \u00b7 r: 23 / 36 [p23-text-0032]",
+    "text": "23 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "23 \u00b7 gate-eyebrow: 06 / INTERACTIVE OPERATING POINT [p23-text-0033]",
+    "text": "06 / INTERACTIVE OPERATING POINT",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      423.513671875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "23 \u00b7 gate-title: A stricter gate moves work somewhere [p23-text-0034]",
+    "text": "A stricter gate moves work somewhere",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      89.4404296875,
+      184.05597071850394,
+      1273.17578125,
+      71.1005859375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "23 \u00b7 gate-text-1: Twelve constructed examples [p23-text-0035]",
+    "text": "Twelve constructed examples",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      88.400390625,
+      313.519415292815,
+      553.4638671875,
+      39.0
+    ],
+    "baseline": [
+      88.0,
+      342.919805917815
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "23 \u00b7 i: \u00d7 [p23-text-0036]",
+    "text": "\u00d7",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      107.7939453125,
+      417.79375,
+      7.7880859375,
+      7.7880859375
+    ],
+    "baseline": [
+      105.0,
+      428.02421875
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "23 \u00b7 sample wrong: 0.99 [p23-text-0037]",
+    "text": "0.99",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      152.2880859375,
+      416.49488096702754,
+      52.439453125,
+      16.6064453125
+    ],
+    "baseline": [
+      151.0,
+      432.82495909202754
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0038]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      321.2421875,
+      413.19657849409447,
+      11.4619140625,
+      13.4423828125
+    ],
+    "baseline": [
+      315.5,
+      428.66239880659447
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "23 \u00b7 sample: 0.96 [p23-text-0039]",
+    "text": "0.96",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      362.7880859375,
+      416.49488096702754,
+      52.439453125,
+      16.6064453125
+    ],
+    "baseline": [
+      361.5,
+      432.82495909202754
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0040]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      531.7421875,
+      413.19657849409447,
+      11.4619140625,
+      13.4423828125
+    ],
+    "baseline": [
+      526.0,
+      428.66239880659447
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "23 \u00b7 sample: 0.92 [p23-text-0041]",
+    "text": "0.92",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      573.2880859375,
+      416.49488096702754,
+      52.462890625,
+      16.6064453125
+    ],
+    "baseline": [
+      572.0,
+      432.82495909202754
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0042]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      742.2421875,
+      413.19657849409447,
+      11.4619140625,
+      13.4423828125
+    ],
+    "baseline": [
+      736.5,
+      428.66239880659447
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "23 \u00b7 sample: 0.88 [p23-text-0043]",
+    "text": "0.88",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      783.7880859375,
+      416.49488096702754,
+      52.6455078125,
+      16.6064453125
+    ],
+    "baseline": [
+      782.5,
+      432.82495909202754
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "23 \u00b7 i: \u00d7 [p23-text-0044]",
+    "text": "\u00d7",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      107.7939453125,
+      509.7937500000001,
+      7.7880859375,
+      7.788085937499943
+    ],
+    "baseline": [
+      105.0,
+      520.02421875
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "23 \u00b7 sample wrong: 0.85 [p23-text-0045]",
+    "text": "0.85",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      152.2880859375,
+      508.49488096702754,
+      52.3701171875,
+      16.606445312499943
+    ],
+    "baseline": [
+      151.0,
+      524.8249590920275
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0046]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      321.2421875,
+      505.1965784940944,
+      11.4619140625,
+      13.4423828125
+    ],
+    "baseline": [
+      315.5,
+      520.6623988065944
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "23 \u00b7 sample: 0.81 [p23-text-0047]",
+    "text": "0.81",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      362.7880859375,
+      508.4948809670275,
+      52.830078125,
+      16.6064453125
+    ],
+    "baseline": [
+      361.5,
+      524.8249590920275
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0048]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      531.7421875,
+      505.1965784940944,
+      11.4619140625,
+      13.4423828125
+    ],
+    "baseline": [
+      526.0,
+      520.6623988065944
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "23 \u00b7 sample: 0.76 [p23-text-0049]",
+    "text": "0.76",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      573.2880859375,
+      508.4948809670275,
+      52.439453125,
+      16.6064453125
+    ],
+    "baseline": [
+      572.0,
+      524.8249590920275
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "23 \u00b7 gate-text-2: \u2713 correct route \u00b7 \u00d7 wrong route Faded examples go to review. [p23-text-0050]",
+    "text": "\u2713 correct route \u00b7 \u00d7 wrong route",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      94.525390625,
+      681.524766855315,
+      355.5751953125,
+      24.0
+    ],
+    "baseline": [
+      88.0,
+      699.099962167815
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "23 \u00b7 gate-text-2: \u2713 correct route \u00b7 \u00d7 wrong route Faded examples go to review. [p23-text-0050]",
+    "text": "Faded examples go to review.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      90.25,
+      716.915157480315,
+      336.353515625,
+      24.849609375
+    ],
+    "baseline": [
+      88.0,
+      735.339962167815
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "23 \u00b7 label: Automatic-route threshold: 0.75 [p23-text-0051]",
+    "text": "Automatic-route threshold: ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1012.1201171875,
+      375.1896484375,
+      374.341796875,
+      22.53125
+    ],
+    "baseline": [
+      1012.0,
+      397.3
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "23 \u00b7 label: Automatic-route threshold: 0.75 [p23-text-0051]",
+    "text": "0.75",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1398.751953125,
+      368.899609375,
+      91.080078125,
+      28.880859375
+    ],
+    "baseline": [
+      1396.51171875,
+      397.3
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "23 \u00b7 strong: 58% [p23-text-0052]",
+    "text": "58%",
+    "font": "Salesforce Sans",
+    "fontSizePx": 57.0,
+    "bbox": [
+      1035.5390625,
+      468.21740557332674,
+      133.6064453125,
+      42.5224609375
+    ],
+    "baseline": [
+      1034.0,
+      509.65685869832674
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "23 \u00b7 stat: 7 / 12 auto-routed [p23-text-0053]",
+    "text": "7 / 12 auto-routed",
+    "font": "Salesforce Sans",
+    "fontSizePx": 23.0,
+    "bbox": [
+      1034.828125,
+      540.73828125,
+      196.6953125,
+      19.9638671875
+    ],
+    "baseline": [
+      1034.0,
+      558.81640625
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "23 \u00b7 strong: 29% [p23-text-0054]",
+    "text": "29%",
+    "font": "Salesforce Sans",
+    "fontSizePx": 57.0,
+    "bbox": [
+      1308.7183719857283,
+      468.21740557332674,
+      133.09375,
+      42.2373046875
+    ],
+    "baseline": [
+      1306.6666141732283,
+      509.65685869832674
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "23 \u00b7 stat: 2 / 7 wrong [p23-text-0055]",
+    "text": "2 / 7 wrong",
+    "font": "Salesforce Sans",
+    "fontSizePx": 23.0,
+    "bbox": [
+      1307.7701297982283,
+      540.73828125,
+      123.119140625,
+      23.9892578125
+    ],
+    "baseline": [
+      1306.6666141732283,
+      558.81640625
+    ]
+  },
+  {
+    "shapeId": "1043",
+    "name": "23 \u00b7 strong: 5 [p23-text-0056]",
+    "text": "5",
+    "font": "Salesforce Sans",
+    "fontSizePx": 57.0,
+    "bbox": [
+      1580.8724483267717,
+      469.30041338582674,
+      30.7802734375,
+      41.439453125
+    ],
+    "baseline": [
+      1579.3333858267717,
+      509.65685869832674
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "23 \u00b7 stat: To review [p23-text-0057]",
+    "text": "To review",
+    "font": "Salesforce Sans",
+    "fontSizePx": 23.0,
+    "bbox": [
+      1579.4251827017717,
+      541.865234375,
+      99.0830078125,
+      17.2724609375
+    ],
+    "baseline": [
+      1579.3333858267717,
+      558.81640625
+    ]
+  },
+  {
+    "shapeId": "1045",
+    "name": "23 \u00b7 gate-text-3: A high-scoring mistake can survive the gate. Review consumes capacity and can  [p23-text-0058]",
+    "text": "A high-scoring mistake can survive the gate.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1012.1201171875,
+      597.205792015256,
+      603.5693359375,
+      29.8203125
+    ],
+    "baseline": [
+      1012.0,
+      619.316143577756
+    ]
+  },
+  {
+    "shapeId": "1045",
+    "name": "23 \u00b7 gate-text-3: A high-scoring mistake can survive the gate. Review consumes capacity and can  [p23-text-0058]",
+    "text": "Review consumes capacity and can add delay.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1014.7001953125,
+      639.805792015256,
+      630.6591796875,
+      29.8212890625
+    ],
+    "baseline": [
+      1012.0,
+      661.916143577756
+    ]
+  },
+  {
+    "shapeId": "1048",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0059]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      742.2421875,
+      505.19657849409435,
+      11.4619140625,
+      13.442382812500057
+    ],
+    "baseline": [
+      736.5,
+      520.6623988065944
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "23 \u00b7 sample review: 0.70 [p23-text-0060]",
+    "text": "0.70",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      783.7880859375,
+      508.4948809670274,
+      52.623046875,
+      16.606445312500057
+    ],
+    "baseline": [
+      782.5,
+      524.8249590920275
+    ]
+  },
+  {
+    "shapeId": "1052",
+    "name": "23 \u00b7 i: \u00d7 [p23-text-0061]",
+    "text": "\u00d7",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      107.7939453125,
+      601.79375,
+      7.7880859375,
+      7.7880859375
+    ],
+    "baseline": [
+      105.0,
+      612.02421875
+    ]
+  },
+  {
+    "shapeId": "1053",
+    "name": "23 \u00b7 sample wrong review: 0.66 [p23-text-0062]",
+    "text": "0.66",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      152.2880859375,
+      600.4948809670276,
+      52.439453125,
+      16.6064453125
+    ],
+    "baseline": [
+      151.0,
+      616.8249590920276
+    ]
+  },
+  {
+    "shapeId": "1056",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0063]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      321.2421875,
+      597.1965784940945,
+      11.4619140625,
+      13.4423828125
+    ],
+    "baseline": [
+      315.5,
+      612.6623988065945
+    ]
+  },
+  {
+    "shapeId": "1057",
+    "name": "23 \u00b7 sample review: 0.60 [p23-text-0064]",
+    "text": "0.60",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      362.7880859375,
+      600.4948809670276,
+      52.623046875,
+      16.6064453125
+    ],
+    "baseline": [
+      361.5,
+      616.8249590920276
+    ]
+  },
+  {
+    "shapeId": "1060",
+    "name": "23 \u00b7 i: \u2713 [p23-text-0065]",
+    "text": "\u2713",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      531.7421875,
+      597.1965784940945,
+      11.4619140625,
+      13.4423828125
+    ],
+    "baseline": [
+      526.0,
+      612.6623988065945
+    ]
+  },
+  {
+    "shapeId": "1061",
+    "name": "23 \u00b7 sample review: 0.55 [p23-text-0066]",
+    "text": "0.55",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      573.2880859375,
+      600.4948809670276,
+      52.3701171875,
+      16.6064453125
+    ],
+    "baseline": [
+      572.0,
+      616.8249590920276
+    ]
+  },
+  {
+    "shapeId": "1064",
+    "name": "23 \u00b7 i: \u00d7 [p23-text-0067]",
+    "text": "\u00d7",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      739.2939453125,
+      601.79375,
+      7.7880859375,
+      7.7880859375
+    ],
+    "baseline": [
+      736.5,
+      612.02421875
+    ]
+  },
+  {
+    "shapeId": "1065",
+    "name": "23 \u00b7 sample wrong review: 0.51 [p23-text-0068]",
+    "text": "0.51",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 23.0,
+    "bbox": [
+      783.7880859375,
+      600.4948809670276,
+      52.830078125,
+      16.6064453125
+    ],
+    "baseline": [
+      782.5,
+      616.8249590920276
+    ]
+  },
+  {
+    "shapeId": "1066",
+    "name": "23 \u00b7 tag: SYNTHETIC SAMPLE / UNCALIBRATED SIGNAL [p23-text-0069]",
+    "text": "SYNTHETIC SAMPLE / UNCALIBRATED SIGNAL",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1012.9453125,
+      309.5651147268701,
+      513.474609375,
+      18.8583984375
+    ],
+    "baseline": [
+      1012.0,
+      325.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1068",
+    "name": "23 \u00b7 span: Confidence routing \u00b7 Confidence semantics [p23-text-0070]",
+    "text": "Confidence routing",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.9306640625,
+      973.840947034941,
+      168.0556640625,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1068",
+    "name": "23 \u00b7 span: Confidence routing \u00b7 Confidence semantics [p23-text-0070]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      263.80859375,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      257.423828125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1068",
+    "name": "23 \u00b7 span: Confidence routing \u00b7 Confidence semantics [p23-text-0070]",
+    "text": "Confidence semantics",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      273.232421875,
+      973.840947034941,
+      192.6220703125,
+      14.326171875
+    ],
+    "baseline": [
+      272.3017578125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1069",
+    "name": "23 \u00b7 span: Synthetic teaching data; drag the threshold [p23-text-0071]",
+    "text": "Synthetic teaching data; drag the threshold",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1453.593777066929,
+      973.840947034941,
+      376.9248046875,
+      18.8857421875
+    ],
+    "baseline": [
+      1453.023464566929,
+      987.843876722441
+    ]
+  }
+]

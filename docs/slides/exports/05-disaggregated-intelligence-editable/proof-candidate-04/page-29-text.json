@@ -1,0 +1,546 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "29 \u00b7 l: DISAGGREGATED INTELLIGENCE [p29-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "29 \u00b7 r: 29 / 36 [p29-text-0012]",
+    "text": "29 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "29 \u00b7 training-release-eyebrow: 08 / TRAINING PIPELINE \u2014 QUALIFY THE CANDIDATE [p29-text-0013]",
+    "text": "08 / TRAINING PIPELINE \u2014 QUALIFY THE CANDIDATE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      596.11328125,
+      20.790039062499986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "29 \u00b7 training-release-title: Freeze the workflow before earning release [p29-text-0014]",
+    "text": "Freeze the workflow before earning release",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1409.7109375,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "29 \u00b7 node label: Freeze the selected candidate [p29-text-0015]",
+    "text": "Freeze the selected candidate",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      90.7001953125,
+      371.4194928026575,
+      408.4814453125,
+      22.5302734375
+    ],
+    "baseline": [
+      88.0,
+      393.5298443651575
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "29 \u00b7 strong: Untouched test cases [p29-text-0016]",
+    "text": "Untouched test cases",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      731.1607861712598,
+      332.28976747047244,
+      305.0693359375,
+      21.8095703125
+    ],
+    "baseline": [
+      729.0006299212598,
+      353.53000184547244
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "29 \u00b7 strong: Frozen artifacts [p29-text-0017]",
+    "text": "Frozen artifacts",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      117.0400390625,
+      482.9362287770669,
+      275.15625,
+      29.184570312499943
+    ],
+    "baseline": [
+      114.0,
+      511.5885725270669
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "29 \u00b7 small: Model and transforms. Decision definitions. Routing policy and gates. [p29-text-0018]",
+    "text": "Model and transforms.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      116.7001953125,
+      545.2501977731299,
+      311.220703125,
+      22.0498046875
+    ],
+    "baseline": [
+      114.0,
+      566.8800805856299
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "29 \u00b7 small: Model and transforms. Decision definitions. Routing policy and gates. [p29-text-0018]",
+    "text": "Decision definitions.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      116.7001953125,
+      585.2697290231299,
+      277.8603515625,
+      22.5302734375
+    ],
+    "baseline": [
+      114.0,
+      607.3800805856299
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "29 \u00b7 small: Model and transforms. Decision definitions. Routing policy and gates. [p29-text-0018]",
+    "text": "Routing policy and gates.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      116.7001953125,
+      625.7697290231299,
+      343.1708984375,
+      29.8212890625
+    ],
+    "baseline": [
+      114.0,
+      647.8800805856299
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "29 \u00b7 node label: Artifacts [p29-text-0019]",
+    "text": "Artifacts",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      566.1043030265748,
+      509.46374108021655,
+      98.7236328125,
+      19.5263671875
+    ],
+    "baseline": [
+      566.0007874015748,
+      528.6258504552166
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "29 \u00b7 strong: Locked evaluation [p29-text-0020]",
+    "text": "Locked evaluation",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      732.0406689837598,
+      482.9362287770669,
+      326.4951171875,
+      29.184570312499943
+    ],
+    "baseline": [
+      729.0006299212598,
+      511.5885725270669
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "29 \u00b7 small: Paired decision comparison. Use untouched examples. Predeclare offline gates. [p29-text-0021]",
+    "text": "Paired decision comparison.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      731.7008252337598,
+      544.7697290231299,
+      387.0595703125,
+      29.4296875
+    ],
+    "baseline": [
+      729.0006299212598,
+      566.8800805856299
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "29 \u00b7 small: Paired decision comparison. Use untouched examples. Predeclare offline gates. [p29-text-0021]",
+    "text": "Use untouched examples.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      731.4303174212598,
+      586.1398462106299,
+      357.0322265625,
+      28.5595703125
+    ],
+    "baseline": [
+      729.0006299212598,
+      607.3800805856299
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "29 \u00b7 small: Paired decision comparison. Use untouched examples. Predeclare offline gates. [p29-text-0021]",
+    "text": "Predeclare offline gates.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      731.7008252337598,
+      625.7697290231299,
+      327.6611328125,
+      29.8203125
+    ],
+    "baseline": [
+      729.0006299212598,
+      647.8800805856299
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "29 \u00b7 node label: Pass gates [p29-text-0022]",
+    "text": "Pass gates",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1211.3393713090552,
+      510.21764733021655,
+      119.00390625,
+      25.08984375
+    ],
+    "baseline": [
+      1208.9995275590552,
+      528.6258504552166
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "29 \u00b7 strong: Randomized pilot [p29-text-0023]",
+    "text": "Randomized pilot",
+    "font": "Salesforce Sans",
+    "fontSizePx": 38.0,
+    "bbox": [
+      1377.039881582185,
+      482.9362287770669,
+      318.326171875,
+      37.92480468749994
+    ],
+    "baseline": [
+      1373.999842519685,
+      511.5885725270669
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "29 \u00b7 small: Compare complete cases. Quality, cost, and latency. Keep assignment consistent [p29-text-0024]",
+    "text": "Compare complete cases.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1375.469569082185,
+      545.0998071481299,
+      355.1103515625,
+      29.099609375
+    ],
+    "baseline": [
+      1373.999842519685,
+      566.8800805856299
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "29 \u00b7 small: Compare complete cases. Quality, cost, and latency. Keep assignment consistent [p29-text-0024]",
+    "text": "Quality, cost, and latency.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1375.499842519685,
+      585.2697290231299,
+      347.759765625,
+      29.8212890625
+    ],
+    "baseline": [
+      1373.999842519685,
+      607.3800805856299
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "29 \u00b7 small: Compare complete cases. Quality, cost, and latency. Keep assignment consistent [p29-text-0024]",
+    "text": "Keep assignment consistent.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1376.700037832185,
+      625.7697290231299,
+      390.5400390625,
+      29.8203125
+    ],
+    "baseline": [
+      1373.999842519685,
+      647.8800805856299
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "29 \u00b7 strong: Broader rollout [p29-text-0025]",
+    "text": "Broader rollout",
+    "font": "Salesforce Sans",
+    "fontSizePx": 36.0,
+    "bbox": [
+      1376.879725332185,
+      783.1474123400591,
+      259.4892578125,
+      25.9921875
+    ],
+    "baseline": [
+      1373.999842519685,
+      808.6356935900591
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "29 \u00b7 small: Only if pilot gates pass. Track unfinished work. [p29-text-0026]",
+    "text": "Only if pilot gates pass.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1375.469569082185,
+      841.369256582185,
+      315.3017578125,
+      29.8212890625
+    ],
+    "baseline": [
+      1373.999842519685,
+      863.479608144685
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "29 \u00b7 small: Only if pilot gates pass. Track unfinished work. [p29-text-0026]",
+    "text": "Track unfinished work.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1374.119959707185,
+      881.869256582185,
+      309.6005859375,
+      22.53125
+    ],
+    "baseline": [
+      1373.999842519685,
+      903.979608144685
+    ]
+  },
+  {
+    "shapeId": "1043",
+    "name": "29 \u00b7 node label: Feedback [p29-text-0027]",
+    "text": "Feedback",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1223.33984375,
+      784.2173323695866,
+      113.0234375,
+      18.7724609375
+    ],
+    "baseline": [
+      1221.0,
+      802.6255354945866
+    ]
+  },
+  {
+    "shapeId": "1045",
+    "name": "29 \u00b7 strong: Next dataset [p29-text-0028]",
+    "text": "Next dataset",
+    "font": "Salesforce Sans",
+    "fontSizePx": 36.0,
+    "bbox": [
+      731.8805127337598,
+      783.1474123400591,
+      216.14453125,
+      25.9921875
+    ],
+    "baseline": [
+      729.0006299212598,
+      808.6356935900591
+    ]
+  },
+  {
+    "shapeId": "1046",
+    "name": "29 \u00b7 small: Reviewed feedback only. Fresh tests for new claims. [p29-text-0029]",
+    "text": "Reviewed feedback only.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      731.7008252337598,
+      841.369256582185,
+      336.2119140625,
+      29.8212890625
+    ],
+    "baseline": [
+      729.0006299212598,
+      863.479608144685
+    ]
+  },
+  {
+    "shapeId": "1046",
+    "name": "29 \u00b7 small: Reviewed feedback only. Fresh tests for new claims. [p29-text-0029]",
+    "text": "Fresh tests for new claims.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      731.7008252337598,
+      881.869256582185,
+      358.7705078125,
+      22.5302734375
+    ],
+    "baseline": [
+      729.0006299212598,
+      903.979608144685
+    ]
+  },
+  {
+    "shapeId": "1047",
+    "name": "29 \u00b7 strong: A revision starts a new candidate. [p29-text-0030]",
+    "text": "A revision starts",
+    "font": "Salesforce Sans",
+    "fontSizePx": 36.0,
+    "bbox": [
+      87.8916015625,
+      789.5420601624015,
+      273.3857421875,
+      27.6474609375
+    ],
+    "baseline": [
+      88.0,
+      816.6856148499015
+    ]
+  },
+  {
+    "shapeId": "1047",
+    "name": "29 \u00b7 strong: A revision starts a new candidate. [p29-text-0030]",
+    "text": "a new candidate.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 36.0,
+    "bbox": [
+      89.3681640625,
+      830.9420601624015,
+      290.8447265625,
+      27.6474609375
+    ],
+    "baseline": [
+      88.0,
+      858.0856148499015
+    ]
+  },
+  {
+    "shapeId": "1048",
+    "name": "29 \u00b7 small: Retest before a new claim. [p29-text-0031]",
+    "text": "Retest before a new claim.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      90.7001953125,
+      890.8193353223426,
+      361.533203125,
+      22.5302734375
+    ],
+    "baseline": [
+      88.0,
+      912.9296868848426
+    ]
+  },
+  {
+    "shapeId": "1050",
+    "name": "29 \u00b7 span: Tutorial evaluation protocol [p29-text-0032]",
+    "text": "Tutorial evaluation protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      239.576171875,
+      18.6396484375
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1051",
+    "name": "29 \u00b7 span: Proposed qualification gates; no measured deployment result [p29-text-0033]",
+    "text": "Proposed qualification gates; no measured deployment result",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1291.7264963705709,
+      973.840947034941,
+      539.72265625,
+      18.8857421875
+    ],
+    "baseline": [
+      1290.0165354330709,
+      987.843876722441
+    ]
+  }
+]

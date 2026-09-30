@@ -1,0 +1,134 @@
+[
+  {
+    "name": "identity",
+    "source": "identity.svg",
+    "portable": "identity.outlined.svg",
+    "preview": "identity.png"
+  },
+  {
+    "name": "checkpoint-1",
+    "source": "checkpoint-1.svg",
+    "portable": "checkpoint-1.outlined.svg",
+    "preview": "checkpoint-1.png"
+  },
+  {
+    "name": "receipt",
+    "source": "receipt.svg",
+    "portable": "receipt.outlined.svg",
+    "preview": "receipt.png"
+  },
+  {
+    "name": "checkpoint-2",
+    "source": "checkpoint-2.svg",
+    "portable": "checkpoint-2.outlined.svg",
+    "preview": "checkpoint-2.png"
+  },
+  {
+    "name": "policy",
+    "source": "policy.svg",
+    "portable": "policy.outlined.svg",
+    "preview": "policy.png"
+  },
+  {
+    "name": "checkpoint-3",
+    "source": "checkpoint-3.svg",
+    "portable": "checkpoint-3.outlined.svg",
+    "preview": "checkpoint-3.png"
+  },
+  {
+    "name": "parcel",
+    "source": "parcel.svg",
+    "portable": "parcel.outlined.svg",
+    "preview": "parcel.png"
+  },
+  {
+    "name": "checkpoint-4",
+    "source": "checkpoint-4.svg",
+    "portable": "checkpoint-4.outlined.svg",
+    "preview": "checkpoint-4.png"
+  },
+  {
+    "name": "frontier",
+    "source": "frontier.svg",
+    "portable": "frontier.outlined.svg",
+    "preview": "frontier.png"
+  },
+  {
+    "name": "system-one",
+    "source": "system-one.svg",
+    "portable": "system-one.outlined.svg",
+    "preview": "system-one.png"
+  },
+  {
+    "name": "clarify",
+    "source": "clarify.svg",
+    "portable": "clarify.outlined.svg",
+    "preview": "clarify.png"
+  },
+  {
+    "name": "review",
+    "source": "review.svg",
+    "portable": "review.outlined.svg",
+    "preview": "review.png"
+  },
+  {
+    "name": "hold",
+    "source": "hold.svg",
+    "portable": "hold.outlined.svg",
+    "preview": "hold.png"
+  },
+  {
+    "name": "stop",
+    "source": "stop.svg",
+    "portable": "stop.outlined.svg",
+    "preview": "stop.png"
+  },
+  {
+    "name": "customer",
+    "source": "customer.svg",
+    "portable": "customer.outlined.svg",
+    "preview": "customer.png"
+  },
+  {
+    "name": "customer-confirmation",
+    "source": "customer-confirmation.svg",
+    "portable": "customer-confirmation.outlined.svg",
+    "preview": "customer-confirmation.png"
+  },
+  {
+    "name": "calendar-standard-30",
+    "source": "calendar-standard-30.svg",
+    "portable": "calendar-standard-30.outlined.svg",
+    "preview": "calendar-standard-30.png"
+  },
+  {
+    "name": "calendar-plus-60",
+    "source": "calendar-plus-60.svg",
+    "portable": "calendar-plus-60.outlined.svg",
+    "preview": "calendar-plus-60.png"
+  },
+  {
+    "name": "shipping-five-dollars",
+    "source": "shipping-five-dollars.svg",
+    "portable": "shipping-five-dollars.outlined.svg",
+    "preview": "shipping-five-dollars.png"
+  },
+  {
+    "name": "shipping-waived",
+    "source": "shipping-waived.svg",
+    "portable": "shipping-waived.outlined.svg",
+    "preview": "shipping-waived.png"
+  },
+  {
+    "name": "service-approval",
+    "source": "service-approval.svg",
+    "portable": "service-approval.outlined.svg",
+    "preview": "service-approval.png"
+  },
+  {
+    "name": "standard-day-45-declined",
+    "source": "standard-day-45-declined.svg",
+    "portable": "standard-day-45-declined.outlined.svg",
+    "preview": "standard-day-45-declined.png"
+  }
+]

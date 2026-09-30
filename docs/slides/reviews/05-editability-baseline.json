@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 1,
+  "review": "Independent editability baseline; source deck before native conversion",
+  "pptx": "docs/slides/05-disaggregated-intelligence.pptx",
+  "pptxSHA256": "ebedf78a586cc1379a46eaee93f82739c270116056091ebf09334bde3aab9b3b",
+  "pptxBytes": 11610577,
+  "slideCount": 36,
+  "slides": [
+    {
+      "index": 1,
+      "member": "ppt/slides/slide1.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 4,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/",
+        "https://typesafe.ai/manifesto",
+        "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+      ],
+      "notes": [
+        "Disaggregated intelligence\n\nSection: Enterprise AI\n\nPurpose: Introduce disaggregated intelligence as an engineering allocation problem.\n\nSuggested speaking time: 0.7 minutes\n\nTALKING POINTS\n\u2022 Disaggregated intelligence assigns different jobs to components suited to them. Services establish facts and authority; specialized models supply bounded semantic judgments; the runtime coordinates the resulting work.\n\u2022 For Agentforce, AgentScript authors the controls, Agent Graph executes the workflow, and koa-action supplies focused decisions under an evaluated application contract. Frontier reasoning remains available for difficult interpretation.\n\u2022 Choose the least expensive component that meets the decision\u2019s quality and latency requirements, then measure the whole service. Reliability, predictability, lower cost and faster inference are the goals; their realized gains require evidence.\n\u2022 System One names a model role here, not human cognition. This composition is proposed: public sources reviewed do not establish a koa-action SDK, native adapter, training interface or benchmark.\n\nTransition: Follow one product-aftercare case from authority checks to complete-case evaluation.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nComposable AI\nhttps://typesafe.ai/manifesto\n\nJev + LangGraph\nhttps://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n01 / 36\nDisaggregated\nintelligence\nEnterprise reasoning with\nkoa-action\n, Agent Graph\nand AgentScript.\nFast, focused judgment by default.\nFrontier reasoning for the exceptions.\nAuthored controls\nAgentScript\nState + transitions\nAgent Graph\nkoa-action\nBounded judgment\nFrontier model\nReasoning exceptions\nServices\nFacts + authority\nAgent Graph / guided determinism\n\u00b7\nAgentScript control plane\n\u00b7\nComposable AI\n\u00b7\nJev + LangGraph\nProposed Salesforce composition",
+        "1"
+      ],
+      "notesSHA256": "4d7320ec215360a1e1a26e46317c6386b2883254d8353fe97dfd2fc2458b99bf"
+    },
+    {
+      "index": 2,
+      "member": "ppt/slides/slide2.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+        "https://typesafe.ai/manifesto"
+      ],
+      "notes": [
+        "Four benefits. One service to measure.\n\nSection: 01\n\nPurpose: Connect requested benefits to concrete mechanisms.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Specialization creates an opportunity for much lower decision cost and faster inference when a bounded task does not require frontier reasoning. The workload and accepted error rate determine the gain.\n\u2022 Agent Graph makes permitted paths and recovery behavior inspectable, while AgentScript expresses the controls around model choice. Required service checks still execute. Predictable control does not itself establish semantic correctness.\n\u2022 Keep the complete customer case as the unit of value. A fast exchange route that loses the requested cable return fails the service, even if its local classifier is accurate.\n\nTransition: Follow one case through the rest of the tutorial.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nJev + LangGraph\nhttps://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\nComposable AI\nhttps://typesafe.ai/manifesto\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n02 / 36\n01 / Allocate intelligence\nFour benefits. One service to measure.\nCorrect outcomes\nReliability\nTest decisions and enforce required checks.\nControlled variation\nPredictability\nBound outputs, paths, and recovery behavior.\nLess total work\nLower cost\nAvoid expensive work that the case does not need.\nShorter critical path\nFaster inference\nUse short decision steps on frequent routes.\nJev + LangGraph\n\u00b7\nComposable AI\nMechanisms and objectives; no koa-action benchmark",
+        "2"
+      ],
+      "notesSHA256": "c3178070909f6ec11b1580a22113e59599c5c1a068d6bad63f96a0e53fe1c022"
+    },
+    {
+      "index": 3,
+      "member": "ppt/slides/slide3.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 1,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/"
+      ],
+      "notes": [
+        "One customer, two obligations\n\nSection: 01\n\nPurpose: Establish the recurring case and its invariant.\n\nSuggested speaking time: 1.1 minutes\n\nTALKING POINTS\n\u2022 The purchase records establish that the spare cable was purchased separately, so its return concerns a complete purchased item. A cable removed from the headphone kit would require the component handler instead.\n\u2022 The customer asks for an exchange AND a cable return. Preserve both obligations and their item references; finishing the first cannot erase the second.\n\u2022 This case is a constructed teaching example. Later we will stop the trace after an exchange authorization while the cable task is active, so the whole case remains unfinished.\n\nTransition: Assign an owner to each kind of work.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n03 / 36\n01 / Service invariant\nOne customer, two obligations\n\u201cExchange these headphones\nand return the spare cable.\u201d\nThe cable is a separately purchased item.\nThe case ledger\nExchange\nRequested\nPending\nCable return\nRequested\nPending\nWhat must survive\nevery transition?\nAgent Graph / guided determinism\nConstructed service example",
+        "3"
+      ],
+      "notesSHA256": "9f9a72357ebeb81df3ec2c4b9149787cde08d9e663a1d9d6b508386ddcb88f5c"
+    },
+    {
+      "index": 4,
+      "member": "ppt/slides/slide4.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/"
+      ],
+      "notes": [
+        "Give each responsibility an owner\n\nSection: 01\n\nPurpose: Distinguish models, execution, configuration, and authority.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 The throughline is allocation plus coordination. koa-action supplies a bounded interpretation; Agent Graph coordinates task state and escalation; AgentScript configures the controls that constrain each judgment\u2019s effect.\n\u2022 Backend services establish identity, ownership, stock and policy outcomes. They also enforce their requirements when writing. A high model score cannot substitute for any of these results.\n\u2022 A clear exchange or kit-component return may use System One and a configured handler without frontier reasoning. A request can have many business steps while remaining easy to interpret.\n\u2022 The human branch handles configured review and unresolved cases. A reviewer\u2019s interpretation does not invent a missing handler or confer policy-override authority.\n\nTransition: Now move process rules from prose into inspectable structure.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n04 / 36\n01 / Architecture\nGive each responsibility an owner\nAgentScript\nAuthors sequencing, action availability, and bound inputs\nAgent Graph\nExecutes the workflow and retains task state\nInterpret\nkoa-action\nSystem One: bounded decisions\nReason\nFrontier model\nResidual interpretation\nafter a defined gate\nAct\nBackend services\nAuthoritative facts + permissions\nReview\nHuman path\nWhen policy or ambiguity requires it\nAgent Graph / guided determinism\n\u00b7\nAgentScript control plane\nProposed composition; no native adapter asserted",
+        "4"
+      ],
+      "notesSHA256": "95cfbc8a3531f3837297a8be365aa04a76cb794dac3ce880363963c11a4c34a9"
+    },
+    {
+      "index": 5,
+      "member": "ppt/slides/slide5.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/"
+      ],
+      "notes": [
+        "Process knowledge becomes topology\n\nSection: 02\n\nPurpose: Teach which decisions, in which order, over which state.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Procedural domain knowledge enters topology: the nodes and transitions specify what runs first, which evidence each step sees and where it can go next.\n\u2022 The small graph previews the shared front desk. Verified identity allows protected purchase lookup. Missing sessions, rejection and unavailable services have distinct routes, expanded on the next illustration.\n\u2022 Live purchase facts remain in application records, business policy remains explicit code or configuration, and category definitions remain in the semantic node\u2019s context. Moving process dependencies into a graph does not eliminate these inputs.\n\u2022 Review the graph itself. It can consistently encode an incorrect policy or accidentally lose a requested task.\n\nTransition: Expand the front desk, then follow three familiar request types.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nJev + LangGraph\nhttps://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n05 / 36\n02 / Encode the sequence\nProcess knowledge becomes topology\nA process buried in instructions\nBefore an exchange, verify identity and match the purchase. Check exchange rules and stock. Preserve the cable return.\nDefinitions and evidence still belong in node context.\nVerify identity\nMatch the owned purchase\nRoute the customer\u2019s tasks\nStop or recover\nFollow the identity\nservice result\nverified\ndenied or\nunavailable\nfacts available\nJev + LangGraph\n\u00b7\nAgent Graph / guided determinism\nArchitectural pattern",
+        "5"
+      ],
+      "notesSHA256": "cf15cb580e8fd50b7adc80a910c6bc5a7ad374197782f3573e7bb74f165566be"
+    },
+    {
+      "index": 6,
+      "member": "ppt/slides/slide6.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 52,
+      "nativeShapeCount": 3,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/",
+        "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+      ],
+      "notes": [
+        "Start with identity and an owned purchase\n\nSection: Step 01\n\nPurpose: Separate authoritative access gates from the choice of model allocation.\n\nSuggested speaking time: 1.2 minutes\n\nTALKING POINTS\n\u2022 Follow the shared front desk before comparing models. The identity service supplies a result. Verified access permits protected purchase lookup; neither model grants authentication.\n\u2022 The no-login branch goes through secure sign-in and returns to the same identity check. The denied branch stops protected work and can offer permitted account support. A service outage also holds or takes bounded recovery; unknown does not mean verified.\n\u2022 The matched purchase binds owned line items to the authenticated customer. Missing identifiers or a mismatch go to purchase verification and recheck. Only a verified purchase reaches page B; item or kit-component binding can still need clarification there.\n\u2022 Both architecture choices retain these safeguards. In the selected wrapper design, frontier inference proposes the next step around each service result. In the disaggregated design, authored transitions carry the known process and call a small decision model only for bounded meaning.\n\u2022 Agent Graph coordinates execution and state. AgentScript configures the control. This is an architectural comparison with LangGraph, not an API compatibility claim or a hosted LangGraph implementation. More predictable transitions create an opportunity for cheaper, faster handling; measurement must establish the gain.\n\nTransition: With access and purchase established, identify the requested remedy and affected unit.\n\nPOWERPOINT EXPORT\n\nCOMPONENT POWERPOINT\n\nThis slide uses a fixed vector frame plus separate, independently movable vector illustrations, labels and connectors. Labels are outlined artwork, not native editable text. Speaker notes remain editable. Every vector object has an embedded PNG fallback. Use the Selection Pane to select named parts. Connectors are independent objects; they do not automatically follow moved illustrations. Other slides retain their complete-frame vector artwork.\n\nWEB REFERENCES\nReliable enterprise agents\nhttps://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nJev + LangGraph\nhttps://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\nLOCAL COMPANION REFERENCES\nAccess and allocation \u00b7 A \u2014 diagrams/returns-comparison-access.svg\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n06 / 36\nStep 01 / One return, two allocations \u00b7 A\nStart with identity and an owned purchase\nReliable enterprise agents\n\u00b7\nAgentScript control plane\n\u00b7\nJev + LangGraph\n\u00b7\nAccess and allocation \u00b7 A\nProposed design \u00b7 same service safeguards",
+        "6"
+      ],
+      "notesSHA256": "91bcba6057e2226ef55a423c155164f9fa5e8bedb04884e5b23792f148579866"
+    },
+    {
+      "index": 7,
+      "member": "ppt/slides/slide7.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 56,
+      "nativeShapeCount": 3,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/",
+        "https://docs.typesafe.ai/patterns/intent-routing"
+      ],
+      "notes": [
+        "Give familiar requests a direct service route\n\nSection: Step 01\n\nPurpose: Show that a familiar exchange or kit-part return can use bounded judgment and a configured service route.\n\nSuggested speaking time: 1.4 minutes\n\nTALKING POINTS\n\u2022 The small chip answers bounded questions: what remedy is requested, which owned item or kit component is affected, and whether the meaning is clear enough. An authored supported-combination mapping chooses a handler. The three pictured mappings are whole-item return, whole-item exchange and kit-component return.\n\u2022 The open headphone kit means the complete purchased product; the highlighted cable means one component of that kit. A spare cable purchased as its own line item is an ordinary whole-item return. In the ongoing two-task case, the purchase service has established that the spare cable was bought separately.\n\u2022 A clear exchange goes to exchange rules and inventory. A clear kit-component return goes to component identity and kit-part rules. Both can be handled without frontier interpretation. Their terms are independent of the whole-item return policy on the later calendar slide.\n\u2022 The graph follows only registered handlers. Component exchange is a different combination; if the merchant has not registered it, configured specialist handling receives the correctly understood request. Neither model invents a policy or supported route.\n\u2022 The eligible-quote junction describes a common finish for each selected task. It does not merge their rules. Confirm the exact action and terms; the service rechecks before issuing the corresponding authorization. Missing facts hold and known ineligibility follows the affected handler.\n\u2022 Clarification can settle an ambiguous item or remedy and return to reassessment. Only meaning that remains unresolved can enter reasoning gate C. Keep AND obligations, OR choices and IF conditions. An exchange for blue if in stock, otherwise return, can be authored logic: unknown stock holds, and only the selected alternative may commit.\n\nTransition: Expand the exception path and examine what must hold before frontier interpretation is useful.\n\nPOWERPOINT EXPORT\n\nCOMPONENT POWERPOINT\n\nThis slide uses a fixed vector frame plus separate, independently movable vector illustrations, labels and connectors. Labels are outlined artwork, not native editable text. Speaker notes remain editable. Every vector object has an embedded PNG fallback. Use the Selection Pane to select named parts. Connectors are independent objects; they do not automatically follow moved illustrations. Other slides retain their complete-frame vector artwork.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nIntent routing\nhttps://docs.typesafe.ai/patterns/intent-routing\n\nLOCAL COMPANION REFERENCES\nBounded request routes \u00b7 B \u2014 diagrams/returns-comparison-routing.svg\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n07 / 36\nStep 01 / One return, two allocations \u00b7 B\nGive familiar requests a direct service route\nAgent Graph / guided determinism\n\u00b7\nAgentScript control plane\n\u00b7\nIntent routing\n\u00b7\nBounded request routes \u00b7 B\nIllustrated supported combinations \u00b7 independent handler policies",
+        "7"
+      ],
+      "notesSHA256": "4ad742992f57ccb6d94ef6326c4a97b82bcd5ac926606cd43d78722b2a0d6cf4"
+    },
+    {
+      "index": 8,
+      "member": "ppt/slides/slide8.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 48,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/patterns/intent-routing",
+        "https://www.salesforce.com/blog/agent-script-control-plane/"
+      ],
+      "notes": [
+        "Reserve frontier reasoning for unresolved meaning\n\nSection: Step 01\n\nPurpose: Make the frontier model a scoped interpretation resource with explicit preconditions and a guarded return path.\n\nSuggested speaking time: 1.5 minutes\n\nTALKING POINTS\n\u2022 The verified-access and purchase label is a precondition. Read the green route first: clear meaning reaches the authored mapping and its appropriate handler. An unsupported combination goes to configured specialist handling rather than an invented route.\n\u2022 The detour first asks one useful clarification. If that resolves the meaning, reassess the task and follow its handler without frontier reasoning. More business steps, an exchange, a component request, or a familiar if-condition does not itself make interpretation difficult.\n\u2022 Facts and checks are branch-aware. Obtain missing evidence from authoritative services; hold when it cannot be obtained. Apply known mandatory rules for the affected handler. A whole-item return deadline does not globally reject an exchange or kit-component request.\n\u2022 Only substantive interpretation that remains after clarification, with the relevant facts and known checks satisfied, reaches one scoped frontier attempt. It receives the authorized history and remaining question, then proposes a task structure; it does not replace service facts.\n\u2022 A human validates item references and AND, OR and IF relationships, or holds the case. Validated interpretation re-enters the same supported-combination mapping and the applicable handler. Neither human validation nor model output grants a policy override.\n\u2022 Only an eligible selected task reaches confirmed terms and an authoritative service write. Bound technical recovery, reconcile an unknown write outcome, and retain every unfinished obligation. Measure the cost of this detour, including any added review, in whole-case evaluation.\n\nTransition: Scope a concrete policy to one handler so that its rules cannot spill into other remedies.\n\nPOWERPOINT EXPORT\n\nCOMPONENT POWERPOINT\n\nThis slide uses a fixed vector frame plus separate, independently movable vector illustrations, labels and connectors. Labels are outlined artwork, not native editable text. Speaker notes remain editable. Every vector object has an embedded PNG fallback. Use the Selection Pane to select named parts. Connectors are independent objects; they do not automatically follow moved illustrations. Other slides retain their complete-frame vector artwork.\n\nWEB REFERENCES\nIntent routing\nhttps://docs.typesafe.ai/patterns/intent-routing\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nLOCAL COMPANION REFERENCES\nReasoning gate \u00b7 C \u2014 diagrams/returns-reasoning-gate.svg\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n08 / 36\nStep 01 / The interpretation exception \u00b7 C\nReserve frontier reasoning for unresolved meaning\nIntent routing\n\u00b7\nAgentScript control plane\n\u00b7\nReasoning gate \u00b7 C\nScoped interpretation \u00b7 facts and authority remain with services",
+        "8"
+      ],
+      "notesSHA256": "416097ed56ee6ed6539c7a75389171f8fcbd14b895febe5a765074b8e0e78297"
+    },
+    {
+      "index": 9,
+      "member": "ppt/slides/slide9.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 31,
+      "nativeShapeCount": 0,
+      "groups": 0,
+      "links": [],
+      "notes": [
+        "Whole-item returns follow their own policy\n\nSection: 02\n\nPurpose: Separate trusted eligibility and fee rules from semantic interpretation and from transaction success.\n\nSuggested speaking time: 1.2 minutes\n\nTALKING POINTS\n\u2022 The scope label matters: this invented merchant table applies only to whole-item returns. A separate service owns exchange rules; kit-component returns have their own rules and terms. These values are not Salesforce product policy.\n\u2022 A verified owned purchase provides the delivery time, original request time, loyalty tier, item eligibility and available unreturned quantity. Missing or contradictory required facts stay pending. Keep the original request timestamp through retries and handoffs.\n\u2022 Standard permits an eligible request within 30 days inclusive and quotes five-dollar shipping. Plus permits 60 days inclusive and waives shipping. Standard day 18 and Plus day 45 can qualify if the other rules hold; Standard day 45 fails this ordinary return window.\n\u2022 Confirm the specific items, quantity and quote. The backend rechecks authority, policy and accepted terms before recording an idempotent return authorization. Changed terms require renewed confirmation; a label in this drawing means authorization, not completed shipping or settled refund.\n\u2022 A known rule failure does not justify a frontier appeal. A separate eligible task can continue under its own policy while the declined task retains its outcome. This scoped service authority makes the authored route predictable.\n\nTransition: Now connect the illustrated application to the runtime, authored controls and model contracts beneath it.\n\nPOWERPOINT EXPORT\n\nCOMPONENT POWERPOINT\n\nThis slide uses a fixed vector frame plus separate, independently movable vector illustrations, labels and connectors. Labels are outlined artwork, not native editable text. Speaker notes remain editable. Every vector object has an embedded PNG fallback. Use the Selection Pane to select named parts. Connectors are independent objects; they do not automatically follow moved illustrations. Other slides retain their complete-frame vector artwork.\n\nLOCAL COMPANION REFERENCES\nWhole-item return policy \u2014 diagrams/returns-whole-item-policy.svg\nTutorial evaluation protocol \u2014 blog/09-building-prod.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n09 / 36\n02 / An explicit merchant policy\nWhole-item returns follow their own policy\nWhole-item return policy\n\u00b7\nTutorial evaluation protocol\nInvented whole-item policy \u00b7 exchanges and kit parts have separate rules",
+        "9"
+      ],
+      "notesSHA256": "383d1694a95cdacdcb558c502c51eee6ef662aaca7094cc35f5efc1afd78ed60"
+    },
+    {
+      "index": 10,
+      "member": "ppt/slides/slide10.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph",
+        "https://www.salesforce.com/blog/agent-script-control-plane/"
+      ],
+      "notes": [
+        "A runtime sits beneath the harness\n\nSection: 02\n\nPurpose: Prevent runtime/harness/configuration conflation.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Once judgments and services are separated, the runtime coordinates state and decides which configured step executes next. Agent Graph occupies that runtime role in Agentforce.\n\u2022 AgentScript authors the controls around model choice. The wider agent harness also includes context strategy, tools, operational policy and recovery.\n\u2022 LangChain\u2019s distinction among its framework, LangGraph runtime and Deep Agents harness provides an architectural analogy. It does not imply LangGraph API compatibility or Deep Agents defaults in Agentforce.\n\u2022 The public AgentScript repository contains language tooling; Salesforce\u2019s managed runtime is a separate component.\n\nTransition: Define the first decision before selecting its integration.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nRuntime, framework, harness\nhttps://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n10 / 36\n02 / Keep the layers distinct\nA runtime sits beneath the harness\nHarness\nThe agent loop, context strategy, tools, and operating policy.\nExample in LangChain\u2019s stack: Deep Agents.\nRuntime\nState transitions and the execution of the configured workflow.\nAgent Graph is analogous at this layer to LangGraph.\nConfiguration\nThe authored rules and bindings that shape behavior.\nAgentScript configures Salesforce\u2019s runtime.\nRuntime, framework, harness\n\u00b7\nAgentScript control plane\nArchitectural comparison, not API equivalence",
+        "10"
+      ],
+      "notesSHA256": "61cb1c8c1f52cd5549b01a4638950d0b9fa9dee9dc2567bf358b78d1e80b8300"
+    },
+    {
+      "index": 11,
+      "member": "ppt/slides/slide11.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 3,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/introduction/quickstart",
+        "https://docs.typesafe.ai/patterns/intent-routing",
+        "https://docs.typesafe.ai/primitives/advanced"
+      ],
+      "notes": [
+        "Separate the remedy, the unit and the uncertainty\n\nSection: 03\n\nPurpose: Give a bounded task a testable contract.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Separate requested remedy, purchased-unit scope and interpretation status. Exchange does not mean difficult; a whole-item return can still be ambiguous.\n\u2022 The three familiar supported combinations shown earlier are whole-item return, whole-item exchange and kit-component return. These examples are not an exhaustive provider taxonomy. A component exchange is one request, supported only if its own handler and policy are configured.\n\u2022 Tie every task to verified candidate items and preserve AND, OR and IF relationships. AND retains every obligation; OR waits for a choice; IF evaluates the customer\u2019s actual condition using authoritative facts.\n\u2022 These are conceptual application fields, not a documented koa-action response schema. A timeout or malformed result uses bounded technical recovery and must not default into a transaction.\n\nTransition: Match the question to the right primitive.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nTypeSafe quickstart\nhttps://docs.typesafe.ai/introduction/quickstart\n\nIntent routing\nhttps://docs.typesafe.ai/patterns/intent-routing\n\nStructured decision criteria\nhttps://docs.typesafe.ai/primitives/advanced\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n11 / 36\n03 / Step 1\nSeparate the remedy, the unit and the uncertainty\nBounded semantic question\nWhat work is\nthe customer requesting?\nConversation prefix\n+ verified candidate items.\nConceptual labels \u00b7 boundary examples\n\u201cSwap for blue.\u201d\nexchange\n\u201cOnly the kit cable.\u201d\ncomponent\n\u201cReturn this one.\u201d\nclarify unit\nKeep three fields distinct\nRemedy\nUnit\nInterpretation\nClear + supported\nGraph selects the applicable handler.\nMeaning unclear\nAsk one useful clarification.\nUnsupported combinations use a configured specialist.\nInvalid output follows bounded recovery.\nTypeSafe quickstart\n\u00b7\nIntent routing\n\u00b7\nStructured decision criteria\nIllustrative application contract",
+        "11"
+      ],
+      "notesSHA256": "d0f27a8245caa7e35f466d5dc2b4ac71e1d2ede1e8bc4d64d085b83bb618a39c"
+    },
+    {
+      "index": 12,
+      "member": "ppt/slides/slide12.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 3,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/introduction/quickstart",
+        "https://docs.typesafe.ai/primitives/noul",
+        "https://docs.typesafe.ai/primitives/score"
+      ],
+      "notes": [
+        "Four bounded decisions, four contracts\n\nSection: 03\n\nPurpose: Cover the four user-specified koa-action capabilities.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 This tutorial uses koa-action for classification, noul, scoring, and semantic endpointing, following the capability framing supplied for the Salesforce composition.\n\u2022 TypeSafe documents analogous decision concepts, but its SDK fields, batching, calibration, and training claims do not define a Salesforce interface.\n\u2022 Each primitive needs its own target and error measure. A rubric score and the probability of a binary proposition are not interchangeable.\n\nTransition: Make that semantic distinction tangible.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nTypeSafe quickstart\nhttps://docs.typesafe.ai/introduction/quickstart\n\nNoul\nhttps://docs.typesafe.ai/primitives/noul\n\nScore\nhttps://docs.typesafe.ai/primitives/score\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n12 / 36\n03 / System One capabilities\nFour bounded decisions, four contracts\n01\nClassification\nWhich route?\nSelect a category.\n02\nNoul\nReturn requested?\nAssess a yes/no proposition.\n03\nScoring\nHow urgent is this case?\nUse an anchored rubric.\n04\nEndpointing\nHas the turn ended?\nJudge the available prefix.\nTypeSafe quickstart\n\u00b7\nNoul\n\u00b7\nScore\nkoa-action capabilities: supplied brief; interfaces unspecified",
+        "12"
+      ],
+      "notesSHA256": "42f75baa57d6766d1ef90d51b9c96425ea2b76b120f163d03a6e715dbc7c7a23"
+    },
+    {
+      "index": 13,
+      "member": "ppt/slides/slide13.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/primitives/noul",
+        "https://docs.typesafe.ai/primitives/score"
+      ],
+      "notes": [
+        "Probability and intensity answer different questions\n\nSection: 03\n\nPurpose: Explain binary proposition estimates versus severity rubrics.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 TypeSafe\u2019s Noul is the probability of the yes answer; its Score uses ordered rubric levels and can be fractional.\n\u2022 A mean rubric score can hide different distributions. Preserve the output meaning that the downstream rule actually uses.\n\u2022 The corresponding koa-action fields, ranges, and calibration require their own verified contract. No numeric Salesforce response is shown here.\n\nTransition: A decision about when to respond has an additional time boundary.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nNoul\nhttps://docs.typesafe.ai/primitives/noul\n\nScore\nhttps://docs.typesafe.ai/primitives/score\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n13 / 36\n03 / Give every number a meaning\nProbability and intensity answer different questions\nNoul \u00b7 TypeSafe semantics\nWas a return requested?\nA probability-valued\nyes/no judgment.\nAn uncertain answer does not mean\n\u201ca medium amount of returning.\u201d\nScore \u00b7 illustrative rubric\nHow urgent is the case?\nCan wait\nUse disrupted\nEssential use blocked\nNoul\n\u00b7\nScore\nTypeSafe semantics / proposed Salesforce use",
+        "13"
+      ],
+      "notesSHA256": "b21a4c48464c068ea911352c3c97a5471ad7017740d1aa521466e0895c2a9384"
+    },
+    {
+      "index": 14,
+      "member": "ppt/slides/slide14.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 1,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/concepts/how-to-build-with-system-one"
+      ],
+      "notes": [
+        "Endpointing is a decision in time\n\nSection: 03\n\nPurpose: Explain semantic endpointing and temporal leakage.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Imagine the spoken request: Exchange these headphones \u2026 and return the spare cable. Ending the turn at the pause can drop the second obligation before the routing model sees it.\n\u2022 The waveform is illustrative. Semantic endpointing asks whether the spoken turn has ended using only the available audio prefix. Future speech may establish the reference label, but must not enter the earlier input.\n\u2022 Measure premature cutoff and delay separately. Keep all prefixes from a conversation together when splitting data; a fast endpointing call still needs the right decision-time evidence.\n\nTransition: Next decide which decisions may run in parallel.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nBuilding with System One\nhttps://docs.typesafe.ai/concepts/how-to-build-with-system-one\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n14 / 36\n03 / A prefix is the input\nEndpointing is a decision in time\nAvailable audio prefix\nFuture audio\nDecision now\nCut too early\nThe customer is interrupted.\nWait too long\nThe response is delayed.\nKeep the boundary\nFuture audio may label the prefix.\nIt cannot enter the input.\nBuilding with System One\nIllustrative waveform; proposed evaluation",
+        "14"
+      ],
+      "notesSHA256": "7151b3b93ee06da3bfa367687b02bc4177e63c029a958048c67382b25c367827"
+    },
+    {
+      "index": 15,
+      "member": "ppt/slides/slide15.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+        "https://www.langchain.com/blog/building-a-harness-with-jev"
+      ],
+      "notes": [
+        "Split work along information dependencies\n\nSection: 04\n\nPurpose: Separate execution independence from causality.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Two bounded questions may read the same authorized snapshot without depending on one another\u2019s output. This is a workflow-design pattern, not a claim about native koa-action batching.\n\u2022 A task that needs a new service fact must wait. Protected purchase retrieval follows verified identity; selecting an affected item depends on the authorized candidate list.\n\u2022 Independent execution does not imply statistically independent errors. Missing context can affect remedy and urgency together. Two requested transactions also cannot be assumed safe to commit in parallel.\n\nTransition: Make each node\u2019s evidence window explicit.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nBuilding with System One\nhttps://docs.typesafe.ai/concepts/how-to-build-with-system-one\n\nA harness with Jev\nhttps://www.langchain.com/blog/building-a-harness-with-jev\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n15 / 36\n04 / Step 2\nSplit work along information dependencies\nSame decision-time snapshot\nRemedy\nReturn or exchange?\nUrgency\nWhich rubric level?\nIndependent execution can still produce correlated errors.\nVerify identity\nMatch owned purchase\nBind the affected item\nBuilding with System One\n\u00b7\nA harness with Jev\nProposed scheduling pattern",
+        "15"
+      ],
+      "notesSHA256": "d7080501843d353448b514009cd8000bb5aed32d636bf7503cb79251c0b4a3c7"
+    },
+    {
+      "index": 16,
+      "member": "ppt/slides/slide16.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 3,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/",
+        "https://docs.typesafe.ai/concepts/how-to-build-with-system-one"
+      ],
+      "notes": [
+        "Each node sees a different view of the case\n\nSection: 04\n\nPurpose: Teach context boundaries as authored data dependencies.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Agent Graph determines when evidence exists and which view of state each node receives. AgentScript authors the relevant controls and bindings.\n\u2022 A model interprets the request using the conversation prefix and authorized candidate items. Its proposed item reference must be validated; it cannot make the customer the owner of an order.\n\u2022 The selected handler obtains its own rules, stock and terms. Narrow context can reduce work, but excluding a required fact can reduce quality. Version and evaluate the input view.\n\nTransition: Use that state to preserve the mixed request.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nBuilding with System One\nhttps://docs.typesafe.ai/concepts/how-to-build-with-system-one\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n16 / 36\n04 / Context is part of topology\nEach node sees a different view of the case\nPrefix + task definitions + verified items\nTask interpretation\nTrusted principal + purchase reference\nOwnership check\nSelected task + service policy + stock\nEligible offer or denial\nA node receives its declared input view; task state remains in the graph.\nAgent Graph / guided determinism\n\u00b7\nAgentScript control plane\n\u00b7\nBuilding with System One\nProposed node contracts",
+        "16"
+      ],
+      "notesSHA256": "ec6dcf1cd1fac2386b2c6a3cec7ea5ff6b85f4068f032464554c784058316d60"
+    },
+    {
+      "index": 17,
+      "member": "ppt/slides/slide17.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 1,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/"
+      ],
+      "notes": [
+        "State preserves work across a branch\n\nSection: 04\n\nPurpose: Make persistent obligations visible.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 In this AND request, both tasks stay in graph state. The customer starts with the exchange; the cable return waits and then resumes after the exchange service records its authorized result.\n\u2022 OR and IF have different semantics. Keep alternatives until one is selected or its stated condition is met. Inactive alternatives are unselected or untriggered, not unresolved obligations.\n\u2022 For Exchange for blue if in stock; otherwise return, unknown stock remains pending. A different exchange-policy denial does not silently activate the stock-conditioned alternative. Only the selected action may commit.\n\u2022 A time or turn budget bounds priority clarification. A handoff records receiving ownership and every outstanding obligation; it does not finish the customer\u2019s work.\n\nTransition: This is where neural interpretation meets explicit control.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n17 / 36\n04 / Step 3\nState preserves work across a branch\nTwo AND tasks\nRecord exchange + cable return\nClarify priority\nAsk which task to start\nExchange active\nCable return stays pending\nCable return active\nResume after exchange authorization\nRecorded handoff\nRetain all outstanding work\nexchange selected\nno choice\nwithin budget\nexchange\nauthorized\nAgent Graph / guided determinism\nConstructed mixed-request path",
+        "17"
+      ],
+      "notesSHA256": "4183391603a9ac2ca546aeb8cf5b0ea8cd531cb22234db26be6fd0d025851e56"
+    },
+    {
+      "index": 18,
+      "member": "ppt/slides/slide18.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/"
+      ],
+      "notes": [
+        "Guided determinism gives uncertainty a place\n\nSection: 05\n\nPurpose: Explain neuro-symbolic reasoning in plain terms.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Neuro-symbolic reasoning combines learned interpretation with explicit software state and rules. System One contributes the judgment; AgentScript authors its permitted effect; Agent Graph executes the resulting path.\n\u2022 Guided determinism makes the transition constraints inspectable. Classification remains fallible, and explicit controls alone do not guarantee eventual completion.\n\u2022 The semantic model, route definitions and business services can evolve at their own boundaries when the composition is versioned and tested.\n\nTransition: Three AgentScript concepts make that boundary concrete.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n18 / 36\n05 / Neuro-symbolic reasoning\nGuided determinism gives uncertainty a place\nNeural interpretation\ninside an authored process.\nAgentScript defines where model choice is available.\nAgent Graph executes the configured transitions.\nInterpretation\nFallible semantic judgment.\nProcedure\nRequired steps and state changes.\nAuthority\nEnforced by trusted services.\nAgent Graph / guided determinism\n\u00b7\nAgentScript control plane\nDocumented architecture; illustrative workflow",
+        "18"
+      ],
+      "notesSHA256": "49acbf3288ba09c77d24057f3405159c61493d35943d65053c83b82cae788c87"
+    },
+    {
+      "index": 19,
+      "member": "ppt/slides/slide19.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://www.salesforce.com/blog/agent-script-control-plane/",
+        "https://github.com/salesforce/agentscript/blob/main/SPEC.md"
+      ],
+      "notes": [
+        "Availability and required execution differ\n\nSection: 05\n\nPurpose: Teach precise AgentScript control semantics.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 The left sketch is language-neutral design pseudocode, not runnable AgentScript or a documented koa-action adapter. Action definitions, dialect and deployment configuration are omitted. The requireOwnedOrder helper stops for verification or hold unless authoritative ownership is established.\n\u2022 Required identity, purchase and applicable policy checks belong in authored procedure logic. An available-when condition filters model choices; it does not force the check to execute.\n\u2022 Bound inputs use trusted service state for consequential identifiers and entitlements. Services independently enforce authority and current policy when committing.\n\u2022 The selected handler follows its own rules, obtains customer confirmation, rechecks accepted terms and records the actual service result. Graph state retains the other task.\n\nTransition: Walk the proposed request through all of its owners.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nAgentScript specification\nhttps://github.com/salesforce/agentscript/blob/main/SPEC.md\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n19 / 36\n05 / Step 4\nAvailability and required execution differ\nDesign pseudocode\nControl around\nthe model choice.\nidentity = verifySession()\nif identity != verified: return recovery\npurchase = requireOwnedOrder(identity)\ntasks = interpretAndValidate(purchase)\nrun selectedHandler(tasks)\nBackend services also enforce access.\nThis is an authoring sketch, not runnable syntax.\nRequired work\nrun\n/ procedure\nUse explicit procedure logic for checks that must execute.\nPermitted choices\navailable when\nFilter which actions the model may select. Availability does not force selection.\nControlled arguments\nwith\n/ bound input\nBind consequential inputs from trusted state.\nAgentScript control plane\n\u00b7\nAgentScript specification\nVerified constructs; no executable koa-action adapter",
+        "19"
+      ],
+      "notesSHA256": "ab149fa5989009dc36267262091a6d9d81f4977a1841e5405f018b86c1068aca"
+    },
+    {
+      "index": 20,
+      "member": "ppt/slides/slide20.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/"
+      ],
+      "notes": [
+        "Authorize the exchange, then resume the cable return\n\nSection: 05\n\nPurpose: Follow the aftercare case while distinguishing interpretation, confirmation, service authorization and unfinished work.\n\nSuggested speaking time: 1.6 minutes\n\nTALKING POINTS\n\u2022 The eight events follow the same customer case: Exchange these headphones and return the spare cable. The cable is a separately purchased item, not a component removed from the headphone kit.\n\u2022 First the identity service verifies access, then the order service matches the owned purchase. System One proposes the two AND tasks and their item references; the graph validates that each has a supported handler.\n\u2022 The customer chooses the exchange first. Exchange rules, stock and terms produce an eligible offer, leaving the task Awaiting confirmation. These are the exchange service\u2019s rules, not the invented whole-item return table.\n\u2022 Customer confirmation still precedes authorization. The service rechecks authority, policy, stock and accepted terms, then records the exchange ID. Authorized means that service outcome, not a shipped replacement or settled refund.\n\u2022 Finally Agent Graph activates the cable return. The exchange is Authorized and the cable return is Active. The full case remains unfinished. This clear supported path needs no frontier call; unresolved interpretation has its separate gated route.\n\nTransition: Now design the non-happy paths.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nSTATIC TRACE: Event 8 of 8. Exchange: Authorized; cable return: Active. Agent Graph resumes the cable return. Its policy, confirmation, and authorization are unfinished.\n\nWalkthrough: verify identity, match the owned purchase, interpret both AND tasks, prioritize the exchange, check exchange policy and stock, confirm its terms, obtain a service-issued exchange ID after rechecks, and resume the cable return. The cable is a separately purchased line item. Its return remains unfinished; exchange authorization does not claim completed shipping.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nReliable enterprise agents\nhttps://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n20 / 36\n05 / Step 5\nAuthorize the exchange, then resume the cable return\n1\nVerify identity\nService\n2\nMatch purchase\nService\n3\nInterpret\nSystem One\n4\nPrioritize\nCustomer\n5\nPolicy + stock\nService\n6\nConfirm\nCustomer\n7\nAuthorize\nService\n8\nResume\nAgent Graph\nAgent Graph resumes the cable return. Its policy, confirmation, and authorization are unfinished.\nExchange\nAuthorized\nConfirmation precedes a recheck\nand the service-issued exchange ID.\nCable return\nActive\nA separately purchased item.\nStill unfinished when this trace ends.\nNext event \u2192\nReset\nEvent 8 of 8\nAgent Graph / guided determinism\n\u00b7\nReliable enterprise agents\nConstructed trace \u00b7 final static state",
+        "20"
+      ],
+      "notesSHA256": "fa91eac16000bfe8cc68aa7715f188c7733f6d1e51e3c145e7eeb5fc95231a45"
+    },
+    {
+      "index": 21,
+      "member": "ppt/slides/slide21.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+        "https://github.com/salesforce/agentscript/blob/main/SPEC.md"
+      ],
+      "notes": [
+        "Failure routes are part of the program\n\nSection: 05\n\nPurpose: Connect reliability to failure contracts.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 A graph needs meaningful timeout, invalid-output, and handoff routes rather than a default business action.\n\u2022 A resumed workflow can reuse a recorded decision, but this alone does not guarantee exactly-once external side effects.\n\u2022 Transaction-specific safeguards belong in the service performing the write. Recovery must retain the unfinished tasks.\n\nTransition: A valid decision can still be semantically wrong.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nReliable enterprise agents\nhttps://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/\n\nAgentScript specification\nhttps://github.com/salesforce/agentscript/blob/main/SPEC.md\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n21 / 36\n05 / Recover without losing the case\nFailure routes are part of the program\nContract failure\nInvalid output\nValidate the result before branching. Use a defined fallback.\nDependency failure\nTimeout\nBound retries and retain every pending obligation.\nAuthority boundary\nUnauthorized write\nThe service rejects the action under current policy.\nSide effect\nRepeated write\nUse transaction safeguards; record the actual result.\nReliable enterprise agents\n\u00b7\nAgentScript specification\nProposed failure behavior",
+        "21"
+      ],
+      "notesSHA256": "6b2198e5977758bce10f553095fd18feffd6403e9d101a4273d75383adbef569"
+    },
+    {
+      "index": 22,
+      "member": "ppt/slides/slide22.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/patterns/confidence-routing",
+        "https://docs.typesafe.ai/confidence"
+      ],
+      "notes": [
+        "Confidence needs evidence in your domain\n\nSection: 06\n\nPurpose: Distinguish signal concentration from correctness and permission.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 This schematic focuses on the remedy question for one task: return, exchange or other. Purchased-unit scope and task relationships remain separate fields, so parts is not a competing remedy label.\n\u2022 TypeSafe defines Choice and Score confidence from distribution concentration. Noul has no separate confidence field. A concentrated answer distribution can still be wrong.\n\u2022 The picture is not a returned koa-action distribution. Validate any provider signal against independently adjudicated labels and choose gates on development data. A numerical score does not establish identity, eligibility or permission.\n\nTransition: Explore what a stricter gate does to a small labeled sample.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nConfidence routing\nhttps://docs.typesafe.ai/patterns/confidence-routing\n\nConfidence semantics\nhttps://docs.typesafe.ai/confidence\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n22 / 36\n06 / Inspect the signal\nConfidence needs evidence in your domain\nA concentrated distribution\nReturn\nExchange\nOther\nIllustrative output shape.\nThe highest option can still be wrong.\nValidate locally\nCompare signals\nwith adjudicated labels.\nChoose gates on development data.\nReport error alongside coverage.\nIdentity, permissions, and policy\nremain separate checks.\nConfidence routing\n\u00b7\nConfidence semantics\nIllustrative distribution; no calibration claim",
+        "22"
+      ],
+      "notesSHA256": "80e5b3b85bfa3bb568d6708df98d328e9326e5a5fabb721b244d376b1e87f761"
+    },
+    {
+      "index": 23,
+      "member": "ppt/slides/slide23.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://docs.typesafe.ai/patterns/confidence-routing",
+        "https://docs.typesafe.ai/confidence"
+      ],
+      "notes": [
+        "A stricter gate moves work somewhere\n\nSection: 06\n\nPurpose: Teach selection, error rate, and coverage without fabricated evidence.\n\nSuggested speaking time: 1.6 minutes\n\nTALKING POINTS\n\u2022 All twelve cases and their scores are constructed teaching data. The signal is uncalibrated and is not a real koa-action field.\n\u2022 Automatic routing coverage is accepted routing decisions divided by twelve. Automatic error uses only accepted decisions; with zero accepted decisions it is undefined. This is a routing metric, not completed-case automation.\n\u2022 A high-scoring error remains when the threshold rises. Escalations still consume capacity, and errors need not decline monotonically on this sample.\n\nTransition: Next account for the work that the routing gate adds and avoids.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nSTATIC CONFIDENCE EXAMPLE: threshold 0.75. The twelve examples and scores are constructed teaching data. The HTML slider changes which examples are auto-routed at this decision point; a high-scoring mistake can survive a stricter gate. Threshold selection requires independent calibration and evaluation.\n\nWEB REFERENCES\nConfidence routing\nhttps://docs.typesafe.ai/patterns/confidence-routing\n\nConfidence semantics\nhttps://docs.typesafe.ai/confidence\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n23 / 36\n06 / Interactive operating point\nA stricter gate moves work somewhere\nTwelve constructed examples\n\u00d7\n0.99\n\u2713\n0.96\n\u2713\n0.92\n\u2713\n0.88\n\u00d7\n0.85\n\u2713\n0.81\n\u2713\n0.76\n\u2713\n0.70\n\u00d7\n0.66\n\u2713\n0.60\n\u2713\n0.55\n\u00d7\n0.51\n\u2713 correct route \u00b7 \u00d7 wrong route\nFaded examples go to review.\nSynthetic sample / uncalibrated signal\nAutomatic-route threshold:\n0.75\n58%\n7 / 12 auto-routed\n29%\n2 / 7 wrong\n5\nTo review\nA high-scoring mistake can survive the gate.\nReview consumes capacity and can add delay.\nConfidence routing\n\u00b7\nConfidence semantics\nSynthetic teaching data; drag the threshold",
+        "23"
+      ],
+      "notesSHA256": "69c22e4cc7e9d21ceb34372a213174546e80249f38688827865c1adf84726f10"
+    },
+    {
+      "index": 24,
+      "member": "ppt/slides/slide24.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://typesafe.ai/manifesto",
+        "https://docs.typesafe.ai/concepts/how-to-build-with-system-one"
+      ],
+      "notes": [
+        "Savings depend on avoiding expensive work\n\nSection: 06\n\nPurpose: Explain conditional economics with transparent algebra.\n\nSuggested speaking time: 1.6 minutes\n\nTALKING POINTS\n\u2022 This isolates a routing decision replaced by a specialized model. Every constant is invented for teaching; G is one expensive routing call, D is specialized judgment, O is added orchestration and p is the fraction still requiring G.\n\u2022 At p=0.20 the candidate routing cost is 0.27 normalized units, 73% below the one-unit baseline. At p=0.93 they break even. If every case still needs G, adding D and O makes the routing stage 7% more expensive.\n\u2022 Familiar exchange and return paths can use service offers and standard messages without frontier generation. Any generated explanation, tool call, retry, review, reconciliation or unfinished obligation must enter whole-case accounting.\n\u2022 The prior synthetic review queue and the frontier routing fallback G here are distinct destinations. Measure actual routes and their capacity costs. Setup and maintenance need an explicit volume and horizon for a total-cost claim.\n\nTransition: Inference latency has an equally important boundary.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nSTATIC COST EXAMPLE: 20% of routes still use the expensive routing stage. With invented normalized units G=1, D=0.03 and O=0.04, candidate cost is 0.27 versus 1.00 (73% lower for this routing stage only). At 93% fallback the candidate breaks even; at 100% it costs 1.07, or 7% more. This excludes later explanation, service work and changed human costs; it is not a vendor benchmark.\n\nWEB REFERENCES\nComposable AI\nhttps://typesafe.ai/manifesto\n\nBuilding with System One\nhttps://docs.typesafe.ai/concepts/how-to-build-with-system-one\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n24 / 36\n06 / Interactive break-even\nSavings depend on avoiding expensive work\nRouting step only \u00b7 invented unit costs\nBaseline = G\nCandidate = D + O + pG\nG = 1.00 expensive routing call\nD = 0.03 specialized decision\nO = 0.04 added orchestration\nRoutes still using G:\n20%\n20% \u00b7 saves\n93% \u00b7 even\n100% \u00b7 costs more\nHypothetical routing-stage arithmetic\nBaseline\nCandidate\n73% lower\n0.27 normalized units\nBreak-even: D + O = (1 \u2212 p)G\nLater messages and service work excluded.\nComposable AI\n\u00b7\nBuilding with System One\nIllustrative arithmetic; no measured cost claim",
+        "24"
+      ],
+      "notesSHA256": "0a19e102cbc7e108783505140f2551728ea99e9bf2361573890a5a3a7ed8a6f6"
+    },
+    {
+      "index": 25,
+      "member": "ppt/slides/slide25.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 1,
+      "groups": 0,
+      "links": [
+        "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+      ],
+      "notes": [
+        "Fast inference helps the path that uses it\n\nSection: 06\n\nPurpose: Separate primitive speed from workflow speed.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 The diagram begins after identity and ownership are established. System One interprets the task, then its handler checks the applicable rules and prepares an offer. A familiar route can use a standard message rather than frontier generation.\n\u2022 Specialized inference may shorten a repeated semantic step. Complete-case latency also includes services, customer confirmation, recovery and human queues. Measure decision latency, response latency and completion time separately.\n\u2022 Report latency distributions at the relevant load, including transport and retries. Retain unfinished cases in service-time analysis rather than averaging completed cases alone.\n\nTransition: Apply the control model to a deliberately incomplete design.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nJev + LangGraph\nhttps://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n25 / 36\n06 / Measure the critical path\nFast inference helps the path that uses it\nFast decision\nMeasure call latency\nHandler checks\nPolicy + stock + quote\nCustomer offer\nMeasure response latency\nReview queue + human handling\nCan dominate the time to resolution\nTrack decision time, response time, and time to completed service separately.\nJev + LangGraph\nMechanism illustration; no timing benchmark",
+        "25"
+      ],
+      "notesSHA256": "8b9a24c6fd415a56640c496626f8e9e6003b4aee9b2886c1615aa8b01f7bad35"
+    },
+    {
+      "index": 26,
+      "member": "ppt/slides/slide26.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/"
+      ],
+      "notes": [
+        "Find the missing boundary\n\nSection: 07\n\nPurpose: Check whether the learner can separate prediction from authority.\n\nSuggested speaking time: 1.3 minutes\n\nTALKING POINTS\n\u2022 The initial design is intentionally incomplete: recognizing an exchange request immediately reaches a business write. Allow a short pause, then reveal the missing controls.\n\u2022 A strong model score cannot repair missing identity and ownership checks, exchange policy and stock checks, or customer confirmation of the offered terms. Place required steps in authored control and enforce their results again in the service.\n\u2022 Retain the cable return through this repair. Reconcile an unknown exchange-write outcome before retrying, using transaction safeguards appropriate to the service.\n\nTransition: Training examples must respect the same decision boundaries.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nSTATIC EXERCISE: the repair is revealed. A predicted exchange request must still pass verified access, owned-purchase matching, exchange rules, inventory, confirmed terms, and service authorization. The model score is not permission to transact.\n\nWEB REFERENCES\nReliable enterprise agents\nhttps://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n26 / 36\n07 / Exercise\nFind the missing boundary\nExchange requested\nStrong model score\nCreate exchange\nBusiness transaction\nHide the repair\nVerify access\nIdentity and owned purchase.\nCheck policy\nExchange rules, stock, terms + confirmation.\nEnforce in service\nRecheck authorization and record outcome.\nReliable enterprise agents\n\u00b7\nAgentScript control plane\nConstructed design exercise",
+        "26"
+      ],
+      "notesSHA256": "fcc34245a2c5a391d4acf1528b2a471f37aa5d97be4b43543713887501516e05"
+    },
+    {
+      "index": 27,
+      "member": "ppt/slides/slide27.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 0,
+      "groups": 0,
+      "links": [],
+      "notes": [
+        "Begin the dataset at the decision boundary\n\nSection: 08\n\nPurpose: Prevent future information leaking into model features.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Freeze the source snapshot and reconstruct what the semantic node could access at the decision time: conversation prefix, verified candidate items and relevant current state.\n\u2022 Independent reviewers label remedy, purchased-unit scope, interpretation status and AND/OR/IF relationships. Keep the separately purchased cable distinct from a cable inside a kit.\n\u2022 A later clarification cannot leak into an earlier input. Preserve record order, timestamps and derivation links. Document filtering and redaction because they can change the model-visible distribution.\n\nTransition: Separate fitting and selection from final evaluation.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nLOCAL COMPANION REFERENCES\nTutorial evaluation protocol \u2014 blog/09-building-prod.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n27 / 36\n08 / Step 6\nBegin the dataset at the decision boundary\nAt decision time\nInput snapshot\nConversation prefix\nTrusted facts available then\nCurrent policy version\nReference label\nRemedy, unit and task relationships\nsupported by that evidence.\nAfter the decision\nLater turns and outcomes\nUseful for separate outcome labels.\nExcluded from the earlier input.\nPreserve order,\nrelationships,\nand provenance.\nTutorial evaluation protocol\nProposed development protocol",
+        "27"
+      ],
+      "notesSHA256": "4aa189f017cd5fea4173c76c51c76adbc0afb746be504bc408bfcffc81f1d8fc"
+    },
+    {
+      "index": 28,
+      "member": "ppt/slides/slide28.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 0,
+      "groups": 0,
+      "links": [],
+      "notes": [
+        "Split examples before developing the decision\n\nSection: 08\n\nPurpose: Show independent data partitions and keep related examples together before fitting or augmentation.\n\nSuggested speaking time: 1.1 minutes\n\nTALKING POINTS\n\u2022 This is proposed task development, not a description of koa-action foundation-model training or a supported fine-tuning interface. If direct adaptation is unavailable, retain the fixed model and develop its application configuration.\n\u2022 Inputs contain only the conversation prefix and trusted state available at the decision time. Route labels use that evidence. Later outcomes or future audio may establish separate outcome or endpoint targets; they cannot enter the earlier model input. Preserve timestamps, record order, and the derivation manifest.\n\u2022 Group related cases and duplicates before assigning partitions. Create augmentations afterward and keep every variant in its source partition. Account-level groups and later-time cohorts answer different generalization questions.\n\u2022 Fit learned transforms and any permitted adaptation on training data. Separate calibration fitting from gate selection within development data. The locked test is excluded from all iteration. The solid branches carry different samples, not successive copies of one dataset.\n\nTransition: Now follow the frozen artifacts and the evidence needed for release.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nLOCAL COMPANION REFERENCES\nTutorial evaluation protocol \u2014 blog/09-building-prod.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n28 / 36\n08 / Training pipeline \u2014 Preserve the partitions\nSplit examples before developing the decision\nDecision-time snapshot\nInputs stop at the decision.\nVersioned records and labels.\nGroup, then split\nBefore augmentation.\nPreserve record relationships.\nFamily rule\nSource + its variants\nstay in one partition.\nSeparate sample partitions\nTrain\nFit permitted components.\nAdaptation is optional.\nAugment training data only.\nDevelopment\nUse separate subsets for\ncalibration and gate selection.\nLocked test\nKeep examples untouched.\nNo fitting or gate tuning.\nRoute labels use decision-time evidence; later outcomes belong to separate targets.\nTutorial evaluation protocol\nProposed task development; adaptation only where supported",
+        "28"
+      ],
+      "notesSHA256": "34c39d00149e303dffa155a6d22676442bc3241fda3c5c838e39b834cc3322c5"
+    },
+    {
+      "index": 29,
+      "member": "ppt/slides/slide29.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 0,
+      "groups": 0,
+      "links": [],
+      "notes": [
+        "Freeze the workflow before earning release\n\nSection: 08\n\nPurpose: Separate model artifacts, locked evaluation, and live-service qualification.\n\nSuggested speaking time: 1.1 minutes\n\nTALKING POINTS\n\u2022 The purple dashed arrow carries frozen model and configuration artifacts. A separate green arrow carries untouched examples into the locked evaluation. The artifacts include model version, learned transforms, decision definitions, thresholds, and the workflow policy.\n\u2022 Passing offline gates qualifies the candidate for a randomized service pilot. The black arrows indicate release qualification; the offline test examples do not become the pilot traffic. Use equivalent permissions, tools, and service requirements for the baseline and candidate.\n\u2022 Predeclare the pilot assignment unit, observation horizon, failure definition, quality margin, minimum worthwhile saving, and latency limits. Keep related cases assigned consistently and account for interference through shared review queues.\n\u2022 Roll out only when the predefined pilot gates pass. Track cost per incoming case beside resolution and automatic coverage, including unfinished work. Reviewed feedback goes to a future dataset. If tuning follows a failure, evaluate the new candidate with fresh untouched evidence.\n\u2022 The full standalone illustration remains available as assets/training-pipeline.svg and assets/training-pipeline.png; these focus views enlarge its two teaching responsibilities without changing its semantics.\n\nTransition: Choose the grouping or time split that matches the deployment claim.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nLOCAL COMPANION REFERENCES\nTutorial evaluation protocol \u2014 blog/09-building-prod.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n29 / 36\n08 / Training pipeline \u2014 Qualify the candidate\nFreeze the workflow before earning release\nFreeze the selected candidate\nUntouched test cases\nFrozen artifacts\nModel and transforms.\nDecision definitions.\nRouting policy and gates.\nArtifacts\nLocked evaluation\nPaired decision comparison.\nUse untouched examples.\nPredeclare offline gates.\nPass gates\nRandomized pilot\nCompare complete cases.\nQuality, cost, and latency.\nKeep assignment consistent.\nBroader rollout\nOnly if pilot gates pass.\nTrack unfinished work.\nFeedback\nNext dataset\nReviewed feedback only.\nFresh tests for new claims.\nA revision starts\na new candidate.\nRetest before a new claim.\nTutorial evaluation protocol\nProposed qualification gates; no measured deployment result",
+        "29"
+      ],
+      "notesSHA256": "47016f78c751565d53171068b6f091b600fafe26487321f6da44c17fb8cea6bf"
+    },
+    {
+      "index": 30,
+      "member": "ppt/slides/slide30.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 1,
+      "groups": 0,
+      "links": [
+        "https://www.langchain.com/blog/jev-agent-evals-langsmith"
+      ],
+      "notes": [
+        "Choose the split that matches the claim\n\nSection: 08\n\nPurpose: Distinguish independent cases from repeated observations.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 Unseen-account performance and future-traffic performance are different claims and may need separate tests.\n\u2022 Assign related cases and near duplicates together, and generate training augmentations only after partitioning.\n\u2022 One conversation evaluated many times still represents one customer situation. Repeated judgments estimate repeatability, not generalization over new cases.\n\nTransition: Define what evidence would earn a rollout.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nJev-as-a-Judge\nhttps://www.langchain.com/blog/jev-agent-evals-langsmith\n\nLOCAL COMPANION REFERENCES\nTutorial evaluation protocol \u2014 blog/09-building-prod.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n30 / 36\n08 / Generalization\nChoose the split that matches the claim\nUnseen accounts\nKeep account families intact.\nA A A\nB B\nC C C\nRelated cases and variants\nstay in one partition.\nFuture traffic\nReserve a later-time cohort.\nEarlier cases\nLater test\nDeclare boundary exclusions\nand duplicate handling.\nTutorial evaluation protocol\n\u00b7\nJev-as-a-Judge\nEvaluation design; no completed experiment",
+        "30"
+      ],
+      "notesSHA256": "ef189612af2c3af7f91588ec9e7916097ada9c34f291881462db1a9d09429689"
+    },
+    {
+      "index": 31,
+      "member": "ppt/slides/slide31.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 0,
+      "groups": 0,
+      "links": [],
+      "notes": [
+        "Lower cost must come with acceptable quality\n\nSection: 09\n\nPurpose: Explain the joint acceptance rule with schematic intervals and the whole-case outcome.\n\nSuggested speaking time: 2 minutes\n\nTALKING POINTS\n\u2022 These uncertainty ranges are schematic, not measured results. Predeclare the quality margin, required saving, sample size, grouping and analysis method before testing.\n\u2022 Quality passes only when the upper uncertainty bound on increased failed-case rate lies below the allowed loss. Cost passes only when the lower bound on saving per incoming case exceeds the required gain. Both must pass; this picture\u2019s candidate still waits.\n\u2022 The worked trace ends with an Authorized exchange and an Active cable return. If that AND obligation remains unresolved at the fixed service deadline, the whole case is incomplete. Count each incoming case once.\n\u2022 For OR or IF requests, only the selected or triggered action is an active obligation; inactive alternatives are unselected or untriggered. A justified policy denial can be a correct outcome. Define these statuses before evaluating.\n\u2022 Consequential-error and latency limits are additional gates, using predeclared relevant cohorts independent of either system\u2019s routes. Include unresolved work. The joint null is unacceptable quality loss OR insufficient saving; a nonsignificant difference cannot establish acceptable equivalence.\n\nTransition: First isolate the decision on held-out snapshots, then measure the whole service in a controlled pilot.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nLOCAL COMPANION REFERENCES\nTutorial evaluation protocol \u2014 blog/09-building-prod.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n31 / 36\n09 / Step 8 \u00b7 Earn rollout\nLower cost must come with acceptable quality\nSchematic decision rule \u00b7 no measured results\nQuality: upper end must stay below the limit\nUncertainty range\nAllowed loss\nMore quality loss \u2192\nThis range crosses the margin.\nQuality remains uncertain.\nCost: lower end must exceed the target\nUncertainty range\nRequired saving\nMore saving per case \u2192\nThis range clears the required gain.\nCost passes; rollout still waits.\nCount the whole case:\nexchange authorized + cable return active\n= incomplete at the deadline.\nHarm limits must also pass.\nAssess all cases and the same relevant cohort.\nLatency limits must also pass.\nInclude unfinished cases and resolution time.\nTutorial evaluation protocol\nSchematic acceptance rule; no empirical intervals",
+        "31"
+      ],
+      "notesSHA256": "dad27c8d2e7a1384b82e3044a62421ae417c02081405f20113fadc4ad20d032e"
+    },
+    {
+      "index": 32,
+      "member": "ppt/slides/slide32.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 0,
+      "groups": 0,
+      "links": [],
+      "notes": [
+        "Evaluate the decision, then the service\n\nSection: 09\n\nPurpose: Prevent offline results being overextended to service economics.\n\nSuggested speaking time: 1.5 minutes\n\nTALKING POINTS\n\u2022 Offline replay isolates the bounded decision. It cannot estimate how changed dialogue affects customers or how escalations affect queue capacity.\n\u2022 In the pilot, keep assignment stable and account for related cases and interference through shared queues. Use the same observation horizon in both arms.\n\u2022 Report observed operating cost per incoming case with resolution and coverage. Disclose setup and maintenance costs separately; total ownership estimates need an explicit volume and horizon.\n\u2022 Case automation counts incoming cases completed by the deadline without staff handling. Routing coverage counts decisions accepted automatically at one gate. A model fallback can remain automatic; an accepted routing decision can still lead to an unresolved case.\n\nTransition: When an outcome fails, diagnose the responsible boundary.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nLOCAL COMPANION REFERENCES\nTutorial evaluation protocol \u2014 blog/09-building-prod.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n32 / 36\n09 / Two experiments\nEvaluate the decision, then the service\nPaired offline comparison\nEvaluate the decision.\nSame held-out snapshots.\nSame route question.\nFixed permissions and tools.\nEach model\u2019s gate is selected\non development data.\nControlled service pilot\nEvaluate the complete case.\nRandomized case/account assignment.\nConsistent treatment and horizon.\nCosts, queues, and unresolved work.\nPilot evidence must precede\nwider rollout.\nTutorial evaluation protocol\nProposed controlled evaluation",
+        "32"
+      ],
+      "notesSHA256": "6e6fde6cbc1f2c0ac2a125ad66f5b2641285226fe49ebcd0eb1a40aea342d5b2"
+    },
+    {
+      "index": 33,
+      "member": "ppt/slides/slide33.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 2,
+      "groups": 0,
+      "links": [
+        "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+        "https://www.langchain.com/blog/jev-agent-evals-langsmith"
+      ],
+      "notes": [
+        "Diagnose the boundary that failed\n\nSection: 09\n\nPurpose: Connect disaggregation to targeted learning from failure.\n\nSuggested speaking time: 1 minutes\n\nTALKING POINTS\n\u2022 If only the exchange was proposed, inspect decision definitions and the authorized context for the omitted cable request. If both tasks were recorded, inspect the graph transition that dropped the cable task.\n\u2022 A component return charged under the whole-item fee points to policy scope or handler selection. Executing both sides of an OR request points to a lost task relationship. Each failure has a different repair.\n\u2022 Offline judges can prioritize traces, but require validation against independent references. Review apparent successes as well as escalations; post-run feedback cannot prevent a write that has already occurred.\n\nTransition: Finish by identifying one worthwhile first change.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nJev in LangSmith Evals\nhttps://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals\n\nJev-as-a-Judge\nhttps://www.langchain.com/blog/jev-agent-evals-langsmith\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n33 / 36\n09 / Improve the responsible component\nDiagnose the boundary that failed\nExchange authorized; cable task lost\nInspect the recorded route and state changes\nOnly exchange recorded\nDecision boundary\nInspect input evidence,\nlabels, and category definition.\nBoth tasks recorded\nWorkflow boundary\nInspect the transition that\ndropped the pending task.\nTrace looks correct\nOutcome boundary\nInspect services and the\nresolution condition.\nJev in LangSmith Evals\n\u00b7\nJev-as-a-Judge\nConstructed failure diagnosis",
+        "33"
+      ],
+      "notesSHA256": "9063b63b4a385f5a4f6db388dfc03d68c5d3ccb1a3b8aca449816af693ab7da7"
+    },
+    {
+      "index": 34,
+      "member": "ppt/slides/slide34.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 4,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/",
+        "https://typesafe.ai/manifesto",
+        "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+      ],
+      "notes": [
+        "Start with one decision that changes the path\n\nSection: 10\n\nPurpose: Give the audience a bounded practical next step.\n\nSuggested speaking time: 0.7 minutes\n\nTALKING POINTS\n\u2022 The throughline is an Agentforce composition: koa-action supplies bounded semantic judgment, Agent Graph coordinates state and escalation, and AgentScript defines the controls. Trusted services retain facts and transaction authority.\n\u2022 Frontier reasoning remains available when a scoped interpretation problem survives clarification and required evidence checks. Familiar exchanges and component returns can use their configured service routes directly.\n\u2022 LangChain\u2019s September 25, 2026 article attributes the unbundling argument to Jaya Gupta and advocates cheap by default, frontier on exception. Its three-year historical framing is not a measured survey, so this tutorial makes the allocation argument without turning it into a Salesforce development timeline.\n\u2022 The practical artifact is a bounded decision contract and a small graph. Evaluate complete cases, including every active obligation, before claiming reliability, lower operating cost or shorter completion time.\n\nTransition: Use the source notes and full blog for the details behind this tutorial.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nAgentScript control plane\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nComposable AI\nhttps://typesafe.ai/manifesto\n\nJev + LangGraph\nhttps://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\nLOCAL COMPANION REFERENCES\nThroughline source check \u2014 research/v5-throughline-source-check.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n34 / 36\n10 / Build, measure, revise\nStart with one decision that changes the path\nSpecialize judgment.\nAuthor the controls.\nKeep every task\naccounted for.\nAgentforce coordinates the work\nwithin quality, cost and latency limits.\n01\nWrite one bounded route question.\n02\nLabel remedies, units and relationships.\n03\nDeclare the node\u2019s input view.\n04\nDraw the guarded failure route.\n05\nDefine complete-case acceptance.\nAgent Graph / guided determinism\n\u00b7\nAgentScript control plane\n\u00b7\nComposable AI\n\u00b7\nJev + LangGraph\n\u00b7\nThroughline source check\nSynthesis",
+        "34"
+      ],
+      "notesSHA256": "53802ea411f29986157ff0e045635a812aa7a5d42417440c60d02eed98f9a162"
+    },
+    {
+      "index": 35,
+      "member": "ppt/slides/slide35.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 1,
+      "nativeShapeCount": 17,
+      "groups": 0,
+      "links": [
+        "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+        "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+        "https://www.salesforce.com/blog/agent-script-control-plane/",
+        "https://github.com/salesforce/agentscript/blob/main/SPEC.md",
+        "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+        "https://www.langchain.com/blog/building-a-harness-with-jev",
+        "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+        "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+        "https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph",
+        "https://typesafe.ai/manifesto",
+        "https://docs.typesafe.ai/introduction/quickstart",
+        "https://docs.typesafe.ai/patterns/confidence-routing",
+        "https://docs.typesafe.ai/patterns/intent-routing",
+        "https://docs.typesafe.ai/primitives/advanced",
+        "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+        "https://everythingagents.org/topics/guided-determinism",
+        "https://docs.typesafe.ai/confidence"
+      ],
+      "notes": [
+        "Read the evidence behind the architecture\n\nSection: Reference\n\nPurpose: Provide inspectable source provenance and product boundaries.\n\nSuggested speaking time: 0.5 minutes\n\nTALKING POINTS\n\u2022 The source ledger covers the requested Salesforce, LangChain and TypeSafe resources. The v5 source check records the historical-attribution boundary and the separation between public Koa reasoning and the user-framed koa-action System One component.\n\u2022 The direct exchange/component service design, merchant policy and proposed evaluation are authored teaching material. TypeSafe\u2019s intent-routing example instead uses a specialist language model; this tutorial\u2019s service mapping must earn its own evidence.\n\u2022 No native koa-action adapter, common Jev/Salesforce schema, fine-tuning access, calibrated confidence output or benchmark is asserted. Consult blog 09 and the branching specification for the complete design contract.\n\nTransition: End of tutorial.\n\nPOWERPOINT EXPORT\n\nThis edition preserves the HTML slide design as one outlined SVG graphic with an embedded PNG fallback. Slide text is vector artwork, not editable PowerPoint paragraphs. Speaker notes remain editable. Use the companion HTML for interaction.\n\nWEB REFERENCES\nAgent Graph / guided determinism \u2197\nhttps://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/\n\nReliable enterprise agents \u2197\nhttps://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/\n\nAgentScript control plane \u2197\nhttps://www.salesforce.com/blog/agent-script-control-plane/\n\nAgentScript specification \u2197\nhttps://github.com/salesforce/agentscript/blob/main/SPEC.md\n\nJev + LangGraph \u2197\nhttps://www.langchain.com/blog/building-prod-with-jev-and-langgraph\n\nA harness with Jev \u2197\nhttps://www.langchain.com/blog/building-a-harness-with-jev\n\nJev in LangSmith Evals \u2197\nhttps://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals\n\nJev-as-a-Judge \u2197\nhttps://www.langchain.com/blog/jev-agent-evals-langsmith\n\nRuntime, framework, harness \u2197\nhttps://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph\n\nComposable AI \u2197\nhttps://typesafe.ai/manifesto\n\nTypeSafe quickstart \u2197\nhttps://docs.typesafe.ai/introduction/quickstart\n\nConfidence routing \u2197\nhttps://docs.typesafe.ai/patterns/confidence-routing\n\nIntent routing \u2197\nhttps://docs.typesafe.ai/patterns/intent-routing\n\nStructured decision criteria \u2197\nhttps://docs.typesafe.ai/primitives/advanced\n\nBuilding with System One \u2197\nhttps://docs.typesafe.ai/concepts/how-to-build-with-system-one\n\nGuided determinism tutorial\nhttps://everythingagents.org/topics/guided-determinism\n\nConfidence semantics\nhttps://docs.typesafe.ai/confidence\n\nLOCAL COMPANION REFERENCES\nAll sources and claim boundaries \u2197 \u2014 research/source-ledger.md\nTutorial handout and notes \u2197 \u2014 tutorial-handout.md\nAftercare walkthrough + evaluation \u2197 \u2014 blog/09-building-prod.md\nFull training pipeline \u2197 \u2014 assets/training-pipeline.svg\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n35 / 36\nReference / Further study\nRead the evidence behind the architecture\nSalesforce control\nAgent Graph / guided determinism \u2197\nReliable enterprise agents \u2197\nAgentScript control plane \u2197\nAgentScript specification \u2197\nAll sources and claim boundaries \u2197\nTutorial handout and notes \u2197\nAgent architecture\nJev + LangGraph \u2197\nA harness with Jev \u2197\nJev in LangSmith Evals \u2197\nJev-as-a-Judge \u2197\nRuntime, framework, harness \u2197\nDecision patterns\nComposable AI \u2197\nTypeSafe quickstart \u2197\nConfidence routing \u2197\nIntent routing \u2197\nStructured decision criteria \u2197\nBuilding with System One \u2197\nAftercare walkthrough + evaluation \u2197\nFull training pipeline \u2197\nGuided determinism tutorial\n\u00b7\nConfidence semantics\nSources link to original pages",
+        "35"
+      ],
+      "notesSHA256": "f4e8b90dd0aa373d842293ed023ef5cc9296f2f944e957cd05b1dec3cec6f77e"
+    },
+    {
+      "index": 36,
+      "member": "ppt/slides/slide36.xml",
+      "nativeTextRuns": 0,
+      "pictureCount": 26,
+      "nativeShapeCount": 0,
+      "groups": 0,
+      "links": [],
+      "notes": [
+        "Reuse the visual vocabulary in another workflow\n\nSection: Appendix\n\nPurpose: Provide a reusable visual vocabulary for another enterprise workflow.\n\nSuggested speaking time: 0.5 minutes\n\nTALKING POINTS\n\u2022 This optional appendix provides independently movable vector illustrations for another workflow. In PowerPoint, use the Selection Pane to select, copy, resize or rearrange a named object.\n\u2022 The four workflow views and this library retain separate illustrations, labels and routes. Move a node and its label together, then reposition its connectors. The arrows are vector objects; they do not automatically reconnect.\n\u2022 Labels are outlined vector artwork. The source SVG assets keep editable source text; speaker notes remain editable PowerPoint text. Calendars and shipping tickets preserve their printed values as a unit.\n\u2022 Keep the meaning consistent when reusing a component: services establish authority, System One interprets bounded meaning, Agent Graph coordinates transitions and state, AgentScript authors the controls, and a frontier model proposes an interpretation only when the configured exception path calls for it.\n\nTransition: Use this vocabulary to sketch another workflow with the same separation of interpretation and authority.\n\nPOWERPOINT EXPORT\n\nCOMPONENT POWERPOINT\n\nThis slide uses a fixed vector frame plus separate, independently movable vector illustrations, labels and connectors. Labels are outlined artwork, not native editable text. Speaker notes remain editable. Every vector object has an embedded PNG fallback. Use the Selection Pane to select named parts. Connectors are independent objects; they do not automatically follow moved illustrations. Other slides retain their complete-frame vector artwork.\n\nLOCAL COMPANION REFERENCES\nReusable vector components \u2014 assets/components-v5/README.md\nThese identifiers refer to the accompanying repository and are not broken file hyperlinks.\n\nSLIDE TEXT REFERENCE\nDISAGGREGATED INTELLIGENCE\n36 / 36\nAppendix / A reusable visual vocabulary\nReuse the visual vocabulary in another workflow\nReusable vector components\nReusable vector objects \u00b7 optional appendix",
+        "36"
+      ],
+      "notesSHA256": "ec06e093aef25da0083d27101dc478ebf64c86279c864ac9741890ddf627d460"
+    }
+  ],
+  "hyperlinkCount": 77,
+  "nativeTextRuns": 0
+}

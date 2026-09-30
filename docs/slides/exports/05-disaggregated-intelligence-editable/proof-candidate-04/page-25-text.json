@@ -1,0 +1,257 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "25 \u00b7 l: DISAGGREGATED INTELLIGENCE [p25-text-0009]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "25 \u00b7 r: 25 / 36 [p25-text-0010]",
+    "text": "25 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "25 \u00b7 latency-eyebrow: 06 / MEASURE THE CRITICAL PATH [p25-text-0011]",
+    "text": "06 / MEASURE THE CRITICAL PATH",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      388.3251953125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "25 \u00b7 latency-title: Fast inference helps the path that uses it [p25-text-0012]",
+    "text": "Fast inference helps the path that uses it",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1334.33984375,
+      70.2001953125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "25 \u00b7 strong: Fast decision [p25-text-0013]",
+    "text": "Fast decision",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      118.3203125,
+      413.3489262426181,
+      174.810546875,
+      22.2724609375
+    ],
+    "baseline": [
+      116.0,
+      435.2151371801181
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "25 \u00b7 small: Measure call latency [p25-text-0014]",
+    "text": "Measure call latency",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      117.98046875,
+      461.7223775836614,
+      204.2666015625,
+      21.2294921875
+    ],
+    "baseline": [
+      116.0,
+      477.2985494586614
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "25 \u00b7 strong: Handler checks [p25-text-0015]",
+    "text": "Handler checks",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      696.0203125,
+      351.00826494832677,
+      210.65625,
+      20.9384765625
+    ],
+    "baseline": [
+      693.7,
+      371.54049151082677
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "25 \u00b7 small: Policy + stock + quote [p25-text-0016]",
+    "text": "Policy + stock + quote",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      695.68046875,
+      397.4100366018701,
+      219.513671875,
+      21.8671875
+    ],
+    "baseline": [
+      693.7,
+      413.6239037893701
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "25 \u00b7 strong: Customer offer [p25-text-0017]",
+    "text": "Customer offer",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1359.8763671875,
+      350.42818682332677,
+      209.0322265625,
+      21.6630859375
+    ],
+    "baseline": [
+      1358.6,
+      371.54049151082677
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "25 \u00b7 small: Measure response latency [p25-text-0018]",
+    "text": "Measure response latency",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1360.58046875,
+      398.0477319143701,
+      262.3671875,
+      21.2294921875
+    ],
+    "baseline": [
+      1358.6,
+      413.6239037893701
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "25 \u00b7 strong: Review queue + human handling [p25-text-0019]",
+    "text": "Review queue + human handling",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      696.0203125,
+      689.2878238804134,
+      455.6455078125,
+      29.3193359375
+    ],
+    "baseline": [
+      693.7,
+      711.1540348179134
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "25 \u00b7 small: Can dominate the time to resolution [p25-text-0020]",
+    "text": "Can dominate the time to resolution",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      694.778125,
+      737.0235799089567,
+      369.310546875,
+      16.587890625
+    ],
+    "baseline": [
+      693.7,
+      753.2374470964567
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "25 \u00b7 node label: Track decision time, response time, and time to completed service separately. [p25-text-0021]",
+    "text": "Track decision time, response time, and time to completed service separately.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 24.0,
+    "bbox": [
+      88.095703125,
+      892.9777233021654,
+      857.43359375,
+      23.8564453125
+    ],
+    "baseline": [
+      88.0,
+      910.6661998646654
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "25 \u00b7 span: Jev + LangGraph [p25-text-0022]",
+    "text": "Jev + LangGraph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.1142578125,
+      974.068486097441,
+      144.30859375,
+      18.658203125
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "25 \u00b7 span: Mechanism illustration; no timing benchmark [p25-text-0023]",
+    "text": "Mechanism illustration; no timing benchmark",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1432.3877562130906,
+      973.840947034941,
+      399.5751953125,
+      18.8857421875
+    ],
+    "baseline": [
+      1430.6777952755906,
+      987.843876722441
+    ]
+  }
+]

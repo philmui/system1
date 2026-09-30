@@ -1,0 +1,32 @@
+[
+  {
+    "file": "01-disaggregated-intelligence.html",
+    "sha256": "33eeff29cdd79c230c36f8bda8cb126c2e4abede3741a73b715d773e9274a991",
+    "bytes": 329868
+  },
+  {
+    "file": "01-disaggregated-intelligence.pptx",
+    "sha256": "c74259da0ebeaca50f5fd387572ef2bf3b3a30d3d88ed74932bd5d5db7298a3a",
+    "bytes": 6513123
+  },
+  {
+    "file": "02-disaggregated-intelligence.html",
+    "sha256": "bb51871b0748f8d0e3b565bc64a0925c81da8b76618d26a404cce1aa3808d06a",
+    "bytes": 303177
+  },
+  {
+    "file": "02-disaggregated-intelligence.pptx",
+    "sha256": "3532e07a18aeb31a1e0c53168f5dd5cc3a84ab85379272df7a698c1240a238ec",
+    "bytes": 6984528
+  },
+  {
+    "file": "03-disaggregated-intelligence.html",
+    "sha256": "af73a4468839d349e36bc29414b975925380bd17f5d644281919eb2e42691000",
+    "bytes": 538004
+  },
+  {
+    "file": "03-disaggregated-intelligence.pptx",
+    "sha256": "7995ec929ce812313960f2aef2dd750db367b129b00a81bd76415ee000730562",
+    "bytes": 7809156
+  }
+]

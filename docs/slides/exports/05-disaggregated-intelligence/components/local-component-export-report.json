@@ -1,0 +1,27 @@
+{
+  "method": "librsvg-components-v1",
+  "inputHTML": "05-disaggregated-intelligence.html",
+  "inputHTMLSha256": "bb0f3f1b1423bb9db8d26559bca9c1b5efc09c040abba0e214a9e2fef0f23610",
+  "componentSlideCount": 5,
+  "movableObjectCount": 208,
+  "libraryCount": 34,
+  "reusedObjectCount": 208,
+  "paddingPx": 12,
+  "pngScale": 2,
+  "figurePlacement": [
+    88,
+    292,
+    1744,
+    620
+  ],
+  "framesPresent": true,
+  "allComponentsOutlined": true,
+  "inputChangedDuringExport": false,
+  "sourceSVGHashes": {
+    "returns-slide-access.svg": "9ab7a3f763cdd165c131e4cf26575936adf898a5e6d6386514fd872216c594fe",
+    "returns-slide-routing.svg": "819056366b1d6f64bf5fce42b969a6776aa886f90e7189cda17d8b8d0af39c2d",
+    "returns-slide-reasoning-gate.svg": "4864b37bfbc4bfc397b83afb8301e979a689572a5098c0b9bb3b71f48ff00b32",
+    "returns-slide-whole-item-policy.svg": "a8d5ac87e778e018c6d9501ad081bc5de6a659cd109619b61ef7e71eb2395623",
+    "returns-branching-component-library.svg": "849ef40d3872af27cd3c4d249c7f4d12474a0aac3ed9300ece19b99491ad6e1b"
+  }
+}

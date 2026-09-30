@@ -1,0 +1,291 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "15 \u00b7 l: DISAGGREGATED INTELLIGENCE [p15-text-0012]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "15 \u00b7 r: 15 / 36 [p15-text-0013]",
+    "text": "15 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "15 \u00b7 dependencies-eyebrow: 04 / STEP 2 [p15-text-0014]",
+    "text": "04 / STEP 2",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      127.5927734375,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "15 \u00b7 dependencies-title: Split work along information dependencies [p15-text-0015]",
+    "text": "Split work along information dependencies",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.7724609375,
+      183.87628321850394,
+      1406.1259765625,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "15 \u00b7 strong: Same decision-time snapshot [p15-text-0016]",
+    "text": "Same decision-time snapshot",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      259.577843257874,
+      360.63994986466537,
+      409.18847656250006,
+      28.94140625
+    ],
+    "baseline": [
+      258.823937007874,
+      382.50616080216537
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "15 \u00b7 strong: Remedy [p15-text-0017]",
+    "text": "Remedy",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      118.3203125,
+      657.9126743971457,
+      110.7216796875,
+      27.9853515625
+    ],
+    "baseline": [
+      116.0,
+      678.4449009596457
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "15 \u00b7 small: Return or exchange? [p15-text-0018]",
+    "text": "Return or exchange?",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      117.98046875,
+      704.600578863189,
+      205.9833984375,
+      21.5810546875
+    ],
+    "baseline": [
+      116.0,
+      720.528313238189
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "15 \u00b7 strong: Urgency [p15-text-0019]",
+    "text": "Urgency",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      568.543953617126,
+      657.9126743971457,
+      111.2744140625,
+      27.9853515625
+    ],
+    "baseline": [
+      566.456062992126,
+      678.4449009596457
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "15 \u00b7 small: Which rubric level? [p15-text-0020]",
+    "text": "Which rubric level?",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      566.763680179626,
+      704.314446050689,
+      193.13671875,
+      16.5224609375
+    ],
+    "baseline": [
+      566.456062992126,
+      720.528313238189
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "15 \u00b7 node label: Independent execution can still produce correlated errors. [p15-text-0021]",
+    "text": "Independent execution can still produce correlated errors.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 24.0,
+    "bbox": [
+      122.2558984375,
+      878.6224477116142,
+      644.2646484375,
+      23.544921875
+    ],
+    "baseline": [
+      120.96,
+      896.3109242741142
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "15 \u00b7 strong: Verify identity [p15-text-0022]",
+    "text": "Verify identity",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1088.066171875,
+      366.85128844734254,
+      194.126953125,
+      29.3193359375
+    ],
+    "baseline": [
+      1088.24,
+      388.71749938484254
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "15 \u00b7 strong: Match owned purchase [p15-text-0023]",
+    "text": "Match owned purchase",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1090.5603125,
+      585.5899972317914,
+      322.2783203125,
+      27.607421875
+    ],
+    "baseline": [
+      1088.24,
+      606.1222237942914
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "15 \u00b7 strong: Bind the affected item [p15-text-0024]",
+    "text": "Bind the affected item",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1090.5603125,
+      801.6608947465551,
+      307.8359375,
+      22.2724609375
+    ],
+    "baseline": [
+      1088.24,
+      823.5271056840551
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "15 \u00b7 span: Building with System One \u00b7 A harness with Jev [p15-text-0025]",
+    "text": "Building with System One",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.7099609375,
+      973.840947034941,
+      223.2900390625,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "15 \u00b7 span: Building with System One \u00b7 A harness with Jev [p15-text-0025]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      320.31640625,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      313.931640625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "15 \u00b7 span: Building with System One \u00b7 A harness with Jev [p15-text-0025]",
+    "text": "A harness with Jev",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      328.8857421875,
+      973.840947034941,
+      160.951171875,
+      14.326171875
+    ],
+    "baseline": [
+      328.8095703125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "15 \u00b7 span: Proposed scheduling pattern [p15-text-0026]",
+    "text": "Proposed scheduling pattern",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1579.6190947957678,
+      973.840947034941,
+      250.8798828125,
+      18.8857421875
+    ],
+    "baseline": [
+      1577.9091338582678,
+      987.843876722441
+    ]
+  }
+]

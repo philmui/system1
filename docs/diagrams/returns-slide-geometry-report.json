@@ -1,0 +1,77 @@
+{
+  "method": "Chromium with embedded Manrope and IBM Plex Mono",
+  "artifacts": [
+    {
+      "name": "returns-slide-comparison",
+      "textCount": 26,
+      "overlapMethod": "Actual glyph-ink boxes; font metric boxes retained for canvas bounds.",
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded",
+          "required": true
+        },
+        {
+          "family": "Plex",
+          "status": "unloaded",
+          "required": false
+        }
+      ],
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "name": "returns-slide-policy",
+      "textCount": 21,
+      "overlapMethod": "Actual glyph-ink boxes; font metric boxes retained for canvas bounds.",
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded",
+          "required": true
+        },
+        {
+          "family": "Plex",
+          "status": "unloaded",
+          "required": false
+        }
+      ],
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "name": "returns-slide-fallback",
+      "textCount": 20,
+      "overlapMethod": "Actual glyph-ink boxes; font metric boxes retained for canvas bounds.",
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Manrope",
+          "status": "loaded",
+          "required": true
+        },
+        {
+          "family": "Plex",
+          "status": "unloaded",
+          "required": false
+        }
+      ],
+      "canvas": {
+        "width": 1744,
+        "height": 620
+      },
+      "outOfBounds": [],
+      "overlaps": []
+    }
+  ]
+}

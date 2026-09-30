@@ -1,0 +1,716 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "20 \u00b7 l: DISAGGREGATED INTELLIGENCE [p20-text-0017]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "20 \u00b7 r: 20 / 36 [p20-text-0018]",
+    "text": "20 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "20 \u00b7 trace-eyebrow: 05 / STEP 5 [p20-text-0019]",
+    "text": "05 / STEP 5",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076772,
+      127.5927734375,
+      18.48046875
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "20 \u00b7 trace-title: Authorize the exchange, then resume the cable return [p20-text-0020]",
+    "text": "Authorize the exchange, then resume the cable return",
+    "font": "Manrope",
+    "fontSizePx": 64.0,
+    "bbox": [
+      89.2802734375,
+      181.811625246063,
+      1580.228515625,
+      63.3603515625
+    ],
+    "baseline": [
+      88.0,
+      228.851664308563
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "20 \u00b7 trace-event-line: Agent Graph resumes the cable return. Its policy, confirmation, and authorizat [p20-text-0021]",
+    "text": "Agent Graph resumes the cable return. Its policy, confirmation, and authorization are unfinished.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      114.1123046875,
+      559.392436023622,
+      1249.583984375,
+      27.83203125
+    ],
+    "baseline": [
+      114.0,
+      580.028178211122
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "20 \u00b7 h3: Authorized [p20-text-0022]",
+    "text": "Authorized",
+    "font": "Manrope",
+    "fontSizePx": 36.0,
+    "bbox": [
+      119.7197265625,
+      712.357985359252,
+      183.04296875,
+      26.927734375
+    ],
+    "baseline": [
+      119.0,
+      738.728102546752
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "20 \u00b7 trace-text-17: Confirmation precedes a recheck and the service-issued exchange ID. [p20-text-0023]",
+    "text": "Confirmation precedes a recheck",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      120.224609375,
+      772.2800393700787,
+      381.125,
+      24.5244140625
+    ],
+    "baseline": [
+      119.0,
+      790.7048440575787
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "20 \u00b7 trace-text-17: Confirmation precedes a recheck and the service-issued exchange ID. [p20-text-0023]",
+    "text": "and the service-issued exchange ID.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      120.0498046875,
+      807.7800393700787,
+      410.80078125,
+      24.849609375
+    ],
+    "baseline": [
+      119.0,
+      826.2048440575787
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "20 \u00b7 h3: Active [p20-text-0024]",
+    "text": "Active",
+    "font": "Manrope",
+    "fontSizePx": 36.0,
+    "bbox": [
+      1005.7197265625,
+      712.357985359252,
+      105.623046875,
+      26.9091796875
+    ],
+    "baseline": [
+      1005.0,
+      738.728102546752
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "20 \u00b7 trace-text-18: A separately purchased item. Still unfinished when this trace ends. [p20-text-0025]",
+    "text": "A separately purchased item.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1005.099609375,
+      772.2800393700787,
+      332.5009765625,
+      24.8505859375
+    ],
+    "baseline": [
+      1005.0,
+      790.7048440575787
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "20 \u00b7 trace-text-18: A separately purchased item. Still unfinished when this trace ends. [p20-text-0025]",
+    "text": "Still unfinished when this trace ends.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1005.75,
+      807.7800393700787,
+      421.1494140625,
+      18.8505859375
+    ],
+    "baseline": [
+      1005.0,
+      826.2048440575787
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "20 \u00b7 small: Event 8 of 8 [p20-text-0026]",
+    "text": "Event 8 of 8",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      90.25,
+      898.954962167815,
+      134.30078125,
+      18.5498046875
+    ],
+    "baseline": [
+      88.0,
+      917.079962167815
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "20 \u00b7 trace-text-1: Verify identity [p20-text-0027]",
+    "text": "Verify identity",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      88.134765625,
+      415.8765551181102,
+      173.5556640625,
+      26.32421875
+    ],
+    "baseline": [
+      88.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "20 \u00b7 trace-text-2: Service [p20-text-0028]",
+    "text": "Service",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      88.66015625,
+      466.438225578248,
+      70.994140625,
+      16.587890625
+    ],
+    "baseline": [
+      88.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "20 \u00b7 num: 1 [p20-text-0029]",
+    "text": "1",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      108.56585814468504,
+      338.6434381151575,
+      11.0,
+      15.3564453125
+    ],
+    "baseline": [
+      107.39984251968504,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "20 \u00b7 trace-text-3: Match purchase [p20-text-0030]",
+    "text": "Match purchase",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      309.8896484375,
+      416.2808519931102,
+      198.3515625,
+      25.919921875
+    ],
+    "baseline": [
+      308.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "20 \u00b7 trace-text-4: Service [p20-text-0031]",
+    "text": "Service",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      308.66015625,
+      466.438225578248,
+      70.994140625,
+      16.587890625
+    ],
+    "baseline": [
+      308.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "20 \u00b7 num: 2 [p20-text-0032]",
+    "text": "2",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      328.829530019685,
+      338.3797662401575,
+      10.3837890625,
+      15.6201171875
+    ],
+    "baseline": [
+      327.399842519685,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "20 \u00b7 trace-text-5: Interpret [p20-text-0033]",
+    "text": "Interpret",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      530.16015625,
+      416.2808519931102,
+      108.5,
+      25.919921875
+    ],
+    "baseline": [
+      528.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "20 \u00b7 trace-text-6: System One [p20-text-0034]",
+    "text": "System One",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      528.66015625,
+      466.701897453248,
+      120.8876953125,
+      21.603515625
+    ],
+    "baseline": [
+      528.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "20 \u00b7 num: 3 [p20-text-0035]",
+    "text": "3",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      548.4555065821851,
+      338.3797662401575,
+      10.33984375,
+      15.8837890625
+    ],
+    "baseline": [
+      547.3998425196851,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "20 \u00b7 trace-text-7: Prioritize [p20-text-0036]",
+    "text": "Prioritize",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      749.8896484375,
+      415.9439379306102,
+      110.32421875,
+      20.181640625
+    ],
+    "baseline": [
+      748.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "20 \u00b7 trace-text-8: Customer [p20-text-0037]",
+    "text": "Customer",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      749.078125,
+      466.680413078248,
+      98.5166015625,
+      16.345703125
+    ],
+    "baseline": [
+      748.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "20 \u00b7 num: 4 [p20-text-0038]",
+    "text": "4",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      768.1478893946851,
+      338.6434381151575,
+      11.6162109375,
+      15.3564453125
+    ],
+    "baseline": [
+      767.3998425196851,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "20 \u00b7 trace-text-9: Policy + stock [p20-text-0039]",
+    "text": "Policy + stock",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      969.8896484375,
+      415.8765551181102,
+      167.048828125,
+      26.32421875
+    ],
+    "baseline": [
+      968.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "20 \u00b7 trace-text-10: Service [p20-text-0040]",
+    "text": "Service",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      968.66015625,
+      466.438225578248,
+      70.994140625,
+      16.587890625
+    ],
+    "baseline": [
+      968.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "20 \u00b7 num: 5 [p20-text-0041]",
+    "text": "5",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      989.0062878321851,
+      338.6434381151575,
+      10.1201171875,
+      15.6201171875
+    ],
+    "baseline": [
+      987.3998425196851,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "20 \u00b7 trace-text-11: Confirm [p20-text-0042]",
+    "text": "Confirm",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1188.8095703125,
+      415.8765551181102,
+      100.1142578125,
+      20.25
+    ],
+    "baseline": [
+      1188.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "20 \u00b7 trace-text-12: Customer [p20-text-0043]",
+    "text": "Customer",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1189.078125,
+      466.680413078248,
+      98.5166015625,
+      16.345703125
+    ],
+    "baseline": [
+      1188.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "20 \u00b7 num: 6 [p20-text-0044]",
+    "text": "6",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1208.808045644685,
+      338.6434381151575,
+      10.3837890625,
+      15.6201171875
+    ],
+    "baseline": [
+      1207.399842519685,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "20 \u00b7 trace-text-13: Authorize [p20-text-0045]",
+    "text": "Authorize",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1408.5400390625,
+      415.9439379306102,
+      121.095703125,
+      20.1953125
+    ],
+    "baseline": [
+      1408.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "20 \u00b7 trace-text-14: Service [p20-text-0046]",
+    "text": "Service",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1408.66015625,
+      466.438225578248,
+      70.994140625,
+      16.587890625
+    ],
+    "baseline": [
+      1408.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1044",
+    "name": "20 \u00b7 num: 7 [p20-text-0047]",
+    "text": "7",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1428.829530019685,
+      338.6434381151575,
+      10.251953125,
+      15.3564453125
+    ],
+    "baseline": [
+      1427.399842519685,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1046",
+    "name": "20 \u00b7 trace-text-15: Resume [p20-text-0048]",
+    "text": "Resume",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1629.8896484375,
+      416.3081957431102,
+      99.5498046875,
+      19.8310546875
+    ],
+    "baseline": [
+      1628.0,
+      435.7212816806102
+    ]
+  },
+  {
+    "shapeId": "1047",
+    "name": "20 \u00b7 trace-text-16: Agent Graph [p20-text-0049]",
+    "text": "Agent Graph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1628.087890625,
+      466.701897453248,
+      127.134765625,
+      21.603515625
+    ],
+    "baseline": [
+      1628.0,
+      482.652092765748
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "20 \u00b7 num: 8 [p20-text-0050]",
+    "text": "8",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1648.609803457185,
+      338.3797662401575,
+      10.7802734375,
+      15.8837890625
+    ],
+    "baseline": [
+      1647.399842519685,
+      353.9998834276575
+    ]
+  },
+  {
+    "shapeId": "1050",
+    "name": "20 \u00b7 tag: EXCHANGE [p20-text-0051]",
+    "text": "EXCHANGE",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      120.8896484375,
+      658.0149194143701,
+      104.2275390625,
+      15.162109375
+    ],
+    "baseline": [
+      119.0,
+      672.9250756643701
+    ]
+  },
+  {
+    "shapeId": "1051",
+    "name": "20 \u00b7 tag: CABLE RETURN [p20-text-0052]",
+    "text": "CABLE RETURN",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1006.4697265625,
+      658.0149194143701,
+      159.0458984375,
+      15.162109375
+    ],
+    "baseline": [
+      1005.0,
+      672.9250756643701
+    ]
+  },
+  {
+    "shapeId": "1053",
+    "name": "20 \u00b7 span: Agent Graph / guided determinism \u00b7 Reliable enterprise agents [p20-text-0053]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      972.910282972441,
+      308.6396484375,
+      19.81640625
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1053",
+    "name": "20 \u00b7 span: Agent Graph / guided determinism \u00b7 Reliable enterprise agents [p20-text-0053]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      404.6015625,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      398.216796875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1053",
+    "name": "20 \u00b7 span: Agent Graph / guided determinism \u00b7 Reliable enterprise agents [p20-text-0053]",
+    "text": "Reliable enterprise agents",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      414.8046875,
+      973.840947034941,
+      224.6796875,
+      18.8857421875
+    ],
+    "baseline": [
+      413.0947265625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1054",
+    "name": "20 \u00b7 span: Constructed trace \u00b7 final static state [p20-text-0054]",
+    "text": "Constructed trace \u00b7 final static state",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1523.9678294168307,
+      973.840947034941,
+      307.1005859375,
+      14.326171875
+    ],
+    "baseline": [
+      1523.0371653543307,
+      987.843876722441
+    ]
+  }
+]

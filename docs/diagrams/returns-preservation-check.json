@@ -1,0 +1,16 @@
+{
+  "originalApplicationDiagramFiles": {
+    "api-sse-review.diagram.json": true,
+    "api-sse-review.svg": true,
+    "architecture.diagram.json": true,
+    "architecture.svg": true,
+    "classification.diagram.json": true,
+    "classification.svg": true,
+    "discovery.diagram.json": true,
+    "discovery.svg": true,
+    "fan-out-join.diagram.json": true,
+    "fan-out-join.svg": true,
+    "render.py": true
+  },
+  "allUnchanged": true
+}

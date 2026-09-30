@@ -1,0 +1,376 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "33 \u00b7 l: DISAGGREGATED INTELLIGENCE [p33-text-0009]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "33 \u00b7 r: 33 / 36 [p33-text-0010]",
+    "text": "33 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.3249501722441,
+      59.87114327017716,
+      73.7666015625,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "33 \u00b7 diagnosis-eyebrow: 09 / IMPROVE THE RESPONSIBLE COMPONENT [p33-text-0011]",
+    "text": "09 / IMPROVE THE RESPONSIBLE COMPONENT",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      529.2607421875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "33 \u00b7 diagnosis-title: Diagnose the boundary that failed [p33-text-0012]",
+    "text": "Diagnose the boundary that failed",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1109.73828125,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "33 \u00b7 strong: Exchange authorized; cable task lost [p33-text-0013]",
+    "text": "Exchange authorized; cable task lost",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      619.7203125,
+      321.48561915600396,
+      503.3779296875001,
+      29.3193359375
+    ],
+    "baseline": [
+      617.4,
+      343.35183009350396
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "33 \u00b7 small: Inspect the recorded route and state changes [p33-text-0014]",
+    "text": "Inspect the recorded route and state changes",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      618.5884765625,
+      369.85907049704724,
+      461.2246093750001,
+      21.2294921875
+    ],
+    "baseline": [
+      617.4,
+      385.43524237204724
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "33 \u00b7 mini: ONLY EXCHANGE RECORDED [p33-text-0015]",
+    "text": "ONLY EXCHANGE RECORDED",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      117.064453125,
+      653.3294143700788,
+      269.6796875,
+      13.7177734375
+    ],
+    "baseline": [
+      116.0,
+      666.8196487450788
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "33 \u00b7 strong: Decision boundary [p33-text-0016]",
+    "text": "Decision boundary",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      118.3203125,
+      688.0467215182086,
+      259.8984375,
+      29.3193359375
+    ],
+    "baseline": [
+      116.0,
+      709.9129324557086
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "33 \u00b7 small: Inspect input evidence, labels, and category definition. [p33-text-0017]",
+    "text": "Inspect input evidence,",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      117.1884765625,
+      735.7824775467519,
+      236.4755859375,
+      21.58203125
+    ],
+    "baseline": [
+      116.0,
+      751.9963447342519
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "33 \u00b7 small: Inspect input evidence, labels, and category definition. [p33-text-0017]",
+    "text": "labels, and category definition.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      117.9140625,
+      765.482477546752,
+      309.4033203125,
+      21.8671875
+    ],
+    "baseline": [
+      116.0,
+      781.696344734252
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "33 \u00b7 mini: BOTH TASKS RECORDED [p33-text-0018]",
+    "text": "BOTH TASKS RECORDED",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      728.071875,
+      653.3294143700788,
+      231.87109375,
+      13.7177734375
+    ],
+    "baseline": [
+      726.4,
+      666.8196487450788
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "33 \u00b7 strong: Workflow boundary [p33-text-0019]",
+    "text": "Workflow boundary",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      726.603125,
+      688.9744558932086,
+      276.6025390625,
+      28.3916015625
+    ],
+    "baseline": [
+      726.4,
+      709.9129324557086
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "33 \u00b7 small: Inspect the transition that dropped the pending task. [p33-text-0020]",
+    "text": "Inspect the transition that",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      727.5884765625,
+      735.7824775467519,
+      263.4443359375,
+      21.58203125
+    ],
+    "baseline": [
+      726.4,
+      751.9963447342519
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "33 \u00b7 small: Inspect the transition that dropped the pending task. [p33-text-0020]",
+    "text": "dropped the pending task.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      727.499609375,
+      765.482477546752,
+      267.8896484375,
+      21.8671875
+    ],
+    "baseline": [
+      726.4,
+      781.696344734252
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "33 \u00b7 mini: TRACE LOOKS CORRECT [p33-text-0021]",
+    "text": "TRACE LOOKS CORRECT",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1337.274609375,
+      653.3294143700788,
+      233.6572265625,
+      13.7177734375
+    ],
+    "baseline": [
+      1336.8,
+      666.8196487450788
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "33 \u00b7 strong: Outcome boundary [p33-text-0022]",
+    "text": "Outcome boundary",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1338.0763671875,
+      688.8299246432086,
+      271.73046875,
+      28.5361328125
+    ],
+    "baseline": [
+      1336.8,
+      709.9129324557086
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "33 \u00b7 small: Inspect services and the resolution condition. [p33-text-0023]",
+    "text": "Inspect services and the",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1337.9884765625,
+      735.7824775467519,
+      244.3505859375,
+      21.58203125
+    ],
+    "baseline": [
+      1336.8,
+      751.9963447342519
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "33 \u00b7 small: Inspect services and the resolution condition. [p33-text-0023]",
+    "text": "resolution condition.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1338.53828125,
+      765.482477546752,
+      208.44921875,
+      16.5224609375
+    ],
+    "baseline": [
+      1336.8,
+      781.696344734252
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "33 \u00b7 span: Jev in LangSmith Evals \u00b7 Jev-as-a-Judge [p33-text-0024]",
+    "text": "Jev in LangSmith Evals",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.1142578125,
+      973.840947034941,
+      195.7607421875,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "33 \u00b7 span: Jev in LangSmith Evals \u00b7 Jev-as-a-Judge [p33-text-0024]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      291.001953125,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      284.6171875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "33 \u00b7 span: Jev in LangSmith Evals \u00b7 Jev-as-a-Judge [p33-text-0024]",
+    "text": "Jev-as-a-Judge",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      299.609375,
+      974.391728284941,
+      124.1279296875,
+      18.3349609375
+    ],
+    "baseline": [
+      299.4951171875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "33 \u00b7 span: Constructed failure diagnosis [p33-text-0025]",
+    "text": "Constructed failure diagnosis",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1576.7890892593505,
+      973.840947034941,
+      254.46875,
+      18.8857421875
+    ],
+    "baseline": [
+      1575.8584251968505,
+      987.843876722441
+    ]
+  }
+]

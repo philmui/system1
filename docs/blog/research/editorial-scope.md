@@ -1,0 +1,15 @@
+# Scope and evidence decisions
+
+The deliverable is a Salesforce engineering blog titled **Building Prod with `koa-action`, Agent Graph and AgentScript**, developed as seven separately preserved drafts. The intended reader builds or evaluates enterprise agents and should be able to explain how a bounded model judgment becomes a controlled service workflow.
+
+The user's role definitions establish `koa-action` as the System One model, Agent Graph as the managed Agentforce orchestration runtime, and AgentScript as its configuration language. Public sources support the graph and language discussion. The sources do not establish a public `koa-action` SDK, native adapter, training interface, calibration guarantee, or measured result for this proposed integration. The drafts therefore distinguish documented concepts, the user's supplied model role, and original design recommendations.
+
+All fifteen requested sources were read. The source notes record access limitations and the successful retrieval paths. AgentScript's public formal specification was also checked. The Everything Agents tutorial is useful secondary material; a disagreement concerning action-output provenance remains unresolved and is not represented as a verified runtime behavior in the blog.
+
+The gait, health-condition, geometry, JEPA, and notebook instructions conflict with the stated Salesforce blog topic and have no accompanying study or data. Their methodological intent is retained through explicit hypotheses, preserved source records, leakage controls, held-out evaluation, and treatment of failures. No gait results or notebooks are invented. “Preserving dataset shape” is translated into preserving records, order, relationships, provenance, and partition membership; the article does not claim that cleaning or training preserves an unchanged empirical distribution.
+
+The source article is acknowledged, but the service scenario, evaluation proposal, visual designs, and prose are independently authored. No Jev benchmark, training objective, SDK contract, or claimed runtime guarantee is transferred to Salesforce. No customer deployment, model training, or comparative experiment was run for this writing task.
+
+The installed `codex:adversarial-review` plugin was used through its companion runtime with explicit foreground execution. Its command source is `/Users/pmui/.claude/plugins/cache/openai-codex/codex/1.0.5/commands/adversarial-review.md`. The plugin's default review-only and ask-before-fixing guidance is superseded here by the user's explicit instruction to iteratively revise and fix issues. Review execution remains read-only; the writing agent makes revisions into new draft files. Review copies live in temporary isolated Git repositories so unrelated workspace files are excluded. Raw plugin reports are retained under `reviews/`.
+
+Additional Codex agents independently researched the three source families and provided successive technical and editorial critiques. Their reports identify their role and are not mislabeled as plugin executions. Accepted, modified, and declined recommendations are tracked in the revision record.

@@ -1,0 +1,88 @@
+{
+  "check": "Static XML, component metadata and preservation check. Does not establish rendered geometry or PowerPoint layout.",
+  "assets": [
+    {
+      "file": "returns-comparison-access.svg",
+      "viewBox": "0 0 1900 900",
+      "named_components": 53,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "75292284600e248ba5b668f86069145d25155254683730f70e9a1ddd9c71ad0c"
+    },
+    {
+      "file": "returns-comparison-routing.svg",
+      "viewBox": "0 0 1900 900",
+      "named_components": 28,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "bd75af758ef834ce190d704ee2c537b95c2762008e2e5c838d4391d4eb4f57a0"
+    },
+    {
+      "file": "returns-whole-item-policy.svg",
+      "viewBox": "0 0 1900 900",
+      "named_components": 17,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "7bc467d3624091cdab5d7070d188937daa568904e7fbec6d55d4ac9293480a28"
+    },
+    {
+      "file": "returns-reasoning-gate.svg",
+      "viewBox": "0 0 1900 900",
+      "named_components": 25,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "3ab20ffce923f9b6b6170f31378a83407f37e519e0a2459929fee1561d7ebbf1"
+    },
+    {
+      "file": "returns-slide-access.svg",
+      "viewBox": "0 0 1744 620",
+      "named_components": 50,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "9ab7a3f763cdd165c131e4cf26575936adf898a5e6d6386514fd872216c594fe"
+    },
+    {
+      "file": "returns-slide-routing.svg",
+      "viewBox": "0 0 1744 620",
+      "named_components": 28,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "819056366b1d6f64bf5fce42b969a6776aa886f90e7189cda17d8b8d0af39c2d"
+    },
+    {
+      "file": "returns-slide-whole-item-policy.svg",
+      "viewBox": "0 0 1744 620",
+      "named_components": 14,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "a8d5ac87e778e018c6d9501ad081bc5de6a659cd109619b61ef7e71eb2395623"
+    },
+    {
+      "file": "returns-slide-reasoning-gate.svg",
+      "viewBox": "0 0 1744 620",
+      "named_components": 25,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "4864b37bfbc4bfc397b83afb8301e979a689572a5098c0b9bb3b71f48ff00b32"
+    },
+    {
+      "file": "returns-branching-component-library.svg",
+      "viewBox": "0 0 1744 620",
+      "named_components": 24,
+      "accessible_title": true,
+      "accessible_description": true,
+      "image_or_foreign_object_nodes": 0,
+      "sha256": "849ef40d3872af27cd3c4d249c7f4d12474a0aac3ed9300ece19b99491ad6e1b"
+    }
+  ],
+  "preserved_files_checked": 110,
+  "preserved_files_changed": []
+}

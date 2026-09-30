@@ -1,0 +1,42 @@
+{
+  "name": "Frontier on exception",
+  "description": "Synthetic teaching documents. Fixture signals are scripted for repeatable demonstrations; live model judgments can differ. The runtime uses its real classification policy in both modes.",
+  "documents": [
+    {
+      "filename": "lesson-clear-invoice.md",
+      "scenario": "direct",
+      "choice": "invoice",
+      "confidence": 0.97,
+      "expected_route": "accept",
+      "proposal": "invoice",
+      "proposal_explanation": "Simulated proposal: this document has itemized charges, a total amount due, and a payment deadline. Invoice is a plausible primary function, subject to human review."
+    },
+    {
+      "filename": "lesson-access-policy.md",
+      "scenario": "direct",
+      "choice": "policy",
+      "confidence": 0.96,
+      "expected_route": "accept",
+      "proposal": "policy",
+      "proposal_explanation": "Simulated proposal: this document sets standing access rules for all staff. Policy is a plausible primary function, subject to human review."
+    },
+    {
+      "filename": "lesson-invoice-or-progress-report.md",
+      "scenario": "below_threshold",
+      "choice": "invoice",
+      "confidence": 0.58,
+      "expected_route": "interpret",
+      "proposal": "report",
+      "proposal_explanation": "Simulated proposal: this page reports delivery progress and estimates a future charge; it explicitly says it is not a request for payment. Report is a plausible primary function, subject to human review."
+    },
+    {
+      "filename": "lesson-unsigned-agreement-email.md",
+      "scenario": "mixed_purpose",
+      "choice": "contract",
+      "confidence": 0.96,
+      "expected_route": "interpret",
+      "proposal": "correspondence",
+      "proposal_explanation": "Simulated proposal: the email discusses proposed service terms, but acceptance is pending and nothing is signed. Its current function is correspondence; a reviewer must approve or correct this proposal."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "renderer": "Apple Keynote via osascript",
+  "command": "tell application \"Keynote\" to get version",
+  "exitCode": 1,
+  "succeeded": false,
+  "output": "Connection invalid for service com.apple.hiservices-xpcservice; Can\u2019t get application \"Keynote\". (-1728)",
+  "scope": "Application version probe only; no presentation opened or exported. Microsoft PowerPoint and LibreOffice are not installed. Local OOXML reconstruction is reported separately."
+}

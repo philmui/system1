@@ -1,0 +1,19 @@
+Title:           Disaggregated intelligence — koa-action, Agent Graph & AgentScript · v4
+Creator:         Chromium
+Producer:        Skia/PDF m153
+CreationDate:    Tue Sep 29 01:03:29 2026 PDT
+ModDate:         Tue Sep 29 01:03:29 2026 PDT
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           35
+Encrypted:       no
+Page size:       1440 x 810 pts
+Page rot:        0
+File size:       2044354 bytes
+Optimized:       no
+PDF version:     1.4

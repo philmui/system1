@@ -1,0 +1,444 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "31 \u00b7 l: DISAGGREGATED INTELLIGENCE [p31-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "31 \u00b7 r: 31 / 36 [p31-text-0012]",
+    "text": "31 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.3249501722441,
+      59.87114327017716,
+      73.7666015625,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "31 \u00b7 acceptance-eyebrow: 09 / STEP 8 \u00b7 EARN ROLLOUT [p31-text-0013]",
+    "text": "09 / STEP 8 \u00b7 EARN ROLLOUT",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      324.1884765625,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "31 \u00b7 acceptance-title: Lower cost must come with acceptable quality [p31-text-0014]",
+    "text": "Lower cost must come with acceptable quality",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.759765625,
+      183.87628321850394,
+      1520.076171875,
+      70.2001953125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "31 \u00b7 acceptance-text-1: Schematic decision rule \u00b7 no measured results [p31-text-0015]",
+    "text": "Schematic decision rule \u00b7 no measured results",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      88.83984375,
+      299.39243602362205,
+      592.421875,
+      21.111328125
+    ],
+    "baseline": [
+      88.0,
+      320.02817821112205
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "31 \u00b7 acceptance-text-2: Quality: upper end must stay below the limit [p31-text-0016]",
+    "text": "Quality: upper end must stay below the limit",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      112.9599609375,
+      373.936867925689,
+      644.037109375,
+      31.2001953125
+    ],
+    "baseline": [
+      112.0,
+      397.456399175689
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "31 \u00b7 acceptance-text-3: This range crosses the margin. Quality remains uncertain. [p31-text-0017]",
+    "text": "This range crosses the margin.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      112.1123046875,
+      621.792436023622,
+      387.2119140625,
+      27.8310546875
+    ],
+    "baseline": [
+      112.0,
+      642.428178211122
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "31 \u00b7 acceptance-text-3: This range crosses the margin. Quality remains uncertain. [p31-text-0017]",
+    "text": "Quality remains uncertain.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      113.232421875,
+      657.715873523622,
+      354.0029296875,
+      28.30859375
+    ],
+    "baseline": [
+      112.0,
+      678.828178211122
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "31 \u00b7 acceptance-text-4: Cost: lower end must exceed the target [p31-text-0018]",
+    "text": "Cost: lower end must exceed the target",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      998.9599609375,
+      373.936867925689,
+      578.7255859375,
+      31.6796875
+    ],
+    "baseline": [
+      998.0,
+      397.456399175689
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "31 \u00b7 acceptance-text-5: This range clears the required gain. Cost passes; rollout still waits. [p31-text-0019]",
+    "text": "This range clears the required gain.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      998.1123046875,
+      621.792436023622,
+      449.875,
+      27.8310546875
+    ],
+    "baseline": [
+      998.0,
+      642.428178211122
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "31 \u00b7 acceptance-text-5: This range clears the required gain. Cost passes; rollout still waits. [p31-text-0019]",
+    "text": "Cost passes; rollout still waits.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      999.232421875,
+      657.715873523622,
+      399.19921875,
+      27.9443359375
+    ],
+    "baseline": [
+      998.0,
+      678.828178211122
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "31 \u00b7 acceptance-text-6: Count the whole case: exchange authorized + cable return active = incomplete a [p31-text-0020]",
+    "text": "Count the whole case:",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      115.232421875,
+      743.644389148622,
+      295.875,
+      20.916015625
+    ],
+    "baseline": [
+      114.0,
+      764.028178211122
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "31 \u00b7 acceptance-text-6: Count the whole case: exchange authorized + cable return active = incomplete a [p31-text-0020]",
+    "text": " exchange authorized + cable return active",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      421.6083984375,
+      743.392436023622,
+      539.279296875,
+      27.8310546875
+    ],
+    "baseline": [
+      412.984375,
+      764.028178211122
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "31 \u00b7 acceptance-text-6: Count the whole case: exchange authorized + cable return active = incomplete a [p31-text-0020]",
+    "text": "= incomplete at the deadline.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      116.9404296875,
+      776.9924360236221,
+      376.8779296875,
+      27.4677734375
+    ],
+    "baseline": [
+      114.0,
+      797.6281782111221
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "31 \u00b7 acceptance-text-7: Harm limits must also pass. Assess all cases and the same relevant cohort. [p31-text-0021]",
+    "text": "Harm limits must also pass.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      114.16015625,
+      857.3435765255906,
+      352.26953125,
+      26.9462890625
+    ],
+    "baseline": [
+      112.0,
+      877.7019749630906
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "31 \u00b7 acceptance-text-7: Harm limits must also pass. Assess all cases and the same relevant cohort. [p31-text-0021]",
+    "text": "Assess all cases and the same relevant cohort.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      112.1083984375,
+      895.0457640255906,
+      570.560546875,
+      19.494140625
+    ],
+    "baseline": [
+      112.0,
+      914.1619749630906
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "31 \u00b7 acceptance-text-8: Latency limits must also pass. Include unfinished cases and resolution time. [p31-text-0022]",
+    "text": "Latency limits must also pass.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1000.16015625,
+      857.3435765255906,
+      379.4580078125,
+      27.296875
+    ],
+    "baseline": [
+      998.0,
+      877.7019749630906
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "31 \u00b7 acceptance-text-8: Latency limits must also pass. Include unfinished cases and resolution time. [p31-text-0022]",
+    "text": "Include unfinished cases and resolution time.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 27.0,
+    "bbox": [
+      999.4580078125,
+      894.2625609005906,
+      565.9189453125,
+      20.27734375
+    ],
+    "baseline": [
+      998.0,
+      914.1619749630906
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "31 \u00b7 span: Uncertainty range [p31-text-0023]",
+    "text": "Uncertainty range",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      140.43148468257874,
+      425.3638985605315,
+      210.783203125,
+      25.84375
+    ],
+    "baseline": [
+      138.32503937007874,
+      444.5260079355315
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "31 \u00b7 span: Allowed loss [p31-text-0024]",
+    "text": "Allowed loss",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      543.5512321604331,
+      546.1178048105315,
+      148.4873046875,
+      18.7724609375
+    ],
+    "baseline": [
+      543.4477165354331,
+      564.5260079355315
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "31 \u00b7 span: More quality loss \u2192 [p31-text-0025]",
+    "text": "More quality loss \u2192",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      661.387875246063,
+      577.3638985605315,
+      233.271484375,
+      25.84375
+    ],
+    "baseline": [
+      659.048031496063,
+      596.5260079355315
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "31 \u00b7 span: Uncertainty range [p31-text-0026]",
+    "text": "Uncertainty range",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1026.4314846825787,
+      425.3638985605315,
+      210.783203125,
+      25.84375
+    ],
+    "baseline": [
+      1024.3250393700787,
+      444.5260079355315
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "31 \u00b7 span: Required saving [p31-text-0027]",
+    "text": "Required saving",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1198.6485051673228,
+      545.3638985605315,
+      187.6953125,
+      25.84375
+    ],
+    "baseline": [
+      1196.3086614173228,
+      564.5260079355315
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "31 \u00b7 span: More saving per case \u2192 [p31-text-0028]",
+    "text": "More saving per case \u2192",
+    "font": "Salesforce Sans",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1499.1310248523623,
+      577.3638985605315,
+      281.5283203125,
+      25.84375
+    ],
+    "baseline": [
+      1496.7911811023623,
+      596.5260079355315
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "31 \u00b7 span: Tutorial evaluation protocol [p31-text-0029]",
+    "text": "Tutorial evaluation protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      239.576171875,
+      18.6396484375
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1040",
+    "name": "31 \u00b7 span: Schematic acceptance rule; no empirical intervals [p31-text-0030]",
+    "text": "Schematic acceptance rule; no empirical intervals",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1397.3887376968503,
+      973.840947034941,
+      433.869140625,
+      18.6396484375
+    ],
+    "baseline": [
+      1396.8184251968503,
+      987.843876722441
+    ]
+  }
+]

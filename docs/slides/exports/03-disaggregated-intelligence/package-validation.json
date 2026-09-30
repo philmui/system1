@@ -1,0 +1,28 @@
+{
+  "powerpoint": "03-disaggregated-intelligence.pptx",
+  "source": "Disaggregated intelligence \u2014 koa-action, Agent Graph & AgentScript \u00b7 v3",
+  "passed": true,
+  "checks": {
+    "slideCount": 31,
+    "editableNotesCount": 31,
+    "vectorArtworkCount": 31,
+    "pngFallbackCount": 31,
+    "vectorPathCount": 5314,
+    "clickableWebSourceCount": 65,
+    "externalRelationshipCount": 65,
+    "relationshipsChecked": 295,
+    "sourceHyperlinkTargetsMatch": true,
+    "originalSpeakerNotesPreserved": true,
+    "sizeEMU": [
+      12192000,
+      6858000
+    ],
+    "allObjectsWithinCanvas": true,
+    "glyphsOutlined": true,
+    "pdfEmbeddedFontCount": 45,
+    "maxMeanImageDifference": 0.2320408950617284,
+    "maxPixelsOver30Fraction": 0.0006467013888888889
+  },
+  "errors": [],
+  "limits": "No Microsoft PowerPoint or LibreOffice renderer is installed. Validation covers OOXML/ZIP consistency, bounds, exact packaged-image identity, and independent SVG/PDF raster agreement; it does not claim an Office render."
+}

@@ -1,0 +1,444 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "04 \u00b7 l: DISAGGREGATED INTELLIGENCE [p04-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "04 \u00b7 r: 04 / 36 [p04-text-0012]",
+    "text": "04 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "04 \u00b7 ownership-eyebrow: 01 / ARCHITECTURE [p04-text-0013]",
+    "text": "01 / ARCHITECTURE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      225.3603515625,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "04 \u00b7 ownership-title: Give each responsibility an owner [p04-text-0014]",
+    "text": "Give each responsibility an owner",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.16015625,
+      183.87628321850394,
+      1100.5966796875,
+      70.2001953125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "04 \u00b7 strong: AgentScript [p04-text-0015]",
+    "text": "AgentScript",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      279.4130859375,
+      306.0719183686024,
+      161.994140625,
+      29.3193359375
+    ],
+    "baseline": [
+      279.5,
+      327.9381293061024
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "04 \u00b7 small: Authors sequencing, action availability, and bound inputs [p04-text-0016]",
+    "text": "Authors sequencing, action availability, and bound inputs",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      279.587890625,
+      353.80767439714566,
+      582.2666015625,
+      21.8671875
+    ],
+    "baseline": [
+      279.5,
+      370.02154158464566
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "04 \u00b7 strong: Agent Graph [p04-text-0017]",
+    "text": "Agent Graph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      279.4130859375,
+      482.3239403912401,
+      173.767578125,
+      28.5361328125
+    ],
+    "baseline": [
+      279.5,
+      503.4069482037401
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "04 \u00b7 small: Executes the workflow and retains task state [p04-text-0018]",
+    "text": "Executes the workflow and retains task state",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      281.48046875,
+      529.2766507750985,
+      446.2392578125,
+      16.5224609375
+    ],
+    "baseline": [
+      279.5,
+      545.4905179625985
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "04 \u00b7 mini: INTERPRET [p04-text-0019]",
+    "text": "INTERPRET",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      117.595703125,
+      719.3732055856299,
+      108.5322265625,
+      13.26171875
+    ],
+    "baseline": [
+      116.0,
+      732.6349243356299
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "04 \u00b7 strong: koa-action [p04-text-0020]",
+    "text": "koa-action",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      118.26171875,
+      753.8621545890747,
+      143.548828125,
+      22.271484375
+    ],
+    "baseline": [
+      116.0,
+      775.7283655265747
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "04 \u00b7 small: System One: bounded decisions [p04-text-0021]",
+    "text": "System One: bounded decisions",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      116.66015625,
+      801.5979106176181,
+      327.1591796875,
+      21.8671875
+    ],
+    "baseline": [
+      116.0,
+      817.8117778051181
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "04 \u00b7 mini: REASON [p04-text-0022]",
+    "text": "REASON",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      564.6099609375,
+      704.2947687007874,
+      70.171875,
+      13.7177734375
+    ],
+    "baseline": [
+      562.9,
+      717.7850030757874
+    ]
+  },
+  {
+    "shapeId": "1038",
+    "name": "04 \u00b7 strong: Frontier model [p04-text-0023]",
+    "text": "Frontier model",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      565.2203125,
+      739.0120758489173,
+      202.3896484375,
+      22.2724609375
+    ],
+    "baseline": [
+      562.9,
+      760.8782867864173
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "04 \u00b7 small: Residual interpretation after a defined gate [p04-text-0024]",
+    "text": "Residual interpretation",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      564.88046875,
+      786.7478318774606,
+      228.9052734375,
+      21.58203125
+    ],
+    "baseline": [
+      562.9,
+      802.9616990649606
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "04 \u00b7 small: Residual interpretation after a defined gate [p04-text-0024]",
+    "text": "after a defined gate",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      563.823828125,
+      816.7779100024607,
+      196.697265625,
+      21.537109375
+    ],
+    "baseline": [
+      562.9,
+      832.6616990649607
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "04 \u00b7 mini: ACT [p04-text-0025]",
+    "text": "ACT",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1010.3888671875,
+      719.1446899606299,
+      35.13671875,
+      13.7177734375
+    ],
+    "baseline": [
+      1009.8,
+      732.6349243356299
+    ]
+  },
+  {
+    "shapeId": "1042",
+    "name": "04 \u00b7 strong: Backend services [p04-text-0026]",
+    "text": "Backend services",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1012.1203125,
+      753.8621545890747,
+      234.0322265625,
+      22.2724609375
+    ],
+    "baseline": [
+      1009.8,
+      775.7283655265747
+    ]
+  },
+  {
+    "shapeId": "1043",
+    "name": "04 \u00b7 small: Authoritative facts + permissions [p04-text-0027]",
+    "text": "Authoritative facts + permissions",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1009.887890625,
+      801.5979106176181,
+      333.0537109375,
+      21.58203125
+    ],
+    "baseline": [
+      1009.8,
+      817.8117778051181
+    ]
+  },
+  {
+    "shapeId": "1045",
+    "name": "04 \u00b7 mini: REVIEW [p04-text-0028]",
+    "text": "REVIEW",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1458.4099609375,
+      704.5232843257874,
+      71.02734375,
+      13.26171875
+    ],
+    "baseline": [
+      1456.7,
+      717.7850030757874
+    ]
+  },
+  {
+    "shapeId": "1046",
+    "name": "04 \u00b7 strong: Human path [p04-text-0029]",
+    "text": "Human path",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1459.0203125,
+      740.3460602239173,
+      170.3740234375,
+      27.607421875
+    ],
+    "baseline": [
+      1456.7,
+      760.8782867864173
+    ]
+  },
+  {
+    "shapeId": "1047",
+    "name": "04 \u00b7 small: When policy or ambiguity requires it [p04-text-0030]",
+    "text": "When policy or ambiguity",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1457.0076171875,
+      786.7478318774606,
+      260.9619140625,
+      21.8671875
+    ],
+    "baseline": [
+      1456.7,
+      802.9616990649606
+    ]
+  },
+  {
+    "shapeId": "1047",
+    "name": "04 \u00b7 small: When policy or ambiguity requires it [p04-text-0030]",
+    "text": "requires it",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1458.43828125,
+      816.4478318774607,
+      99.4814453125,
+      21.58203125
+    ],
+    "baseline": [
+      1456.7,
+      832.6616990649607
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "04 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane [p04-text-0031]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      972.910282972441,
+      308.6396484375,
+      19.81640625
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "04 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane [p04-text-0031]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      404.6015625,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      398.216796875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "04 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane [p04-text-0031]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      413.1708984375,
+      973.840947034941,
+      222.9482421875,
+      18.8857421875
+    ],
+    "baseline": [
+      413.0947265625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1050",
+    "name": "04 \u00b7 span: Proposed composition; no native adapter asserted [p04-text-0032]",
+    "text": "Proposed composition; no native adapter asserted",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1390.6397247170275,
+      973.840947034941,
+      439.87890625,
+      18.6396484375
+    ],
+    "baseline": [
+      1388.9297637795275,
+      987.843876722441
+    ]
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "file": "docs/blog/05-building-prod.md",
+    "sha256": "a486b236ec8664bee623764e0dfdaac3bacf8e5db6f45f2d3e7cdf8058f528a1",
+    "bytes": 13894
+  },
+  {
+    "file": "docs/blog/01-building-prod.md",
+    "sha256": "47ef5fccc7da02e8898e39ed44f81fe36179039900842b68bcee6128d0493ed1",
+    "bytes": 8190
+  },
+  {
+    "file": "docs/blog/04-building-prod.md",
+    "sha256": "1d2b4c00d9b7e35e8a948c416af52c742e5065170bbd403e58d2d3a301535d1f",
+    "bytes": 13482
+  },
+  {
+    "file": "docs/blog/07-building-prod.md",
+    "sha256": "660d5c9b3c900cf80835c026b4d86fc6f01eea1d776c306f73290e0c174db155",
+    "bytes": 15766
+  },
+  {
+    "file": "docs/blog/08-building-prod.md",
+    "sha256": "042deb51b870350e530de2812db4f388453f070ebce17cb7e137af3b424086b5",
+    "bytes": 25063
+  },
+  {
+    "file": "docs/blog/03-building-prod.md",
+    "sha256": "31b1fa6f10fefb7d506de7c2f1b29f4d38e11896366d29710c0eeff076f075ca",
+    "bytes": 12100
+  },
+  {
+    "file": "docs/blog/06-building-prod.md",
+    "sha256": "cefd19856867af5abaeb53bd75637e7382ef5324b881cc7e66a70cdb2dbd1b95",
+    "bytes": 14688
+  },
+  {
+    "file": "docs/blog/02-building-prod.md",
+    "sha256": "a953064fbaeaafa18671c858f3b9ec535c9cd2b9698488cedbe43f82f9ac9524",
+    "bytes": 9182
+  },
+  {
+    "file": "docs/slides/02-disaggregated-intelligence.html",
+    "sha256": "bb51871b0748f8d0e3b565bc64a0925c81da8b76618d26a404cce1aa3808d06a",
+    "bytes": 303177
+  },
+  {
+    "file": "docs/slides/04-disaggregated-intelligence.html",
+    "sha256": "eff6649b6ef62daf4ce28d9afecb60b8dd832eab83747a8513cd2be939025d3b",
+    "bytes": 658460
+  },
+  {
+    "file": "docs/slides/01-disaggregated-intelligence.html",
+    "sha256": "33eeff29cdd79c230c36f8bda8cb126c2e4abede3741a73b715d773e9274a991",
+    "bytes": 329868
+  },
+  {
+    "file": "docs/slides/03-disaggregated-intelligence.html",
+    "sha256": "af73a4468839d349e36bc29414b975925380bd17f5d644281919eb2e42691000",
+    "bytes": 538004
+  },
+  {
+    "file": "docs/slides/03-disaggregated-intelligence.pptx",
+    "sha256": "7995ec929ce812313960f2aef2dd750db367b129b00a81bd76415ee000730562",
+    "bytes": 7809156
+  },
+  {
+    "file": "docs/slides/04-disaggregated-intelligence.pptx",
+    "sha256": "3cbb2b9ac396806e9ec8ed4dd3d428a041b82760a92fded3ac7c4b6f251666fc",
+    "bytes": 10288466
+  },
+  {
+    "file": "docs/slides/01-disaggregated-intelligence.pptx",
+    "sha256": "c74259da0ebeaca50f5fd387572ef2bf3b3a30d3d88ed74932bd5d5db7298a3a",
+    "bytes": 6513123
+  },
+  {
+    "file": "docs/slides/02-disaggregated-intelligence.pptx",
+    "sha256": "3532e07a18aeb31a1e0c53168f5dd5cc3a84ab85379272df7a698c1240a238ec",
+    "bytes": 6984528
+  },
+  {
+    "file": "docs/diagrams/returns-comparison.png",
+    "sha256": "bc9cc4964da660dd258587d80e945bd3898313dff3144912f38272f3509602e1",
+    "bytes": 376666
+  },
+  {
+    "file": "docs/diagrams/returns-comparison.pdf",
+    "sha256": "1fd1fbf3e70c8f0ea9d791ce62606475c083d0eba74b62149659e8e8d55d28b0",
+    "bytes": 163765
+  },
+  {
+    "file": "docs/diagrams/returns-comparison.outlined.svg",
+    "sha256": "bc6943cbcf13cc546c337e139011250540c44df3b03b4c70ab5038b92a65c60d",
+    "bytes": 397364
+  },
+  {
+    "file": "docs/diagrams/returns-comparison.svg",
+    "sha256": "2a0a96d1173fe5bda2fdda16877647754a29a4649c949b9055ba4fceb19e312a",
+    "bytes": 68200
+  },
+  {
+    "file": "docs/diagrams/returns-policy.outlined.svg",
+    "sha256": "79d6d6c44db1751d56e29e22deb003b68fd955411ad2817e56f3be3b2f73ac84",
+    "bytes": 365855
+  },
+  {
+    "file": "docs/diagrams/returns-policy.pdf",
+    "sha256": "ea9ea9e36d1e0981cd1d6a782d5f57f74fb24197c1bd24f901e9f07c9c2d7532",
+    "bytes": 172377
+  },
+  {
+    "file": "docs/diagrams/returns-policy.png",
+    "sha256": "62f7751f2c2cb381ec1a97d43a30079ae3a0adfa499b0fdda6cbccf4a1050e81",
+    "bytes": 258948
+  },
+  {
+    "file": "docs/diagrams/returns-policy.svg",
+    "sha256": "234e4734ea98fd58009e0a518796f567125b591f0e5c7fc08f2b4e9106d328a3",
+    "bytes": 63346
+  },
+  {
+    "file": "docs/diagrams/returns-fallback.png",
+    "sha256": "335adbc7fc8df54279d6c0331010b28f5731a8a15ce502f6a0d727199ab2d6f4",
+    "bytes": 298603
+  },
+  {
+    "file": "docs/diagrams/returns-fallback.pdf",
+    "sha256": "91f9c05750d82766d0dd9ab655785baf88b8af93900ca61aa94d9c61db1b5038",
+    "bytes": 149881
+  },
+  {
+    "file": "docs/diagrams/returns-fallback.outlined.svg",
+    "sha256": "4caf71478dac39aaec3f24ce21a606170539d53f43bbff0f9be095cb3ce98ba0",
+    "bytes": 395090
+  },
+  {
+    "file": "docs/diagrams/returns-fallback.svg",
+    "sha256": "be396731f4d6f2cf58b6a6dd195b09ff5905f0385fbd28b7576b6fb6e02e8d7d",
+    "bytes": 64502
+  },
+  {
+    "file": "docs/diagrams/returns-slide-comparison.outlined.svg",
+    "sha256": "9f2b91ea8813870e341e96c65136f1a0c02f168744523d049e58432d815e3e6d",
+    "bytes": 330602
+  },
+  {
+    "file": "docs/diagrams/returns-slide-comparison.png",
+    "sha256": "c9b9744094d2486d4918951f72a897be8b9b3c718ecbed5e46e59001c45fc24f",
+    "bytes": 302842
+  },
+  {
+    "file": "docs/diagrams/returns-slide-comparison.pdf",
+    "sha256": "2f54fffdcf8b138d852d3c6fb653d5e16c3e0651dcc0fcc9e0fd51a1d4173769",
+    "bytes": 135414
+  },
+  {
+    "file": "docs/diagrams/returns-slide-comparison.svg",
+    "sha256": "75e852a62cf2367e7479db8a9ebfc45fd449e8d072b5c02d74db3bec0812149c",
+    "bytes": 66617
+  },
+  {
+    "file": "docs/diagrams/returns-slide-policy.pdf",
+    "sha256": "9dbb887948912655fb35f7ed85b8988d676db99728c5313b5fe2aaab22a8c7e3",
+    "bytes": 136904
+  },
+  {
+    "file": "docs/diagrams/returns-slide-policy.png",
+    "sha256": "27e60cbf9e15b1bb9d957edaff019d72044b86ebb3fbf163d14f38c3a62c896f",
+    "bytes": 189107
+  },
+  {
+    "file": "docs/diagrams/returns-slide-policy.svg",
+    "sha256": "f431563f8d36d321bd31e8c3d83cd2af6bf691814353c62d0811ea72f5b24953",
+    "bytes": 62877
+  },
+  {
+    "file": "docs/diagrams/returns-slide-policy.outlined.svg",
+    "sha256": "8b39c5dc8b64440501573ec130b8849c3072e0dd9d4187eb86cc709da348eb52",
+    "bytes": 288923
+  },
+  {
+    "file": "docs/diagrams/returns-slide-fallback.svg",
+    "sha256": "36af44fafdf0a1907e1c7cd7272c8bb178ad9344b9413ca871bab86e094e7143",
+    "bytes": 64010
+  },
+  {
+    "file": "docs/diagrams/returns-slide-fallback.png",
+    "sha256": "8d218ebee5b0364ea9c65841167e05e3ae26bc11b99b324647331f6c01f5a609",
+    "bytes": 225762
+  },
+  {
+    "file": "docs/diagrams/returns-slide-fallback.pdf",
+    "sha256": "47154c0a9ed841b99c0cf96dbae0e7cdfee8a6dfef5bc14000c9a8edc6e7e33c",
+    "bytes": 114276
+  },
+  {
+    "file": "docs/diagrams/returns-slide-fallback.outlined.svg",
+    "sha256": "fecec291b3bf91bf486e45d9d29b66efaa6e1ed2ada07e742a2e1115fdd18bc1",
+    "bytes": 314849
+  },
+  {
+    "file": "docs/diagrams/returns-component-library.svg",
+    "sha256": "0d39f36be1b69c05807efcd1575e95e1819a849d3b6fd0998b9d76660b026943",
+    "bytes": 60249
+  },
+  {
+    "file": "docs/slides/assets/components/receipt.svg",
+    "sha256": "7f5d613627cb96c7ce70c6aea98dde5fc2a89ccf50cbfd12bd60c0fa2c0e2612",
+    "bytes": 3056
+  },
+  {
+    "file": "docs/slides/assets/components/parcel.svg",
+    "sha256": "119ece63278cadb69c4b3befd3687de904f5b115a86865bf231f62096a6e1b14",
+    "bytes": 2957
+  },
+  {
+    "file": "docs/slides/assets/components/system-one.svg",
+    "sha256": "b86ee25bb00f830073d426f246e924202a00dd02adee91d3b4abd089faa38c2d",
+    "bytes": 2807
+  },
+  {
+    "file": "docs/slides/assets/components/frontier.svg",
+    "sha256": "364680277c54a29d45893e6283c57cae1d6054a39d36961fe9d4c70efcd8841a",
+    "bytes": 3069
+  },
+  {
+    "file": "docs/slides/assets/components/stop.png",
+    "sha256": "edbe527542ad2649a59d6706adc42574c8eb49bb025f7fea0968caec49ff3193",
+    "bytes": 1983
+  },
+  {
+    "file": "docs/slides/assets/components/service-approval.svg",
+    "sha256": "e99a0c7c6f9e31aff2c932ae53423253bf58527261cfd2a35dd9308d7b93e845",
+    "bytes": 2314
+  },
+  {
+    "file": "docs/slides/assets/components/review.outlined.svg",
+    "sha256": "c3578e714fa7a33fce4b24e7b4473db4d8431bf88a4ee86cefdcf6c0793e7958",
+    "bytes": 16582
+  },
+  {
+    "file": "docs/slides/assets/components/calendar-plus-60.outlined.svg",
+    "sha256": "5283df95828dd65b2b25b3e7fd799ff14116801132346ae29553598c27278e20",
+    "bytes": 31257
+  },
+  {
+    "file": "docs/slides/assets/components/identity.outlined.svg",
+    "sha256": "dad9de8289c8d88447a1d221cceb21c21a9e6c0a9ea6e035fc7112bfaea412e5",
+    "bytes": 12223
+  },
+  {
+    "file": "docs/slides/assets/components/hold.svg",
+    "sha256": "eda492e5d4dd97611dbf5e33def6675d645d2fa3d1598abca2ff998cc9b42860",
+    "bytes": 2493
+  },
+  {
+    "file": "docs/slides/assets/components/receipt.outlined.svg",
+    "sha256": "9c2b89d1be8cef76747f742f7dc652cedb8cde99eaf1611c7751bd08b423f866",
+    "bytes": 14501
+  },
+  {
+    "file": "docs/slides/assets/components/policy.png",
+    "sha256": "3f2621eeb0bfe29aeb98eaf12505a156e7cc32cd06dc286d66d9635f2e9933df",
+    "bytes": 16991
+  },
+  {
+    "file": "docs/slides/assets/components/review.svg",
+    "sha256": "a757a3cbf2589d8641b4c358cf8b73e8f9a7fe574a934ff3cd4673aa338ee584",
+    "bytes": 3064
+  },
+  {
+    "file": "docs/slides/assets/components/shipping-five-dollars.png",
+    "sha256": "78efafaf6385309375dbceda4732ecd7d7ad551ff2ac43e382f5bde802634b09",
+    "bytes": 22522
+  },
+  {
+    "file": "docs/slides/assets/components/calendar-standard-30.png",
+    "sha256": "9b465e0b1326d90dbcdf935d4171d3c1e89fc92dfc42ccdd1104fe995d732667",
+    "bytes": 32267
+  },
+  {
+    "file": "docs/slides/assets/components/hold.outlined.svg",
+    "sha256": "759c08de74f572cf3b1af5c9fcd3b79f12c4805db45b151de64f5942a712da96",
+    "bytes": 7350
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-1.outlined.svg",
+    "sha256": "c66104a3ac6dcd2c0c50edb9e3f19e9859a01340ed7f453cfa1c7bcf824a58b5",
+    "bytes": 2906
+  },
+  {
+    "file": "docs/slides/assets/components/calendar-standard-30.svg",
+    "sha256": "5815067c7cbca05976d68219a73d77b92373ad283d08049f053c50edc1cf8a49",
+    "bytes": 49561
+  },
+  {
+    "file": "docs/slides/assets/components/review.png",
+    "sha256": "bb398ebd7fae7010eb4582143151c3a55542f3a6af9c10db79aeb0761eca2260",
+    "bytes": 22751
+  },
+  {
+    "file": "docs/slides/assets/components/shipping-five-dollars.svg",
+    "sha256": "7eb4bc5928e6f3635cfb2556f4ac67cf0e16f2799110b36835047184eca93ea2",
+    "bytes": 50541
+  },
+  {
+    "file": "docs/slides/assets/components/policy.outlined.svg",
+    "sha256": "d67b9d96e61e390d33b360c11e22fc1da6bbb85e66dbc2370f4d2d074b630132",
+    "bytes": 11427
+  },
+  {
+    "file": "docs/slides/assets/components/policy.svg",
+    "sha256": "3439e67ab753fddca0bd15a545c4f122ec1b91bf6af3b2642673d9f49929dc36",
+    "bytes": 2731
+  },
+  {
+    "file": "docs/slides/assets/components/system-one.outlined.svg",
+    "sha256": "016d3c585d55281c4942fd1ec3683c9e0135117c0ee6f5107cd5428a5454be24",
+    "bytes": 10995
+  },
+  {
+    "file": "docs/slides/assets/components/hold.png",
+    "sha256": "0cfe0bff5f72195193312fea71fa83155a90c27f8e79e02d42d96001cffb1d5a",
+    "bytes": 4185
+  },
+  {
+    "file": "docs/slides/assets/components/parcel.outlined.svg",
+    "sha256": "d85f919e207930f62c3959fb19c5b20e1a95da8ae6874bdb6ea61d6588cb44ed",
+    "bytes": 8192
+  },
+  {
+    "file": "docs/slides/assets/components/service-approval.png",
+    "sha256": "319255197135d122ce97b0c8316aa92135be6dd069e534c63ea9247601f09f70",
+    "bytes": 5962
+  },
+  {
+    "file": "docs/slides/assets/components/stop.svg",
+    "sha256": "da64d6b5fc27e4875a3ff9c0574b670f718604df8cd831c1969c4823861bd160",
+    "bytes": 2403
+  },
+  {
+    "file": "docs/slides/assets/components/frontier.png",
+    "sha256": "19e57573ebb09683c27aba8201f01b58328cadb634f8d4282d8cadf15524e079",
+    "bytes": 37413
+  },
+  {
+    "file": "docs/slides/assets/components/system-one.png",
+    "sha256": "39d52514046e018d5eee9540a5fece9dc365275870b9ece94d4000bd62b53173",
+    "bytes": 9236
+  },
+  {
+    "file": "docs/slides/assets/components/parcel.png",
+    "sha256": "8881ca8b7c7580f55be1582fb276227a840bc9d2f94e21248173df3f47eb596d",
+    "bytes": 22017
+  },
+  {
+    "file": "docs/slides/assets/components/frontier.outlined.svg",
+    "sha256": "9d54a5cdd8b6f329b637b8d1c777351d28e12916820e725595ecded301f78c0d",
+    "bytes": 25089
+  },
+  {
+    "file": "docs/slides/assets/components/receipt.png",
+    "sha256": "eb424709b3b9eadedf2896b5e70f0bed379c2c2857c645d8d9e0ec1a577b878d",
+    "bytes": 19154
+  },
+  {
+    "file": "docs/slides/assets/components/shipping-five-dollars.outlined.svg",
+    "sha256": "307d468da3bad636e1e02737f376df01f2aacd6b11d3bf5c4af6bcfd40cdd0d2",
+    "bytes": 39127
+  },
+  {
+    "file": "docs/slides/assets/components/README.md",
+    "sha256": "75453a8198bca1f43681f1a485bb782baaf22224b89bb9f9e33280fb4a0c4741",
+    "bytes": 3121
+  },
+  {
+    "file": "docs/slides/assets/components/standard-day-45-declined.png",
+    "sha256": "ea38613816c9055e8b8491ebe3aa2e301d849cbb28450a0e88036c6abf77c57f",
+    "bytes": 26932
+  },
+  {
+    "file": "docs/slides/assets/components/customer.png",
+    "sha256": "c6cdfd8f8d1dd2f8703120df8666a55814d3bbdfd5185957d5be08b4c361ab64",
+    "bytes": 18248
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-2.outlined.svg",
+    "sha256": "3c13a751e1ddeaeb436728222326a7417358b8160dfebd23102613992148ca19",
+    "bytes": 4067
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-4.png",
+    "sha256": "fd11b3c75063f7f3beb398a2ac75140cd7d1113787c8e8f86460039abfc2b679",
+    "bytes": 3972
+  },
+  {
+    "file": "docs/slides/assets/components/calendar-plus-60.svg",
+    "sha256": "09424c23192a12fd5ead28ac9795a2bb2e9475e7e7d24b44c6ac95ba29eca7ee",
+    "bytes": 49567
+  },
+  {
+    "file": "docs/slides/assets/components/customer-confirmation.png",
+    "sha256": "8e41fce5348ce9d7a0a1367fde9151cd05cac416f3e8b0072f98ef0fc32b0dce",
+    "bytes": 5243
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-1.png",
+    "sha256": "b9c87642003ed7b10b8c0ed7e2c034e7a1b9c9df7aa4e8015f9d0581b7b479c9",
+    "bytes": 3586
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-3.outlined.svg",
+    "sha256": "77438c70c2c160cf65d7b6ff6beb88cd38bb9905db0e570cc89129986a4df88e",
+    "bytes": 4135
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-4.outlined.svg",
+    "sha256": "0ad2c0126e0c8a817285bf426ac08ae32097fec61b8ed5fc8c8a1c43aa454b0a",
+    "bytes": 3111
+  },
+  {
+    "file": "docs/slides/assets/components/manifest.json",
+    "sha256": "ff6b2c5a2fa0c86a3ba0306e10283076f1469acc2e6b3046c61daa677c7ed391",
+    "bytes": 3267
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-2.png",
+    "sha256": "92072cda2f3a3d413a51ca036ee4d41d25457a61969d1875bd95dc365675d7f0",
+    "bytes": 4316
+  },
+  {
+    "file": "docs/slides/assets/components/identity.png",
+    "sha256": "8e2dbe3d0935ccfbafdad944f6564f55fa966e351d23c55de6640eba4e28cd01",
+    "bytes": 15656
+  },
+  {
+    "file": "docs/slides/assets/components/clarify.png",
+    "sha256": "6385688ef13e6e63e877084844082906c4c932b3c3e11f80f65a8ccd09622545",
+    "bytes": 19740
+  },
+  {
+    "file": "docs/slides/assets/components/shipping-waived.svg",
+    "sha256": "2e8b50d798061ee98af2fb3762d4a9885d2b5a4434a112810aafa849f60ab8e0",
+    "bytes": 50542
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-3.png",
+    "sha256": "9491ccd173eba92683b2cc7a5b39c5cd61c049dd50e4aeb0e064714f680001eb",
+    "bytes": 4273
+  },
+  {
+    "file": "docs/slides/assets/components/clarify.outlined.svg",
+    "sha256": "056c2d9e75f7a8345d242c452c6a7a6dfe680285e109822e0f659fb1dca827b7",
+    "bytes": 9100
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-3.svg",
+    "sha256": "8a5259efe93decc0adc8f8935d4db04449fc3b7af284855565d4f74d4ab1e8ce",
+    "bytes": 48672
+  },
+  {
+    "file": "docs/slides/assets/components/customer-confirmation.outlined.svg",
+    "sha256": "db2b7365acead4c4c47fcb0229316355d2c4c83923b029451565fbcc6e6288e5",
+    "bytes": 5342
+  },
+  {
+    "file": "docs/slides/assets/components/customer.outlined.svg",
+    "sha256": "be59b1c56f4cc7eab4f57a49fafeecd58489efc41e6a03cc6e47deefb0f95243",
+    "bytes": 16624
+  },
+  {
+    "file": "docs/slides/assets/components/shipping-waived.png",
+    "sha256": "c0d12473148f69eb251251c7c609a940fe4b85f82f47275e9e27231f00e26f3e",
+    "bytes": 23830
+  },
+  {
+    "file": "docs/slides/assets/components/clarify.svg",
+    "sha256": "40044f1c28aa414399a1519bb0beaab1a50c8602b07b071bc3b3ee66fd557c32",
+    "bytes": 2985
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-2.svg",
+    "sha256": "b58deac63644bc367296a2d926fc249087022d0bb7b1edf474600bdae075a3e2",
+    "bytes": 48671
+  },
+  {
+    "file": "docs/slides/assets/components/identity.svg",
+    "sha256": "0047c283899b6448915ccecdb5efea9bbdb4e14beb26df8bc3f736c6cf73cc73",
+    "bytes": 2920
+  },
+  {
+    "file": "docs/slides/assets/components/standard-day-45-declined.outlined.svg",
+    "sha256": "6193654c1ca0481700e74a9a9412ae570d404bec699b67de7bd4b52897627576",
+    "bytes": 32397
+  },
+  {
+    "file": "docs/slides/assets/components/stop.outlined.svg",
+    "sha256": "daf4a7402d356ba8d36f68621b86ebb92d2ad33c97a3d912fb8f513d3f85b863",
+    "bytes": 1054
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-1.svg",
+    "sha256": "5a79805f6f1a1a2e073502d1545b49ca8a1275c2e19e310de1a089807b3cc959",
+    "bytes": 48668
+  },
+  {
+    "file": "docs/slides/assets/components/customer-confirmation.svg",
+    "sha256": "cf777e55f7d5d8f48729f2add4cfa723dfc0520e58efbed4fa77787a08ac332e",
+    "bytes": 2260
+  },
+  {
+    "file": "docs/slides/assets/components/calendar-plus-60.png",
+    "sha256": "1323cd6c2c448c66957fa0c952da85fa7a7b6f3abb858f78a4cb937147139f85",
+    "bytes": 28762
+  },
+  {
+    "file": "docs/slides/assets/components/calendar-standard-30.outlined.svg",
+    "sha256": "c4b9de3671ee50066ba8d305ed40def09691763d0eb540652e3745cd20696de7",
+    "bytes": 35266
+  },
+  {
+    "file": "docs/slides/assets/components/shipping-waived.outlined.svg",
+    "sha256": "d8752e242052203c3053bc5af01f6561234e4db304aab5732601d0422392827b",
+    "bytes": 42359
+  },
+  {
+    "file": "docs/slides/assets/components/checkpoint-4.svg",
+    "sha256": "6e1d36d7e01a075823436c0545309540818d095d737d96828c0df1996cd230be",
+    "bytes": 48669
+  },
+  {
+    "file": "docs/slides/assets/components/service-approval.outlined.svg",
+    "sha256": "e6c06db45bfee2d63a960f3fe90559e5665d89d31326eedec28d43ecf92f25b6",
+    "bytes": 1055
+  },
+  {
+    "file": "docs/slides/assets/components/standard-day-45-declined.svg",
+    "sha256": "a6c9cddad262b03ad51c9f383a2ae0b45a0a84927a1ea7af14e14ca79878f974",
+    "bytes": 49384
+  },
+  {
+    "file": "docs/slides/assets/components/customer.svg",
+    "sha256": "ab3e34d3411b4fece5807c40aa94271221e53c08af5a4ef09949b3b5e8917113",
+    "bytes": 3315
+  },
+  {
+    "file": "docs/slides/assets/returns-vector-components.zip",
+    "sha256": "146ef2ba8c76a961bb888b02d106c239d6743ebca3f720452f2cca005ac7e2e7",
+    "bytes": 781456
+  }
+]

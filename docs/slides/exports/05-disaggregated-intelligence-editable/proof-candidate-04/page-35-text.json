@@ -1,0 +1,512 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "35 \u00b7 l: DISAGGREGATED INTELLIGENCE [p35-text-0007]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "35 \u00b7 r: 35 / 36 [p35-text-0008]",
+    "text": "35 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.3249501722441,
+      59.87114327017716,
+      73.7666015625,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "35 \u00b7 sources-eyebrow: REFERENCE / FURTHER STUDY [p35-text-0009]",
+    "text": "REFERENCE / FURTHER STUDY",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      89.6796875,
+      126.38932917076774,
+      336.7080078125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "35 \u00b7 sources-title: Read the evidence behind the architecture [p35-text-0010]",
+    "text": "Read the evidence behind the architecture",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      184.05597071850394,
+      1399.7900390625,
+      53.8564453125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "35 \u00b7 sources-text-1: Salesforce control [p35-text-0011]",
+    "text": "Salesforce control",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      126.5400390625,
+      332.519415292815,
+      338.72265625,
+      30.0
+    ],
+    "baseline": [
+      125.0,
+      361.919805917815
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "35 \u00b7 li: Agent Graph / guided determinism \u2197 [p35-text-0012]",
+    "text": "Agent Graph / guided determinism \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      125.099609375,
+      396.44945343257876,
+      437.7744140625,
+      26.7001953125
+    ],
+    "baseline": [
+      125.0,
+      416.72484405757876
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "35 \u00b7 li: Reliable enterprise agents \u2197 [p35-text-0013]",
+    "text": "Reliable enterprise agents \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      127.25,
+      451.94945343257876,
+      326.2978515625,
+      26.7001953125
+    ],
+    "baseline": [
+      125.0,
+      472.22484405757876
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "35 \u00b7 li: AgentScript control plane \u2197 [p35-text-0014]",
+    "text": "AgentScript control plane \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      125.099609375,
+      507.4494534325788,
+      324.2734375,
+      26.7001953125
+    ],
+    "baseline": [
+      125.0,
+      527.7248440575788
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "35 \u00b7 li: AgentScript specification \u2197 [p35-text-0015]",
+    "text": "AgentScript specification \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      125.099609375,
+      562.9494534325787,
+      317.298828125,
+      26.7001953125
+    ],
+    "baseline": [
+      125.0,
+      583.2248440575787
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "35 \u00b7 li: All sources and claim boundaries \u2197 [p35-text-0016]",
+    "text": "All sources and claim boundaries \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      125.099609375,
+      618.4494534325787,
+      411.328125,
+      22.25
+    ],
+    "baseline": [
+      125.0,
+      638.7248440575787
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "35 \u00b7 li: Tutorial handout and notes \u2197 [p35-text-0017]",
+    "text": "Tutorial handout and notes \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      125.099609375,
+      673.9494534325787,
+      343.7265625,
+      22.25
+    ],
+    "baseline": [
+      125.0,
+      694.2248440575787
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "35 \u00b7 sources-text-2: Agent architecture [p35-text-0018]",
+    "text": "Agent architecture",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      715.7998046875,
+      332.620001230315,
+      353.322265625,
+      39.5
+    ],
+    "baseline": [
+      715.0,
+      361.919805917815
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "35 \u00b7 li: Jev + LangGraph \u2197 [p35-text-0019]",
+    "text": "Jev + LangGraph \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      715.150390625,
+      396.44945343257876,
+      221.55078125,
+      26.7001953125
+    ],
+    "baseline": [
+      715.0,
+      416.72484405757876
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "35 \u00b7 li: A harness with Jev \u2197 [p35-text-0020]",
+    "text": "A harness with Jev \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      715.099609375,
+      451.94945343257876,
+      241.6005859375,
+      22.25
+    ],
+    "baseline": [
+      715.0,
+      472.22484405757876
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "35 \u00b7 li: Jev in LangSmith Evals \u2197 [p35-text-0021]",
+    "text": "Jev in LangSmith Evals \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      715.150390625,
+      507.4494534325788,
+      288.2509765625,
+      26.7001953125
+    ],
+    "baseline": [
+      715.0,
+      527.7248440575788
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "35 \u00b7 li: Jev-as-a-Judge \u2197 [p35-text-0022]",
+    "text": "Jev-as-a-Judge \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      715.150390625,
+      562.9494534325787,
+      194.251953125,
+      26.7001953125
+    ],
+    "baseline": [
+      715.0,
+      583.2248440575787
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "35 \u00b7 li: Runtime, framework, harness \u2197 [p35-text-0023]",
+    "text": "Runtime, framework, harness \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      717.25,
+      618.4494534325787,
+      367.3232421875,
+      24.7001953125
+    ],
+    "baseline": [
+      715.0,
+      638.7248440575787
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "35 \u00b7 sources-text-3: Decision patterns [p35-text-0024]",
+    "text": "Decision patterns",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1307.7998046875,
+      332.620001230315,
+      327.7421875,
+      38.8994140625
+    ],
+    "baseline": [
+      1305.0,
+      361.919805917815
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "35 \u00b7 li: Composable AI \u2197 [p35-text-0025]",
+    "text": "Composable AI \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1306.224609375,
+      396.44945343257876,
+      207.400390625,
+      26.375
+    ],
+    "baseline": [
+      1305.0,
+      416.72484405757876
+    ]
+  },
+  {
+    "shapeId": "1026",
+    "name": "35 \u00b7 li: TypeSafe quickstart \u2197 [p35-text-0026]",
+    "text": "TypeSafe quickstart \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1305.099609375,
+      451.94945343257876,
+      254.44921875,
+      26.701171875
+    ],
+    "baseline": [
+      1305.0,
+      472.22484405757876
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "35 \u00b7 li: Confidence routing \u2197 [p35-text-0027]",
+    "text": "Confidence routing \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1306.224609375,
+      507.4494534325788,
+      251.3994140625,
+      26.7001953125
+    ],
+    "baseline": [
+      1305.0,
+      527.7248440575788
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "35 \u00b7 li: Intent routing \u2197 [p35-text-0028]",
+    "text": "Intent routing \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1306.349609375,
+      562.9494534325787,
+      189.748046875,
+      26.7001953125
+    ],
+    "baseline": [
+      1305.0,
+      583.2248440575787
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "35 \u00b7 li: Structured decision criteria \u2197 [p35-text-0029]",
+    "text": "Structured decision criteria \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1305.75,
+      618.4494534325787,
+      341.7255859375,
+      22.25
+    ],
+    "baseline": [
+      1305.0,
+      638.7248440575787
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "35 \u00b7 li: Building with System One \u2197 [p35-text-0030]",
+    "text": "Building with System One \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1307.25,
+      673.9494534325787,
+      324.72265625,
+      26.701171875
+    ],
+    "baseline": [
+      1305.0,
+      694.2248440575787
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "35 \u00b7 li: Aftercare walkthrough + evaluation \u2197 [p35-text-0031]",
+    "text": "Aftercare walkthrough + evaluation \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1305.099609375,
+      729.4494534325787,
+      434.501953125,
+      26.7001953125
+    ],
+    "baseline": [
+      1305.0,
+      749.7248440575787
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "35 \u00b7 li: Full training pipeline \u2197 [p35-text-0032]",
+    "text": "Full training pipeline \u2197",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1307.25,
+      784.9494534325787,
+      263.4501953125,
+      26.7001953125
+    ],
+    "baseline": [
+      1305.0,
+      805.2248440575787
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "35 \u00b7 span: Guided determinism tutorial \u00b7 Confidence semantics [p35-text-0033]",
+    "text": "Guided determinism tutorial",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.9306640625,
+      973.840947034941,
+      248.599609375,
+      14.3251953125
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "35 \u00b7 span: Guided determinism tutorial \u00b7 Confidence semantics [p35-text-0033]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      345.548828125,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      339.1640625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "35 \u00b7 span: Guided determinism tutorial \u00b7 Confidence semantics [p35-text-0033]",
+    "text": "Confidence semantics",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      354.97265625,
+      973.840947034941,
+      192.6220703125,
+      14.326171875
+    ],
+    "baseline": [
+      354.0419921875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1035",
+    "name": "35 \u00b7 span: Sources link to original pages [p35-text-0034]",
+    "text": "Sources link to original pages",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1577.2432258858269,
+      973.840947034941,
+      254.0146484375,
+      18.8857421875
+    ],
+    "baseline": [
+      1576.6729133858269,
+      987.843876722441
+    ]
+  }
+]

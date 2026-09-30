@@ -1,0 +1,315 @@
+{
+  "title": "Commands, events, review and replay",
+  "subtitle": "Execution continues independently of the browser connection.",
+  "description": "The browser starts a run and receives its ID. The backend executes a checkpointed graph and persists events before streaming them. Human review resumes the same thread. Reconnection loads a consistent snapshot and resumes from its cursor; replay reads local events only.",
+  "size": [
+    1220,
+    865
+  ],
+  "nodes": [
+    {
+      "rect": [
+        25,
+        105,
+        200,
+        60
+      ],
+      "label": "Browser",
+      "body": [],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        315,
+        105,
+        200,
+        60
+      ],
+      "label": "FastAPI",
+      "body": [],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        605,
+        105,
+        225,
+        60
+      ],
+      "label": "Graph + checkpoint",
+      "body": [],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        920,
+        105,
+        250,
+        60
+      ],
+      "label": "Local event log",
+      "body": [],
+      "color": "gray"
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          125,
+          210
+        ],
+        [
+          415,
+          210
+        ]
+      ],
+      "label": "POST classification + idempotency key",
+      "label_at": [
+        267,
+        198
+      ]
+    },
+    {
+      "points": [
+        [
+          415,
+          253
+        ],
+        [
+          125,
+          253
+        ]
+      ],
+      "label": "202 Run ID",
+      "label_at": [
+        267,
+        242
+      ]
+    },
+    {
+      "points": [
+        [
+          415,
+          295
+        ],
+        [
+          717,
+          295
+        ]
+      ],
+      "label": "Schedule bounded async job",
+      "label_at": [
+        566,
+        284
+      ]
+    },
+    {
+      "points": [
+        [
+          717,
+          337
+        ],
+        [
+          1045,
+          337
+        ]
+      ],
+      "label": "Persist event and allocate sequence",
+      "label_at": [
+        880,
+        326
+      ]
+    },
+    {
+      "points": [
+        [
+          1045,
+          380
+        ],
+        [
+          415,
+          380
+        ],
+        [
+          125,
+          380
+        ]
+      ],
+      "label": "SSE execution event with sequence ID",
+      "label_at": [
+        340,
+        368
+      ]
+    },
+    {
+      "points": [
+        [
+          717,
+          432
+        ],
+        [
+          1045,
+          432
+        ]
+      ],
+      "label": "Checkpoint review; persist request",
+      "label_at": [
+        880,
+        420
+      ]
+    },
+    {
+      "points": [
+        [
+          1045,
+          475
+        ],
+        [
+          125,
+          475
+        ]
+      ],
+      "label": "Review items + interrupt ID + revision",
+      "label_at": [
+        439,
+        463
+      ]
+    },
+    {
+      "points": [
+        [
+          125,
+          520
+        ],
+        [
+          415,
+          520
+        ]
+      ],
+      "label": "POST all review decisions",
+      "label_at": [
+        267,
+        508
+      ]
+    },
+    {
+      "points": [
+        [
+          415,
+          565
+        ],
+        [
+          717,
+          565
+        ]
+      ],
+      "label": "Validate; Command(resume=...)",
+      "label_at": [
+        566,
+        553
+      ]
+    },
+    {
+      "points": [
+        [
+          717,
+          610
+        ],
+        [
+          1045,
+          610
+        ]
+      ],
+      "label": "Index, finish, persist outcome",
+      "label_at": [
+        880,
+        598
+      ]
+    },
+    {
+      "points": [
+        [
+          1045,
+          654
+        ],
+        [
+          125,
+          654
+        ]
+      ],
+      "label": "Terminal event; close SSE",
+      "label_at": [
+        435,
+        642
+      ]
+    },
+    {
+      "points": [
+        [
+          125,
+          710
+        ],
+        [
+          415,
+          710
+        ]
+      ],
+      "label": "Reload: GET snapshot; SSE after cursor",
+      "label_at": [
+        267,
+        697
+      ]
+    },
+    {
+      "points": [
+        [
+          415,
+          753
+        ],
+        [
+          125,
+          753
+        ]
+      ],
+      "label": "Consistent snapshot + later events",
+      "label_at": [
+        267,
+        741
+      ]
+    }
+  ],
+  "lifelines": [
+    [
+      125,
+      165,
+      790
+    ],
+    [
+      415,
+      165,
+      790
+    ],
+    [
+      717,
+      165,
+      790
+    ],
+    [
+      1045,
+      165,
+      790
+    ]
+  ],
+  "notes": [
+    {
+      "at": [
+        25,
+        830
+      ],
+      "lines": [
+        "Replay and scrubbing fold the stored event sequence in the browser. They do not invoke providers or change recorded timing."
+      ]
+    }
+  ]
+}

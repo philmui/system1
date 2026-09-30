@@ -1,0 +1,479 @@
+{
+  "title": "Follow a query to evidence and a result",
+  "subtitle": "Retrieve with FTS5, screen with Jev, and synthesize only when the task needs it.",
+  "description": "Jev selects an intent. Simple find uses one task and complex supported queries use a bounded OpenAI plan. Parallel retrieval workers return screened passages. A complete join gates evidence; find returns passages and complex requests generate draft claims, validate exact citations, and screen semantic support before publication.",
+  "size": [
+    1280,
+    930
+  ],
+  "nodes": [
+    {
+      "rect": [
+        35,
+        115,
+        225,
+        85
+      ],
+      "label": "Jev intent",
+      "body": [
+        "find \u00b7 summarize \u00b7 compare",
+        "unsupported"
+      ],
+      "color": "purple"
+    },
+    {
+      "rect": [
+        330,
+        115,
+        255,
+        85
+      ],
+      "label": "Create bounded plan",
+      "body": [
+        "Find: one retrieval task",
+        "Complex: OpenAI, at most 3"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        680,
+        115,
+        225,
+        85
+      ],
+      "label": "Dispatch retrieval",
+      "body": [
+        "Send per task ID",
+        "At most 4 concurrent"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        970,
+        115,
+        260,
+        85
+      ],
+      "label": "Unsupported request",
+      "body": [
+        "Explain available scope"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        330,
+        335,
+        255,
+        85
+      ],
+      "label": "FTS5 candidates",
+      "body": [
+        "Quoted lexical terms",
+        "Metadata filters, cap 8 / task"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        680,
+        335,
+        225,
+        85
+      ],
+      "label": "Jev relevance",
+      "body": [
+        "Noul probability \u2265 0.70",
+        "Query + candidate passage"
+      ],
+      "color": "purple"
+    },
+    {
+      "rect": [
+        35,
+        535,
+        225,
+        85
+      ],
+      "label": "Join task outcomes",
+      "body": [
+        "Complete expected task set",
+        "Deduplicate by passage ID"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        330,
+        535,
+        255,
+        85
+      ],
+      "label": "Evidence gate",
+      "body": [
+        "Usable passages?",
+        "Expose partial search errors"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        680,
+        535,
+        225,
+        85
+      ],
+      "label": "Find results",
+      "body": [
+        "Ranked source passages",
+        "No generated narrative"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        970,
+        535,
+        260,
+        85
+      ],
+      "label": "Insufficient evidence",
+      "body": [
+        "Explain missing support"
+      ],
+      "color": "amber"
+    },
+    {
+      "rect": [
+        35,
+        735,
+        225,
+        90
+      ],
+      "label": "OpenAI synthesis",
+      "body": [
+        "Unvalidated draft claims",
+        "Show conflicts and gaps"
+      ],
+      "color": "purple"
+    },
+    {
+      "rect": [
+        330,
+        735,
+        255,
+        90
+      ],
+      "label": "Validate citations",
+      "body": [
+        "IDs belong to evidence",
+        "Quotes are exact spans"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        680,
+        735,
+        225,
+        90
+      ],
+      "label": "Jev claim support",
+      "body": [
+        "Claim + cited passages",
+        "Noul probability \u2265 0.80"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        970,
+        735,
+        260,
+        90
+      ],
+      "label": "Supported result",
+      "body": [
+        "Unsupported claims removed",
+        "Citations open saved sources"
+      ],
+      "color": "blue"
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          260,
+          155
+        ],
+        [
+          330,
+          155
+        ]
+      ],
+      "label": "supported",
+      "label_at": [
+        295,
+        145
+      ]
+    },
+    {
+      "points": [
+        [
+          585,
+          155
+        ],
+        [
+          680,
+          155
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          147,
+          115
+        ],
+        [
+          147,
+          91
+        ],
+        [
+          1100,
+          91
+        ],
+        [
+          1100,
+          115
+        ]
+      ],
+      "label": "clear unsupported",
+      "label_at": [
+        788,
+        88
+      ]
+    },
+    {
+      "points": [
+        [
+          792,
+          200
+        ],
+        [
+          792,
+          245
+        ],
+        [
+          315,
+          245
+        ],
+        [
+          315,
+          375
+        ],
+        [
+          330,
+          375
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          585,
+          375
+        ],
+        [
+          680,
+          375
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          792,
+          420
+        ],
+        [
+          792,
+          480
+        ],
+        [
+          147,
+          480
+        ],
+        [
+          147,
+          535
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          260,
+          575
+        ],
+        [
+          330,
+          575
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          585,
+          575
+        ],
+        [
+          680,
+          575
+        ]
+      ],
+      "label": "find",
+      "label_at": [
+        632,
+        563
+      ]
+    },
+    {
+      "points": [
+        [
+          457,
+          620
+        ],
+        [
+          457,
+          650
+        ],
+        [
+          147,
+          650
+        ],
+        [
+          147,
+          735
+        ]
+      ],
+      "label": "complex",
+      "label_at": [
+        147,
+        699
+      ]
+    },
+    {
+      "points": [
+        [
+          457,
+          535
+        ],
+        [
+          457,
+          510
+        ],
+        [
+          1100,
+          510
+        ],
+        [
+          1100,
+          535
+        ]
+      ],
+      "label": "no accepted passages",
+      "label_at": [
+        1045,
+        490
+      ]
+    },
+    {
+      "points": [
+        [
+          585,
+          780
+        ],
+        [
+          680,
+          780
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          905,
+          780
+        ],
+        [
+          970,
+          780
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          792,
+          735
+        ],
+        [
+          792,
+          675
+        ],
+        [
+          1100,
+          675
+        ],
+        [
+          1100,
+          620
+        ]
+      ],
+      "label": "none supported",
+      "label_at": [
+        989,
+        663
+      ]
+    },
+    {
+      "points": [
+        [
+          260,
+          780
+        ],
+        [
+          330,
+          780
+        ]
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "rect": [
+        300,
+        287,
+        635,
+        160
+      ],
+      "label": "One retrieval worker per actual plan task; each returns a keyed outcome"
+    }
+  ],
+  "notes": [
+    {
+      "at": [
+        35,
+        890
+      ],
+      "lines": [
+        "Defaults are demo policies, not calibrated quality guarantees. Retrieval scores, relevance probabilities and support probabilities are distinct."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "08 \u00b7 l: DISAGGREGATED INTELLIGENCE [p08-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "08 \u00b7 r: 08 / 36 [p08-text-0006]",
+    "text": "08 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "08 \u00b7 returns-fallback-eyebrow: STEP 01 / THE INTERPRETATION EXCEPTION \u00b7 C [p08-text-0007]",
+    "text": "STEP 01 / THE INTERPRETATION EXCEPTION \u00b7 C",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.5458984375,
+      126.38932917076774,
+      535.2080078125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "08 \u00b7 returns-fallback-title: Reserve frontier reasoning for unresolved meaning [p08-text-0008]",
+    "text": "Reserve frontier reasoning for unresolved meaning",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1665.84375,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "text \u00b7 3",
+    "text": "C",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      108.16203063484251,
+      310.6846170644685,
+      19.38671875,
+      21.75
+    ],
+    "baseline": [
+      107.29191344734251,
+      332.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "text \u00b7 5",
+    "text": "Verified access + purchase",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      152.88468688484252,
+      314.15529527559056,
+      346.1123046875,
+      26.32421875
+    ],
+    "baseline": [
+      152.74992125984252,
+      334.00002183809056
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "text \u00b7 9",
+    "text": "Clear meaning",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      457.48291015625,
+      749.6846170644685,
+      199.8740234375,
+      28.7109375
+    ],
+    "baseline": [
+      456.61279296875,
+      771.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "text \u00b7 13",
+    "text": "Unclear?",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      277.86410033218505,
+      433.15529527559056,
+      112.8115234375,
+      20.2490234375
+    ],
+    "baseline": [
+      275.97445189468505,
+      453.00002183809056
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "text \u00b7 20",
+    "text": "Ready",
+    "font": "Manrope",
+    "fontSizePx": 25.0,
+    "bbox": [
+      852.19384765625,
+      442.9999969242126,
+      73.25,
+      24.0
+    ],
+    "baseline": [
+      850.44384765625,
+      460.9999969242126
+    ]
+  },
+  {
+    "shapeId": "1039",
+    "name": "text \u00b7 24",
+    "text": "Proposal",
+    "font": "Manrope",
+    "fontSizePx": 26.0,
+    "bbox": [
+      1202.3192571973427,
+      435.88972071850395,
+      101.1015625,
+      25.3505859375
+    ],
+    "baseline": [
+      1200.4989446973427,
+      455.00007228100395
+    ]
+  },
+  {
+    "shapeId": "1043",
+    "name": "text \u00b7 28",
+    "text": "Resolved",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      869.7611517285925,
+      677.1552952755906,
+      116.4775390625,
+      20.2490234375
+    ],
+    "baseline": [
+      867.8715032910925,
+      697.0000218380906
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "text \u00b7 32",
+    "text": "Validated",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1161.7098821973425,
+      608.1552952755906,
+      120.8251953125,
+      20.2490234375
+    ],
+    "baseline": [
+      1161.5751165723425,
+      628.0000218380906
+    ]
+  },
+  {
+    "shapeId": "1072",
+    "name": "text \u00b7 49",
+    "text": "System One",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      140.89013671875,
+      502.6846170644685,
+      166.3212890625,
+      28.275390625
+    ],
+    "baseline": [
+      139.77392578125,
+      524.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1083",
+    "name": "text \u00b7 60",
+    "text": "Clarify",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      444.56884765625,
+      571.480489972933,
+      101.677734375,
+      31.19921875
+    ],
+    "baseline": [
+      443.60888671875,
+      595.000021222933
+    ]
+  },
+  {
+    "shapeId": "1091",
+    "name": "text \u00b7 68",
+    "text": "Facts + checks",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      645.365234375,
+      354.4003869340551,
+      208.1689453125,
+      22.048828125
+    ],
+    "baseline": [
+      643.265625,
+      375.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1104",
+    "name": "text \u00b7 81",
+    "text": "Meaning unresolved?",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      921.0634765625,
+      323.15529527559056,
+      276.4130859375,
+      26.7294921875
+    ],
+    "baseline": [
+      919.173828125,
+      343.00002183809056
+    ]
+  },
+  {
+    "shapeId": "1105",
+    "name": "text \u00b7 82",
+    "text": "Frontier LLM",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      965.360194082185,
+      586.559591535433,
+      187.279296875,
+      23.9208984375
+    ],
+    "baseline": [
+      963.119959707185,
+      610.000021222933
+    ]
+  },
+  {
+    "shapeId": "1118",
+    "name": "text \u00b7 95",
+    "text": "Human review",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      1330.857421875,
+      587.559591535433,
+      215.8857421875,
+      23.9365234375
+    ],
+    "baseline": [
+      1328.6171875,
+      611.000021222933
+    ]
+  },
+  {
+    "shapeId": "1123",
+    "name": "text \u00b7 100",
+    "text": "Hold",
+    "font": "Manrope",
+    "fontSizePx": 27.0,
+    "bbox": [
+      1631.6903509473425,
+      557.1552952755906,
+      56.619140625,
+      20.2490234375
+    ],
+    "baseline": [
+      1629.8007025098425,
+      577.0000218380906
+    ]
+  },
+  {
+    "shapeId": "1131",
+    "name": "text \u00b7 108",
+    "text": "Decline",
+    "font": "Manrope",
+    "fontSizePx": 25.0,
+    "bbox": [
+      643.2099609375,
+      685.6249969242126,
+      88.455078125,
+      18.75
+    ],
+    "baseline": [
+      641.4599609375,
+      703.9999969242126
+    ]
+  },
+  {
+    "shapeId": "1132",
+    "name": "text \u00b7 109",
+    "text": "Hold",
+    "font": "Manrope",
+    "fontSizePx": 25.0,
+    "bbox": [
+      780.7874401759351,
+      685.6249969242126,
+      52.4248046875,
+      18.75
+    ],
+    "baseline": [
+      779.0374401759351,
+      703.9999969242126
+    ]
+  },
+  {
+    "shapeId": "1139",
+    "name": "text \u00b7 116",
+    "text": "Route + rules",
+    "font": "Manrope",
+    "fontSizePx": 31.0,
+    "bbox": [
+      1058.0390625,
+      865.2149154158465,
+      192.8525390625,
+      23.265625
+    ],
+    "baseline": [
+      1055.869140625,
+      888.0000716658465
+    ]
+  },
+  {
+    "shapeId": "1145",
+    "name": "text \u00b7 120",
+    "text": "Eligible",
+    "font": "Manrope",
+    "fontSizePx": 24.0,
+    "bbox": [
+      1259.1865234375,
+      737.360398929626,
+      82.466796875,
+      23.759765625
+    ],
+    "baseline": [
+      1257.5068359375,
+      755.000047367126
+    ]
+  },
+  {
+    "shapeId": "1164",
+    "name": "text \u00b7 139",
+    "text": "Confirm terms",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1333.8934759473425,
+      865.9501916215551,
+      207.9130859375,
+      22.5
+    ],
+    "baseline": [
+      1332.9930853223425,
+      887.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1177",
+    "name": "text \u00b7 150",
+    "text": "Service result",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1585.2666015625,
+      865.9501916215551,
+      199.2265625,
+      22.5146484375
+    ],
+    "baseline": [
+      1584.111328125,
+      887.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1179",
+    "name": "08 \u00b7 span: Intent routing \u00b7 AgentScript control plane \u00b7 Reasoning gate \u00b7 C [p08-text-0009]",
+    "text": "Intent routing",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0263671875,
+      973.840947034941,
+      121.201171875,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1179",
+    "name": "08 \u00b7 span: Intent routing \u00b7 AgentScript control plane \u00b7 Reasoning gate \u00b7 C [p08-text-0009]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      217.0498046875,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      210.6650390625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1179",
+    "name": "08 \u00b7 span: Intent routing \u00b7 AgentScript control plane \u00b7 Reasoning gate \u00b7 C [p08-text-0009]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      225.619140625,
+      973.840947034941,
+      222.9482421875,
+      18.8857421875
+    ],
+    "baseline": [
+      225.54296875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1179",
+    "name": "08 \u00b7 span: Intent routing \u00b7 AgentScript control plane \u00b7 Reasoning gate \u00b7 C [p08-text-0009]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      455.8837890625,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      449.4990234375,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1179",
+    "name": "08 \u00b7 span: Intent routing \u00b7 AgentScript control plane \u00b7 Reasoning gate \u00b7 C [p08-text-0009]",
+    "text": "Reasoning gate \u00b7 C",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      466.0869140625,
+      973.840947034941,
+      159.888671875,
+      18.8857421875
+    ],
+    "baseline": [
+      464.376953125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1180",
+    "name": "08 \u00b7 span: Scoped interpretation \u00b7 facts and authority remain with services [p08-text-0010]",
+    "text": "Scoped interpretation \u00b7 facts and authority remain with services",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1276.337871555118,
+      973.840947034941,
+      554.919921875,
+      18.8857421875
+    ],
+    "baseline": [
+      1275.767559055118,
+      987.843876722441
+    ]
+  }
+]

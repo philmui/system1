@@ -1,0 +1,3 @@
+codex app-server exited unexpectedly (exit 1).
+WARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)
+Error: failed to initialize sqlite state runtime under /Users/pmui/.codex: failed to initialize state runtime at /Users/pmui/.codex

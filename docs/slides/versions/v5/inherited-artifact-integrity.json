@@ -1,0 +1,76 @@
+{
+  "editions": [
+    {
+      "version": 1,
+      "slides": 30,
+      "html": {
+        "file": "01-disaggregated-intelligence.html",
+        "bytes": 329868,
+        "sha256": "33eeff29cdd79c230c36f8bda8cb126c2e4abede3741a73b715d773e9274a991"
+      },
+      "powerpoint": {
+        "file": "01-disaggregated-intelligence.pptx",
+        "bytes": 6513123,
+        "sha256": "c74259da0ebeaca50f5fd387572ef2bf3b3a30d3d88ed74932bd5d5db7298a3a"
+      },
+      "validation": "exports/01-disaggregated-intelligence/package-validation.json"
+    },
+    {
+      "version": 2,
+      "slides": 31,
+      "html": {
+        "file": "02-disaggregated-intelligence.html",
+        "bytes": 303177,
+        "sha256": "bb51871b0748f8d0e3b565bc64a0925c81da8b76618d26a404cce1aa3808d06a"
+      },
+      "powerpoint": {
+        "file": "02-disaggregated-intelligence.pptx",
+        "bytes": 6984528,
+        "sha256": "3532e07a18aeb31a1e0c53168f5dd5cc3a84ab85379272df7a698c1240a238ec"
+      },
+      "validation": "exports/02-disaggregated-intelligence/package-validation.json"
+    },
+    {
+      "version": 3,
+      "slides": 34,
+      "html": {
+        "file": "03-disaggregated-intelligence.html",
+        "bytes": 538004,
+        "sha256": "af73a4468839d349e36bc29414b975925380bd17f5d644281919eb2e42691000"
+      },
+      "powerpoint": {
+        "file": "03-disaggregated-intelligence.pptx",
+        "bytes": 7809156,
+        "sha256": "7995ec929ce812313960f2aef2dd750db367b129b00a81bd76415ee000730562"
+      },
+      "validation": "exports/03-disaggregated-intelligence-returns/package-validation.json"
+    },
+    {
+      "version": 4,
+      "slides": 35,
+      "html": {
+        "file": "04-disaggregated-intelligence.html",
+        "bytes": 658460,
+        "sha256": "eff6649b6ef62daf4ce28d9afecb60b8dd832eab83747a8513cd2be939025d3b"
+      },
+      "powerpoint": {
+        "file": "04-disaggregated-intelligence.pptx",
+        "bytes": 10288466,
+        "sha256": "3cbb2b9ac396806e9ec8ed4dd3d428a041b82760a92fded3ac7c4b6f251666fc"
+      },
+      "validation": "exports/04-disaggregated-intelligence/components/component-package-validation.json"
+    }
+  ],
+  "earlierFilesUnchangedDuringVersion04Build": true,
+  "observationRecord": "versions/v4/preceding-editions-at-start.json",
+  "historicalRecord": "versions/v4/inherited-artifact-integrity.json",
+  "notes": [
+    "Version03 has the earlier user-authorized 34-slide return insertion; its original31-slide HTML/PPTX are archived in versions/v3-before-returns.",
+    "Before version04, the current version01 HTML already differed from its older recorded hash. It was retained as found, without claiming that the original record still matches. The earlier hash remains in the historical record."
+  ],
+  "inheritedVersion01HtmlRecord": {
+    "recordedSha256": "56a3b15be467b7a6d48134ec64f36a7abce9e08c11911c2b5b2665d824da353b",
+    "observedSha256": "33eeff29cdd79c230c36f8bda8cb126c2e4abede3741a73b715d773e9274a991",
+    "matches": false
+  }
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "protocol": "file",
+    "errors": [],
+    "pendingHydration": {
+      "inert": true,
+      "applied": 0,
+      "state": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      }
+    },
+    "afterHydration": {
+      "parent": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "preview": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "audience": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "inert": false
+    },
+    "validInteraction": {
+      "parent": {
+        "version": 1,
+        "gateThreshold": 0.5,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "audience": {
+        "version": 1,
+        "gateThreshold": 0.5,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      }
+    },
+    "nextPreview": {
+      "inert": true,
+      "tabIndex": -1,
+      "hidden": "true"
+    },
+    "nextDeckInert": true,
+    "previewKeys": [
+      {
+        "key": "Tab",
+        "prevented": false
+      },
+      {
+        "key": "Tab",
+        "shiftKey": true,
+        "prevented": false
+      },
+      {
+        "key": "Escape",
+        "prevented": false
+      }
+    ],
+    "focusAfterPreview": {
+      "tag": "BUTTON",
+      "id": "ppt-note-smaller"
+    },
+    "expectedEdits": {
+      "opening-main": "Disaggregated\nintelligence revised",
+      "opening-sub": "Enterprise reasoning with\nkoa-action, Agent Graph\nand AgentScript. revised"
+    },
+    "reloadedEdits": {
+      "opening-main": "Disaggregated\nintelligence revised",
+      "opening-sub": "Enterprise reasoning with\nkoa-action, Agent Graph\nand AgentScript. revised"
+    },
+    "exportedEdits": {
+      "opening-main": "Disaggregated\nintelligence revised",
+      "opening-sub": "Enterprise reasoning with\nkoa-action, Agent Graph\nand AgentScript. revised"
+    },
+    "passed": true
+  },
+  {
+    "protocol": "http",
+    "errors": [],
+    "pendingHydration": {
+      "inert": true,
+      "applied": 0,
+      "state": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      }
+    },
+    "afterHydration": {
+      "parent": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "preview": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "audience": {
+        "version": 1,
+        "gateThreshold": 1,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "inert": false
+    },
+    "validInteraction": {
+      "parent": {
+        "version": 1,
+        "gateThreshold": 0.5,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      },
+      "audience": {
+        "version": 1,
+        "gateThreshold": 0.5,
+        "fallbackPercent": 20,
+        "traceIndex": 0,
+        "reveals": {
+          "exercise": true
+        }
+      }
+    },
+    "nextPreview": {
+      "inert": true,
+      "tabIndex": -1,
+      "hidden": "true"
+    },
+    "nextDeckInert": true,
+    "previewKeys": [
+      {
+        "key": "Tab",
+        "prevented": false
+      },
+      {
+        "key": "Tab",
+        "shiftKey": true,
+        "prevented": false
+      },
+      {
+        "key": "Escape",
+        "prevented": false
+      }
+    ],
+    "focusAfterPreview": {
+      "tag": "BUTTON",
+      "id": "ppt-note-smaller"
+    },
+    "expectedEdits": {
+      "opening-main": "Disaggregated\nintelligence revised",
+      "opening-sub": "Enterprise reasoning with\nkoa-action, Agent Graph\nand AgentScript. revised"
+    },
+    "reloadedEdits": {
+      "opening-main": "Disaggregated\nintelligence revised",
+      "opening-sub": "Enterprise reasoning with\nkoa-action, Agent Graph\nand AgentScript. revised"
+    },
+    "exportedEdits": {
+      "opening-main": "Disaggregated\nintelligence revised",
+      "opening-sub": "Enterprise reasoning with\nkoa-action, Agent Graph\nand AgentScript. revised"
+    },
+    "passed": true
+  }
+]

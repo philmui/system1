@@ -1,0 +1,66 @@
+[codex] Starting Codex task thread.
+[codex] Thread ready (01a0eb8c-551c-7bf0-b618-2223c9b61704).
+[codex] Turn started (01a0eb8c-5698-7453-b6ad-b3ace5dc31c6).
+[codex] Assistant message captured: I’ll inspect the working tree and source notes, then challenge the article and diagrams for u...
+[codex] Running command: /bin/zsh -lc 'git status --short --untracked-files=all'
+[codex] Running command: /bin/zsh -lc "rg --files -g 'AGENTS.md' -g '*.md' -g '*.svg' -g '"'!node_modules'"' -g '"'!ve...
+[codex] Running command: /bin/zsh -lc 'git diff --stat && git diff --cached --stat'
+[codex] Command completed: /bin/zsh -lc 'git status --short --untracked-files=all' (exit 0)
+[codex] Running command: /bin/zsh -lc pwd
+[codex] Command completed: /bin/zsh -lc "rg --files -g 'AGENTS.md' -g '*.md' -g '*.svg' -g '"'!node_modules'"' -g '"'!ve... (exit 0)
+[codex] Command completed: /bin/zsh -lc pwd (exit 0)
+[codex] Command completed: /bin/zsh -lc 'git diff --stat && git diff --cached --stat' (exit 0)
+[codex] Running command: /bin/zsh -lc 'nl -ba assets/training-pipeline.svg'
+[codex] Running command: /bin/zsh -lc 'nl -ba assets/service-workflow.svg'
+[codex] Running command: /bin/zsh -lc 'cat /Users/pmui/.codex/skills/plain-research-writing/SKILL.md'
+[codex] Running command: /bin/zsh -lc 'git diff --no-index -- /dev/null 06-building-prod.md'
+[codex] Running command: /bin/zsh -lc 'for d in "$PWD" "$(dirname "$PWD")" /private/var/folders/7t /private/var/folder...
+[codex] Command completed: /bin/zsh -lc 'nl -ba assets/training-pipeline.svg' (exit 0)
+[codex] Command completed: /bin/zsh -lc 'nl -ba assets/service-workflow.svg' (exit 0)
+[codex] Command completed: /bin/zsh -lc 'cat /Users/pmui/.codex/skills/plain-research-writing/SKILL.md' (exit 0)
+[codex] Running command: /bin/zsh -lc 'nl -ba assets/disaggregated-intelligence.svg'
+[codex] Command completed: /bin/zsh -lc 'for d in "$PWD" "$(dirname "$PWD")" /private/var/folders/7t /private/var/folder... (exit 0)
+[codex] Command failed: /bin/zsh -lc 'git diff --no-index -- /dev/null 06-building-prod.md' (exit 1)
+[codex] Command completed: /bin/zsh -lc 'nl -ba assets/disaggregated-intelligence.svg' (exit 0)
+[codex] Assistant message captured: The article clearly labels the integration as proposed and keeps authorization in backend ser...
+[codex] Running command: /bin/zsh -lc 'nl -ba 06-building-prod.md'
+[codex] Running command: /bin/zsh -lc 'cat research/editorial-scope.md research/salesforce-sources.md'
+[codex] Running command: /bin/zsh -lc 'cat research/langchain-sources.md research/typesafe-sources.md'
+[codex] Command completed: /bin/zsh -lc 'nl -ba 06-building-prod.md' (exit 0)
+[codex] Running command: /bin/zsh -lc "nl -ba assets/training-pipeline.svg | sed -n '44,140p'"
+[codex] Running command: /bin/zsh -lc 'cat /Users/pmui/.codex/skills/plain-research-writing/references/figures-tables-...
+[codex] Command completed: /bin/zsh -lc 'cat research/editorial-scope.md research/salesforce-sources.md' (exit 0)
+[codex] Command completed: /bin/zsh -lc 'cat research/langchain-sources.md research/typesafe-sources.md' (exit 0)
+[codex] Command completed: /bin/zsh -lc "nl -ba assets/training-pipeline.svg | sed -n '44,140p'" (exit 0)
+[codex] Command completed: /bin/zsh -lc 'cat /Users/pmui/.codex/skills/plain-research-writing/references/figures-tables-... (exit 0)
+[codex] Searching:
+[codex] Running command: /bin/zsh -lc 'git diff --no-index -- /dev/null assets/training-pipeline.svg'
+[codex] Running command: /bin/zsh -lc 'git diff --no-index -- /dev/null assets/service-workflow.svg'
+[codex] Running command: /bin/zsh -lc "python3 -c 'import importlib.util; print({n: importlib.util.find_spec(n) is not...
+[codex] Running command: /bin/zsh -lc 'git diff --no-index -- /dev/null assets/disaggregated-intelligence.svg'
+[codex] Command failed: /bin/zsh -lc 'git diff --no-index -- /dev/null assets/training-pipeline.svg' (exit 1)
+[codex] Command failed: /bin/zsh -lc 'git diff --no-index -- /dev/null assets/service-workflow.svg' (exit 1)
+[codex] Command completed: /bin/zsh -lc "python3 -c 'import importlib.util; print({n: importlib.util.find_spec(n) is not... (exit 0)
+[codex] Command failed: /bin/zsh -lc 'git diff --no-index -- /dev/null assets/disaggregated-intelligence.svg' (exit 1)
+[codex] Searching:
+[codex] Assistant message captured: One substantive mismatch remains: the text requires a controlled service pilot before claimin...
+[codex] Running command: /bin/zsh -lc 'git status --short --untracked-files=all'
+[codex] Command completed: /bin/zsh -lc 'git status --short --untracked-files=all' (exit 0)
+[codex] Running command: /bin/zsh -lc "python3 -c 'from pathlib import Path import re import xml.etree.ElementTree as ...
+[codex] Command completed: /bin/zsh -lc "python3 -c 'from pathlib import Path import re import xml.etree.ElementTree as ... (exit 0)
+[codex] Assistant message captured: { "verdict": "needs-attention", "summary": "Hold publication: Figure 2 implies offline evalua...
+[codex] Turn completion inferred after the main thread finished and subagent work drained.
+# Codex Adversarial Review
+
+Target: working tree diff
+Verdict: needs-attention
+
+Hold publication: Figure 2 implies offline evaluation can authorize rollout, bypassing the article’s required service pilot.
+
+Findings:
+- [medium] Include the controlled pilot before the rollout gate (assets/training-pipeline.svg:91-94)
+  The diagram flows directly from historical locked-test data to release based on quality, cost, and latency. This implies offline results suffice for rollout, contradicting 06-building-prod.md:81–83, which requires a controlled service pilot. Changed routes can increase customer clarification or human queue workload that snapshot replay cannot measure, leaving the diagram’s release decision unsupported.
+  Recommendation: Show offline evaluation → controlled service pilot → broader rollout after acceptance gates pass. Alternatively, label this release as pilot-only and explicitly require pilot evidence before broader rollout; synchronize the SVG description and caption.
+
+Next steps:
+- Align Figure 2’s release path with the article’s distinction between offline decision evaluation and live service evidence.

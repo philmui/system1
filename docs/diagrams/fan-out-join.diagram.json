@@ -1,0 +1,248 @@
+{
+  "title": "One node definition, several runtime workers",
+  "subtitle": "The input determines the worker count. Completion order cannot overwrite another result.",
+  "description": "A three-document batch schedules three instances of one compiled worker. Results are keyed by document ID. The join requires exact equality between expected and terminal outcome ID sets; a failed worker still supplies an outcome.",
+  "size": [
+    1200,
+    685
+  ],
+  "nodes": [
+    {
+      "rect": [
+        40,
+        250,
+        215,
+        95
+      ],
+      "label": "Batch dispatch",
+      "body": [
+        "Expected IDs: A, B, C",
+        "LangGraph Send"
+      ],
+      "color": "blue"
+    },
+    {
+      "rect": [
+        355,
+        130,
+        240,
+        80
+      ],
+      "label": "worker:A",
+      "body": [
+        "Invoice \u00b7 accepted"
+      ],
+      "color": "teal"
+    },
+    {
+      "rect": [
+        355,
+        275,
+        240,
+        80
+      ],
+      "label": "worker:B",
+      "body": [
+        "Mixed email \u00b7 review"
+      ],
+      "color": "amber"
+    },
+    {
+      "rect": [
+        355,
+        420,
+        240,
+        80
+      ],
+      "label": "worker:C",
+      "body": [
+        "Empty file \u00b7 issue"
+      ],
+      "color": "red"
+    },
+    {
+      "rect": [
+        700,
+        250,
+        245,
+        95
+      ],
+      "label": "Deterministic reducer",
+      "body": [
+        "outcomes[A], [B], [C]",
+        "Merge by stable identity"
+      ],
+      "color": "gray"
+    },
+    {
+      "rect": [
+        995,
+        250,
+        175,
+        95
+      ],
+      "label": "Join: 3 / 3",
+      "body": [
+        "All terminal IDs",
+        "Continue parent"
+      ],
+      "color": "blue"
+    }
+  ],
+  "edges": [
+    {
+      "points": [
+        [
+          255,
+          283
+        ],
+        [
+          300,
+          283
+        ],
+        [
+          300,
+          170
+        ],
+        [
+          355,
+          170
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          255,
+          298
+        ],
+        [
+          355,
+          315
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          255,
+          313
+        ],
+        [
+          300,
+          313
+        ],
+        [
+          300,
+          460
+        ],
+        [
+          355,
+          460
+        ]
+      ]
+    },
+    {
+      "points": [
+        [
+          595,
+          170
+        ],
+        [
+          645,
+          170
+        ],
+        [
+          645,
+          278
+        ],
+        [
+          700,
+          278
+        ]
+      ],
+      "label": "A outcome",
+      "label_at": [
+        649,
+        223
+      ]
+    },
+    {
+      "points": [
+        [
+          595,
+          315
+        ],
+        [
+          700,
+          300
+        ]
+      ],
+      "label": "B outcome",
+      "label_at": [
+        647,
+        296
+      ]
+    },
+    {
+      "points": [
+        [
+          595,
+          460
+        ],
+        [
+          645,
+          460
+        ],
+        [
+          645,
+          328
+        ],
+        [
+          700,
+          328
+        ]
+      ],
+      "label": "C outcome",
+      "label_at": [
+        649,
+        398
+      ]
+    },
+    {
+      "points": [
+        [
+          945,
+          297
+        ],
+        [
+          995,
+          297
+        ]
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "rect": [
+        325,
+        95,
+        300,
+        445
+      ],
+      "label": "Compiled worker instances"
+    }
+  ],
+  "notes": [
+    {
+      "at": [
+        40,
+        595
+      ],
+      "lines": [
+        "Concurrency is bounded to four by default. Stable positions identify workers even when they finish in a different order.",
+        "A review proposal is a terminal worker outcome. Human review pauses the parent after aggregation."
+      ]
+    }
+  ]
+}

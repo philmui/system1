@@ -1,0 +1,104 @@
+{
+  "input": "/Users/pmui/dev/brilliant/system1/docs/slides/src/deck-core-v5.json",
+  "inputSha256": "0e62dcf53aead49691d3528961397de4fcc943b6a4d0f7d71ac3f9b41ac9a831",
+  "scriptSha256": "237efa8eac12fa6bca57b64231a8a17d33bba6f12f397f34f41a80425724ea9d",
+  "method": "Actual v5 teaching script executed with a minimal DOM adapter over authored markup.",
+  "limitations": [
+    "No layout or pixel rendering check.",
+    "No real browser keyboard, media, export, or presenter-window check."
+  ],
+  "gate": [
+    {
+      "threshold": 0.5,
+      "coverage": "100%",
+      "error": "33%",
+      "review": "0"
+    },
+    {
+      "threshold": 0.75,
+      "coverage": "58%",
+      "error": "29%",
+      "review": "5"
+    },
+    {
+      "threshold": 0.99,
+      "coverage": "8%",
+      "error": "100%",
+      "review": "11"
+    },
+    {
+      "threshold": 1,
+      "coverage": "0%",
+      "error": "—",
+      "review": "12"
+    }
+  ],
+  "cost": [
+    {
+      "fallback": 20,
+      "total": "0.27 normalized units",
+      "saving": "73% lower"
+    },
+    {
+      "fallback": 93,
+      "total": "1.00 normalized units",
+      "saving": "Break-even"
+    },
+    {
+      "fallback": 100,
+      "total": "1.07 normalized units",
+      "saving": "7% higher"
+    }
+  ],
+  "trace": [
+    {
+      "exchange": "Pending",
+      "cableReturn": "Pending",
+      "event": "The identity service verifies the customer before protected order lookup."
+    },
+    {
+      "exchange": "Pending",
+      "cableReturn": "Pending",
+      "event": "The purchase service matches both owned line items; the spare cable was purchased separately."
+    },
+    {
+      "exchange": "Pending",
+      "cableReturn": "Pending",
+      "event": "System One records two AND tasks: exchange the headphones and return the separately purchased spare cable."
+    },
+    {
+      "exchange": "Active",
+      "cableReturn": "Pending",
+      "event": "The customer chooses the headphone exchange first; the cable return stays pending."
+    },
+    {
+      "exchange": "Awaiting confirmation",
+      "cableReturn": "Pending",
+      "event": "The exchange service checks its own policy and stock, then quotes the exchange terms."
+    },
+    {
+      "exchange": "Confirmed",
+      "cableReturn": "Pending",
+      "event": "The customer confirms the quoted exchange terms; service authorization is still pending."
+    },
+    {
+      "exchange": "Authorized",
+      "cableReturn": "Pending",
+      "event": "The service issues an exchange ID after rechecking authority, policy, stock, and accepted terms; the cable return remains pending."
+    },
+    {
+      "exchange": "Authorized",
+      "cableReturn": "Active",
+      "event": "Agent Graph resumes the cable return. Its policy, confirmation, and authorization are unfinished."
+    }
+  ],
+  "state": {
+    "reset": true,
+    "serializedRestoration": true,
+    "exerciseRestoration": true,
+    "unknownVersionIgnored": true,
+    "boundsApplied": true,
+    "changeNotifications": 18
+  },
+  "passed": true
+}

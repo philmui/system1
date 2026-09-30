@@ -1,0 +1,48 @@
+[
+  {
+    "protocol": "file",
+    "errors": [],
+    "passiveModeIndices": {
+      "deck": 2,
+      "audience": 2,
+      "preview": 2
+    },
+    "keyboardExercise": {
+      "index": 21,
+      "expanded": "true"
+    },
+    "modalPauses": true,
+    "quickNote": "Quick edit preserved on navigation",
+    "quickExit": "Quick edit preserved on exit",
+    "otherNote": "Different slide remains separate",
+    "reentryExample": {
+      "parent": "1",
+      "preview": "1",
+      "audience": "1"
+    },
+    "passed": true
+  },
+  {
+    "protocol": "http",
+    "errors": [],
+    "passiveModeIndices": {
+      "deck": 2,
+      "audience": 2,
+      "preview": 2
+    },
+    "keyboardExercise": {
+      "index": 21,
+      "expanded": "true"
+    },
+    "modalPauses": true,
+    "quickNote": "Quick edit preserved on navigation",
+    "quickExit": "Quick edit preserved on exit",
+    "otherNote": "Different slide remains separate",
+    "reentryExample": {
+      "parent": "1",
+      "preview": "1",
+      "audience": "1"
+    },
+    "passed": true
+  }
+]

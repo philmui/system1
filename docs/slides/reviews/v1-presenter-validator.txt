@@ -1,0 +1,4 @@
+ERROR Presenter timer must use the explicit label "开始计时".
+ERROR Presenter timer reset must use the explicit label "重置计时".
+ERROR Presenter timer resume state must use the explicit label "继续计时".
+Presenter validation: 30 slides, 30 notes, 30.6 planned minutes, 3 errors, 0 warnings.

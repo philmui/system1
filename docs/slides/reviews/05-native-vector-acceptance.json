@@ -1,0 +1,287 @@
+{
+  "passed": true,
+  "method": "All actual layout SVGs to native DrawingML. Independent XML geometry decoding + librsvg pixel comparison; exact source text-node preservation and unique IDs. Synthetic arc/path comparisons and eight fail-closed cases.",
+  "limitations": [
+    "Does not render in Microsoft Office.",
+    "Geometry proof excludes native Office font shaping; text remains editable with explicit family/size/weight and source-baseline metrics."
+  ],
+  "inputManifestSha256": "bf47e507edc2db736dbecf11692acc1c51aa827f363bfa48cffcea1336d80846",
+  "converterSha256": "a102c3cfeeb349f7e0ac31b38a9f85ff3ccf6b5a99368b90a6d8a3ed8c9f1c4c",
+  "svgOccurrences": 24,
+  "totals": {
+    "nativeGroups": 342,
+    "nativeShapes": 679,
+    "nativeTextBoxes": 105,
+    "pictures": 0
+  },
+  "results": [
+    {
+      "slide": 1,
+      "asset": "layout-assets/slide-01-svg-c9c5ac8f8002.svg",
+      "sourceSha256": "c9c5ac8f8002e4f8378bf00dbac960c78b6495a2904f33ad3ec611522fff2644",
+      "nativeShapes": 8,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 9,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 2,
+      "asset": "layout-assets/slide-02-svg-1ed08a1ac7f5.svg",
+      "sourceSha256": "1ed08a1ac7f57fceeb1bedcbe0e19d70665aa0a3fa5d1f77116f69845259d706",
+      "nativeShapes": 1,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 2,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 2,
+      "asset": "layout-assets/slide-02-svg-688635d85203.svg",
+      "sourceSha256": "688635d85203e2ea02a99202f5cb9008607fb9839b1bcc8fc8b487a456fd991d",
+      "nativeShapes": 2,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 2,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 2,
+      "asset": "layout-assets/slide-02-svg-1e8cf7b9b890.svg",
+      "sourceSha256": "1e8cf7b9b89099fd1f6bba6c33ef46ac55d0c69ca7926015a55acdb99c517d2a",
+      "nativeShapes": 1,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 2,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 2,
+      "asset": "layout-assets/slide-02-svg-e32dcc66e038.svg",
+      "sourceSha256": "e32dcc66e0389eced00a03d47e6c9fa3e708fd7a0d47e2ee48c69e088e32e7df",
+      "nativeShapes": 2,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 2,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 4,
+      "asset": "layout-assets/slide-04-svg-a6833b6c18ae.svg",
+      "sourceSha256": "a6833b6c18ae779db3f15df191186650a946281f18eb5bf587f99b7d9f18ab19",
+      "nativeShapes": 10,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 11,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 5,
+      "asset": "layout-assets/slide-05-svg-eba086fa3349.svg",
+      "sourceSha256": "eba086fa3349d3e00fc88abdf69eeacccdf7fa3472e794cfa82befd89f74673f",
+      "nativeShapes": 6,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 7,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 6,
+      "asset": "layout-assets/slide-06-svg-9ab7a3f763cd.svg",
+      "sourceSha256": "9ab7a3f763cdd165c131e4cf26575936adf898a5e6d6386514fd872216c594fe",
+      "nativeShapes": 140,
+      "nativeTextBoxes": 25,
+      "nativeGroups": 79,
+      "nativeGeometryRoundtripMeanError255": 0.00019883841373187334
+    },
+    {
+      "slide": 7,
+      "asset": "layout-assets/slide-07-svg-819056366b1d.svg",
+      "sourceSha256": "819056366b1d6f64bf5fce42b969a6776aa886f90e7189cda17d8b8d0af39c2d",
+      "nativeShapes": 115,
+      "nativeTextBoxes": 24,
+      "nativeGroups": 57,
+      "nativeGeometryRoundtripMeanError255": 0.00011652855874519088
+    },
+    {
+      "slide": 8,
+      "asset": "layout-assets/slide-08-svg-4864b37bfbc4.svg",
+      "sourceSha256": "4864b37bfbc4bfc397b83afb8301e979a689572a5098c0b9bb3b71f48ff00b32",
+      "nativeShapes": 103,
+      "nativeTextBoxes": 21,
+      "nativeGroups": 49,
+      "nativeGeometryRoundtripMeanError255": 0.00010203955805465128
+    },
+    {
+      "slide": 9,
+      "asset": "layout-assets/slide-09-svg-a8d5ac87e778.svg",
+      "sourceSha256": "a8d5ac87e778e018c6d9501ad081bc5de6a659cd109619b61ef7e71eb2395623",
+      "nativeShapes": 125,
+      "nativeTextBoxes": 23,
+      "nativeGroups": 30,
+      "nativeGeometryRoundtripMeanError255": 9.248298313110388e-06
+    },
+    {
+      "slide": 14,
+      "asset": "layout-assets/slide-14-svg-e6994e910d27.svg",
+      "sourceSha256": "e6994e910d278e316e9037c938e6f09a255e6f987f1fc0c7251d19f279f20f76",
+      "nativeShapes": 4,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 1,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 15,
+      "asset": "layout-assets/slide-15-svg-1f99dbfcd12d.svg",
+      "sourceSha256": "1f99dbfcd12dcd3dc58409e3b2545c73fe97178a5e95022e72cd95c587c99017",
+      "nativeShapes": 4,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 5,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 15,
+      "asset": "layout-assets/slide-15-svg-6894c3fbd333.svg",
+      "sourceSha256": "6894c3fbd3336385daaec5f52a69c9bdc19f47c5e9ec55e6d0377800a008b745",
+      "nativeShapes": 4,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 5,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 16,
+      "asset": "layout-assets/slide-16-svg-42eec23fdc10.svg",
+      "sourceSha256": "42eec23fdc10cf53581876c2187f3a19681bbe405b74316f0369bb74693d844c",
+      "nativeShapes": 6,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 7,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 17,
+      "asset": "layout-assets/slide-17-svg-fc3b249576f9.svg",
+      "sourceSha256": "fc3b249576f934a9f78c290edb7c580f9b34c35d7e005bd7da6a613629b4789e",
+      "nativeShapes": 8,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 9,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 25,
+      "asset": "layout-assets/slide-25-svg-584eef47173c.svg",
+      "sourceSha256": "584eef47173c9742833bc2a5f83566289cd180636b705fe8854f60b48fecc40a",
+      "nativeShapes": 6,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 7,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 26,
+      "asset": "layout-assets/slide-26-svg-2d61d7a86f25.svg",
+      "sourceSha256": "2d61d7a86f2520ae94f84138a98d0172f7fa168b3a3b20e8fa50d5c3b17ddbad",
+      "nativeShapes": 2,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 3,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 28,
+      "asset": "layout-assets/slide-28-svg-97c824d8872a.svg",
+      "sourceSha256": "97c824d8872ad19f655fc7aca165cab9cf26714b5bf42222ccb1a6e1af77b525",
+      "nativeShapes": 9,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 9,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 29,
+      "asset": "layout-assets/slide-29-svg-67bc99fd8066.svg",
+      "sourceSha256": "67bc99fd8066108bde3026765c35b5220828a15b4653b9fe5f48b05ef581b1f2",
+      "nativeShapes": 10,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 11,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 31,
+      "asset": "layout-assets/slide-31-svg-61bf5e326844.svg",
+      "sourceSha256": "61bf5e326844edfa28806ca4c7f2c88967f792dac5a69aec8c9028a7fda055ab",
+      "nativeShapes": 6,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 1,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 31,
+      "asset": "layout-assets/slide-31-svg-4e71032de932.svg",
+      "sourceSha256": "4e71032de932846234c1d5d8adf084fe651812febcead6ffb5e1b4badb3df412",
+      "nativeShapes": 6,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 1,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 33,
+      "asset": "layout-assets/slide-33-svg-7e976e1ec019.svg",
+      "sourceSha256": "7e976e1ec01951519e18eb0dc471c09221ebcb363dcd80768770574d1796b03a",
+      "nativeShapes": 6,
+      "nativeTextBoxes": 0,
+      "nativeGroups": 7,
+      "nativeGeometryRoundtripMeanError255": 0.0
+    },
+    {
+      "slide": 36,
+      "asset": "layout-assets/slide-36-svg-849ef40d3872.svg",
+      "sourceSha256": "849ef40d3872af27cd3c4d249c7f4d12474a0aac3ed9300ece19b99491ad6e1b",
+      "nativeShapes": 95,
+      "nativeTextBoxes": 12,
+      "nativeGroups": 26,
+      "nativeGeometryRoundtripMeanError255": 0.00021856811679984216
+    }
+  ],
+  "pathCases": [
+    {
+      "inputPath": "M20 90 A40 35 15 1 1 100 90 A40 35 15 1 1 20 90Z",
+      "normalizedGeometryMeanError255": 0.04871527777777778
+    },
+    {
+      "inputPath": "M10 10 a3 2 45 0 1 130 90",
+      "normalizedGeometryMeanError255": 0.0
+    },
+    {
+      "inputPath": "M20 20q20-10 30 20t30 20m-30-10c10 0 10 20 20 20s30-10 20-40",
+      "normalizedGeometryMeanError255": 0.0
+    },
+    {
+      "inputPath": "M10 10 30 10 30 30H60v30h-50z",
+      "normalizedGeometryMeanError255": 0.0
+    }
+  ],
+  "rejectedUnsupportedCases": [
+    {
+      "case": "filter",
+      "reason": "Unsupported SVG effect: filter=url(#blur)"
+    },
+    {
+      "case": "clipping",
+      "reason": "Unsupported SVG effect: clip-path=url(#clip)"
+    },
+    {
+      "case": "paint server",
+      "reason": "Unsupported paint (gradients/patterns require explicit implementation): url(#gradient)"
+    },
+    {
+      "case": "foreign object",
+      "reason": "Unsupported SVG element: foreignObject"
+    },
+    {
+      "case": "embedded image",
+      "reason": "Unsupported SVG element: image"
+    },
+    {
+      "case": "text rotation",
+      "reason": "Rotated/skewed/reflected SVG text requires explicit native text-box rotation support"
+    },
+    {
+      "case": "even-odd fill",
+      "reason": "Even-odd fill requires explicit path winding conversion"
+    },
+    {
+      "case": "unknown marker",
+      "reason": "Unknown SVG marker: url(#missing)"
+    }
+  ]
+}

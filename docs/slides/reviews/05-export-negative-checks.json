@@ -1,0 +1,90 @@
+{
+  "method": "Actual export-powerpoint.cjs invoked against isolated copies of the completed render provenance. Invalid cases must reject before PowerPoint creation. Original sources were read only.",
+  "exporterSha256": "618381c7b17fd01fa73fedb4395aaa8242768bdd2b723d07dd30f8cf24076735",
+  "exporterUnchangedDuringChecks": true,
+  "cases": [
+    {
+      "case": "missing-provenance",
+      "expectedRejection": "A verified print provenance chain is required.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: A verified print provenance chain is required.\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:56:59\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "stale-frozen-html",
+      "expectedRejection": "A print input or output changed: frozenHTML",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: A print input or output changed: frozenHTML\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:58:168\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "changed-current-html",
+      "expectedRejection": "A print input or output changed: sourceHTML",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: A print input or output changed: sourceHTML\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:58:168\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "mismatched-pdf",
+      "expectedRejection": "Printed PDF does not match provenance.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Printed PDF does not match provenance.\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:61:65\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "wrong-source-identity",
+      "expectedRejection": "Printed content belongs to a different HTML source.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Printed content belongs to a different HTML source.\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:60:111\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "failed-layout",
+      "expectedRejection": "Passing layout validation is required.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Passing layout validation is required.\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:63:119\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "failed-font-audit",
+      "expectedRejection": "A successful PDF font audit is required.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: A successful PDF font audit is required.\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:64:45\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "missing-freeze-report",
+      "expectedRejection": "Missing required print provenance role: freezeReport",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Missing required print provenance role: freezeReport\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:57:258\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    },
+    {
+      "case": "missing-font-record",
+      "expectedRejection": "Missing required print provenance role: fontAudit",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stdout": "",
+      "stderr": "Error: Missing required print provenance role: fontAudit\n    at /Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:57:258\n    at Object.<anonymous> (/Users/pmui/dev/brilliant/system1/docs/slides/src/export-powerpoint.cjs:103:3)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49"
+    }
+  ],
+  "passed": true,
+  "limits": "This tests preflight rejection, not renderer geometry, positive packaging, native Office rendering, or presenter behavior."
+}

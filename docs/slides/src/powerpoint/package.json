@@ -1,0 +1,11 @@
+{
+  "name": "disaggregated-intelligence-powerpoint-export",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Pinned PowerPoint packaging dependency for the standalone tutorial exporter",
+  "dependencies": {
+    "jszip": "3.10.1",
+    "pngjs": "7.0.0",
+    "pptxgenjs": "4.0.1"
+  }
+}

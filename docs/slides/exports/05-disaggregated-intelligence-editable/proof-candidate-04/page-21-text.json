@@ -1,0 +1,478 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "21 \u00b7 l: DISAGGREGATED INTELLIGENCE [p21-text-0009]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "21 \u00b7 r: 21 / 36 [p21-text-0010]",
+    "text": "21 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "21 \u00b7 failures-eyebrow: 05 / RECOVER WITHOUT LOSING THE CASE [p21-text-0011]",
+    "text": "05 / RECOVER WITHOUT LOSING THE CASE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      485.7578125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "21 \u00b7 failures-title: Failure routes are part of the program [p21-text-0012]",
+    "text": "Failure routes are part of the program",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1215.3515625,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "21 \u00b7 failures-text-1: Invalid output [p21-text-0013]",
+    "text": "Invalid output",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      126.2001953125,
+      404.81941529281494,
+      254.419921875,
+      39.0
+    ],
+    "baseline": [
+      123.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "21 \u00b7 failures-text-2: Validate the result before branching. Use a defined fallback. [p21-text-0014]",
+    "text": "Validate the result before",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.0556640625,
+      469.57243602362206,
+      324.7998046875,
+      21.0283203125
+    ],
+    "baseline": [
+      123.0,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "21 \u00b7 failures-text-2: Validate the result before branching. Use a defined fallback. [p21-text-0014]",
+    "text": "branching. Use a defined",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      125.435546875,
+      509.3324360236221,
+      318.6416015625,
+      27.8310546875
+    ],
+    "baseline": [
+      123.0,
+      529.9681782111221
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "21 \u00b7 failures-text-2: Validate the result before branching. Use a defined fallback. [p21-text-0014]",
+    "text": "fallback.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.419921875,
+      549.5397016486221,
+      105.447265625,
+      20.5810546875
+    ],
+    "baseline": [
+      123.0,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "21 \u00b7 failures-text-3: Timeout [p21-text-0015]",
+    "text": "Timeout",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      565.900390625,
+      404.92000123031494,
+      155.4267578125,
+      29.919921875
+    ],
+    "baseline": [
+      565.5,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "21 \u00b7 failures-text-4: Bound retries and retain every pending obligation. [p21-text-0016]",
+    "text": "Bound retries and retain",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      568.01953125,
+      469.57243602362206,
+      309.2041015625,
+      21.0283203125
+    ],
+    "baseline": [
+      565.5,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "21 \u00b7 failures-text-4: Bound retries and retain every pending obligation. [p21-text-0016]",
+    "text": "every pending obligation.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      566.900390625,
+      509.3324360236221,
+      326.0322265625,
+      27.83203125
+    ],
+    "baseline": [
+      565.5,
+      529.9681782111221
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "21 \u00b7 failures-text-5: Unauthorized write [p21-text-0017]",
+    "text": "Unauthorized",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1010.7998046875,
+      404.92000123031494,
+      250.6611328125,
+      29.919921875
+    ],
+    "baseline": [
+      1008.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "21 \u00b7 failures-text-5: Unauthorized write [p21-text-0017]",
+    "text": "write",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1008.7998046875,
+      452.1200012303149,
+      94.3408203125,
+      29.8994140625
+    ],
+    "baseline": [
+      1008.0,
+      481.4198059178149
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "21 \u00b7 failures-text-6: The service rejects the action under current policy. [p21-text-0018]",
+    "text": "The service rejects the",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1008.1123046875,
+      516.772436023622,
+      286.3544921875,
+      27.8603515625
+    ],
+    "baseline": [
+      1008.0,
+      537.408178211122
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "21 \u00b7 failures-text-6: The service rejects the action under current policy. [p21-text-0018]",
+    "text": "action under current",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1009.17578125,
+      556.532436023622,
+      265.4404296875,
+      21.0283203125
+    ],
+    "baseline": [
+      1008.0,
+      577.168178211122
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "21 \u00b7 failures-text-6: The service rejects the action under current policy. [p21-text-0018]",
+    "text": "policy.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1010.2119140625,
+      596.292436023622,
+      77.16796875,
+      27.83203125
+    ],
+    "baseline": [
+      1008.0,
+      616.928178211122
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "21 \u00b7 failures-text-7: Repeated write [p21-text-0019]",
+    "text": "Repeated write",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1453.2998046875,
+      404.92000123031494,
+      279.7236328125,
+      38.8994140625
+    ],
+    "baseline": [
+      1450.5,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "21 \u00b7 failures-text-8: Use transaction safeguards; record the actual result. [p21-text-0020]",
+    "text": "Use transaction",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1452.767578125,
+      469.57243602362206,
+      197.45703125,
+      21.111328125
+    ],
+    "baseline": [
+      1450.5,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "21 \u00b7 failures-text-8: Use transaction safeguards; record the actual result. [p21-text-0020]",
+    "text": "safeguards; record the",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1451.2001953125,
+      509.7797016486221,
+      286.35546875,
+      27.3837890625
+    ],
+    "baseline": [
+      1450.5,
+      529.9681782111221
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "21 \u00b7 failures-text-8: Use transaction safeguards; record the actual result. [p21-text-0020]",
+    "text": "actual result.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1451.67578125,
+      549.9039594611221,
+      163.294921875,
+      20.216796875
+    ],
+    "baseline": [
+      1450.5,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "21 \u00b7 tag: CONTRACT FAILURE [p21-text-0021]",
+    "text": "CONTRACT FAILURE",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      124.4697265625,
+      349.6149194143701,
+      213.4443359375,
+      15.162109375
+    ],
+    "baseline": [
+      123.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "21 \u00b7 tag: DEPENDENCY FAILURE [p21-text-0022]",
+    "text": "DEPENDENCY FAILURE",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      567.4951171875,
+      349.6149194143701,
+      240.1181640625,
+      15.162109375
+    ],
+    "baseline": [
+      565.5,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "21 \u00b7 tag: AUTHORITY BOUNDARY [p21-text-0023]",
+    "text": "AUTHORITY BOUNDARY",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1008.6513671875,
+      349.6149194143701,
+      242.78515625,
+      15.162109375
+    ],
+    "baseline": [
+      1008.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "21 \u00b7 tag: SIDE EFFECT [p21-text-0024]",
+    "text": "SIDE EFFECT",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1451.4453125,
+      349.6149194143701,
+      147.1259765625,
+      15.162109375
+    ],
+    "baseline": [
+      1450.5,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "21 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript specification [p21-text-0025]",
+    "text": "Reliable enterprise agents",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.7099609375,
+      973.840947034941,
+      224.6796875,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "21 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript specification [p21-text-0025]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      321.5166015625,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      315.1318359375,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "21 \u00b7 span: Reliable enterprise agents \u00b7 AgentScript specification [p21-text-0025]",
+    "text": "AgentScript specification",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      330.0859375,
+      973.840947034941,
+      217.0771484375,
+      18.8857421875
+    ],
+    "baseline": [
+      330.009765625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "21 \u00b7 span: Proposed failure behavior [p21-text-0026]",
+    "text": "Proposed failure behavior",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1608.1005121186024,
+      973.840947034941,
+      223.78515625,
+      18.6396484375
+    ],
+    "baseline": [
+      1606.3905511811024,
+      987.843876722441
+    ]
+  }
+]

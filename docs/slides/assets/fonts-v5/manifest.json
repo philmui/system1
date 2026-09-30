@@ -1,0 +1,20 @@
+[
+  {
+    "family": "Salesforce Sans",
+    "weight": 400,
+    "file": "SalesforceSans-Regular.woff2",
+    "source": "/Library/Fonts/SalesforceSans-Regular.ttf",
+    "source_sha256": "d3bac8a7de61ec8a5d027fd639931405c1b6898285d16dd63f3e303918aa755f",
+    "sha256": "e0022acc5dc7405db7de5589364486405cf829bfba58e104f598d3a14f4aa327",
+    "embedding_fsType": 4
+  },
+  {
+    "family": "Salesforce Sans",
+    "weight": 700,
+    "file": "SalesforceSans-Bold.woff2",
+    "source": "/Library/Fonts/SalesforceSans-Bold.ttf",
+    "source_sha256": "0da2b766abb88e49a42e8b197e532caf1591ffe2b0843b4c7216503561bb8dcc",
+    "sha256": "7dc6d8c98a5012de911f142e6e17ae0e82258b6735edb476ae82ab6a92a88546",
+    "embedding_fsType": 4
+  }
+]

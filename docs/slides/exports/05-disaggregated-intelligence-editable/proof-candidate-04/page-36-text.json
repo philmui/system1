@@ -1,0 +1,308 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "36 \u00b7 l: DISAGGREGATED INTELLIGENCE [p36-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "36 \u00b7 r: 36 / 36 [p36-text-0006]",
+    "text": "36 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.3249501722441,
+      59.87114327017716,
+      73.7666015625,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "36 \u00b7 returns-components-eyebrow: APPENDIX / A REUSABLE VISUAL VOCABULARY [p36-text-0007]",
+    "text": "APPENDIX / A REUSABLE VISUAL VOCABULARY",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      87.9365234375,
+      126.38932917076774,
+      527.9140625,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "36 \u00b7 returns-components-title: Reuse the visual vocabulary in another workflow [p36-text-0008]",
+    "text": "Reuse the visual vocabulary in another workflow",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1581.591796875,
+      70.2001953125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "text \u00b7 11",
+    "text": "Identity gate",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      152.39290892593505,
+      528.0253869340551,
+      182.564453125,
+      29.6240234375
+    ],
+    "baseline": [
+      149.99251830093505,
+      549.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "text \u00b7 24",
+    "text": "Sign in",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      480.8729681348425,
+      527.9804650590551,
+      95.609375,
+      29.6689453125
+    ],
+    "baseline": [
+      479.7176946973425,
+      549.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "text \u00b7 35",
+    "text": "Whole kit",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      747.050135488435,
+      527.9501916215551,
+      134.8486328125,
+      22.4990234375
+    ],
+    "baseline": [
+      746.705408925935,
+      549.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "text \u00b7 43",
+    "text": "Exchange",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1032.0071667384352,
+      528.4003869340551,
+      139.03515625,
+      29.2490234375
+    ],
+    "baseline": [
+      1029.9075573634352,
+      549.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1059",
+    "name": "text \u00b7 53",
+    "text": "Kit part",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1335.3314642285925,
+      528.0253869340551,
+      104.041015625,
+      29.173828125
+    ],
+    "baseline": [
+      1333.2318548535925,
+      549.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1068",
+    "name": "text \u00b7 62",
+    "text": "Inventory",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1606.1483587598425,
+      528.4003869340551,
+      135.9677734375,
+      28.7998046875
+    ],
+    "baseline": [
+      1603.7479681348425,
+      549.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1077",
+    "name": "text \u00b7 71",
+    "text": "System One",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      157.02587890625,
+      819.9501916215551,
+      172.0537109375,
+      29.25
+    ],
+    "baseline": [
+      155.87060546875,
+      841.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1091",
+    "name": "text \u00b7 85",
+    "text": "Frontier LLM",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      441.21240234375,
+      820.0253869340551,
+      175.57421875,
+      22.423828125
+    ],
+    "baseline": [
+      439.11279296875,
+      841.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1105",
+    "name": "text \u00b7 99",
+    "text": "Human review",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      714.5525768946851,
+      820.0253869340551,
+      202.3935546875,
+      22.439453125
+    ],
+    "baseline": [
+      712.4529675196851,
+      841.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1122",
+    "name": "text \u00b7 116",
+    "text": "Customer",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1029.5908203125,
+      819.9501916215551,
+      142.96875,
+      22.5146484375
+    ],
+    "baseline": [
+      1028.6904296875,
+      841.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1131",
+    "name": "text \u00b7 125",
+    "text": "Service result",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1287.2666015625,
+      819.9501916215551,
+      199.2265625,
+      22.5146484375
+    ],
+    "baseline": [
+      1286.111328125,
+      841.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1137",
+    "name": "text \u00b7 131",
+    "text": "Hold",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1641.544921875,
+      819.9501916215551,
+      62.91015625,
+      22.5
+    ],
+    "baseline": [
+      1639.4453125,
+      841.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1139",
+    "name": "36 \u00b7 span: Reusable vector components [p36-text-0009]",
+    "text": "Reusable vector components",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.7099609375,
+      974.391728284941,
+      253.6162109375,
+      18.0888671875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1140",
+    "name": "36 \u00b7 span: Reusable vector objects \u00b7 optional appendix [p36-text-0010]",
+    "text": "Reusable vector objects \u00b7 optional appendix",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1448.6846066067912,
+      973.840947034941,
+      383.14453125,
+      18.9052734375
+    ],
+    "baseline": [
+      1446.9746456692912,
+      987.843876722441
+    ]
+  }
+]

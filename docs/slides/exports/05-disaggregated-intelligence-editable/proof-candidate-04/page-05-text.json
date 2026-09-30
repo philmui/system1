@@ -1,0 +1,410 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "05 \u00b7 l: DISAGGREGATED INTELLIGENCE [p05-text-0010]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "05 \u00b7 r: 05 / 36 [p05-text-0011]",
+    "text": "05 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "05 \u00b7 topology-eyebrow: 02 / ENCODE THE SEQUENCE [p05-text-0012]",
+    "text": "02 / ENCODE THE SEQUENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      327.03125,
+      20.790039062499986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "05 \u00b7 topology-title: Process knowledge becomes topology [p05-text-0013]",
+    "text": "Process knowledge becomes topology",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1265.8173828125,
+      71.2802734375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "05 \u00b7 quote: Before an exchange, verify identity and match the purchase. Check exchange rul [p05-text-0014]",
+    "text": "Before an exchange, verify identity and",
+    "font": "Salesforce Sans",
+    "fontSizePx": 42.0,
+    "bbox": [
+      139.7802734375,
+      401.63814991387795,
+      707.544921875,
+      41.748046875
+    ],
+    "baseline": [
+      136.0,
+      432.59225147637795
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "05 \u00b7 quote: Before an exchange, verify identity and match the purchase. Check exchange rul [p05-text-0014]",
+    "text": "match the purchase. Check exchange",
+    "font": "Salesforce Sans",
+    "fontSizePx": 42.0,
+    "bbox": [
+      139.318359375,
+      454.60006397637795,
+      688.435546875,
+      41.2861328125
+    ],
+    "baseline": [
+      136.0,
+      485.09225147637795
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "05 \u00b7 quote: Before an exchange, verify identity and match the purchase. Check exchange rul [p05-text-0014]",
+    "text": "rules and stock. Preserve the cable",
+    "font": "Salesforce Sans",
+    "fontSizePx": 42.0,
+    "bbox": [
+      139.318359375,
+      507.8559233513779,
+      631.787109375,
+      30.32421875
+    ],
+    "baseline": [
+      136.0,
+      537.5922514763779
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "05 \u00b7 quote: Before an exchange, verify identity and match the purchase. Check exchange rul [p05-text-0014]",
+    "text": "return.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 42.0,
+    "bbox": [
+      139.318359375,
+      562.2045561638779,
+      118.4892578125,
+      28.4755859375
+    ],
+    "baseline": [
+      136.0,
+      590.0922514763779
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "05 \u00b7 topology-text-2: Definitions and evidence still belong in node context. [p05-text-0015]",
+    "text": "Definitions and evidence still belong in node context.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      90.25,
+      685.0751574803149,
+      610.1259765625,
+      24.849609375
+    ],
+    "baseline": [
+      88.0,
+      703.4999621678149
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "05 \u00b7 topology-text-1: A PROCESS BURIED IN INSTRUCTIONS [p05-text-0016]",
+    "text": "A PROCESS BURIED IN INSTRUCTIONS",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      88.1201171875,
+      314.0495709276575,
+      574.74609375,
+      22.291015625
+    ],
+    "baseline": [
+      88.0,
+      335.8298443651575
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "05 \u00b7 strong: Verify identity [p05-text-0017]",
+    "text": "Verify identity",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1093.4288490403544,
+      349.61916246309056,
+      194.126953125,
+      29.3193359375
+    ],
+    "baseline": [
+      1093.6026771653544,
+      371.48537340059056
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "05 \u00b7 strong: Match the owned purchase [p05-text-0018]",
+    "text": "Match the owned purchase",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1042.3203125,
+      585.3898397514764,
+      376.4208984375,
+      27.607421875
+    ],
+    "baseline": [
+      1040.0,
+      605.9220663139764
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "05 \u00b7 strong: Route the customer\u2019s tasks [p05-text-0019]",
+    "text": "Route the customer\u2019s tasks",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1042.3203125,
+      819.2724443282481,
+      370.3876953125,
+      21.4892578125
+    ],
+    "baseline": [
+      1040.0,
+      840.3554521407481
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "05 \u00b7 strong: Stop or recover [p05-text-0020]",
+    "text": "Stop or recover",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1566.0312290846457,
+      632.5532111220473,
+      211.8447265625,
+      28.1005859375
+    ],
+    "baseline": [
+      1565.2773228346457,
+      653.5786017470473
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "05 \u00b7 small: Follow the identity service result [p05-text-0021]",
+    "text": "Follow the identity",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1567.2577915846457,
+      679.4481468380906,
+      185.986328125,
+      21.8671875
+    ],
+    "baseline": [
+      1565.2773228346457,
+      695.6620140255906
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "05 \u00b7 small: Follow the identity service result [p05-text-0021]",
+    "text": "service result",
+    "font": "Salesforce Sans",
+    "fontSizePx": 22.0,
+    "bbox": [
+      1565.8271275221457,
+      709.1481468380906,
+      131.44921875,
+      16.5224609375
+    ],
+    "baseline": [
+      1565.2773228346457,
+      725.3620140255906
+    ]
+  },
+  {
+    "shapeId": "1031",
+    "name": "05 \u00b7 node label: verified [p05-text-0022]",
+    "text": "verified",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1076.419609375,
+      461.58003937007874,
+      84.0009765625,
+      18.7744140625
+    ],
+    "baseline": [
+      1076.32,
+      480.00484405757874
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "05 \u00b7 node label: denied or [p05-text-0023]",
+    "text": "denied or",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1501.0126771653543,
+      443.5835039370079,
+      110.525390625,
+      18.7744140625
+    ],
+    "baseline": [
+      1499.7626771653543,
+      462.0083086245079
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "05 \u00b7 node label: unavailable [p05-text-0024]",
+    "text": "unavailable",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1501.7372865403543,
+      504.5835039370079,
+      128.4013671875,
+      18.775390625
+    ],
+    "baseline": [
+      1499.7626771653543,
+      523.0083086245079
+    ]
+  },
+  {
+    "shapeId": "1034",
+    "name": "05 \u00b7 node label: facts available [p05-text-0025]",
+    "text": "facts available",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1076.695,
+      700.7035039370079,
+      160.9267578125,
+      18.775390625
+    ],
+    "baseline": [
+      1076.32,
+      719.1283086245079
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "05 \u00b7 span: Jev + LangGraph \u00b7 Agent Graph / guided determinism [p05-text-0026]",
+    "text": "Jev + LangGraph",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.1142578125,
+      974.068486097441,
+      144.30859375,
+      18.658203125
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "05 \u00b7 span: Jev + LangGraph \u00b7 Agent Graph / guided determinism [p05-text-0026]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      240.3076171875,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      233.9228515625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1036",
+    "name": "05 \u00b7 span: Jev + LangGraph \u00b7 Agent Graph / guided determinism [p05-text-0026]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      248.876953125,
+      972.910282972441,
+      308.6396484375,
+      19.81640625
+    ],
+    "baseline": [
+      248.80078125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1037",
+    "name": "05 \u00b7 span: Architectural pattern [p05-text-0027]",
+    "text": "Architectural pattern",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1649.732392347441,
+      973.840947034941,
+      180.7666015625,
+      18.6396484375
+    ],
+    "baseline": [
+      1649.656220472441,
+      987.843876722441
+    ]
+  }
+]

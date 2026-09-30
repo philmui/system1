@@ -1,0 +1,457 @@
+{
+  "checkedAt": "2026-09-29T08:05:49.511Z",
+  "article": {
+    "file": "08-building-prod.md",
+    "sha256": "042deb51b870350e530de2812db4f388453f070ebce17cb7e137af3b424086b5"
+  },
+  "html": {
+    "file": "index.html",
+    "sha256": "6f39f1df9d65328af64725f3596362487f09a77254c8080573807869693c32f7"
+  },
+  "sourceCount": 11,
+  "figureFiles": [
+    {
+      "src": "../diagrams/returns-comparison.svg",
+      "sha256": "2a0a96d1173fe5bda2fdda16877647754a29a4649c949b9055ba4fceb19e312a"
+    },
+    {
+      "src": "../diagrams/returns-policy.svg",
+      "sha256": "234e4734ea98fd58009e0a518796f567125b591f0e5c7fc08f2b4e9106d328a3"
+    },
+    {
+      "src": "../diagrams/returns-fallback.svg",
+      "sha256": "be396731f4d6f2cf58b6a6dd195b09ff5905f0385fbd28b7576b6fb6e02e8d7d"
+    },
+    {
+      "src": "assets/training-pipeline-final.svg",
+      "sha256": "5a8059863997ef54eb4f191192e64c3b9de40eb532e4280602d1c5f97b3a1db9"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "pass": true,
+      "title": "Building Prod with koa-action, Agent Graph and AgentScript",
+      "footer": "Version 08 · Product-return walkthrough and evaluation protocol. See scope and evidence and the revision record.",
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "horizontalPageOverflow": false,
+      "figures": [
+        {
+          "src": "../diagrams/returns-comparison.svg",
+          "alt": "On the left, four numbered return-service illustrations surround a large frontier-model chip, connected by consultation arrows. On the right, a directed path links the same checkpoints, with a smaller System One chip between receipt matching and policy, plus a separate continuation for complex requests.",
+          "loaded": true,
+          "naturalWidth": 1900,
+          "naturalHeight": 900,
+          "renderedWidth": 964,
+          "renderedHeight": 456.625,
+          "containerWidth": 964,
+          "containerScrollWidth": 964
+        },
+        {
+          "src": "../diagrams/returns-policy.svg",
+          "alt": "A verified purchase branches to a Standard 30-day calendar and a $5 shipping ticket, or a Plus 60-day calendar and a waived-shipping ticket. The eligible paths meet at a customer confirming the quote, followed by a separate approval shield and authorized return parcel. A crossed Standard day-45 calendar indicates denial.",
+          "loaded": true,
+          "naturalWidth": 1900,
+          "naturalHeight": 900,
+          "renderedWidth": 964,
+          "renderedHeight": 456.625,
+          "containerWidth": 964,
+          "containerScrollWidth": 964
+        },
+        {
+          "src": "../diagrams/returns-fallback.svg",
+          "alt": "A small System One chip leads either directly to the lower policy path or through a question bubble and precheck clipboard. Stop and pause symbols mark denial and hold. Remaining complexity reaches a larger frontier chip, whose proposal goes to a human with a magnifying glass. Validated information rejoins the same policy before confirmation and return authorization.",
+          "loaded": true,
+          "naturalWidth": 1900,
+          "naturalHeight": 900,
+          "renderedWidth": 964,
+          "renderedHeight": 456.625,
+          "containerWidth": 964,
+          "containerScrollWidth": 964
+        },
+        {
+          "src": "assets/training-pipeline-final.svg",
+          "alt": "Proposed task-development pipeline: related records are split before augmentation, training and development produce frozen artifacts for a locked test, and a controlled service pilot precedes rollout. Reviewed production feedback enters a later dataset.",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 900,
+          "renderedWidth": 964,
+          "renderedHeight": 723,
+          "containerWidth": 964,
+          "containerScrollWidth": 964
+        }
+      ],
+      "links": [
+        {
+          "text": "Drafts & review record",
+          "href": "README.md",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/README.md"
+        },
+        {
+          "text": "LangChain’s Building Prod with Jev and LangGraph",
+          "href": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "resolved": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+        },
+        {
+          "text": "TypeSafe’s manifesto",
+          "href": "https://typesafe.ai/manifesto",
+          "resolved": "https://typesafe.ai/manifesto"
+        },
+        {
+          "text": "",
+          "href": "../diagrams/returns-comparison.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-comparison.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "../diagrams/returns-comparison.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-comparison.svg"
+        },
+        {
+          "text": "Open the full-size illustration",
+          "href": "../diagrams/returns-comparison.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-comparison.svg"
+        },
+        {
+          "text": "Agent Graph account",
+          "href": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "resolved": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/"
+        },
+        {
+          "text": "TypeSafe documents Noul’s numerical semantics",
+          "href": "https://docs.typesafe.ai/primitives/noul",
+          "resolved": "https://docs.typesafe.ai/primitives/noul"
+        },
+        {
+          "text": "",
+          "href": "../diagrams/returns-policy.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-policy.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "../diagrams/returns-policy.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-policy.svg"
+        },
+        {
+          "text": "Open the full-size policy illustration",
+          "href": "../diagrams/returns-policy.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-policy.svg"
+        },
+        {
+          "text": "TypeSafe’s intent-routing example",
+          "href": "https://docs.typesafe.ai/patterns/intent-routing",
+          "resolved": "https://docs.typesafe.ai/patterns/intent-routing"
+        },
+        {
+          "text": "",
+          "href": "../diagrams/returns-fallback.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-fallback.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "../diagrams/returns-fallback.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-fallback.svg"
+        },
+        {
+          "text": "Open the full-size fallback illustration",
+          "href": "../diagrams/returns-fallback.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-fallback.svg"
+        },
+        {
+          "text": "AgentScript control-plane article",
+          "href": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "resolved": "https://www.salesforce.com/blog/agent-script-control-plane/"
+        },
+        {
+          "text": "enterprise-agent engineering discussion",
+          "href": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+          "resolved": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/"
+        },
+        {
+          "text": "open repository",
+          "href": "https://github.com/salesforce/agentscript",
+          "resolved": "https://github.com/salesforce/agentscript"
+        },
+        {
+          "text": "",
+          "href": "assets/training-pipeline-final.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/assets/training-pipeline-final.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "assets/training-pipeline-final.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/assets/training-pipeline-final.svg"
+        },
+        {
+          "text": "TypeSafe documents confidence as a summary of distribution concentration",
+          "href": "https://docs.typesafe.ai/confidence",
+          "resolved": "https://docs.typesafe.ai/confidence"
+        },
+        {
+          "text": "LangSmith’s evaluator integration",
+          "href": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+          "resolved": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals"
+        },
+        {
+          "text": "repeatable judging does not establish correctness",
+          "href": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+          "resolved": "https://www.langchain.com/blog/jev-agent-evals-langsmith"
+        },
+        {
+          "text": "scope and evidence",
+          "href": "research/editorial-scope.md",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/research/editorial-scope.md"
+        },
+        {
+          "text": "revision record",
+          "href": "revision-log.md",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/revision-log.md"
+        }
+      ],
+      "tableContainers": [
+        {
+          "clientWidth": 908,
+          "scrollWidth": 908,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 908,
+          "scrollWidth": 908,
+          "overflowX": "auto"
+        }
+      ],
+      "remoteAssets": [],
+      "missingSources": [],
+      "missingLocalLinks": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "consoleErrors": [],
+      "screenshots": {
+        "page": "previews/08-desktop.png",
+        "opening": "previews/08-desktop-opening.png",
+        "figures": [
+          "previews/08-desktop-figure-1.png",
+          "previews/08-desktop-figure-2.png",
+          "previews/08-desktop-figure-3.png",
+          "previews/08-desktop-figure-4.png"
+        ]
+      }
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "pass": true,
+      "title": "Building Prod with koa-action, Agent Graph and AgentScript",
+      "footer": "Version 08 · Product-return walkthrough and evaluation protocol. See scope and evidence and the revision record.",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "horizontalPageOverflow": false,
+      "figures": [
+        {
+          "src": "../diagrams/returns-comparison.svg",
+          "alt": "On the left, four numbered return-service illustrations surround a large frontier-model chip, connected by consultation arrows. On the right, a directed path links the same checkpoints, with a smaller System One chip between receipt matching and policy, plus a separate continuation for complex requests.",
+          "loaded": true,
+          "naturalWidth": 1900,
+          "naturalHeight": 900,
+          "renderedWidth": 760,
+          "renderedHeight": 360,
+          "containerWidth": 326,
+          "containerScrollWidth": 760
+        },
+        {
+          "src": "../diagrams/returns-policy.svg",
+          "alt": "A verified purchase branches to a Standard 30-day calendar and a $5 shipping ticket, or a Plus 60-day calendar and a waived-shipping ticket. The eligible paths meet at a customer confirming the quote, followed by a separate approval shield and authorized return parcel. A crossed Standard day-45 calendar indicates denial.",
+          "loaded": true,
+          "naturalWidth": 1900,
+          "naturalHeight": 900,
+          "renderedWidth": 760,
+          "renderedHeight": 360,
+          "containerWidth": 326,
+          "containerScrollWidth": 760
+        },
+        {
+          "src": "../diagrams/returns-fallback.svg",
+          "alt": "A small System One chip leads either directly to the lower policy path or through a question bubble and precheck clipboard. Stop and pause symbols mark denial and hold. Remaining complexity reaches a larger frontier chip, whose proposal goes to a human with a magnifying glass. Validated information rejoins the same policy before confirmation and return authorization.",
+          "loaded": true,
+          "naturalWidth": 1900,
+          "naturalHeight": 900,
+          "renderedWidth": 760,
+          "renderedHeight": 360,
+          "containerWidth": 326,
+          "containerScrollWidth": 760
+        },
+        {
+          "src": "assets/training-pipeline-final.svg",
+          "alt": "Proposed task-development pipeline: related records are split before augmentation, training and development produce frozen artifacts for a locked test, and a controlled service pilot precedes rollout. Reviewed production feedback enters a later dataset.",
+          "loaded": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 900,
+          "renderedWidth": 760,
+          "renderedHeight": 570,
+          "containerWidth": 326,
+          "containerScrollWidth": 760
+        }
+      ],
+      "links": [
+        {
+          "text": "Drafts & review record",
+          "href": "README.md",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/README.md"
+        },
+        {
+          "text": "LangChain’s Building Prod with Jev and LangGraph",
+          "href": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "resolved": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph"
+        },
+        {
+          "text": "TypeSafe’s manifesto",
+          "href": "https://typesafe.ai/manifesto",
+          "resolved": "https://typesafe.ai/manifesto"
+        },
+        {
+          "text": "",
+          "href": "../diagrams/returns-comparison.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-comparison.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "../diagrams/returns-comparison.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-comparison.svg"
+        },
+        {
+          "text": "Open the full-size illustration",
+          "href": "../diagrams/returns-comparison.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-comparison.svg"
+        },
+        {
+          "text": "Agent Graph account",
+          "href": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "resolved": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/"
+        },
+        {
+          "text": "TypeSafe documents Noul’s numerical semantics",
+          "href": "https://docs.typesafe.ai/primitives/noul",
+          "resolved": "https://docs.typesafe.ai/primitives/noul"
+        },
+        {
+          "text": "",
+          "href": "../diagrams/returns-policy.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-policy.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "../diagrams/returns-policy.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-policy.svg"
+        },
+        {
+          "text": "Open the full-size policy illustration",
+          "href": "../diagrams/returns-policy.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-policy.svg"
+        },
+        {
+          "text": "TypeSafe’s intent-routing example",
+          "href": "https://docs.typesafe.ai/patterns/intent-routing",
+          "resolved": "https://docs.typesafe.ai/patterns/intent-routing"
+        },
+        {
+          "text": "",
+          "href": "../diagrams/returns-fallback.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-fallback.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "../diagrams/returns-fallback.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-fallback.svg"
+        },
+        {
+          "text": "Open the full-size fallback illustration",
+          "href": "../diagrams/returns-fallback.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/diagrams/returns-fallback.svg"
+        },
+        {
+          "text": "AgentScript control-plane article",
+          "href": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "resolved": "https://www.salesforce.com/blog/agent-script-control-plane/"
+        },
+        {
+          "text": "enterprise-agent engineering discussion",
+          "href": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+          "resolved": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/"
+        },
+        {
+          "text": "open repository",
+          "href": "https://github.com/salesforce/agentscript",
+          "resolved": "https://github.com/salesforce/agentscript"
+        },
+        {
+          "text": "",
+          "href": "assets/training-pipeline-final.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/assets/training-pipeline-final.svg"
+        },
+        {
+          "text": "Open full-size diagram ↗",
+          "href": "assets/training-pipeline-final.svg",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/assets/training-pipeline-final.svg"
+        },
+        {
+          "text": "TypeSafe documents confidence as a summary of distribution concentration",
+          "href": "https://docs.typesafe.ai/confidence",
+          "resolved": "https://docs.typesafe.ai/confidence"
+        },
+        {
+          "text": "LangSmith’s evaluator integration",
+          "href": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+          "resolved": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals"
+        },
+        {
+          "text": "repeatable judging does not establish correctness",
+          "href": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+          "resolved": "https://www.langchain.com/blog/jev-agent-evals-langsmith"
+        },
+        {
+          "text": "scope and evidence",
+          "href": "research/editorial-scope.md",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/research/editorial-scope.md"
+        },
+        {
+          "text": "revision record",
+          "href": "revision-log.md",
+          "resolved": "file:///Users/pmui/dev/brilliant/system1/docs/blog/revision-log.md"
+        }
+      ],
+      "tableContainers": [
+        {
+          "clientWidth": 326,
+          "scrollWidth": 540,
+          "overflowX": "auto"
+        },
+        {
+          "clientWidth": 326,
+          "scrollWidth": 540,
+          "overflowX": "auto"
+        }
+      ],
+      "remoteAssets": [],
+      "missingSources": [],
+      "missingLocalLinks": [],
+      "pageErrors": [],
+      "requestFailures": [],
+      "consoleErrors": [],
+      "screenshots": {
+        "page": "previews/08-mobile.png",
+        "opening": "previews/08-mobile-opening.png",
+        "figures": [
+          "previews/08-mobile-figure-1.png",
+          "previews/08-mobile-figure-2.png",
+          "previews/08-mobile-figure-3.png",
+          "previews/08-mobile-figure-4.png"
+        ]
+      }
+    }
+  ],
+  "pass": true
+}

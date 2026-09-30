@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "count": 3,
+    "overlap": false,
+    "label": "01 / 31"
+  },
+  "deckGate": {
+    "version": 1,
+    "gateThreshold": 1,
+    "fallbackPercent": 20,
+    "traceIndex": 0,
+    "reveals": {
+      "exercise": false
+    }
+  },
+  "emptyGateLabels": [
+    "0 / 12 automated",
+    "No automated cases",
+    "To review"
+  ],
+  "initialSync": "synced",
+  "previewGate": {
+    "parent": 0.5,
+    "audience": 0.5,
+    "pointer": "auto"
+  },
+  "timer": {
+    "display": "00:01",
+    "running": false
+  },
+  "breakEven": "Break-even",
+  "cost": {
+    "parent": 100,
+    "audience": 100,
+    "cost": "1.07 normalized units"
+  },
+  "trace": {
+    "parent": 7,
+    "audience": 7,
+    "outage": "Handed off",
+    "caption": "Event 8 of 8"
+  },
+  "exercise": "true",
+  "frozen": {
+    "parentIndex": 18,
+    "audienceIndex": 21,
+    "parentThreshold": 1,
+    "audienceThreshold": 0.5
+  },
+  "resumed": {
+    "audienceIndex": 18,
+    "audienceThreshold": 1
+  },
+  "closed": "disconnected",
+  "reopened": {
+    "sync": "synced",
+    "state": {
+      "version": 1,
+      "gateThreshold": 1,
+      "fallbackPercent": 100,
+      "traceIndex": 7,
+      "reveals": {
+        "exercise": true
+      }
+    }
+  },
+  "note": "Runtime audit local note",
+  "frames": [
+    1.777734375,
+    1.7776747881355932
+  ],
+  "export": {
+    "text": "Edited offline audit",
+    "navButtons": 3,
+    "active": 1
+  },
+  "mobile": {
+    "stage": [
+      390,
+      219.375
+    ],
+    "navOverlap": false,
+    "documentOverflow": false
+  },
+  "errors": [],
+  "passed": true
+}

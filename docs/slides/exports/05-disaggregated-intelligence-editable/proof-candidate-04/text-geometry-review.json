@@ -1,0 +1,7 @@
+{
+  "method": "Independent Pango-derived glyph ink bounds read from actual PPTX native text; pairwise checks between distinct shape IDs. Not an Office render.",
+  "pptxSha256": "fb31adb6115c535b73cbffefa43edd269600a961b79c9059b85bd0d52b017e03",
+  "textOutsideSlide": 0,
+  "textInkBoxIntersectionsAcrossDistinctShapes": [],
+  "passed": true
+}

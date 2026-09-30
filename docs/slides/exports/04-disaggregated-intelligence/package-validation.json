@@ -1,0 +1,28 @@
+{
+  "powerpoint": "artwork-base.pptx",
+  "source": "Disaggregated intelligence \u2014 koa-action, Agent Graph & AgentScript \u00b7 v4",
+  "passed": true,
+  "checks": {
+    "slideCount": 35,
+    "editableNotesCount": 35,
+    "vectorArtworkCount": 35,
+    "pngFallbackCount": 35,
+    "vectorPathCount": 6451,
+    "clickableWebSourceCount": 69,
+    "externalRelationshipCount": 69,
+    "relationshipsChecked": 327,
+    "sourceHyperlinkTargetsMatch": true,
+    "originalSpeakerNotesPreserved": true,
+    "sizeEMU": [
+      12192000,
+      6858000
+    ],
+    "allObjectsWithinCanvas": true,
+    "glyphsOutlined": true,
+    "pdfEmbeddedFontCount": 79,
+    "maxMeanImageDifference": 0.23213782793209878,
+    "maxPixelsOver30Fraction": 0.0006467013888888889
+  },
+  "errors": [],
+  "limits": "No Microsoft PowerPoint or LibreOffice renderer is installed. Validation covers OOXML/ZIP consistency, bounds, exact packaged-image identity, and independent SVG/PDF raster agreement; it does not claim an Office render."
+}

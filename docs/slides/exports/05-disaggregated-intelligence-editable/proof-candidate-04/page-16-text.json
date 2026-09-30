@@ -1,0 +1,291 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "16 \u00b7 l: DISAGGREGATED INTELLIGENCE [p16-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "16 \u00b7 r: 16 / 36 [p16-text-0012]",
+    "text": "16 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "16 \u00b7 context-eyebrow: 04 / CONTEXT IS PART OF TOPOLOGY [p16-text-0013]",
+    "text": "04 / CONTEXT IS PART OF TOPOLOGY",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      422.3779296875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "16 \u00b7 context-title: Each node sees a different view of the case [p16-text-0014]",
+    "text": "Each node sees a different view of the case",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1403.7685546875,
+      54.0
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "16 \u00b7 strong: Prefix + task definitions + verified items [p16-text-0015]",
+    "text": "Prefix + task definitions + verified items",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      118.3203125,
+      353.1234144315945,
+      548.361328125,
+      22.2724609375
+    ],
+    "baseline": [
+      116.0,
+      374.9896253690945
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "16 \u00b7 strong: Task interpretation [p16-text-0016]",
+    "text": "Task interpretation",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1238.8162109375,
+      353.1234144315945,
+      261.2041015625,
+      28.94140625
+    ],
+    "baseline": [
+      1238.7,
+      374.9896253690945
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "16 \u00b7 strong: Trusted principal + purchase reference [p16-text-0017]",
+    "text": "Trusted principal + purchase reference",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      116.1162109375,
+      552.68168214813,
+      532.96484375,
+      28.94140625
+    ],
+    "baseline": [
+      116.0,
+      574.54789308563
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "16 \u00b7 strong: Ownership check [p16-text-0018]",
+    "text": "Ownership check",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1239.9763671875,
+      552.68168214813,
+      240.091796875,
+      28.94140625
+    ],
+    "baseline": [
+      1238.7,
+      574.54789308563
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "16 \u00b7 strong: Selected task + service policy + stock [p16-text-0019]",
+    "text": "Selected task + service policy + stock",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      116.75390625,
+      752.2399498646654,
+      511.822265625,
+      29.3193359375
+    ],
+    "baseline": [
+      116.0,
+      774.1061608021654
+    ]
+  },
+  {
+    "shapeId": "1029",
+    "name": "16 \u00b7 strong: Eligible offer or denial [p16-text-0020]",
+    "text": "Eligible offer or denial",
+    "font": "Salesforce Sans",
+    "fontSizePx": 29.0,
+    "bbox": [
+      1241.0203125,
+      752.2399498646654,
+      303.10546875,
+      29.3193359375
+    ],
+    "baseline": [
+      1238.7,
+      774.1061608021654
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "16 \u00b7 node label: A node receives its declared input view; task state remains in the graph. [p16-text-0021]",
+    "text": "A node receives its declared input view; task state remains in the graph.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      88.099609375,
+      905.295157480315,
+      822.1533203125,
+      24.849609375
+    ],
+    "baseline": [
+      88.0,
+      923.719962167815
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "16 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Building with S [p16-text-0022]",
+    "text": "Agent Graph / guided determinism",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      972.910282972441,
+      308.6396484375,
+      19.81640625
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "16 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Building with S [p16-text-0022]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      404.6015625,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      398.216796875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "16 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Building with S [p16-text-0022]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      413.1708984375,
+      973.840947034941,
+      222.9482421875,
+      18.8857421875
+    ],
+    "baseline": [
+      413.0947265625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "16 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Building with S [p16-text-0022]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      643.435546875,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      637.05078125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1032",
+    "name": "16 \u00b7 span: Agent Graph / guided determinism \u00b7 AgentScript control plane \u00b7 Building with S [p16-text-0022]",
+    "text": "Building with System One",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      653.638671875,
+      973.840947034941,
+      223.2900390625,
+      18.8857421875
+    ],
+    "baseline": [
+      651.9287109375,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1033",
+    "name": "16 \u00b7 span: Proposed node contracts [p16-text-0023]",
+    "text": "Proposed node contracts",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1613.1162601500985,
+      974.391728284941,
+      218.1416015625,
+      18.0888671875
+    ],
+    "baseline": [
+      1611.4062992125985,
+      987.843876722441
+    ]
+  }
+]

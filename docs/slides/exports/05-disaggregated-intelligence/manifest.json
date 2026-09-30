@@ -1,0 +1,2003 @@
+{
+  "title": "Disaggregated intelligence · Building reliable Agentforce workflows · v5",
+  "renderEngine": "WeasyPrint 69.0 / Pango",
+  "fontAudit": {
+    "method": "pdffonts on rendered PDF",
+    "allEmbedded": true,
+    "fontCount": 7
+  },
+  "slides": [
+    {
+      "index": 1,
+      "id": "opening",
+      "title": "Disaggregated intelligence",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "opening",
+        "title": "Disaggregated intelligence",
+        "section": "Enterprise AI",
+        "purpose": "Introduce disaggregated intelligence as an engineering allocation problem.",
+        "talk": [
+          "Disaggregated intelligence assigns different jobs to components suited to them. Services establish facts and authority; specialized models supply bounded semantic judgments; the runtime coordinates the resulting work.",
+          "For Agentforce, AgentScript authors the controls, Agent Graph executes the workflow, and koa-action supplies focused decisions under an evaluated application contract. Frontier reasoning remains available for difficult interpretation.",
+          "Choose the least expensive component that meets the decision’s quality and latency requirements, then measure the whole service. Reliability, predictability, lower cost and faster inference are the goals; their realized gains require evidence.",
+          "System One names a model role here, not human cognition. This composition is proposed: public sources reviewed do not establish a koa-action SDK, native adapter, training interface or benchmark."
+        ],
+        "transition": "Follow one product-aftercare case from authority checks to complete-case evaluation.",
+        "minutes": 0.7
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n01 / 36\nDisaggregated\nintelligence\nEnterprise reasoning with\nkoa-action\n, Agent Graph\nand AgentScript.\nFast, focused judgment by default.\nFrontier reasoning for the exceptions.\nAuthored controls\nAgentScript\nState + transitions\nAgent Graph\nkoa-action\nBounded judgment\nFrontier model\nReasoning exceptions\nServices\nFacts + authority\nAgent Graph / guided determinism\n·\nAgentScript control plane\n·\nComposable AI\n·\nJev + LangGraph\nProposed Salesforce composition",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 413.0947265625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://typesafe.ai/manifesto",
+          "label": "Composable AI",
+          "box": {
+            "x": 651.9287109375,
+            "y": 968.35,
+            "w": 135.9853515625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "label": "Jev + LangGraph",
+          "box": {
+            "x": 802.7919921875,
+            "y": 968.35,
+            "w": 145.9228515625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 2,
+      "id": "benefits",
+      "title": "Four benefits. One service to measure.",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "benefits",
+        "title": "Four benefits. One service to measure.",
+        "section": "01",
+        "purpose": "Connect requested benefits to concrete mechanisms.",
+        "talk": [
+          "Specialization creates an opportunity for much lower decision cost and faster inference when a bounded task does not require frontier reasoning. The workload and accepted error rate determine the gain.",
+          "Agent Graph makes permitted paths and recovery behavior inspectable, while AgentScript expresses the controls around model choice. Required service checks still execute. Predictable control does not itself establish semantic correctness.",
+          "Keep the complete customer case as the unit of value. A fast exchange route that loses the requested cable return fails the service, even if its local classifier is accurate."
+        ],
+        "transition": "Follow one case through the rest of the tutorial.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n02 / 36\n01 / Allocate intelligence\nFour benefits. One service to measure.\nCorrect outcomes\nReliability\nTest decisions and enforce required checks.\nControlled variation\nPredictability\nBound outputs, paths, and recovery behavior.\nLess total work\nLower cost\nAvoid expensive work that the case does not need.\nShorter critical path\nFaster inference\nUse short decision steps on frequent routes.\nJev + LangGraph\n·\nComposable AI\nMechanisms and objectives; no koa-action benchmark",
+      "links": [
+        {
+          "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "label": "Jev + LangGraph",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 145.9228515625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://typesafe.ai/manifesto",
+          "label": "Composable AI",
+          "box": {
+            "x": 248.80078125,
+            "y": 968.35,
+            "w": 135.9853515625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 3,
+      "id": "case",
+      "title": "One customer, two obligations",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "case",
+        "title": "One customer, two obligations",
+        "section": "01",
+        "purpose": "Establish the recurring case and its invariant.",
+        "talk": [
+          "The purchase records establish that the spare cable was purchased separately, so its return concerns a complete purchased item. A cable removed from the headphone kit would require the component handler instead.",
+          "The customer asks for an exchange AND a cable return. Preserve both obligations and their item references; finishing the first cannot erase the second.",
+          "This case is a constructed teaching example. Later we will stop the trace after an exchange authorization while the cable task is active, so the whole case remains unfinished."
+        ],
+        "transition": "Assign an owner to each kind of work.",
+        "minutes": 1.1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n03 / 36\n01 / Service invariant\nOne customer, two obligations\n“Exchange these headphones\nand return the spare cable.”\nThe cable is a separately purchased item.\nThe case ledger\nExchange\nRequested\nPending\nCable return\nRequested\nPending\nWhat must survive\nevery transition?\nAgent Graph / guided determinism\nConstructed service example",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 4,
+      "id": "ownership",
+      "title": "Give each responsibility an owner",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "ownership",
+        "title": "Give each responsibility an owner",
+        "section": "01",
+        "purpose": "Distinguish models, execution, configuration, and authority.",
+        "talk": [
+          "The throughline is allocation plus coordination. koa-action supplies a bounded interpretation; Agent Graph coordinates task state and escalation; AgentScript configures the controls that constrain each judgment’s effect.",
+          "Backend services establish identity, ownership, stock and policy outcomes. They also enforce their requirements when writing. A high model score cannot substitute for any of these results.",
+          "A clear exchange or kit-component return may use System One and a configured handler without frontier reasoning. A request can have many business steps while remaining easy to interpret.",
+          "The human branch handles configured review and unresolved cases. A reviewer’s interpretation does not invent a missing handler or confer policy-override authority."
+        ],
+        "transition": "Now move process rules from prose into inspectable structure.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n04 / 36\n01 / Architecture\nGive each responsibility an owner\nAgentScript\nAuthors sequencing, action availability, and bound inputs\nAgent Graph\nExecutes the workflow and retains task state\nInterpret\nkoa-action\nSystem One: bounded decisions\nReason\nFrontier model\nResidual interpretation\nafter a defined gate\nAct\nBackend services\nAuthoritative facts + permissions\nReview\nHuman path\nWhen policy or ambiguity requires it\nAgent Graph / guided determinism\n·\nAgentScript control plane\nProposed composition; no native adapter asserted",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 413.0947265625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 5,
+      "id": "topology",
+      "title": "Process knowledge becomes topology",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "topology",
+        "title": "Process knowledge becomes topology",
+        "section": "02",
+        "purpose": "Teach which decisions, in which order, over which state.",
+        "talk": [
+          "Procedural domain knowledge enters topology: the nodes and transitions specify what runs first, which evidence each step sees and where it can go next.",
+          "The small graph previews the shared front desk. Verified identity allows protected purchase lookup. Missing sessions, rejection and unavailable services have distinct routes, expanded on the next illustration.",
+          "Live purchase facts remain in application records, business policy remains explicit code or configuration, and category definitions remain in the semantic node’s context. Moving process dependencies into a graph does not eliminate these inputs.",
+          "Review the graph itself. It can consistently encode an incorrect policy or accidentally lose a requested task."
+        ],
+        "transition": "Expand the front desk, then follow three familiar request types.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n05 / 36\n02 / Encode the sequence\nProcess knowledge becomes topology\nA process buried in instructions\nBefore an exchange, verify identity and match the purchase. Check exchange rules and stock. Preserve the cable return.\nDefinitions and evidence still belong in node context.\nVerify identity\nMatch the owned purchase\nRoute the customer’s tasks\nStop or recover\nFollow the identity\nservice result\nverified\ndenied or\nunavailable\nfacts available\nJev + LangGraph\n·\nAgent Graph / guided determinism\nArchitectural pattern",
+      "links": [
+        {
+          "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "label": "Jev + LangGraph",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 145.9228515625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 248.80078125,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 6,
+      "id": "returns-access",
+      "title": "Start with identity and an owned purchase",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "returns-access",
+        "title": "Start with identity and an owned purchase",
+        "section": "Step 01",
+        "purpose": "Separate authoritative access gates from the choice of model allocation.",
+        "talk": [
+          "Follow the shared front desk before comparing models. The identity service supplies a result. Verified access permits protected purchase lookup; neither model grants authentication.",
+          "The no-login branch goes through secure sign-in and returns to the same identity check. The denied branch stops protected work and can offer permitted account support. A service outage also holds or takes bounded recovery; unknown does not mean verified.",
+          "The matched purchase binds owned line items to the authenticated customer. Missing identifiers or a mismatch go to purchase verification and recheck. Only a verified purchase reaches page B; item or kit-component binding can still need clarification there.",
+          "Both architecture choices retain these safeguards. In the selected wrapper design, frontier inference proposes the next step around each service result. In the disaggregated design, authored transitions carry the known process and call a small decision model only for bounded meaning.",
+          "Agent Graph coordinates execution and state. AgentScript configures the control. This is an architectural comparison with LangGraph, not an API compatibility claim or a hosted LangGraph implementation. More predictable transitions create an opportunity for cheaper, faster handling; measurement must establish the gain."
+        ],
+        "transition": "With access and purchase established, identify the requested remedy and affected unit.",
+        "minutes": 1.2
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n06 / 36\nStep 01 / One return, two allocations · A\nStart with identity and an owned purchase\nReliable enterprise agents\n·\nAgentScript control plane\n·\nJev + LangGraph\n·\nAccess and allocation · A\nProposed design · same service safeguards",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+          "label": "Reliable enterprise agents",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 227.1318359375,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 330.009765625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "label": "Jev + LangGraph",
+          "box": {
+            "x": 568.84375,
+            "y": 968.35,
+            "w": 145.9228515625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": [
+        {
+          "identifier": "diagrams/returns-comparison-access.svg",
+          "label": "Access and allocation · A"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "returns-routing",
+      "title": "Give familiar requests a direct service route",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "returns-routing",
+        "title": "Give familiar requests a direct service route",
+        "section": "Step 01",
+        "purpose": "Show that a familiar exchange or kit-part return can use bounded judgment and a configured service route.",
+        "talk": [
+          "The small chip answers bounded questions: what remedy is requested, which owned item or kit component is affected, and whether the meaning is clear enough. An authored supported-combination mapping chooses a handler. The three pictured mappings are whole-item return, whole-item exchange and kit-component return.",
+          "The open headphone kit means the complete purchased product; the highlighted cable means one component of that kit. A spare cable purchased as its own line item is an ordinary whole-item return. In the ongoing two-task case, the purchase service has established that the spare cable was bought separately.",
+          "A clear exchange goes to exchange rules and inventory. A clear kit-component return goes to component identity and kit-part rules. Both can be handled without frontier interpretation. Their terms are independent of the whole-item return policy on the later calendar slide.",
+          "The graph follows only registered handlers. Component exchange is a different combination; if the merchant has not registered it, configured specialist handling receives the correctly understood request. Neither model invents a policy or supported route.",
+          "The eligible-quote junction describes a common finish for each selected task. It does not merge their rules. Confirm the exact action and terms; the service rechecks before issuing the corresponding authorization. Missing facts hold and known ineligibility follows the affected handler.",
+          "Clarification can settle an ambiguous item or remedy and return to reassessment. Only meaning that remains unresolved can enter reasoning gate C. Keep AND obligations, OR choices and IF conditions. An exchange for blue if in stock, otherwise return, can be authored logic: unknown stock holds, and only the selected alternative may commit."
+        ],
+        "transition": "Expand the exception path and examine what must hold before frontier interpretation is useful.",
+        "minutes": 1.4
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n07 / 36\nStep 01 / One return, two allocations · B\nGive familiar requests a direct service route\nAgent Graph / guided determinism\n·\nAgentScript control plane\n·\nIntent routing\n·\nBounded request routes · B\nIllustrated supported combinations · independent handler policies",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 413.0947265625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/patterns/intent-routing",
+          "label": "Intent routing",
+          "box": {
+            "x": 651.9287109375,
+            "y": 968.35,
+            "w": 122.6650390625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": [
+        {
+          "identifier": "diagrams/returns-comparison-routing.svg",
+          "label": "Bounded request routes · B"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "id": "returns-fallback",
+      "title": "Reserve frontier reasoning for unresolved meaning",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "returns-fallback",
+        "title": "Reserve frontier reasoning for unresolved meaning",
+        "section": "Step 01",
+        "purpose": "Make the frontier model a scoped interpretation resource with explicit preconditions and a guarded return path.",
+        "talk": [
+          "The verified-access and purchase label is a precondition. Read the green route first: clear meaning reaches the authored mapping and its appropriate handler. An unsupported combination goes to configured specialist handling rather than an invented route.",
+          "The detour first asks one useful clarification. If that resolves the meaning, reassess the task and follow its handler without frontier reasoning. More business steps, an exchange, a component request, or a familiar if-condition does not itself make interpretation difficult.",
+          "Facts and checks are branch-aware. Obtain missing evidence from authoritative services; hold when it cannot be obtained. Apply known mandatory rules for the affected handler. A whole-item return deadline does not globally reject an exchange or kit-component request.",
+          "Only substantive interpretation that remains after clarification, with the relevant facts and known checks satisfied, reaches one scoped frontier attempt. It receives the authorized history and remaining question, then proposes a task structure; it does not replace service facts.",
+          "A human validates item references and AND, OR and IF relationships, or holds the case. Validated interpretation re-enters the same supported-combination mapping and the applicable handler. Neither human validation nor model output grants a policy override.",
+          "Only an eligible selected task reaches confirmed terms and an authoritative service write. Bound technical recovery, reconcile an unknown write outcome, and retain every unfinished obligation. Measure the cost of this detour, including any added review, in whole-case evaluation."
+        ],
+        "transition": "Scope a concrete policy to one handler so that its rules cannot spill into other remedies.",
+        "minutes": 1.5
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n08 / 36\nStep 01 / The interpretation exception · C\nReserve frontier reasoning for unresolved meaning\nIntent routing\n·\nAgentScript control plane\n·\nReasoning gate · C\nScoped interpretation · facts and authority remain with services",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/patterns/intent-routing",
+          "label": "Intent routing",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 122.6650390625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 225.54296875,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": [
+        {
+          "identifier": "diagrams/returns-reasoning-gate.svg",
+          "label": "Reasoning gate · C"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "returns-policy",
+      "title": "Whole-item returns follow their own policy",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "returns-policy",
+        "title": "Whole-item returns follow their own policy",
+        "section": "02",
+        "purpose": "Separate trusted eligibility and fee rules from semantic interpretation and from transaction success.",
+        "talk": [
+          "The scope label matters: this invented merchant table applies only to whole-item returns. A separate service owns exchange rules; kit-component returns have their own rules and terms. These values are not Salesforce product policy.",
+          "A verified owned purchase provides the delivery time, original request time, loyalty tier, item eligibility and available unreturned quantity. Missing or contradictory required facts stay pending. Keep the original request timestamp through retries and handoffs.",
+          "Standard permits an eligible request within 30 days inclusive and quotes five-dollar shipping. Plus permits 60 days inclusive and waives shipping. Standard day 18 and Plus day 45 can qualify if the other rules hold; Standard day 45 fails this ordinary return window.",
+          "Confirm the specific items, quantity and quote. The backend rechecks authority, policy and accepted terms before recording an idempotent return authorization. Changed terms require renewed confirmation; a label in this drawing means authorization, not completed shipping or settled refund.",
+          "A known rule failure does not justify a frontier appeal. A separate eligible task can continue under its own policy while the declined task retains its outcome. This scoped service authority makes the authored route predictable."
+        ],
+        "transition": "Now connect the illustrated application to the runtime, authored controls and model contracts beneath it.",
+        "minutes": 1.2
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n09 / 36\n02 / An explicit merchant policy\nWhole-item returns follow their own policy\nWhole-item return policy\n·\nTutorial evaluation protocol\nInvented whole-item policy · exchanges and kit parts have separate rules",
+      "links": [],
+      "companions": [
+        {
+          "identifier": "diagrams/returns-whole-item-policy.svg",
+          "label": "Whole-item return policy"
+        },
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Tutorial evaluation protocol"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "id": "layers",
+      "title": "A runtime sits beneath the harness",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "layers",
+        "title": "A runtime sits beneath the harness",
+        "section": "02",
+        "purpose": "Prevent runtime/harness/configuration conflation.",
+        "talk": [
+          "Once judgments and services are separated, the runtime coordinates state and decides which configured step executes next. Agent Graph occupies that runtime role in Agentforce.",
+          "AgentScript authors the controls around model choice. The wider agent harness also includes context strategy, tools, operational policy and recovery.",
+          "LangChain’s distinction among its framework, LangGraph runtime and Deep Agents harness provides an architectural analogy. It does not imply LangGraph API compatibility or Deep Agents defaults in Agentforce.",
+          "The public AgentScript repository contains language tooling; Salesforce’s managed runtime is a separate component."
+        ],
+        "transition": "Define the first decision before selecting its integration.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n10 / 36\n02 / Keep the layers distinct\nA runtime sits beneath the harness\nHarness\nThe agent loop, context strategy, tools, and operating policy.\nExample in LangChain’s stack: Deep Agents.\nRuntime\nState transitions and the execution of the configured workflow.\nAgent Graph is analogous at this layer to LangGraph.\nConfiguration\nThe authored rules and bindings that shape behavior.\nAgentScript configures Salesforce’s runtime.\nRuntime, framework, harness\n·\nAgentScript control plane\nArchitectural comparison, not API equivalence",
+      "links": [
+        {
+          "url": "https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph",
+          "label": "Runtime, framework, harness",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 258.3056640625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 361.18359375,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 11,
+      "id": "contract",
+      "title": "Separate the remedy, the unit and the uncertainty",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "contract",
+        "title": "Separate the remedy, the unit and the uncertainty",
+        "section": "03",
+        "purpose": "Give a bounded task a testable contract.",
+        "talk": [
+          "Separate requested remedy, purchased-unit scope and interpretation status. Exchange does not mean difficult; a whole-item return can still be ambiguous.",
+          "The three familiar supported combinations shown earlier are whole-item return, whole-item exchange and kit-component return. These examples are not an exhaustive provider taxonomy. A component exchange is one request, supported only if its own handler and policy are configured.",
+          "Tie every task to verified candidate items and preserve AND, OR and IF relationships. AND retains every obligation; OR waits for a choice; IF evaluates the customer’s actual condition using authoritative facts.",
+          "These are conceptual application fields, not a documented koa-action response schema. A timeout or malformed result uses bounded technical recovery and must not default into a transaction."
+        ],
+        "transition": "Match the question to the right primitive.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n11 / 36\n03 / Step 1\nSeparate the remedy, the unit and the uncertainty\nBounded semantic question\nWhat work is\nthe customer requesting?\nConversation prefix\n+ verified candidate items.\nConceptual labels · boundary examples\n“Swap for blue.”\nexchange\n“Only the kit cable.”\ncomponent\n“Return this one.”\nclarify unit\nKeep three fields distinct\nRemedy\nUnit\nInterpretation\nClear + supported\nGraph selects the applicable handler.\nMeaning unclear\nAsk one useful clarification.\nUnsupported combinations use a configured specialist.\nInvalid output follows bounded recovery.\nTypeSafe quickstart\n·\nIntent routing\n·\nStructured decision criteria\nIllustrative application contract",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/introduction/quickstart",
+          "label": "TypeSafe quickstart",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 170.8876953125,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/patterns/intent-routing",
+          "label": "Intent routing",
+          "box": {
+            "x": 273.765625,
+            "y": 968.35,
+            "w": 122.6650390625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/primitives/advanced",
+          "label": "Structured decision criteria",
+          "box": {
+            "x": 411.30859375,
+            "y": 968.35,
+            "w": 237.7109375,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 12,
+      "id": "primitives",
+      "title": "Four bounded decisions, four contracts",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "primitives",
+        "title": "Four bounded decisions, four contracts",
+        "section": "03",
+        "purpose": "Cover the four user-specified koa-action capabilities.",
+        "talk": [
+          "This tutorial uses koa-action for classification, noul, scoring, and semantic endpointing, following the capability framing supplied for the Salesforce composition.",
+          "TypeSafe documents analogous decision concepts, but its SDK fields, batching, calibration, and training claims do not define a Salesforce interface.",
+          "Each primitive needs its own target and error measure. A rubric score and the probability of a binary proposition are not interchangeable."
+        ],
+        "transition": "Make that semantic distinction tangible.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n12 / 36\n03 / System One capabilities\nFour bounded decisions, four contracts\n01\nClassification\nWhich route?\nSelect a category.\n02\nNoul\nReturn requested?\nAssess a yes/no proposition.\n03\nScoring\nHow urgent is this case?\nUse an anchored rubric.\n04\nEndpointing\nHas the turn ended?\nJudge the available prefix.\nTypeSafe quickstart\n·\nNoul\n·\nScore\nkoa-action capabilities: supplied brief; interfaces unspecified",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/introduction/quickstart",
+          "label": "TypeSafe quickstart",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 170.8876953125,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/primitives/noul",
+          "label": "Noul",
+          "box": {
+            "x": 273.765625,
+            "y": 968.35,
+            "w": 42.9404296875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/primitives/score",
+          "label": "Score",
+          "box": {
+            "x": 331.583984375,
+            "y": 968.35,
+            "w": 48.7734375,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 13,
+      "id": "semantics",
+      "title": "Probability and intensity answer different questions",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "semantics",
+        "title": "Probability and intensity answer different questions",
+        "section": "03",
+        "purpose": "Explain binary proposition estimates versus severity rubrics.",
+        "talk": [
+          "TypeSafe’s Noul is the probability of the yes answer; its Score uses ordered rubric levels and can be fractional.",
+          "A mean rubric score can hide different distributions. Preserve the output meaning that the downstream rule actually uses.",
+          "The corresponding koa-action fields, ranges, and calibration require their own verified contract. No numeric Salesforce response is shown here."
+        ],
+        "transition": "A decision about when to respond has an additional time boundary.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n13 / 36\n03 / Give every number a meaning\nProbability and intensity answer different questions\nNoul · TypeSafe semantics\nWas a return requested?\nA probability-valued\nyes/no judgment.\nAn uncertain answer does not mean\n“a medium amount of returning.”\nScore · illustrative rubric\nHow urgent is the case?\nCan wait\nUse disrupted\nEssential use blocked\nNoul\n·\nScore\nTypeSafe semantics / proposed Salesforce use",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/primitives/noul",
+          "label": "Noul",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 42.9404296875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/primitives/score",
+          "label": "Score",
+          "box": {
+            "x": 145.818359375,
+            "y": 968.35,
+            "w": 48.7734375,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 14,
+      "id": "endpointing",
+      "title": "Endpointing is a decision in time",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "endpointing",
+        "title": "Endpointing is a decision in time",
+        "section": "03",
+        "purpose": "Explain semantic endpointing and temporal leakage.",
+        "talk": [
+          "Imagine the spoken request: Exchange these headphones … and return the spare cable. Ending the turn at the pause can drop the second obligation before the routing model sees it.",
+          "The waveform is illustrative. Semantic endpointing asks whether the spoken turn has ended using only the available audio prefix. Future speech may establish the reference label, but must not enter the earlier input.",
+          "Measure premature cutoff and delay separately. Keep all prefixes from a conversation together when splitting data; a fast endpointing call still needs the right decision-time evidence."
+        ],
+        "transition": "Next decide which decisions may run in parallel.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n14 / 36\n03 / A prefix is the input\nEndpointing is a decision in time\nAvailable audio prefix\nFuture audio\nDecision now\nCut too early\nThe customer is interrupted.\nWait too long\nThe response is delayed.\nKeep the boundary\nFuture audio may label the prefix.\nIt cannot enter the input.\nBuilding with System One\nIllustrative waveform; proposed evaluation",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+          "label": "Building with System One",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 225.931640625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 15,
+      "id": "dependencies",
+      "title": "Split work along information dependencies",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "dependencies",
+        "title": "Split work along information dependencies",
+        "section": "04",
+        "purpose": "Separate execution independence from causality.",
+        "talk": [
+          "Two bounded questions may read the same authorized snapshot without depending on one another’s output. This is a workflow-design pattern, not a claim about native koa-action batching.",
+          "A task that needs a new service fact must wait. Protected purchase retrieval follows verified identity; selecting an affected item depends on the authorized candidate list.",
+          "Independent execution does not imply statistically independent errors. Missing context can affect remedy and urgency together. Two requested transactions also cannot be assumed safe to commit in parallel."
+        ],
+        "transition": "Make each node’s evidence window explicit.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n15 / 36\n04 / Step 2\nSplit work along information dependencies\nSame decision-time snapshot\nRemedy\nReturn or exchange?\nUrgency\nWhich rubric level?\nIndependent execution can still produce correlated errors.\nVerify identity\nMatch owned purchase\nBind the affected item\nBuilding with System One\n·\nA harness with Jev\nProposed scheduling pattern",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+          "label": "Building with System One",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 225.931640625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/building-a-harness-with-jev",
+          "label": "A harness with Jev",
+          "box": {
+            "x": 328.8095703125,
+            "y": 968.35,
+            "w": 161.123046875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 16,
+      "id": "context",
+      "title": "Each node sees a different view of the case",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "context",
+        "title": "Each node sees a different view of the case",
+        "section": "04",
+        "purpose": "Teach context boundaries as authored data dependencies.",
+        "talk": [
+          "Agent Graph determines when evidence exists and which view of state each node receives. AgentScript authors the relevant controls and bindings.",
+          "A model interprets the request using the conversation prefix and authorized candidate items. Its proposed item reference must be validated; it cannot make the customer the owner of an order.",
+          "The selected handler obtains its own rules, stock and terms. Narrow context can reduce work, but excluding a required fact can reduce quality. Version and evaluate the input view."
+        ],
+        "transition": "Use that state to preserve the mixed request.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n16 / 36\n04 / Context is part of topology\nEach node sees a different view of the case\nPrefix + task definitions + verified items\nTask interpretation\nTrusted principal + purchase reference\nOwnership check\nSelected task + service policy + stock\nEligible offer or denial\nA node receives its declared input view; task state remains in the graph.\nAgent Graph / guided determinism\n·\nAgentScript control plane\n·\nBuilding with System One\nProposed node contracts",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 413.0947265625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+          "label": "Building with System One",
+          "box": {
+            "x": 651.9287109375,
+            "y": 968.35,
+            "w": 225.931640625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 17,
+      "id": "mixed",
+      "title": "State preserves work across a branch",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "mixed",
+        "title": "State preserves work across a branch",
+        "section": "04",
+        "purpose": "Make persistent obligations visible.",
+        "talk": [
+          "In this AND request, both tasks stay in graph state. The customer starts with the exchange; the cable return waits and then resumes after the exchange service records its authorized result.",
+          "OR and IF have different semantics. Keep alternatives until one is selected or its stated condition is met. Inactive alternatives are unselected or untriggered, not unresolved obligations.",
+          "For Exchange for blue if in stock; otherwise return, unknown stock remains pending. A different exchange-policy denial does not silently activate the stock-conditioned alternative. Only the selected action may commit.",
+          "A time or turn budget bounds priority clarification. A handoff records receiving ownership and every outstanding obligation; it does not finish the customer’s work."
+        ],
+        "transition": "This is where neural interpretation meets explicit control.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n17 / 36\n04 / Step 3\nState preserves work across a branch\nTwo AND tasks\nRecord exchange + cable return\nClarify priority\nAsk which task to start\nExchange active\nCable return stays pending\nCable return active\nResume after exchange authorization\nRecorded handoff\nRetain all outstanding work\nexchange selected\nno choice\nwithin budget\nexchange\nauthorized\nAgent Graph / guided determinism\nConstructed mixed-request path",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 18,
+      "id": "guided",
+      "title": "Guided determinism gives uncertainty a place",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "guided",
+        "title": "Guided determinism gives uncertainty a place",
+        "section": "05",
+        "purpose": "Explain neuro-symbolic reasoning in plain terms.",
+        "talk": [
+          "Neuro-symbolic reasoning combines learned interpretation with explicit software state and rules. System One contributes the judgment; AgentScript authors its permitted effect; Agent Graph executes the resulting path.",
+          "Guided determinism makes the transition constraints inspectable. Classification remains fallible, and explicit controls alone do not guarantee eventual completion.",
+          "The semantic model, route definitions and business services can evolve at their own boundaries when the composition is versioned and tested."
+        ],
+        "transition": "Three AgentScript concepts make that boundary concrete.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n18 / 36\n05 / Neuro-symbolic reasoning\nGuided determinism gives uncertainty a place\nNeural interpretation\ninside an authored process.\nAgentScript defines where model choice is available.\nAgent Graph executes the configured transitions.\nInterpretation\nFallible semantic judgment.\nProcedure\nRequired steps and state changes.\nAuthority\nEnforced by trusted services.\nAgent Graph / guided determinism\n·\nAgentScript control plane\nDocumented architecture; illustrative workflow",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 413.0947265625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 19,
+      "id": "agentscript",
+      "title": "Availability and required execution differ",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "agentscript",
+        "title": "Availability and required execution differ",
+        "section": "05",
+        "purpose": "Teach precise AgentScript control semantics.",
+        "talk": [
+          "The left sketch is language-neutral design pseudocode, not runnable AgentScript or a documented koa-action adapter. Action definitions, dialect and deployment configuration are omitted. The requireOwnedOrder helper stops for verification or hold unless authoritative ownership is established.",
+          "Required identity, purchase and applicable policy checks belong in authored procedure logic. An available-when condition filters model choices; it does not force the check to execute.",
+          "Bound inputs use trusted service state for consequential identifiers and entitlements. Services independently enforce authority and current policy when committing.",
+          "The selected handler follows its own rules, obtains customer confirmation, rechecks accepted terms and records the actual service result. Graph state retains the other task."
+        ],
+        "transition": "Walk the proposed request through all of its owners.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n19 / 36\n05 / Step 4\nAvailability and required execution differ\nDesign pseudocode\nControl around\nthe model choice.\nidentity = verifySession()\nif identity != verified: return recovery\npurchase = requireOwnedOrder(identity)\ntasks = interpretAndValidate(purchase)\nrun selectedHandler(tasks)\nBackend services also enforce access.\nThis is an authoring sketch, not runnable syntax.\nRequired work\nrun\n/ procedure\nUse explicit procedure logic for checks that must execute.\nPermitted choices\navailable when\nFilter which actions the model may select. Availability does not force selection.\nControlled arguments\nwith\n/ bound input\nBind consequential inputs from trusted state.\nAgentScript control plane\n·\nAgentScript specification\nVerified constructs; no executable koa-action adapter",
+      "links": [
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://github.com/salesforce/agentscript/blob/main/SPEC.md",
+          "label": "AgentScript specification",
+          "box": {
+            "x": 326.833984375,
+            "y": 968.35,
+            "w": 218.654296875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 20,
+      "id": "trace",
+      "title": "Authorize the exchange, then resume the cable return",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "trace",
+        "title": "Authorize the exchange, then resume the cable return",
+        "section": "05",
+        "purpose": "Follow the aftercare case while distinguishing interpretation, confirmation, service authorization and unfinished work.",
+        "talk": [
+          "The eight events follow the same customer case: Exchange these headphones and return the spare cable. The cable is a separately purchased item, not a component removed from the headphone kit.",
+          "First the identity service verifies access, then the order service matches the owned purchase. System One proposes the two AND tasks and their item references; the graph validates that each has a supported handler.",
+          "The customer chooses the exchange first. Exchange rules, stock and terms produce an eligible offer, leaving the task Awaiting confirmation. These are the exchange service’s rules, not the invented whole-item return table.",
+          "Customer confirmation still precedes authorization. The service rechecks authority, policy, stock and accepted terms, then records the exchange ID. Authorized means that service outcome, not a shipped replacement or settled refund.",
+          "Finally Agent Graph activates the cable return. The exchange is Authorized and the cable return is Active. The full case remains unfinished. This clear supported path needs no frontier call; unresolved interpretation has its separate gated route."
+        ],
+        "transition": "Now design the non-happy paths.",
+        "minutes": 1.6
+      },
+      "interaction": "trace",
+      "traceScenario": "returns",
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n20 / 36\n05 / Step 5\nAuthorize the exchange, then resume the cable return\n1\nVerify identity\nService\n2\nMatch purchase\nService\n3\nInterpret\nSystem One\n4\nPrioritize\nCustomer\n5\nPolicy + stock\nService\n6\nConfirm\nCustomer\n7\nAuthorize\nService\n8\nResume\nAgent Graph\nAgent Graph resumes the cable return. Its policy, confirmation, and authorization are unfinished.\nExchange\nAuthorized\nConfirmation precedes a recheck\nand the service-issued exchange ID.\nCable return\nActive\nA separately purchased item.\nStill unfinished when this trace ends.\nNext event →\nReset\nEvent 8 of 8\nAgent Graph / guided determinism\n·\nReliable enterprise agents\nConstructed trace · final static state",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+          "label": "Reliable enterprise agents",
+          "box": {
+            "x": 413.0947265625,
+            "y": 968.35,
+            "w": 227.1318359375,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": [],
+      "traceCaption": "Event 8 of 8",
+      "billing": "Authorized",
+      "outage": "Active",
+      "traceEvent": "Agent Graph resumes the cable return. Its policy, confirmation, and authorization are unfinished."
+    },
+    {
+      "index": 21,
+      "id": "failures",
+      "title": "Failure routes are part of the program",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "failures",
+        "title": "Failure routes are part of the program",
+        "section": "05",
+        "purpose": "Connect reliability to failure contracts.",
+        "talk": [
+          "A graph needs meaningful timeout, invalid-output, and handoff routes rather than a default business action.",
+          "A resumed workflow can reuse a recorded decision, but this alone does not guarantee exactly-once external side effects.",
+          "Transaction-specific safeguards belong in the service performing the write. Recovery must retain the unfinished tasks."
+        ],
+        "transition": "A valid decision can still be semantically wrong.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n21 / 36\n05 / Recover without losing the case\nFailure routes are part of the program\nContract failure\nInvalid output\nValidate the result before branching. Use a defined fallback.\nDependency failure\nTimeout\nBound retries and retain every pending obligation.\nAuthority boundary\nUnauthorized write\nThe service rejects the action under current policy.\nSide effect\nRepeated write\nUse transaction safeguards; record the actual result.\nReliable enterprise agents\n·\nAgentScript specification\nProposed failure behavior",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+          "label": "Reliable enterprise agents",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 227.1318359375,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://github.com/salesforce/agentscript/blob/main/SPEC.md",
+          "label": "AgentScript specification",
+          "box": {
+            "x": 330.009765625,
+            "y": 968.35,
+            "w": 218.654296875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 22,
+      "id": "confidence",
+      "title": "Confidence needs evidence in your domain",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "confidence",
+        "title": "Confidence needs evidence in your domain",
+        "section": "06",
+        "purpose": "Distinguish signal concentration from correctness and permission.",
+        "talk": [
+          "This schematic focuses on the remedy question for one task: return, exchange or other. Purchased-unit scope and task relationships remain separate fields, so parts is not a competing remedy label.",
+          "TypeSafe defines Choice and Score confidence from distribution concentration. Noul has no separate confidence field. A concentrated answer distribution can still be wrong.",
+          "The picture is not a returned koa-action distribution. Validate any provider signal against independently adjudicated labels and choose gates on development data. A numerical score does not establish identity, eligibility or permission."
+        ],
+        "transition": "Explore what a stricter gate does to a small labeled sample.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n22 / 36\n06 / Inspect the signal\nConfidence needs evidence in your domain\nA concentrated distribution\nReturn\nExchange\nOther\nIllustrative output shape.\nThe highest option can still be wrong.\nValidate locally\nCompare signals\nwith adjudicated labels.\nChoose gates on development data.\nReport error alongside coverage.\nIdentity, permissions, and policy\nremain separate checks.\nConfidence routing\n·\nConfidence semantics\nIllustrative distribution; no calibration claim",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/patterns/confidence-routing",
+          "label": "Confidence routing",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 169.423828125,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/confidence",
+          "label": "Confidence semantics",
+          "box": {
+            "x": 272.3017578125,
+            "y": 968.35,
+            "w": 194.294921875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 23,
+      "id": "gate",
+      "title": "A stricter gate moves work somewhere",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "gate",
+        "title": "A stricter gate moves work somewhere",
+        "section": "06",
+        "purpose": "Teach selection, error rate, and coverage without fabricated evidence.",
+        "talk": [
+          "All twelve cases and their scores are constructed teaching data. The signal is uncalibrated and is not a real koa-action field.",
+          "Automatic routing coverage is accepted routing decisions divided by twelve. Automatic error uses only accepted decisions; with zero accepted decisions it is undefined. This is a routing metric, not completed-case automation.",
+          "A high-scoring error remains when the threshold rises. Escalations still consume capacity, and errors need not decline monotonically on this sample."
+        ],
+        "transition": "Next account for the work that the routing gate adds and avoids.",
+        "minutes": 1.6
+      },
+      "interaction": "gate",
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n23 / 36\n06 / Interactive operating point\nA stricter gate moves work somewhere\nTwelve constructed examples\n×\n0.99\n✓\n0.96\n✓\n0.92\n✓\n0.88\n×\n0.85\n✓\n0.81\n✓\n0.76\n✓\n0.70\n×\n0.66\n✓\n0.60\n✓\n0.55\n×\n0.51\n✓ correct route · × wrong route\nFaded examples go to review.\nSynthetic sample / uncalibrated signal\nAutomatic-route threshold:\n0.75\n58%\n7 / 12 auto-routed\n29%\n2 / 7 wrong\n5\nTo review\nA high-scoring mistake can survive the gate.\nReview consumes capacity and can add delay.\nConfidence routing\n·\nConfidence semantics\nSynthetic teaching data; drag the threshold",
+      "links": [
+        {
+          "url": "https://docs.typesafe.ai/patterns/confidence-routing",
+          "label": "Confidence routing",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 169.423828125,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/confidence",
+          "label": "Confidence semantics",
+          "box": {
+            "x": 272.3017578125,
+            "y": 968.35,
+            "w": 194.294921875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 24,
+      "id": "economics",
+      "title": "Savings depend on avoiding expensive work",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "economics",
+        "title": "Savings depend on avoiding expensive work",
+        "section": "06",
+        "purpose": "Explain conditional economics with transparent algebra.",
+        "talk": [
+          "This isolates a routing decision replaced by a specialized model. Every constant is invented for teaching; G is one expensive routing call, D is specialized judgment, O is added orchestration and p is the fraction still requiring G.",
+          "At p=0.20 the candidate routing cost is 0.27 normalized units, 73% below the one-unit baseline. At p=0.93 they break even. If every case still needs G, adding D and O makes the routing stage 7% more expensive.",
+          "Familiar exchange and return paths can use service offers and standard messages without frontier generation. Any generated explanation, tool call, retry, review, reconciliation or unfinished obligation must enter whole-case accounting.",
+          "The prior synthetic review queue and the frontier routing fallback G here are distinct destinations. Measure actual routes and their capacity costs. Setup and maintenance need an explicit volume and horizon for a total-cost claim."
+        ],
+        "transition": "Inference latency has an equally important boundary.",
+        "minutes": 1.6
+      },
+      "interaction": "cost",
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n24 / 36\n06 / Interactive break-even\nSavings depend on avoiding expensive work\nRouting step only · invented unit costs\nBaseline = G\nCandidate = D + O + pG\nG = 1.00 expensive routing call\nD = 0.03 specialized decision\nO = 0.04 added orchestration\nRoutes still using G:\n20%\n20% · saves\n93% · even\n100% · costs more\nHypothetical routing-stage arithmetic\nBaseline\nCandidate\n73% lower\n0.27 normalized units\nBreak-even: D + O = (1 − p)G\nLater messages and service work excluded.\nComposable AI\n·\nBuilding with System One\nIllustrative arithmetic; no measured cost claim",
+      "links": [
+        {
+          "url": "https://typesafe.ai/manifesto",
+          "label": "Composable AI",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 135.9853515625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+          "label": "Building with System One",
+          "box": {
+            "x": 238.86328125,
+            "y": 968.35,
+            "w": 225.931640625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 25,
+      "id": "latency",
+      "title": "Fast inference helps the path that uses it",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "latency",
+        "title": "Fast inference helps the path that uses it",
+        "section": "06",
+        "purpose": "Separate primitive speed from workflow speed.",
+        "talk": [
+          "The diagram begins after identity and ownership are established. System One interprets the task, then its handler checks the applicable rules and prepares an offer. A familiar route can use a standard message rather than frontier generation.",
+          "Specialized inference may shorten a repeated semantic step. Complete-case latency also includes services, customer confirmation, recovery and human queues. Measure decision latency, response latency and completion time separately.",
+          "Report latency distributions at the relevant load, including transport and retries. Retain unfinished cases in service-time analysis rather than averaging completed cases alone."
+        ],
+        "transition": "Apply the control model to a deliberately incomplete design.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n25 / 36\n06 / Measure the critical path\nFast inference helps the path that uses it\nFast decision\nMeasure call latency\nHandler checks\nPolicy + stock + quote\nCustomer offer\nMeasure response latency\nReview queue + human handling\nCan dominate the time to resolution\nTrack decision time, response time, and time to completed service separately.\nJev + LangGraph\nMechanism illustration; no timing benchmark",
+      "links": [
+        {
+          "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "label": "Jev + LangGraph",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 145.9228515625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 26,
+      "id": "exercise",
+      "title": "Find the missing boundary",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "exercise",
+        "title": "Find the missing boundary",
+        "section": "07",
+        "purpose": "Check whether the learner can separate prediction from authority.",
+        "talk": [
+          "The initial design is intentionally incomplete: recognizing an exchange request immediately reaches a business write. Allow a short pause, then reveal the missing controls.",
+          "A strong model score cannot repair missing identity and ownership checks, exchange policy and stock checks, or customer confirmation of the offered terms. Place required steps in authored control and enforce their results again in the service.",
+          "Retain the cable return through this repair. Reconcile an unknown exchange-write outcome before retrying, using transaction safeguards appropriate to the service."
+        ],
+        "transition": "Training examples must respect the same decision boundaries.",
+        "minutes": 1.3
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": true,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n26 / 36\n07 / Exercise\nFind the missing boundary\nExchange requested\nStrong model score\nCreate exchange\nBusiness transaction\nHide the repair\nVerify access\nIdentity and owned purchase.\nCheck policy\nExchange rules, stock, terms + confirmation.\nEnforce in service\nRecheck authorization and record outcome.\nReliable enterprise agents\n·\nAgentScript control plane\nConstructed design exercise",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+          "label": "Reliable enterprise agents",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 227.1318359375,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 330.009765625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 27,
+      "id": "dataset",
+      "title": "Begin the dataset at the decision boundary",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "dataset",
+        "title": "Begin the dataset at the decision boundary",
+        "section": "08",
+        "purpose": "Prevent future information leaking into model features.",
+        "talk": [
+          "Freeze the source snapshot and reconstruct what the semantic node could access at the decision time: conversation prefix, verified candidate items and relevant current state.",
+          "Independent reviewers label remedy, purchased-unit scope, interpretation status and AND/OR/IF relationships. Keep the separately purchased cable distinct from a cable inside a kit.",
+          "A later clarification cannot leak into an earlier input. Preserve record order, timestamps and derivation links. Document filtering and redaction because they can change the model-visible distribution."
+        ],
+        "transition": "Separate fitting and selection from final evaluation.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n27 / 36\n08 / Step 6\nBegin the dataset at the decision boundary\nAt decision time\nInput snapshot\nConversation prefix\nTrusted facts available then\nCurrent policy version\nReference label\nRemedy, unit and task relationships\nsupported by that evidence.\nAfter the decision\nLater turns and outcomes\nUseful for separate outcome labels.\nExcluded from the earlier input.\nPreserve order,\nrelationships,\nand provenance.\nTutorial evaluation protocol\nProposed development protocol",
+      "links": [],
+      "companions": [
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Tutorial evaluation protocol"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "id": "training-partitions",
+      "title": "Split examples before developing the decision",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "training-partitions",
+        "title": "Split examples before developing the decision",
+        "section": "08",
+        "purpose": "Show independent data partitions and keep related examples together before fitting or augmentation.",
+        "talk": [
+          "This is proposed task development, not a description of koa-action foundation-model training or a supported fine-tuning interface. If direct adaptation is unavailable, retain the fixed model and develop its application configuration.",
+          "Inputs contain only the conversation prefix and trusted state available at the decision time. Route labels use that evidence. Later outcomes or future audio may establish separate outcome or endpoint targets; they cannot enter the earlier model input. Preserve timestamps, record order, and the derivation manifest.",
+          "Group related cases and duplicates before assigning partitions. Create augmentations afterward and keep every variant in its source partition. Account-level groups and later-time cohorts answer different generalization questions.",
+          "Fit learned transforms and any permitted adaptation on training data. Separate calibration fitting from gate selection within development data. The locked test is excluded from all iteration. The solid branches carry different samples, not successive copies of one dataset."
+        ],
+        "transition": "Now follow the frozen artifacts and the evidence needed for release.",
+        "minutes": 1.1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n28 / 36\n08 / Training pipeline — Preserve the partitions\nSplit examples before developing the decision\nDecision-time snapshot\nInputs stop at the decision.\nVersioned records and labels.\nGroup, then split\nBefore augmentation.\nPreserve record relationships.\nFamily rule\nSource + its variants\nstay in one partition.\nSeparate sample partitions\nTrain\nFit permitted components.\nAdaptation is optional.\nAugment training data only.\nDevelopment\nUse separate subsets for\ncalibration and gate selection.\nLocked test\nKeep examples untouched.\nNo fitting or gate tuning.\nRoute labels use decision-time evidence; later outcomes belong to separate targets.\nTutorial evaluation protocol\nProposed task development; adaptation only where supported",
+      "links": [],
+      "companions": [
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Tutorial evaluation protocol"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "id": "training-release",
+      "title": "Freeze the workflow before earning release",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "training-release",
+        "title": "Freeze the workflow before earning release",
+        "section": "08",
+        "purpose": "Separate model artifacts, locked evaluation, and live-service qualification.",
+        "talk": [
+          "The purple dashed arrow carries frozen model and configuration artifacts. A separate green arrow carries untouched examples into the locked evaluation. The artifacts include model version, learned transforms, decision definitions, thresholds, and the workflow policy.",
+          "Passing offline gates qualifies the candidate for a randomized service pilot. The black arrows indicate release qualification; the offline test examples do not become the pilot traffic. Use equivalent permissions, tools, and service requirements for the baseline and candidate.",
+          "Predeclare the pilot assignment unit, observation horizon, failure definition, quality margin, minimum worthwhile saving, and latency limits. Keep related cases assigned consistently and account for interference through shared review queues.",
+          "Roll out only when the predefined pilot gates pass. Track cost per incoming case beside resolution and automatic coverage, including unfinished work. Reviewed feedback goes to a future dataset. If tuning follows a failure, evaluate the new candidate with fresh untouched evidence.",
+          "The full standalone illustration remains available as assets/training-pipeline.svg and assets/training-pipeline.png; these focus views enlarge its two teaching responsibilities without changing its semantics."
+        ],
+        "transition": "Choose the grouping or time split that matches the deployment claim.",
+        "minutes": 1.1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n29 / 36\n08 / Training pipeline — Qualify the candidate\nFreeze the workflow before earning release\nFreeze the selected candidate\nUntouched test cases\nFrozen artifacts\nModel and transforms.\nDecision definitions.\nRouting policy and gates.\nArtifacts\nLocked evaluation\nPaired decision comparison.\nUse untouched examples.\nPredeclare offline gates.\nPass gates\nRandomized pilot\nCompare complete cases.\nQuality, cost, and latency.\nKeep assignment consistent.\nBroader rollout\nOnly if pilot gates pass.\nTrack unfinished work.\nFeedback\nNext dataset\nReviewed feedback only.\nFresh tests for new claims.\nA revision starts\na new candidate.\nRetest before a new claim.\nTutorial evaluation protocol\nProposed qualification gates; no measured deployment result",
+      "links": [],
+      "companions": [
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Tutorial evaluation protocol"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "id": "splits",
+      "title": "Choose the split that matches the claim",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "splits",
+        "title": "Choose the split that matches the claim",
+        "section": "08",
+        "purpose": "Distinguish independent cases from repeated observations.",
+        "talk": [
+          "Unseen-account performance and future-traffic performance are different claims and may need separate tests.",
+          "Assign related cases and near duplicates together, and generate training augmentations only after partitioning.",
+          "One conversation evaluated many times still represents one customer situation. Repeated judgments estimate repeatability, not generalization over new cases."
+        ],
+        "transition": "Define what evidence would earn a rollout.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n30 / 36\n08 / Generalization\nChoose the split that matches the claim\nUnseen accounts\nKeep account families intact.\nA A A\nB B\nC C C\nRelated cases and variants\nstay in one partition.\nFuture traffic\nReserve a later-time cohort.\nEarlier cases\nLater test\nDeclare boundary exclusions\nand duplicate handling.\nTutorial evaluation protocol\n·\nJev-as-a-Judge\nEvaluation design; no completed experiment",
+      "links": [
+        {
+          "url": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+          "label": "Jev-as-a-Judge",
+          "box": {
+            "x": 344.1640625,
+            "y": 968.35,
+            "w": 125.173828125,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": [
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Tutorial evaluation protocol"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "id": "acceptance",
+      "title": "Lower cost must come with acceptable quality",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "acceptance",
+        "title": "Lower cost must come with acceptable quality",
+        "section": "09",
+        "purpose": "Explain the joint acceptance rule with schematic intervals and the whole-case outcome.",
+        "talk": [
+          "These uncertainty ranges are schematic, not measured results. Predeclare the quality margin, required saving, sample size, grouping and analysis method before testing.",
+          "Quality passes only when the upper uncertainty bound on increased failed-case rate lies below the allowed loss. Cost passes only when the lower bound on saving per incoming case exceeds the required gain. Both must pass; this picture’s candidate still waits.",
+          "The worked trace ends with an Authorized exchange and an Active cable return. If that AND obligation remains unresolved at the fixed service deadline, the whole case is incomplete. Count each incoming case once.",
+          "For OR or IF requests, only the selected or triggered action is an active obligation; inactive alternatives are unselected or untriggered. A justified policy denial can be a correct outcome. Define these statuses before evaluating.",
+          "Consequential-error and latency limits are additional gates, using predeclared relevant cohorts independent of either system’s routes. Include unresolved work. The joint null is unacceptable quality loss OR insufficient saving; a nonsignificant difference cannot establish acceptable equivalence."
+        ],
+        "transition": "First isolate the decision on held-out snapshots, then measure the whole service in a controlled pilot.",
+        "minutes": 2
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n31 / 36\n09 / Step 8 · Earn rollout\nLower cost must come with acceptable quality\nSchematic decision rule · no measured results\nQuality: upper end must stay below the limit\nUncertainty range\nAllowed loss\nMore quality loss →\nThis range crosses the margin.\nQuality remains uncertain.\nCost: lower end must exceed the target\nUncertainty range\nRequired saving\nMore saving per case →\nThis range clears the required gain.\nCost passes; rollout still waits.\nCount the whole case:\nexchange authorized + cable return active\n= incomplete at the deadline.\nHarm limits must also pass.\nAssess all cases and the same relevant cohort.\nLatency limits must also pass.\nInclude unfinished cases and resolution time.\nTutorial evaluation protocol\nSchematic acceptance rule; no empirical intervals",
+      "links": [],
+      "companions": [
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Tutorial evaluation protocol"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "id": "evaluation",
+      "title": "Evaluate the decision, then the service",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "evaluation",
+        "title": "Evaluate the decision, then the service",
+        "section": "09",
+        "purpose": "Prevent offline results being overextended to service economics.",
+        "talk": [
+          "Offline replay isolates the bounded decision. It cannot estimate how changed dialogue affects customers or how escalations affect queue capacity.",
+          "In the pilot, keep assignment stable and account for related cases and interference through shared queues. Use the same observation horizon in both arms.",
+          "Report observed operating cost per incoming case with resolution and coverage. Disclose setup and maintenance costs separately; total ownership estimates need an explicit volume and horizon.",
+          "Case automation counts incoming cases completed by the deadline without staff handling. Routing coverage counts decisions accepted automatically at one gate. A model fallback can remain automatic; an accepted routing decision can still lead to an unresolved case."
+        ],
+        "transition": "When an outcome fails, diagnose the responsible boundary.",
+        "minutes": 1.5
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n32 / 36\n09 / Two experiments\nEvaluate the decision, then the service\nPaired offline comparison\nEvaluate the decision.\nSame held-out snapshots.\nSame route question.\nFixed permissions and tools.\nEach model’s gate is selected\non development data.\nControlled service pilot\nEvaluate the complete case.\nRandomized case/account assignment.\nConsistent treatment and horizon.\nCosts, queues, and unresolved work.\nPilot evidence must precede\nwider rollout.\nTutorial evaluation protocol\nProposed controlled evaluation",
+      "links": [],
+      "companions": [
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Tutorial evaluation protocol"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "id": "diagnosis",
+      "title": "Diagnose the boundary that failed",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "diagnosis",
+        "title": "Diagnose the boundary that failed",
+        "section": "09",
+        "purpose": "Connect disaggregation to targeted learning from failure.",
+        "talk": [
+          "If only the exchange was proposed, inspect decision definitions and the authorized context for the omitted cable request. If both tasks were recorded, inspect the graph transition that dropped the cable task.",
+          "A component return charged under the whole-item fee points to policy scope or handler selection. Executing both sides of an OR request points to a lost task relationship. Each failure has a different repair.",
+          "Offline judges can prioritize traces, but require validation against independent references. Review apparent successes as well as escalations; post-run feedback cannot prevent a write that has already occurred."
+        ],
+        "transition": "Finish by identifying one worthwhile first change.",
+        "minutes": 1
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n33 / 36\n09 / Improve the responsible component\nDiagnose the boundary that failed\nExchange authorized; cable task lost\nInspect the recorded route and state changes\nOnly exchange recorded\nDecision boundary\nInspect input evidence,\nlabels, and category definition.\nBoth tasks recorded\nWorkflow boundary\nInspect the transition that\ndropped the pending task.\nTrace looks correct\nOutcome boundary\nInspect services and the\nresolution condition.\nJev in LangSmith Evals\n·\nJev-as-a-Judge\nConstructed failure diagnosis",
+      "links": [
+        {
+          "url": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+          "label": "Jev in LangSmith Evals",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 196.6171875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+          "label": "Jev-as-a-Judge",
+          "box": {
+            "x": 299.4951171875,
+            "y": 968.35,
+            "w": 125.173828125,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": []
+    },
+    {
+      "index": 34,
+      "id": "close",
+      "title": "Start with one decision that changes the path",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "close",
+        "title": "Start with one decision that changes the path",
+        "section": "10",
+        "purpose": "Give the audience a bounded practical next step.",
+        "talk": [
+          "The throughline is an Agentforce composition: koa-action supplies bounded semantic judgment, Agent Graph coordinates state and escalation, and AgentScript defines the controls. Trusted services retain facts and transaction authority.",
+          "Frontier reasoning remains available when a scoped interpretation problem survives clarification and required evidence checks. Familiar exchanges and component returns can use their configured service routes directly.",
+          "LangChain’s September 25, 2026 article attributes the unbundling argument to Jaya Gupta and advocates cheap by default, frontier on exception. Its three-year historical framing is not a measured survey, so this tutorial makes the allocation argument without turning it into a Salesforce development timeline.",
+          "The practical artifact is a bounded decision contract and a small graph. Evaluate complete cases, including every active obligation, before claiming reliability, lower operating cost or shorter completion time."
+        ],
+        "transition": "Use the source notes and full blog for the details behind this tutorial.",
+        "minutes": 0.7
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n34 / 36\n10 / Build, measure, revise\nStart with one decision that changes the path\nSpecialize judgment.\nAuthor the controls.\nKeep every task\naccounted for.\nAgentforce coordinates the work\nwithin quality, cost and latency limits.\n01\nWrite one bounded route question.\n02\nLabel remedies, units and relationships.\n03\nDeclare the node’s input view.\n04\nDraw the guarded failure route.\n05\nDefine complete-case acceptance.\nAgent Graph / guided determinism\n·\nAgentScript control plane\n·\nComposable AI\n·\nJev + LangGraph\n·\nThroughline source check\nSynthesis",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 310.216796875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane",
+          "box": {
+            "x": 413.0947265625,
+            "y": 968.35,
+            "w": 223.9560546875,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://typesafe.ai/manifesto",
+          "label": "Composable AI",
+          "box": {
+            "x": 651.9287109375,
+            "y": 968.35,
+            "w": 135.9853515625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "label": "Jev + LangGraph",
+          "box": {
+            "x": 802.7919921875,
+            "y": 968.35,
+            "w": 145.9228515625,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": [
+        {
+          "identifier": "research/v5-throughline-source-check.md",
+          "label": "Throughline source check"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "id": "sources",
+      "title": "Read the evidence behind the architecture",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "sources",
+        "title": "Read the evidence behind the architecture",
+        "section": "Reference",
+        "purpose": "Provide inspectable source provenance and product boundaries.",
+        "talk": [
+          "The source ledger covers the requested Salesforce, LangChain and TypeSafe resources. The v5 source check records the historical-attribution boundary and the separation between public Koa reasoning and the user-framed koa-action System One component.",
+          "The direct exchange/component service design, merchant policy and proposed evaluation are authored teaching material. TypeSafe’s intent-routing example instead uses a specialist language model; this tutorial’s service mapping must earn its own evidence.",
+          "No native koa-action adapter, common Jev/Salesforce schema, fine-tuning access, calibrated confidence output or benchmark is asserted. Consult blog 09 and the branching specification for the complete design contract."
+        ],
+        "transition": "End of tutorial.",
+        "minutes": 0.5
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n35 / 36\nReference / Further study\nRead the evidence behind the architecture\nSalesforce control\nAgent Graph / guided determinism ↗\nReliable enterprise agents ↗\nAgentScript control plane ↗\nAgentScript specification ↗\nAll sources and claim boundaries ↗\nTutorial handout and notes ↗\nAgent architecture\nJev + LangGraph ↗\nA harness with Jev ↗\nJev in LangSmith Evals ↗\nJev-as-a-Judge ↗\nRuntime, framework, harness ↗\nDecision patterns\nComposable AI ↗\nTypeSafe quickstart ↗\nConfidence routing ↗\nIntent routing ↗\nStructured decision criteria ↗\nBuilding with System One ↗\nAftercare walkthrough + evaluation ↗\nFull training pipeline ↗\nGuided determinism tutorial\n·\nConfidence semantics\nSources link to original pages",
+      "links": [
+        {
+          "url": "https://engineering.salesforce.com/agentforces-agent-graph-toward-guided-determinism-with-hybrid-reasoning/",
+          "label": "Agent Graph / guided determinism ↗",
+          "box": {
+            "x": 125,
+            "y": 390.2,
+            "w": 439.6240234375,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://engineering.salesforce.com/building-enterprise-ai-agents-that-are-both-autonomous-and-reliable/",
+          "label": "Reliable enterprise agents ↗",
+          "box": {
+            "x": 125,
+            "y": 445.7,
+            "w": 330.2978515625,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "label": "AgentScript control plane ↗",
+          "box": {
+            "x": 125,
+            "y": 501.20000000000005,
+            "w": 326.123046875,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://github.com/salesforce/agentscript/blob/main/SPEC.md",
+          "label": "AgentScript specification ↗",
+          "box": {
+            "x": 125,
+            "y": 556.7,
+            "w": 319.1484375,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "label": "Jev + LangGraph ↗",
+          "box": {
+            "x": 715,
+            "y": 390.2,
+            "w": 223.451171875,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/building-a-harness-with-jev",
+          "label": "A harness with Jev ↗",
+          "box": {
+            "x": 715,
+            "y": 445.7,
+            "w": 243.4501953125,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/jev-is-now-available-in-langsmith-evals",
+          "label": "Jev in LangSmith Evals ↗",
+          "box": {
+            "x": 715,
+            "y": 501.20000000000005,
+            "w": 290.1513671875,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/jev-agent-evals-langsmith",
+          "label": "Jev-as-a-Judge ↗",
+          "box": {
+            "x": 715,
+            "y": 556.7,
+            "w": 196.15234375,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://www.langchain.com/blog/deep-agents-vs-langchain-vs-langgraph",
+          "label": "Runtime, framework, harness ↗",
+          "box": {
+            "x": 715,
+            "y": 612.2,
+            "w": 371.3232421875,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://typesafe.ai/manifesto",
+          "label": "Composable AI ↗",
+          "box": {
+            "x": 1305,
+            "y": 390.2,
+            "w": 210.375,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/introduction/quickstart",
+          "label": "TypeSafe quickstart ↗",
+          "box": {
+            "x": 1305,
+            "y": 445.7,
+            "w": 256.298828125,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/patterns/confidence-routing",
+          "label": "Confidence routing ↗",
+          "box": {
+            "x": 1305,
+            "y": 501.20000000000005,
+            "w": 254.3740234375,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/patterns/intent-routing",
+          "label": "Intent routing ↗",
+          "box": {
+            "x": 1305,
+            "y": 556.7,
+            "w": 192.84765625,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/primitives/advanced",
+          "label": "Structured decision criteria ↗",
+          "box": {
+            "x": 1305,
+            "y": 612.2,
+            "w": 344.2255859375,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+          "label": "Building with System One ↗",
+          "box": {
+            "x": 1305,
+            "y": 667.7,
+            "w": 328.72265625,
+            "h": 35.5
+          }
+        },
+        {
+          "url": "https://everythingagents.org/topics/guided-determinism",
+          "label": "Guided determinism tutorial",
+          "box": {
+            "x": 88,
+            "y": 968.35,
+            "w": 251.1640625,
+            "h": 25.649999999999977
+          }
+        },
+        {
+          "url": "https://docs.typesafe.ai/confidence",
+          "label": "Confidence semantics",
+          "box": {
+            "x": 354.0419921875,
+            "y": 968.35,
+            "w": 194.294921875,
+            "h": 25.649999999999977
+          }
+        }
+      ],
+      "companions": [
+        {
+          "identifier": "research/source-ledger.md",
+          "label": "All sources and claim boundaries ↗"
+        },
+        {
+          "identifier": "tutorial-handout.md",
+          "label": "Tutorial handout and notes ↗"
+        },
+        {
+          "identifier": "blog/09-building-prod.md",
+          "label": "Aftercare walkthrough + evaluation ↗"
+        },
+        {
+          "identifier": "assets/training-pipeline.svg",
+          "label": "Full training pipeline ↗"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "id": "returns-components",
+      "title": "Reuse the visual vocabulary in another workflow",
+      "width": 1920,
+      "height": 1080,
+      "note": {
+        "id": "returns-components",
+        "title": "Reuse the visual vocabulary in another workflow",
+        "section": "Appendix",
+        "purpose": "Provide a reusable visual vocabulary for another enterprise workflow.",
+        "talk": [
+          "This optional appendix provides independently movable vector illustrations for another workflow. In PowerPoint, use the Selection Pane to select, copy, resize or rearrange a named object.",
+          "The four workflow views and this library retain separate illustrations, labels and routes. Move a node and its label together, then reposition its connectors. The arrows are vector objects; they do not automatically reconnect.",
+          "Labels are outlined vector artwork. The source SVG assets keep editable source text; speaker notes remain editable PowerPoint text. Calendars and shipping tickets preserve their printed values as a unit.",
+          "Keep the meaning consistent when reusing a component: services establish authority, System One interprets bounded meaning, Agent Graph coordinates transitions and state, AgentScript authors the controls, and a frontier model proposes an interpretation only when the configured exception path calls for it."
+        ],
+        "transition": "Use this vocabulary to sketch another workflow with the same separation of interpretation and authority.",
+        "minutes": 0.5
+      },
+      "interaction": null,
+      "traceScenario": null,
+      "exercise": false,
+      "visibleText": "DISAGGREGATED INTELLIGENCE\n36 / 36\nAppendix / A reusable visual vocabulary\nReuse the visual vocabulary in another workflow\nReusable vector components\nReusable vector objects · optional appendix",
+      "links": [],
+      "companions": [
+        {
+          "identifier": "assets/components-v5/README.md",
+          "label": "Reusable vector components"
+        }
+      ]
+    }
+  ],
+  "browserVerified": false,
+  "inputProvenance": [
+    {
+      "role": "sourceHTML",
+      "path": "../../05-disaggregated-intelligence.html",
+      "sha256": "bb0f3f1b1423bb9db8d26559bca9c1b5efc09c040abba0e214a9e2fef0f23610"
+    },
+    {
+      "role": "frozenHTML",
+      "path": "static-frozen.html",
+      "sha256": "28f930067da01da2d8518cd8a03b9df468a2b81863cc52301915773cc2aa5be2"
+    },
+    {
+      "role": "sourceJSON",
+      "path": "../../src/deck-v5.json",
+      "sha256": "d2c403c09e48f3f31452c159943c42185904c11a3f488dccc862ecf655c35f4a"
+    },
+    {
+      "role": "freezeReport",
+      "path": "../../reviews/05-teaching-state-integrated.json",
+      "sha256": "bf92f2a33de3e2fd8c840b2fe3ac6270525bd3cdbf75810e904800184893317e"
+    },
+    {
+      "role": "diagramGeometry",
+      "path": "../../../diagrams/returns-branching-geometry-report.json",
+      "sha256": "aeef6131c1e4415a91e380ce46ada71741efd17ca36208110e92abaebf7689a2"
+    },
+    {
+      "role": "diagramSource",
+      "path": "../../../diagrams/returns-slide-access.svg",
+      "sha256": "9ab7a3f763cdd165c131e4cf26575936adf898a5e6d6386514fd872216c594fe"
+    },
+    {
+      "role": "diagramOutline",
+      "path": "../../../diagrams/returns-slide-access.outlined.svg",
+      "sha256": "45c0ca959c491397a17c1b0daacb0af74e5e93114792f09b813b44ecb8b817f8"
+    },
+    {
+      "role": "diagramSource",
+      "path": "../../../diagrams/returns-slide-routing.svg",
+      "sha256": "819056366b1d6f64bf5fce42b969a6776aa886f90e7189cda17d8b8d0af39c2d"
+    },
+    {
+      "role": "diagramOutline",
+      "path": "../../../diagrams/returns-slide-routing.outlined.svg",
+      "sha256": "84b653bc8b73bf4ca2d96c17b6ab928d4524edcbe2c5f574b8e9df7bdc948040"
+    },
+    {
+      "role": "diagramSource",
+      "path": "../../../diagrams/returns-slide-reasoning-gate.svg",
+      "sha256": "4864b37bfbc4bfc397b83afb8301e979a689572a5098c0b9bb3b71f48ff00b32"
+    },
+    {
+      "role": "diagramOutline",
+      "path": "../../../diagrams/returns-slide-reasoning-gate.outlined.svg",
+      "sha256": "117ee81ce90e891ae46153563d0cb723ed7438aca363c4cdff8aa99c73aabcd8"
+    },
+    {
+      "role": "diagramSource",
+      "path": "../../../diagrams/returns-slide-whole-item-policy.svg",
+      "sha256": "a8d5ac87e778e018c6d9501ad081bc5de6a659cd109619b61ef7e71eb2395623"
+    },
+    {
+      "role": "diagramOutline",
+      "path": "../../../diagrams/returns-slide-whole-item-policy.outlined.svg",
+      "sha256": "0f22279b373a07870355eea00dee6e60ede22fb6d945e1789c01ec0bc83a03d0"
+    },
+    {
+      "role": "diagramSource",
+      "path": "../../../diagrams/returns-branching-component-library.svg",
+      "sha256": "849ef40d3872af27cd3c4d249c7f4d12474a0aac3ed9300ece19b99491ad6e1b"
+    },
+    {
+      "role": "diagramOutline",
+      "path": "../../../diagrams/returns-branching-component-library.outlined.svg",
+      "sha256": "644d42dcaefe12720bc8883dafb88217853db3e7a8989e5b729226348f810b9e"
+    },
+    {
+      "role": "printedPDF",
+      "path": "slides.pdf",
+      "sha256": "3dc1c419d61b8f81a1b1bab9cf461d86fc65080b977b6b1373b80c75f2635be1"
+    },
+    {
+      "role": "fontAudit",
+      "path": "pdf-fonts.txt",
+      "sha256": "ad13a15f25ca4fe83be5ede8ca98dfcdf848ee9077634f5877eb332a4648f516"
+    },
+    {
+      "role": "layoutValidation",
+      "path": "layout-validation.json",
+      "sha256": "ff6faf874aefe2eb7c688f5954c9651e82cd185d9ddeedfc4c2a0e853cbd59a4"
+    },
+    {
+      "role": "componentFrame",
+      "path": "components/frames/slide-06.svg",
+      "sha256": "a47fea68d8634401983903357d30bfa4b0940b869edf7a6533cb6c9f1065e274"
+    },
+    {
+      "role": "componentFrameFallback",
+      "path": "components/frames/slide-06.png",
+      "sha256": "7bdb241f65dbad7ac9c879d630ba2297527baf617b54e60097f782393325863d"
+    },
+    {
+      "role": "componentFrame",
+      "path": "components/frames/slide-07.svg",
+      "sha256": "a13c7b123768388998c4cbcb9cf709c38194640586680bfbceb2ea27d8d783ed"
+    },
+    {
+      "role": "componentFrameFallback",
+      "path": "components/frames/slide-07.png",
+      "sha256": "a7870ca5669fa73a58f21d7de477b182f25f744174b0983e1181ed10f737b2a0"
+    },
+    {
+      "role": "componentFrame",
+      "path": "components/frames/slide-08.svg",
+      "sha256": "976dadc9a999f22b3ecd641ac34d3161c962c1f59ee70a09f5faae94d6a8c1e3"
+    },
+    {
+      "role": "componentFrameFallback",
+      "path": "components/frames/slide-08.png",
+      "sha256": "c6c30555a7186fb94820f90caf2dd768f0bb4317e039bd5d47eb24e6eafe38ff"
+    },
+    {
+      "role": "componentFrame",
+      "path": "components/frames/slide-09.svg",
+      "sha256": "a1d6392866c5816677f8c07789cf8478cfa0914fbb51fea4b9a384532502542a"
+    },
+    {
+      "role": "componentFrameFallback",
+      "path": "components/frames/slide-09.png",
+      "sha256": "f13c100fd485fe23a92c5acacc7f2d4b95fdc5c485eb392a5ffa00a7d6a66705"
+    },
+    {
+      "role": "componentFrame",
+      "path": "components/frames/slide-36.svg",
+      "sha256": "3c6a03f62a80f57f547cfb616ced2f36de8622b2ca3c2f2738e0218ebf0debb3"
+    },
+    {
+      "role": "componentFrameFallback",
+      "path": "components/frames/slide-36.png",
+      "sha256": "554b6bb6bbadcac6215e037574276fdba008edd758119f453adfaebff5d46015"
+    }
+  ],
+  "blockedRemoteRequests": []
+}

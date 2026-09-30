@@ -1,0 +1,205 @@
+{
+  "purpose": "Open font companions for the native editable v5 slides",
+  "installedGlobally": false,
+  "sourceFontFilesChanged": false,
+  "fonts": [
+    {
+      "family": "Manrope",
+      "style": "Regular",
+      "weight": 400,
+      "file": "Manrope-Regular.ttf",
+      "sha256": "d6596632299f1e7836ecf6ca70a3e73249c99777527a6a82626b72f504348564",
+      "source": "assets/fonts/Manrope.woff2",
+      "sourceSha256": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f",
+      "operation": "Static instance at wght=400; family/style metadata corrected for native Office selection.",
+      "embeddingFsType": 0,
+      "glyphCount": 280,
+      "characterMapEntries": 218,
+      "outlinesSha256": "e0b8056af76a8cf20b65edee308796b741036856da85f4358a592a09f7a3575d",
+      "metricsSha256": "f430d52206232914dcb4a73c0dd664c1227f6cbe63523743505c239919198ef6",
+      "metrics": {
+        "unitsPerEm": 2000,
+        "hhea": {
+          "ascent": 2132,
+          "descent": -600,
+          "lineGap": 0,
+          "advanceWidthMax": 2644
+        },
+        "typo": {
+          "ascent": 2132,
+          "descent": -600,
+          "lineGap": 0
+        },
+        "win": {
+          "ascent": 2132,
+          "descent": 600
+        }
+      },
+      "checks": {
+        "glyphOrderUnchanged": true,
+        "glyphOutlinesUnchanged": true,
+        "horizontalAndVerticalMetricsUnchanged": true,
+        "characterMapUnchanged": true,
+        "embeddingPermissionFlagsUnchanged": true,
+        "staticFont": true,
+        "shapingTablesUnchanged": true
+      },
+      "shapingTableChecks": {
+        "GSUB": true,
+        "GPOS": true,
+        "GDEF": true,
+        "kern": true
+      },
+      "license": "manrope-OFL.txt",
+      "fidelityReference": "The original variable source instantiated at wght=400 and serialized as standard TrueType; no subsequent outline, advance, cmap or shaping changes.",
+      "staticSerializationRounding": {
+        "maximumCoordinateDifferenceInFontUnits": 0.671630859375,
+        "glyphsWithRequiredIntegerRounding": 276,
+        "explanation": "Variable interpolation can produce fractional coordinates. Standard static TrueType serialization rounds to native integer design units; outline topology is preserved."
+      }
+    },
+    {
+      "family": "Manrope",
+      "style": "Bold",
+      "weight": 700,
+      "file": "Manrope-Bold.ttf",
+      "sha256": "450ac54f2836c98ef73560bf7c5dc7cbfc9a75b429cde2e416ed91497d35e5c8",
+      "source": "assets/fonts/Manrope.woff2",
+      "sourceSha256": "e310b55a7fd9677f5e3555e6c6c4d064fa1f1d24393f0ddbe217cea12a8c432f",
+      "operation": "Static instance at wght=700; family/style metadata corrected for native Office selection.",
+      "embeddingFsType": 0,
+      "glyphCount": 280,
+      "characterMapEntries": 218,
+      "outlinesSha256": "cc031dd3603ba62ea3843960614294429478709b4749d9e88c887c67a0fc0fd6",
+      "metricsSha256": "ae89bfe3dd1813fc5e71dfc8e676927072feed4a2dc30dedf3e529d66997aa48",
+      "metrics": {
+        "unitsPerEm": 2000,
+        "hhea": {
+          "ascent": 2132,
+          "descent": -600,
+          "lineGap": 0,
+          "advanceWidthMax": 2644
+        },
+        "typo": {
+          "ascent": 2132,
+          "descent": -600,
+          "lineGap": 0
+        },
+        "win": {
+          "ascent": 2132,
+          "descent": 600
+        }
+      },
+      "checks": {
+        "glyphOrderUnchanged": true,
+        "glyphOutlinesUnchanged": true,
+        "horizontalAndVerticalMetricsUnchanged": true,
+        "characterMapUnchanged": true,
+        "embeddingPermissionFlagsUnchanged": true,
+        "staticFont": true,
+        "shapingTablesUnchanged": true
+      },
+      "shapingTableChecks": {
+        "GSUB": true,
+        "GPOS": true,
+        "GDEF": true,
+        "kern": true
+      },
+      "license": "manrope-OFL.txt",
+      "fidelityReference": "The original variable source instantiated at wght=700 and serialized as standard TrueType; no subsequent outline, advance, cmap or shaping changes.",
+      "staticSerializationRounding": {
+        "maximumCoordinateDifferenceInFontUnits": 0.83477783203125,
+        "glyphsWithRequiredIntegerRounding": 276,
+        "explanation": "Variable interpolation can produce fractional coordinates. Standard static TrueType serialization rounds to native integer design units; outline topology is preserved."
+      }
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "Regular",
+      "weight": 400,
+      "file": "IBMPlexMono-Regular.ttf",
+      "sha256": "72de6a5c61b8661d5ea564d2736e2b2dcc7baf146735f2907e6237943086a67a",
+      "source": "assets/fonts/IBMPlexMono.woff2",
+      "sourceSha256": "c36f509c0a8f9f85f29cb44bc8701d8a9e0b14c499e77a884f789ead7093a7ac",
+      "operation": "Lossless WOFF2 container decoding to TrueType; font names, design, data and permission flags preserved.",
+      "embeddingFsType": 0,
+      "glyphCount": 280,
+      "characterMapEntries": 229,
+      "outlinesSha256": "585d74250dbb22b8f7be637f22be6bbcebac3f8d902aa3c1606e71d7fbc6b620",
+      "metricsSha256": "2bce01eae4706c1cfab67b2c580010c08a82e24d7d6cb3a9b850a467718bf8d9",
+      "metrics": {
+        "unitsPerEm": 1000,
+        "hhea": {
+          "ascent": 1025,
+          "descent": -275,
+          "lineGap": 0,
+          "advanceWidthMax": 600
+        },
+        "typo": {
+          "ascent": 1025,
+          "descent": -275,
+          "lineGap": 0
+        },
+        "win": {
+          "ascent": 1025,
+          "descent": 275
+        }
+      },
+      "checks": {
+        "glyphOrderUnchanged": true,
+        "glyphOutlinesUnchanged": true,
+        "horizontalAndVerticalMetricsUnchanged": true,
+        "characterMapUnchanged": true,
+        "embeddingPermissionFlagsUnchanged": true,
+        "staticFont": true,
+        "shapingTablesUnchanged": true
+      },
+      "shapingTableChecks": {
+        "GSUB": true,
+        "GPOS": true,
+        "GDEF": true,
+        "kern": true
+      },
+      "reconstructedTableChecks": {
+        "hhea": true,
+        "maxp": true,
+        "OS/2": true,
+        "hmtx": true,
+        "cmap": true,
+        "loca": true,
+        "glyf": true,
+        "name": true,
+        "post": true,
+        "gasp": true,
+        "GDEF": true,
+        "GPOS": true,
+        "GSUB": true
+      },
+      "license": "ibmplexmono-OFL.txt",
+      "fidelityReference": "Original bundled WOFF2 font data, with all reconstructed tables except container checksum adjustment compared byte for byte."
+    }
+  ],
+  "licenses": [
+    {
+      "file": "manrope-OFL.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "source": "assets/fonts/manrope-OFL.txt",
+      "copiedWithoutChanges": true
+    },
+    {
+      "file": "ibmplexmono-OFL.txt",
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da",
+      "source": "assets/fonts/ibmplexmono-OFL.txt",
+      "copiedWithoutChanges": true
+    }
+  ],
+  "excludedFont": {
+    "family": "Salesforce Sans",
+    "reason": "The supplied fonts declare OS/2.fsType=4 (preview-and-print embedding). They are not embedded for editing, converted, or redistributed by this pack. Use a separately licensed installation.",
+    "permissionFlagsChanged": false
+  },
+  "coverage": "These are the existing bundled Latin subsets. They preserve their original character coverage and do not add other scripts or symbols.",
+  "generator": "docs/slides/src/prepare-editable-v5-fonts.py",
+  "generatorSha256": "9c24a49bd79c9d6041c41dbe1e344bcad24869ae9bb64be16007d622bed56e1b",
+  "passed": true
+}

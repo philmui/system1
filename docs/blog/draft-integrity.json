@@ -1,0 +1,58 @@
+{
+  "drafts": [
+    {
+      "file": "01-building-prod.md",
+      "sha256": "47ef5fccc7da02e8898e39ed44f81fe36179039900842b68bcee6128d0493ed1",
+      "words": 1131,
+      "bytes": 8190
+    },
+    {
+      "file": "02-building-prod.md",
+      "sha256": "a953064fbaeaafa18671c858f3b9ec535c9cd2b9698488cedbe43f82f9ac9524",
+      "words": 1248,
+      "bytes": 9182
+    },
+    {
+      "file": "03-building-prod.md",
+      "sha256": "31b1fa6f10fefb7d506de7c2f1b29f4d38e11896366d29710c0eeff076f075ca",
+      "words": 1661,
+      "bytes": 12100
+    },
+    {
+      "file": "04-building-prod.md",
+      "sha256": "1d2b4c00d9b7e35e8a948c416af52c742e5065170bbd403e58d2d3a301535d1f",
+      "words": 1852,
+      "bytes": 13482
+    },
+    {
+      "file": "05-building-prod.md",
+      "sha256": "a486b236ec8664bee623764e0dfdaac3bacf8e5db6f45f2d3e7cdf8058f528a1",
+      "words": 1887,
+      "bytes": 13894
+    },
+    {
+      "file": "06-building-prod.md",
+      "sha256": "cefd19856867af5abaeb53bd75637e7382ef5324b881cc7e66a70cdb2dbd1b95",
+      "words": 1962,
+      "bytes": 14688
+    },
+    {
+      "file": "07-building-prod.md",
+      "sha256": "660d5c9b3c900cf80835c026b4d86fc6f01eea1d776c306f73290e0c174db155",
+      "words": 2110,
+      "bytes": 15766
+    },
+    {
+      "file": "08-building-prod.md",
+      "sha256": "042deb51b870350e530de2812db4f388453f070ebce17cb7e137af3b424086b5",
+      "words": 3465,
+      "bytes": 25063
+    },
+    {
+      "file": "09-building-prod.md",
+      "sha256": "16ed5d05c7e1bae5c01052d6016de3a4e84f4c7e98804a776587067818488d90",
+      "words": 3556,
+      "bytes": 26662
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "file": "extract-editable-layout-v5.py",
+      "sha256": "41159f8e91046140e24e65ab8e5fd90d49e135e409ce4b7267a95362d642e7b9",
+      "bytes": 35092
+    },
+    {
+      "file": "svg_to_editable.py",
+      "sha256": "a102c3cfeeb349f7e0ac31b38a9f85ff3ccf6b5a99368b90a6d8a3ed8c9f1c4c",
+      "bytes": 41953
+    },
+    {
+      "file": "build-editable-powerpoint-v5.py",
+      "sha256": "e100b222ff781c16e99905380a02afa2d6d51506e512f08131f0fa468d82110e",
+      "bytes": 28419
+    },
+    {
+      "file": "validate-editable-powerpoint.py",
+      "sha256": "ee145d8bb05412e8cbe6c1dd3d4191a8394705331786ecb7168c710f47f2c6c4",
+      "bytes": 22375
+    },
+    {
+      "file": "render-editable-powerpoint-proof.py",
+      "sha256": "5a612f98d316732d02e360a18f21a891b750737f96e83944a6460bd2155dedd5",
+      "bytes": 19781
+    },
+    {
+      "file": "verify-editable-vectors.py",
+      "sha256": "11e59dc01194fdc8d313cde99ce9898e6059ddfc7856c970c68f93a7f4ee7a69",
+      "bytes": 10123
+    },
+    {
+      "file": "prepare-editable-v5-fonts.py",
+      "sha256": "9c24a49bd79c9d6041c41dbe1e344bcad24869ae9bb64be16007d622bed56e1b",
+      "bytes": 13439
+    }
+  ],
+  "layoutManifest": "../../exports/05-disaggregated-intelligence-editable/layout-manifest.json",
+  "layoutManifestSha256": "bf47e507edc2db736dbecf11692acc1c51aa827f363bfa48cffcea1336d80846"
+}

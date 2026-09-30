@@ -1,0 +1,73 @@
+{
+  "method": "Actual v5 component-packager provenance guard invoked with isolated synthetic preflight fixtures. Invalid cases must reject before archive parsing or output creation. This does not validate a real v5 package.",
+  "packagerSha256": "5434b65982f6d53b98bcc33ca96250be260254c7f0af65701793abcd426033f1",
+  "packagerUnchangedDuringChecks": true,
+  "cases": [
+    {
+      "case": "mismatched-source",
+      "expectedRejection": "Component source or base PowerPoint differs from the verified print export.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "Component source or base PowerPoint differs from the verified print export."
+    },
+    {
+      "case": "changed-base",
+      "expectedRejection": "Component source or base PowerPoint differs from the verified print export.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "Component source or base PowerPoint differs from the verified print export."
+    },
+    {
+      "case": "changed-frame",
+      "expectedRejection": "Frame differs from the verified print: returns-access/svg",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "Frame differs from the verified print: returns-access/svg"
+    },
+    {
+      "case": "mismatched-diagram",
+      "expectedRejection": "Component source differs from printed composition: returns-access",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "Component source differs from printed composition: returns-access"
+    },
+    {
+      "case": "failed-reconstruction",
+      "expectedRejection": "Current complete-page reconstruction must pass before packaging.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "Current complete-page reconstruction must pass before packaging."
+    },
+    {
+      "case": "stale-reconstruction-manifest",
+      "expectedRejection": "Current complete-page reconstruction must pass before packaging.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "Current complete-page reconstruction must pass before packaging."
+    },
+    {
+      "case": "stale-reconstruction-source",
+      "expectedRejection": "Current complete-page reconstruction must pass before packaging.",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "Current complete-page reconstruction must pass before packaging."
+    },
+    {
+      "case": "changed-proof-asset",
+      "expectedRejection": "A reconstruction input changed: proof-object.svg",
+      "exitCode": 1,
+      "rejectedBeforePackage": true,
+      "passed": true,
+      "stderr": "A reconstruction input changed: proof-object.svg"
+    }
+  ],
+  "passed": true,
+  "limits": "Positive v5 packaging, structural validation and real visual reconstruction remain separate required checks."
+}

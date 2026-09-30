@@ -1,0 +1,274 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "14 \u00b7 l: DISAGGREGATED INTELLIGENCE [p14-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "14 \u00b7 r: 14 / 36 [p14-text-0006]",
+    "text": "14 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "14 \u00b7 endpointing-eyebrow: 03 / A PREFIX IS THE INPUT [p14-text-0007]",
+    "text": "03 / A PREFIX IS THE INPUT",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      314.845703125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "14 \u00b7 endpointing-title: Endpointing is a decision in time [p14-text-0008]",
+    "text": "Endpointing is a decision in time",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      184.05597071850394,
+      1051.21875,
+      71.1005859375
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1005",
+    "name": "14 \u00b7 endpointing-text-1: Cut too early [p14-text-0009]",
+    "text": "Cut too early",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      89.2001953125,
+      707.519415292815,
+      239.322265625,
+      39.0009765625
+    ],
+    "baseline": [
+      88.0,
+      736.919805917815
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "14 \u00b7 endpointing-text-2: The customer is interrupted. [p14-text-0010]",
+    "text": "The customer is interrupted.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      88.099609375,
+      771.3000393700787,
+      325.3984375,
+      24.5244140625
+    ],
+    "baseline": [
+      88.0,
+      789.7248440575787
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "14 \u00b7 endpointing-text-3: Wait too long [p14-text-0011]",
+    "text": "Wait too long",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      679.7933467642716,
+      707.519415292815,
+      243.681640625,
+      39.6005859375
+    ],
+    "baseline": [
+      679.3333858267716,
+      736.919805917815
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "14 \u00b7 endpointing-text-4: The response is delayed. [p14-text-0012]",
+    "text": "The response is delayed.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      679.4329952017716,
+      771.3000393700787,
+      280.1767578125,
+      24.8505859375
+    ],
+    "baseline": [
+      679.3333858267716,
+      789.7248440575787
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "14 \u00b7 endpointing-text-5: Keep the boundary [p14-text-0013]",
+    "text": "Keep the boundary",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1273.4664188607283,
+      708.120001230315,
+      348.22265625,
+      38.400390625
+    ],
+    "baseline": [
+      1270.6666141732283,
+      736.919805917815
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "14 \u00b7 endpointing-text-6: Future audio may label the prefix. It cannot enter the input. [p14-text-0014]",
+    "text": "Future audio may label the prefix.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1272.9166141732283,
+      771.3000393700787,
+      384.578125,
+      24.8505859375
+    ],
+    "baseline": [
+      1270.6666141732283,
+      789.7248440575787
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "14 \u00b7 endpointing-text-6: Future audio may label the prefix. It cannot enter the input. [p14-text-0014]",
+    "text": "It cannot enter the input.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1272.0162235482283,
+      806.8000393700787,
+      288.8984375,
+      24.5244140625
+    ],
+    "baseline": [
+      1270.6666141732283,
+      825.2248440575787
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "14 \u00b7 span: Available audio prefix [p14-text-0015]",
+    "text": "Available audio prefix",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      157.8801171875,
+      392.1494140625,
+      298.7109375,
+      29.4296875
+    ],
+    "baseline": [
+      157.76,
+      414.259765625
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "14 \u00b7 span: Future audio [p14-text-0016]",
+    "text": "Future audio",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1259.1801953125,
+      392.1494140625,
+      172.560546875,
+      22.53125
+    ],
+    "baseline": [
+      1256.48,
+      414.259765625
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "14 \u00b7 tag: DECISION NOW [p14-text-0017]",
+    "text": "DECISION NOW",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      944.5551171875,
+      608.91491941437,
+      159.4658203125,
+      15.162109375
+    ],
+    "baseline": [
+      942.56,
+      623.82507566437
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "14 \u00b7 span: Building with System One [p14-text-0018]",
+    "text": "Building with System One",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.7099609375,
+      973.840947034941,
+      223.2900390625,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "14 \u00b7 span: Illustrative waveform; proposed evaluation [p14-text-0019]",
+    "text": "Illustrative waveform; proposed evaluation",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1458.2813278174212,
+      973.840947034941,
+      372.2177734375,
+      18.6396484375
+    ],
+    "baseline": [
+      1457.2549606299212,
+      987.843876722441
+    ]
+  }
+]

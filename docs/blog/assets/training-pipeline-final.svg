@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">A proposed training and evaluation pipeline for koa-action decisions</title>
+  <desc id="description">A preserved, versioned source dataset with adjudicated labels is split into training, validation, and locked test partitions before augmentation. Every model input contains only the conversation prefix and trusted state available at the decision timestamp. Later events may supply labels but cannot enter input features. Related cases, conversations, or document families remain together, with time boundaries applied as appropriate. Only training data fit transforms or supported task adaptation. Separate validation folds calibrate probabilities and select thresholds, then freeze all model and policy artifacts. The locked test receives test data and frozen artifacts solely for evaluation; it has no path back to fitting. Passing predefined offline criteria qualifies the frozen candidate for a controlled service pilot. The pilot compares the candidate against the baseline with randomized assignment and measures quality, total cost, and latency. Broader rollout requires passing the predefined pilot gates. Monitored production supplies reviewed examples to a future dataset version, never to the current test. This is a proposed application workflow, not a documented koa-action pretraining recipe.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#6A7E86"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #263B44; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 1.8px; fill: #5A6D75; }
+      .heading { font-size: 33px; font-weight: 650; letter-spacing: -.7px; }
+      .subtitle { font-size: 18px; fill: #52666F; }
+      .title { font-size: 22px; font-weight: 650; letter-spacing: -.3px; }
+      .body { font-size: 16px; fill: #405863; }
+      .small { font-size: 13px; fill: #536A74; }
+      .partition { font-size: 12px; font-weight: 700; letter-spacing: 1.2px; fill: #47626C; }
+      .connector { fill: none; stroke: #6A7E86; stroke-width: 2; marker-end: url(#arrow); }
+      .bus { fill: none; stroke: #8B9DA3; stroke-width: 1.8; }
+      .card { stroke-width: 1.25; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="#FBFCFD"/>
+  <text x="50" y="39" class="eyebrow">PROPOSED APPLICATION WORKFLOW</text>
+  <text x="50" y="80" class="heading">A training pipeline for koa-action decisions</text>
+  <text x="50" y="112" class="subtitle">Preserve the evidence, separate the data, and test a frozen workflow.</text>
+
+  <!-- Provenance and partitioning precede every fitted or augmented artifact. -->
+  <rect x="50" y="144" width="450" height="133" rx="18" fill="#EAF2FA" stroke="#D1DFEC" class="card"/>
+  <text x="74" y="179" class="title">Preserve a versioned dataset</text>
+  <text x="74" y="209" class="body">Adjudicated labels; inputs stop at decision time</text>
+  <text x="74" y="232" class="body">Keep the source snapshot and record order</text>
+  <text x="74" y="255" class="body">Retain failures and unresolved cases</text>
+
+  <path d="M 510 210 H 648" class="connector"/>
+  <text x="579" y="194" text-anchor="middle" class="small">Versioned corpus</text>
+
+  <rect x="660" y="144" width="490" height="133" rx="18" fill="#F0EDF9" stroke="#DDD7EC" class="card"/>
+  <text x="684" y="179" class="title">Split before augmentation</text>
+  <text x="684" y="209" class="body">Group by case, conversation, or document family</text>
+  <text x="684" y="232" class="body">Set time boundaries for the evaluation question</text>
+  <text x="684" y="255" class="body">Keep related records in the same partition</text>
+
+  <path d="M 905 277 V 324 M 211 324 H 989" class="bus"/>
+  <path d="M 211 324 V 357" class="connector"/>
+  <path d="M 600 324 V 357" class="connector"/>
+  <path d="M 989 324 V 357" class="connector"/>
+  <text x="50" y="313" class="small">Separate data partitions</text>
+
+  <!-- Only the training partition fits learned transforms or model components. -->
+  <rect x="50" y="365" width="322" height="207" rx="18" fill="#E9F4EF" stroke="#CBDED4" class="card"/>
+  <text x="72" y="396" class="partition">TRAINING DATA</text>
+  <text x="72" y="429" class="title">Fit the task component</text>
+  <text x="72" y="462" class="body">Fit transforms on this partition</text>
+  <text x="72" y="486" class="body">Adapt koa-action where supported,</text>
+  <text x="72" y="510" class="body">or fit a downstream decision model</text>
+  <path d="M 72 527 H 350" stroke="#C6DCD0" stroke-width="1"/>
+  <text x="72" y="551" class="body">Augment training records only</text>
+
+  <path d="M 380 468 H 431" class="connector"/>
+  <text x="405" y="491" text-anchor="middle" class="small">Fitted</text>
+  <text x="405" y="508" text-anchor="middle" class="small">artifacts</text>
+
+  <rect x="439" y="365" width="322" height="207" rx="18" fill="#FFF4DD" stroke="#EBDDBB" class="card"/>
+  <text x="461" y="396" class="partition">VALIDATION DATA</text>
+  <text x="461" y="429" class="title">Calibrate, then freeze</text>
+  <text x="461" y="462" class="body">Separate calibration and tuning folds</text>
+  <text x="461" y="486" class="body">Choose decision thresholds</text>
+  <text x="461" y="510" class="body">Freeze model, rubric, and rules</text>
+  <path d="M 461 527 H 739" stroke="#E8D9B4" stroke-width="1"/>
+  <text x="461" y="551" class="body">Set offline and pilot success gates</text>
+
+  <path d="M 769 468 H 820" class="connector"/>
+  <text x="794" y="491" text-anchor="middle" class="small">Frozen</text>
+  <text x="794" y="508" text-anchor="middle" class="small">artifacts</text>
+
+  <!-- Test data never contribute to fitting, calibration, or threshold selection. -->
+  <rect x="828" y="365" width="322" height="207" rx="18" fill="#EAF2FA" stroke="#C6D9E9" stroke-width="2"/>
+  <text x="850" y="396" class="partition">LOCKED TEST DATA</text>
+  <text x="850" y="429" class="title">Evaluate once</text>
+  <text x="850" y="462" class="body">Use frozen artifacts only</text>
+  <text x="850" y="486" class="body">Measure workflow outcomes</text>
+  <text x="850" y="510" class="body">Report uncertainty and failures</text>
+  <path d="M 850 527 H 1128" stroke="#CBDDEB" stroke-width="1"/>
+  <text x="850" y="551" class="body">No fitting or threshold selection</text>
+
+  <path d="M 989 580 V 620" class="connector"/>
+  <text x="1007" y="605" class="small">Offline gates pass</text>
+
+  <!-- Offline success qualifies a controlled pilot; broader rollout depends on pilot gates. -->
+  <rect x="828" y="628" width="322" height="142" rx="18" fill="#FBECE4" stroke="#EACFC0" class="card"/>
+  <text x="850" y="663" class="title">Controlled service pilot</text>
+  <text x="850" y="694" class="body">Randomized baseline comparison</text>
+  <text x="850" y="718" class="body">Measure quality, cost, and latency</text>
+  <text x="850" y="742" class="body">Roll out only if all gates pass</text>
+
+  <path d="M 820 699 H 769" class="connector"/>
+
+  <rect x="439" y="628" width="322" height="142" rx="18" fill="#F0EDF9" stroke="#DCD5EC" class="card"/>
+  <text x="461" y="663" class="title">Monitor the workflow</text>
+  <text x="461" y="694" class="body">Track drift, failures, and outcomes</text>
+  <text x="461" y="718" class="body">Log model and policy versions</text>
+  <text x="461" y="742" class="body">Review before adding new labels</text>
+
+  <path d="M 431 699 H 380" class="connector" stroke-dasharray="5 5"/>
+
+  <rect x="50" y="628" width="322" height="142" rx="18" fill="#E9F4EF" stroke="#CBDED4" class="card"/>
+  <text x="72" y="663" class="title">Build the next dataset</text>
+  <text x="72" y="694" class="body">Review new production examples</text>
+  <text x="72" y="718" class="body">Version the next training corpus</text>
+  <text x="72" y="742" class="body">Reserve a fresh test for new claims</text>
+
+  <text x="50" y="821" class="subtitle">Proposed task adaptation and validation; not a disclosed koa-action pretraining recipe.</text>
+  <path d="M 50 853 H 86" class="connector"/>
+  <text x="99" y="858" class="small">Data, artifacts, or workflow</text>
+  <path d="M 384 853 H 420" class="connector" stroke-dasharray="5 5"/>
+  <text x="433" y="858" class="small">Reviewed feedback for a future dataset only</text>
+</svg>

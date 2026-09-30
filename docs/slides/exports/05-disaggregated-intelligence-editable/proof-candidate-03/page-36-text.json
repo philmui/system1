@@ -1,0 +1,308 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "36 \u00b7 l: DISAGGREGATED INTELLIGENCE [p36-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      62.07133858267716,
+      328.4951171875,
+      13.0
+    ],
+    "baseline": [
+      88.0,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "36 \u00b7 r: 36 / 36 [p36-text-0006]",
+    "text": "36 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1755.9636220472441,
+      60.07133858267716,
+      74.798828125,
+      17.0
+    ],
+    "baseline": [
+      1755.9636220472441,
+      75.07133858267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "36 \u00b7 returns-components-eyebrow: APPENDIX / A REUSABLE VISUAL VOCABULARY [p36-text-0007]",
+    "text": "APPENDIX / A REUSABLE VISUAL VOCABULARY",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      87.0,
+      127.18913385826774,
+      528.693359375,
+      17.999999999999986
+    ],
+    "baseline": [
+      88.0,
+      143.18913385826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "36 \u00b7 returns-components-title: Reuse the visual vocabulary in another workflow [p36-text-0008]",
+    "text": "Reuse the visual vocabulary in another workflow",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0,
+      184.04425196850394,
+      1573.58203125,
+      70.0
+    ],
+    "baseline": [
+      88.0,
+      237.04425196850394
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "text \u00b7 11",
+    "text": "Identity gate",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      151.99992125984252,
+      536.0,
+      183.99999999999997,
+      29.0
+    ],
+    "baseline": [
+      149.99992125984252,
+      558.0
+    ]
+  },
+  {
+    "shapeId": "1030",
+    "name": "text \u00b7 24",
+    "text": "Sign in",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      480.9999212598425,
+      536.0,
+      95.0,
+      29.0
+    ],
+    "baseline": [
+      479.9999212598425,
+      558.0
+    ]
+  },
+  {
+    "shapeId": "1041",
+    "name": "text \u00b7 35",
+    "text": "Whole kit",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      746.9999212598425,
+      536.0,
+      135.0,
+      22.0
+    ],
+    "baseline": [
+      746.9999212598425,
+      558.0
+    ]
+  },
+  {
+    "shapeId": "1049",
+    "name": "text \u00b7 43",
+    "text": "Exchange",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1031.9999212598425,
+      536.0,
+      140.0,
+      29.0
+    ],
+    "baseline": [
+      1029.9999212598425,
+      558.0
+    ]
+  },
+  {
+    "shapeId": "1059",
+    "name": "text \u00b7 53",
+    "text": "Kit part",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1335.9999212598425,
+      536.0,
+      103.0,
+      29.0
+    ],
+    "baseline": [
+      1333.9999212598425,
+      558.0
+    ]
+  },
+  {
+    "shapeId": "1068",
+    "name": "text \u00b7 62",
+    "text": "Inventory",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1605.4999212598425,
+      536.0,
+      137.0,
+      29.0
+    ],
+    "baseline": [
+      1603.4999212598425,
+      558.0
+    ]
+  },
+  {
+    "shapeId": "1077",
+    "name": "text \u00b7 71",
+    "text": "System One",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      156.99992125984252,
+      828.0,
+      172.99999999999997,
+      29.0
+    ],
+    "baseline": [
+      155.99992125984252,
+      850.0
+    ]
+  },
+  {
+    "shapeId": "1091",
+    "name": "text \u00b7 85",
+    "text": "Frontier LLM",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      440.4999212598425,
+      828.0,
+      177.0,
+      22.0
+    ],
+    "baseline": [
+      438.4999212598425,
+      850.0
+    ]
+  },
+  {
+    "shapeId": "1105",
+    "name": "text \u00b7 99",
+    "text": "Human review",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      714.4999212598425,
+      828.0,
+      203.0,
+      22.0
+    ],
+    "baseline": [
+      712.4999212598425,
+      850.0
+    ]
+  },
+  {
+    "shapeId": "1122",
+    "name": "text \u00b7 116",
+    "text": "Customer",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1028.4999212598425,
+      828.0,
+      145.0,
+      22.0
+    ],
+    "baseline": [
+      1028.4999212598425,
+      850.0
+    ]
+  },
+  {
+    "shapeId": "1131",
+    "name": "text \u00b7 125",
+    "text": "Service result",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1286.9999212598425,
+      828.0,
+      200.0,
+      22.0
+    ],
+    "baseline": [
+      1285.9999212598425,
+      850.0
+    ]
+  },
+  {
+    "shapeId": "1137",
+    "name": "text \u00b7 131",
+    "text": "Hold",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      1640.9999212598425,
+      828.0,
+      64.0,
+      22.0
+    ],
+    "baseline": [
+      1638.9999212598425,
+      850.0
+    ]
+  },
+  {
+    "shapeId": "1139",
+    "name": "36 \u00b7 span: Reusable vector components [p36-text-0009]",
+    "text": "Reusable vector components",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.0,
+      973.996220472441,
+      258.0,
+      19.0
+    ],
+    "baseline": [
+      88.0,
+      987.996220472441
+    ]
+  },
+  {
+    "shapeId": "1140",
+    "name": "36 \u00b7 span: Reusable vector objects \u00b7 optional appendix [p36-text-0010]",
+    "text": "Reusable vector objects \u00b7 optional appendix",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1447.9746456692912,
+      972.996220472441,
+      388.0,
+      20.0
+    ],
+    "baseline": [
+      1446.9746456692912,
+      987.996220472441
+    ]
+  }
+]

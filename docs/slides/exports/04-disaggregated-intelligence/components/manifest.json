@@ -1,0 +1,1576 @@
+{
+  "inputHTML": ".v4-working.html",
+  "stage": [
+    1920,
+    1080
+  ],
+  "method": "Individually outlined, tightly cropped vector objects; no raster artwork inside SVG.",
+  "slides": [
+    {
+      "index": 6,
+      "id": "returns-comparison",
+      "frame": {
+        "svg": "frames/slide-06.svg",
+        "png": "frames/slide-06.png"
+      },
+      "objects": [
+        {
+          "name": "returns-comparison / background-1 / 1",
+          "kind": "background",
+          "svg": "objects/returns-comparison-01-background-1.svg",
+          "png": "objects/returns-comparison-01-background-1.png",
+          "x": 88,
+          "y": 292,
+          "w": 1744,
+          "h": 620
+        },
+        {
+          "name": "returns-comparison / Wrapper intelligence / 2",
+          "kind": "label",
+          "svg": "objects/returns-comparison-02-wrapper-intelligence.svg",
+          "png": "objects/returns-comparison-02-wrapper-intelligence.png",
+          "x": 100,
+          "y": 292,
+          "w": 388,
+          "h": 63
+        },
+        {
+          "name": "returns-comparison / Disaggregated intelligence / 3",
+          "kind": "label",
+          "svg": "objects/returns-comparison-03-disaggregated-intelligence.svg",
+          "png": "objects/returns-comparison-03-disaggregated-intelligence.png",
+          "x": 994,
+          "y": 292,
+          "w": 495,
+          "h": 63
+        },
+        {
+          "name": "returns-comparison / connector-4 / 4",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-04-connector-4.svg",
+          "png": "objects/returns-comparison-04-connector-4.png",
+          "x": 948,
+          "y": 353,
+          "w": 24,
+          "h": 517
+        },
+        {
+          "name": "returns-comparison / decoration-5 / 5",
+          "kind": "decoration",
+          "svg": "objects/returns-comparison-05-decoration-5.svg",
+          "png": "objects/returns-comparison-05-decoration-5.png",
+          "x": 321,
+          "y": 443,
+          "w": 360,
+          "h": 328
+        },
+        {
+          "name": "returns-comparison / connector-6 / 6",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-06-connector-6.svg",
+          "png": "objects/returns-comparison-06-connector-6.png",
+          "x": 310,
+          "y": 468,
+          "w": 92,
+          "h": 96
+        },
+        {
+          "name": "returns-comparison / connector-7 / 7",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-07-connector-7.svg",
+          "png": "objects/returns-comparison-07-connector-7.png",
+          "x": 312,
+          "y": 522,
+          "w": 81,
+          "h": 82
+        },
+        {
+          "name": "returns-comparison / connector-8 / 8",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-08-connector-8.svg",
+          "png": "objects/returns-comparison-08-connector-8.png",
+          "x": 602,
+          "y": 468,
+          "w": 89,
+          "h": 96
+        },
+        {
+          "name": "returns-comparison / connector-9 / 9",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-09-connector-9.svg",
+          "png": "objects/returns-comparison-09-connector-9.png",
+          "x": 610,
+          "y": 522,
+          "w": 80,
+          "h": 82
+        },
+        {
+          "name": "returns-comparison / connector-10 / 10",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-10-connector-10.svg",
+          "png": "objects/returns-comparison-10-connector-10.png",
+          "x": 604,
+          "y": 645,
+          "w": 102,
+          "h": 84
+        },
+        {
+          "name": "returns-comparison / connector-11 / 11",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-11-connector-11.svg",
+          "png": "objects/returns-comparison-11-connector-11.png",
+          "x": 606,
+          "y": 679,
+          "w": 114,
+          "h": 106
+        },
+        {
+          "name": "returns-comparison / connector-12 / 12",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-12-connector-12.svg",
+          "png": "objects/returns-comparison-12-connector-12.png",
+          "x": 309,
+          "y": 645,
+          "w": 89,
+          "h": 84
+        },
+        {
+          "name": "returns-comparison / connector-13 / 13",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-13-connector-13.svg",
+          "png": "objects/returns-comparison-13-connector-13.png",
+          "x": 308,
+          "y": 679,
+          "w": 91,
+          "h": 106
+        },
+        {
+          "name": "returns-comparison / identity / 14",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-14-identity.svg",
+          "png": "objects/returns-comparison-14-identity.png",
+          "x": 133,
+          "y": 397,
+          "w": 186,
+          "h": 164
+        },
+        {
+          "name": "returns-comparison / checkpoint-1 / 15",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-15-checkpoint-1.svg",
+          "png": "objects/returns-comparison-15-checkpoint-1.png",
+          "x": 111,
+          "y": 372,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Verify identity / 16",
+          "kind": "label",
+          "svg": "objects/returns-comparison-16-verify-identity.svg",
+          "png": "objects/returns-comparison-16-verify-identity.png",
+          "x": 116,
+          "y": 548,
+          "w": 220,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / receipt / 17",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-17-receipt.svg",
+          "png": "objects/returns-comparison-17-receipt.png",
+          "x": 699,
+          "y": 381,
+          "w": 166,
+          "h": 174
+        },
+        {
+          "name": "returns-comparison / checkpoint-2 / 18",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-18-checkpoint-2.svg",
+          "png": "objects/returns-comparison-18-checkpoint-2.png",
+          "x": 661,
+          "y": 372,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Match receipt / 19",
+          "kind": "label",
+          "svg": "objects/returns-comparison-19-match-receipt.svg",
+          "png": "objects/returns-comparison-19-match-receipt.png",
+          "x": 667,
+          "y": 548,
+          "w": 218,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / policy / 20",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-20-policy.svg",
+          "png": "objects/returns-comparison-20-policy.png",
+          "x": 699,
+          "y": 639,
+          "w": 174,
+          "h": 174
+        },
+        {
+          "name": "returns-comparison / checkpoint-3 / 21",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-21-checkpoint-3.svg",
+          "png": "objects/returns-comparison-21-checkpoint-3.png",
+          "x": 661,
+          "y": 625,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Apply policy / 22",
+          "kind": "label",
+          "svg": "objects/returns-comparison-22-apply-policy.svg",
+          "png": "objects/returns-comparison-22-apply-policy.png",
+          "x": 680,
+          "y": 803,
+          "w": 192,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / parcel / 23",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-23-parcel.svg",
+          "png": "objects/returns-comparison-23-parcel.png",
+          "x": 137,
+          "y": 652,
+          "w": 183,
+          "h": 162
+        },
+        {
+          "name": "returns-comparison / checkpoint-4 / 24",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-24-checkpoint-4.svg",
+          "png": "objects/returns-comparison-24-checkpoint-4.png",
+          "x": 111,
+          "y": 625,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Create return / 25",
+          "kind": "label",
+          "svg": "objects/returns-comparison-25-create-return.svg",
+          "png": "objects/returns-comparison-25-create-return.png",
+          "x": 119,
+          "y": 803,
+          "w": 214,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / frontier / 26",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-26-frontier.svg",
+          "png": "objects/returns-comparison-26-frontier.png",
+          "x": 365,
+          "y": 487,
+          "w": 272,
+          "h": 235
+        },
+        {
+          "name": "returns-comparison / Frontier LLM / 27",
+          "kind": "label",
+          "svg": "objects/returns-comparison-27-frontier-llm.svg",
+          "png": "objects/returns-comparison-27-frontier-llm.png",
+          "x": 393,
+          "y": 722,
+          "w": 216,
+          "h": 68
+        },
+        {
+          "name": "returns-comparison / Every step / 28",
+          "kind": "label",
+          "svg": "objects/returns-comparison-28-every-step.svg",
+          "png": "objects/returns-comparison-28-every-step.png",
+          "x": 419,
+          "y": 769,
+          "w": 164,
+          "h": 62
+        },
+        {
+          "name": "returns-comparison / routine-route / 29",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-29-routine-route.svg",
+          "png": "objects/returns-comparison-29-routine-route.png",
+          "x": 1180,
+          "y": 478,
+          "w": 80,
+          "h": 24
+        },
+        {
+          "name": "returns-comparison / routine-route / 30",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-30-routine-route.svg",
+          "png": "objects/returns-comparison-30-routine-route.png",
+          "x": 1421,
+          "y": 478,
+          "w": 195,
+          "h": 24
+        },
+        {
+          "name": "returns-comparison / routine-route / 31",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-31-routine-route.svg",
+          "png": "objects/returns-comparison-31-routine-route.png",
+          "x": 1650,
+          "y": 500,
+          "w": 170,
+          "h": 177
+        },
+        {
+          "name": "returns-comparison / routine-route / 32",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-32-routine-route.svg",
+          "png": "objects/returns-comparison-32-routine-route.png",
+          "x": 1411,
+          "y": 760,
+          "w": 164,
+          "h": 24
+        },
+        {
+          "name": "returns-comparison / identity / 33",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-33-identity.svg",
+          "png": "objects/returns-comparison-33-identity.png",
+          "x": 1009,
+          "y": 409,
+          "w": 178,
+          "h": 157
+        },
+        {
+          "name": "returns-comparison / checkpoint-1 / 34",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-34-checkpoint-1.svg",
+          "png": "objects/returns-comparison-34-checkpoint-1.png",
+          "x": 987,
+          "y": 384,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Verify identity / 35",
+          "kind": "label",
+          "svg": "objects/returns-comparison-35-verify-identity.svg",
+          "png": "objects/returns-comparison-35-verify-identity.png",
+          "x": 988,
+          "y": 552,
+          "w": 220,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / receipt / 36",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-36-receipt.svg",
+          "png": "objects/returns-comparison-36-receipt.png",
+          "x": 1274,
+          "y": 393,
+          "w": 159,
+          "h": 167
+        },
+        {
+          "name": "returns-comparison / checkpoint-2 / 37",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-37-checkpoint-2.svg",
+          "png": "objects/returns-comparison-37-checkpoint-2.png",
+          "x": 1237,
+          "y": 384,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Match receipt / 38",
+          "kind": "label",
+          "svg": "objects/returns-comparison-38-match-receipt.svg",
+          "png": "objects/returns-comparison-38-match-receipt.png",
+          "x": 1239,
+          "y": 552,
+          "w": 218,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / policy / 39",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-39-policy.svg",
+          "png": "objects/returns-comparison-39-policy.png",
+          "x": 1579,
+          "y": 660,
+          "w": 187,
+          "h": 187
+        },
+        {
+          "name": "returns-comparison / checkpoint-3 / 40",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-40-checkpoint-3.svg",
+          "png": "objects/returns-comparison-40-checkpoint-3.png",
+          "x": 1539,
+          "y": 645,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Apply policy / 41",
+          "kind": "label",
+          "svg": "objects/returns-comparison-41-apply-policy.svg",
+          "png": "objects/returns-comparison-41-apply-policy.png",
+          "x": 1566,
+          "y": 838,
+          "w": 192,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / parcel / 42",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-42-parcel.svg",
+          "png": "objects/returns-comparison-42-parcel.png",
+          "x": 1213,
+          "y": 674,
+          "w": 196,
+          "h": 174
+        },
+        {
+          "name": "returns-comparison / checkpoint-4 / 43",
+          "kind": "badge",
+          "svg": "objects/returns-comparison-43-checkpoint-4.svg",
+          "png": "objects/returns-comparison-43-checkpoint-4.png",
+          "x": 1185,
+          "y": 645,
+          "w": 60,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Create return / 44",
+          "kind": "label",
+          "svg": "objects/returns-comparison-44-create-return.svg",
+          "png": "objects/returns-comparison-44-create-return.png",
+          "x": 1201,
+          "y": 838,
+          "w": 214,
+          "h": 64
+        },
+        {
+          "name": "returns-comparison / system-one / 45",
+          "kind": "illustration",
+          "svg": "objects/returns-comparison-45-system-one.svg",
+          "png": "objects/returns-comparison-45-system-one.png",
+          "x": 1595,
+          "y": 404,
+          "w": 147,
+          "h": 140
+        },
+        {
+          "name": "returns-comparison / System One / 46",
+          "kind": "label",
+          "svg": "objects/returns-comparison-46-system-one.svg",
+          "png": "objects/returns-comparison-46-system-one.png",
+          "x": 1568,
+          "y": 536,
+          "w": 200,
+          "h": 65
+        },
+        {
+          "name": "returns-comparison / koa-action / Jev / 47",
+          "kind": "label",
+          "svg": "objects/returns-comparison-47-koa-action-jev.svg",
+          "png": "objects/returns-comparison-47-koa-action-jev.png",
+          "x": 1555,
+          "y": 580,
+          "w": 226,
+          "h": 61
+        },
+        {
+          "name": "returns-comparison / Agent Graph / 48",
+          "kind": "label",
+          "svg": "objects/returns-comparison-48-agent-graph.svg",
+          "png": "objects/returns-comparison-48-agent-graph.png",
+          "x": 1405,
+          "y": 698,
+          "w": 186,
+          "h": 61
+        },
+        {
+          "name": "returns-comparison / connector-49 / 49",
+          "kind": "connector",
+          "svg": "objects/returns-comparison-49-connector-49.svg",
+          "png": "objects/returns-comparison-49-connector-49.png",
+          "x": 1656,
+          "y": 371,
+          "w": 109,
+          "h": 53
+        },
+        {
+          "name": "returns-comparison / decoration-50 / 50",
+          "kind": "decoration",
+          "svg": "objects/returns-comparison-50-decoration-50.svg",
+          "png": "objects/returns-comparison-50-decoration-50.png",
+          "x": 1742,
+          "y": 347,
+          "w": 72,
+          "h": 72
+        },
+        {
+          "name": "returns-comparison / ? / 51",
+          "kind": "label",
+          "svg": "objects/returns-comparison-51-.svg",
+          "png": "objects/returns-comparison-51-.png",
+          "x": 1756,
+          "y": 347,
+          "w": 44,
+          "h": 69
+        },
+        {
+          "name": "returns-comparison / Complex? / 52",
+          "kind": "label",
+          "svg": "objects/returns-comparison-52-complex.svg",
+          "png": "objects/returns-comparison-52-complex.png",
+          "x": 1660,
+          "y": 299,
+          "w": 149,
+          "h": 60
+        },
+        {
+          "name": "returns-comparison / Same safeguards / 53",
+          "kind": "label",
+          "svg": "objects/returns-comparison-53-same-safeguards.svg",
+          "png": "objects/returns-comparison-53-same-safeguards.png",
+          "x": 831,
+          "y": 859,
+          "w": 258,
+          "h": 53
+        }
+      ],
+      "expectedFullPNG": "../page-06.png"
+    },
+    {
+      "index": 7,
+      "id": "returns-fallback",
+      "frame": {
+        "svg": "frames/slide-07.svg",
+        "png": "frames/slide-07.png"
+      },
+      "objects": [
+        {
+          "name": "returns-fallback / background-1 / 1",
+          "kind": "background",
+          "svg": "objects/returns-fallback-01-background-1.svg",
+          "png": "objects/returns-fallback-01-background-1.png",
+          "x": 88,
+          "y": 292,
+          "w": 1744,
+          "h": 620
+        },
+        {
+          "name": "returns-fallback / identity / 2",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-02-identity.svg",
+          "png": "objects/returns-fallback-02-identity.png",
+          "x": 92,
+          "y": 292,
+          "w": 77,
+          "h": 70
+        },
+        {
+          "name": "returns-fallback / Identity + receipt verified / 3",
+          "kind": "label",
+          "svg": "objects/returns-fallback-03-identity-receipt-verified.svg",
+          "png": "objects/returns-fallback-03-identity-receipt-verified.png",
+          "x": 161,
+          "y": 293,
+          "w": 362,
+          "h": 62
+        },
+        {
+          "name": "returns-fallback / connector-4 / 4",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-04-connector-4.svg",
+          "png": "objects/returns-fallback-04-connector-4.png",
+          "x": 211,
+          "y": 678,
+          "w": 872,
+          "h": 122
+        },
+        {
+          "name": "returns-fallback / routine / 5",
+          "kind": "label",
+          "svg": "objects/returns-fallback-05-routine.svg",
+          "png": "objects/returns-fallback-05-routine.png",
+          "x": 498,
+          "y": 727,
+          "w": 130,
+          "h": 65
+        },
+        {
+          "name": "returns-fallback / connector-6 / 6",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-06-connector-6.svg",
+          "png": "objects/returns-fallback-06-connector-6.png",
+          "x": 294,
+          "y": 473,
+          "w": 115,
+          "h": 147
+        },
+        {
+          "name": "returns-fallback / unclear / / 7",
+          "kind": "label",
+          "svg": "objects/returns-fallback-07-unclear.svg",
+          "png": "objects/returns-fallback-07-unclear.png",
+          "x": 265,
+          "y": 394,
+          "w": 138,
+          "h": 61
+        },
+        {
+          "name": "returns-fallback / complex / 8",
+          "kind": "label",
+          "svg": "objects/returns-fallback-08-complex.svg",
+          "png": "objects/returns-fallback-08-complex.png",
+          "x": 267,
+          "y": 426,
+          "w": 134,
+          "h": 61
+        },
+        {
+          "name": "returns-fallback / connector-9 / 9",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-09-connector-9.svg",
+          "png": "objects/returns-fallback-09-connector-9.png",
+          "x": 571,
+          "y": 472,
+          "w": 104,
+          "h": 24
+        },
+        {
+          "name": "returns-fallback / connector-10 / 10",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-10-connector-10.svg",
+          "png": "objects/returns-fallback-10-connector-10.png",
+          "x": 820,
+          "y": 472,
+          "w": 131,
+          "h": 24
+        },
+        {
+          "name": "returns-fallback / pass / 11",
+          "kind": "label",
+          "svg": "objects/returns-fallback-11-pass.svg",
+          "png": "objects/returns-fallback-11-pass.png",
+          "x": 845,
+          "y": 420,
+          "w": 86,
+          "h": 61
+        },
+        {
+          "name": "returns-fallback / connector-12 / 12",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-12-connector-12.svg",
+          "png": "objects/returns-fallback-12-connector-12.png",
+          "x": 1157,
+          "y": 466,
+          "w": 190,
+          "h": 24
+        },
+        {
+          "name": "returns-fallback / proposal / 13",
+          "kind": "label",
+          "svg": "objects/returns-fallback-13-proposal.svg",
+          "png": "objects/returns-fallback-13-proposal.png",
+          "x": 1185,
+          "y": 414,
+          "w": 136,
+          "h": 61
+        },
+        {
+          "name": "returns-fallback / connector-14 / 14",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-14-connector-14.svg",
+          "png": "objects/returns-fallback-14-connector-14.png",
+          "x": 410,
+          "y": 547,
+          "w": 655,
+          "h": 253
+        },
+        {
+          "name": "returns-fallback / decoration-15 / 15",
+          "kind": "decoration",
+          "svg": "objects/returns-fallback-15-decoration-15.svg",
+          "png": "objects/returns-fallback-15-decoration-15.png",
+          "x": 1036,
+          "y": 771,
+          "w": 34,
+          "h": 34
+        },
+        {
+          "name": "returns-fallback / resolved / 16",
+          "kind": "label",
+          "svg": "objects/returns-fallback-16-resolved.svg",
+          "png": "objects/returns-fallback-16-resolved.png",
+          "x": 856,
+          "y": 655,
+          "w": 142,
+          "h": 62
+        },
+        {
+          "name": "returns-fallback / connector-17 / 17",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-17-connector-17.svg",
+          "png": "objects/returns-fallback-17-connector-17.png",
+          "x": 1156,
+          "y": 554,
+          "w": 204,
+          "h": 151
+        },
+        {
+          "name": "returns-fallback / validated / 18",
+          "kind": "label",
+          "svg": "objects/returns-fallback-18-validated.svg",
+          "png": "objects/returns-fallback-18-validated.png",
+          "x": 1148,
+          "y": 586,
+          "w": 150,
+          "h": 62
+        },
+        {
+          "name": "returns-fallback / connector-19 / 19",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-19-connector-19.svg",
+          "png": "objects/returns-fallback-19-connector-19.png",
+          "x": 1536,
+          "y": 498,
+          "w": 102,
+          "h": 24
+        },
+        {
+          "name": "returns-fallback / connector-20 / 20",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-20-connector-20.svg",
+          "png": "objects/returns-fallback-20-connector-20.png",
+          "x": 675,
+          "y": 543,
+          "w": 86,
+          "h": 106
+        },
+        {
+          "name": "returns-fallback / connector-21 / 21",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-21-connector-21.svg",
+          "png": "objects/returns-fallback-21-connector-21.png",
+          "x": 737,
+          "y": 605,
+          "w": 83,
+          "h": 44
+        },
+        {
+          "name": "returns-fallback / system-one / 22",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-22-system-one.svg",
+          "png": "objects/returns-fallback-22-system-one.png",
+          "x": 139,
+          "y": 542,
+          "w": 169,
+          "h": 161
+        },
+        {
+          "name": "returns-fallback / koa-action / Jev / 23",
+          "kind": "label",
+          "svg": "objects/returns-fallback-23-koa-action-jev.svg",
+          "png": "objects/returns-fallback-23-koa-action-jev.png",
+          "x": 101,
+          "y": 481,
+          "w": 246,
+          "h": 64
+        },
+        {
+          "name": "returns-fallback / clarify / 24",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-24-clarify.svg",
+          "png": "objects/returns-fallback-24-clarify.png",
+          "x": 402,
+          "y": 392,
+          "w": 188,
+          "h": 171
+        },
+        {
+          "name": "returns-fallback / Clarify / 25",
+          "kind": "label",
+          "svg": "objects/returns-fallback-25-clarify.svg",
+          "png": "objects/returns-fallback-25-clarify.png",
+          "x": 432,
+          "y": 549,
+          "w": 126,
+          "h": 68
+        },
+        {
+          "name": "returns-fallback / policy / 26",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-26-policy.svg",
+          "png": "objects/returns-fallback-26-policy.png",
+          "x": 676,
+          "y": 392,
+          "w": 168,
+          "h": 168
+        },
+        {
+          "name": "returns-fallback / Precheck / 27",
+          "kind": "label",
+          "svg": "objects/returns-fallback-27-precheck.svg",
+          "png": "objects/returns-fallback-27-precheck.png",
+          "x": 664,
+          "y": 330,
+          "w": 170,
+          "h": 68
+        },
+        {
+          "name": "returns-fallback / frontier / 28",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-28-frontier.svg",
+          "png": "objects/returns-fallback-28-frontier.png",
+          "x": 937,
+          "y": 371,
+          "w": 245,
+          "h": 212
+        },
+        {
+          "name": "returns-fallback / Still complex? / 29",
+          "kind": "label",
+          "svg": "objects/returns-fallback-29-still-complex.svg",
+          "png": "objects/returns-fallback-29-still-complex.png",
+          "x": 952,
+          "y": 311,
+          "w": 214,
+          "h": 62
+        },
+        {
+          "name": "returns-fallback / Frontier LLM / 30",
+          "kind": "label",
+          "svg": "objects/returns-fallback-30-frontier-llm.svg",
+          "png": "objects/returns-fallback-30-frontier-llm.png",
+          "x": 951,
+          "y": 564,
+          "w": 216,
+          "h": 68
+        },
+        {
+          "name": "returns-fallback / review / 31",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-31-review.svg",
+          "png": "objects/returns-fallback-31-review.png",
+          "x": 1336,
+          "y": 414,
+          "w": 213,
+          "h": 163
+        },
+        {
+          "name": "returns-fallback / Human review / 32",
+          "kind": "label",
+          "svg": "objects/returns-fallback-32-human-review.svg",
+          "png": "objects/returns-fallback-32-human-review.png",
+          "x": 1317,
+          "y": 565,
+          "w": 242,
+          "h": 68
+        },
+        {
+          "name": "returns-fallback / hold / 33",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-33-hold.svg",
+          "png": "objects/returns-fallback-33-hold.png",
+          "x": 1626,
+          "y": 477,
+          "w": 68,
+          "h": 67
+        },
+        {
+          "name": "returns-fallback / Hold / 34",
+          "kind": "label",
+          "svg": "objects/returns-fallback-34-hold.svg",
+          "png": "objects/returns-fallback-34-hold.png",
+          "x": 1618,
+          "y": 536,
+          "w": 84,
+          "h": 61
+        },
+        {
+          "name": "returns-fallback / stop / 35",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-35-stop.svg",
+          "png": "objects/returns-fallback-35-stop.png",
+          "x": 653,
+          "y": 628,
+          "w": 67,
+          "h": 66
+        },
+        {
+          "name": "returns-fallback / hold / 36",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-36-hold.svg",
+          "png": "objects/returns-fallback-36-hold.png",
+          "x": 776,
+          "y": 629,
+          "w": 63,
+          "h": 63
+        },
+        {
+          "name": "returns-fallback / Decline / 37",
+          "kind": "label",
+          "svg": "objects/returns-fallback-37-decline.svg",
+          "png": "objects/returns-fallback-37-decline.png",
+          "x": 628,
+          "y": 664,
+          "w": 118,
+          "h": 60
+        },
+        {
+          "name": "returns-fallback / Hold / 38",
+          "kind": "label",
+          "svg": "objects/returns-fallback-38-hold.svg",
+          "png": "objects/returns-fallback-38-hold.png",
+          "x": 766,
+          "y": 664,
+          "w": 82,
+          "h": 60
+        },
+        {
+          "name": "returns-fallback / policy / 39",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-39-policy.svg",
+          "png": "objects/returns-fallback-39-policy.png",
+          "x": 1097,
+          "y": 690,
+          "w": 163,
+          "h": 163
+        },
+        {
+          "name": "returns-fallback / Same policy / 40",
+          "kind": "label",
+          "svg": "objects/returns-fallback-40-same-policy.svg",
+          "png": "objects/returns-fallback-40-same-policy.png",
+          "x": 1064,
+          "y": 842,
+          "w": 210,
+          "h": 68
+        },
+        {
+          "name": "returns-fallback / connector-41 / 41",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-41-connector-41.svg",
+          "png": "objects/returns-fallback-41-connector-41.png",
+          "x": 1244,
+          "y": 775,
+          "w": 121,
+          "h": 24
+        },
+        {
+          "name": "returns-fallback / customer / 42",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-42-customer.svg",
+          "png": "objects/returns-fallback-42-customer.png",
+          "x": 1366,
+          "y": 701,
+          "w": 140,
+          "h": 157
+        },
+        {
+          "name": "returns-fallback / customer-confirmation / 43",
+          "kind": "badge",
+          "svg": "objects/returns-fallback-43-customer-confirmation.svg",
+          "png": "objects/returns-fallback-43-customer-confirmation.png",
+          "x": 1457,
+          "y": 723,
+          "w": 68,
+          "h": 68
+        },
+        {
+          "name": "returns-fallback / Confirm / 44",
+          "kind": "label",
+          "svg": "objects/returns-fallback-44-confirm.svg",
+          "png": "objects/returns-fallback-44-confirm.png",
+          "x": 1363,
+          "y": 842,
+          "w": 150,
+          "h": 68
+        },
+        {
+          "name": "returns-fallback / connector-45 / 45",
+          "kind": "connector",
+          "svg": "objects/returns-fallback-45-connector-45.svg",
+          "png": "objects/returns-fallback-45-connector-45.png",
+          "x": 1504,
+          "y": 775,
+          "w": 106,
+          "h": 24
+        },
+        {
+          "name": "returns-fallback / parcel / 46",
+          "kind": "illustration",
+          "svg": "objects/returns-fallback-46-parcel.svg",
+          "png": "objects/returns-fallback-46-parcel.png",
+          "x": 1592,
+          "y": 691,
+          "w": 196,
+          "h": 174
+        },
+        {
+          "name": "returns-fallback / Return authorized / 47",
+          "kind": "label",
+          "svg": "objects/returns-fallback-47-return-authorized.svg",
+          "png": "objects/returns-fallback-47-return-authorized.png",
+          "x": 1540,
+          "y": 844,
+          "w": 288,
+          "h": 65
+        }
+      ],
+      "expectedFullPNG": "../page-07.png"
+    },
+    {
+      "index": 8,
+      "id": "returns-policy",
+      "frame": {
+        "svg": "frames/slide-08.svg",
+        "png": "frames/slide-08.png"
+      },
+      "objects": [
+        {
+          "name": "returns-policy / background-1 / 1",
+          "kind": "background",
+          "svg": "objects/returns-policy-01-background-1.svg",
+          "png": "objects/returns-policy-01-background-1.png",
+          "x": 88,
+          "y": 292,
+          "w": 1744,
+          "h": 620
+        },
+        {
+          "name": "returns-policy / connector-2 / 2",
+          "kind": "connector",
+          "svg": "objects/returns-policy-02-connector-2.svg",
+          "png": "objects/returns-policy-02-connector-2.png",
+          "x": 404,
+          "y": 434,
+          "w": 148,
+          "h": 164
+        },
+        {
+          "name": "returns-policy / connector-3 / 3",
+          "kind": "connector",
+          "svg": "objects/returns-policy-03-connector-3.svg",
+          "png": "objects/returns-policy-03-connector-3.png",
+          "x": 459,
+          "y": 574,
+          "w": 93,
+          "h": 184
+        },
+        {
+          "name": "returns-policy / decoration-4 / 4",
+          "kind": "decoration",
+          "svg": "objects/returns-policy-04-decoration-4.svg",
+          "png": "objects/returns-policy-04-decoration-4.png",
+          "x": 453,
+          "y": 568,
+          "w": 36,
+          "h": 36
+        },
+        {
+          "name": "returns-policy / connector-5 / 5",
+          "kind": "connector",
+          "svg": "objects/returns-policy-05-connector-5.svg",
+          "png": "objects/returns-policy-05-connector-5.png",
+          "x": 787,
+          "y": 434,
+          "w": 125,
+          "h": 24
+        },
+        {
+          "name": "returns-policy / connector-6 / 6",
+          "kind": "connector",
+          "svg": "objects/returns-policy-06-connector-6.svg",
+          "png": "objects/returns-policy-06-connector-6.png",
+          "x": 787,
+          "y": 734,
+          "w": 125,
+          "h": 24
+        },
+        {
+          "name": "returns-policy / connector-7 / 7",
+          "kind": "connector",
+          "svg": "objects/returns-policy-07-connector-7.svg",
+          "png": "objects/returns-policy-07-connector-7.png",
+          "x": 1126,
+          "y": 434,
+          "w": 166,
+          "h": 164
+        },
+        {
+          "name": "returns-policy / connector-8 / 8",
+          "kind": "connector",
+          "svg": "objects/returns-policy-08-connector-8.svg",
+          "png": "objects/returns-policy-08-connector-8.png",
+          "x": 1126,
+          "y": 574,
+          "w": 102,
+          "h": 184
+        },
+        {
+          "name": "returns-policy / decoration-9 / 9",
+          "kind": "decoration",
+          "svg": "objects/returns-policy-09-decoration-9.svg",
+          "png": "objects/returns-policy-09-decoration-9.png",
+          "x": 1198,
+          "y": 568,
+          "w": 36,
+          "h": 36
+        },
+        {
+          "name": "returns-policy / connector-10 / 10",
+          "kind": "connector",
+          "svg": "objects/returns-policy-10-connector-10.svg",
+          "png": "objects/returns-policy-10-connector-10.png",
+          "x": 1437,
+          "y": 574,
+          "w": 96,
+          "h": 24
+        },
+        {
+          "name": "returns-policy / identity / 11",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-11-identity.svg",
+          "png": "objects/returns-policy-11-identity.png",
+          "x": 102,
+          "y": 497,
+          "w": 167,
+          "h": 147
+        },
+        {
+          "name": "returns-policy / receipt / 12",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-12-receipt.svg",
+          "png": "objects/returns-policy-12-receipt.png",
+          "x": 248,
+          "y": 473,
+          "w": 183,
+          "h": 191
+        },
+        {
+          "name": "returns-policy / Verified purchase / 13",
+          "kind": "label",
+          "svg": "objects/returns-policy-13-verified-purchase.svg",
+          "png": "objects/returns-policy-13-verified-purchase.png",
+          "x": 124,
+          "y": 662,
+          "w": 294,
+          "h": 68
+        },
+        {
+          "name": "returns-policy / calendar-standard-30 / 14",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-14-calendar-standard-30.svg",
+          "png": "objects/returns-policy-14-calendar-standard-30.png",
+          "x": 540,
+          "y": 313,
+          "w": 267,
+          "h": 285
+        },
+        {
+          "name": "returns-policy / calendar-plus-60 / 15",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-15-calendar-plus-60.svg",
+          "png": "objects/returns-policy-15-calendar-plus-60.png",
+          "x": 540,
+          "y": 613,
+          "w": 267,
+          "h": 285
+        },
+        {
+          "name": "returns-policy / Eligible / 16",
+          "kind": "label",
+          "svg": "objects/returns-policy-16-eligible.svg",
+          "png": "objects/returns-policy-16-eligible.png",
+          "x": 788,
+          "y": 374,
+          "w": 122,
+          "h": 62
+        },
+        {
+          "name": "returns-policy / Eligible / 17",
+          "kind": "label",
+          "svg": "objects/returns-policy-17-eligible.svg",
+          "png": "objects/returns-policy-17-eligible.png",
+          "x": 788,
+          "y": 674,
+          "w": 122,
+          "h": 62
+        },
+        {
+          "name": "returns-policy / shipping-five-dollars / 18",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-18-shipping-five-dollars.svg",
+          "png": "objects/returns-policy-18-shipping-five-dollars.png",
+          "x": 892,
+          "y": 349,
+          "w": 258,
+          "h": 215
+        },
+        {
+          "name": "returns-policy / shipping-waived / 19",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-19-shipping-waived.svg",
+          "png": "objects/returns-policy-19-shipping-waived.png",
+          "x": 892,
+          "y": 649,
+          "w": 258,
+          "h": 215
+        },
+        {
+          "name": "returns-policy / customer / 20",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-20-customer.svg",
+          "png": "objects/returns-policy-20-customer.png",
+          "x": 1300,
+          "y": 489,
+          "w": 148,
+          "h": 167
+        },
+        {
+          "name": "returns-policy / customer-confirmation / 21",
+          "kind": "badge",
+          "svg": "objects/returns-policy-21-customer-confirmation.svg",
+          "png": "objects/returns-policy-21-customer-confirmation.png",
+          "x": 1379,
+          "y": 502,
+          "w": 80,
+          "h": 80
+        },
+        {
+          "name": "returns-policy / Confirm / 22",
+          "kind": "label",
+          "svg": "objects/returns-policy-22-confirm.svg",
+          "png": "objects/returns-policy-22-confirm.png",
+          "x": 1288,
+          "y": 660,
+          "w": 158,
+          "h": 70
+        },
+        {
+          "name": "returns-policy / parcel / 23",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-23-parcel.svg",
+          "png": "objects/returns-policy-23-parcel.png",
+          "x": 1582,
+          "y": 506,
+          "w": 212,
+          "h": 187
+        },
+        {
+          "name": "returns-policy / service-approval / 24",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-24-service-approval.svg",
+          "png": "objects/returns-policy-24-service-approval.png",
+          "x": 1507,
+          "y": 537,
+          "w": 76,
+          "h": 100
+        },
+        {
+          "name": "returns-policy / Service approves / 25",
+          "kind": "label",
+          "svg": "objects/returns-policy-25-service-approves.svg",
+          "png": "objects/returns-policy-25-service-approves.png",
+          "x": 1512,
+          "y": 663,
+          "w": 280,
+          "h": 66
+        },
+        {
+          "name": "returns-policy / Return authorized / 26",
+          "kind": "label",
+          "svg": "objects/returns-policy-26-return-authorized.svg",
+          "png": "objects/returns-policy-26-return-authorized.png",
+          "x": 1497,
+          "y": 708,
+          "w": 310,
+          "h": 68
+        },
+        {
+          "name": "returns-policy / standard-day-45-declined / 27",
+          "kind": "illustration",
+          "svg": "objects/returns-policy-27-standard-day-45-declined.svg",
+          "png": "objects/returns-policy-27-standard-day-45-declined.png",
+          "x": 123,
+          "y": 745,
+          "w": 353,
+          "h": 138
+        }
+      ],
+      "expectedFullPNG": "../page-08.png"
+    },
+    {
+      "index": 35,
+      "id": "returns-components",
+      "frame": {
+        "svg": "frames/slide-35.svg",
+        "png": "frames/slide-35.png"
+      },
+      "objects": [
+        {
+          "name": "returns-components / background-1 / 1",
+          "kind": "background",
+          "svg": "objects/returns-components-01-background-1.svg",
+          "png": "objects/returns-components-01-background-1.png",
+          "x": 88,
+          "y": 292,
+          "w": 1744,
+          "h": 620
+        },
+        {
+          "name": "returns-components / customer / 2",
+          "kind": "illustration",
+          "svg": "objects/returns-components-02-customer.svg",
+          "png": "objects/returns-components-02-customer.png",
+          "x": 162,
+          "y": 319,
+          "w": 167,
+          "h": 189
+        },
+        {
+          "name": "returns-components / Customer / 3",
+          "kind": "label",
+          "svg": "objects/returns-components-03-customer.svg",
+          "png": "objects/returns-components-03-customer.png",
+          "x": 159,
+          "y": 507,
+          "w": 168,
+          "h": 65
+        },
+        {
+          "name": "returns-components / identity / 4",
+          "kind": "illustration",
+          "svg": "objects/returns-components-04-identity.svg",
+          "png": "objects/returns-components-04-identity.png",
+          "x": 434,
+          "y": 335,
+          "w": 190,
+          "h": 168
+        },
+        {
+          "name": "returns-components / Identity / 5",
+          "kind": "label",
+          "svg": "objects/returns-components-05-identity.svg",
+          "png": "objects/returns-components-05-identity.png",
+          "x": 460,
+          "y": 507,
+          "w": 138,
+          "h": 65
+        },
+        {
+          "name": "returns-components / receipt / 6",
+          "kind": "illustration",
+          "svg": "objects/returns-components-06-receipt.svg",
+          "png": "objects/returns-components-06-receipt.png",
+          "x": 736,
+          "y": 318,
+          "w": 170,
+          "h": 179
+        },
+        {
+          "name": "returns-components / Receipt / 7",
+          "kind": "label",
+          "svg": "objects/returns-components-07-receipt.svg",
+          "png": "objects/returns-components-07-receipt.png",
+          "x": 747,
+          "y": 507,
+          "w": 136,
+          "h": 65
+        },
+        {
+          "name": "returns-components / policy / 8",
+          "kind": "illustration",
+          "svg": "objects/returns-components-08-policy.svg",
+          "png": "objects/returns-components-08-policy.png",
+          "x": 1022,
+          "y": 323,
+          "w": 179,
+          "h": 179
+        },
+        {
+          "name": "returns-components / Policy / 9",
+          "kind": "label",
+          "svg": "objects/returns-components-09-policy.svg",
+          "png": "objects/returns-components-09-policy.png",
+          "x": 1045,
+          "y": 507,
+          "w": 112,
+          "h": 65
+        },
+        {
+          "name": "returns-components / parcel / 10",
+          "kind": "illustration",
+          "svg": "objects/returns-components-10-parcel.svg",
+          "png": "objects/returns-components-10-parcel.png",
+          "x": 1296,
+          "y": 337,
+          "w": 188,
+          "h": 166
+        },
+        {
+          "name": "returns-components / Return label / 11",
+          "kind": "label",
+          "svg": "objects/returns-components-11-return-label.svg",
+          "png": "objects/returns-components-11-return-label.png",
+          "x": 1287,
+          "y": 507,
+          "w": 200,
+          "h": 65
+        },
+        {
+          "name": "returns-components / system-one / 12",
+          "kind": "illustration",
+          "svg": "objects/returns-components-12-system-one.svg",
+          "png": "objects/returns-components-12-system-one.png",
+          "x": 1589,
+          "y": 332,
+          "w": 169,
+          "h": 161
+        },
+        {
+          "name": "returns-components / System One / 13",
+          "kind": "label",
+          "svg": "objects/returns-components-13-system-one.svg",
+          "png": "objects/returns-components-13-system-one.png",
+          "x": 1574,
+          "y": 507,
+          "w": 198,
+          "h": 65
+        },
+        {
+          "name": "returns-components / frontier / 14",
+          "kind": "illustration",
+          "svg": "objects/returns-components-14-frontier.svg",
+          "png": "objects/returns-components-14-frontier.png",
+          "x": 141,
+          "y": 616,
+          "w": 204,
+          "h": 177
+        },
+        {
+          "name": "returns-components / Frontier LLM / 15",
+          "kind": "label",
+          "svg": "objects/returns-components-15-frontier-llm.svg",
+          "png": "objects/returns-components-15-frontier-llm.png",
+          "x": 141,
+          "y": 799,
+          "w": 204,
+          "h": 65
+        },
+        {
+          "name": "returns-components / clarify / 16",
+          "kind": "illustration",
+          "svg": "objects/returns-components-16-clarify.svg",
+          "png": "objects/returns-components-16-clarify.png",
+          "x": 436,
+          "y": 620,
+          "w": 188,
+          "h": 171
+        },
+        {
+          "name": "returns-components / Clarify / 17",
+          "kind": "label",
+          "svg": "objects/returns-components-17-clarify.svg",
+          "png": "objects/returns-components-17-clarify.png",
+          "x": 469,
+          "y": 799,
+          "w": 120,
+          "h": 65
+        },
+        {
+          "name": "returns-components / review / 18",
+          "kind": "illustration",
+          "svg": "objects/returns-components-18-review.svg",
+          "png": "objects/returns-components-18-review.png",
+          "x": 721,
+          "y": 644,
+          "w": 194,
+          "h": 150
+        },
+        {
+          "name": "returns-components / Human review / 19",
+          "kind": "label",
+          "svg": "objects/returns-components-19-human-review.svg",
+          "png": "objects/returns-components-19-human-review.png",
+          "x": 701,
+          "y": 799,
+          "w": 228,
+          "h": 65
+        },
+        {
+          "name": "returns-components / stop / 20",
+          "kind": "illustration",
+          "svg": "objects/returns-components-20-stop.svg",
+          "png": "objects/returns-components-20-stop.png",
+          "x": 1017,
+          "y": 623,
+          "w": 167,
+          "h": 165
+        },
+        {
+          "name": "returns-components / Decline / 21",
+          "kind": "label",
+          "svg": "objects/returns-components-21-decline.svg",
+          "png": "objects/returns-components-21-decline.png",
+          "x": 1034,
+          "y": 799,
+          "w": 134,
+          "h": 65
+        },
+        {
+          "name": "returns-components / hold / 22",
+          "kind": "illustration",
+          "svg": "objects/returns-components-22-hold.svg",
+          "png": "objects/returns-components-22-hold.png",
+          "x": 1310,
+          "y": 627,
+          "w": 154,
+          "h": 154
+        },
+        {
+          "name": "returns-components / Hold / 23",
+          "kind": "label",
+          "svg": "objects/returns-components-23-hold.svg",
+          "png": "objects/returns-components-23-hold.png",
+          "x": 1341,
+          "y": 799,
+          "w": 92,
+          "h": 65
+        },
+        {
+          "name": "returns-components / directed-route / 24",
+          "kind": "connector",
+          "svg": "objects/returns-components-24-directed-route.svg",
+          "png": "objects/returns-components-24-directed-route.png",
+          "x": 1568,
+          "y": 698,
+          "w": 182,
+          "h": 24
+        },
+        {
+          "name": "returns-components / Route / 25",
+          "kind": "label",
+          "svg": "objects/returns-components-25-route.svg",
+          "png": "objects/returns-components-25-route.png",
+          "x": 1617,
+          "y": 799,
+          "w": 112,
+          "h": 65
+        }
+      ],
+      "expectedFullPNG": "../page-35.png"
+    }
+  ],
+  "errors": [],
+  "blockedRemoteRequests": []
+}

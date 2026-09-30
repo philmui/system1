@@ -1,0 +1,291 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "10 \u00b7 l: DISAGGREGATED INTELLIGENCE [p10-text-0007]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "10 \u00b7 r: 10 / 36 [p10-text-0008]",
+    "text": "10 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "10 \u00b7 layers-eyebrow: 02 / KEEP THE LAYERS DISTINCT [p10-text-0009]",
+    "text": "02 / KEEP THE LAYERS DISTINCT",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      364.1796875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "10 \u00b7 layers-title: A runtime sits beneath the harness [p10-text-0010]",
+    "text": "A runtime sits beneath the harness",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      89.4404296875,
+      184.05597071850394,
+      1152.1435546875,
+      53.8564453125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "10 \u00b7 layers-text-1: Harness [p10-text-0011]",
+    "text": "Harness",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      132.7998046875,
+      380.1866154035433,
+      150.98828125,
+      29.3994140625
+    ],
+    "baseline": [
+      130.0,
+      408.9864200910433
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "10 \u00b7 layers-text-2: The agent loop, context strategy, tools, and operating policy. [p10-text-0012]",
+    "text": "The agent loop, context strategy, tools, and operating policy.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      560.1201171875,
+      357.9610676058071,
+      829.59375,
+      29.8212890625
+    ],
+    "baseline": [
+      560.0,
+      380.0714191683071
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "10 \u00b7 layers-text-3: Example in LangChain\u2019s stack: Deep Agents. [p10-text-0013]",
+    "text": "Example in LangChain\u2019s stack: Deep Agents.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      562.25,
+      411.31673228346455,
+      502.1494140625,
+      24.849609375
+    ],
+    "baseline": [
+      560.0,
+      429.74153697096455
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "10 \u00b7 layers-text-4: Runtime [p10-text-0014]",
+    "text": "Runtime",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      132.7998046875,
+      607.020001230315,
+      155.927734375,
+      29.919921875
+    ],
+    "baseline": [
+      130.0,
+      636.319805917815
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "10 \u00b7 layers-text-5: State transitions and the execution of the configured workflow. [p10-text-0015]",
+    "text": "State transitions and the execution of the configured workflow.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      560.900390625,
+      585.2944534325787,
+      868.5625,
+      29.8203125
+    ],
+    "baseline": [
+      560.0,
+      607.4048049950787
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "10 \u00b7 layers-text-6: Agent Graph is analogous at this layer to LangGraph. [p10-text-0016]",
+    "text": "Agent Graph is analogous at this layer to LangGraph.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      560.099609375,
+      638.6501181102362,
+      602.5009765625,
+      24.8505859375
+    ],
+    "baseline": [
+      560.0,
+      657.0749227977362
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "10 \u00b7 layers-text-7: Configuration [p10-text-0017]",
+    "text": "Configuration",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      131.2001953125,
+      834.2528011195866,
+      259.9404296875,
+      39.6005859375
+    ],
+    "baseline": [
+      130.0,
+      863.6531917445866
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "10 \u00b7 layers-text-8: The authored rules and bindings that shape behavior. [p10-text-0018]",
+    "text": "The authored rules and bindings that shape behavior.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      560.1201171875,
+      812.6278392593504,
+      737.6123046875,
+      29.8203125
+    ],
+    "baseline": [
+      560.0,
+      834.7381908218504
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "10 \u00b7 layers-text-9: AgentScript configures Salesforce\u2019s runtime. [p10-text-0019]",
+    "text": "AgentScript configures Salesforce\u2019s runtime.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      560.099609375,
+      865.9835039370079,
+      503.9462890625,
+      24.849609375
+    ],
+    "baseline": [
+      560.0,
+      884.4083086245079
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "10 \u00b7 span: Runtime, framework, harness \u00b7 AgentScript control plane [p10-text-0020]",
+    "text": "Runtime, framework, harness",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.7099609375,
+      973.840947034941,
+      255.853515625,
+      17.3662109375
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "10 \u00b7 span: Runtime, framework, harness \u00b7 AgentScript control plane [p10-text-0020]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      352.6904296875,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      346.3056640625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "10 \u00b7 span: Runtime, framework, harness \u00b7 AgentScript control plane [p10-text-0020]",
+    "text": "AgentScript control plane",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      361.259765625,
+      973.840947034941,
+      222.9482421875,
+      18.8857421875
+    ],
+    "baseline": [
+      361.18359375,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "10 \u00b7 span: Architectural comparison, not API equivalence [p10-text-0021]",
+    "text": "Architectural comparison, not API equivalence",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1423.171919906496,
+      973.840947034941,
+      407.896484375,
+      18.6396484375
+    ],
+    "baseline": [
+      1423.095748031496,
+      987.843876722441
+    ]
+  }
+]

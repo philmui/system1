@@ -1,0 +1,5322 @@
+{
+  "schemaVersion": 1,
+  "base": "artwork-base.pptx",
+  "baseSha256": "b6452a7657fb650d74ef0e85e77d5723bbf0f12fc1397c080886c9828a074e2f",
+  "manifest": "manifest.json",
+  "manifestSha256": "a29e01d8ea502920fdd36bc4b41d386aae64dba59cf89d1783d5db3985a21fdb",
+  "output": "04-disaggregated-intelligence.pptx",
+  "stage": [
+    1920,
+    1080
+  ],
+  "sizeEMU": [
+    12192000,
+    6858000
+  ],
+  "totalSlideCount": 35,
+  "editability": "Named illustrations, outlined labels and connectors are independently movable SVG objects. Text remains outlined; connectors do not automatically follow moved illustrations.",
+  "noteDisclosure": "COMPONENT POWERPOINT\n\nThis slide uses a fixed vector frame plus separate, independently movable vector illustrations, labels and connectors. Labels are outlined artwork, not native editable text. Speaker notes remain editable. Every vector object has an embedded PNG fallback. Use the Selection Pane to select named parts. Connectors are independent objects; they do not automatically follow moved illustrations. Other slides retain their complete-frame vector artwork.",
+  "slides": [
+    {
+      "index": 6,
+      "id": "returns-comparison",
+      "member": "ppt/slides/slide6.xml",
+      "relationshipMember": "ppt/slides/_rels/slide6.xml.rels",
+      "frame": {
+        "name": "returns-comparison — frame (background and slide chrome)",
+        "shapeId": 2,
+        "png": "ppt/media/component-s06-frame.png",
+        "svg": "ppt/media/component-s06-frame.svg",
+        "pngSha256": "8a469c45da5b9a3d3dd5d920160d944a26f39d5eadaf1efcd9d1349360a1c018",
+        "svgSha256": "707ca60624bea681d3145a2e9e09b6c5b6f7929f604df1dfb1bb84c9cf9cfc80",
+        "pngSize": [
+          1920,
+          1080
+        ],
+        "emu": [
+          0,
+          0,
+          12192000,
+          6858000
+        ],
+        "pngRel": "rId1",
+        "svgRel": "rId2"
+      },
+      "objects": [
+        {
+          "name": "returns-comparison — background: returns-comparison / background-1 / 1",
+          "sourceName": "returns-comparison / background-1 / 1",
+          "kind": "background",
+          "shapeId": 5,
+          "bounds": [
+            88,
+            292,
+            1744,
+            620
+          ],
+          "emu": [
+            558800,
+            1854200,
+            11074400,
+            3937000
+          ],
+          "pngRel": "rId7",
+          "svgRel": "rId8",
+          "png": "ppt/media/component-s06-o001.png",
+          "svg": "ppt/media/component-s06-o001.svg",
+          "pngSha256": "1d95234d5063c4ebe6b00e896c3dd30ff3423658100b65c222e33d7b8e65183e",
+          "svgSha256": "b98505b52e1462e938feba10130028d55f4ad25ddc385c1afea164bfefb59ae3",
+          "pngSize": [
+            3488,
+            1240
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Wrapper intelligence / 2",
+          "sourceName": "returns-comparison / Wrapper intelligence / 2",
+          "kind": "label",
+          "shapeId": 6,
+          "bounds": [
+            100,
+            292,
+            388,
+            63
+          ],
+          "emu": [
+            635000,
+            1854200,
+            2463800,
+            400050
+          ],
+          "pngRel": "rId9",
+          "svgRel": "rId10",
+          "png": "ppt/media/component-s06-o002.png",
+          "svg": "ppt/media/component-s06-o002.svg",
+          "pngSha256": "b6a47c233867257b32ed36c5ebc5ee9ce7531a1dcc925a4bd75f6eee6402aa2e",
+          "svgSha256": "159e5c4ec072e92153c33ad7dbb655061cdf63cc224ff4e7b133340c05a8b8e2",
+          "pngSize": [
+            776,
+            126
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Disaggregated intelligence / 3",
+          "sourceName": "returns-comparison / Disaggregated intelligence / 3",
+          "kind": "label",
+          "shapeId": 7,
+          "bounds": [
+            994,
+            292,
+            495,
+            63
+          ],
+          "emu": [
+            6311900,
+            1854200,
+            3143250,
+            400050
+          ],
+          "pngRel": "rId11",
+          "svgRel": "rId12",
+          "png": "ppt/media/component-s06-o003.png",
+          "svg": "ppt/media/component-s06-o003.svg",
+          "pngSha256": "b95134a003db02fa200d05e2eb5a1865e50a1f29cf53f11f742fce32e571f0c6",
+          "svgSha256": "ff551f81c273c5e9816a61f2f1a9c73261f4ded7e8547befe3a8a3d52c205c26",
+          "pngSize": [
+            990,
+            126
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-4 / 4",
+          "sourceName": "returns-comparison / connector-4 / 4",
+          "kind": "connector",
+          "shapeId": 8,
+          "bounds": [
+            948,
+            353,
+            24,
+            517
+          ],
+          "emu": [
+            6019800,
+            2241550,
+            152400,
+            3282950
+          ],
+          "pngRel": "rId13",
+          "svgRel": "rId14",
+          "png": "ppt/media/component-s06-o004.png",
+          "svg": "ppt/media/component-s06-o004.svg",
+          "pngSha256": "27e343104289744e23c0ee888ddd320275e38a4cb3c3a9f73474e93f239350ed",
+          "svgSha256": "364746a5ef6cce0978e9988ce7e24a820a729bdfbe54897b33f5fca7a7e696bc",
+          "pngSize": [
+            48,
+            1034
+          ]
+        },
+        {
+          "name": "returns-comparison — decoration: returns-comparison / decoration-5 / 5",
+          "sourceName": "returns-comparison / decoration-5 / 5",
+          "kind": "decoration",
+          "shapeId": 9,
+          "bounds": [
+            321,
+            443,
+            360,
+            328
+          ],
+          "emu": [
+            2038350,
+            2813050,
+            2286000,
+            2082800
+          ],
+          "pngRel": "rId15",
+          "svgRel": "rId16",
+          "png": "ppt/media/component-s06-o005.png",
+          "svg": "ppt/media/component-s06-o005.svg",
+          "pngSha256": "1a999127fd66dcc0db090267e1bcb1371108705512b6c6806f599f993b610574",
+          "svgSha256": "5c02a87bfb85b73b2f213f71537feb3034d09c9bbd0eace9238196e3e80d69a2",
+          "pngSize": [
+            720,
+            656
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-6 / 6",
+          "sourceName": "returns-comparison / connector-6 / 6",
+          "kind": "connector",
+          "shapeId": 10,
+          "bounds": [
+            310,
+            468,
+            92,
+            96
+          ],
+          "emu": [
+            1968500,
+            2971800,
+            584200,
+            609600
+          ],
+          "pngRel": "rId17",
+          "svgRel": "rId18",
+          "png": "ppt/media/component-s06-o006.png",
+          "svg": "ppt/media/component-s06-o006.svg",
+          "pngSha256": "74957f983d4419f0e31483278a78c2dc64e1243252c7c399ab33004d09ff9f48",
+          "svgSha256": "b30e38a094a3657e291758ca3b76e0789b93c29bdd5d9f7e739b1da10ca67c75",
+          "pngSize": [
+            184,
+            192
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-7 / 7",
+          "sourceName": "returns-comparison / connector-7 / 7",
+          "kind": "connector",
+          "shapeId": 11,
+          "bounds": [
+            312,
+            522,
+            81,
+            82
+          ],
+          "emu": [
+            1981200,
+            3314700,
+            514350,
+            520700
+          ],
+          "pngRel": "rId19",
+          "svgRel": "rId20",
+          "png": "ppt/media/component-s06-o007.png",
+          "svg": "ppt/media/component-s06-o007.svg",
+          "pngSha256": "843e9e704ab67acf2f60b78d80998455595031f9748a29b50ef8a3bd10faa13f",
+          "svgSha256": "4739defefd4d53d5d7d77374f3c4545b70dc53ca21fba40d101f88d07d647aed",
+          "pngSize": [
+            162,
+            164
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-8 / 8",
+          "sourceName": "returns-comparison / connector-8 / 8",
+          "kind": "connector",
+          "shapeId": 12,
+          "bounds": [
+            602,
+            468,
+            89,
+            96
+          ],
+          "emu": [
+            3822700,
+            2971800,
+            565150,
+            609600
+          ],
+          "pngRel": "rId21",
+          "svgRel": "rId22",
+          "png": "ppt/media/component-s06-o008.png",
+          "svg": "ppt/media/component-s06-o008.svg",
+          "pngSha256": "c742e25b70a22e2de457296a35e8950ee08e9baaf5c1c323693fc882bb14d1b5",
+          "svgSha256": "ad9a9c624323f17865840a8b3938eba6775fa0c76a6e6f45be3313b5756e08a0",
+          "pngSize": [
+            178,
+            192
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-9 / 9",
+          "sourceName": "returns-comparison / connector-9 / 9",
+          "kind": "connector",
+          "shapeId": 13,
+          "bounds": [
+            610,
+            522,
+            80,
+            82
+          ],
+          "emu": [
+            3873500,
+            3314700,
+            508000,
+            520700
+          ],
+          "pngRel": "rId23",
+          "svgRel": "rId24",
+          "png": "ppt/media/component-s06-o009.png",
+          "svg": "ppt/media/component-s06-o009.svg",
+          "pngSha256": "2f39fcf877e1759caa6e9540209891a67f9ce712a3858b922c29209c162bff0f",
+          "svgSha256": "2936fe723a037f5bc7344fe43e847360f7959491a70533b8a114f1f513df2988",
+          "pngSize": [
+            160,
+            164
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-10 / 10",
+          "sourceName": "returns-comparison / connector-10 / 10",
+          "kind": "connector",
+          "shapeId": 14,
+          "bounds": [
+            604,
+            645,
+            102,
+            84
+          ],
+          "emu": [
+            3835400,
+            4095750,
+            647700,
+            533400
+          ],
+          "pngRel": "rId25",
+          "svgRel": "rId26",
+          "png": "ppt/media/component-s06-o010.png",
+          "svg": "ppt/media/component-s06-o010.svg",
+          "pngSha256": "61cd5708050c2ec88e9b349ab025e92cf00cfe8700fe504e46d75b5146db21f6",
+          "svgSha256": "2eb0d399fd358e674487d1eb0d8e4a46fcfee3a7564b93075b29dde2077fbcb1",
+          "pngSize": [
+            204,
+            168
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-11 / 11",
+          "sourceName": "returns-comparison / connector-11 / 11",
+          "kind": "connector",
+          "shapeId": 15,
+          "bounds": [
+            606,
+            679,
+            114,
+            106
+          ],
+          "emu": [
+            3848100,
+            4311650,
+            723900,
+            673100
+          ],
+          "pngRel": "rId27",
+          "svgRel": "rId28",
+          "png": "ppt/media/component-s06-o011.png",
+          "svg": "ppt/media/component-s06-o011.svg",
+          "pngSha256": "e596ad540cb1b1da00578676cac7ae5882c970d2af9e05aec2df90d7e5a171d0",
+          "svgSha256": "8b4e07b48bc31d280f4371ae28cb0634b7974a1101db2fa9e62029026e2c360a",
+          "pngSize": [
+            228,
+            212
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-12 / 12",
+          "sourceName": "returns-comparison / connector-12 / 12",
+          "kind": "connector",
+          "shapeId": 16,
+          "bounds": [
+            309,
+            645,
+            89,
+            84
+          ],
+          "emu": [
+            1962150,
+            4095750,
+            565150,
+            533400
+          ],
+          "pngRel": "rId29",
+          "svgRel": "rId30",
+          "png": "ppt/media/component-s06-o012.png",
+          "svg": "ppt/media/component-s06-o012.svg",
+          "pngSha256": "cdbed722069c5804c5aad551ab9c52fddc881a6390297b1b5d075dfec68ff034",
+          "svgSha256": "29f2ab26c8a6f3ecf0c3e726f13079aa38408fb6c2d236171b1efa32b321116b",
+          "pngSize": [
+            178,
+            168
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-13 / 13",
+          "sourceName": "returns-comparison / connector-13 / 13",
+          "kind": "connector",
+          "shapeId": 17,
+          "bounds": [
+            308,
+            679,
+            91,
+            106
+          ],
+          "emu": [
+            1955800,
+            4311650,
+            577850,
+            673100
+          ],
+          "pngRel": "rId31",
+          "svgRel": "rId32",
+          "png": "ppt/media/component-s06-o013.png",
+          "svg": "ppt/media/component-s06-o013.svg",
+          "pngSha256": "706e1d1b8320f4e2e4ec00a83954faf5af531910d60a9e081d88c5476ca6dfe2",
+          "svgSha256": "1a241f4d9e4ed4d077312da0fef18c54177443a6c40962fb1b6dc4306e2d532b",
+          "pngSize": [
+            182,
+            212
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / identity / 14",
+          "sourceName": "returns-comparison / identity / 14",
+          "kind": "illustration",
+          "shapeId": 18,
+          "bounds": [
+            133,
+            397,
+            186,
+            164
+          ],
+          "emu": [
+            844550,
+            2520950,
+            1181100,
+            1041400
+          ],
+          "pngRel": "rId33",
+          "svgRel": "rId34",
+          "png": "ppt/media/component-s06-o014.png",
+          "svg": "ppt/media/component-s06-o014.svg",
+          "pngSha256": "8e2dbe3d0935ccfbafdad944f6564f55fa966e351d23c55de6640eba4e28cd01",
+          "svgSha256": "dad9de8289c8d88447a1d221cceb21c21a9e6c0a9ea6e035fc7112bfaea412e5",
+          "pngSize": [
+            372,
+            328
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-1 / 15",
+          "sourceName": "returns-comparison / checkpoint-1 / 15",
+          "kind": "badge",
+          "shapeId": 19,
+          "bounds": [
+            111,
+            372,
+            60,
+            60
+          ],
+          "emu": [
+            704850,
+            2362200,
+            381000,
+            381000
+          ],
+          "pngRel": "rId35",
+          "svgRel": "rId36",
+          "png": "ppt/media/component-s06-o015.png",
+          "svg": "ppt/media/component-s06-o015.svg",
+          "pngSha256": "b9c87642003ed7b10b8c0ed7e2c034e7a1b9c9df7aa4e8015f9d0581b7b479c9",
+          "svgSha256": "c66104a3ac6dcd2c0c50edb9e3f19e9859a01340ed7f453cfa1c7bcf824a58b5",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Verify identity / 16",
+          "sourceName": "returns-comparison / Verify identity / 16",
+          "kind": "label",
+          "shapeId": 20,
+          "bounds": [
+            116,
+            548,
+            220,
+            64
+          ],
+          "emu": [
+            736600,
+            3479800,
+            1397000,
+            406400
+          ],
+          "pngRel": "rId37",
+          "svgRel": "rId38",
+          "png": "ppt/media/component-s06-o016.png",
+          "svg": "ppt/media/component-s06-o016.svg",
+          "pngSha256": "8bdb52e23dc48b95ad9736854a5a1d2df20701477a14a1816532fbf6105fbe44",
+          "svgSha256": "b39a96b7625986b46f26385f0ae5b3677e29e9b3bec2c94e504b61e9cfc94c16",
+          "pngSize": [
+            440,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / receipt / 17",
+          "sourceName": "returns-comparison / receipt / 17",
+          "kind": "illustration",
+          "shapeId": 21,
+          "bounds": [
+            699,
+            381,
+            166,
+            174
+          ],
+          "emu": [
+            4438650,
+            2419350,
+            1054100,
+            1104900
+          ],
+          "pngRel": "rId39",
+          "svgRel": "rId40",
+          "png": "ppt/media/component-s06-o017.png",
+          "svg": "ppt/media/component-s06-o017.svg",
+          "pngSha256": "eb424709b3b9eadedf2896b5e70f0bed379c2c2857c645d8d9e0ec1a577b878d",
+          "svgSha256": "9c2b89d1be8cef76747f742f7dc652cedb8cde99eaf1611c7751bd08b423f866",
+          "pngSize": [
+            332,
+            348
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-2 / 18",
+          "sourceName": "returns-comparison / checkpoint-2 / 18",
+          "kind": "badge",
+          "shapeId": 22,
+          "bounds": [
+            661,
+            372,
+            60,
+            60
+          ],
+          "emu": [
+            4197350,
+            2362200,
+            381000,
+            381000
+          ],
+          "pngRel": "rId41",
+          "svgRel": "rId42",
+          "png": "ppt/media/component-s06-o018.png",
+          "svg": "ppt/media/component-s06-o018.svg",
+          "pngSha256": "92072cda2f3a3d413a51ca036ee4d41d25457a61969d1875bd95dc365675d7f0",
+          "svgSha256": "3c13a751e1ddeaeb436728222326a7417358b8160dfebd23102613992148ca19",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Match receipt / 19",
+          "sourceName": "returns-comparison / Match receipt / 19",
+          "kind": "label",
+          "shapeId": 23,
+          "bounds": [
+            667,
+            548,
+            218,
+            64
+          ],
+          "emu": [
+            4235450,
+            3479800,
+            1384300,
+            406400
+          ],
+          "pngRel": "rId43",
+          "svgRel": "rId44",
+          "png": "ppt/media/component-s06-o019.png",
+          "svg": "ppt/media/component-s06-o019.svg",
+          "pngSha256": "47c81447072ffafca2c7ae906587a65d68a13c6c69a9c064ef7d220cd1f94d07",
+          "svgSha256": "e76835370527962dacc9bf3239bef41dcbcf47fa6e40fb141617860d4534c74c",
+          "pngSize": [
+            436,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / policy / 20",
+          "sourceName": "returns-comparison / policy / 20",
+          "kind": "illustration",
+          "shapeId": 24,
+          "bounds": [
+            699,
+            639,
+            174,
+            174
+          ],
+          "emu": [
+            4438650,
+            4057650,
+            1104900,
+            1104900
+          ],
+          "pngRel": "rId45",
+          "svgRel": "rId46",
+          "png": "ppt/media/component-s06-o020.png",
+          "svg": "ppt/media/component-s06-o020.svg",
+          "pngSha256": "3f2621eeb0bfe29aeb98eaf12505a156e7cc32cd06dc286d66d9635f2e9933df",
+          "svgSha256": "d67b9d96e61e390d33b360c11e22fc1da6bbb85e66dbc2370f4d2d074b630132",
+          "pngSize": [
+            348,
+            348
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-3 / 21",
+          "sourceName": "returns-comparison / checkpoint-3 / 21",
+          "kind": "badge",
+          "shapeId": 25,
+          "bounds": [
+            661,
+            625,
+            60,
+            60
+          ],
+          "emu": [
+            4197350,
+            3968750,
+            381000,
+            381000
+          ],
+          "pngRel": "rId47",
+          "svgRel": "rId48",
+          "png": "ppt/media/component-s06-o021.png",
+          "svg": "ppt/media/component-s06-o021.svg",
+          "pngSha256": "9491ccd173eba92683b2cc7a5b39c5cd61c049dd50e4aeb0e064714f680001eb",
+          "svgSha256": "77438c70c2c160cf65d7b6ff6beb88cd38bb9905db0e570cc89129986a4df88e",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Apply policy / 22",
+          "sourceName": "returns-comparison / Apply policy / 22",
+          "kind": "label",
+          "shapeId": 26,
+          "bounds": [
+            680,
+            803,
+            192,
+            64
+          ],
+          "emu": [
+            4318000,
+            5099050,
+            1219200,
+            406400
+          ],
+          "pngRel": "rId49",
+          "svgRel": "rId50",
+          "png": "ppt/media/component-s06-o022.png",
+          "svg": "ppt/media/component-s06-o022.svg",
+          "pngSha256": "6a8104f2461c08d41cba93811a238d51be1858e55f49953f697e874476069145",
+          "svgSha256": "42b1614c3d50b35c62489389c141917d177a1e29a0078e70e7ff187d71079eb4",
+          "pngSize": [
+            384,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / parcel / 23",
+          "sourceName": "returns-comparison / parcel / 23",
+          "kind": "illustration",
+          "shapeId": 27,
+          "bounds": [
+            137,
+            652,
+            183,
+            162
+          ],
+          "emu": [
+            869950,
+            4140200,
+            1162050,
+            1028700
+          ],
+          "pngRel": "rId51",
+          "svgRel": "rId52",
+          "png": "ppt/media/component-s06-o023.png",
+          "svg": "ppt/media/component-s06-o023.svg",
+          "pngSha256": "8881ca8b7c7580f55be1582fb276227a840bc9d2f94e21248173df3f47eb596d",
+          "svgSha256": "d85f919e207930f62c3959fb19c5b20e1a95da8ae6874bdb6ea61d6588cb44ed",
+          "pngSize": [
+            366,
+            324
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-4 / 24",
+          "sourceName": "returns-comparison / checkpoint-4 / 24",
+          "kind": "badge",
+          "shapeId": 28,
+          "bounds": [
+            111,
+            625,
+            60,
+            60
+          ],
+          "emu": [
+            704850,
+            3968750,
+            381000,
+            381000
+          ],
+          "pngRel": "rId53",
+          "svgRel": "rId54",
+          "png": "ppt/media/component-s06-o024.png",
+          "svg": "ppt/media/component-s06-o024.svg",
+          "pngSha256": "fd11b3c75063f7f3beb398a2ac75140cd7d1113787c8e8f86460039abfc2b679",
+          "svgSha256": "0ad2c0126e0c8a817285bf426ac08ae32097fec61b8ed5fc8c8a1c43aa454b0a",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Create return / 25",
+          "sourceName": "returns-comparison / Create return / 25",
+          "kind": "label",
+          "shapeId": 29,
+          "bounds": [
+            119,
+            803,
+            214,
+            64
+          ],
+          "emu": [
+            755650,
+            5099050,
+            1358900,
+            406400
+          ],
+          "pngRel": "rId55",
+          "svgRel": "rId56",
+          "png": "ppt/media/component-s06-o025.png",
+          "svg": "ppt/media/component-s06-o025.svg",
+          "pngSha256": "2b61b5217b58eb84d9d700cc5ae86b1884935fc7bc7a1ce4d20058dff2c5c5d9",
+          "svgSha256": "105054c283084ebe2dd5c1688d681ec0c52668cda1f7f93b16122acf7f92f520",
+          "pngSize": [
+            428,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / frontier / 26",
+          "sourceName": "returns-comparison / frontier / 26",
+          "kind": "illustration",
+          "shapeId": 30,
+          "bounds": [
+            365,
+            487,
+            272,
+            235
+          ],
+          "emu": [
+            2317750,
+            3092450,
+            1727200,
+            1492250
+          ],
+          "pngRel": "rId57",
+          "svgRel": "rId58",
+          "png": "ppt/media/component-s06-o026.png",
+          "svg": "ppt/media/component-s06-o026.svg",
+          "pngSha256": "19e57573ebb09683c27aba8201f01b58328cadb634f8d4282d8cadf15524e079",
+          "svgSha256": "9d54a5cdd8b6f329b637b8d1c777351d28e12916820e725595ecded301f78c0d",
+          "pngSize": [
+            544,
+            470
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Frontier LLM / 27",
+          "sourceName": "returns-comparison / Frontier LLM / 27",
+          "kind": "label",
+          "shapeId": 31,
+          "bounds": [
+            393,
+            722,
+            216,
+            68
+          ],
+          "emu": [
+            2495550,
+            4584700,
+            1371600,
+            431800
+          ],
+          "pngRel": "rId59",
+          "svgRel": "rId60",
+          "png": "ppt/media/component-s06-o027.png",
+          "svg": "ppt/media/component-s06-o027.svg",
+          "pngSha256": "3913581b0f0f0c964d40a9d877e9602ad4bf67f6b764139acb786ad1613c6d6f",
+          "svgSha256": "f250c46ed5b08b51255b9d23164b5eff3b2819024f6e71c85bb2d3cc6306d5a7",
+          "pngSize": [
+            432,
+            136
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Every step / 28",
+          "sourceName": "returns-comparison / Every step / 28",
+          "kind": "label",
+          "shapeId": 32,
+          "bounds": [
+            419,
+            769,
+            164,
+            62
+          ],
+          "emu": [
+            2660650,
+            4883150,
+            1041400,
+            393700
+          ],
+          "pngRel": "rId61",
+          "svgRel": "rId62",
+          "png": "ppt/media/component-s06-o028.png",
+          "svg": "ppt/media/component-s06-o028.svg",
+          "pngSha256": "454a4e5f67b443f97dbdbd99cd3bf3f7f991e6b61aebe63efad23eeff4bbc756",
+          "svgSha256": "e6248fb20d9493e19436529b491a0747168a103d7385343abe0364af83a97ea3",
+          "pngSize": [
+            328,
+            124
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / routine-route / 29",
+          "sourceName": "returns-comparison / routine-route / 29",
+          "kind": "connector",
+          "shapeId": 33,
+          "bounds": [
+            1180,
+            478,
+            80,
+            24
+          ],
+          "emu": [
+            7493000,
+            3035300,
+            508000,
+            152400
+          ],
+          "pngRel": "rId63",
+          "svgRel": "rId64",
+          "png": "ppt/media/component-s06-o029.png",
+          "svg": "ppt/media/component-s06-o029.svg",
+          "pngSha256": "adbd8e753c5215246c66f9e632823beb862bb367c78b1896fffdbbaac74e4d84",
+          "svgSha256": "5e47aa08d8c54fae2522ce2dacc57df99224b5795de32b457f750eb04b54a841",
+          "pngSize": [
+            160,
+            48
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / routine-route / 30",
+          "sourceName": "returns-comparison / routine-route / 30",
+          "kind": "connector",
+          "shapeId": 34,
+          "bounds": [
+            1421,
+            478,
+            195,
+            24
+          ],
+          "emu": [
+            9023350,
+            3035300,
+            1238250,
+            152400
+          ],
+          "pngRel": "rId65",
+          "svgRel": "rId66",
+          "png": "ppt/media/component-s06-o030.png",
+          "svg": "ppt/media/component-s06-o030.svg",
+          "pngSha256": "1b1f0da5dd5cee3afeab3cf3dca48e93fb88ad911141e12c37f83dde5ec6f5de",
+          "svgSha256": "258c7255e4bf351313bcd265cba63cba079e1228d88179f59a794abfce5786aa",
+          "pngSize": [
+            390,
+            48
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / routine-route / 31",
+          "sourceName": "returns-comparison / routine-route / 31",
+          "kind": "connector",
+          "shapeId": 35,
+          "bounds": [
+            1650,
+            500,
+            170,
+            177
+          ],
+          "emu": [
+            10477500,
+            3175000,
+            1079500,
+            1123950
+          ],
+          "pngRel": "rId67",
+          "svgRel": "rId68",
+          "png": "ppt/media/component-s06-o031.png",
+          "svg": "ppt/media/component-s06-o031.svg",
+          "pngSha256": "77bade6b9b5ef9e50c0dd14c5d6cc4b6f516849199f6c71102c1b77351686200",
+          "svgSha256": "655179b2d32a7c01582b8802b098dabeda91f760b6252214d07b7b7a64d8fbf4",
+          "pngSize": [
+            340,
+            354
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / routine-route / 32",
+          "sourceName": "returns-comparison / routine-route / 32",
+          "kind": "connector",
+          "shapeId": 36,
+          "bounds": [
+            1411,
+            760,
+            164,
+            24
+          ],
+          "emu": [
+            8959850,
+            4826000,
+            1041400,
+            152400
+          ],
+          "pngRel": "rId69",
+          "svgRel": "rId70",
+          "png": "ppt/media/component-s06-o032.png",
+          "svg": "ppt/media/component-s06-o032.svg",
+          "pngSha256": "28d2d6d15dc9ef3d2b77c8c611b6176405308deecdb1f64ead92ce641e4d6906",
+          "svgSha256": "a1140d096da9013ff9e3e52da76a15639b8f983fc4a01e193c58c6147559bc4f",
+          "pngSize": [
+            328,
+            48
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / identity / 33",
+          "sourceName": "returns-comparison / identity / 33",
+          "kind": "illustration",
+          "shapeId": 37,
+          "bounds": [
+            1009,
+            409,
+            178,
+            157
+          ],
+          "emu": [
+            6407150,
+            2597150,
+            1130300,
+            996950
+          ],
+          "pngRel": "rId71",
+          "svgRel": "rId72",
+          "png": "ppt/media/component-s06-o033.png",
+          "svg": "ppt/media/component-s06-o033.svg",
+          "pngSha256": "428844e6da0ed99e601a700b354d073f59878a005b0e5e891837b5cf340c9c07",
+          "svgSha256": "28f1caf15a4ced167d50d7e54116c171226407c04891148e8eb6afe1df60a7ed",
+          "pngSize": [
+            356,
+            314
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-1 / 34",
+          "sourceName": "returns-comparison / checkpoint-1 / 34",
+          "kind": "badge",
+          "shapeId": 38,
+          "bounds": [
+            987,
+            384,
+            60,
+            60
+          ],
+          "emu": [
+            6267450,
+            2438400,
+            381000,
+            381000
+          ],
+          "pngRel": "rId73",
+          "svgRel": "rId74",
+          "png": "ppt/media/component-s06-o034.png",
+          "svg": "ppt/media/component-s06-o034.svg",
+          "pngSha256": "d2b42f37f59f63f8de3905706d4b4cfa1c8a45888dc4c4c2c350651695b10621",
+          "svgSha256": "941e488f1b93b1a7af5d8b67b0461d24739bfd32863ca34c24a09dbf9bc95090",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Verify identity / 35",
+          "sourceName": "returns-comparison / Verify identity / 35",
+          "kind": "label",
+          "shapeId": 39,
+          "bounds": [
+            988,
+            552,
+            220,
+            64
+          ],
+          "emu": [
+            6273800,
+            3505200,
+            1397000,
+            406400
+          ],
+          "pngRel": "rId75",
+          "svgRel": "rId76",
+          "png": "ppt/media/component-s06-o035.png",
+          "svg": "ppt/media/component-s06-o035.svg",
+          "pngSha256": "7de4dc19ca21bfba54021e3e9c35d6f5af2bb270ff283ed980601b24daa7f156",
+          "svgSha256": "bba422b2b2b42a5cc27014f52b40fea8aa27254d7405c7ca436af0dd391d60d1",
+          "pngSize": [
+            440,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / receipt / 36",
+          "sourceName": "returns-comparison / receipt / 36",
+          "kind": "illustration",
+          "shapeId": 40,
+          "bounds": [
+            1274,
+            393,
+            159,
+            167
+          ],
+          "emu": [
+            8089900,
+            2495550,
+            1009650,
+            1060450
+          ],
+          "pngRel": "rId77",
+          "svgRel": "rId78",
+          "png": "ppt/media/component-s06-o036.png",
+          "svg": "ppt/media/component-s06-o036.svg",
+          "pngSha256": "de599374a9479ebc148d64a3988e4c61c2807c46f25b7eb3967dd61ec54710a9",
+          "svgSha256": "360c8ee579d015c0e56822f2fc558f59e4cb79e43f32e2c8091c0d484e4e696e",
+          "pngSize": [
+            318,
+            334
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-2 / 37",
+          "sourceName": "returns-comparison / checkpoint-2 / 37",
+          "kind": "badge",
+          "shapeId": 41,
+          "bounds": [
+            1237,
+            384,
+            60,
+            60
+          ],
+          "emu": [
+            7854950,
+            2438400,
+            381000,
+            381000
+          ],
+          "pngRel": "rId79",
+          "svgRel": "rId80",
+          "png": "ppt/media/component-s06-o037.png",
+          "svg": "ppt/media/component-s06-o037.svg",
+          "pngSha256": "1afbc7d43bf5820ec38540ea973ed9f72e9710f511f8b99de2bc9370010848d7",
+          "svgSha256": "b0f597020cf00c405d94f500a77768b04c3a31df0246ff5a3f8c21f8d708ffa5",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Match receipt / 38",
+          "sourceName": "returns-comparison / Match receipt / 38",
+          "kind": "label",
+          "shapeId": 42,
+          "bounds": [
+            1239,
+            552,
+            218,
+            64
+          ],
+          "emu": [
+            7867650,
+            3505200,
+            1384300,
+            406400
+          ],
+          "pngRel": "rId81",
+          "svgRel": "rId82",
+          "png": "ppt/media/component-s06-o038.png",
+          "svg": "ppt/media/component-s06-o038.svg",
+          "pngSha256": "550e38856bea42db53f09f5dc273ec94d1ab8beab9d7d3651d5c7c06c7a32ba8",
+          "svgSha256": "2aa6b7cd8d1181fbaad830f2d9ec51ea5c1e68e4f4b662ad202d7629de3c7a93",
+          "pngSize": [
+            436,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / policy / 39",
+          "sourceName": "returns-comparison / policy / 39",
+          "kind": "illustration",
+          "shapeId": 43,
+          "bounds": [
+            1579,
+            660,
+            187,
+            187
+          ],
+          "emu": [
+            10026650,
+            4191000,
+            1187450,
+            1187450
+          ],
+          "pngRel": "rId83",
+          "svgRel": "rId84",
+          "png": "ppt/media/component-s06-o039.png",
+          "svg": "ppt/media/component-s06-o039.svg",
+          "pngSha256": "e1ef6585ad73e4de1398f06d7e8a782efa47ff7e101697209c3fa47c0f02cdd3",
+          "svgSha256": "91d46a7bdfbc67867afc595085cc5381f43eaeadd440bcefb811bd2457d49ac0",
+          "pngSize": [
+            374,
+            374
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-3 / 40",
+          "sourceName": "returns-comparison / checkpoint-3 / 40",
+          "kind": "badge",
+          "shapeId": 44,
+          "bounds": [
+            1539,
+            645,
+            60,
+            60
+          ],
+          "emu": [
+            9772650,
+            4095750,
+            381000,
+            381000
+          ],
+          "pngRel": "rId85",
+          "svgRel": "rId86",
+          "png": "ppt/media/component-s06-o040.png",
+          "svg": "ppt/media/component-s06-o040.svg",
+          "pngSha256": "8f12ce3352207b170a866fbd36759865bd893d1a4d3d0e3b753cc5649b0c2c93",
+          "svgSha256": "d5d4c5c866100dc84f9bcf8611fa00840fa47ca45721f4b731239a43f326f2ad",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Apply policy / 41",
+          "sourceName": "returns-comparison / Apply policy / 41",
+          "kind": "label",
+          "shapeId": 45,
+          "bounds": [
+            1566,
+            838,
+            192,
+            64
+          ],
+          "emu": [
+            9944100,
+            5321300,
+            1219200,
+            406400
+          ],
+          "pngRel": "rId87",
+          "svgRel": "rId88",
+          "png": "ppt/media/component-s06-o041.png",
+          "svg": "ppt/media/component-s06-o041.svg",
+          "pngSha256": "07bad1197ef850a7dad879d392e578fe95a7db59438b1235e7c55c237fdbcaab",
+          "svgSha256": "47f19f9ed8cf735da3fee0876893489506104894fd135e9de63a7274c65bffab",
+          "pngSize": [
+            384,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / parcel / 42",
+          "sourceName": "returns-comparison / parcel / 42",
+          "kind": "illustration",
+          "shapeId": 46,
+          "bounds": [
+            1213,
+            674,
+            196,
+            174
+          ],
+          "emu": [
+            7702550,
+            4279900,
+            1244600,
+            1104900
+          ],
+          "pngRel": "rId89",
+          "svgRel": "rId90",
+          "png": "ppt/media/component-s06-o042.png",
+          "svg": "ppt/media/component-s06-o042.svg",
+          "pngSha256": "c001bee190561a89d142bceff253c00ca448062870ff947962b67ad0f16ed710",
+          "svgSha256": "4b77f59c91efd173895c478a1ada6e84ee7433d405b1bfb514003f55adfab1d0",
+          "pngSize": [
+            392,
+            348
+          ]
+        },
+        {
+          "name": "returns-comparison — badge: returns-comparison / checkpoint-4 / 43",
+          "sourceName": "returns-comparison / checkpoint-4 / 43",
+          "kind": "badge",
+          "shapeId": 47,
+          "bounds": [
+            1185,
+            645,
+            60,
+            60
+          ],
+          "emu": [
+            7524750,
+            4095750,
+            381000,
+            381000
+          ],
+          "pngRel": "rId91",
+          "svgRel": "rId92",
+          "png": "ppt/media/component-s06-o043.png",
+          "svg": "ppt/media/component-s06-o043.svg",
+          "pngSha256": "ef6cfe56151ffad860b5da1b6b112c0f7e250b1d2b08707071521ca699fda6f0",
+          "svgSha256": "03c49c6d3cacb4c3d3353848925c1dabcfcac878ef6c81a704babe12c23f3aa7",
+          "pngSize": [
+            120,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Create return / 44",
+          "sourceName": "returns-comparison / Create return / 44",
+          "kind": "label",
+          "shapeId": 48,
+          "bounds": [
+            1201,
+            838,
+            214,
+            64
+          ],
+          "emu": [
+            7626350,
+            5321300,
+            1358900,
+            406400
+          ],
+          "pngRel": "rId93",
+          "svgRel": "rId94",
+          "png": "ppt/media/component-s06-o044.png",
+          "svg": "ppt/media/component-s06-o044.svg",
+          "pngSha256": "334541423479dba7c5e8754d391c7b4a71a91ae767b8ce6eb4d6c418a4418788",
+          "svgSha256": "c07245e150ecb6be65baad42bea29fa7986a58389f5aecdaf2b940770739fb5c",
+          "pngSize": [
+            428,
+            128
+          ]
+        },
+        {
+          "name": "returns-comparison — illustration: returns-comparison / system-one / 45",
+          "sourceName": "returns-comparison / system-one / 45",
+          "kind": "illustration",
+          "shapeId": 49,
+          "bounds": [
+            1595,
+            404,
+            147,
+            140
+          ],
+          "emu": [
+            10128250,
+            2565400,
+            933450,
+            889000
+          ],
+          "pngRel": "rId95",
+          "svgRel": "rId96",
+          "png": "ppt/media/component-s06-o045.png",
+          "svg": "ppt/media/component-s06-o045.svg",
+          "pngSha256": "39d52514046e018d5eee9540a5fece9dc365275870b9ece94d4000bd62b53173",
+          "svgSha256": "016d3c585d55281c4942fd1ec3683c9e0135117c0ee6f5107cd5428a5454be24",
+          "pngSize": [
+            294,
+            280
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / System One / 46",
+          "sourceName": "returns-comparison / System One / 46",
+          "kind": "label",
+          "shapeId": 50,
+          "bounds": [
+            1568,
+            536,
+            200,
+            65
+          ],
+          "emu": [
+            9956800,
+            3403600,
+            1270000,
+            412750
+          ],
+          "pngRel": "rId97",
+          "svgRel": "rId98",
+          "png": "ppt/media/component-s06-o046.png",
+          "svg": "ppt/media/component-s06-o046.svg",
+          "pngSha256": "413c3d7d85ae748ba13d516334c68480e1ab5e280b47903044cad9f9d57c277e",
+          "svgSha256": "f7a5945c1e1c7f8f0be3382828e83efd5bd390caf9ed6f3e264e200c6be91853",
+          "pngSize": [
+            400,
+            130
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / koa-action / Jev / 47",
+          "sourceName": "returns-comparison / koa-action / Jev / 47",
+          "kind": "label",
+          "shapeId": 51,
+          "bounds": [
+            1555,
+            580,
+            226,
+            61
+          ],
+          "emu": [
+            9874250,
+            3683000,
+            1435100,
+            387350
+          ],
+          "pngRel": "rId99",
+          "svgRel": "rId100",
+          "png": "ppt/media/component-s06-o047.png",
+          "svg": "ppt/media/component-s06-o047.svg",
+          "pngSha256": "1497d9ad4b6f685cdb2ba21034cf7eaedc6b3b51fa73bbe07afa82933d4fea7c",
+          "svgSha256": "b95c1087a6fd3851fb04225bad72544dcc28b8c8579dcd2b0df6089fec4f2803",
+          "pngSize": [
+            452,
+            122
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Agent Graph / 48",
+          "sourceName": "returns-comparison / Agent Graph / 48",
+          "kind": "label",
+          "shapeId": 52,
+          "bounds": [
+            1405,
+            698,
+            186,
+            61
+          ],
+          "emu": [
+            8921750,
+            4432300,
+            1181100,
+            387350
+          ],
+          "pngRel": "rId101",
+          "svgRel": "rId102",
+          "png": "ppt/media/component-s06-o048.png",
+          "svg": "ppt/media/component-s06-o048.svg",
+          "pngSha256": "70505d0cdeb3d645d26f52ddbaeaba084da3ece58cb04111a16bf36ee9f3de11",
+          "svgSha256": "5b41412279d2b8a82d53f61e2a24ee8dee283815860cd372ca83ebd648e07ee8",
+          "pngSize": [
+            372,
+            122
+          ]
+        },
+        {
+          "name": "returns-comparison — connector: returns-comparison / connector-49 / 49",
+          "sourceName": "returns-comparison / connector-49 / 49",
+          "kind": "connector",
+          "shapeId": 53,
+          "bounds": [
+            1656,
+            371,
+            109,
+            53
+          ],
+          "emu": [
+            10515600,
+            2355850,
+            692150,
+            336550
+          ],
+          "pngRel": "rId103",
+          "svgRel": "rId104",
+          "png": "ppt/media/component-s06-o049.png",
+          "svg": "ppt/media/component-s06-o049.svg",
+          "pngSha256": "d82e07ece45932929f347a7ad77380d997f50bcccd7d4d80c45976c97f1b5c39",
+          "svgSha256": "e8cb2905640d129f861463f17f8f6d3f3dbd7369919b5521a280d7aa266f400f",
+          "pngSize": [
+            218,
+            106
+          ]
+        },
+        {
+          "name": "returns-comparison — decoration: returns-comparison / decoration-50 / 50",
+          "sourceName": "returns-comparison / decoration-50 / 50",
+          "kind": "decoration",
+          "shapeId": 54,
+          "bounds": [
+            1742,
+            347,
+            72,
+            72
+          ],
+          "emu": [
+            11061700,
+            2203450,
+            457200,
+            457200
+          ],
+          "pngRel": "rId105",
+          "svgRel": "rId106",
+          "png": "ppt/media/component-s06-o050.png",
+          "svg": "ppt/media/component-s06-o050.svg",
+          "pngSha256": "74a75ca5647039f4d23b74249153d3ff670a5c0f11233b79abc1dc0a635a33b6",
+          "svgSha256": "db2a952fc35e76c0c9c85cb8195486f460ad86286eb4acff99077589bf3b2ffa",
+          "pngSize": [
+            144,
+            144
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / ? / 51",
+          "sourceName": "returns-comparison / ? / 51",
+          "kind": "label",
+          "shapeId": 55,
+          "bounds": [
+            1756,
+            347,
+            44,
+            69
+          ],
+          "emu": [
+            11150600,
+            2203450,
+            279400,
+            438150
+          ],
+          "pngRel": "rId107",
+          "svgRel": "rId108",
+          "png": "ppt/media/component-s06-o051.png",
+          "svg": "ppt/media/component-s06-o051.svg",
+          "pngSha256": "8e96902652fa2178ebe7ca58ab3fb1b65c1f4e9bde1bd72ec0841752580c4243",
+          "svgSha256": "4b28467a6c021d10fac5052740a7f381972ad7780586c2ad37bcbd0a74659e7e",
+          "pngSize": [
+            88,
+            138
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Complex? / 52",
+          "sourceName": "returns-comparison / Complex? / 52",
+          "kind": "label",
+          "shapeId": 56,
+          "bounds": [
+            1660,
+            299,
+            149,
+            60
+          ],
+          "emu": [
+            10541000,
+            1898650,
+            946150,
+            381000
+          ],
+          "pngRel": "rId109",
+          "svgRel": "rId110",
+          "png": "ppt/media/component-s06-o052.png",
+          "svg": "ppt/media/component-s06-o052.svg",
+          "pngSha256": "239b3dea6d393036edf7d30a44292f1e25d80fd58a65706633ee16aafd64e187",
+          "svgSha256": "48effcfe56a10c9735b784be0aaa675b134beb104cdcde6c0c03581cd8fc40f9",
+          "pngSize": [
+            298,
+            120
+          ]
+        },
+        {
+          "name": "returns-comparison — label: returns-comparison / Same safeguards / 53",
+          "sourceName": "returns-comparison / Same safeguards / 53",
+          "kind": "label",
+          "shapeId": 57,
+          "bounds": [
+            831,
+            859,
+            258,
+            53
+          ],
+          "emu": [
+            5276850,
+            5454650,
+            1638300,
+            336550
+          ],
+          "pngRel": "rId111",
+          "svgRel": "rId112",
+          "png": "ppt/media/component-s06-o053.png",
+          "svg": "ppt/media/component-s06-o053.svg",
+          "pngSha256": "4f6c6f38c2a8c75d0dc809d30b6be4cba19c28943b43728b33b6242b40d43414",
+          "svgSha256": "f2a7b5632653048f8191ebc6262f4e7502d228264e04228b0694dc1782368a47",
+          "pngSize": [
+            516,
+            106
+          ]
+        }
+      ],
+      "baseSlideSha256": "335d9e2b57c786b18c0f181bbf7d3d76399d4700837e641e3f7b57c894939814",
+      "sourceLinks": [
+        {
+          "id": "rId3",
+          "target": "https://www.langchain.com/blog/building-prod-with-jev-and-langgraph",
+          "mode": "External"
+        },
+        {
+          "id": "rId4",
+          "target": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "mode": "External"
+        }
+      ],
+      "noteMember": "ppt/notesSlides/notesSlide6.xml",
+      "notesSha256": "f757f8f2eade9f8bdcc4a5a161e889eb43c4bee965a3a127d9ebc496e1e5cbf5",
+      "originalNotesSha256": "6dd581d408754ab8003a3fff68fedfd91b3b9816334043e1384d22c31278edec",
+      "slideSha256": "ad99f02330c4ee9ebc65f23d96b4dcc7bbcc4bd4d09f0fc9115ec7e441780e81",
+      "relationshipsSha256": "cb59dd872e28c4c4a9a63fcf2bfc435e4a63e0d73ec4191f844229e5447d57b2",
+      "objectCount": 53,
+      "expectedFullPNGSha256": "8fd5e306f61c7860cd67ceffc107a0feec6f22462855e1800a424c5d04c26f91"
+    },
+    {
+      "index": 7,
+      "id": "returns-fallback",
+      "member": "ppt/slides/slide7.xml",
+      "relationshipMember": "ppt/slides/_rels/slide7.xml.rels",
+      "frame": {
+        "name": "returns-fallback — frame (background and slide chrome)",
+        "shapeId": 2,
+        "png": "ppt/media/component-s07-frame.png",
+        "svg": "ppt/media/component-s07-frame.svg",
+        "pngSha256": "21adf815777f4d1ed4c236b0ac0c990ba3afd17ad5729b0673da1007d5d61adf",
+        "svgSha256": "ac0ec7e17990cdbc6fb47e7ca1f8875d0a8e59597a746e0afae7afa5dfc2a95b",
+        "pngSize": [
+          1920,
+          1080
+        ],
+        "emu": [
+          0,
+          0,
+          12192000,
+          6858000
+        ],
+        "pngRel": "rId1",
+        "svgRel": "rId2"
+      },
+      "objects": [
+        {
+          "name": "returns-fallback — background: returns-fallback / background-1 / 1",
+          "sourceName": "returns-fallback / background-1 / 1",
+          "kind": "background",
+          "shapeId": 5,
+          "bounds": [
+            88,
+            292,
+            1744,
+            620
+          ],
+          "emu": [
+            558800,
+            1854200,
+            11074400,
+            3937000
+          ],
+          "pngRel": "rId7",
+          "svgRel": "rId8",
+          "png": "ppt/media/component-s07-o001.png",
+          "svg": "ppt/media/component-s07-o001.svg",
+          "pngSha256": "1d95234d5063c4ebe6b00e896c3dd30ff3423658100b65c222e33d7b8e65183e",
+          "svgSha256": "b98505b52e1462e938feba10130028d55f4ad25ddc385c1afea164bfefb59ae3",
+          "pngSize": [
+            3488,
+            1240
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / identity / 2",
+          "sourceName": "returns-fallback / identity / 2",
+          "kind": "illustration",
+          "shapeId": 6,
+          "bounds": [
+            92,
+            292,
+            77,
+            70
+          ],
+          "emu": [
+            584200,
+            1854200,
+            488950,
+            444500
+          ],
+          "pngRel": "rId9",
+          "svgRel": "rId10",
+          "png": "ppt/media/component-s07-o002.png",
+          "svg": "ppt/media/component-s07-o002.svg",
+          "pngSha256": "d5ed2abc95bc20d048267479898d4c7a3d8c9c9792723c3c825cdc0be557feb7",
+          "svgSha256": "fa4e9fdbfad592988a47c08b9c759550e83086130cd9d80bc275a57cecf3f97b",
+          "pngSize": [
+            154,
+            140
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Identity + receipt verified / 3",
+          "sourceName": "returns-fallback / Identity + receipt verified / 3",
+          "kind": "label",
+          "shapeId": 7,
+          "bounds": [
+            161,
+            293,
+            362,
+            62
+          ],
+          "emu": [
+            1022350,
+            1860550,
+            2298700,
+            393700
+          ],
+          "pngRel": "rId11",
+          "svgRel": "rId12",
+          "png": "ppt/media/component-s07-o003.png",
+          "svg": "ppt/media/component-s07-o003.svg",
+          "pngSha256": "a96b952be37a542264537471de6deecec620a3d0ac649821e981b0befb18148b",
+          "svgSha256": "f3169eadd38222a8d4f060a7161e10262eaf8a70a5fcdcfd187d617905f62bad",
+          "pngSize": [
+            724,
+            124
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-4 / 4",
+          "sourceName": "returns-fallback / connector-4 / 4",
+          "kind": "connector",
+          "shapeId": 8,
+          "bounds": [
+            211,
+            678,
+            872,
+            122
+          ],
+          "emu": [
+            1339850,
+            4305300,
+            5537200,
+            774700
+          ],
+          "pngRel": "rId13",
+          "svgRel": "rId14",
+          "png": "ppt/media/component-s07-o004.png",
+          "svg": "ppt/media/component-s07-o004.svg",
+          "pngSha256": "683ff94e6d3b58125965e4a146315afb10c982fcce360e3275d98bb825264de9",
+          "svgSha256": "daf79e616d6f6a748186844d5a8222597d0fdd75461db415174789ac72ae8940",
+          "pngSize": [
+            1744,
+            244
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / routine / 5",
+          "sourceName": "returns-fallback / routine / 5",
+          "kind": "label",
+          "shapeId": 9,
+          "bounds": [
+            498,
+            727,
+            130,
+            65
+          ],
+          "emu": [
+            3162300,
+            4616450,
+            825500,
+            412750
+          ],
+          "pngRel": "rId15",
+          "svgRel": "rId16",
+          "png": "ppt/media/component-s07-o005.png",
+          "svg": "ppt/media/component-s07-o005.svg",
+          "pngSha256": "35e402bb7f0e9b001bff6c3211edcdaa75c592c5b16f4a4df0c97f046e0fa1f9",
+          "svgSha256": "4ce51b862608e25d9b991df0ffb57c25ec425b4fd6333871758e9870ee717ee0",
+          "pngSize": [
+            260,
+            130
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-6 / 6",
+          "sourceName": "returns-fallback / connector-6 / 6",
+          "kind": "connector",
+          "shapeId": 10,
+          "bounds": [
+            294,
+            473,
+            115,
+            147
+          ],
+          "emu": [
+            1866900,
+            3003550,
+            730250,
+            933450
+          ],
+          "pngRel": "rId17",
+          "svgRel": "rId18",
+          "png": "ppt/media/component-s07-o006.png",
+          "svg": "ppt/media/component-s07-o006.svg",
+          "pngSha256": "860d0657798e784b0e89dae124b6923f50f844a3e2428e0d5f94c13e796c8a9e",
+          "svgSha256": "9c78aa8cdb7a375d8f065d6e035e1556160b2ae7c33740ab84687aae0699e965",
+          "pngSize": [
+            230,
+            294
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / unclear / / 7",
+          "sourceName": "returns-fallback / unclear / / 7",
+          "kind": "label",
+          "shapeId": 11,
+          "bounds": [
+            265,
+            394,
+            138,
+            61
+          ],
+          "emu": [
+            1682750,
+            2501900,
+            876300,
+            387350
+          ],
+          "pngRel": "rId19",
+          "svgRel": "rId20",
+          "png": "ppt/media/component-s07-o007.png",
+          "svg": "ppt/media/component-s07-o007.svg",
+          "pngSha256": "10c3ceba97b37976c90fa2ee9c9651c4bae4e5f84add1e9001ce38b14958dc07",
+          "svgSha256": "f1cc94cd2275f33cfe59990afac3ba8fb37850344a1b03fb47f86ac6667a51b1",
+          "pngSize": [
+            276,
+            122
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / complex / 8",
+          "sourceName": "returns-fallback / complex / 8",
+          "kind": "label",
+          "shapeId": 12,
+          "bounds": [
+            267,
+            426,
+            134,
+            61
+          ],
+          "emu": [
+            1695450,
+            2705100,
+            850900,
+            387350
+          ],
+          "pngRel": "rId21",
+          "svgRel": "rId22",
+          "png": "ppt/media/component-s07-o008.png",
+          "svg": "ppt/media/component-s07-o008.svg",
+          "pngSha256": "419c42d0327b5a24aaf04ce8f378f6dcac8dbb38316026d0a8f7b295a8e908bc",
+          "svgSha256": "18a4f48271b85afb767cb50fa954744f8a06384481210470096967c3bd835e66",
+          "pngSize": [
+            268,
+            122
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-9 / 9",
+          "sourceName": "returns-fallback / connector-9 / 9",
+          "kind": "connector",
+          "shapeId": 13,
+          "bounds": [
+            571,
+            472,
+            104,
+            24
+          ],
+          "emu": [
+            3625850,
+            2997200,
+            660400,
+            152400
+          ],
+          "pngRel": "rId23",
+          "svgRel": "rId24",
+          "png": "ppt/media/component-s07-o009.png",
+          "svg": "ppt/media/component-s07-o009.svg",
+          "pngSha256": "f9c646bf0d54b41923b6a91c432a9b2129df77ec53d5c18a4150c7134d2b0ed0",
+          "svgSha256": "2d41192634e1db1b398261ec76c04d9064fc1ccf5eb15b68c044c2342af43afe",
+          "pngSize": [
+            208,
+            48
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-10 / 10",
+          "sourceName": "returns-fallback / connector-10 / 10",
+          "kind": "connector",
+          "shapeId": 14,
+          "bounds": [
+            820,
+            472,
+            131,
+            24
+          ],
+          "emu": [
+            5207000,
+            2997200,
+            831850,
+            152400
+          ],
+          "pngRel": "rId25",
+          "svgRel": "rId26",
+          "png": "ppt/media/component-s07-o010.png",
+          "svg": "ppt/media/component-s07-o010.svg",
+          "pngSha256": "9f6c4200eaa31296aac5d4709550dad1931e9fd27f566c4509863e04b41a3f4c",
+          "svgSha256": "d9fe5701b8bf226b9ac962ad1d525c5258f8967c4c56b6d09dca684782ee6c0a",
+          "pngSize": [
+            262,
+            48
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / pass / 11",
+          "sourceName": "returns-fallback / pass / 11",
+          "kind": "label",
+          "shapeId": 15,
+          "bounds": [
+            845,
+            420,
+            86,
+            61
+          ],
+          "emu": [
+            5365750,
+            2667000,
+            546100,
+            387350
+          ],
+          "pngRel": "rId27",
+          "svgRel": "rId28",
+          "png": "ppt/media/component-s07-o011.png",
+          "svg": "ppt/media/component-s07-o011.svg",
+          "pngSha256": "8ea51fbccb819bee54d86e3a16e2aeed8fbb1e97f69b02682ee151f70550da7e",
+          "svgSha256": "3f3a03f034d54691b9f790989e6cd09cbec2728b9f6788a153f46d40c6cc7126",
+          "pngSize": [
+            172,
+            122
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-12 / 12",
+          "sourceName": "returns-fallback / connector-12 / 12",
+          "kind": "connector",
+          "shapeId": 16,
+          "bounds": [
+            1157,
+            466,
+            190,
+            24
+          ],
+          "emu": [
+            7346950,
+            2959100,
+            1206500,
+            152400
+          ],
+          "pngRel": "rId29",
+          "svgRel": "rId30",
+          "png": "ppt/media/component-s07-o012.png",
+          "svg": "ppt/media/component-s07-o012.svg",
+          "pngSha256": "4204d395a7de0e2cabde775499aaced3b4a6a0f87334bdf2e486d30ce1a63cd6",
+          "svgSha256": "de9df22656fdc6cf1ec3719049ab2cceafe6f4f9d237508c8f1a175392ad2263",
+          "pngSize": [
+            380,
+            48
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / proposal / 13",
+          "sourceName": "returns-fallback / proposal / 13",
+          "kind": "label",
+          "shapeId": 17,
+          "bounds": [
+            1185,
+            414,
+            136,
+            61
+          ],
+          "emu": [
+            7524750,
+            2628900,
+            863600,
+            387350
+          ],
+          "pngRel": "rId31",
+          "svgRel": "rId32",
+          "png": "ppt/media/component-s07-o013.png",
+          "svg": "ppt/media/component-s07-o013.svg",
+          "pngSha256": "042920533d081111b4ce872c0da5e1afa75f5bb15c762b60fcd190a36b4d2e68",
+          "svgSha256": "bd4f85cd8083c4b9db87e55eb68614c7c2b5b95facb9b685cb3016f6a9f9bd15",
+          "pngSize": [
+            272,
+            122
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-14 / 14",
+          "sourceName": "returns-fallback / connector-14 / 14",
+          "kind": "connector",
+          "shapeId": 18,
+          "bounds": [
+            410,
+            547,
+            655,
+            253
+          ],
+          "emu": [
+            2603500,
+            3473450,
+            4159250,
+            1606550
+          ],
+          "pngRel": "rId33",
+          "svgRel": "rId34",
+          "png": "ppt/media/component-s07-o014.png",
+          "svg": "ppt/media/component-s07-o014.svg",
+          "pngSha256": "e25098b8c276d2aef1bfd674a7ee32f4e60de878b855814ac3ec3c3220948862",
+          "svgSha256": "bf18e13925336721ebdb6b816d94741bc1a9e25474dea70fc86a3732bf4c1c6d",
+          "pngSize": [
+            1310,
+            506
+          ]
+        },
+        {
+          "name": "returns-fallback — decoration: returns-fallback / decoration-15 / 15",
+          "sourceName": "returns-fallback / decoration-15 / 15",
+          "kind": "decoration",
+          "shapeId": 19,
+          "bounds": [
+            1036,
+            771,
+            34,
+            34
+          ],
+          "emu": [
+            6578600,
+            4895850,
+            215900,
+            215900
+          ],
+          "pngRel": "rId35",
+          "svgRel": "rId36",
+          "png": "ppt/media/component-s07-o015.png",
+          "svg": "ppt/media/component-s07-o015.svg",
+          "pngSha256": "6465f6d597ef3982772971b3d17d88e07df97397177e41fdefa29cab9e1f6617",
+          "svgSha256": "1de9e5d8dd488ddba9886dbb9f5d757d7a2f340b5ac1fc1660e6596a0a328ab7",
+          "pngSize": [
+            68,
+            68
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / resolved / 16",
+          "sourceName": "returns-fallback / resolved / 16",
+          "kind": "label",
+          "shapeId": 20,
+          "bounds": [
+            856,
+            655,
+            142,
+            62
+          ],
+          "emu": [
+            5435600,
+            4159250,
+            901700,
+            393700
+          ],
+          "pngRel": "rId37",
+          "svgRel": "rId38",
+          "png": "ppt/media/component-s07-o016.png",
+          "svg": "ppt/media/component-s07-o016.svg",
+          "pngSha256": "f57324420f7e724699f63a4ea67a28e9468553c78f5448b2e907ccd411c9ddb6",
+          "svgSha256": "64e2dd7756fd9d3fb51888010ac6d8509327f77982a5d394978b4476b68ade8c",
+          "pngSize": [
+            284,
+            124
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-17 / 17",
+          "sourceName": "returns-fallback / connector-17 / 17",
+          "kind": "connector",
+          "shapeId": 21,
+          "bounds": [
+            1156,
+            554,
+            204,
+            151
+          ],
+          "emu": [
+            7340600,
+            3517900,
+            1295400,
+            958850
+          ],
+          "pngRel": "rId39",
+          "svgRel": "rId40",
+          "png": "ppt/media/component-s07-o017.png",
+          "svg": "ppt/media/component-s07-o017.svg",
+          "pngSha256": "c3722f0463a25ddcd377d7f3fd33b830b77f456c11e2ba87b133261e9cf29efd",
+          "svgSha256": "4563332292361d47087d0c1debfae05f65b01b44d23ef42063792492c22a67e3",
+          "pngSize": [
+            408,
+            302
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / validated / 18",
+          "sourceName": "returns-fallback / validated / 18",
+          "kind": "label",
+          "shapeId": 22,
+          "bounds": [
+            1148,
+            586,
+            150,
+            62
+          ],
+          "emu": [
+            7289800,
+            3721100,
+            952500,
+            393700
+          ],
+          "pngRel": "rId41",
+          "svgRel": "rId42",
+          "png": "ppt/media/component-s07-o018.png",
+          "svg": "ppt/media/component-s07-o018.svg",
+          "pngSha256": "5318c1e37158dcbe65e8d26c52165eeea5610fd8573389198a604f4a8f393a29",
+          "svgSha256": "ee57b959e9403f30a151a029f597ac1d71982bc850b5fb70c033fe07531e8c9f",
+          "pngSize": [
+            300,
+            124
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-19 / 19",
+          "sourceName": "returns-fallback / connector-19 / 19",
+          "kind": "connector",
+          "shapeId": 23,
+          "bounds": [
+            1536,
+            498,
+            102,
+            24
+          ],
+          "emu": [
+            9753600,
+            3162300,
+            647700,
+            152400
+          ],
+          "pngRel": "rId43",
+          "svgRel": "rId44",
+          "png": "ppt/media/component-s07-o019.png",
+          "svg": "ppt/media/component-s07-o019.svg",
+          "pngSha256": "fe62a6b2e9ad31a717ff121433275021776d0684be13472cf55617f929b50463",
+          "svgSha256": "71bc24b736dab3f5cc98064781508197057ef7898bcde33319ea1f1cee5803e7",
+          "pngSize": [
+            204,
+            48
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-20 / 20",
+          "sourceName": "returns-fallback / connector-20 / 20",
+          "kind": "connector",
+          "shapeId": 24,
+          "bounds": [
+            675,
+            543,
+            86,
+            106
+          ],
+          "emu": [
+            4286250,
+            3448050,
+            546100,
+            673100
+          ],
+          "pngRel": "rId45",
+          "svgRel": "rId46",
+          "png": "ppt/media/component-s07-o020.png",
+          "svg": "ppt/media/component-s07-o020.svg",
+          "pngSha256": "57ec07ab7ea65cf9a9203107b28ceccc1eaa0d5c2c02606114ea57a4d6d38de1",
+          "svgSha256": "9971385e7bc5aed23410d1efe323741665d49673943b8f64b361149161f50e2c",
+          "pngSize": [
+            172,
+            212
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-21 / 21",
+          "sourceName": "returns-fallback / connector-21 / 21",
+          "kind": "connector",
+          "shapeId": 25,
+          "bounds": [
+            737,
+            605,
+            83,
+            44
+          ],
+          "emu": [
+            4679950,
+            3841750,
+            527050,
+            279400
+          ],
+          "pngRel": "rId47",
+          "svgRel": "rId48",
+          "png": "ppt/media/component-s07-o021.png",
+          "svg": "ppt/media/component-s07-o021.svg",
+          "pngSha256": "a5e34923c32afb3137dcdf3ffc494a87811ab5be5b3b82713df5d3e1ea14ec2d",
+          "svgSha256": "1bc1fcefcf1cbe5d58a9059ba0dcca0d2dc0d8fbc3fcfe089ea7431cb7850721",
+          "pngSize": [
+            166,
+            88
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / system-one / 22",
+          "sourceName": "returns-fallback / system-one / 22",
+          "kind": "illustration",
+          "shapeId": 26,
+          "bounds": [
+            139,
+            542,
+            169,
+            161
+          ],
+          "emu": [
+            882650,
+            3441700,
+            1073150,
+            1022350
+          ],
+          "pngRel": "rId49",
+          "svgRel": "rId50",
+          "png": "ppt/media/component-s07-o022.png",
+          "svg": "ppt/media/component-s07-o022.svg",
+          "pngSha256": "1190034f63d42c4153b9e4e6ea60d3f2f55f3c94f629b5320e9c8de22e759210",
+          "svgSha256": "0bc80cb13aed8fdc94e834fbc56eeb13f3d7f17ac0dbbdaefe47208649025a48",
+          "pngSize": [
+            338,
+            322
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / koa-action / Jev / 23",
+          "sourceName": "returns-fallback / koa-action / Jev / 23",
+          "kind": "label",
+          "shapeId": 27,
+          "bounds": [
+            101,
+            481,
+            246,
+            64
+          ],
+          "emu": [
+            641350,
+            3054350,
+            1562100,
+            406400
+          ],
+          "pngRel": "rId51",
+          "svgRel": "rId52",
+          "png": "ppt/media/component-s07-o023.png",
+          "svg": "ppt/media/component-s07-o023.svg",
+          "pngSha256": "2e6de296aebcdc734e9338812a1b5d320b420ea2b99f2138ad523eb0b23abbb2",
+          "svgSha256": "eec958853fbf8d5fc5aa5a1c1c44cfe1e0c8f3d51bbd6b7ac26f85c87c41b039",
+          "pngSize": [
+            492,
+            128
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / clarify / 24",
+          "sourceName": "returns-fallback / clarify / 24",
+          "kind": "illustration",
+          "shapeId": 28,
+          "bounds": [
+            402,
+            392,
+            188,
+            171
+          ],
+          "emu": [
+            2552700,
+            2489200,
+            1193800,
+            1085850
+          ],
+          "pngRel": "rId53",
+          "svgRel": "rId54",
+          "png": "ppt/media/component-s07-o024.png",
+          "svg": "ppt/media/component-s07-o024.svg",
+          "pngSha256": "6385688ef13e6e63e877084844082906c4c932b3c3e11f80f65a8ccd09622545",
+          "svgSha256": "056c2d9e75f7a8345d242c452c6a7a6dfe680285e109822e0f659fb1dca827b7",
+          "pngSize": [
+            376,
+            342
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Clarify / 25",
+          "sourceName": "returns-fallback / Clarify / 25",
+          "kind": "label",
+          "shapeId": 29,
+          "bounds": [
+            432,
+            549,
+            126,
+            68
+          ],
+          "emu": [
+            2743200,
+            3486150,
+            800100,
+            431800
+          ],
+          "pngRel": "rId55",
+          "svgRel": "rId56",
+          "png": "ppt/media/component-s07-o025.png",
+          "svg": "ppt/media/component-s07-o025.svg",
+          "pngSha256": "2b0df3b244a83ebf0671dd5f7bd1813aedbe3127f3a4c6d7eb8b7d3f4d0da937",
+          "svgSha256": "95da11498c3f386debc7ccab3b2dab88e649bafc764807e94d464300dd9654dc",
+          "pngSize": [
+            252,
+            136
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / policy / 26",
+          "sourceName": "returns-fallback / policy / 26",
+          "kind": "illustration",
+          "shapeId": 30,
+          "bounds": [
+            676,
+            392,
+            168,
+            168
+          ],
+          "emu": [
+            4292600,
+            2489200,
+            1066800,
+            1066800
+          ],
+          "pngRel": "rId57",
+          "svgRel": "rId58",
+          "png": "ppt/media/component-s07-o026.png",
+          "svg": "ppt/media/component-s07-o026.svg",
+          "pngSha256": "95f4c9cff737a3d3475b8b5f07dd9ee7a9c14acb7d365f72fcd39685038109d8",
+          "svgSha256": "06dfce59bfde64746c3d394f914fa4892202c67ec8f5f6db12c1101a79fd9037",
+          "pngSize": [
+            336,
+            336
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Precheck / 27",
+          "sourceName": "returns-fallback / Precheck / 27",
+          "kind": "label",
+          "shapeId": 31,
+          "bounds": [
+            664,
+            330,
+            170,
+            68
+          ],
+          "emu": [
+            4216400,
+            2095500,
+            1079500,
+            431800
+          ],
+          "pngRel": "rId59",
+          "svgRel": "rId60",
+          "png": "ppt/media/component-s07-o027.png",
+          "svg": "ppt/media/component-s07-o027.svg",
+          "pngSha256": "7a4841f8ecbe5925b5243d9d4a98776cd083c3b52cdf5a313cc17d59d482263a",
+          "svgSha256": "7d33db21d325e68a7c9e87b9d7dc3b2af6327322381635d9d5760b4cdbf32898",
+          "pngSize": [
+            340,
+            136
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / frontier / 28",
+          "sourceName": "returns-fallback / frontier / 28",
+          "kind": "illustration",
+          "shapeId": 32,
+          "bounds": [
+            937,
+            371,
+            245,
+            212
+          ],
+          "emu": [
+            5949950,
+            2355850,
+            1555750,
+            1346200
+          ],
+          "pngRel": "rId61",
+          "svgRel": "rId62",
+          "png": "ppt/media/component-s07-o028.png",
+          "svg": "ppt/media/component-s07-o028.svg",
+          "pngSha256": "c5f9085007f30e2b0c223474b5af540f28a1de61b7cf7a377ad6901a5542ecdf",
+          "svgSha256": "dcbf4c52739bae6e84561526ad9b710ed46d741bb06e5eaf73475b9be0dc0043",
+          "pngSize": [
+            490,
+            424
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Still complex? / 29",
+          "sourceName": "returns-fallback / Still complex? / 29",
+          "kind": "label",
+          "shapeId": 33,
+          "bounds": [
+            952,
+            311,
+            214,
+            62
+          ],
+          "emu": [
+            6045200,
+            1974850,
+            1358900,
+            393700
+          ],
+          "pngRel": "rId63",
+          "svgRel": "rId64",
+          "png": "ppt/media/component-s07-o029.png",
+          "svg": "ppt/media/component-s07-o029.svg",
+          "pngSha256": "a1eec8293199a10101450b03a493431f0d99fe62d65fa0a447bc5a9646dd9686",
+          "svgSha256": "b7cae641abdcb57a3d548b6e4957a4623d83445eb27ab66a81045eca213dd9ec",
+          "pngSize": [
+            428,
+            124
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Frontier LLM / 30",
+          "sourceName": "returns-fallback / Frontier LLM / 30",
+          "kind": "label",
+          "shapeId": 34,
+          "bounds": [
+            951,
+            564,
+            216,
+            68
+          ],
+          "emu": [
+            6038850,
+            3581400,
+            1371600,
+            431800
+          ],
+          "pngRel": "rId65",
+          "svgRel": "rId66",
+          "png": "ppt/media/component-s07-o030.png",
+          "svg": "ppt/media/component-s07-o030.svg",
+          "pngSha256": "0ccca3575ccd88d9d53541d97a398b946acb35db114e0e82de4dd30771348f5a",
+          "svgSha256": "27072f36ef4710a6c02d00fe934ef74ea659ec3c575cb99b84447eed5c78407a",
+          "pngSize": [
+            432,
+            136
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / review / 31",
+          "sourceName": "returns-fallback / review / 31",
+          "kind": "illustration",
+          "shapeId": 35,
+          "bounds": [
+            1336,
+            414,
+            213,
+            163
+          ],
+          "emu": [
+            8483600,
+            2628900,
+            1352550,
+            1035050
+          ],
+          "pngRel": "rId67",
+          "svgRel": "rId68",
+          "png": "ppt/media/component-s07-o031.png",
+          "svg": "ppt/media/component-s07-o031.svg",
+          "pngSha256": "bb398ebd7fae7010eb4582143151c3a55542f3a6af9c10db79aeb0761eca2260",
+          "svgSha256": "c3578e714fa7a33fce4b24e7b4473db4d8431bf88a4ee86cefdcf6c0793e7958",
+          "pngSize": [
+            426,
+            326
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Human review / 32",
+          "sourceName": "returns-fallback / Human review / 32",
+          "kind": "label",
+          "shapeId": 36,
+          "bounds": [
+            1317,
+            565,
+            242,
+            68
+          ],
+          "emu": [
+            8362950,
+            3587750,
+            1536700,
+            431800
+          ],
+          "pngRel": "rId69",
+          "svgRel": "rId70",
+          "png": "ppt/media/component-s07-o032.png",
+          "svg": "ppt/media/component-s07-o032.svg",
+          "pngSha256": "6e8b101b250123d41265148e4e761b4ab1ce083f6fed2eb67bc222cb4315ba18",
+          "svgSha256": "3587d466e002bee1c6e7dc64b3b5a2a980413bc3391475ad0f38718f06166bb0",
+          "pngSize": [
+            484,
+            136
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / hold / 33",
+          "sourceName": "returns-fallback / hold / 33",
+          "kind": "illustration",
+          "shapeId": 37,
+          "bounds": [
+            1626,
+            477,
+            68,
+            67
+          ],
+          "emu": [
+            10325100,
+            3028950,
+            431800,
+            425450
+          ],
+          "pngRel": "rId71",
+          "svgRel": "rId72",
+          "png": "ppt/media/component-s07-o033.png",
+          "svg": "ppt/media/component-s07-o033.svg",
+          "pngSha256": "0cfe0bff5f72195193312fea71fa83155a90c27f8e79e02d42d96001cffb1d5a",
+          "svgSha256": "759c08de74f572cf3b1af5c9fcd3b79f12c4805db45b151de64f5942a712da96",
+          "pngSize": [
+            136,
+            134
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Hold / 34",
+          "sourceName": "returns-fallback / Hold / 34",
+          "kind": "label",
+          "shapeId": 38,
+          "bounds": [
+            1618,
+            536,
+            84,
+            61
+          ],
+          "emu": [
+            10274300,
+            3403600,
+            533400,
+            387350
+          ],
+          "pngRel": "rId73",
+          "svgRel": "rId74",
+          "png": "ppt/media/component-s07-o034.png",
+          "svg": "ppt/media/component-s07-o034.svg",
+          "pngSha256": "e505091b9e4b6180540c6430eec7c341d65b1515d10ce3dc63c0622779ea0a90",
+          "svgSha256": "a09bcfbe8f26d976ac72ccabcd8e0a54ddbd2090c562a64c72d5d9c25d5a00ed",
+          "pngSize": [
+            168,
+            122
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / stop / 35",
+          "sourceName": "returns-fallback / stop / 35",
+          "kind": "illustration",
+          "shapeId": 39,
+          "bounds": [
+            653,
+            628,
+            67,
+            66
+          ],
+          "emu": [
+            4146550,
+            3987800,
+            425450,
+            419100
+          ],
+          "pngRel": "rId75",
+          "svgRel": "rId76",
+          "png": "ppt/media/component-s07-o035.png",
+          "svg": "ppt/media/component-s07-o035.svg",
+          "pngSha256": "edbe527542ad2649a59d6706adc42574c8eb49bb025f7fea0968caec49ff3193",
+          "svgSha256": "daf4a7402d356ba8d36f68621b86ebb92d2ad33c97a3d912fb8f513d3f85b863",
+          "pngSize": [
+            134,
+            132
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / hold / 36",
+          "sourceName": "returns-fallback / hold / 36",
+          "kind": "illustration",
+          "shapeId": 40,
+          "bounds": [
+            776,
+            629,
+            63,
+            63
+          ],
+          "emu": [
+            4927600,
+            3994150,
+            400050,
+            400050
+          ],
+          "pngRel": "rId77",
+          "svgRel": "rId78",
+          "png": "ppt/media/component-s07-o036.png",
+          "svg": "ppt/media/component-s07-o036.svg",
+          "pngSha256": "33527f366a882889b0ada26fa390bc1ddc4bea17d80b6d6585af48f265a1b3ec",
+          "svgSha256": "9ae8d74b58046db4c19a813db6fc7523a6839eb3e8e6bcce9a9aeeb121fe6e01",
+          "pngSize": [
+            126,
+            126
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Decline / 37",
+          "sourceName": "returns-fallback / Decline / 37",
+          "kind": "label",
+          "shapeId": 41,
+          "bounds": [
+            628,
+            664,
+            118,
+            60
+          ],
+          "emu": [
+            3987800,
+            4216400,
+            749300,
+            381000
+          ],
+          "pngRel": "rId79",
+          "svgRel": "rId80",
+          "png": "ppt/media/component-s07-o037.png",
+          "svg": "ppt/media/component-s07-o037.svg",
+          "pngSha256": "eb0fc622544bf8e766f18689fcc4b838e28d39082efc194bbd5bb04d030fb523",
+          "svgSha256": "497f15f15703589fe6eec31c868d93beb3601719af22f55c2c73e2f4c5d607ce",
+          "pngSize": [
+            236,
+            120
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Hold / 38",
+          "sourceName": "returns-fallback / Hold / 38",
+          "kind": "label",
+          "shapeId": 42,
+          "bounds": [
+            766,
+            664,
+            82,
+            60
+          ],
+          "emu": [
+            4864100,
+            4216400,
+            520700,
+            381000
+          ],
+          "pngRel": "rId81",
+          "svgRel": "rId82",
+          "png": "ppt/media/component-s07-o038.png",
+          "svg": "ppt/media/component-s07-o038.svg",
+          "pngSha256": "aa900c20fc72b35e50f1f19ce95740de9656afa6063d30fb8c48c111f065b979",
+          "svgSha256": "7e5736d7890452afdb82912e9c43ccb6cb56b8784b01ca2efbbb7a1ea8d50102",
+          "pngSize": [
+            164,
+            120
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / policy / 39",
+          "sourceName": "returns-fallback / policy / 39",
+          "kind": "illustration",
+          "shapeId": 43,
+          "bounds": [
+            1097,
+            690,
+            163,
+            163
+          ],
+          "emu": [
+            6965950,
+            4381500,
+            1035050,
+            1035050
+          ],
+          "pngRel": "rId83",
+          "svgRel": "rId84",
+          "png": "ppt/media/component-s07-o039.png",
+          "svg": "ppt/media/component-s07-o039.svg",
+          "pngSha256": "98ca0970abdacf53c91564b466e47c45f81a44b05e2811e3e8d3a5b10926fbe9",
+          "svgSha256": "7c6bfd3d2905a6a63ec871f32807891334f695a920acd3ca3361e61aed9d0826",
+          "pngSize": [
+            326,
+            326
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Same policy / 40",
+          "sourceName": "returns-fallback / Same policy / 40",
+          "kind": "label",
+          "shapeId": 44,
+          "bounds": [
+            1064,
+            842,
+            210,
+            68
+          ],
+          "emu": [
+            6756400,
+            5346700,
+            1333500,
+            431800
+          ],
+          "pngRel": "rId85",
+          "svgRel": "rId86",
+          "png": "ppt/media/component-s07-o040.png",
+          "svg": "ppt/media/component-s07-o040.svg",
+          "pngSha256": "710a41fac62059898b8ea42209f9c4d1a2469da6c15ba940d3ac1e221a4b68ed",
+          "svgSha256": "db5eacf444f680bafd6c8540813a614a03cb66cecfb90232ba8aeae20ec767fb",
+          "pngSize": [
+            420,
+            136
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-41 / 41",
+          "sourceName": "returns-fallback / connector-41 / 41",
+          "kind": "connector",
+          "shapeId": 45,
+          "bounds": [
+            1244,
+            775,
+            121,
+            24
+          ],
+          "emu": [
+            7899400,
+            4921250,
+            768350,
+            152400
+          ],
+          "pngRel": "rId87",
+          "svgRel": "rId88",
+          "png": "ppt/media/component-s07-o041.png",
+          "svg": "ppt/media/component-s07-o041.svg",
+          "pngSha256": "ec7f2627fec542b5834863c381a4b82101af43bb73d4cbc1b904c9b5bfb7ba1f",
+          "svgSha256": "559e7b67d3ebf19eab711edf87c44a4222b2a93f18767d7e75795266f364d301",
+          "pngSize": [
+            242,
+            48
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / customer / 42",
+          "sourceName": "returns-fallback / customer / 42",
+          "kind": "illustration",
+          "shapeId": 46,
+          "bounds": [
+            1366,
+            701,
+            140,
+            157
+          ],
+          "emu": [
+            8674100,
+            4451350,
+            889000,
+            996950
+          ],
+          "pngRel": "rId89",
+          "svgRel": "rId90",
+          "png": "ppt/media/component-s07-o042.png",
+          "svg": "ppt/media/component-s07-o042.svg",
+          "pngSha256": "c6cdfd8f8d1dd2f8703120df8666a55814d3bbdfd5185957d5be08b4c361ab64",
+          "svgSha256": "be59b1c56f4cc7eab4f57a49fafeecd58489efc41e6a03cc6e47deefb0f95243",
+          "pngSize": [
+            280,
+            314
+          ]
+        },
+        {
+          "name": "returns-fallback — badge: returns-fallback / customer-confirmation / 43",
+          "sourceName": "returns-fallback / customer-confirmation / 43",
+          "kind": "badge",
+          "shapeId": 47,
+          "bounds": [
+            1457,
+            723,
+            68,
+            68
+          ],
+          "emu": [
+            9251950,
+            4591050,
+            431800,
+            431800
+          ],
+          "pngRel": "rId91",
+          "svgRel": "rId92",
+          "png": "ppt/media/component-s07-o043.png",
+          "svg": "ppt/media/component-s07-o043.svg",
+          "pngSha256": "8e41fce5348ce9d7a0a1367fde9151cd05cac416f3e8b0072f98ef0fc32b0dce",
+          "svgSha256": "db2b7365acead4c4c47fcb0229316355d2c4c83923b029451565fbcc6e6288e5",
+          "pngSize": [
+            136,
+            136
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Confirm / 44",
+          "sourceName": "returns-fallback / Confirm / 44",
+          "kind": "label",
+          "shapeId": 48,
+          "bounds": [
+            1363,
+            842,
+            150,
+            68
+          ],
+          "emu": [
+            8655050,
+            5346700,
+            952500,
+            431800
+          ],
+          "pngRel": "rId93",
+          "svgRel": "rId94",
+          "png": "ppt/media/component-s07-o044.png",
+          "svg": "ppt/media/component-s07-o044.svg",
+          "pngSha256": "4ceb03cc3584e72e8c36c1535c4b7af2f99f3bfc37d2613901b8d7ec03d2a11e",
+          "svgSha256": "f8f26d76a1c864cfe2539f63a30c955373091b21a7ab73f3d534990127c125ac",
+          "pngSize": [
+            300,
+            136
+          ]
+        },
+        {
+          "name": "returns-fallback — connector: returns-fallback / connector-45 / 45",
+          "sourceName": "returns-fallback / connector-45 / 45",
+          "kind": "connector",
+          "shapeId": 49,
+          "bounds": [
+            1504,
+            775,
+            106,
+            24
+          ],
+          "emu": [
+            9550400,
+            4921250,
+            673100,
+            152400
+          ],
+          "pngRel": "rId95",
+          "svgRel": "rId96",
+          "png": "ppt/media/component-s07-o045.png",
+          "svg": "ppt/media/component-s07-o045.svg",
+          "pngSha256": "49eeff0d3a7b9c0ac9fcfcbafd28eaa3618dc9d027e97e1747e5659b5ccc23e7",
+          "svgSha256": "b8747baeb8fc4596395ba2f8edc61d6fcb009d978ee0d5cc43f43af67d6c74eb",
+          "pngSize": [
+            212,
+            48
+          ]
+        },
+        {
+          "name": "returns-fallback — illustration: returns-fallback / parcel / 46",
+          "sourceName": "returns-fallback / parcel / 46",
+          "kind": "illustration",
+          "shapeId": 50,
+          "bounds": [
+            1592,
+            691,
+            196,
+            174
+          ],
+          "emu": [
+            10109200,
+            4387850,
+            1244600,
+            1104900
+          ],
+          "pngRel": "rId97",
+          "svgRel": "rId98",
+          "png": "ppt/media/component-s07-o046.png",
+          "svg": "ppt/media/component-s07-o046.svg",
+          "pngSha256": "ce4aa33160ae273734ce4cbc0870ba4a00ebddf515669e471fc84826c73af142",
+          "svgSha256": "bfcda5e4cd7e26583c9ae49a4425e196a4b1b55fe9aeb9debd61c7262a5efa63",
+          "pngSize": [
+            392,
+            348
+          ]
+        },
+        {
+          "name": "returns-fallback — label: returns-fallback / Return authorized / 47",
+          "sourceName": "returns-fallback / Return authorized / 47",
+          "kind": "label",
+          "shapeId": 51,
+          "bounds": [
+            1540,
+            844,
+            288,
+            65
+          ],
+          "emu": [
+            9779000,
+            5359400,
+            1828800,
+            412750
+          ],
+          "pngRel": "rId99",
+          "svgRel": "rId100",
+          "png": "ppt/media/component-s07-o047.png",
+          "svg": "ppt/media/component-s07-o047.svg",
+          "pngSha256": "a8022c30621112cb973cb1ae0deefe0e50c1deced8edb598736dbb34cb9bff5d",
+          "svgSha256": "1587dad73b366738789cfbf3f52eb3a832f78b79f5c508e3c236dc4969ddba27",
+          "pngSize": [
+            576,
+            130
+          ]
+        }
+      ],
+      "baseSlideSha256": "61b64a62dfdab6aa83af9b9f9b4c1133cb08824dd3ef1884639d52bea026f3d9",
+      "sourceLinks": [
+        {
+          "id": "rId3",
+          "target": "https://docs.typesafe.ai/patterns/intent-routing",
+          "mode": "External"
+        },
+        {
+          "id": "rId4",
+          "target": "https://www.salesforce.com/blog/agent-script-control-plane/",
+          "mode": "External"
+        }
+      ],
+      "noteMember": "ppt/notesSlides/notesSlide7.xml",
+      "notesSha256": "563644924486f25347a6b16e7d50def6b2ace36279279e52a97bcd9c8fcc1cd4",
+      "originalNotesSha256": "04fe17d591339b8a67ce2bd5e31eb53694bf1b9ad3243fd9728672c6271fd47e",
+      "slideSha256": "5633e2fddf7ccf3dfc1a98bf6bf158679b612962ad63f684ba71a2d538ae1f3e",
+      "relationshipsSha256": "bbd581895bc4a19f70325ddff189ea472b9c5e2666e2bcc818859bd4ffaed898",
+      "objectCount": 47,
+      "expectedFullPNGSha256": "41dc21f0641e84d2881231c28acd82fee435b51fa117ccaa82c609190d95fb4f"
+    },
+    {
+      "index": 8,
+      "id": "returns-policy",
+      "member": "ppt/slides/slide8.xml",
+      "relationshipMember": "ppt/slides/_rels/slide8.xml.rels",
+      "frame": {
+        "name": "returns-policy — frame (background and slide chrome)",
+        "shapeId": 2,
+        "png": "ppt/media/component-s08-frame.png",
+        "svg": "ppt/media/component-s08-frame.svg",
+        "pngSha256": "43a19309ca0fc976d5e197ad0c3b01fb732169d12984b5b84a5ce2fa73f32291",
+        "svgSha256": "355a97a83bb574e271f3a970613ae04116b0e8416aceb366a4de0ad998c230e6",
+        "pngSize": [
+          1920,
+          1080
+        ],
+        "emu": [
+          0,
+          0,
+          12192000,
+          6858000
+        ],
+        "pngRel": "rId1",
+        "svgRel": "rId2"
+      },
+      "objects": [
+        {
+          "name": "returns-policy — background: returns-policy / background-1 / 1",
+          "sourceName": "returns-policy / background-1 / 1",
+          "kind": "background",
+          "shapeId": 3,
+          "bounds": [
+            88,
+            292,
+            1744,
+            620
+          ],
+          "emu": [
+            558800,
+            1854200,
+            11074400,
+            3937000
+          ],
+          "pngRel": "rId5",
+          "svgRel": "rId6",
+          "png": "ppt/media/component-s08-o001.png",
+          "svg": "ppt/media/component-s08-o001.svg",
+          "pngSha256": "1d95234d5063c4ebe6b00e896c3dd30ff3423658100b65c222e33d7b8e65183e",
+          "svgSha256": "b98505b52e1462e938feba10130028d55f4ad25ddc385c1afea164bfefb59ae3",
+          "pngSize": [
+            3488,
+            1240
+          ]
+        },
+        {
+          "name": "returns-policy — connector: returns-policy / connector-2 / 2",
+          "sourceName": "returns-policy / connector-2 / 2",
+          "kind": "connector",
+          "shapeId": 4,
+          "bounds": [
+            404,
+            434,
+            148,
+            164
+          ],
+          "emu": [
+            2565400,
+            2755900,
+            939800,
+            1041400
+          ],
+          "pngRel": "rId7",
+          "svgRel": "rId8",
+          "png": "ppt/media/component-s08-o002.png",
+          "svg": "ppt/media/component-s08-o002.svg",
+          "pngSha256": "6b26dc1ae23c16afc0a8708735d03308a5314b0ad14ea3974f1c511c89e9e32b",
+          "svgSha256": "58f7826518995401f2e4289e7c4edf5d9ae4011f29f2f8a443c929f2dba5343b",
+          "pngSize": [
+            296,
+            328
+          ]
+        },
+        {
+          "name": "returns-policy — connector: returns-policy / connector-3 / 3",
+          "sourceName": "returns-policy / connector-3 / 3",
+          "kind": "connector",
+          "shapeId": 5,
+          "bounds": [
+            459,
+            574,
+            93,
+            184
+          ],
+          "emu": [
+            2914650,
+            3644900,
+            590550,
+            1168400
+          ],
+          "pngRel": "rId9",
+          "svgRel": "rId10",
+          "png": "ppt/media/component-s08-o003.png",
+          "svg": "ppt/media/component-s08-o003.svg",
+          "pngSha256": "06489e7e62f5c94c1a4b481e8d4f09c28fd111fc0594698bf06770b1651099b7",
+          "svgSha256": "ad8a3191c24b2aeb96cd19fb68eec59df527ea689062940a4242dd2e8af18d04",
+          "pngSize": [
+            186,
+            368
+          ]
+        },
+        {
+          "name": "returns-policy — decoration: returns-policy / decoration-4 / 4",
+          "sourceName": "returns-policy / decoration-4 / 4",
+          "kind": "decoration",
+          "shapeId": 6,
+          "bounds": [
+            453,
+            568,
+            36,
+            36
+          ],
+          "emu": [
+            2876550,
+            3606800,
+            228600,
+            228600
+          ],
+          "pngRel": "rId11",
+          "svgRel": "rId12",
+          "png": "ppt/media/component-s08-o004.png",
+          "svg": "ppt/media/component-s08-o004.svg",
+          "pngSha256": "7fe67c47d5c87344c6f6e4b4b35e479c73008971cd8bc15f1722f62357782065",
+          "svgSha256": "6821329a76d44ba573e328005e308e62a989a14bef746d46d02d8aa96134d3dc",
+          "pngSize": [
+            72,
+            72
+          ]
+        },
+        {
+          "name": "returns-policy — connector: returns-policy / connector-5 / 5",
+          "sourceName": "returns-policy / connector-5 / 5",
+          "kind": "connector",
+          "shapeId": 7,
+          "bounds": [
+            787,
+            434,
+            125,
+            24
+          ],
+          "emu": [
+            4997450,
+            2755900,
+            793750,
+            152400
+          ],
+          "pngRel": "rId13",
+          "svgRel": "rId14",
+          "png": "ppt/media/component-s08-o005.png",
+          "svg": "ppt/media/component-s08-o005.svg",
+          "pngSha256": "a7f234f28dd0a8e9e118ec7230505f83b7a1194c217538ef6165e687d012506d",
+          "svgSha256": "4e4b52aa48c6a821c71601877f064425e83d398f3d3c6c57e36efeb4d006ced0",
+          "pngSize": [
+            250,
+            48
+          ]
+        },
+        {
+          "name": "returns-policy — connector: returns-policy / connector-6 / 6",
+          "sourceName": "returns-policy / connector-6 / 6",
+          "kind": "connector",
+          "shapeId": 8,
+          "bounds": [
+            787,
+            734,
+            125,
+            24
+          ],
+          "emu": [
+            4997450,
+            4660900,
+            793750,
+            152400
+          ],
+          "pngRel": "rId15",
+          "svgRel": "rId16",
+          "png": "ppt/media/component-s08-o006.png",
+          "svg": "ppt/media/component-s08-o006.svg",
+          "pngSha256": "c64ab363340ec1566c54455173d75005ec512d7288ef1ce406e2d8e15813b635",
+          "svgSha256": "faea4fd5e2e3f9976254a676ff07762c14df29e9d64b49d58a956abfbf543874",
+          "pngSize": [
+            250,
+            48
+          ]
+        },
+        {
+          "name": "returns-policy — connector: returns-policy / connector-7 / 7",
+          "sourceName": "returns-policy / connector-7 / 7",
+          "kind": "connector",
+          "shapeId": 9,
+          "bounds": [
+            1126,
+            434,
+            166,
+            164
+          ],
+          "emu": [
+            7150100,
+            2755900,
+            1054100,
+            1041400
+          ],
+          "pngRel": "rId17",
+          "svgRel": "rId18",
+          "png": "ppt/media/component-s08-o007.png",
+          "svg": "ppt/media/component-s08-o007.svg",
+          "pngSha256": "72655e53a53bbf28ac66abd49998209ee2cf2cd178ce323ae22535a06d3e3783",
+          "svgSha256": "21b89c6c3538718682bd4d48349502b194189cc473f408c789cac8ef8555270b",
+          "pngSize": [
+            332,
+            328
+          ]
+        },
+        {
+          "name": "returns-policy — connector: returns-policy / connector-8 / 8",
+          "sourceName": "returns-policy / connector-8 / 8",
+          "kind": "connector",
+          "shapeId": 10,
+          "bounds": [
+            1126,
+            574,
+            102,
+            184
+          ],
+          "emu": [
+            7150100,
+            3644900,
+            647700,
+            1168400
+          ],
+          "pngRel": "rId19",
+          "svgRel": "rId20",
+          "png": "ppt/media/component-s08-o008.png",
+          "svg": "ppt/media/component-s08-o008.svg",
+          "pngSha256": "684312d94eb7db385b7966c88955a644f6fd4b0046d0a2866e38d59b18e80366",
+          "svgSha256": "db9531e3296287b64b625d15e1acd462adeb8f36089eb4d7bc71d5d11f5e3ea4",
+          "pngSize": [
+            204,
+            368
+          ]
+        },
+        {
+          "name": "returns-policy — decoration: returns-policy / decoration-9 / 9",
+          "sourceName": "returns-policy / decoration-9 / 9",
+          "kind": "decoration",
+          "shapeId": 11,
+          "bounds": [
+            1198,
+            568,
+            36,
+            36
+          ],
+          "emu": [
+            7607300,
+            3606800,
+            228600,
+            228600
+          ],
+          "pngRel": "rId21",
+          "svgRel": "rId22",
+          "png": "ppt/media/component-s08-o009.png",
+          "svg": "ppt/media/component-s08-o009.svg",
+          "pngSha256": "cdc9c54734d0ce8db562a1c426783e87135eeb3ea9dd3168173654e48b9a2f02",
+          "svgSha256": "acc8c3cd542f2bdcef01441d2ff98c441436ffa183450e4438a67432a2f5721e",
+          "pngSize": [
+            72,
+            72
+          ]
+        },
+        {
+          "name": "returns-policy — connector: returns-policy / connector-10 / 10",
+          "sourceName": "returns-policy / connector-10 / 10",
+          "kind": "connector",
+          "shapeId": 12,
+          "bounds": [
+            1437,
+            574,
+            96,
+            24
+          ],
+          "emu": [
+            9124950,
+            3644900,
+            609600,
+            152400
+          ],
+          "pngRel": "rId23",
+          "svgRel": "rId24",
+          "png": "ppt/media/component-s08-o010.png",
+          "svg": "ppt/media/component-s08-o010.svg",
+          "pngSha256": "f6bd5e9921533666dc9628f98aa8702636d080629292dd3dc763f2c12e10ea52",
+          "svgSha256": "378b0ff423bf7f0c9c3e63e7be16386f879ed5a7ddd646f32a0399564f7a511e",
+          "pngSize": [
+            192,
+            48
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / identity / 11",
+          "sourceName": "returns-policy / identity / 11",
+          "kind": "illustration",
+          "shapeId": 13,
+          "bounds": [
+            102,
+            497,
+            167,
+            147
+          ],
+          "emu": [
+            647700,
+            3155950,
+            1060450,
+            933450
+          ],
+          "pngRel": "rId25",
+          "svgRel": "rId26",
+          "png": "ppt/media/component-s08-o011.png",
+          "svg": "ppt/media/component-s08-o011.svg",
+          "pngSha256": "7145fc407232ad6abf703fa80fc5439e5d71e82fc28f284e62668112ddeeaa72",
+          "svgSha256": "675f6a2951a22a42505ef9ce00369c059adcb7c495d2ea5d12ec4c29a603c63d",
+          "pngSize": [
+            334,
+            294
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / receipt / 12",
+          "sourceName": "returns-policy / receipt / 12",
+          "kind": "illustration",
+          "shapeId": 14,
+          "bounds": [
+            248,
+            473,
+            183,
+            191
+          ],
+          "emu": [
+            1574800,
+            3003550,
+            1162050,
+            1212850
+          ],
+          "pngRel": "rId27",
+          "svgRel": "rId28",
+          "png": "ppt/media/component-s08-o012.png",
+          "svg": "ppt/media/component-s08-o012.svg",
+          "pngSha256": "5fcac137528fb85dcc243f2a736909d7e6e4940961f5578295b94a951227ad7a",
+          "svgSha256": "d65a38024a1de9729615e52f2c30d30e7a02b5aaa6f6d42bdbd8985d7f409f7f",
+          "pngSize": [
+            366,
+            382
+          ]
+        },
+        {
+          "name": "returns-policy — label: returns-policy / Verified purchase / 13",
+          "sourceName": "returns-policy / Verified purchase / 13",
+          "kind": "label",
+          "shapeId": 15,
+          "bounds": [
+            124,
+            662,
+            294,
+            68
+          ],
+          "emu": [
+            787400,
+            4203700,
+            1866900,
+            431800
+          ],
+          "pngRel": "rId29",
+          "svgRel": "rId30",
+          "png": "ppt/media/component-s08-o013.png",
+          "svg": "ppt/media/component-s08-o013.svg",
+          "pngSha256": "bba471bbf63317877fc344f0515e7d9561e374797633c5328681cd7f72425865",
+          "svgSha256": "d177e1b625d6193760f86138dfc4f8bde223aa519c454d84feecef9f5207e6fb",
+          "pngSize": [
+            588,
+            136
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / calendar-standard-30 / 14",
+          "sourceName": "returns-policy / calendar-standard-30 / 14",
+          "kind": "illustration",
+          "shapeId": 16,
+          "bounds": [
+            540,
+            313,
+            267,
+            285
+          ],
+          "emu": [
+            3429000,
+            1987550,
+            1695450,
+            1809750
+          ],
+          "pngRel": "rId31",
+          "svgRel": "rId32",
+          "png": "ppt/media/component-s08-o014.png",
+          "svg": "ppt/media/component-s08-o014.svg",
+          "pngSha256": "9b465e0b1326d90dbcdf935d4171d3c1e89fc92dfc42ccdd1104fe995d732667",
+          "svgSha256": "c4b9de3671ee50066ba8d305ed40def09691763d0eb540652e3745cd20696de7",
+          "pngSize": [
+            534,
+            570
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / calendar-plus-60 / 15",
+          "sourceName": "returns-policy / calendar-plus-60 / 15",
+          "kind": "illustration",
+          "shapeId": 17,
+          "bounds": [
+            540,
+            613,
+            267,
+            285
+          ],
+          "emu": [
+            3429000,
+            3892550,
+            1695450,
+            1809750
+          ],
+          "pngRel": "rId33",
+          "svgRel": "rId34",
+          "png": "ppt/media/component-s08-o015.png",
+          "svg": "ppt/media/component-s08-o015.svg",
+          "pngSha256": "1323cd6c2c448c66957fa0c952da85fa7a7b6f3abb858f78a4cb937147139f85",
+          "svgSha256": "5283df95828dd65b2b25b3e7fd799ff14116801132346ae29553598c27278e20",
+          "pngSize": [
+            534,
+            570
+          ]
+        },
+        {
+          "name": "returns-policy — label: returns-policy / Eligible / 16",
+          "sourceName": "returns-policy / Eligible / 16",
+          "kind": "label",
+          "shapeId": 18,
+          "bounds": [
+            788,
+            374,
+            122,
+            62
+          ],
+          "emu": [
+            5003800,
+            2374900,
+            774700,
+            393700
+          ],
+          "pngRel": "rId35",
+          "svgRel": "rId36",
+          "png": "ppt/media/component-s08-o016.png",
+          "svg": "ppt/media/component-s08-o016.svg",
+          "pngSha256": "d7d93bd1906207ff575120f0d01ea0b6dea41cef6c390876026280524b58a34b",
+          "svgSha256": "54e898275333330977d5a0060561faa6d4bb6de46a14032a44694c668e955760",
+          "pngSize": [
+            244,
+            124
+          ]
+        },
+        {
+          "name": "returns-policy — label: returns-policy / Eligible / 17",
+          "sourceName": "returns-policy / Eligible / 17",
+          "kind": "label",
+          "shapeId": 19,
+          "bounds": [
+            788,
+            674,
+            122,
+            62
+          ],
+          "emu": [
+            5003800,
+            4279900,
+            774700,
+            393700
+          ],
+          "pngRel": "rId37",
+          "svgRel": "rId38",
+          "png": "ppt/media/component-s08-o017.png",
+          "svg": "ppt/media/component-s08-o017.svg",
+          "pngSha256": "e165c5d25c1078b683d4c15abc94f505a40176d2e5e17479620c5c98db8c63dc",
+          "svgSha256": "db7803189fe4246439c3761995809ee6d4eaaae165b84021798fa846f9db48ec",
+          "pngSize": [
+            244,
+            124
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / shipping-five-dollars / 18",
+          "sourceName": "returns-policy / shipping-five-dollars / 18",
+          "kind": "illustration",
+          "shapeId": 20,
+          "bounds": [
+            892,
+            349,
+            258,
+            215
+          ],
+          "emu": [
+            5664200,
+            2216150,
+            1638300,
+            1365250
+          ],
+          "pngRel": "rId39",
+          "svgRel": "rId40",
+          "png": "ppt/media/component-s08-o018.png",
+          "svg": "ppt/media/component-s08-o018.svg",
+          "pngSha256": "78efafaf6385309375dbceda4732ecd7d7ad551ff2ac43e382f5bde802634b09",
+          "svgSha256": "307d468da3bad636e1e02737f376df01f2aacd6b11d3bf5c4af6bcfd40cdd0d2",
+          "pngSize": [
+            516,
+            430
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / shipping-waived / 19",
+          "sourceName": "returns-policy / shipping-waived / 19",
+          "kind": "illustration",
+          "shapeId": 21,
+          "bounds": [
+            892,
+            649,
+            258,
+            215
+          ],
+          "emu": [
+            5664200,
+            4121150,
+            1638300,
+            1365250
+          ],
+          "pngRel": "rId41",
+          "svgRel": "rId42",
+          "png": "ppt/media/component-s08-o019.png",
+          "svg": "ppt/media/component-s08-o019.svg",
+          "pngSha256": "c0d12473148f69eb251251c7c609a940fe4b85f82f47275e9e27231f00e26f3e",
+          "svgSha256": "d8752e242052203c3053bc5af01f6561234e4db304aab5732601d0422392827b",
+          "pngSize": [
+            516,
+            430
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / customer / 20",
+          "sourceName": "returns-policy / customer / 20",
+          "kind": "illustration",
+          "shapeId": 22,
+          "bounds": [
+            1300,
+            489,
+            148,
+            167
+          ],
+          "emu": [
+            8255000,
+            3105150,
+            939800,
+            1060450
+          ],
+          "pngRel": "rId43",
+          "svgRel": "rId44",
+          "png": "ppt/media/component-s08-o020.png",
+          "svg": "ppt/media/component-s08-o020.svg",
+          "pngSha256": "fc00a1008450e347538cbb194217c995f2deccc4367b7eb8823d6f5e7d3bc389",
+          "svgSha256": "167a33f05a17fd22780d966adf7f6f3d3e30c43ba16e4bc0153895aaae584a4d",
+          "pngSize": [
+            296,
+            334
+          ]
+        },
+        {
+          "name": "returns-policy — badge: returns-policy / customer-confirmation / 21",
+          "sourceName": "returns-policy / customer-confirmation / 21",
+          "kind": "badge",
+          "shapeId": 23,
+          "bounds": [
+            1379,
+            502,
+            80,
+            80
+          ],
+          "emu": [
+            8756650,
+            3187700,
+            508000,
+            508000
+          ],
+          "pngRel": "rId45",
+          "svgRel": "rId46",
+          "png": "ppt/media/component-s08-o021.png",
+          "svg": "ppt/media/component-s08-o021.svg",
+          "pngSha256": "9d5d8b98856f68f64cf54ba4a4b4b329482ec75ce641e12e50e5ff274b9953c5",
+          "svgSha256": "099818c0cd66e2ce3a2319feed0ffdb1da2b003698fc261c721b6210978159ba",
+          "pngSize": [
+            160,
+            160
+          ]
+        },
+        {
+          "name": "returns-policy — label: returns-policy / Confirm / 22",
+          "sourceName": "returns-policy / Confirm / 22",
+          "kind": "label",
+          "shapeId": 24,
+          "bounds": [
+            1288,
+            660,
+            158,
+            70
+          ],
+          "emu": [
+            8178800,
+            4191000,
+            1003300,
+            444500
+          ],
+          "pngRel": "rId47",
+          "svgRel": "rId48",
+          "png": "ppt/media/component-s08-o022.png",
+          "svg": "ppt/media/component-s08-o022.svg",
+          "pngSha256": "29e8ed61fd10f031dcc9d2394f3e87439c13c2034d113b1b56be4c691679b6b3",
+          "svgSha256": "00dbb74986ebcbd160624ab9fa614e38cd1313e1f95c6ea97581b1138ba916b6",
+          "pngSize": [
+            316,
+            140
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / parcel / 23",
+          "sourceName": "returns-policy / parcel / 23",
+          "kind": "illustration",
+          "shapeId": 25,
+          "bounds": [
+            1582,
+            506,
+            212,
+            187
+          ],
+          "emu": [
+            10045700,
+            3213100,
+            1346200,
+            1187450
+          ],
+          "pngRel": "rId49",
+          "svgRel": "rId50",
+          "png": "ppt/media/component-s08-o023.png",
+          "svg": "ppt/media/component-s08-o023.svg",
+          "pngSha256": "57c726fe39cbc51f27e86bc54d8685284457fcc27a6e81a3cb2c1142ddc54859",
+          "svgSha256": "70dccf75bb86e04f561c0f63cc95c2ef7ddf1eeffe5bf57c1a4b9766552d7424",
+          "pngSize": [
+            424,
+            374
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / service-approval / 24",
+          "sourceName": "returns-policy / service-approval / 24",
+          "kind": "illustration",
+          "shapeId": 26,
+          "bounds": [
+            1507,
+            537,
+            76,
+            100
+          ],
+          "emu": [
+            9569450,
+            3409950,
+            482600,
+            635000
+          ],
+          "pngRel": "rId51",
+          "svgRel": "rId52",
+          "png": "ppt/media/component-s08-o024.png",
+          "svg": "ppt/media/component-s08-o024.svg",
+          "pngSha256": "319255197135d122ce97b0c8316aa92135be6dd069e534c63ea9247601f09f70",
+          "svgSha256": "e6c06db45bfee2d63a960f3fe90559e5665d89d31326eedec28d43ecf92f25b6",
+          "pngSize": [
+            152,
+            200
+          ]
+        },
+        {
+          "name": "returns-policy — label: returns-policy / Service approves / 25",
+          "sourceName": "returns-policy / Service approves / 25",
+          "kind": "label",
+          "shapeId": 27,
+          "bounds": [
+            1512,
+            663,
+            280,
+            66
+          ],
+          "emu": [
+            9601200,
+            4210050,
+            1778000,
+            419100
+          ],
+          "pngRel": "rId53",
+          "svgRel": "rId54",
+          "png": "ppt/media/component-s08-o025.png",
+          "svg": "ppt/media/component-s08-o025.svg",
+          "pngSha256": "f76a9a7d199d4af1f460bb2b26640d2984161e0dc9254c8e3d5d5c0e1d6ef3de",
+          "svgSha256": "2065afedb96a1a1f0ddba7f48d8f1837e6fba57cda0d224f8860882c78625cdd",
+          "pngSize": [
+            560,
+            132
+          ]
+        },
+        {
+          "name": "returns-policy — label: returns-policy / Return authorized / 26",
+          "sourceName": "returns-policy / Return authorized / 26",
+          "kind": "label",
+          "shapeId": 28,
+          "bounds": [
+            1497,
+            708,
+            310,
+            68
+          ],
+          "emu": [
+            9505950,
+            4495800,
+            1968500,
+            431800
+          ],
+          "pngRel": "rId55",
+          "svgRel": "rId56",
+          "png": "ppt/media/component-s08-o026.png",
+          "svg": "ppt/media/component-s08-o026.svg",
+          "pngSha256": "afe38bcc53f9a565baa141ac044616887d98755acd23a4c44fc1f064d3030d01",
+          "svgSha256": "c2a19e155bdeba8af35b62184d1cda298227883d87498625da27f41609a1767b",
+          "pngSize": [
+            620,
+            136
+          ]
+        },
+        {
+          "name": "returns-policy — illustration: returns-policy / standard-day-45-declined / 27",
+          "sourceName": "returns-policy / standard-day-45-declined / 27",
+          "kind": "illustration",
+          "shapeId": 29,
+          "bounds": [
+            123,
+            745,
+            353,
+            138
+          ],
+          "emu": [
+            781050,
+            4730750,
+            2241550,
+            876300
+          ],
+          "pngRel": "rId57",
+          "svgRel": "rId58",
+          "png": "ppt/media/component-s08-o027.png",
+          "svg": "ppt/media/component-s08-o027.svg",
+          "pngSha256": "ea38613816c9055e8b8491ebe3aa2e301d849cbb28450a0e88036c6abf77c57f",
+          "svgSha256": "6193654c1ca0481700e74a9a9412ae570d404bec699b67de7bd4b52897627576",
+          "pngSize": [
+            706,
+            276
+          ]
+        }
+      ],
+      "baseSlideSha256": "7d3d6f0bf7cf1fbb08b82ed23a8c9baeec22a32945f46fbcf18a4a75e47df8a2",
+      "sourceLinks": [],
+      "noteMember": "ppt/notesSlides/notesSlide8.xml",
+      "notesSha256": "e86af5ce58af91bc6c5f79d0a11305e6c1309cd2a4b71083ea63e2a5020e5d84",
+      "originalNotesSha256": "42292e0d53c9b80d383e6ddb86f6fc8e900692a6a1a8bb19dfe81b13ae05f1ce",
+      "slideSha256": "aa8db137dcbc97a1f6050dbbadb8ca82523b01df6905d50eae910c21f82275b0",
+      "relationshipsSha256": "cf3e38b719f940dc6521a6e41ab923e6fdc64ec4ea333e53563f161bc7b78128",
+      "objectCount": 27,
+      "expectedFullPNGSha256": "a5f5cf56e250fc9ef095b35dfad680548d167a704bbaac0be3b5ae2b827af499"
+    },
+    {
+      "index": 35,
+      "id": "returns-components",
+      "member": "ppt/slides/slide35.xml",
+      "relationshipMember": "ppt/slides/_rels/slide35.xml.rels",
+      "frame": {
+        "name": "returns-components — frame (background and slide chrome)",
+        "shapeId": 2,
+        "png": "ppt/media/component-s35-frame.png",
+        "svg": "ppt/media/component-s35-frame.svg",
+        "pngSha256": "7067dba9f86d6c3f92da09ea22898b861c8f012096eb710f5694e9cacd48b1c8",
+        "svgSha256": "a162bf84259bb0fa18e992a2ebe1fc5ee69c161ead310d1de80ff7f4bf43b1c8",
+        "pngSize": [
+          1920,
+          1080
+        ],
+        "emu": [
+          0,
+          0,
+          12192000,
+          6858000
+        ],
+        "pngRel": "rId1",
+        "svgRel": "rId2"
+      },
+      "objects": [
+        {
+          "name": "returns-components — background: returns-components / background-1 / 1",
+          "sourceName": "returns-components / background-1 / 1",
+          "kind": "background",
+          "shapeId": 3,
+          "bounds": [
+            88,
+            292,
+            1744,
+            620
+          ],
+          "emu": [
+            558800,
+            1854200,
+            11074400,
+            3937000
+          ],
+          "pngRel": "rId5",
+          "svgRel": "rId6",
+          "png": "ppt/media/component-s35-o001.png",
+          "svg": "ppt/media/component-s35-o001.svg",
+          "pngSha256": "1d95234d5063c4ebe6b00e896c3dd30ff3423658100b65c222e33d7b8e65183e",
+          "svgSha256": "b98505b52e1462e938feba10130028d55f4ad25ddc385c1afea164bfefb59ae3",
+          "pngSize": [
+            3488,
+            1240
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / customer / 2",
+          "sourceName": "returns-components / customer / 2",
+          "kind": "illustration",
+          "shapeId": 4,
+          "bounds": [
+            162,
+            319,
+            167,
+            189
+          ],
+          "emu": [
+            1028700,
+            2025650,
+            1060450,
+            1200150
+          ],
+          "pngRel": "rId7",
+          "svgRel": "rId8",
+          "png": "ppt/media/component-s35-o002.png",
+          "svg": "ppt/media/component-s35-o002.svg",
+          "pngSha256": "8b2a7ab1115b8f4bb893fa38cfb0662cb1b72d71ce891b8f4d7136bbbcc5fae1",
+          "svgSha256": "665b7eaa35535e8df2e7e311f55e29dd5d6c14f859ed239c3983b8a540f6d934",
+          "pngSize": [
+            334,
+            378
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Customer / 3",
+          "sourceName": "returns-components / Customer / 3",
+          "kind": "label",
+          "shapeId": 5,
+          "bounds": [
+            159,
+            507,
+            168,
+            65
+          ],
+          "emu": [
+            1009650,
+            3219450,
+            1066800,
+            412750
+          ],
+          "pngRel": "rId9",
+          "svgRel": "rId10",
+          "png": "ppt/media/component-s35-o003.png",
+          "svg": "ppt/media/component-s35-o003.svg",
+          "pngSha256": "dbd1ddbb02492c28219a20a5f42ece6d635990b89820bf741ebde690b30e1244",
+          "svgSha256": "97804fccaab3954b91b4b2d3a0dd869c3a51e036ab2b88c669c0ca8399466d35",
+          "pngSize": [
+            336,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / identity / 4",
+          "sourceName": "returns-components / identity / 4",
+          "kind": "illustration",
+          "shapeId": 6,
+          "bounds": [
+            434,
+            335,
+            190,
+            168
+          ],
+          "emu": [
+            2755900,
+            2127250,
+            1206500,
+            1066800
+          ],
+          "pngRel": "rId11",
+          "svgRel": "rId12",
+          "png": "ppt/media/component-s35-o004.png",
+          "svg": "ppt/media/component-s35-o004.svg",
+          "pngSha256": "d45c0924482c6c4e45aa4b9004d83810f8b7a71dcba438eceac59fc4637c3ab7",
+          "svgSha256": "dcfcfcb1ba98ae1e0c0e374e52e239a16936d622756e90fd4584a073e5175d5c",
+          "pngSize": [
+            380,
+            336
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Identity / 5",
+          "sourceName": "returns-components / Identity / 5",
+          "kind": "label",
+          "shapeId": 7,
+          "bounds": [
+            460,
+            507,
+            138,
+            65
+          ],
+          "emu": [
+            2921000,
+            3219450,
+            876300,
+            412750
+          ],
+          "pngRel": "rId13",
+          "svgRel": "rId14",
+          "png": "ppt/media/component-s35-o005.png",
+          "svg": "ppt/media/component-s35-o005.svg",
+          "pngSha256": "87f1f830f67293310cd0553321a789bba9c88ea98063ec2a55d79761ff31a716",
+          "svgSha256": "184e7dca7fbdb11516eeb5451e640413333c3273069fee90867c6f037b93c8f1",
+          "pngSize": [
+            276,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / receipt / 6",
+          "sourceName": "returns-components / receipt / 6",
+          "kind": "illustration",
+          "shapeId": 8,
+          "bounds": [
+            736,
+            318,
+            170,
+            179
+          ],
+          "emu": [
+            4673600,
+            2019300,
+            1079500,
+            1136650
+          ],
+          "pngRel": "rId15",
+          "svgRel": "rId16",
+          "png": "ppt/media/component-s35-o006.png",
+          "svg": "ppt/media/component-s35-o006.svg",
+          "pngSha256": "46b13e5d7fe8f56e0699aa6fe5a3731f0fbbda8e66275f0d645e1ef6e269e4d0",
+          "svgSha256": "15abb2aa547bd227936d708bb8c16773aa4947add330057351fbd9bae9877490",
+          "pngSize": [
+            340,
+            358
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Receipt / 7",
+          "sourceName": "returns-components / Receipt / 7",
+          "kind": "label",
+          "shapeId": 9,
+          "bounds": [
+            747,
+            507,
+            136,
+            65
+          ],
+          "emu": [
+            4743450,
+            3219450,
+            863600,
+            412750
+          ],
+          "pngRel": "rId17",
+          "svgRel": "rId18",
+          "png": "ppt/media/component-s35-o007.png",
+          "svg": "ppt/media/component-s35-o007.svg",
+          "pngSha256": "74eae39d04cb800ab36a55c5ef49fdd6ea42c4321d270405ba3ca32506cfc944",
+          "svgSha256": "932b9c4fb6edd6c71e6d362f5d61859e906898af26ed9807ca931f533282ce00",
+          "pngSize": [
+            272,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / policy / 8",
+          "sourceName": "returns-components / policy / 8",
+          "kind": "illustration",
+          "shapeId": 10,
+          "bounds": [
+            1022,
+            323,
+            179,
+            179
+          ],
+          "emu": [
+            6489700,
+            2051050,
+            1136650,
+            1136650
+          ],
+          "pngRel": "rId19",
+          "svgRel": "rId20",
+          "png": "ppt/media/component-s35-o008.png",
+          "svg": "ppt/media/component-s35-o008.svg",
+          "pngSha256": "2b7b25344e0205dff88acb8e972f748e9d3c1be28b8ba1fd479c0efe80e8b9b2",
+          "svgSha256": "c26fc90144bb7d1f67e5c6f1ab13645f344b6b1de39e3f63ec10ef1a1f05038c",
+          "pngSize": [
+            358,
+            358
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Policy / 9",
+          "sourceName": "returns-components / Policy / 9",
+          "kind": "label",
+          "shapeId": 11,
+          "bounds": [
+            1045,
+            507,
+            112,
+            65
+          ],
+          "emu": [
+            6635750,
+            3219450,
+            711200,
+            412750
+          ],
+          "pngRel": "rId21",
+          "svgRel": "rId22",
+          "png": "ppt/media/component-s35-o009.png",
+          "svg": "ppt/media/component-s35-o009.svg",
+          "pngSha256": "9b3286aa4d910f389845c2dee9692df5c1a25adbb2cbd3b0756bdf92ebca7c65",
+          "svgSha256": "8c93894542c4f71dc1c58c204caf095cacf8050e596977990adb77cba4bafb62",
+          "pngSize": [
+            224,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / parcel / 10",
+          "sourceName": "returns-components / parcel / 10",
+          "kind": "illustration",
+          "shapeId": 12,
+          "bounds": [
+            1296,
+            337,
+            188,
+            166
+          ],
+          "emu": [
+            8229600,
+            2139950,
+            1193800,
+            1054100
+          ],
+          "pngRel": "rId23",
+          "svgRel": "rId24",
+          "png": "ppt/media/component-s35-o010.png",
+          "svg": "ppt/media/component-s35-o010.svg",
+          "pngSha256": "6a961a91b18745740dff2c9dbac5378fa357410d3bb571928ad24890e3b92f98",
+          "svgSha256": "67c1b9d47599d647fb74fbc4b29558c4d857257f83c27c8583c48df4796498d6",
+          "pngSize": [
+            376,
+            332
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Return label / 11",
+          "sourceName": "returns-components / Return label / 11",
+          "kind": "label",
+          "shapeId": 13,
+          "bounds": [
+            1287,
+            507,
+            200,
+            65
+          ],
+          "emu": [
+            8172450,
+            3219450,
+            1270000,
+            412750
+          ],
+          "pngRel": "rId25",
+          "svgRel": "rId26",
+          "png": "ppt/media/component-s35-o011.png",
+          "svg": "ppt/media/component-s35-o011.svg",
+          "pngSha256": "5bac25615c1223b4556f3eeed2bc9be36efc579fe7fbb33ec7da304a8a343405",
+          "svgSha256": "9cbc3849e9d43d5add133261b3cad3809670c3a30a36a62265ead5561f3feb4c",
+          "pngSize": [
+            400,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / system-one / 12",
+          "sourceName": "returns-components / system-one / 12",
+          "kind": "illustration",
+          "shapeId": 14,
+          "bounds": [
+            1589,
+            332,
+            169,
+            161
+          ],
+          "emu": [
+            10090150,
+            2108200,
+            1073150,
+            1022350
+          ],
+          "pngRel": "rId27",
+          "svgRel": "rId28",
+          "png": "ppt/media/component-s35-o012.png",
+          "svg": "ppt/media/component-s35-o012.svg",
+          "pngSha256": "69b4aa29a6efc5c6a5ff97ae48b3af30c562193aace666004651219f03a09204",
+          "svgSha256": "8aec6cfc9cd59a7f01419e07bcd5f730db50d9a1cae9d2e3cfb3e7baba04df43",
+          "pngSize": [
+            338,
+            322
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / System One / 13",
+          "sourceName": "returns-components / System One / 13",
+          "kind": "label",
+          "shapeId": 15,
+          "bounds": [
+            1574,
+            507,
+            198,
+            65
+          ],
+          "emu": [
+            9994900,
+            3219450,
+            1257300,
+            412750
+          ],
+          "pngRel": "rId29",
+          "svgRel": "rId30",
+          "png": "ppt/media/component-s35-o013.png",
+          "svg": "ppt/media/component-s35-o013.svg",
+          "pngSha256": "e84fc6c232babf0263d8c1f90b26d5d1e9b1c52d4a965c7ed192f97f66ab28c4",
+          "svgSha256": "9262fd48242dac189f37232233d6ff64e971a333d425ed8821eab01a70692da2",
+          "pngSize": [
+            396,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / frontier / 14",
+          "sourceName": "returns-components / frontier / 14",
+          "kind": "illustration",
+          "shapeId": 16,
+          "bounds": [
+            141,
+            616,
+            204,
+            177
+          ],
+          "emu": [
+            895350,
+            3911600,
+            1295400,
+            1123950
+          ],
+          "pngRel": "rId31",
+          "svgRel": "rId32",
+          "png": "ppt/media/component-s35-o014.png",
+          "svg": "ppt/media/component-s35-o014.svg",
+          "pngSha256": "da501167524123886baf31178223c35b3a40a6c33231beb01533ea1e5832616b",
+          "svgSha256": "6f342284cac86e719d5de60ba5641ff282ffea0a0f7c668efd84583980b22e4a",
+          "pngSize": [
+            408,
+            354
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Frontier LLM / 15",
+          "sourceName": "returns-components / Frontier LLM / 15",
+          "kind": "label",
+          "shapeId": 17,
+          "bounds": [
+            141,
+            799,
+            204,
+            65
+          ],
+          "emu": [
+            895350,
+            5073650,
+            1295400,
+            412750
+          ],
+          "pngRel": "rId33",
+          "svgRel": "rId34",
+          "png": "ppt/media/component-s35-o015.png",
+          "svg": "ppt/media/component-s35-o015.svg",
+          "pngSha256": "55a442a8fb9ba125746ee80107ae69836b629292b6a14d9c902128bc72abb507",
+          "svgSha256": "17156982af6f4c920f51fcf22276002cef9ef626cfc0bb308bed02f7cf21fd5e",
+          "pngSize": [
+            408,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / clarify / 16",
+          "sourceName": "returns-components / clarify / 16",
+          "kind": "illustration",
+          "shapeId": 18,
+          "bounds": [
+            436,
+            620,
+            188,
+            171
+          ],
+          "emu": [
+            2768600,
+            3937000,
+            1193800,
+            1085850
+          ],
+          "pngRel": "rId35",
+          "svgRel": "rId36",
+          "png": "ppt/media/component-s35-o016.png",
+          "svg": "ppt/media/component-s35-o016.svg",
+          "pngSha256": "0aedc4b64536d6b4dd60968fd6bc163e14997215d6543781caed1a48478493a6",
+          "svgSha256": "33ecb39705e4a4edbb24d4553b9c4d35be7bf33d398c4c988971fc13ca7a6c3f",
+          "pngSize": [
+            376,
+            342
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Clarify / 17",
+          "sourceName": "returns-components / Clarify / 17",
+          "kind": "label",
+          "shapeId": 19,
+          "bounds": [
+            469,
+            799,
+            120,
+            65
+          ],
+          "emu": [
+            2978150,
+            5073650,
+            762000,
+            412750
+          ],
+          "pngRel": "rId37",
+          "svgRel": "rId38",
+          "png": "ppt/media/component-s35-o017.png",
+          "svg": "ppt/media/component-s35-o017.svg",
+          "pngSha256": "09e2246dde823399b61ac340ef11a9fda06b36791f25b99ae099bc8148c96836",
+          "svgSha256": "0b6e89edd837c7c4ab3012db0f61ee66cefa7a295e0f41d4474e7cdc85f562c4",
+          "pngSize": [
+            240,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / review / 18",
+          "sourceName": "returns-components / review / 18",
+          "kind": "illustration",
+          "shapeId": 20,
+          "bounds": [
+            721,
+            644,
+            194,
+            150
+          ],
+          "emu": [
+            4578350,
+            4089400,
+            1231900,
+            952500
+          ],
+          "pngRel": "rId39",
+          "svgRel": "rId40",
+          "png": "ppt/media/component-s35-o018.png",
+          "svg": "ppt/media/component-s35-o018.svg",
+          "pngSha256": "19d00ab02cb907fa23c91535a19bc7a15b57ef6aeb7b31c9f471d32797ed975d",
+          "svgSha256": "1722ba6d89363ef5c33501e52094fbcd11af4b33750285896b5571bd804d6379",
+          "pngSize": [
+            388,
+            300
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Human review / 19",
+          "sourceName": "returns-components / Human review / 19",
+          "kind": "label",
+          "shapeId": 21,
+          "bounds": [
+            701,
+            799,
+            228,
+            65
+          ],
+          "emu": [
+            4451350,
+            5073650,
+            1447800,
+            412750
+          ],
+          "pngRel": "rId41",
+          "svgRel": "rId42",
+          "png": "ppt/media/component-s35-o019.png",
+          "svg": "ppt/media/component-s35-o019.svg",
+          "pngSha256": "3fe07c808ce83768acc9e008cd285e5ce62d6bfd174d33932aed77dab45c939e",
+          "svgSha256": "ae1dfd30fe0ebd2e9b497ae2869b956c5b39b578b8d0a68063e626a508c87604",
+          "pngSize": [
+            456,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / stop / 20",
+          "sourceName": "returns-components / stop / 20",
+          "kind": "illustration",
+          "shapeId": 22,
+          "bounds": [
+            1017,
+            623,
+            167,
+            165
+          ],
+          "emu": [
+            6457950,
+            3956050,
+            1060450,
+            1047750
+          ],
+          "pngRel": "rId43",
+          "svgRel": "rId44",
+          "png": "ppt/media/component-s35-o020.png",
+          "svg": "ppt/media/component-s35-o020.svg",
+          "pngSha256": "62382a42c548a02363604eb6f7cf1b9213e955a5d230d0ad16b25590890c204a",
+          "svgSha256": "e40cb95ca84bd4b47d8ca4c1673049b3e94b81fca7f33eb9b0935f025f3ee18a",
+          "pngSize": [
+            334,
+            330
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Decline / 21",
+          "sourceName": "returns-components / Decline / 21",
+          "kind": "label",
+          "shapeId": 23,
+          "bounds": [
+            1034,
+            799,
+            134,
+            65
+          ],
+          "emu": [
+            6565900,
+            5073650,
+            850900,
+            412750
+          ],
+          "pngRel": "rId45",
+          "svgRel": "rId46",
+          "png": "ppt/media/component-s35-o021.png",
+          "svg": "ppt/media/component-s35-o021.svg",
+          "pngSha256": "ee132f181c78151364f501948bb5d335109c254b6b5f4ae4fc0c15706471f5c5",
+          "svgSha256": "46aafc042502e03ba778ca308a080e964d96f6f38cf4cf2b5766ced4096ceedd",
+          "pngSize": [
+            268,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — illustration: returns-components / hold / 22",
+          "sourceName": "returns-components / hold / 22",
+          "kind": "illustration",
+          "shapeId": 24,
+          "bounds": [
+            1310,
+            627,
+            154,
+            154
+          ],
+          "emu": [
+            8318500,
+            3981450,
+            977900,
+            977900
+          ],
+          "pngRel": "rId47",
+          "svgRel": "rId48",
+          "png": "ppt/media/component-s35-o022.png",
+          "svg": "ppt/media/component-s35-o022.svg",
+          "pngSha256": "c023608de995689135f37cb4a82ebdffca0f840474a3418c877722e171ac73cf",
+          "svgSha256": "781cf0400868ab2862fe14b3b194ce9ad2fbb6deda05be52752b8f77be3bfa9f",
+          "pngSize": [
+            308,
+            308
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Hold / 23",
+          "sourceName": "returns-components / Hold / 23",
+          "kind": "label",
+          "shapeId": 25,
+          "bounds": [
+            1341,
+            799,
+            92,
+            65
+          ],
+          "emu": [
+            8515350,
+            5073650,
+            584200,
+            412750
+          ],
+          "pngRel": "rId49",
+          "svgRel": "rId50",
+          "png": "ppt/media/component-s35-o023.png",
+          "svg": "ppt/media/component-s35-o023.svg",
+          "pngSha256": "58323281e65e6677613eef596cc3fa52211302c9fef557dfe3f8b0c76b12da07",
+          "svgSha256": "79eaf542d8b7ad13328594ed3113dfe69e8e743ae3ff081c548ad547f68906dc",
+          "pngSize": [
+            184,
+            130
+          ]
+        },
+        {
+          "name": "returns-components — connector: returns-components / directed-route / 24",
+          "sourceName": "returns-components / directed-route / 24",
+          "kind": "connector",
+          "shapeId": 26,
+          "bounds": [
+            1568,
+            698,
+            182,
+            24
+          ],
+          "emu": [
+            9956800,
+            4432300,
+            1155700,
+            152400
+          ],
+          "pngRel": "rId51",
+          "svgRel": "rId52",
+          "png": "ppt/media/component-s35-o024.png",
+          "svg": "ppt/media/component-s35-o024.svg",
+          "pngSha256": "081efa34d70e7d2b2c9d3b17ec2b5959b0b709702711e6f06e407839a48d0bf0",
+          "svgSha256": "a376246661192680335fb2f4f244c95b24768755a049f92b513ecc012f18e474",
+          "pngSize": [
+            364,
+            48
+          ]
+        },
+        {
+          "name": "returns-components — label: returns-components / Route / 25",
+          "sourceName": "returns-components / Route / 25",
+          "kind": "label",
+          "shapeId": 27,
+          "bounds": [
+            1617,
+            799,
+            112,
+            65
+          ],
+          "emu": [
+            10267950,
+            5073650,
+            711200,
+            412750
+          ],
+          "pngRel": "rId53",
+          "svgRel": "rId54",
+          "png": "ppt/media/component-s35-o025.png",
+          "svg": "ppt/media/component-s35-o025.svg",
+          "pngSha256": "90b203b139274aaae9886977ad53ed3cd62da6348d719c9583946c884b2b017a",
+          "svgSha256": "5d41c341049b2e51016c5a46eb524c22d672bcaab835eb67d47c20296ea3d901",
+          "pngSize": [
+            224,
+            130
+          ]
+        }
+      ],
+      "baseSlideSha256": "185ae13de1fcf367e7d20c45244794309706b5e3426de966115ab44f1b364312",
+      "sourceLinks": [],
+      "noteMember": "ppt/notesSlides/notesSlide35.xml",
+      "notesSha256": "564bc5cab21c3831831fd3768f6c6b4e19b82b59d44e63b8be189731876bbf0d",
+      "originalNotesSha256": "c7c15eb74b32c0e1306d8119584b9278ea4e34adba1868d6d8293a604a05be02",
+      "slideSha256": "6696446fc36b3e909041a97ddbb5ead1c79fc172e3af46b932e425cb18c238f4",
+      "relationshipsSha256": "b63bb298b6f977201d50d4eb1b711e453ae8ce74ba246adfd2e7a338a387ebd0",
+      "objectCount": 25,
+      "expectedFullPNGSha256": "e8ea5a291b16e1a4b05a2c658aa77014d4058fa3e5b0f42d1fb3ba11175148ca"
+    }
+  ],
+  "preservedBaseMembers": [
+    {
+      "name": "[Content_Types].xml",
+      "sha256": "de97ed7ae1a6b501eb007267dcd61c4d6b27cd896aa4fba58f14b548872c83f4"
+    },
+    {
+      "name": "_rels/.rels",
+      "sha256": "a73dc65f1cb1959ca09044852c3697385e6124853bf5a0fa3f0215f608e86b47"
+    },
+    {
+      "name": "docProps/app.xml",
+      "sha256": "71bb31ef017191c6d999267bf8b969f9a1698f9eb3485f5cb68cdafe235d1276"
+    },
+    {
+      "name": "docProps/core.xml",
+      "sha256": "37338ba92bcb9ec534cd2bf9a1ae675c7ec5b974f7b491f393900f2041cd58e2"
+    },
+    {
+      "name": "ppt/_rels/presentation.xml.rels",
+      "sha256": "c7b22e30e17dbb726d4f6142956bfbb3e1f8a0e45d207a1199ad108c3df9812b"
+    },
+    {
+      "name": "ppt/theme/theme1.xml",
+      "sha256": "b8d90b3291a52bcc4ecf71fe2762e52118d6d5df41b36afff93bdfd81aaed7f1"
+    },
+    {
+      "name": "ppt/presentation.xml",
+      "sha256": "1d145b849a83b70c2a00767fabf35c64ac5b8ff02daaa77e923573eb42ff1c34"
+    },
+    {
+      "name": "ppt/presProps.xml",
+      "sha256": "4446069208ff4cd22879cccdfb0a2a302cb7e572e2c48d00b64066d25f026df1"
+    },
+    {
+      "name": "ppt/tableStyles.xml",
+      "sha256": "0e7ac03251337ecbaf6c8ca13619db1caeda5c90c4e3210d45d6c3f5df4de103"
+    },
+    {
+      "name": "ppt/viewProps.xml",
+      "sha256": "4cc12863620049069daeb39b14b4aba98a5e3048318be16a5af5879f6e4b2ac8"
+    },
+    {
+      "name": "ppt/slideLayouts/slideLayout1.xml",
+      "sha256": "5015c0989d7672a610fc41c3f7f4a468fc0da42198f06e6c5f20a0921090e1c9"
+    },
+    {
+      "name": "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+      "sha256": "8246d333bf3764cd35563e3df1828c26bbc28890815a2987caf3e592791ba60d"
+    },
+    {
+      "name": "ppt/slides/slide1.xml",
+      "sha256": "7e27fd3ebe1ccd4eae4e60dae88c0e6911ee7efd028e0fa1390cba5c77853995"
+    },
+    {
+      "name": "ppt/slides/_rels/slide1.xml.rels",
+      "sha256": "b5ad552a17d9cb67acba0ee792d6af9cecc43fd16b33615815cd40ce24b47b6d"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide1.xml",
+      "sha256": "f6b24f4c1fb07c7b4d90d8ca54d9de787298cec815b8498ebd439005ba827de9"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide1.xml.rels",
+      "sha256": "4e7f04378558285258df490583e9ed0e8039b27df83bcdc2e5b4992cf47090f2"
+    },
+    {
+      "name": "ppt/slides/slide2.xml",
+      "sha256": "d499b50b02bf424dae9bc553301f97a80ed2d0e1dbd15083447fb2cb996deb75"
+    },
+    {
+      "name": "ppt/slides/_rels/slide2.xml.rels",
+      "sha256": "431c45e9b2addbd162df621c4bfd1de068e5471263d565b766d46844d763ccd4"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide2.xml",
+      "sha256": "40be96a4c0a7963b844cfa7b938e6921252ba520eaab0bc000c343c707fce44c"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide2.xml.rels",
+      "sha256": "d9b0b8b9c1791837bed1ec75969ec1d34486b5e1606a0d739d3c35eeba590d06"
+    },
+    {
+      "name": "ppt/slides/slide3.xml",
+      "sha256": "92f7ebd519690800f27b2662c5cb6ccee63e4ad45784358319d1c42193c25cde"
+    },
+    {
+      "name": "ppt/slides/_rels/slide3.xml.rels",
+      "sha256": "56858baa419e7278ef963dad4282d3dd97ff3fc3151dc190fa0af3ee3edc3c4a"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide3.xml",
+      "sha256": "afcd80f6c6fe70326dcd32e9dc2530a2613f25aab3966a058f1c6da27da32213"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide3.xml.rels",
+      "sha256": "578c28b0582eba439178176fb0b102c03bb1ec88abed3503f44bcd0f9a11783c"
+    },
+    {
+      "name": "ppt/slides/slide4.xml",
+      "sha256": "0ffc19c765172dd4d9c96645f47c880e9c3d68f3b95d274648dc8264b632836d"
+    },
+    {
+      "name": "ppt/slides/_rels/slide4.xml.rels",
+      "sha256": "e0931021071b4fc7709afc097ecb139d872f7da15c649716039f7eeb62f6ae3d"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide4.xml",
+      "sha256": "dbdc587e73345643eb565d9b5c35480b735b0a6ca356f96579fc4fba256d63c0"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide4.xml.rels",
+      "sha256": "6de72adb9167a1c1aab19cda70f7d44ca6fc93d97f14b01e74a76a5a7197b958"
+    },
+    {
+      "name": "ppt/slides/slide5.xml",
+      "sha256": "b4e5e55f875deb67f132acba78667941df20c5d94c7090fef7d6b1a5795578c2"
+    },
+    {
+      "name": "ppt/slides/_rels/slide5.xml.rels",
+      "sha256": "aed70fb31afccba34c02fc4c9e858b8faf44d02122d9dda6da1210afbb9c82ef"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide5.xml",
+      "sha256": "9dea34e483035fff3f1757625f6532b26186ebd84c7e288d9268423f5c650498"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide5.xml.rels",
+      "sha256": "9c83aa477a5a4c0f5108d5160fd45674eba6e6583f49c67b254b4ea715ddc83b"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide6.xml.rels",
+      "sha256": "9443d7fd25799d7324865607adfe3059e900d9dd7590b0cd44e618f116bd93ba"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide7.xml.rels",
+      "sha256": "672e58095fc8045f11696691b7a6328067f7e21e40d18887715562c7332c253b"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide8.xml.rels",
+      "sha256": "f3a9c7db29211828e940a937939899c68264b9c9b5aadd17ba7b1307313962cb"
+    },
+    {
+      "name": "ppt/slides/slide9.xml",
+      "sha256": "21591eeb088be5d00679484cc363ce6638497667283be4f245a27bbff69e7a8d"
+    },
+    {
+      "name": "ppt/slides/_rels/slide9.xml.rels",
+      "sha256": "9f5ad03b48d74c2eba8d88c36aa5aafd942914435d45ced68b75ddd531e83c04"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide9.xml",
+      "sha256": "dc313f8c52042b24fbca94cf9d79d1d23991ca99b8f2b31163b8b3d1b56a5364"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide9.xml.rels",
+      "sha256": "6b76f9e2b1664e32327d0fa034ad9f0521e795b0253a4914ebca1c835be95d32"
+    },
+    {
+      "name": "ppt/slides/slide10.xml",
+      "sha256": "561c6869e32ac8a40150bbbcc977d645919f87346e2cd9cc1f39bcfaaaf1d518"
+    },
+    {
+      "name": "ppt/slides/_rels/slide10.xml.rels",
+      "sha256": "4fb335d1b9f301b0173c83d9a9d84fbb57ced2042f345916aeaec8ffa1ec73ea"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide10.xml",
+      "sha256": "76fd6641fb4700f0aed73c71ed1149e866ce33a6c6bb084b8a20b239205e0ba0"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide10.xml.rels",
+      "sha256": "8ca2e867c07a8d9cbfb2bf346f146578e03db36d8d0d2261b6dc9e7b5bfd6348"
+    },
+    {
+      "name": "ppt/slides/slide11.xml",
+      "sha256": "cde06e10cae40e3924c226b011059ab5d2d5a093df55c185ff9256ea6914f31a"
+    },
+    {
+      "name": "ppt/slides/_rels/slide11.xml.rels",
+      "sha256": "8e041988929f0f1ccf6d0478bf7334e9a3c0f04f5f70d2743c7e1e449b0c43b4"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide11.xml",
+      "sha256": "04c6407d0923698fb3b05df0ef355abea0b9962e93f0be19633e2e1a257cf5a5"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide11.xml.rels",
+      "sha256": "c8d9d75eb9e9adad0c3be4cb0588091ec38db0bb40ead4198e155d95feccd8e8"
+    },
+    {
+      "name": "ppt/slides/slide12.xml",
+      "sha256": "1b930222915d1a701d61d0d091d3e72e81d8a6f3e29032d9ecee561b48c29a8d"
+    },
+    {
+      "name": "ppt/slides/_rels/slide12.xml.rels",
+      "sha256": "f08b8df0599be441afdb687b47546a72a413c2b6b0a9e01995392774fd997cda"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide12.xml",
+      "sha256": "84099e729aa87d4cbc350af9e222c177115ce3bcb8b73616f568aff5b4dc6065"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide12.xml.rels",
+      "sha256": "4cb9ab38336efbd1e30db24e18c7207d8d15b03857beb1831195b96016209bf3"
+    },
+    {
+      "name": "ppt/slides/slide13.xml",
+      "sha256": "3215f5d5106c49340a6014e29d05c67cd1898838db4668bcfacd8b3746ab7eab"
+    },
+    {
+      "name": "ppt/slides/_rels/slide13.xml.rels",
+      "sha256": "64c8c5c84c83b9c261bc000192c4bebf2711ce294321de57aa45443248095991"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide13.xml",
+      "sha256": "6d2a774b6ab0231dc034ac6ca80fc891dceff7c73ed8cc1c118b4a198643aa4c"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide13.xml.rels",
+      "sha256": "a7f2d0f987f9f1d5004a120464353647e484db702065c50d93ceb28c8c314c3c"
+    },
+    {
+      "name": "ppt/slides/slide14.xml",
+      "sha256": "b90077d3dcec77e5c4714d77161fd0c73e72368f1cf7598c0bfe5b83864a2e92"
+    },
+    {
+      "name": "ppt/slides/_rels/slide14.xml.rels",
+      "sha256": "acdb6f40e4fe53eac8c960d36b84816426ecc69adeeabbb3d4e9163ac2309ff0"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide14.xml",
+      "sha256": "eb7b0c8aa1ccf9616858f59c817e1ed71fe1c418271858f6a71f2c8f93fbce20"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide14.xml.rels",
+      "sha256": "3253d0cf7abff27042e983ec6404b0e053557707b99a99dfc3609d71609a716e"
+    },
+    {
+      "name": "ppt/slides/slide15.xml",
+      "sha256": "125787e2223c9ec6e777805e0da5cc7978d0a00299347969feb01ec93e298f0d"
+    },
+    {
+      "name": "ppt/slides/_rels/slide15.xml.rels",
+      "sha256": "c7847044e6af35880977e802ccfb0284cf2e4c2f59edd8e48a42f3071ea13752"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide15.xml",
+      "sha256": "5f86a469d12293fc38e38e839e48a7f6d715fc2837e57c087fbccee2567ab05a"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide15.xml.rels",
+      "sha256": "9874b4146107c0e481b9024102e0a969128916d21bc8f8ac7558478532e6f8aa"
+    },
+    {
+      "name": "ppt/slides/slide16.xml",
+      "sha256": "9875ecb43d2cfba9d9e1741644cdee1e08774bb82e98fb96550c1156d134a2a8"
+    },
+    {
+      "name": "ppt/slides/_rels/slide16.xml.rels",
+      "sha256": "a31105c0c446d3cf06b79b8b0b6058b766f81b4ca1ed9698ab73fe380787b6ea"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide16.xml",
+      "sha256": "864c4d836053c5e94d502550aaf73dc339cd1de62a9a4892beafd0e93e142c89"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide16.xml.rels",
+      "sha256": "10bdb528cddec295d8e62c9b9c5391580b3f69e3c136d779be78c918c458780f"
+    },
+    {
+      "name": "ppt/slides/slide17.xml",
+      "sha256": "8a91a90dae797bc5756b78fe96737fbb6f730dd6572ffecbf02fc2e4141169cc"
+    },
+    {
+      "name": "ppt/slides/_rels/slide17.xml.rels",
+      "sha256": "626460bb4d53b69a583e76174efea8724828d62cdcf4bfa857a21d98e9f50633"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide17.xml",
+      "sha256": "24a266faf3be4ee012ff6bffc2e4fbda2092c734ad5a39b11abef91b40bd17e9"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide17.xml.rels",
+      "sha256": "26d5c346475a14d6a30cc4912ba8940edeaa97a29eb8e079cc4b3db775195757"
+    },
+    {
+      "name": "ppt/slides/slide18.xml",
+      "sha256": "d8d86113d8f64f912c7ab1d26192a910614698408d18c244177ab9afb8545114"
+    },
+    {
+      "name": "ppt/slides/_rels/slide18.xml.rels",
+      "sha256": "d6563b6ebb9f82fa1f6908d5a6e2e85980e8f7fc395c6deddde6eadaa791712f"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide18.xml",
+      "sha256": "4cb75a55f67bd61e41eeb1fe44e3113422a5997d6b19299f77870c9e6b061589"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide18.xml.rels",
+      "sha256": "952bbe59a3f3c9b85f8c841597caf7d312d35bbd11f25de6aa79a442fd627643"
+    },
+    {
+      "name": "ppt/slides/slide19.xml",
+      "sha256": "d013ce69ef72b7fe3eae80e6cab48546648f4dca984717d7e2510eeaae746ccb"
+    },
+    {
+      "name": "ppt/slides/_rels/slide19.xml.rels",
+      "sha256": "48d74002ad22243762119e86a3e176e1c8fa3da97d1a64e45356ca35ab1c3db4"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide19.xml",
+      "sha256": "4ee0a5c5ec3dddc2e8286c845794a9cd9957a8d0e50906516a2d0792b7466454"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide19.xml.rels",
+      "sha256": "8531ab498e3db67ea46065d46c2f9ffb2a1e4d64045286e9c7e28b137342c52b"
+    },
+    {
+      "name": "ppt/slides/slide20.xml",
+      "sha256": "edab2f5853fdf0059de170a13cbb9663a5745793b6e5dda313c519800d353797"
+    },
+    {
+      "name": "ppt/slides/_rels/slide20.xml.rels",
+      "sha256": "2fe7b16f45c512b3cbb9bb66a4e120cea9699ba274e34a2895562e5d2c774bc4"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide20.xml",
+      "sha256": "a876fa031780ef2c5010f9565a5c1006053c9d2902265d14da613bbeaf9397c6"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide20.xml.rels",
+      "sha256": "785726fa380a51c4a1585cc72330eed4dad73becedf01d6dc3062e095d842c9c"
+    },
+    {
+      "name": "ppt/slides/slide21.xml",
+      "sha256": "d15195010fcaafe9b6f0e270d94b01f42b4a4fa79e985197c51af2d014ed41ac"
+    },
+    {
+      "name": "ppt/slides/_rels/slide21.xml.rels",
+      "sha256": "b32301e87cbd87d5bb662ab1cd4457b2fe8de8fca18b2ca70693f1e16ed2be04"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide21.xml",
+      "sha256": "0e3c5215766cbdab34b6f5f4bf7192a4eebd4822e1bcb3fc6aa43d57f6655113"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide21.xml.rels",
+      "sha256": "5ee86b9b5c0f221794cea6b105e35538627c5db43c41546e3c653b80d178b953"
+    },
+    {
+      "name": "ppt/slides/slide22.xml",
+      "sha256": "cefc52e8a4fdd863c8ae7ac8f7163400f00e0b46f837e86fb4b9888fcafe7730"
+    },
+    {
+      "name": "ppt/slides/_rels/slide22.xml.rels",
+      "sha256": "7808873e48a4098221224a0d27ec876aea552186d45ad6165f1867cdb17054d0"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide22.xml",
+      "sha256": "1a4174f66cab437e61404e14a4bd4b5d9a60e47f8d88a7d98d957b8d22824e9e"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide22.xml.rels",
+      "sha256": "2207cd6bae9b99c0a0c35f181d13d8b3bf727f0eb4cee900e06cdff02ee2a69e"
+    },
+    {
+      "name": "ppt/slides/slide23.xml",
+      "sha256": "84b3a6b2e1fb528d748eee4c7b4d1919721283e4f68a6f88b46d9375a588797e"
+    },
+    {
+      "name": "ppt/slides/_rels/slide23.xml.rels",
+      "sha256": "6960b4b1caacb9d1b0d5f3a249ad06202e36b6b42be975a1f50459a21f825522"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide23.xml",
+      "sha256": "26df8f2846af4cc73470e93d6c04ff5d3744df5298a743c4ba763c8a0e9f6304"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide23.xml.rels",
+      "sha256": "4a0e0b57cb9beec3dc341533b867f587a65df34024052c87b81e2de051082e31"
+    },
+    {
+      "name": "ppt/slides/slide24.xml",
+      "sha256": "9780145a2d8a809ed5bda416c75050b2d4a9e40f9baf1f3d1fb685d5e487104c"
+    },
+    {
+      "name": "ppt/slides/_rels/slide24.xml.rels",
+      "sha256": "ce6321cd5c330e4da6c1f27c66837d6d30077190f1480ab299204ea41b8a9749"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide24.xml",
+      "sha256": "3603b49f6436ad438c744d4ad44492dda55a06be1a5be9fa8edbcc99803e8280"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide24.xml.rels",
+      "sha256": "705f37162514f8ba7a9d1c3fe309ab74d3fff898533cb58f1362625bad6665c3"
+    },
+    {
+      "name": "ppt/slides/slide25.xml",
+      "sha256": "169d38d082f648de579488ee136e0e86c71a82a859de34b957c9050ba28928c3"
+    },
+    {
+      "name": "ppt/slides/_rels/slide25.xml.rels",
+      "sha256": "6fa493109f4145b6139decf6b26c90494522abbc6d93cd6c0b1e25843e4c03e0"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide25.xml",
+      "sha256": "24424f056d38e2c0362249acc77b80fd0bd6034408fbcb359cc5899dd27f772c"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide25.xml.rels",
+      "sha256": "e081c2a18bf40db9f628777761ba080451a1350fa296861ca6e955cf0b042a49"
+    },
+    {
+      "name": "ppt/slides/slide26.xml",
+      "sha256": "d6f8d2ff733cc390b5dc0c19904684d9190130dc14bff9361606b1a181ff00ef"
+    },
+    {
+      "name": "ppt/slides/_rels/slide26.xml.rels",
+      "sha256": "4d92730b4461ff2ae5a4b31f0f313e4357256bc1a594ec4ba9202f6860976d97"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide26.xml",
+      "sha256": "40e3ff7b502c30f1d5819e3e5ba889aada65f856a764c81decdbaffd869f6440"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide26.xml.rels",
+      "sha256": "b870990189c5724b6e78eb621ae008db4798b29ea745ab6e491b8499d3d61c06"
+    },
+    {
+      "name": "ppt/slides/slide27.xml",
+      "sha256": "5042289375b8783914c29979b4497ba7860decaf0523f827801aea5c5a55ed9a"
+    },
+    {
+      "name": "ppt/slides/_rels/slide27.xml.rels",
+      "sha256": "2a196b69d77599ea5ce3c891ab1d1afe68d88cc0278902c02f1f1d8ae78db295"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide27.xml",
+      "sha256": "41ecbb243158909c0a57b99e8619ec2749cddccc3c6314a3a55b7e299bad1be6"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide27.xml.rels",
+      "sha256": "a119cac367b912777595d010dda94c2d758c984ea7b6a2c913bd0e21e84d63a4"
+    },
+    {
+      "name": "ppt/slides/slide28.xml",
+      "sha256": "98c3aec5349443df37222f1eb04075a5a3c75c57aef0623ebfcc1600a05cc10d"
+    },
+    {
+      "name": "ppt/slides/_rels/slide28.xml.rels",
+      "sha256": "6cbc125056b11829815a38a7b5109dc672f22991507d9870e2061710ea3369ae"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide28.xml",
+      "sha256": "bf9fb09f513fbaf14e9729343fab93bb4e5fae028308dbbaee0a6963bbad2bbf"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide28.xml.rels",
+      "sha256": "404726a8c8d6e1cd72389f3971f798db0fc95ca564926bf021d8e9c38e3338b5"
+    },
+    {
+      "name": "ppt/slides/slide29.xml",
+      "sha256": "d287e2474c76b2585be9090a1d354f97fc8ab8ca6da3b8acf9722533b0c1cd82"
+    },
+    {
+      "name": "ppt/slides/_rels/slide29.xml.rels",
+      "sha256": "040477680496ec9eb0cb097c933891ffaf3cce8270e559dc02e1a26449ac8302"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide29.xml",
+      "sha256": "d62d0c1469c7675f92851d0ec2b6469af427031bf70996dacb24ecd6dd509566"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide29.xml.rels",
+      "sha256": "4f0e1ad315c12ea13fc89a0043cc820ebaf85ed9651bd231a82bc5606f65970e"
+    },
+    {
+      "name": "ppt/slides/slide30.xml",
+      "sha256": "bea2be6e9834da1d0893e5ee4ac5ffa3294ccc9b159a667408aaf33d91e8060c"
+    },
+    {
+      "name": "ppt/slides/_rels/slide30.xml.rels",
+      "sha256": "33731fc78c701bc6f216569dbc85c305e13a39b0041614408011db167ef021a4"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide30.xml",
+      "sha256": "17b434bea1fdbdf6fa4dbdd89f5e8ac0b21ae57473dcc6f4275edcbf0928443a"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide30.xml.rels",
+      "sha256": "5c1f49793625621f04fe4ca405b5edcf6b3ffbd70034fc5389dc5c05f0bfbff7"
+    },
+    {
+      "name": "ppt/slides/slide31.xml",
+      "sha256": "53a79971c9a0eb86231d229e29001cd9912dd5ef66cd8f39de6a1231d55e2914"
+    },
+    {
+      "name": "ppt/slides/_rels/slide31.xml.rels",
+      "sha256": "037a808fabb6ecce2b8a5dd0d239ef42bf0a4e4ab4b63cafe5dfc1be40226cf9"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide31.xml",
+      "sha256": "34299fb0fd99e02883bc9bf0964ac708da1e720f2cd743c03f935f0b41da4c3d"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide31.xml.rels",
+      "sha256": "0de22d003137776eff37b2f29db9a4eccd4b2336b8be89c08083f2f86ef5b05a"
+    },
+    {
+      "name": "ppt/slides/slide32.xml",
+      "sha256": "94664624721daf3437b3f03919f089354fbdcb89cb221cea036c1b6dafdd9254"
+    },
+    {
+      "name": "ppt/slides/_rels/slide32.xml.rels",
+      "sha256": "d47934a1350901303f695aa57123d2e963fa40a29c00ad75719dc2b7c4e0817b"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide32.xml",
+      "sha256": "aa1fc598a2fe11c38c970b28728539bb681f39aa5a590082a84aaa14832d3bd0"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide32.xml.rels",
+      "sha256": "f1ffea557623b28966b8279c460416a359758ea41b579e9a4ee5102f773f13b4"
+    },
+    {
+      "name": "ppt/slides/slide33.xml",
+      "sha256": "6ca462241eda5105b2fe56d9358fb4b9e20539cf558c98c04a961deeed417d62"
+    },
+    {
+      "name": "ppt/slides/_rels/slide33.xml.rels",
+      "sha256": "18f5b36c4253b5bc8c63082fba7a0a842823832918685315f4b8cc05688fbc34"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide33.xml",
+      "sha256": "29d621fda6435c35aa0ac88b7fe8241f75f6de445bf03fe2aa46b494ebb056f7"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide33.xml.rels",
+      "sha256": "64b2a0ada2d40a19ca4d9c28295de28b5a986e30094955d066702e77c3c9e5c3"
+    },
+    {
+      "name": "ppt/slides/slide34.xml",
+      "sha256": "69cc47f70b0844108d24946fc2af5221d39886bce41cbcbdd6f749f501857df4"
+    },
+    {
+      "name": "ppt/slides/_rels/slide34.xml.rels",
+      "sha256": "e52d0a8c0af565d9a7119768adf29ae03821b45b719ef2d9fef04eabf53adfe6"
+    },
+    {
+      "name": "ppt/notesSlides/notesSlide34.xml",
+      "sha256": "d1c25c211b80ca14d06323e27f71847880a432728fd6ef38f5d6929d1c5055c4"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide34.xml.rels",
+      "sha256": "9168da26aa16a7eff79706bb64a9e4fbf56f012983727115923543799fa22f52"
+    },
+    {
+      "name": "ppt/notesSlides/_rels/notesSlide35.xml.rels",
+      "sha256": "082645edf80bce55651aef8189e4db1659b151d234cc73507b7d7d0094c843e0"
+    },
+    {
+      "name": "ppt/slideMasters/slideMaster1.xml",
+      "sha256": "ebd49ca7c690fabf8b16c077711e80f2aa970b1aa2a31090407b2af58cab77c3"
+    },
+    {
+      "name": "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+      "sha256": "066fd8f2e94608804160631c736d82e4c0b0784a1646489030092cc04888839a"
+    },
+    {
+      "name": "ppt/notesMasters/notesMaster1.xml",
+      "sha256": "c2c0255a24d45ef3ad633078fd8a2dca43fc6db1b3eb36244a934eb0b9d97c57"
+    },
+    {
+      "name": "ppt/notesMasters/_rels/notesMaster1.xml.rels",
+      "sha256": "92eb9005ae03705d1db0f1da37f89e4c77f61b2026efa66bdbf610d01116f2b9"
+    },
+    {
+      "name": "ppt/media/image-1-1.png",
+      "sha256": "2383a6479e430ed61c204345d7b624cff0366a2f94470ea0d11b308d3ea280b0"
+    },
+    {
+      "name": "ppt/media/image-1-2.svg",
+      "sha256": "9704ced5f186fe0173eb16cad8aa5bdec9326a6797b3abe3ff1c74d052b952ce"
+    },
+    {
+      "name": "ppt/media/image-2-1.png",
+      "sha256": "1e11e492dc3845f969f7147f88fe86e198f40da90b759107db80a01d84f7c412"
+    },
+    {
+      "name": "ppt/media/image-2-2.svg",
+      "sha256": "8eb52ebdcae4b7df756e1c36372a077c1c42d64245b376afbf8d8c4084fe79e6"
+    },
+    {
+      "name": "ppt/media/image-3-1.png",
+      "sha256": "4aa5aa65c62defcb2c0c095b20256a61c27409d2803b9dcc905fc3ee2e8d7e8e"
+    },
+    {
+      "name": "ppt/media/image-3-2.svg",
+      "sha256": "e175a16f8d53d55fc385c5b0b21c9cf76390c3ce38a3d906c989a698f920269a"
+    },
+    {
+      "name": "ppt/media/image-4-1.png",
+      "sha256": "42356a54c0912e7db4419edcdea4b77e8c6fc3e438c9fb45fbe814186dae07d2"
+    },
+    {
+      "name": "ppt/media/image-4-2.svg",
+      "sha256": "5b93e3ea0c7087f4cef852873dadaffcb26617dfed8bc8daab260e7eb0e6d0bc"
+    },
+    {
+      "name": "ppt/media/image-5-1.png",
+      "sha256": "6e1f003fa83f83d201bf14d38e82035f11f6f8dfcf2f5212f929a3e5a2385d78"
+    },
+    {
+      "name": "ppt/media/image-5-2.svg",
+      "sha256": "755f4baf52ea6d02e98db8efa460825a8519c66b385923dd51ec81166a24458d"
+    },
+    {
+      "name": "ppt/media/image-6-1.png",
+      "sha256": "8fd5e306f61c7860cd67ceffc107a0feec6f22462855e1800a424c5d04c26f91"
+    },
+    {
+      "name": "ppt/media/image-6-2.svg",
+      "sha256": "f4ab9e5dcb32349ca6f79902a11bc17348cd83b2f32b2edb155c9821ea101011"
+    },
+    {
+      "name": "ppt/media/image-7-1.png",
+      "sha256": "41dc21f0641e84d2881231c28acd82fee435b51fa117ccaa82c609190d95fb4f"
+    },
+    {
+      "name": "ppt/media/image-7-2.svg",
+      "sha256": "de09a3b512b786728f5e7140e1074f83823911c5ef7a32fe59342f3710507cba"
+    },
+    {
+      "name": "ppt/media/image-8-1.png",
+      "sha256": "a5f5cf56e250fc9ef095b35dfad680548d167a704bbaac0be3b5ae2b827af499"
+    },
+    {
+      "name": "ppt/media/image-8-2.svg",
+      "sha256": "0d7bf23a7957c15e04cd7571aa4c887c0dbccb87c590348cbddf1ec98a48ea95"
+    },
+    {
+      "name": "ppt/media/image-9-1.png",
+      "sha256": "b0821e8de8e4afedb74a40b049646a091154c031fe1edf6081093eff8fac8941"
+    },
+    {
+      "name": "ppt/media/image-9-2.svg",
+      "sha256": "6636ff95bf6a509f52c0c151670fdd034e7b8191adc642fc30d5091d29166258"
+    },
+    {
+      "name": "ppt/media/image-10-1.png",
+      "sha256": "791adabf94e134f0c0cd0d9996cf602f6510ede3d1bd18e87f92ea6455cbab04"
+    },
+    {
+      "name": "ppt/media/image-10-2.svg",
+      "sha256": "4898e57613c6613876ea07bc2c9b532b3d64016b54e0651a271dd4c13ce8ab6b"
+    },
+    {
+      "name": "ppt/media/image-11-1.png",
+      "sha256": "32938c09ea47d627192a3388fe87442a9ba2a1b8359de4155fd04cb3bcfbe7ce"
+    },
+    {
+      "name": "ppt/media/image-11-2.svg",
+      "sha256": "4c2c90855b0ec6def803da2deedef832602d11fc90639134716197626bf185f2"
+    },
+    {
+      "name": "ppt/media/image-12-1.png",
+      "sha256": "c0c77b2be2c62b8b5301c56abe7016a5c5321979ccc3a6f386a9fee35b7c20eb"
+    },
+    {
+      "name": "ppt/media/image-12-2.svg",
+      "sha256": "65ac0cf6b59e5494121aa6a1f5affd1d0a9b95833a8b19f6558f99cd387aa115"
+    },
+    {
+      "name": "ppt/media/image-13-1.png",
+      "sha256": "a25e7a07c376d3688006e96b0f80f2cefbb46c4543ca2802d02e1e9fcc835a9c"
+    },
+    {
+      "name": "ppt/media/image-13-2.svg",
+      "sha256": "2fd3bba4ef1846a072a465be5ea48a2f1683ce49665e5f3571f8f9a316c7bf04"
+    },
+    {
+      "name": "ppt/media/image-14-1.png",
+      "sha256": "0b283aae695fa6e84864f5f241b0369ad73ffe61eda5a0a2214cde7223db9ca5"
+    },
+    {
+      "name": "ppt/media/image-14-2.svg",
+      "sha256": "d85b3f31c70e8c57b91761a119f166077372af3fbf5aa924f8a658f5ab7dcb48"
+    },
+    {
+      "name": "ppt/media/image-15-1.png",
+      "sha256": "5c0970c6c73e1cb5af34a416e5fd96305427e1e25880c55b6ba78250b0212386"
+    },
+    {
+      "name": "ppt/media/image-15-2.svg",
+      "sha256": "2c9dc531617298be4aee00f75700c8d81d1aac4a1a30df6caea82238cd010afc"
+    },
+    {
+      "name": "ppt/media/image-16-1.png",
+      "sha256": "79b66ba2742fbd8fa678215fcc3464e78159bd9ec4039fc87e345a8e0603d5d8"
+    },
+    {
+      "name": "ppt/media/image-16-2.svg",
+      "sha256": "b77ee80d8e48dd8d26425e79fd724234787340ee5d2dc936975e2041b10c0073"
+    },
+    {
+      "name": "ppt/media/image-17-1.png",
+      "sha256": "27d75c330347e517892da1f1a05808a4a5197652b0516fd92ff910f5dfbcb40b"
+    },
+    {
+      "name": "ppt/media/image-17-2.svg",
+      "sha256": "e5f363f4036d88affd2121d87e83bd6f58ec0cf6a95a8332e154207c39dd7e77"
+    },
+    {
+      "name": "ppt/media/image-18-1.png",
+      "sha256": "cafd7e6aa67d69118b0c8cedb9a06d4bb71bb9c767c631b4ae4aec71bc47d8bc"
+    },
+    {
+      "name": "ppt/media/image-18-2.svg",
+      "sha256": "717191ef0ac5d4dcc6611b1fc7e15c7a79a914a53ed94153d8b19225bdfd17ed"
+    },
+    {
+      "name": "ppt/media/image-19-1.png",
+      "sha256": "812e1cb0d818b1dd7a8f074ec6253532fd14ebbd4a8c0861fa86584908e89bf7"
+    },
+    {
+      "name": "ppt/media/image-19-2.svg",
+      "sha256": "30045811c8065c6d5ae6bb70a14aa01de447e56a78ac1f336b2e0bc0420a0582"
+    },
+    {
+      "name": "ppt/media/image-20-1.png",
+      "sha256": "71ac6149763eee1cf9aab9c9e36d9a91d88b11a6e1cd8d87ba7fa0f5215ed91f"
+    },
+    {
+      "name": "ppt/media/image-20-2.svg",
+      "sha256": "6aefea1b577169e6cf8a1ff7d9d4e122379b159728d083bc94c9f5278a768bd3"
+    },
+    {
+      "name": "ppt/media/image-21-1.png",
+      "sha256": "e987329f94b09a593f0fc21de5da642a76126148627cfecfa0987cc171ec8dc7"
+    },
+    {
+      "name": "ppt/media/image-21-2.svg",
+      "sha256": "a7303d3ff94c5766e848acde9a5a549059bea25285d20e74e05b6c9d566d0be2"
+    },
+    {
+      "name": "ppt/media/image-22-1.png",
+      "sha256": "680be94fd8d6048b372aca8a90b5a53e782b1d62c88de6793aa39f31de0b592b"
+    },
+    {
+      "name": "ppt/media/image-22-2.svg",
+      "sha256": "c91a47d8d0156dfeb622b04613b02f6534a13c675b2ea031482fef3426804594"
+    },
+    {
+      "name": "ppt/media/image-23-1.png",
+      "sha256": "82b13d1a99632a584c87a5f0bb6b6ab0cd688b97d4b270655c01d06ae4dc1c04"
+    },
+    {
+      "name": "ppt/media/image-23-2.svg",
+      "sha256": "bb509dacac1282aaa4a49ebdd0cd5d8a22c8fc097e225a07d9285ca81393be77"
+    },
+    {
+      "name": "ppt/media/image-24-1.png",
+      "sha256": "b631d5bed828b9448198e1e9c73169a463f04f2033501c3f72ccda7e92a485df"
+    },
+    {
+      "name": "ppt/media/image-24-2.svg",
+      "sha256": "78afee04b93b7f049a2c32ab0290b80d5984a6e3a274b4c85ccc1539876f730a"
+    },
+    {
+      "name": "ppt/media/image-25-1.png",
+      "sha256": "b28f912759af44ecfeae330a19fcb76f135b485832bc9f89eeba01fd5e2401b9"
+    },
+    {
+      "name": "ppt/media/image-25-2.svg",
+      "sha256": "dcd6ce5417e50f06c409df36690a3488093bc9b716bf08bcf39602b0c07696a0"
+    },
+    {
+      "name": "ppt/media/image-26-1.png",
+      "sha256": "16ae9278f55f382e0be25e5981f597a44e72e5d68099b442750f7efd6332536f"
+    },
+    {
+      "name": "ppt/media/image-26-2.svg",
+      "sha256": "61199d0d39956762df2c420f68df2bb1cf05b35f34f83acbfbfa09742dbd5a56"
+    },
+    {
+      "name": "ppt/media/image-27-1.png",
+      "sha256": "e84e3c9bce095f5fe791db30c6ea50a3511c18e437c16aff427f2319cce9f7d6"
+    },
+    {
+      "name": "ppt/media/image-27-2.svg",
+      "sha256": "f3cd1a74cafa7ef8b8c00a8522a3452251354a2b4e9c337b736006ee166ac371"
+    },
+    {
+      "name": "ppt/media/image-28-1.png",
+      "sha256": "4b9a40bb3bc236091189e96e1e9b58a4a317edad48847f20f7ca34eb3cdf44e7"
+    },
+    {
+      "name": "ppt/media/image-28-2.svg",
+      "sha256": "e61029af2f751331c824e9a006429769801935753346c14990dc9810dce1af8f"
+    },
+    {
+      "name": "ppt/media/image-29-1.png",
+      "sha256": "d0ab1f4e4187d7e70d2c25b8e1ae78f0fd2699ea18baebaa571dae609c23b791"
+    },
+    {
+      "name": "ppt/media/image-29-2.svg",
+      "sha256": "6acf238991b3b8405182614b8279bf19f841d014d2b2a066011e30e81e909acc"
+    },
+    {
+      "name": "ppt/media/image-30-1.png",
+      "sha256": "708227f2368d920ffec1a4abbb6270d24134937f3e799eb2118470b463c8d0ba"
+    },
+    {
+      "name": "ppt/media/image-30-2.svg",
+      "sha256": "8cc1f3883935786f9368ffda1ef02a3589ea0a8aa9c3872bc7248b0a6cf74dcc"
+    },
+    {
+      "name": "ppt/media/image-31-1.png",
+      "sha256": "c461524d5af4bfd48f350b048c8546194508e5f1f1546036c6d080599831899f"
+    },
+    {
+      "name": "ppt/media/image-31-2.svg",
+      "sha256": "935ca7328a7ffc93bcebb8e297a3e8ab78d873862de1e0f2f5b770e27420f571"
+    },
+    {
+      "name": "ppt/media/image-32-1.png",
+      "sha256": "6225b0160c996ebe97be3722eeefba3f003c2494f063bc50ba7cd60ccae17929"
+    },
+    {
+      "name": "ppt/media/image-32-2.svg",
+      "sha256": "29d040882268191220b8e150e219ae89104b5286259f1dda96962939765188cb"
+    },
+    {
+      "name": "ppt/media/image-33-1.png",
+      "sha256": "775fbf3c4a5904b5eaf5f627cf27db2930a291f77828b3c0a51831e9809b9ba5"
+    },
+    {
+      "name": "ppt/media/image-33-2.svg",
+      "sha256": "d24692205b7f0c8e6525657616e152c06547f209591b02bcbcdd0322d4d56813"
+    },
+    {
+      "name": "ppt/media/image-34-1.png",
+      "sha256": "118a2368183b13b35c56561dbce28141a6d3874aad154d969fac073cac4df564"
+    },
+    {
+      "name": "ppt/media/image-34-2.svg",
+      "sha256": "e0a62e02c63dd4af4c4d9bc6f43ee28495e961da0f52ceec6b97ac46d9c85edd"
+    },
+    {
+      "name": "ppt/media/image-35-1.png",
+      "sha256": "e8ea5a291b16e1a4b05a2c658aa77014d4058fa3e5b0f42d1fb3ba11175148ca"
+    },
+    {
+      "name": "ppt/media/image-35-2.svg",
+      "sha256": "b3b482036bed1488ccaa3cec81139b7c177461d587253d70d9d2a4ace119df15"
+    }
+  ],
+  "changedBaseMembers": [
+    "ppt/slides/slide6.xml",
+    "ppt/slides/_rels/slide6.xml.rels",
+    "ppt/notesSlides/notesSlide6.xml",
+    "ppt/slides/slide7.xml",
+    "ppt/slides/_rels/slide7.xml.rels",
+    "ppt/notesSlides/notesSlide7.xml",
+    "ppt/slides/slide8.xml",
+    "ppt/slides/_rels/slide8.xml.rels",
+    "ppt/notesSlides/notesSlide8.xml",
+    "ppt/slides/slide35.xml",
+    "ppt/slides/_rels/slide35.xml.rels",
+    "ppt/notesSlides/notesSlide35.xml"
+  ],
+  "outputSha256": "3cbb2b9ac396806e9ec8ed4dd3d428a041b82760a92fded3ac7c4b6f251666fc",
+  "componentSlideCount": 4,
+  "movableObjectCount": 152
+}

@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "method": "python-pptx 1.0.2: read native object model, edit isolated copy, save and reopen",
+  "input": "docs/slides/exports/05-disaggregated-intelligence-editable/candidate-04.pptx",
+  "inputSha256": "fb31adb6115c535b73cbffefa43edd269600a961b79c9059b85bd0d52b017e03",
+  "inputUnchanged": true,
+  "slideCount": 36,
+  "componentsReadThroughNativeAPI": {
+    "drawingComponents": 980,
+    "groups": 623,
+    "textComponents": 722
+  },
+  "editsVerifiedAfterReopen": [
+    {
+      "kind": "text",
+      "slide": 1,
+      "component": "01 · opening-main: Disaggregated intelligence [p01-text-0013]",
+      "before": "Disaggregated\nintelligence",
+      "after": "Customized enterprise\nintelligence"
+    },
+    {
+      "kind": "fill",
+      "slide": 24,
+      "component": "24 · div · surface [p24-e0025]",
+      "afterRGB": "F6B7C3"
+    },
+    {
+      "kind": "resize",
+      "slide": 24,
+      "component": "24 · div · surface [p24-e0025]",
+      "widthChangeEMU": -127000
+    },
+    {
+      "kind": "moveGroup",
+      "slide": 36,
+      "component": "whole-kit · 34",
+      "xChangeEMU": 63500
+    }
+  ],
+  "temporaryCopySha256": "19f37ba1f989cf0fbd15a6f21b5ddd28f1ecb55a1d83e34a481f070b95f96896",
+  "temporaryCopyRemoved": true,
+  "nativeOfficeRendered": false
+}

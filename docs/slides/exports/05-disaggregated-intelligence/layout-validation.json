@@ -1,0 +1,260 @@
+{
+  "method": "Pango actual glyph-ink boxes at WeasyPrint baselines and page dimensions; SVG glyph ink verified separately.",
+  "limits": "No current Chromium, presenter-window or Microsoft Office rendering check.",
+  "pages": [
+    {
+      "index": 1,
+      "id": "opening",
+      "textCount": 10,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 2,
+      "id": "benefits",
+      "textCount": 20,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 3,
+      "id": "case",
+      "textCount": 17,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 4,
+      "id": "ownership",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 5,
+      "id": "topology",
+      "textCount": 10,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 6,
+      "id": "returns-access",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 7,
+      "id": "returns-routing",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 8,
+      "id": "returns-fallback",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 9,
+      "id": "returns-policy",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 10,
+      "id": "layers",
+      "textCount": 13,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 11,
+      "id": "contract",
+      "textCount": 27,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 12,
+      "id": "primitives",
+      "textCount": 21,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 13,
+      "id": "semantics",
+      "textCount": 15,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 14,
+      "id": "endpointing",
+      "textCount": 11,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 15,
+      "id": "dependencies",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 16,
+      "id": "context",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 17,
+      "id": "mixed",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 18,
+      "id": "guided",
+      "textCount": 14,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 19,
+      "id": "agentscript",
+      "textCount": 27,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 20,
+      "id": "trace",
+      "textCount": 30,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 21,
+      "id": "failures",
+      "textCount": 24,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 22,
+      "id": "confidence",
+      "textCount": 17,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 23,
+      "id": "gate",
+      "textCount": 42,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 24,
+      "id": "economics",
+      "textCount": 19,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 25,
+      "id": "latency",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 26,
+      "id": "exercise",
+      "textCount": 12,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 27,
+      "id": "dataset",
+      "textCount": 19,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 28,
+      "id": "training-partitions",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 29,
+      "id": "training-release",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 30,
+      "id": "splits",
+      "textCount": 17,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 31,
+      "id": "acceptance",
+      "textCount": 18,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 32,
+      "id": "evaluation",
+      "textCount": 18,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 33,
+      "id": "diagnosis",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 34,
+      "id": "close",
+      "textCount": 20,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 35,
+      "id": "sources",
+      "textCount": 26,
+      "outOfBounds": [],
+      "overlaps": []
+    },
+    {
+      "index": 36,
+      "id": "returns-components",
+      "textCount": 4,
+      "outOfBounds": [],
+      "overlaps": []
+    }
+  ],
+  "blockedRemoteRequests": [],
+  "passed": true
+}

@@ -1,0 +1,461 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "12 \u00b7 l: DISAGGREGATED INTELLIGENCE [p12-text-0009]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "12 \u00b7 r: 12 / 36 [p12-text-0010]",
+    "text": "12 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.9323720472441,
+      59.87114327017716,
+      73.1591796875,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "12 \u00b7 primitives-eyebrow: 03 / SYSTEM ONE CAPABILITIES [p12-text-0011]",
+    "text": "03 / SYSTEM ONE CAPABILITIES",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      358.578125,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "12 \u00b7 primitives-title: Four bounded decisions, four contracts [p12-text-0012]",
+    "text": "Four bounded decisions, four contracts",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      93.0400390625,
+      183.87628321850394,
+      1288.6240234375,
+      62.8203125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "12 \u00b7 primitives-text-1: Classification [p12-text-0013]",
+    "text": "Classification",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      124.2001953125,
+      404.81941529281494,
+      255.80859375,
+      30.0
+    ],
+    "baseline": [
+      123.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "12 \u00b7 primitives-text-2: Which route? Select a category. [p12-text-0014]",
+    "text": "Which route?",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.3916015625,
+      469.57243602362206,
+      171.5,
+      21.0283203125
+    ],
+    "baseline": [
+      123.0,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "12 \u00b7 primitives-text-2: Which route? Select a category. [p12-text-0014]",
+    "text": "Select a category.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      123.83984375,
+      549.4557172736221,
+      222.068359375,
+      27.46875
+    ],
+    "baseline": [
+      123.0,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1016",
+    "name": "12 \u00b7 primitives-text-3: Noul [p12-text-0015]",
+    "text": "Noul",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      568.2998046875,
+      404.81941529281494,
+      81.400390625,
+      30.0205078125
+    ],
+    "baseline": [
+      565.5,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "12 \u00b7 primitives-text-4: Return requested? Assess a yes/no proposition. [p12-text-0016]",
+    "text": "Return requested?",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      568.01953125,
+      469.93571727362206,
+      236.0419921875,
+      27.1044921875
+    ],
+    "baseline": [
+      565.5,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "12 \u00b7 primitives-text-4: Return requested? Assess a yes/no proposition. [p12-text-0016]",
+    "text": "Assess a yes/no",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      565.6123046875,
+      547.7203657111221,
+      201.43359375,
+      29.2041015625
+    ],
+    "baseline": [
+      565.5,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1017",
+    "name": "12 \u00b7 primitives-text-4: Return requested? Assess a yes/no proposition. [p12-text-0016]",
+    "text": "proposition.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      567.7119140625,
+      588.8524360236221,
+      152.9091796875,
+      27.4677734375
+    ],
+    "baseline": [
+      565.5,
+      609.4881782111221
+    ]
+  },
+  {
+    "shapeId": "1018",
+    "name": "12 \u00b7 primitives-text-5: Scoring [p12-text-0017]",
+    "text": "Scoring",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1009.5400390625,
+      404.85945435531494,
+      141.3798828125,
+      39.560546875
+    ],
+    "baseline": [
+      1008.0,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "12 \u00b7 primitives-text-6: How urgent is this case? Use an anchored rubric. [p12-text-0018]",
+    "text": "How urgent is this case?",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1010.51953125,
+      469.57243602362206,
+      306.6845703125,
+      27.8310546875
+    ],
+    "baseline": [
+      1008.0,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1019",
+    "name": "12 \u00b7 primitives-text-6: How urgent is this case? Use an anchored rubric. [p12-text-0018]",
+    "text": "Use an anchored rubric.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1010.267578125,
+      549.0924360236221,
+      306.041015625,
+      21.111328125
+    ],
+    "baseline": [
+      1008.0,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1020",
+    "name": "12 \u00b7 primitives-text-7: Endpointing [p12-text-0019]",
+    "text": "Endpointing",
+    "font": "Manrope",
+    "fontSizePx": 40.0,
+    "bbox": [
+      1453.2998046875,
+      404.92000123031494,
+      223.3671875,
+      39.5
+    ],
+    "baseline": [
+      1450.5,
+      434.21980591781494
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "12 \u00b7 primitives-text-8: Has the turn ended? Judge the available prefix. [p12-text-0020]",
+    "text": "Has the turn ended?",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1453.01953125,
+      469.93571727362206,
+      261.6328125,
+      20.6650390625
+    ],
+    "baseline": [
+      1450.5,
+      490.20817821112206
+    ]
+  },
+  {
+    "shapeId": "1021",
+    "name": "12 \u00b7 primitives-text-8: Has the turn ended? Judge the available prefix. [p12-text-0020]",
+    "text": "Judge the available prefix.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1450.66796875,
+      549.0924360236221,
+      334.318359375,
+      27.8310546875
+    ],
+    "baseline": [
+      1450.5,
+      569.7281782111221
+    ]
+  },
+  {
+    "shapeId": "1022",
+    "name": "12 \u00b7 tag: 01 [p12-text-0021]",
+    "text": "01",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      124.17578125,
+      349.6149194143701,
+      24.037109375,
+      15.162109375
+    ],
+    "baseline": [
+      123.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "12 \u00b7 tag: 02 [p12-text-0022]",
+    "text": "02",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      566.67578125,
+      349.6149194143701,
+      23.701171875,
+      15.162109375
+    ],
+    "baseline": [
+      565.5,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "12 \u00b7 tag: 03 [p12-text-0023]",
+    "text": "03",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1009.17578125,
+      349.6149194143701,
+      23.3017578125,
+      15.162109375
+    ],
+    "baseline": [
+      1008.0,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1025",
+    "name": "12 \u00b7 tag: 04 [p12-text-0024]",
+    "text": "04",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1451.67578125,
+      349.6149194143701,
+      24.2255859375,
+      15.162109375
+    ],
+    "baseline": [
+      1450.5,
+      364.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "12 \u00b7 span: TypeSafe quickstart \u00b7 Noul \u00b7 Score [p12-text-0025]",
+    "text": "TypeSafe quickstart",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.076171875,
+      973.840947034941,
+      170.2607421875,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "12 \u00b7 span: TypeSafe quickstart \u00b7 Noul \u00b7 Score [p12-text-0025]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      265.2724609375,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      258.8876953125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "12 \u00b7 span: TypeSafe quickstart \u00b7 Noul \u00b7 Score [p12-text-0025]",
+    "text": "Noul",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      275.4755859375,
+      974.391728284941,
+      39.5966796875,
+      13.71875
+    ],
+    "baseline": [
+      273.765625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "12 \u00b7 span: TypeSafe quickstart \u00b7 Noul \u00b7 Score [p12-text-0025]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      323.0908203125,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      316.7060546875,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1027",
+    "name": "12 \u00b7 span: TypeSafe quickstart \u00b7 Noul \u00b7 Score [p12-text-0025]",
+    "text": "Score",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      332.154296875,
+      974.088017347441,
+      47.271484375,
+      14.0791015625
+    ],
+    "baseline": [
+      331.583984375,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1028",
+    "name": "12 \u00b7 span: koa-action capabilities: supplied brief; interfaces unspecified [p12-text-0026]",
+    "text": "koa-action capabilities: supplied brief; interfaces unspecified",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1301.701194328248,
+      973.840947034941,
+      528.8173828125,
+      18.6396484375
+    ],
+    "baseline": [
+      1300.047874015748,
+      987.843876722441
+    ]
+  }
+]

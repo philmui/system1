@@ -1,0 +1,529 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "09 \u00b7 l: DISAGGREGATED INTELLIGENCE [p09-text-0005]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "09 \u00b7 r: 09 / 36 [p09-text-0006]",
+    "text": "09 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "09 \u00b7 returns-policy-eyebrow: 02 / AN EXPLICIT MERCHANT POLICY [p09-text-0007]",
+    "text": "02 / AN EXPLICIT MERCHANT POLICY",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      422.294921875,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "09 \u00b7 returns-policy-title: Whole-item returns follow their own policy [p09-text-0008]",
+    "text": "Whole-item returns follow their own policy",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      88.828125,
+      183.87628321850394,
+      1398.5517578125,
+      70.2001953125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1057",
+    "name": "text \u00b7 38",
+    "text": "Verified purchase",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      135.07357298843505,
+      684.480489972933,
+      270.8935546875,
+      31.2001953125
+    ],
+    "baseline": [
+      134.91341673843505,
+      708.000021222933
+    ]
+  },
+  {
+    "shapeId": "1065",
+    "name": "text \u00b7 45",
+    "text": "Standard",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      599.5101751660926,
+      354.51173997293307,
+      139.9716796875,
+      23.96875
+    ],
+    "baseline": [
+      598.2777532910926,
+      378.00002122293307
+    ]
+  },
+  {
+    "shapeId": "1066",
+    "name": "text \u00b7 46",
+    "text": "Within",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      627.3994140625,
+      410.9746561269685,
+      83.9404296875,
+      21.30078125
+    ],
+    "baseline": [
+      626.9208984375,
+      432.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1067",
+    "name": "text \u00b7 47",
+    "text": "30",
+    "font": "Manrope",
+    "fontSizePx": 86.0,
+    "bbox": [
+      620.14208984375,
+      441.7900722810039,
+      97.1357421875,
+      64.5
+    ],
+    "baseline": [
+      616.70166015625,
+      505.0000332185039
+    ]
+  },
+  {
+    "shapeId": "1068",
+    "name": "text \u00b7 48",
+    "text": "days",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      638.642420644685,
+      521.4003869340552,
+      62.7001953125,
+      28.7998046875
+    ],
+    "baseline": [
+      637.442225332185,
+      542.9999963090552
+    ]
+  },
+  {
+    "shapeId": "1076",
+    "name": "text \u00b7 56",
+    "text": "Plus",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      638.86474609375,
+      654.480489972933,
+      63.23046875,
+      24.015625
+    ],
+    "baseline": [
+      636.62451171875,
+      678.000021222933
+    ]
+  },
+  {
+    "shapeId": "1077",
+    "name": "text \u00b7 57",
+    "text": "Within",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      627.3994140625,
+      710.9746561269685,
+      83.9404296875,
+      21.30078125
+    ],
+    "baseline": [
+      626.9208984375,
+      732.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1078",
+    "name": "text \u00b7 58",
+    "text": "60",
+    "font": "Manrope",
+    "fontSizePx": 86.0,
+    "bbox": [
+      621.0008978223425,
+      741.790072281004,
+      97.9970703125,
+      64.5
+    ],
+    "baseline": [
+      614.9813665723425,
+      805.000033218504
+    ]
+  },
+  {
+    "shapeId": "1079",
+    "name": "text \u00b7 59",
+    "text": "days",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      638.642420644685,
+      821.4003869340551,
+      62.7001953125,
+      28.7998046875
+    ],
+    "baseline": [
+      637.442225332185,
+      842.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1080",
+    "name": "text \u00b7 61",
+    "text": "Eligible",
+    "font": "Manrope",
+    "fontSizePx": 28.0,
+    "bbox": [
+      801.38671875,
+      395.41986158956695,
+      96.2060546875,
+      27.7197265625
+    ],
+    "baseline": [
+      799.4267578125,
+      415.99993971456695
+    ]
+  },
+  {
+    "shapeId": "1081",
+    "name": "text \u00b7 62",
+    "text": "Eligible",
+    "font": "Manrope",
+    "fontSizePx": 28.0,
+    "bbox": [
+      801.38671875,
+      695.419861589567,
+      96.2060546875,
+      27.7197265625
+    ],
+    "baseline": [
+      799.4267578125,
+      715.999939714567
+    ]
+  },
+  {
+    "shapeId": "1089",
+    "name": "text \u00b7 69",
+    "text": "Shipping",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      959.5116400098426,
+      374.7139139394685,
+      122.06250000000011,
+      28.681640625
+    ],
+    "baseline": [
+      958.3954290723426,
+      396.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1090",
+    "name": "text \u00b7 70",
+    "text": "$5",
+    "font": "Manrope",
+    "fontSizePx": 78.0,
+    "bbox": [
+      976.6565808009351,
+      411.1180976254921,
+      87.79003906249989,
+      71.642578125
+    ],
+    "baseline": [
+      973.6536511134351,
+      474.9999335629921
+    ]
+  },
+  {
+    "shapeId": "1115",
+    "name": "text \u00b7 95",
+    "text": "Shipping",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      959.5116400098426,
+      674.7139139394685,
+      122.06250000000011,
+      28.681640625
+    ],
+    "baseline": [
+      958.3954290723426,
+      696.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1116",
+    "name": "text \u00b7 96",
+    "text": "Waived",
+    "font": "Manrope",
+    "fontSizePx": 45.0,
+    "bbox": [
+      941.890955800935,
+      733.0370721579725,
+      155.5859375,
+      33.638671875
+    ],
+    "baseline": [
+      941.373377675935,
+      765.9999627829725
+    ]
+  },
+  {
+    "shapeId": "1152",
+    "name": "text \u00b7 133",
+    "text": "Confirm",
+    "font": "Manrope",
+    "fontSizePx": 34.0,
+    "bbox": [
+      1300.809412832185,
+      683.0098117618111,
+      131.359375,
+      25.5
+    ],
+    "baseline": [
+      1299.789881582185,
+      708.0000461368111
+    ]
+  },
+  {
+    "shapeId": "1166",
+    "name": "text \u00b7 147",
+    "text": "Service approves",
+    "font": "Manrope",
+    "fontSizePx": 31.0,
+    "bbox": [
+      1524.1400579785925,
+      685.2461654158465,
+      255.673828125,
+      30.193359375
+    ],
+    "baseline": [
+      1522.9466986035925,
+      708.0000716658465
+    ]
+  },
+  {
+    "shapeId": "1167",
+    "name": "text \u00b7 148",
+    "text": "Return authorized",
+    "font": "Manrope",
+    "fontSizePx": 32.0,
+    "bbox": [
+      1513.2010931348425,
+      730.559591535433,
+      277.59765625,
+      23.9365234375
+    ],
+    "baseline": [
+      1510.9608587598425,
+      754.000021222933
+    ]
+  },
+  {
+    "shapeId": "1173",
+    "name": "text \u00b7 153",
+    "text": "45",
+    "font": "Manrope",
+    "fontSizePx": 51.0,
+    "bbox": [
+      154.09017455093505,
+      805.2803426427165,
+      55.8193359375,
+      37.4853515625
+    ],
+    "baseline": [
+      151.54036986343505,
+      842.0000692052165
+    ]
+  },
+  {
+    "shapeId": "1175",
+    "name": "text \u00b7 155",
+    "text": "Standard",
+    "font": "Manrope",
+    "fontSizePx": 30.0,
+    "bbox": [
+      250.90519469734252,
+      777.9804650590551,
+      131.22460937499997,
+      22.4697265625
+    ],
+    "baseline": [
+      249.74992125984252,
+      799.9999963090551
+    ]
+  },
+  {
+    "shapeId": "1176",
+    "name": "text \u00b7 156",
+    "text": "Too late \u2192 stop",
+    "font": "Manrope",
+    "fontSizePx": 29.0,
+    "bbox": [
+      250.03996032234252,
+      820.6846170644685,
+      213.36718749999997,
+      28.275390625
+    ],
+    "baseline": [
+      249.74992125984252,
+      842.0000467519685
+    ]
+  },
+  {
+    "shapeId": "1180",
+    "name": "text \u00b7 161",
+    "text": "Whole-item returns only",
+    "font": "Manrope",
+    "fontSizePx": 26.0,
+    "bbox": [
+      140.99560546875,
+      361.88972071850395,
+      306.1904296875,
+      25.3505859375
+    ],
+    "baseline": [
+      140.69677734375,
+      381.00007228100395
+    ]
+  },
+  {
+    "shapeId": "1182",
+    "name": "text \u00b7 163",
+    "text": "Invented policy",
+    "font": "Manrope",
+    "fontSizePx": 25.0,
+    "bbox": [
+      209.14982360359252,
+      422.6249969242126,
+      171.27441406249997,
+      24.375
+    ],
+    "baseline": [
+      207.14982360359252,
+      440.9999969242126
+    ]
+  },
+  {
+    "shapeId": "1184",
+    "name": "09 \u00b7 span: Whole-item return policy \u00b7 Tutorial evaluation protocol [p09-text-0009]",
+    "text": "Whole-item return policy",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.265625,
+      973.840947034941,
+      219.1875,
+      18.8857421875
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1184",
+    "name": "09 \u00b7 span: Whole-item return policy \u00b7 Tutorial evaluation protocol [p09-text-0009]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      313.9326171875,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      307.5478515625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1184",
+    "name": "09 \u00b7 span: Whole-item return policy \u00b7 Tutorial evaluation protocol [p09-text-0009]",
+    "text": "Tutorial evaluation protocol",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      322.501953125,
+      973.840947034941,
+      239.576171875,
+      18.6396484375
+    ],
+    "baseline": [
+      322.42578125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1185",
+    "name": "09 \u00b7 span: Invented whole-item policy \u00b7 exchanges and kit parts have separate rules [p09-text-0010]",
+    "text": "Invented whole-item policy \u00b7 exchanges and kit parts have separate rules",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1197.2764459276575,
+      973.840947034941,
+      633.9814453125,
+      18.8857421875
+    ],
+    "baseline": [
+      1196.2500787401575,
+      987.843876722441
+    ]
+  }
+]

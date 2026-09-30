@@ -1,0 +1,17 @@
+{
+  "article": "09-building-prod.md",
+  "reading_copy": "index.html",
+  "check_type": "Static HTML and local-link verification; no browser rendering claimed",
+  "figures": 5,
+  "all_image_alt_nonempty": true,
+  "external_source_links": 13,
+  "all_article_source_links_present": true,
+  "scripts": [],
+  "missing_local_targets": [],
+  "hashes": {
+    "09-building-prod.md": "16ed5d05c7e1bae5c01052d6016de3a4e84f4c7e98804a776587067818488d90",
+    "index.html": "f642f2618763cb564e430821b69aaeb0cfd36092b38b6602f7b464e73517d5f8",
+    "08-building-prod.md": "042deb51b870350e530de2812db4f388453f070ebce17cb7e137af3b424086b5",
+    "08-reading-copy.html": "6f39f1df9d65328af64725f3596362487f09a77254c8080573807869693c32f7"
+  }
+}

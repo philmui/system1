@@ -1,0 +1,393 @@
+[
+  {
+    "shapeId": "1001",
+    "name": "24 \u00b7 l: DISAGGREGATED INTELLIGENCE [p24-text-0011]",
+    "text": "DISAGGREGATED INTELLIGENCE",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      89.51953125,
+      61.08696358267716,
+      326.1787109375,
+      14.193359375
+    ],
+    "baseline": [
+      88.0,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1002",
+    "name": "24 \u00b7 r: 24 / 36 [p24-text-0012]",
+    "text": "24 / 36",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1756.6472157972441,
+      59.87114327017716,
+      73.4443359375,
+      16.7197265625
+    ],
+    "baseline": [
+      1755.9636220472441,
+      74.91899483267716
+    ]
+  },
+  {
+    "shapeId": "1003",
+    "name": "24 \u00b7 economics-eyebrow: 06 / INTERACTIVE BREAK-EVEN [p24-text-0013]",
+    "text": "06 / INTERACTIVE BREAK-EVEN",
+    "font": "Salesforce Sans",
+    "fontSizePx": 21.0,
+    "bbox": [
+      88.755859375,
+      126.38932917076774,
+      349.0478515625,
+      18.480468749999986
+    ],
+    "baseline": [
+      88.0,
+      143.02116510826772
+    ]
+  },
+  {
+    "shapeId": "1004",
+    "name": "24 \u00b7 economics-title: Savings depend on avoiding expensive work [p24-text-0014]",
+    "text": "Savings depend on avoiding expensive work",
+    "font": "Manrope",
+    "fontSizePx": 72.0,
+    "bbox": [
+      90.7724609375,
+      183.94854884350394,
+      1441.8623046875,
+      71.2080078125
+    ],
+    "baseline": [
+      88.0,
+      236.79620509350394
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "24 \u00b7 formula: Baseline = G Candidate = D + O + pG [p24-text-0015]",
+    "text": "Baseline = G",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 56.0,
+    "bbox": [
+      128.927734375,
+      404.61238035187006,
+      393.8994140625,
+      42.5595703125
+    ],
+    "baseline": [
+      124.0,
+      446.50007566437006
+    ]
+  },
+  {
+    "shapeId": "1006",
+    "name": "24 \u00b7 formula: Baseline = G Candidate = D + O + pG [p24-text-0015]",
+    "text": "Candidate = D + O + pG",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 56.0,
+    "bbox": [
+      127.919921875,
+      483.0123803518701,
+      730.9033203125,
+      53.0869140625
+    ],
+    "baseline": [
+      124.0,
+      524.9000756643701
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "24 \u00b7 economics-text-1: G = 1.00 expensive routing call D = 0.03 specialized decision O = 0.04 added o [p24-text-0016]",
+    "text": "G = 1.00 expensive routing call",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      89.224609375,
+      605.5751574803149,
+      353.4013671875,
+      24.849609375
+    ],
+    "baseline": [
+      88.0,
+      623.9999621678149
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "24 \u00b7 economics-text-1: G = 1.00 expensive routing call D = 0.03 specialized decision O = 0.04 added o [p24-text-0016]",
+    "text": "D = 0.03 specialized decision",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      90.25,
+      641.815157480315,
+      330.7275390625,
+      24.5244140625
+    ],
+    "baseline": [
+      88.0,
+      660.239962167815
+    ]
+  },
+  {
+    "shapeId": "1007",
+    "name": "24 \u00b7 economics-text-1: G = 1.00 expensive routing call D = 0.03 specialized decision O = 0.04 added o [p24-text-0016]",
+    "text": "O = 0.04 added orchestration",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      89.224609375,
+      678.055157480315,
+      338.90234375,
+      18.849609375
+    ],
+    "baseline": [
+      88.0,
+      696.479962167815
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "24 \u00b7 label: Routes still using G: 20% [p24-text-0017]",
+    "text": "Routes still using G: ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 30.0,
+    "bbox": [
+      90.7001953125,
+      740.7397271776575,
+      265.291015625,
+      29.8203125
+    ],
+    "baseline": [
+      88.0,
+      762.8500787401575
+    ]
+  },
+  {
+    "shapeId": "1008",
+    "name": "24 \u00b7 label: Routes still using G: 20% [p24-text-0017]",
+    "text": "20%",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 40.0,
+    "bbox": [
+      368.640625,
+      734.4496881151575,
+      68.6796875,
+      28.8798828125
+    ],
+    "baseline": [
+      366.041015625,
+      762.8500787401575
+    ]
+  },
+  {
+    "shapeId": "1009",
+    "name": "24 \u00b7 span: Baseline [p24-text-0018]",
+    "text": "Baseline",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1014.51953125,
+      382.992436023622,
+      104.6083984375,
+      21.0283203125
+    ],
+    "baseline": [
+      1012.0,
+      403.628178211122
+    ]
+  },
+  {
+    "shapeId": "1010",
+    "name": "24 \u00b7 span: Candidate [p24-text-0019]",
+    "text": "Candidate",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1013.3720703125,
+      481.992436023622,
+      131.1796875,
+      21.111328125
+    ],
+    "baseline": [
+      1012.0,
+      502.628178211122
+    ]
+  },
+  {
+    "shapeId": "1011",
+    "name": "24 \u00b7 cost-metric: 73% lower [p24-text-0020]",
+    "text": "73% lower",
+    "font": "Salesforce Sans",
+    "fontSizePx": 86.0,
+    "bbox": [
+      1015.095703125,
+      569.1359298105315,
+      449.265625,
+      63.8115234375
+    ],
+    "baseline": [
+      1012.0,
+      631.4855391855315
+    ]
+  },
+  {
+    "shapeId": "1012",
+    "name": "24 \u00b7 economics-text-2: 0.27 normalized units [p24-text-0021]",
+    "text": "0.27 normalized units",
+    "font": "Salesforce Sans",
+    "fontSizePx": 28.0,
+    "bbox": [
+      1013.2041015625,
+      669.3724360236221,
+      280.306640625,
+      21.1123046875
+    ],
+    "baseline": [
+      1012.0,
+      690.0081782111221
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "24 \u00b7 economics-text-3: Break-even: D + O = (1 \u2212 p)G Later messages and service work excluded. [p24-text-0022]",
+    "text": "Break-even: D + O = (1 \u2212 p)G",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1014.25,
+      730.184571542815,
+      327.2255859375,
+      26.875
+    ],
+    "baseline": [
+      1012.0,
+      750.959962167815
+    ]
+  },
+  {
+    "shapeId": "1013",
+    "name": "24 \u00b7 economics-text-3: Break-even: D + O = (1 \u2212 p)G Later messages and service work excluded. [p24-text-0022]",
+    "text": "Later messages and service work excluded.",
+    "font": "Salesforce Sans",
+    "fontSizePx": 25.0,
+    "bbox": [
+      1014.25,
+      768.775157480315,
+      491.7509765625,
+      24.849609375
+    ],
+    "baseline": [
+      1012.0,
+      787.199962167815
+    ]
+  },
+  {
+    "shapeId": "1014",
+    "name": "24 \u00b7 tag: ROUTING STEP ONLY \u00b7 INVENTED UNIT COSTS [p24-text-0023]",
+    "text": "ROUTING STEP ONLY \u00b7 INVENTED UNIT COSTS",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      89.8896484375,
+      310.6149194143701,
+      526.27734375,
+      15.162109375
+    ],
+    "baseline": [
+      88.0,
+      325.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1015",
+    "name": "24 \u00b7 tag: HYPOTHETICAL ROUTING-STAGE ARITHMETIC [p24-text-0024]",
+    "text": "HYPOTHETICAL ROUTING-STAGE ARITHMETIC",
+    "font": "IBM Plex Mono",
+    "fontSizePx": 21.0,
+    "bbox": [
+      1013.6796875,
+      310.6149194143701,
+      499.2041015625,
+      15.162109375
+    ],
+    "baseline": [
+      1012.0,
+      325.5250756643701
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "24 \u00b7 span: Composable AI \u00b7 Building with System One [p24-text-0025]",
+    "text": "Composable AI",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      88.9306640625,
+      974.049931409941,
+      134.029296875,
+      18.4306640625
+    ],
+    "baseline": [
+      88.0,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "24 \u00b7 span: Composable AI \u00b7 Building with System One [p24-text-0025]",
+    "text": " \u00b7 ",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      230.3701171875,
+      980.357548597441,
+      2.109375,
+      2.109375
+    ],
+    "baseline": [
+      223.9853515625,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1023",
+    "name": "24 \u00b7 span: Composable AI \u00b7 Building with System One [p24-text-0025]",
+    "text": "Building with System One",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      240.5732421875,
+      973.840947034941,
+      223.2900390625,
+      18.8857421875
+    ],
+    "baseline": [
+      238.86328125,
+      987.843876722441
+    ]
+  },
+  {
+    "shapeId": "1024",
+    "name": "24 \u00b7 span: Illustrative arithmetic; no measured cost claim [p24-text-0026]",
+    "text": "Illustrative arithmetic; no measured cost claim",
+    "font": "Salesforce Sans",
+    "fontSizePx": 19.0,
+    "bbox": [
+      1425.622115218996,
+      973.840947034941,
+      404.876953125,
+      17.3662109375
+    ],
+    "baseline": [
+      1424.595748031496,
+      987.843876722441
+    ]
+  }
+]

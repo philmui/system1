@@ -1,0 +1,16 @@
+{
+  "blocked": "blocked",
+  "recovered": "synced",
+  "rehearsal": "Rehearsal history",
+  "annotation": {
+    "presenter": 1,
+    "audience": 1
+  },
+  "autoAdvanced": true,
+  "autoPausesInOverview": true,
+  "notesAfterReload": "Persistent notes after reload",
+  "focusOnDialog": true,
+  "focusRestored": true,
+  "errors": [],
+  "passed": true
+}

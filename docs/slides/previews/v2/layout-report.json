@@ -1,0 +1,192 @@
+{
+  "slides": [
+    {
+      "id": "opening",
+      "active": 1,
+      "title": "Disaggregated intelligence",
+      "overflows": []
+    },
+    {
+      "id": "benefits",
+      "active": 1,
+      "title": "Four benefits. One service to measure.",
+      "overflows": []
+    },
+    {
+      "id": "case",
+      "active": 1,
+      "title": "One customer, two obligations",
+      "overflows": []
+    },
+    {
+      "id": "ownership",
+      "active": 1,
+      "title": "Give each responsibility an owner",
+      "overflows": []
+    },
+    {
+      "id": "topology",
+      "active": 1,
+      "title": "Process knowledge becomes topology",
+      "overflows": []
+    },
+    {
+      "id": "layers",
+      "active": 1,
+      "title": "A runtime sits beneath the harness",
+      "overflows": []
+    },
+    {
+      "id": "contract",
+      "active": 1,
+      "title": "Start with a decision contract",
+      "overflows": []
+    },
+    {
+      "id": "primitives",
+      "active": 1,
+      "title": "Four bounded decisions, four contracts",
+      "overflows": []
+    },
+    {
+      "id": "semantics",
+      "active": 1,
+      "title": "Probability and intensity answer different questions",
+      "overflows": []
+    },
+    {
+      "id": "endpointing",
+      "active": 1,
+      "title": "Endpointing is a decision in time",
+      "overflows": []
+    },
+    {
+      "id": "dependencies",
+      "active": 1,
+      "title": "Split work along information dependencies",
+      "overflows": []
+    },
+    {
+      "id": "context",
+      "active": 1,
+      "title": "Each node sees a different view of the case",
+      "overflows": []
+    },
+    {
+      "id": "mixed",
+      "active": 1,
+      "title": "State preserves work across a branch",
+      "overflows": []
+    },
+    {
+      "id": "guided",
+      "active": 1,
+      "title": "Guided determinism gives uncertainty a place",
+      "overflows": []
+    },
+    {
+      "id": "agentscript",
+      "active": 1,
+      "title": "Availability and required execution differ",
+      "overflows": []
+    },
+    {
+      "id": "trace",
+      "active": 1,
+      "title": "A billing path preserves the outage task",
+      "overflows": []
+    },
+    {
+      "id": "failures",
+      "active": 1,
+      "title": "Failure routes are part of the program",
+      "overflows": []
+    },
+    {
+      "id": "confidence",
+      "active": 1,
+      "title": "Confidence needs evidence in your domain",
+      "overflows": []
+    },
+    {
+      "id": "gate",
+      "active": 1,
+      "title": "A stricter gate moves work somewhere",
+      "overflows": []
+    },
+    {
+      "id": "economics",
+      "active": 1,
+      "title": "Savings depend on avoiding expensive work",
+      "overflows": []
+    },
+    {
+      "id": "latency",
+      "active": 1,
+      "title": "Fast inference helps the path that uses it",
+      "overflows": []
+    },
+    {
+      "id": "exercise",
+      "active": 1,
+      "title": "Find the missing boundary",
+      "overflows": []
+    },
+    {
+      "id": "dataset",
+      "active": 1,
+      "title": "Begin the dataset at the decision boundary",
+      "overflows": []
+    },
+    {
+      "id": "training-partitions",
+      "active": 1,
+      "title": "Split examples before developing the decision",
+      "overflows": []
+    },
+    {
+      "id": "training-release",
+      "active": 1,
+      "title": "Freeze the workflow before earning release",
+      "overflows": []
+    },
+    {
+      "id": "splits",
+      "active": 1,
+      "title": "Choose the split that matches the claim",
+      "overflows": []
+    },
+    {
+      "id": "acceptance",
+      "active": 1,
+      "title": "Predeclare what would earn a rollout",
+      "overflows": []
+    },
+    {
+      "id": "evaluation",
+      "active": 1,
+      "title": "Evaluate the decision, then the service",
+      "overflows": []
+    },
+    {
+      "id": "diagnosis",
+      "active": 1,
+      "title": "Diagnose the boundary that failed",
+      "overflows": []
+    },
+    {
+      "id": "close",
+      "active": 1,
+      "title": "Start with one decision that changes the path",
+      "overflows": []
+    },
+    {
+      "id": "sources",
+      "active": 1,
+      "title": "Read the evidence behind the architecture",
+      "overflows": []
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="930" viewBox="0 0 1280 930" role="img" aria-labelledby="title desc">
+<title id="title">Follow a query to evidence and a result</title>
+<desc id="desc">Jev selects an intent. Simple find uses one task and complex supported queries use a bounded OpenAI plan. Parallel retrieval workers return screened passages. A complete join gates evidence; find returns passages and complex requests generate draft claims, validate exact citations, and screen semantic support before publication.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#617082"/></marker></defs>
+<style>text {font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;fill:#213047} .title {font-size:26px;font-weight:650} .subtitle {font-size:15px;fill:#5d6878} .label {font-size:15px;font-weight:600} .body {font-size:13px;fill:#46546a} .edge-label {font-size:12px;fill:#4b596d} .lane {font-size:14px;font-weight:600}</style>
+<rect width="1280" height="930" rx="16" fill="#fff"/>
+<text class="title" x="32" y="42">Follow a query to evidence and a result</text>
+<text class="subtitle" x="32" y="68">Retrieve with FTS5, screen with Jev, and synthesize only when the task needs it.</text>
+<rect x="300" y="287" width="635" height="160" rx="16" fill="#fafbfd" stroke="#d3dbe6" stroke-dasharray="6 5"/>
+<text class="lane" x="318" y="312">One retrieval worker per actual plan task; each returns a keyed outcome</text>
+<polyline points="260,155 330,155" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="259.75" y="132" width="70.5" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="295" y="145">supported</text>
+<polyline points="585,155 680,155" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="147,115 147,91 1100,91 1100,115" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="726.75" y="75" width="122.5" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="788" y="88">clear unsupported</text>
+<polyline points="792,200 792,245 315,245 315,375 330,375" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="585,375 680,375" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="792,420 792,480 147,480 147,535" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="260,575 330,575" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="585,575 680,575" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="613.0" y="550" width="38.0" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="632" y="563">find</text>
+<polyline points="457,620 457,650 147,650 147,735" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="118.25" y="686" width="57.5" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="147" y="699">complex</text>
+<polyline points="457,535 457,510 1100,510 1100,535" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="974.0" y="477" width="142.0" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="1045" y="490">no accepted passages</text>
+<polyline points="585,780 680,780" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="905,780 970,780" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="792,735 792,675 1100,675 1100,620" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="937.5" y="650" width="103.0" height="18" rx="4" fill="#fff"/>
+<text class="edge-label" text-anchor="middle" x="989" y="663">none supported</text>
+<polyline points="260,780 330,780" fill="none" stroke="#617082" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="35" y="115" width="225" height="85" rx="11" fill="#f4efff" stroke="#76539a" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="147.5" y="143">Jev intent</text>
+<text class="body" text-anchor="middle" x="147.5" y="165">find · summarize · compare</text>
+<text class="body" text-anchor="middle" x="147.5" y="184">unsupported</text>
+<rect x="330" y="115" width="255" height="85" rx="11" fill="#edf4ff" stroke="#2563a0" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="457.5" y="143">Create bounded plan</text>
+<text class="body" text-anchor="middle" x="457.5" y="165">Find: one retrieval task</text>
+<text class="body" text-anchor="middle" x="457.5" y="184">Complex: OpenAI, at most 3</text>
+<rect x="680" y="115" width="225" height="85" rx="11" fill="#e9f7f1" stroke="#20725c" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="792.5" y="143">Dispatch retrieval</text>
+<text class="body" text-anchor="middle" x="792.5" y="165">Send per task ID</text>
+<text class="body" text-anchor="middle" x="792.5" y="184">At most 4 concurrent</text>
+<rect x="970" y="115" width="260" height="85" rx="11" fill="#f2f4f7" stroke="#5d6878" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="1100.0" y="143">Unsupported request</text>
+<text class="body" text-anchor="middle" x="1100.0" y="165">Explain available scope</text>
+<rect x="330" y="335" width="255" height="85" rx="11" fill="#f2f4f7" stroke="#5d6878" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="457.5" y="363">FTS5 candidates</text>
+<text class="body" text-anchor="middle" x="457.5" y="385">Quoted lexical terms</text>
+<text class="body" text-anchor="middle" x="457.5" y="404">Metadata filters, cap 8 / task</text>
+<rect x="680" y="335" width="225" height="85" rx="11" fill="#f4efff" stroke="#76539a" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="792.5" y="363">Jev relevance</text>
+<text class="body" text-anchor="middle" x="792.5" y="385">Noul probability ≥ 0.70</text>
+<text class="body" text-anchor="middle" x="792.5" y="404">Query + candidate passage</text>
+<rect x="35" y="535" width="225" height="85" rx="11" fill="#edf4ff" stroke="#2563a0" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="147.5" y="563">Join task outcomes</text>
+<text class="body" text-anchor="middle" x="147.5" y="585">Complete expected task set</text>
+<text class="body" text-anchor="middle" x="147.5" y="604">Deduplicate by passage ID</text>
+<rect x="330" y="535" width="255" height="85" rx="11" fill="#e9f7f1" stroke="#20725c" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="457.5" y="563">Evidence gate</text>
+<text class="body" text-anchor="middle" x="457.5" y="585">Usable passages?</text>
+<text class="body" text-anchor="middle" x="457.5" y="604">Expose partial search errors</text>
+<rect x="680" y="535" width="225" height="85" rx="11" fill="#edf4ff" stroke="#2563a0" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="792.5" y="563">Find results</text>
+<text class="body" text-anchor="middle" x="792.5" y="585">Ranked source passages</text>
+<text class="body" text-anchor="middle" x="792.5" y="604">No generated narrative</text>
+<rect x="970" y="535" width="260" height="85" rx="11" fill="#fff4db" stroke="#906419" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="1100.0" y="563">Insufficient evidence</text>
+<text class="body" text-anchor="middle" x="1100.0" y="585">Explain missing support</text>
+<rect x="35" y="735" width="225" height="90" rx="11" fill="#f4efff" stroke="#76539a" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="147.5" y="763">OpenAI synthesis</text>
+<text class="body" text-anchor="middle" x="147.5" y="785">Unvalidated draft claims</text>
+<text class="body" text-anchor="middle" x="147.5" y="804">Show conflicts and gaps</text>
+<rect x="330" y="735" width="255" height="90" rx="11" fill="#e9f7f1" stroke="#20725c" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="457.5" y="763">Validate citations</text>
+<text class="body" text-anchor="middle" x="457.5" y="785">IDs belong to evidence</text>
+<text class="body" text-anchor="middle" x="457.5" y="804">Quotes are exact spans</text>
+<rect x="680" y="735" width="225" height="90" rx="11" fill="#e9f7f1" stroke="#20725c" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="792.5" y="763">Jev claim support</text>
+<text class="body" text-anchor="middle" x="792.5" y="785">Claim + cited passages</text>
+<text class="body" text-anchor="middle" x="792.5" y="804">Noul probability ≥ 0.80</text>
+<rect x="970" y="735" width="260" height="90" rx="11" fill="#edf4ff" stroke="#2563a0" stroke-width="1.4"/>
+<text class="label" text-anchor="middle" x="1100.0" y="763">Supported result</text>
+<text class="body" text-anchor="middle" x="1100.0" y="785">Unsupported claims removed</text>
+<text class="body" text-anchor="middle" x="1100.0" y="804">Citations open saved sources</text>
+<text class="body" x="35" y="890">Defaults are demo policies, not calibrated quality guarantees. Retrieval scores, relevance probabilities and support probabilities are distinct.</text>
+</svg>

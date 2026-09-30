@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "frontend-slides": {
+      "source": "zarazhangrui/frontend-slides",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "000d3359f7e63d5671f76270d7db249bc0593e6610fdbf601c3cf656e8f603b5"
+    },
+    "guizang-ppt-skill": {
+      "source": "op7418/guizang-ppt-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "fd7f0f868586cf7d0e2be55643f2700be262ab2f6a6ca44d9625e73d255f6348"
+    }
+  }
+}

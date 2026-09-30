@@ -1,0 +1,44 @@
+{
+  "deliveredAtUTC": "2026-09-29T15:05:15.210135+00:00",
+  "delivered": "docs/slides/05-disaggregated-intelligence.pptx",
+  "sha256": "fb31adb6115c535b73cbffefa43edd269600a961b79c9059b85bd0d52b017e03",
+  "bytes": 278229,
+  "archivedInput": "docs/slides/versions/v5-before-editable/05-disaggregated-intelligence.pptx",
+  "archivedInputSha256": "ebedf78a586cc1379a46eaee93f82739c270116056091ebf09334bde3aab9b3b",
+  "candidate": "candidate-04.pptx",
+  "passed": true,
+  "nativeComponents": {
+    "slides": 36,
+    "textBoxes": 722,
+    "drawingShapes": 980,
+    "groups": 623,
+    "pictureObjects": 0,
+    "clickableSourceLinks": 77
+  },
+  "checks": [
+    {
+      "file": "exports/05-disaggregated-intelligence-editable/independent-editability-validation.json",
+      "sha256": "0f96afca52858b15ece1e80e0d797e2d68d29af76b77b887fe6143c1a722bb8c"
+    },
+    {
+      "file": "exports/05-disaggregated-intelligence-editable/proof-candidate-04/native-xml-render-report.json",
+      "sha256": "87cfda3a384613795d1263b5a634c35d39ac1fbc7af6ed6dd881bccf7dbc68fc"
+    },
+    {
+      "file": "exports/05-disaggregated-intelligence-editable/proof-candidate-04/text-geometry-review.json",
+      "sha256": "5fffec8f28fd9944844972a660d0c87b704e9f22562329a9337e4540bbd866b0"
+    },
+    {
+      "file": "exports/05-disaggregated-intelligence-editable/native-editing-roundtrip.json",
+      "sha256": "781b877dcacc2e2f13744b1b4cf318826d9c7d4d3bb0c081af0a964ab3477a31"
+    },
+    {
+      "file": "reviews/05-editability-negative-probes.json",
+      "sha256": "82d2f4a0e593b45f2756c4cb3c4e941f125d7fca731171f10cdbe997a987a98f"
+    }
+  ],
+  "previous110InputsPreserved": true,
+  "sourceHTMLUnchanged": true,
+  "nativeOfficeRendered": false,
+  "currentGuide": "../../EDITING-V5.md"
+}

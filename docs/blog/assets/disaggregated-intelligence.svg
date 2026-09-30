@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title description">
+  <title id="title">Disaggregated intelligence governed by AgentScript and Agent Graph</title>
+  <desc id="description">A proposed composition assigns distinct responsibilities to specialized components. AgentScript configures contracts, sequence, limits, and action availability for Agent Graph. The graph maintains workflow state and explicit transitions, coordinating the components required by each case: koa-action supplies bounded model judgments; a reasoning model interprets unfamiliar cases and drafts grounded responses; backend services verify identity and access, enforce business rules, and own transactions; human reviewers resolve disputed evidence and supply scoped approvals where required. The coordination boundary does not imply that external services or people run inside Salesforce infrastructure. Cards are roles, not a mandatory call sequence. A complete case records its outcome, handling time, and total cost for evaluation. No native integration or measured performance is asserted.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#6A7E86"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; fill: #263B44; }
+      .eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 1.8px; fill: #5A6D75; }
+      .heading { font-size: 33px; font-weight: 650; letter-spacing: -.7px; }
+      .subtitle { font-size: 18px; fill: #52666F; }
+      .title { font-size: 22px; font-weight: 650; letter-spacing: -.3px; }
+      .body { font-size: 16px; fill: #405863; }
+      .small { font-size: 14px; fill: #536A74; }
+      .label { font-size: 11px; font-weight: 700; letter-spacing: .8px; fill: #47626C; }
+      .connector { fill: none; stroke: #6A7E86; stroke-width: 2; marker-end: url(#arrow); }
+      .card { stroke-width: 1.25; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="650" fill="#FBFCFD"/>
+  <text x="50" y="38" class="eyebrow">PROPOSED COMPOSITION</text>
+  <text x="50" y="79" class="heading">Disaggregated intelligence for enterprise work</text>
+  <text x="50" y="111" class="subtitle">Assign each task to the component that can meet its quality and cost requirements.</text>
+
+  <!-- Configuration is distinct from inference and external action execution. -->
+  <rect x="50" y="142" width="1100" height="75" rx="18" fill="#EAF2FA" stroke="#D1DFEC" class="card"/>
+  <text x="74" y="175" class="title">AgentScript control plane</text>
+  <text x="74" y="198" class="small">Configuration for the runtime</text>
+  <text x="501" y="184" class="body">Contracts · sequence · limits · action availability</text>
+  <path d="M 600 217 V 241" class="connector" stroke-dasharray="4 4"/>
+  <text x="621" y="237" class="small">configures</text>
+
+  <!-- This boundary depicts coordination, not where external services are hosted. -->
+  <rect x="50" y="249" width="1100" height="271" rx="18" fill="#F7FAFC" stroke="#CBDCE5" stroke-width="1.5"/>
+  <text x="74" y="284" class="title">Agent Graph runtime</text>
+  <text x="616" y="283" class="subtitle">Workflow state and explicit transitions</text>
+
+  <rect x="74" y="306" width="245" height="161" rx="14" fill="#FFF4DD" stroke="#EBDDBB" class="card"/>
+  <text x="92" y="330" class="label">BOUNDED JUDGMENTS</text>
+  <text x="92" y="361" class="title">koa-action</text>
+  <text x="92" y="392" class="body">Classify, score, detect</text>
+  <text x="92" y="415" class="body">when a turn is complete</text>
+  <text x="92" y="447" class="small">Produces a decision signal</text>
+
+  <rect x="340" y="306" width="245" height="161" rx="14" fill="#F0EDF9" stroke="#DDD7EC" class="card"/>
+  <text x="358" y="330" class="label">OPEN-ENDED INTERPRETATION</text>
+  <text x="358" y="361" class="title">Reasoning model</text>
+  <text x="358" y="392" class="body">Explain unfamiliar cases</text>
+  <text x="358" y="415" class="body">Draft a grounded response</text>
+  <text x="358" y="447" class="small">Uses the selected context</text>
+
+  <rect x="606" y="306" width="245" height="161" rx="14" fill="#E9F4EF" stroke="#CBDED4" class="card"/>
+  <text x="624" y="330" class="label">TRUSTED FACTS + ACTIONS</text>
+  <text x="624" y="361" class="title">Backend services</text>
+  <text x="624" y="392" class="body">Verify identity and access</text>
+  <text x="624" y="415" class="body">Enforce business rules</text>
+  <text x="624" y="447" class="small">Own the transaction</text>
+
+  <rect x="872" y="306" width="245" height="161" rx="14" fill="#FBECE4" stroke="#EACFC0" class="card"/>
+  <text x="890" y="330" class="label">CONSEQUENTIAL AMBIGUITY</text>
+  <text x="890" y="361" class="title">Human review</text>
+  <text x="890" y="392" class="body">Resolve disputed evidence</text>
+  <text x="890" y="415" class="body">Provide scoped approvals</text>
+  <text x="890" y="447" class="small">When the policy requires it</text>
+
+  <text x="74" y="496" class="small">Each case follows its configured path through the components it needs.</text>
+  <path d="M 600 520 V 548" class="connector"/>
+
+  <rect x="50" y="557" width="1100" height="59" rx="14" fill="#F3F6F8" stroke="#DCE5E9" stroke-width="1.25"/>
+  <text x="74" y="591" class="label">EVALUATION</text>
+  <path d="M 220 571 V 602" stroke="#D3DFE5" stroke-width="1.25"/>
+  <text x="244" y="592" class="body">Record outcomes, handling time, and total cost for the complete case.</text>
+  <text x="50" y="641" class="small">The boundary shows coordination; services and reviewers retain their own authority.</text>
+</svg>

@@ -1,0 +1,105 @@
+{
+  "method": "Actual PPTX native DrawingML to independent SVG/PNG; Pango logical/ink metrics, librsvg painting. No source HTML/layout-manifest positioning used.",
+  "limitations": [
+    "Not Microsoft Office rendering; paragraph metrics are a local Pango interpretation of explicit native XML.",
+    "Office/font-version-specific shaping and layout can differ."
+  ],
+  "pptx": "/Users/pmui/dev/brilliant/system1/docs/slides/exports/05-disaggregated-intelligence-editable/candidate-02.pptx",
+  "pptxSha256": "0595b78be09c36aafc1927f210733661debf16a4a45ffb17cc83d352e8ac0e1f",
+  "rendererSha256": "2ec0db42524df15b0b412d435539114c9d610a0c73498e1eb0a25d07ad1af94f",
+  "size": [
+    1920,
+    1080
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "nativeShapes": 33,
+      "nativeGroups": 17,
+      "nativeTextRuns": 29,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 8.35582963605967,
+        "fractionPixelsAnyChannelOver30": 0.06374614197530865
+      }
+    },
+    {
+      "slide": 2,
+      "nativeShapes": 35,
+      "nativeGroups": 23,
+      "nativeTextRuns": 24,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 7.325050154320988,
+        "fractionPixelsAnyChannelOver30": 0.05867476851851852
+      }
+    },
+    {
+      "slide": 6,
+      "nativeShapes": 173,
+      "nativeGroups": 82,
+      "nativeTextRuns": 37,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 5.167653034979424,
+        "fractionPixelsAnyChannelOver30": 0.04183400848765432
+      }
+    },
+    {
+      "slide": 14,
+      "nativeShapes": 21,
+      "nativeGroups": 4,
+      "nativeTextRuns": 16,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 5.513386059670782,
+        "fractionPixelsAnyChannelOver30": 0.04214313271604938
+      }
+    },
+    {
+      "slide": 19,
+      "nativeShapes": 33,
+      "nativeGroups": 11,
+      "nativeTextRuns": 31,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 8.88673482510288,
+        "fractionPixelsAnyChannelOver30": 0.07066454475308642
+      }
+    },
+    {
+      "slide": 31,
+      "nativeShapes": 39,
+      "nativeGroups": 5,
+      "nativeTextRuns": 26,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 11.041524402006173,
+        "fractionPixelsAnyChannelOver30": 0.07847029320987654
+      }
+    },
+    {
+      "slide": 34,
+      "nativeShapes": 20,
+      "nativeGroups": 3,
+      "nativeTextRuns": 30,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 13.175834780092593,
+        "fractionPixelsAnyChannelOver30": 0.09969859182098766
+      }
+    },
+    {
+      "slide": 36,
+      "nativeShapes": 115,
+      "nativeGroups": 29,
+      "nativeTextRuns": 18,
+      "textOutsideSlide": [],
+      "comparisonToOriginal": {
+        "meanAbsoluteChannelDifference255": 4.882432163065844,
+        "fractionPixelsAnyChannelOver30": 0.03663676697530864
+      }
+    }
+  ],
+  "nativeGeometryProofOnly": true
+}

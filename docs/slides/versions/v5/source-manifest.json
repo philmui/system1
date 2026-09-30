@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "file": "deck.json",
+      "bytes": 107678,
+      "sha256": "d2c403c09e48f3f31452c159943c42185904c11a3f488dccc862ecf655c35f4a"
+    },
+    {
+      "file": "theme-v5.css",
+      "bytes": 97008,
+      "sha256": "1d8235e3892c9bc8428936b9085f5136643c0224217fb77387f0f26506ab9b35"
+    },
+    {
+      "file": "interactions-v5.js",
+      "bytes": 7212,
+      "sha256": "237efa8eac12fa6bca57b64231a8a17d33bba6f12f397f34f41a80425724ea9d"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Browserless rendering used by version 05. Also requires system librsvg,
+# Fontconfig/Pango, and Poppler command-line utilities.
+weasyprint==69.0
+fonttools[woff]==4.63.0
+Pillow==12.3.0

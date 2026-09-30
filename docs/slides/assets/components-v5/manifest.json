@@ -1,0 +1,206 @@
+[
+  {
+    "name": "customer",
+    "source": "customer.svg",
+    "portable": "customer.outlined.svg",
+    "preview": "customer.png"
+  },
+  {
+    "name": "auth",
+    "source": "auth.svg",
+    "portable": "auth.outlined.svg",
+    "preview": "auth.png"
+  },
+  {
+    "name": "receipt",
+    "source": "receipt.svg",
+    "portable": "receipt.outlined.svg",
+    "preview": "receipt.png"
+  },
+  {
+    "name": "locked",
+    "source": "locked.svg",
+    "portable": "locked.outlined.svg",
+    "preview": "locked.png"
+  },
+  {
+    "name": "signin",
+    "source": "signin.svg",
+    "portable": "signin.outlined.svg",
+    "preview": "signin.png"
+  },
+  {
+    "name": "review",
+    "source": "review.svg",
+    "portable": "review.outlined.svg",
+    "preview": "review.png"
+  },
+  {
+    "name": "continue-to-picture-b",
+    "source": "continue-to-picture-b.svg",
+    "portable": "continue-to-picture-b.outlined.svg",
+    "preview": "continue-to-picture-b.png"
+  },
+  {
+    "name": "frontier",
+    "source": "frontier.svg",
+    "portable": "frontier.outlined.svg",
+    "preview": "frontier.png"
+  },
+  {
+    "name": "system-one",
+    "source": "system-one.svg",
+    "portable": "system-one.outlined.svg",
+    "preview": "system-one.png"
+  },
+  {
+    "name": "policy",
+    "source": "policy.svg",
+    "portable": "policy.outlined.svg",
+    "preview": "policy.png"
+  },
+  {
+    "name": "continuation-B",
+    "source": "continuation-B.svg",
+    "portable": "continuation-B.outlined.svg",
+    "preview": "continuation-B.png"
+  },
+  {
+    "name": "whole-kit",
+    "source": "whole-kit.svg",
+    "portable": "whole-kit.outlined.svg",
+    "preview": "whole-kit.png"
+  },
+  {
+    "name": "exchange",
+    "source": "exchange.svg",
+    "portable": "exchange.outlined.svg",
+    "preview": "exchange.png"
+  },
+  {
+    "name": "inventory",
+    "source": "inventory.svg",
+    "portable": "inventory.outlined.svg",
+    "preview": "inventory.png"
+  },
+  {
+    "name": "kit-part",
+    "source": "kit-part.svg",
+    "portable": "kit-part.outlined.svg",
+    "preview": "kit-part.png"
+  },
+  {
+    "name": "kit-rules",
+    "source": "kit-rules.svg",
+    "portable": "kit-rules.outlined.svg",
+    "preview": "kit-rules.png"
+  },
+  {
+    "name": "confirm-terms",
+    "source": "confirm-terms.svg",
+    "portable": "confirm-terms.outlined.svg",
+    "preview": "confirm-terms.png"
+  },
+  {
+    "name": "commit",
+    "source": "commit.svg",
+    "portable": "commit.outlined.svg",
+    "preview": "commit.png"
+  },
+  {
+    "name": "clarify",
+    "source": "clarify.svg",
+    "portable": "clarify.outlined.svg",
+    "preview": "clarify.png"
+  },
+  {
+    "name": "continuation-C",
+    "source": "continuation-C.svg",
+    "portable": "continuation-C.outlined.svg",
+    "preview": "continuation-C.png"
+  },
+  {
+    "name": "hold",
+    "source": "hold.svg",
+    "portable": "hold.outlined.svg",
+    "preview": "hold.png"
+  },
+  {
+    "name": "stop",
+    "source": "stop.svg",
+    "portable": "stop.outlined.svg",
+    "preview": "stop.png"
+  },
+  {
+    "name": "tasks",
+    "source": "tasks.svg",
+    "portable": "tasks.outlined.svg",
+    "preview": "tasks.png"
+  },
+  {
+    "name": "confirmed-terms",
+    "source": "confirmed-terms.svg",
+    "portable": "confirmed-terms.outlined.svg",
+    "preview": "confirmed-terms.png"
+  },
+  {
+    "name": "identity",
+    "source": "identity.svg",
+    "portable": "identity.outlined.svg",
+    "preview": "identity.png"
+  },
+  {
+    "name": "calendar-standard-30",
+    "source": "calendar-standard-30.svg",
+    "portable": "calendar-standard-30.outlined.svg",
+    "preview": "calendar-standard-30.png"
+  },
+  {
+    "name": "calendar-plus-60",
+    "source": "calendar-plus-60.svg",
+    "portable": "calendar-plus-60.outlined.svg",
+    "preview": "calendar-plus-60.png"
+  },
+  {
+    "name": "shipping-five-dollars",
+    "source": "shipping-five-dollars.svg",
+    "portable": "shipping-five-dollars.outlined.svg",
+    "preview": "shipping-five-dollars.png"
+  },
+  {
+    "name": "shipping-waived",
+    "source": "shipping-waived.svg",
+    "portable": "shipping-waived.outlined.svg",
+    "preview": "shipping-waived.png"
+  },
+  {
+    "name": "customer-confirmation",
+    "source": "customer-confirmation.svg",
+    "portable": "customer-confirmation.outlined.svg",
+    "preview": "customer-confirmation.png"
+  },
+  {
+    "name": "parcel",
+    "source": "parcel.svg",
+    "portable": "parcel.outlined.svg",
+    "preview": "parcel.png"
+  },
+  {
+    "name": "service-approval",
+    "source": "service-approval.svg",
+    "portable": "service-approval.outlined.svg",
+    "preview": "service-approval.png"
+  },
+  {
+    "name": "standard-day-45-declined",
+    "source": "standard-day-45-declined.svg",
+    "portable": "standard-day-45-declined.outlined.svg",
+    "preview": "standard-day-45-declined.png"
+  },
+  {
+    "name": "whole-item-policy-scope",
+    "source": "whole-item-policy-scope.svg",
+    "portable": "whole-item-policy-scope.outlined.svg",
+    "preview": "whole-item-policy-scope.png"
+  }
+]

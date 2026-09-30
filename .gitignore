@@ -1,0 +1,56 @@
+# Local credentials and environment overrides. Keep the documented template.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Application state: imported files, SQLite stores, and local recordings.
+.runtime/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Python environments, caches, build products, and test reports.
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+wheels/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+
+# Frontend dependencies and generated output. Keep package-lock.json.
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+frontend/coverage/
+*.tsbuildinfo
+
+# Local logs and editor/OS files.
+*.log
+npm-debug.log*
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Supplied style reference exceeds GitHub's regular-file limit; keep it local.
+docs/slides/salesforce-style.pptx
