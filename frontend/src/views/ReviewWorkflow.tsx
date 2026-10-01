@@ -132,8 +132,8 @@ export function ReviewWorkflow({ initialExperience = 'live' }: { initialExperien
         <label className="timeline"><span>Animation</span><input type="range" min={0} max={timelineEnd} step="any" value={Math.min(time, timelineEnd)} aria-label="Example timeline" aria-valuetext={`${Math.round(time / duration * 100)} percent of animation; handoffs include extra reading time`} onChange={event => { setPlaying(false); const selectedTime = Number(event.target.value); setTime(selectedTime >= timelineEnd ? duration : selectedTime); }} /><output>{Math.round(time / duration * 100)}%</output></label>
         <div className="dock-detail-buttons"><button className="quiet small" aria-expanded={panel === 'page'} onClick={() => openPanel('page')}><Icon name="file" size={14} />Page & state</button><button className="quiet small" aria-expanded={panel === 'assumptions'} onClick={() => openPanel('assumptions')}><Icon name="sliders" size={14} />Assumptions</button><button className="quiet small" aria-expanded={panel === 'key'} onClick={() => openPanel('key')}><Icon name="info" size={14} />Graph key</button></div>
       </div>
-      <div className="comparison-decision-timing" role="group" aria-label="Assumed classification time comparison">
-        <div className="decision-timing-label"><strong>Assumed decision time</strong><span>Same page · 3 decisions / request</span></div>
+      <div className="comparison-decision-timing" role="group" aria-label="Decision time comparison, simulated values">
+        <div className="decision-timing-label"><strong>Measured decision time</strong><span>Simulated values · 3 decisions / request</span></div>
         {([{ label: 'System 1', seconds: scenario.systemSeconds, role: 'jev' }, { label: 'Frontier', seconds: scenario.frontierSeconds, role: 'llm' }] as const).map(model => <div key={model.role} className={`decision-timing-model role-${model.role}`}>
           <span>{model.label}<strong>{model.seconds.toFixed(2)} s</strong></span><i aria-hidden="true"><b style={{ width: `${model.seconds / Math.max(scenario.systemSeconds, scenario.frontierSeconds) * 100}%` }} /></i>
         </div>)}
