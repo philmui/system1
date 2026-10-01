@@ -76,8 +76,8 @@ export function DiscoveryDecisionTree({ tree, playing, speed, onInspect, snapsho
           <path d={geometry.paths[edge.id]} markerEnd={`url(#${arrowId}-${completedEdges.includes(edge.id) || !phase && edge.visited ? 'visited' : 'idle'})`} />
         </g>)}
         {tree.nodes.map(node => <path key={node.id} className={`tree-stage-track ${completedNodes.includes(node.id) || !phase && node.status === 'Complete' ? 'is-traversed' : ''} ${'node' in location && location.node === node.id ? 'is-current' : ''}`} d={geometry.tracks[node.id]} />)}
-        {(working || 'edge' in location) && markerPath && <FlowWork key={`${snapshot?.run.id}:${phase?.key || location.sequence}:${cycle}`} path={markerPath} moving={playing && !at.failed} speed={speed} duration={beatDuration} className={'edge' in location ? 'tree-transfer-progress' : 'tree-stage-progress'} />}
-        {markerPath && <FlowToken key={`${snapshot?.run.id}:${phase?.key || ('edge' in location ? location.sequence : location.node)}:${cycle}`} path={markerPath}
+        {(working || 'edge' in location) && markerPath && <FlowWork key={`work:${snapshot?.run.id}:${phase?.key || location.sequence}:${cycle}`} path={markerPath} moving={playing && !at.failed} speed={speed} duration={beatDuration} className={'edge' in location ? 'tree-transfer-progress' : 'tree-stage-progress'} />}
+        {markerPath && <FlowToken key={`document:${snapshot?.run.id}:${phase?.key || ('edge' in location ? location.sequence : location.node)}:${cycle}`} path={markerPath}
           stationary={phase ? phase.kind === 'checkpoint' : 'node' in location && !working} position={ready ? '0%' : phase?.kind === 'checkpoint' ? '100%' : '50%'} moving={playing && !at.failed} speed={speed} duration={beatDuration} />}
       </svg>
       {tree.nodes.map(node => <button key={node.id} data-tree-id={node.id} className={`discovery-tree-card workflow-glass-node role-${node.role} ${node.selected ? 'is-on-path' : 'is-alternative'} ${'node' in location && location.node === node.id ? 'is-current-location' : ''} ${node.active ? 'is-active' : ''} ${node.failed ? 'has-failed-work' : ''}`}

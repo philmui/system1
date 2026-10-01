@@ -76,6 +76,7 @@ export function DiscoveryJourney({ snapshot, documents, liveState, autoPlay, onP
     : returned ? `Returned run · ${snapshot.run.status.replaceAll('_', ' ')}` : 'Prepared example · simulated models';
   return <>
     {simulation && <header className="discovery-run-toolbar"><div className="discovery-request"><span className="eyebrow">Following one request</span><h2>{requestTitle || String(snapshot.run.request.query)}</h2></div><div className="discovery-run-actions"><button className="primary" onClick={playback.toggle}><Icon name={playback.playing ? 'pause' : 'play'} size={18} />{playback.playing ? 'Pause simulation' : complete ? 'Replay simulation' : playback.position ? 'Continue simulation' : 'Run simulation'}</button></div></header>}
+    <div className="discovery-visual-toolbar"><div className="discovery-playback-tools">
     <div className="discovery-run-summary" aria-label={returned ? 'Whole returned run' : 'Execution summary'}>
       <div className="discovery-summary-scope"><strong>{returned ? 'Whole returned run' : liveState.status === 'idle' ? 'Prepared example' : 'Live request'}</strong>
         <span>{returned ? 'Independent of replay position' : liveState.status === 'pending' ? 'Waiting for recorded steps' : liveState.status === 'failed' ? 'No response substituted' : simulation ? 'Prepared responses; no live timing' : 'Run to measure real models'}</span></div>
@@ -88,7 +89,6 @@ export function DiscoveryJourney({ snapshot, documents, liveState, autoPlay, onP
       <div>{!unavailable && <span className="discovery-prefix-count">At this step: {discoveryFrontierAttempts(visible)} frontier requests</span>}
         <button ref={detailToggle} className="quiet" disabled={unavailable} aria-pressed={detailed} onClick={() => { playback.pause(); setDetailed(value => !value); }}><Icon name={detailed ? 'workflow' : 'layers'} size={14} />{detailed ? 'Decision tree' : 'All steps'}</button></div>
     </div>
-    <div className="discovery-visual-toolbar">
       <div className="discovery-playback lesson-playback" role="group" aria-label="Workflow playback controls">
         <div className="discovery-playback-buttons">
           <button className="icon-button" disabled={unavailable} onClick={playback.toggle} aria-label={playback.playing ? 'Pause lesson' : 'Play lesson'} title={playback.playing ? 'Pause replay' : complete ? 'Replay recorded flow' : 'Play recorded flow'}><Icon name={playback.playing ? 'pause' : 'play'} size={18} /></button>
@@ -100,6 +100,7 @@ export function DiscoveryJourney({ snapshot, documents, liveState, autoPlay, onP
         </div>
         <input type="range" aria-label="Lesson progress" disabled={unavailable} min={0} max={playback.count} value={unavailable ? 0 : playback.position} onChange={event => playback.seek(Number(event.target.value))} />
       </div>
+    </div>
       <DiscoveryLatencyBreakdown snapshot={snapshot} unavailable={unavailable} />
     </div>
     <div className={`lesson-flow discovery-journey-canvas ${narrow ? 'is-narrow' : ''} ${detailed ? 'is-detailed' : 'is-tree'}`}>

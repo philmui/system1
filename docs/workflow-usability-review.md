@@ -128,3 +128,15 @@ The prepared Compare example shows **7.63 seconds** of service work: **4ms Code 
 The focused Discovery tests **passed all 30 cases**. The full unit run passed **243 of 244 tests**; its sole failure was the existing local-proxy test because the sandbox denied binding localhost (`listen EPERM`). TypeScript, the production build, and ESLint passed. Browser regressions now check the total, bar placement, faithful segment widths, and pending placeholders at desktop and tablet sizes.
 
 The targeted browser command `npm run test:e2e -- discovery-layout-browser.spec.ts` could not start because the isolated backend was denied binding `127.0.0.1:8001`. No new browser assertions or screenshots were produced. This review used source inspection and automated adversarial cases; no provider requests were made for this change.
+
+## Follow-up: browser failures found during release verification
+
+October 1, 2026. The feature PR's GitHub CI could run the complete browser suite in a permitted Linux environment. Its first push run passed 296 of 302 frontend tests and exposed six failures: three clipped Discovery viewport cases, two progress overlays retained after manual transitions, and excessive card area at 1024px. Backend checks, documentation, contracts, lint, and build passed before the browser failures.
+
+The document marker and progress stroke used identical React keys for the same capability/cycle. They now have separate identity prefixes, allowing React to remove the correct SVG child at a checkpoint or a new service. The browser regression also checks for duplicate-key errors; the existing checks for overlay removal, finite motion, reduced motion, and complete static paths remain intact.
+
+Discovery's whole-run summary and replay context now share the left side of the playback/latency toolbar. On desktop, mode selection and run guidance share a row. This reduces stacked metadata above the graph while keeping the primary run action, whole-run facts, playback, source/result controls, timing breakdown, and beginner instructions visible. Whole-run summary rows retain a fixed height across pending/returned states. The canvas fills the available viewport space; the readable diagram can scroll vertically on short screens. Phone controls continue to stack and retain their larger touch targets.
+
+The normal desktop tree reserves more space around cards; short desktop viewports use slightly narrower cards and compact vertical padding. The proportional-area and complete-viewport assertions remain unchanged. Failure messages now report layout measurements, and CI retains synthetic browser traces/screenshots for seven days if a check fails.
+
+These changes are being verified by the PR's repeated CI runs. The local browser attempt remains blocked by the sandbox's localhost-bind restriction. README instructions now accurately describe the simulation defaults and the explicit live-mode actions.

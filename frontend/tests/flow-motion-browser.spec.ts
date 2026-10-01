@@ -112,6 +112,8 @@ async function seekDiscovery(page: Page, position: number) {
 }
 
 test('Discovery crosses each segment once and leaves a complete static route through service rails', async ({ page }) => {
+  const duplicateKeys: string[] = [];
+  page.on('console', message => { if (message.type() === 'error' && /same key|unique.*key/i.test(message.text())) duplicateKeys.push(message.text()); });
   const writes = await preparedOnly(page);
   const snapshot = catalogue.discovery.find;
   await page.goto('/#explore/discover?example=find');
@@ -156,6 +158,7 @@ test('Discovery crosses each segment once and leaves a complete static route thr
   await expect(marker).toHaveCount(1);
   await expect(page.getByRole('button', { name: 'View results', exact: true })).toBeEnabled();
   expect(writes).toEqual([]);
+  expect(duplicateKeys).toEqual([]);
 });
 
 test('All steps uses the same river on traversed edges without animating possible routes', async ({ page }) => {

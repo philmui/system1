@@ -24,7 +24,7 @@ export function DiscoveryLatencyBreakdown({ snapshot, unavailable = false }: { s
       const work = breakdown.groups[kind.key];
       const unit = kind.unit === 'requests' && work.source === 'assumed' ? 'simulated steps' : kind.unit === 'requests' && work.source === 'mixed' ? 'steps (mixed)' : kind.unit;
       const average = unavailable || !work.count || work.ms === null ? '' : `${work.ms === 0 ? '0 ms' : duration(work.ms / work.count)} avg / ${kind.unit === 'operations' ? 'operation' : 'request'}`;
-      return <div key={kind.key} className={`role-${kind.role}`}><dt><i aria-hidden="true" />{kind.label}</dt><dd>{unavailable ? '—' : value(work)}</dd><small>{unavailable ? 'Not available yet' : `${work.count} ${unit}`}</small><small className="discovery-request-average">{average}</small></div>;
+      return <div key={kind.key} className={`role-${kind.role}`}><dt><i aria-hidden="true" />{kind.label}</dt><dd>{unavailable ? '—' : value(work)}</dd><div className="discovery-latency-meta"><small>{unavailable ? 'Not available yet' : `${work.count} ${unit}`}</small><small className="discovery-request-average">{average}</small></div></div>;
     })}</dl>
     <small className="discovery-latency-note">Request times include network time. Parallel calls can overlap; totals are not elapsed time or accuracy.</small>
   </section>;

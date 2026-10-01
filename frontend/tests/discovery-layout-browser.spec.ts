@@ -43,7 +43,14 @@ for (const viewport of [{ width: 1440, height: 900 }, { width: 1024, height: 768
       const run = workbench.getByRole('button', { name: 'Run Compare', exact: true });
       const timeline = page.getByRole('slider', { name: 'Lesson progress', exact: true });
       await expect(run).toBeInViewport({ ratio: 1 });
-      await expect(canvas).toBeInViewport({ ratio: 1 });
+      const layout = await workbench.evaluate(element => {
+        const root = element.closest('.is-discovery-explore')!;
+        return Object.fromEntries(['.learning-heading', '.discovery-example-choices', '.lesson-experience-choice', '.page-task-guide', '.discovery-workbench', '.discovery-run-toolbar', '.discovery-visual-toolbar', '.discovery-playback-tools', '.discovery-latency', '.discovery-journey-canvas', '.discovery-lesson-footer'].map(selector => {
+          const box = root.querySelector(selector)?.getBoundingClientRect();
+          return [selector, box ? { y: box.y, height: box.height, bottom: box.bottom } : null];
+        }));
+      });
+      await expect(canvas, `Workflow layout: ${JSON.stringify(layout)}`).toBeInViewport({ ratio: 1 });
       await expect(timeline).toBeInViewport({ ratio: 1 });
       const controls = await bounds(workbench.getByRole('group', { name: 'Workflow playback controls' }));
       const latency = await bounds(workbench.getByRole('region', { name: 'Whole run service latency breakdown' }));
