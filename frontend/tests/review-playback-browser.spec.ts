@@ -27,7 +27,8 @@ test('both papers arrive together; the specialized decision finishes while the f
   await expect(page.locator('.strategy-system1 .svg-decision-status')).toContainText('Decided · 0.35 s');
   await expect(page.locator('.strategy-frontier .svg-decision-status')).toContainText('Deciding');
   await expect(page.locator('.strategy-frontier .svg-answer.is-known')).toHaveCount(0);
-  await expect(page.locator('.comparison-decision-timing')).toContainText('Assumed decision time');
+  await expect(page.locator('.comparison-decision-timing')).toContainText('Measured decision time');
+  await expect(page.locator('.comparison-decision-timing')).toContainText('Simulated values');
   await expect(page.locator('.comparison-decision-timing')).toContainText('Frontier takes 10.9× as long');
   await expect(page.locator('.comparison-caption')).toContainText('excluded from latency');
   await expect(timeline).toHaveAttribute('aria-valuetext', /percent of animation/);
