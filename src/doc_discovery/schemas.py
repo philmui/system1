@@ -6,6 +6,7 @@ from typing import Annotated, Any, Literal
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 Category = Literal["invoice", "contract", "policy", "report", "correspondence", "other", "unknown"]
+FrontierModel = Literal["gpt-4.1", "gpt-5.5", "gpt-5.6-sol"]
 RunStatus = Literal[
     "queued",
     "running",
@@ -18,6 +19,7 @@ RunStatus = Literal[
 ]
 TERMINAL = {"succeeded", "partially_succeeded", "failed", "cancelled", "interrupted"}
 GRAPH_VERSION = "atlas-v1"
+CLASSIFICATION_GRAPH_VERSION = "atlas-classification-v2"
 POLICY_VERSION = "atlas-policy-v1"
 
 
@@ -193,6 +195,18 @@ class ReviewSubmission(Model):
     decisions: list[ReviewDecision]
 
 
+class Publication(Model):
+    """A durable search-index commit, authorized by a recorded decision or review."""
+
+    id: str
+    document_id: str
+    content_version: str
+    authorization_id: str
+    category: Category
+    status: Literal["searchable", "withdrawn"]
+    committed_at: str
+
+
 class NodePayload(Model):
     node_name: str
     label: str
@@ -211,6 +225,7 @@ class NodePayload(Model):
     passage_ids: list[str] = Field(default_factory=list, max_length=24)
     query_plan: QueryPlan | None = None
     draft_claims: list[Claim] = Field(default_factory=list, max_length=8)
+    publication: Publication | None = None
 
 
 class EdgePayload(Model):
@@ -230,6 +245,7 @@ class ReviewResumedPayload(Model):
     interrupt_id: str
     revision: int
     count: int = Field(ge=0)
+    decisions: list[ReviewDecision] = Field(default_factory=list)
 
 
 class RunCompletedPayload(Model):

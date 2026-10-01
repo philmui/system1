@@ -2,26 +2,21 @@ import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
 import type { Document, Run, SearchFilters } from './lib/api.generated';
 import { api, API_BASE, label, shortDate, type Health } from './lib/api';
 import { Icon, Status } from './components/Icon';
+import { AppGuide } from './components/AppGuide';
 import { SourcePanel } from './components/Inspector';
 import { Library } from './views/Library';
 import { Discover } from './views/Discover';
 import { useTheme } from './lib/theme';
+import { isLearning, learningHref, parseLocation, type View } from './lib/navigation';
 
 const RunWorkspace = lazy(() => import('./views/RunWorkspace').then(module => ({ default: module.RunWorkspace })));
-const ReviewWorkflow = lazy(() => import('./views/ReviewWorkflow').then(module => ({ default: module.ReviewWorkflow })));
-
-type View = 'workflow' | 'library' | 'discover' | 'runs';
-function locationState() {
-  const [view, runId] = window.location.hash.slice(1).split('/');
-  return {
-    view: (['workflow', 'library', 'discover', 'runs'].includes(view) ? view : 'workflow') as View,
-    runId: runId || null,
-  };
-}
+const LearningWorkspace = lazy(() => import('./views/LearningWorkspace').then(module => ({ default: module.LearningWorkspace })));
+const locationState = () => parseLocation(window.location.hash);
 export default function App() {
   const { theme, setTheme } = useTheme();
   const refreshVersion = useRef(0);
   const [route, setRoute] = useState(locationState);
+  const lastLearning = useRef(parseLocation(window.sessionStorage.getItem('learning-context') || '#explore/classify'));
   const [health, setHealth] = useState<Health | null>(null);
   const [documents, setDocuments] = useState<Document[]>([]);
   const [allDocuments, setAllDocuments] = useState<Document[]>([]);
@@ -35,12 +30,29 @@ export default function App() {
     null,
   );
   const [settings, setSettings] = useState(false);
+  const [guideOpen, setGuideOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   useEffect(() => {
     const handler = () => setRoute(locationState());
     window.addEventListener('hashchange', handler);
     return () => window.removeEventListener('hashchange', handler);
   }, []);
+  useEffect(() => {
+    const pauseForDetails = (event: Event) => {
+      if (event.target instanceof HTMLDetailsElement && event.target.open)
+        window.dispatchEvent(new Event('pause-workflow-playback'));
+    };
+    const pauseWhenHidden = () => { if (document.hidden) window.dispatchEvent(new Event('pause-workflow-playback')); };
+    document.addEventListener('toggle', pauseForDetails, true);
+    document.addEventListener('visibilitychange', pauseWhenHidden);
+    return () => { document.removeEventListener('toggle', pauseForDetails, true); document.removeEventListener('visibilitychange', pauseWhenHidden); };
+  }, []);
+  useEffect(() => {
+    if (isLearning(route.view)) {
+      lastLearning.current = route;
+      window.sessionStorage.setItem('learning-context', learningHref(route.view, route));
+    }
+  }, [route]);
   const navigate = (view: View, id?: string) => {
     window.location.hash = `${view}${id ? `/${id}` : ''}`;
   };
@@ -95,18 +107,25 @@ export default function App() {
   const pending = runs.filter((run) => run.status === 'awaiting_review').length;
   const displayedMode = route.runId ? runs.find(run => run.id === route.runId)?.mode : health?.mode;
   return (
-    <div className="app-shell">
+    <div className={`app-shell education-shell ${isLearning(route.view) ? 'learning-active' : 'workspace-active'}`}>
+      <a className="skip-link" href="#main-content" onClick={event => { event.preventDefault(); document.getElementById('main-content')?.focus(); }}>Skip to content</a>
       <aside className="sidebar">
-        <a className="brand" href="#workflow" aria-label="Document Discovery Studio home" title="Document Discovery Studio">
+        <a className="brand" href="#explore/classify" aria-label="Document Discovery Studio home" title="Document Discovery Studio">
           <span className="brand-mark">
             <Icon name="workflow" size={24} />
           </span>
         </a>
         <nav className="main-nav" aria-label="Main navigation">
-          {(['workflow', 'library', 'discover', 'runs'] as const).map((view) => (
-            <a href={`#${view}`} key={view} aria-label={label(view)} aria-current={route.view === view ? 'page' : undefined} title={label(view)} className={route.view === view ? 'active' : ''}>
-              <Icon name={view === 'discover' ? 'search' : view} size={19} />
-              <small>{label(view)}</small>
+          {(['explore', 'compare', 'experiment'] as const).map(view => <a href={learningHref(view, isLearning(route.view) ? route : lastLearning.current)} key={view} aria-current={route.view === view ? 'page' : undefined} className={route.view === view ? 'active' : ''}>
+            <Icon name={view === 'explore' ? 'workflow' : view === 'compare' ? 'layers' : 'sliders'} size={20} /><small>{label(view)}</small>
+          </a>)}
+        </nav>
+        <span className="workspace-nav-label">Workspace</span>
+        <nav className="main-nav workspace-nav" aria-label="Workspace">
+          {(['library', 'runs'] as const).map((view) => (
+            <a href={view === 'library' ? '#documents' : '#runs'} key={view} aria-label={view === 'library' ? 'Documents' : 'Runs'} aria-current={route.view === view ? 'page' : undefined} title={view === 'library' ? 'Documents' : 'Runs'} className={route.view === view ? 'active' : ''}>
+              <Icon name={view} size={19} />
+              <small>{view === 'library' ? 'Documents' : 'Runs'}</small>
               {view === 'runs' && pending > 0 && <span className="pending-count" aria-label={`${pending} awaiting review`}>{pending}</span>}
             </a>
           ))}
@@ -118,12 +137,12 @@ export default function App() {
           </button>
         </div>
       </aside>
-      <main className="main-content">
+      <main className="main-content" id="main-content" tabIndex={-1}>
         <header className="topbar">
           <div className="breadcrumb">
             <span className="studio-name">Discovery Studio</span>
             <Icon name="chevron" size={12} />
-            <strong>{route.view === 'workflow' ? 'Document review' : 'Project Atlas'}</strong>
+            <strong>{isLearning(route.view) ? label(route.view) : 'Your workspace'}</strong>
             {route.runId && (
               <>
                 <Icon name="chevron" size={12} />
@@ -132,8 +151,9 @@ export default function App() {
             )}
           </div>
           <div className="topbar-right">
-            <span className={`mode-label ${route.view === 'workflow' || displayedMode === 'test-fixture' ? 'simulated' : ''}`}>
-              <i />{route.view === 'workflow' ? 'Illustrated example' : displayedMode ? (displayedMode === 'test-fixture' ? 'Simulated' : 'Live providers') : route.runId ? 'Recorded run' : 'Connecting'}
+            <button className="quiet small app-help" aria-label="How to use" onClick={() => { window.dispatchEvent(new Event('pause-workflow-playback')); setGuideOpen(true); }}><Icon name="info" size={16} /><span>How to use</span></button>
+            <span className={`mode-label ${isLearning(route.view) && !route.runId || displayedMode === 'test-fixture' ? 'simulated' : ''}`}>
+              <i />{isLearning(route.view) && !route.runId ? 'Interactive lessons' : displayedMode ? (displayedMode === 'test-fixture' ? 'Simulated' : 'Live providers') : route.runId ? 'Recorded run' : 'Connecting'}
             </span>
             <div className="theme-toggle" role="group" aria-label="Color scheme">
               <button aria-pressed={theme === 'dark'} onClick={() => setTheme('dark')} title="Dark mode"><Icon name="moon" size={13} /><span>Dark</span></button>
@@ -141,7 +161,8 @@ export default function App() {
             </div>
           </div>
         </header>
-        {error && (route.view !== 'workflow' || settings) && (
+        {guideOpen && <AppGuide onClose={() => setGuideOpen(false)} />}
+        {error && (!isLearning(route.view) || settings) && (
           <div className="global-error error-banner" role="alert">
             <span>{error}</span>
             <button
@@ -184,7 +205,7 @@ export default function App() {
                 <Status value={health?.fts5 ? 'available' : 'unavailable'} />
               </div>
             </div>
-            <p className="micro">Backend: {API_BASE}</p>
+            <p className="micro">Backend: {API_BASE || `${window.location.origin}/api`}</p>
             <p className="micro">
               {health?.mode === 'test-fixture'
                 ? 'Simulated mode uses deterministic provider fixtures. The documents are synthetic separately from the provider mode.'
@@ -192,7 +213,7 @@ export default function App() {
             </p>
           </section>
         )}
-        {route.view === 'workflow' && <Suspense fallback={<div className="loading">Opening workflow…</div>}><ReviewWorkflow /></Suspense>}
+        {isLearning(route.view) && <Suspense fallback={<div className="loading">Opening lesson…</div>}><LearningWorkspace route={route} /></Suspense>}
         {route.view === 'library' && (
           <Library
             documents={documents}
@@ -253,7 +274,7 @@ export default function App() {
         )}
         {route.view === 'runs' &&
           (route.runId ? (
-            <Suspense fallback={<div className="loading">Opening run…</div>}><RunWorkspace
+            <Suspense fallback={<div className="loading">Opening run…</div>}><div className="run-learning-link"><a className="text-button" href={learningHref('explore', { scene: runs.find(item => item.id === route.runId)?.kind === 'discovery' ? 'discover' : 'classify', runId: route.runId })}><Icon name="workflow" size={15} />Explore this run</a><a className="text-button" href={learningHref('explore', lastLearning.current)}>Return to lesson</a></div><RunWorkspace
               key={route.runId}
               id={route.runId}
               documents={allDocuments}
@@ -266,7 +287,7 @@ export default function App() {
               <div className="page-heading">
                 <div>
                   <h1>Runs <span className="heading-count">{runs.length}</span></h1>
-                  <p>Open a graph. Follow an input. Replay its decisions.</p>
+                  <p>Open a run to inspect its status, sources, and decisions. Replay shows recorded work without another model call.</p>
                 </div>
                 {runs.some(run => ['failed', 'partially_succeeded'].includes(run.status)) && <button className="secondary small" disabled={busy} onClick={() => act(async () => {
                   const result = await api.cleanupRuns();

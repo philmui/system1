@@ -7,7 +7,7 @@
 
 ## 1. Instruction to Codex
 
-Redesign this application around its primary purpose: teaching disaggregated intelligence through interaction. A first-time user should understand how bounded judgment, runtime policy, frontier interpretation or generation, deterministic code, and human approval cooperate. Make the consequences observable: which frontier calls are avoided, which results become available sooner, and which checks control publication.
+Goal: Redesign this application around its primary purpose: teaching disaggregated intelligence through interaction. A first-time user should understand how bounded judgment, runtime policy, frontier interpretation or generation, deterministic code, and human approval cooperate. Make the consequences observable: which frontier calls are avoided, which results become available sooner, and which checks control publication.
 
 The user explicitly permits redesigning the whole app to serve this purpose. Reuse sound execution, replay, and data foundations, while changing the page hierarchy, navigation, layout, labels, and entry experience as needed. Inspect the current implementation before editing; some of the requested behavior already exists. Follow the phases in Section 13, implementing and verifying each complete slice before proceeding. Use this document as an implementation brief when the user asks you to execute it.
 
@@ -558,3 +558,7 @@ Address material findings and rerun affected checks. Retain a brief review recor
 Use these comprehension questions during a short walkthrough with someone unfamiliar with the implementation, if available: “Why did this document use a frontier model?”, “Who chose that route?”, “What is already searchable?”, “Which numbers were measured?”, and “Why does the Compare query use generation when Find may not?” Also observe whether the person can start an example, choose a different branch, find the strategy comparison, change a threshold, and return to the source without verbal instructions. Record this as human feedback only if a person actually participates. Otherwise retain it as an unexecuted usability check.
 
 The final handoff should explain what changed, how it was verified, and any material limitations. Do not stop at a visual mockup when implementing this brief: the displayed decisions, publication states, metrics, and safeguards must be connected to their stated sources of truth.
+
+---
+
+In terms of the color scheme for the Boxes in the workflow, they are now having similar background color as the dark background: ultrathink on how to create light filled foreground color with liquid glass UI design language.  Systematically update all components, as well as do the right design for different color schemes.

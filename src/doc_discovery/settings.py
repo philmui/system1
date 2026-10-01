@@ -8,11 +8,16 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=ROOT / ".env", extra="ignore", case_sensitive=False)
+    # Pydantic's dotenv source uses python-dotenv.dotenv_values. Keeping loading
+    # scoped here preserves environment precedence and _env_file=None isolation
+    # without copying local credentials into the process-wide environment.
+    model_config = SettingsConfigDict(
+        env_file=ROOT / ".env", env_file_encoding="utf-8", extra="ignore", case_sensitive=False
+    )
     typesafe_api_key: SecretStr | None = None
     typesafe_default_model: str = "jev-1.13.0"
     openai_api_key: SecretStr | None = None
-    openai_model: str = "gpt-4.1-mini"
+    openai_model: str = "gpt-5.5"
     langsmith_api_key: SecretStr | None = None
     langsmith_tracing: bool = False
     langsmith_trace_synthetic_text: bool = False

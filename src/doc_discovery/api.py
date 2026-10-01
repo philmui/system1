@@ -12,12 +12,14 @@ from fastapi.openapi.utils import get_openapi
 from fastapi.responses import JSONResponse, StreamingResponse
 from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver
 
+from .classification_measurements import router as classification_measurements_router
 from .events import Events
 from .ingestion import ingest, load_samples, normalized_filename
+from .lessons import router as lessons_router
+from .providers.openai import OpenAIProvider
+from .review_lessons import router as review_lessons_router
 from .schemas import (
     EVENT_PAYLOAD_MODELS,
-    GRAPH_VERSION,
-    POLICY_VERSION,
     TERMINAL,
     Category,
     ClassificationRequest,
@@ -57,6 +59,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         app.state.tasks = {}
         app.state.locks = {}
         app.state.execution_slots = asyncio.Semaphore(settings.max_concurrency)
+        app.state.lesson_interpret_slots = asyncio.Semaphore(1)
+        app.state.lesson_allowed_origins = {value.strip() for value in settings.cors_origins.split(",")}
+        # Default lesson configuration; each explicit request owns a provider
+        # with its allowlisted model selection, without changing this object.
+        app.state.lesson_openai = OpenAIProvider(
+            settings.model_copy(update={"app_mode": "live", "openai_model": "gpt-5.5"})
+        )
         # The local queue is in-process. A restart makes unfinished work visible and recoverable.
         for run in storage.runs(limit=None):
             if run.status in {"running", "queued"}:
@@ -88,6 +97,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                             id, status="interrupted", error="Backend stopped during execution."
                         )
                 await app.state.engine.close()
+                await app.state.lesson_openai.close()
         storage.close()
         lease.close()
 
@@ -97,6 +107,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         lifespan=lifespan,
         description="Single-user Atlas demonstration. JSON commands, retained sources and ordered SSE execution records.",
     )
+    app.include_router(lessons_router)
+    app.include_router(classification_measurements_router)
+    app.include_router(review_lessons_router)
     app.add_middleware(
         CORSMiddleware,
         allow_origins=[x.strip() for x in settings.cors_origins.split(",") if x.strip()],
@@ -370,12 +383,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         )
 
     def ensure_compatible(run):
-        if (
-            run.graph_version != GRAPH_VERSION
-            or run.policy_version != POLICY_VERSION
-            or run.mode != settings.app_mode
-            or run.configuration != settings.public_config()
-        ):
+        if not app.state.engine.compatible(run):
             raise HTTPException(
                 409,
                 "The saved graph, mode, or policy configuration differs. Restore the original configuration to resume, or cancel and start a linked new run.",
@@ -448,12 +456,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             run = app.state.storage.get_run(run_id)
             if run.status != "interrupted":
                 raise HTTPException(409, "Only interrupted executions can recover")
-            if (
-                run.graph_version != GRAPH_VERSION
-                or run.policy_version != POLICY_VERSION
-                or run.mode != settings.app_mode
-                or run.configuration != settings.public_config()
-            ):
+            if not app.state.engine.compatible(run):
                 raise HTTPException(409, "Configuration or graph version changed; start a linked new run")
             eligible, reason = await app.state.engine.can_recover(run_id)
             if not eligible:

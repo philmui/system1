@@ -123,8 +123,8 @@ def test_review_resume_cannot_bypass_the_execution_queue_limit(tmp_path, monkeyp
         assert client.get(f"/api/runs/{run['id']}").json()["run"]["status"] == "awaiting_review"
 
 
-def test_late_unindexing_does_not_leave_unresolved_documents_in_find_results(tmp_path, monkeypatch):
-    """Pause screening, reopen source classification, then finish the discovery run."""
+def test_reclassification_preserves_the_previously_approved_searchable_version(tmp_path, monkeypatch):
+    """A new pending judgment must not remove the immutable approved source."""
     app = create_app(settings_at(tmp_path))
     relevance_started = threading.Event()
     allow_relevance = threading.Event()
@@ -156,10 +156,12 @@ def test_late_unindexing_does_not_leave_unresolved_documents_in_find_results(tmp
             "/api/runs/classification", json={"document_ids": [document["id"]]}
         ).json()
         assert classify_started.wait(3)
-        assert not client.get(f"/api/documents/{document['id']}").json()["document"]["indexed"]
+        visible = client.get(f"/api/documents/{document['id']}").json()["document"]
+        assert visible["indexed"] and visible["category_provenance"] == "jev"
+        assert visible["content_version"] == document["content_version"]
         allow_relevance.set()
         result = settled(client, query["id"])["run"]["result"]
-        assert not result["passages"]
+        assert {p["document_id"] for p in result["passages"]} == {document["id"]}
         client.post(f"/api/runs/{reclassification['id']}/cancel")
 
 

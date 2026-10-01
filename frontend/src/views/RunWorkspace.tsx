@@ -14,6 +14,7 @@ import { Results } from '../components/Results';
 import { ReviewPanel } from '../components/ReviewPanel';
 import { PlaybackSpeed } from '../components/PlaybackSpeed';
 import { Icon, Status } from '../components/Icon';
+import { MeasurementGuide } from '../components/MeasurementGuide';
 
 export function RunWorkspace({
   id,
@@ -32,6 +33,11 @@ export function RunWorkspace({
   const [selected, setSelected] = useState<string | null>(null);
   const [live, setLive] = useState(true);
   const [playing, setPlaying] = useState(false);
+  useEffect(() => {
+    const pause = () => setPlaying(false);
+    window.addEventListener('pause-workflow-playback', pause);
+    return () => window.removeEventListener('pause-workflow-playback', pause);
+  }, []);
   const [cursor, setCursor] = useState(0);
   const [speed, setSpeed] = useState(1);
   const [followedInput, setFollowedInput] = useState<string | null>(null);
@@ -103,6 +109,7 @@ export function RunWorkspace({
     }
   };
   const inspectSource = (documentId?: string, passageId?: string, quote?: string) => {
+    setPlaying(false);
     if (passageId) {
       const related = Object.entries(execution.decisions).find(([, decisions]) =>
         decisions.some((decision) => decision.input_refs.includes(passageId)),
@@ -240,7 +247,7 @@ export function RunWorkspace({
           execution={execution}
           recording={recording}
           selected={selected}
-          onSelect={setSelected}
+          onSelect={id => { setPlaying(false); setSelected(id); }}
           moving={(live && active) || playing}
           speed={speed}
           followedInput={input}
@@ -249,7 +256,7 @@ export function RunWorkspace({
           replayHistory={replaySteps.slice(0, stepCount)}
           live={live}
           onInspect={id => { setPlaying(false); setSelected(id); }}
-          onSource={onSource}
+          onSource={inspectSource}
         />
       </div>
       <div className="playback-bar">
@@ -340,7 +347,7 @@ export function RunWorkspace({
           <button className={tab === 'results' ? 'active' : ''} aria-pressed={tab === 'results'} onClick={() => setTab('results')}>
             Results & sources
           </button>
-          <button className={tab === 'timing' ? 'active' : ''} aria-pressed={tab === 'timing'} onClick={() => setTab('timing')}>
+          <button className={tab === 'timing' ? 'active' : ''} aria-pressed={tab === 'timing'} onClick={() => { setPlaying(false); setTab('timing'); }}>
             Timing & evidence
           </button>
           <button className={tab === 'events' ? 'active' : ''} aria-pressed={tab === 'events'} onClick={() => setTab('events')}>
@@ -351,7 +358,7 @@ export function RunWorkspace({
         {tab === 'results' ? (
           <Results run={run} result={execution.result} documents={documents} onSource={inspectSource} />
         ) : tab === 'timing' ? (
-          <RunEducation events={visibleEvents} run={run} execution={execution} selected={selected} onSelect={setSelected} onSource={(passageId, quote) => inspectSource(undefined, passageId, quote)} />
+          <><MeasurementGuide /><RunEducation events={visibleEvents} run={run} execution={execution} selected={selected} onSelect={setSelected} onSource={(passageId, quote) => inspectSource(undefined, passageId, quote)} /></>
         ) : (
           <div className="event-list" aria-label="Execution event list">
             {!visibleEvents.length && <p className="empty-state">No events at this point in playback.</p>}

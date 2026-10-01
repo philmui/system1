@@ -46,6 +46,7 @@ export function Library({
           Import documents
         </button>
       </div>
+      <p className="page-task-guide">Import documents to upload and start classification. For existing files, select them in the collection and choose Classify selected. Load the example corpus to try synthetic sources. Only published documents become searchable. <a href="#explore/classify">Try a simulation first</a>.</p>
       <input
         ref={fileInput}
         type="file"

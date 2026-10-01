@@ -23,14 +23,14 @@ export interface ReplayStep {
 const stages: Record<string, [ReplayStage, ReplayRole]> = {
   dispatch: ['read', 'source'], extract: ['read', 'source'], jev: ['classify', 'jev'],
   interpret: ['interpret', 'llm'], outcome: ['collect', 'runtime'], join: ['collect', 'runtime'],
-  review: ['review', 'human'], index: ['index', 'output'], done: ['done', 'output'],
+  review: ['review', 'human'], index: ['index', 'output'], publish: ['index', 'output'], done: ['done', 'output'],
 };
 const nodeName = (id: string) => id.slice(id.lastIndexOf(':') + 1);
 const categoryLabel = (value: string) => value.charAt(0).toUpperCase() + value.slice(1);
 
 function documentFromInstance(id: string) {
   if (id.startsWith('worker:')) return id.slice(7);
-  if (/:(extract|jev|interpret|outcome)$/.test(id)) return id.slice(0, id.lastIndexOf(':'));
+  if (/:(extract|jev|interpret|outcome|publish)$/.test(id)) return id.slice(0, id.lastIndexOf(':'));
   return undefined;
 }
 
@@ -51,11 +51,18 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
   const outcomes = new Map<string, string>();
   const failures = new Map<string, string>();
   const reviewed = new Set<string>();
+  const published = new Set<string>();
+  const independent = events.some(event => event.instance_id.endsWith(':publish'));
   let reviewStarted = false;
   for (const [index, event] of events.entries()) {
     const p = event.payload;
     const documentId = eventDocumentId(event);
     const name = nodeName(event.instance_id);
+    const publication = p.publication as { status?: string; document_id?: string } | undefined;
+    if (publication?.document_id) {
+      if (publication.status === 'searchable') published.add(publication.document_id);
+      if (publication.status === 'withdrawn') published.delete(publication.document_id);
+    }
     if (documentId && typeof p.outcome === 'string') outcomes.set(documentId, p.outcome);
     if (documentId && event.type === 'node_failed' && name !== 'outcome' && !event.instance_id.startsWith('worker:')) {
       failures.set(documentId, event.instance_id);
@@ -82,6 +89,7 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       instanceId: 'join', stage: 'collect', role: 'runtime', documentId: followedDocument || undefined,
       title: cannotIndex ? 'Outcome recorded' : 'Waiting for other documents',
       detail: cannotIndex ? 'This document will not be indexed. The remaining documents continue through the batch.'
+        : published.has(currentDocument || '') ? 'This document is already searchable. Other documents continue through review.'
         : simulatedReview ? 'This document is accepted. The batch waits for simulated review of other documents before indexing.'
           : 'This document is accepted. The batch waits for a person to review other documents before indexing.',
       duration: 360,
@@ -91,7 +99,7 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       const edge = p as unknown as EdgePayload;
       const sourceName = nodeName(edge.source_instance_id), targetName = nodeName(edge.target_instance_id);
       // Dispatch and collection bookkeeping are already represented by readable node milestones.
-      if (sourceName === 'dispatch' || sourceName === 'outcome') continue;
+      if (sourceName === 'dispatch' || sourceName === 'outcome' || sourceName === 'publish') continue;
       if (followedDocument && targetName === 'review' && !wasReviewed && outcome !== 'awaiting_review') continue;
       if (followedDocument && cannotIndex && ['index', 'done'].includes(targetName)) continue;
       const [nextStage, nextRole] = stages[targetName] || ['collect', 'runtime'];
@@ -111,10 +119,12 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       else if (targetName === 'review') add({ ...transfer,
         title: simulatedReview ? 'Sending proposals to simulated review' : 'Sending proposals to review',
         detail: simulatedReview ? 'The batch has collected every outcome. A simulated reviewer checks the frontier proposals.' : 'The batch has collected every outcome. Unresolved proposals now go to a person.' });
+      else if (targetName === 'publish') add({ ...transfer, title: 'Publish this accepted document',
+        detail: sourceName === 'review' ? 'The recorded review authorizes indexing this document.' : 'The accepted category can be indexed while other documents continue.' });
       else if (targetName === 'index') add({ ...transfer,
         // An accepted document did not itself take the human-review branch.
         ...(followedDocument && sourceName === 'review' && !wasReviewed ? { kind: 'stage', source: undefined, target: undefined } : {}),
-        title: 'Ready to index', detail: 'Every outcome is recorded and required reviews are complete. Accepted documents can be indexed.' });
+        title: independent ? 'Reconcile published outcomes' : 'Ready to index', detail: independent ? 'The runtime reconciles per-document publication. Previously published sources remain available.' : 'Every outcome is recorded and required reviews are complete. Accepted documents can be indexed.' });
       else if (targetName === 'done') add({ ...transfer,
         title: 'Publishing the results', detail: 'Indexed sources and the recorded outcomes are being made available.' });
       continue;
@@ -134,6 +144,11 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       continue;
     }
 
+    if (event.type === 'node_completed' && name === 'publish' && publication) {
+      add({ kind: 'complete', stage: 'index', role: 'output', title: publication.status === 'searchable' ? 'Searchable now' : 'Publication withdrawn',
+        detail: publication.status === 'searchable' ? 'Indexing committed. Retrieval can use this document before the rest of the batch finishes.' : 'The recorded authorization withdrew this document from retrieval.', duration: 600 });
+      continue;
+    }
     if (event.type === 'node_failed' && name !== 'outcome' && !event.instance_id.startsWith('worker:')) {
       add({ kind: 'error', title: name === 'extract' ? 'No readable text' : 'Processing failed',
         detail: String(p.detail || 'The issue is recorded and this document is excluded from indexing.'), duration: 850 });
@@ -147,6 +162,7 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
         jev: ['Making a bounded judgment', 'The System 1 Model returns a category and confidence from a fixed rubric. The runtime decides what happens next.'],
         interpret: ['Interpreting the document', 'The LLM examines the ambiguity and proposes a category. A person makes the final decision.'],
         index: ['Indexing accepted documents', 'Accepted, readable documents are being added to the searchable library.'],
+        publish: ['Publishing this document', 'Code commits the authorized document to the search index.'],
       };
       if (copy[name] && !(followedDocument && cannotIndex && name === 'index')) {
         add({ title: copy[name][0], detail: copy[name][1] });
@@ -158,7 +174,8 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       add({ title: failed ? 'Document could not be classified' : outcome === 'awaiting_review' ? 'Proposal collected' : 'Classification complete',
         detail: failed ? String(p.detail || 'The issue is recorded. This document will not be indexed.')
           : outcome === 'awaiting_review' ? 'This proposal is waiting for the remaining workers before human review.'
-            : 'This document is accepted. Indexing starts after the batch finishes and pending reviews are resolved.',
+            : published.has(currentDocument || '') ? 'This document is already searchable. The batch continues independently.'
+              : independent ? 'The classification outcome is retained separately from publication.' : 'This document is accepted. Indexing starts after the batch finishes and pending reviews are resolved.',
         kind: failed ? 'error' : 'stage', duration: failed ? 700 : 240 });
       continue;
     }
@@ -167,7 +184,7 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       continue;
     }
     if (event.type === 'review_requested') {
-      if (followedDocument && !wasReviewed) waiting();
+      if (followedDocument && !wasReviewed) { if (!published.has(followedDocument)) waiting(); }
       else add({ kind: 'review', title: simulatedReview ? 'Simulating human review of the proposal' : 'A person must review the proposal',
         detail: 'Accept, correct, or exclude the proposed category before this document can be indexed.', duration: 800 });
       continue;
@@ -179,6 +196,7 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       continue;
     }
     if (event.type === 'review_resumed') {
+      if (followedDocument && !wasReviewed && published.has(followedDocument)) continue;
       add({ instanceId: followedDocument && !wasReviewed ? 'join' : 'review', stage: wasReviewed || !followedDocument ? 'review' : 'collect',
         title: 'Review complete', detail: 'The recorded review decisions let the batch continue. Only accepted documents will be indexed.', duration: 260 });
       continue;
@@ -187,13 +205,13 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
       const result = p.result as { outcomes?: Record<string, { status: string; category: string }>; indexed_count?: number } | undefined;
       const final = followedDocument ? result?.outcomes?.[followedDocument] : undefined;
       const successful = p.status === 'succeeded' || p.status === 'partially_succeeded';
-      const indexed = successful && final?.status === 'accepted';
+      const indexed = published.has(followedDocument) || successful && final?.status === 'accepted';
       add({ kind: successful ? 'complete' : 'error', stage: 'done', role: indexed || !followedDocument ? 'output' : 'source',
         instanceId: followedDocument && !indexed ? failures.get(followedDocument) || (excluded ? 'review' : 'join') : 'done',
         documentId: followedDocument || undefined,
-        title: !successful ? `Run ${String(p.status).replaceAll('_', ' ')}`
+        title: !successful && indexed ? `Searchable; batch ${String(p.status).replaceAll('_', ' ')}` : !successful ? `Run ${String(p.status).replaceAll('_', ' ')}`
           : followedDocument ? indexed ? 'Ready for discovery' : 'Document not indexed' : 'Batch processing complete',
-        detail: !successful ? String(p.error || 'Playback has reached the end of the recorded run.')
+        detail: !successful && indexed ? 'This document was published before the batch stopped. Its committed source remains searchable.' : !successful ? String(p.error || 'Playback has reached the end of the recorded run.')
           : followedDocument ? indexed ? 'This document is indexed and available to search. Its recorded journey is complete.'
             : final?.status === 'excluded' ? 'The reviewer excluded this document. Its outcome is preserved in the results.'
               : 'A processing issue prevented indexing. Its outcome is preserved in the results.'
@@ -213,6 +231,9 @@ export function classificationReplaySteps(events: Event[], followedDocument = ''
 }
 
 export function documentProgress(execution: Execution, documentId: string): string {
+  const publication = execution.instances[`${documentId}:publish`]?.publication;
+  if (publication?.status === 'searchable') return 'Indexed';
+  if (publication?.status === 'withdrawn') return 'Excluded';
   const result = execution.result?.outcomes as Record<string, { status: string }> | undefined;
   const outcome = result?.[documentId]?.status;
   if (outcome === 'accepted' && ['succeeded', 'partially_succeeded'].includes(execution.status)) return 'Indexed';

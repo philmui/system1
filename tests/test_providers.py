@@ -150,3 +150,30 @@ async def test_openai_response_uses_typed_parse_and_no_tools():
     assert call["text_format"] is ClassificationProposal
     assert call["store"] is False and "tools" not in call
     assert "untrusted data" in call["instructions"]
+
+
+@pytest.mark.parametrize(
+    "model,reasoning",
+    [("gpt-5.5", True), ("gpt-5.5-2026-04-23", True), ("gpt-5.6-sol", True), ("gpt-4.1", False), ("gpt-4.1-mini", False), ("gpt-5.5-pro", False)],
+)
+async def test_selected_reasoning_budgets_do_not_change_nonreasoning_or_other_models(model, reasoning):
+    provider = OpenAIProvider(settings().model_copy(update={"openai_model": model}))
+    provider.client = SimpleNamespace(
+        responses=SimpleNamespace(
+            parse=AsyncMock(
+                return_value=SimpleNamespace(
+                    status="completed",
+                    output=[],
+                    output_parsed=ClassificationProposal(category="contract", explanation="Proposed terms."),
+                    id="response-budget",
+                    model=model,
+                    usage=None,
+                )
+            )
+        )
+    )
+    signal = await provider.interpret(document(), Context("Proposed agreement", [], []))
+    options = provider.client.responses.parse.call_args.kwargs
+    assert options["model"] == signal.configured_model == model
+    assert options["max_output_tokens"] == (8192 if reasoning else 2400)
+    assert options.get("reasoning") == ({"effort": "low"} if reasoning else None)

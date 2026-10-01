@@ -1,4 +1,7 @@
-"""A parent graph joins runtime Send workers, then checkpoints one review interrupt."""
+"""Versioned classification: publish accepted workers, then join outstanding review.
+
+The legacy builder retains the original batch barrier for saved atlas-v1 checkpoints.
+"""
 
 from time import perf_counter
 from typing import Annotated, Any, TypedDict
@@ -34,12 +37,26 @@ class WorkerState(WorkerInput, total=False):
     outcomes: dict[str, Any]
 
 
-def build_classification(engine, checkpointer):
+def build_classification(engine, checkpointer, *, independent=False):
     storage = engine.storage
 
     async def extract(state: WorkerState):
         run_id, doc_id = state["run_id"], state["doc_id"]
         parent = f"worker:{doc_id}"
+        if independent and (committed := storage.publication(run_id, doc_id)):
+            # A process may stop after the durable commit but before the worker
+            # checkpoint. Preserve its original authority instead of judging again.
+            return {
+                "route": "outcome",
+                "outcome": {
+                    "document_id": doc_id,
+                    "status": "accepted",
+                    "category": committed.category,
+                    "content_version": committed.content_version,
+                    "authorization_id": committed.authorization_id,
+                    "publication": committed.model_dump(mode="json"),
+                },
+            }
         await engine.node(run_id, parent, "worker", "running", document_id=doc_id, label="Document worker")
         await engine.node(
             run_id, f"{doc_id}:extract", "extract", "running", parent=parent, document_id=doc_id
@@ -47,7 +64,8 @@ def build_classification(engine, checkpointer):
         try:
             document = storage.get_document(doc_id)
             context = select_context(storage.passages(doc_id))
-            storage.update_document(doc_id, indexed=False)
+            if not independent:
+                storage.update_document(doc_id, indexed=False)
             if document.extraction_status != "readable" or not context.text.strip():
                 error = (
                     document.extraction_error
@@ -138,23 +156,37 @@ def build_classification(engine, checkpointer):
                 policy_reason=route.reason,
             )
             await engine.decision(run_id, instance, decision, parent)
-            storage.update_document(
-                doc_id,
-                original_judgment=document.original_judgment or signal.model_dump(mode="json"),
-                category=signal.choice,
-                category_provenance="jev" if route.name == "accept" else "proposal",
-                indexed=False,
-            )
+            if not independent:
+                storage.update_document(
+                    doc_id,
+                    original_judgment=document.original_judgment or signal.model_dump(mode="json"),
+                    category=signal.choice,
+                    category_provenance="jev" if route.name == "accept" else "proposal",
+                    indexed=False,
+                )
+            elif not document.indexed and document.original_judgment is None:
+                storage.update_document(doc_id, original_judgment=signal.model_dump(mode="json"))
             await engine.edge(
                 run_id,
                 instance,
-                f"{doc_id}:interpret" if route.name == "interpret" else f"{doc_id}:outcome",
+                f"{doc_id}:interpret"
+                if route.name == "interpret"
+                else f"{doc_id}:{'publish' if independent else 'outcome'}",
                 route.explanation,
             )
             if route.name == "accept":
                 return {
-                    "route": "outcome",
-                    "outcome": {"document_id": doc_id, "status": "accepted", "category": signal.choice},
+                    "route": "publish" if independent else "outcome",
+                    "outcome": {
+                        "document_id": doc_id,
+                        "status": "accepted",
+                        "category": signal.choice,
+                        **(
+                            {"authorization_id": decision.id, "content_version": document.content_version}
+                            if independent
+                            else {}
+                        ),
+                    },
                 }
             return {"route": "interpret"}
         except Exception as error:
@@ -215,9 +247,10 @@ def build_classification(engine, checkpointer):
                 ),
                 parent,
             )
-            storage.update_document(
-                doc_id, category=proposal.category, category_provenance="proposal", indexed=False
-            )
+            if not independent or not document.indexed:
+                storage.update_document(
+                    doc_id, category=proposal.category, category_provenance="proposal", indexed=False
+                )
             await engine.edge(run_id, instance, f"{doc_id}:outcome", "Proposal requires parent-level review")
             return {
                 "outcome": {
@@ -225,6 +258,7 @@ def build_classification(engine, checkpointer):
                     "status": "awaiting_review",
                     "category": proposal.category,
                     "explanation": proposal.explanation,
+                    **({"content_version": document.content_version} if independent else {}),
                 }
             }
         except Exception as error:
@@ -251,6 +285,34 @@ def build_classification(engine, checkpointer):
                     "error": message,
                 }
             }
+
+    async def publish(state: WorkerState):
+        run_id, doc_id, value = state["run_id"], state["doc_id"], state["outcome"]
+        try:
+            committed = await engine.publish(
+                run_id, doc_id, value["content_version"], value["authorization_id"]
+            )
+            value = value | {"publication": committed}
+            await engine.edge(
+                run_id,
+                f"{doc_id}:publish",
+                f"{doc_id}:outcome",
+                "Document searchable; return batch accounting",
+            )
+        except Exception as error:
+            value = value | {"status": "failed", "error": f"Index storage failed ({type(error).__name__})."}
+            await engine.node(
+                run_id,
+                f"{doc_id}:publish",
+                "publish",
+                "failed",
+                parent=f"worker:{doc_id}",
+                document_id=doc_id,
+                detail=value["error"],
+                label="Publish document",
+            )
+            await engine.edge(run_id, f"{doc_id}:publish", f"{doc_id}:outcome", "Publication failed")
+        return {"outcome": value}
 
     async def outcome(state: WorkerState):
         run_id, doc_id = state["run_id"], state["doc_id"]
@@ -306,10 +368,15 @@ def build_classification(engine, checkpointer):
     worker.add_node("judge", judge)
     worker.add_node("interpret", interpret)
     worker.add_node("outcome", outcome)
+    if independent:
+        worker.add_node("publish", publish)
+        worker.add_edge("publish", "outcome")
     worker.add_edge(START, "extract")
     worker.add_conditional_edges("extract", lambda s: s["route"], {"judge": "judge", "outcome": "outcome"})
     worker.add_conditional_edges(
-        "judge", lambda s: s["route"], {"interpret": "interpret", "outcome": "outcome"}
+        "judge",
+        lambda s: s["route"],
+        {"interpret": "interpret", "outcome": "outcome", **({"publish": "publish"} if independent else {})},
     )
     worker.add_edge("interpret", "outcome")
     worker.add_edge("outcome", END)
@@ -395,6 +462,13 @@ def build_classification(engine, checkpointer):
                     "status": "excluded" if decision.action == "exclude" else "accepted",
                     "category": category,
                     "human_correction": decision.model_dump(mode="json"),
+                    **(
+                        {
+                            "authorization_id": f"review:{submission.interrupt_id}:{submission.revision}:{decision.document_id}"
+                        }
+                        if independent
+                        else {}
+                    ),
                 }
         for doc_id, value in reviewed.items():
             await engine.node(
@@ -414,6 +488,11 @@ def build_classification(engine, checkpointer):
                 "interrupt_id": submission.interrupt_id,
                 "revision": submission.revision,
                 "count": len(reviewed),
+                **(
+                    {"decisions": [decision.model_dump(mode="json") for decision in submission.decisions]}
+                    if independent
+                    else {}
+                ),
             },
             key=f"review-resumed:{submission.revision}",
         )
@@ -423,12 +502,35 @@ def build_classification(engine, checkpointer):
 
     async def index(state: BatchState):
         run_id = state["run_id"]
-        await engine.node(run_id, "index", "index", "running", label="Index accepted documents")
+        label = "Reconcile publication outcomes" if independent else "Index accepted documents"
+        await engine.node(run_id, "index", "index", "running", label=label)
         indexed = 0
         outcomes = dict(state.get("outcomes", {}))
         for doc_id, value in sorted(outcomes.items()):
             engine.ensure_active(run_id)
             try:
+                if independent:
+                    if value["status"] in {"accepted", "excluded"}:
+                        if not value.get("publication"):
+                            await engine.edge(
+                                run_id,
+                                "review",
+                                f"{doc_id}:publish",
+                                "Validated review authorizes publication"
+                                if value["status"] == "accepted"
+                                else "Validated review excludes document",
+                            )
+                            committed = await engine.publish(
+                                run_id, doc_id, value["content_version"], value["authorization_id"]
+                            )
+                            value = value | {"publication": committed}
+                            outcomes[doc_id] = value
+                            await engine.edge(
+                                run_id, f"{doc_id}:publish", "done", "Record publication outcome"
+                            )
+                        if value["publication"]["status"] == "searchable":
+                            indexed += 1
+                    continue
                 if value["status"] == "accepted":
                     fields = {"category": value["category"]}
                     if value.get("human_correction"):
@@ -451,18 +553,31 @@ def build_classification(engine, checkpointer):
                     "status": "failed",
                     "error": f"Index storage failed ({type(error).__name__}).",
                 }
+                if independent:
+                    await engine.node(
+                        run_id,
+                        f"{doc_id}:publish",
+                        "publish",
+                        "failed",
+                        parent=f"worker:{doc_id}",
+                        document_id=doc_id,
+                        detail=outcomes[doc_id]["error"],
+                        label="Publish document",
+                    )
         await engine.node(
             run_id,
             "index",
             "index",
             "succeeded",
-            label="Index accepted documents",
+            label=label,
             detail=f"{indexed} documents indexed idempotently",
             input_count=len(outcomes),
             output_count=indexed,
             removed_count=len(outcomes) - indexed,
         )
-        await engine.edge(run_id, "index", "done", "Publish batch results")
+        await engine.edge(
+            run_id, "index", "done", "Record batch results" if independent else "Publish batch results"
+        )
         return {"outcomes": outcomes, "result": {"outcomes": outcomes, "indexed_count": indexed}}
 
     async def done(state: BatchState):

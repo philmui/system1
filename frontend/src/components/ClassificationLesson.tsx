@@ -1,4 +1,5 @@
 /** @jsxImportSource react */
+import { displayName } from '../lib/naming';
 import type { Document, Event, Run } from '../lib/api.generated';
 import type { Execution } from '../lib/events';
 import { classificationDecision, classificationUsage, exampleKind, policyReason, policyTitles, routeLabel, type ExampleKind } from '../lib/classification';
@@ -65,7 +66,7 @@ export function ClassificationDecision({ run, execution, documentId, onSource }:
     </div>
     <div className="evidence-policy"><span className="evidence-label"><Icon name="workflow" size={14} />Runtime decides</span>
       <strong>{decision ? policyTitles[policyReason(decision)] : unreadable ? 'Unreadable inputs stop here' : stoppedJudgment ? 'Processing stopped before a policy decision' : 'The policy decision will appear here'}</strong>
-      <p>{decision ? decision.explanation : unreadable ? 'No readable text means neither model can help. The issue is recorded for this document.' : stoppedJudgment ? 'The runtime retains the processing issue and lets other workers continue.' : 'The configured threshold and additional guards determine whether a judgment is accepted.'}</p>
+      <p>{decision ? displayName(decision.explanation) : unreadable ? 'No readable text means neither model can help. The issue is recorded for this document.' : stoppedJudgment ? 'The runtime retains the processing issue and lets other workers continue.' : 'The configured threshold and additional guards determine whether a judgment is accepted.'}</p>
       {decision && typeof decision.threshold === 'number' && <small>Recorded acceptance threshold: {Math.round(decision.threshold * 100)}%</small>}
     </div>
     <div className="evidence-action"><span className="evidence-label"><Icon name={decision?.selected_route === 'interpret' ? 'sparkle' : 'checkCircle'} size={14} />Selected action</span>

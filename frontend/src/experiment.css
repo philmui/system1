@@ -1,0 +1,130 @@
+.policy-experiment { max-width: 1280px; margin: 0 auto; padding: 26px 30px 32px; color: var(--text-strong); }
+.experiment-heading { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; margin-bottom: 24px; }
+.experiment-eyebrow { display: block; color: var(--runtime); font-size: 11px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 9px; }
+.experiment-heading h1 { margin: 0; font-size: clamp(25px, 3vw, 34px); letter-spacing: -.9px; line-height: 1.22; }
+.experiment-heading p { margin: 10px 0 0; color: var(--text-muted); font-size: 13px; line-height: 1.6; }
+.experiment-simulation { display: inline-flex; gap: 7px; align-items: center; padding: 8px 11px; border: 1px solid var(--border); border-radius: 7px; color: var(--text-muted); font-size: 11px; flex-shrink: 0; }
+.experiment-simulation svg { color: var(--runtime); }
+.experiment-examples { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 22px; }
+.experiment-examples button { display: inline-flex; gap: 8px; align-items: center; min-height: 42px; padding: 9px 13px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; color: var(--text-muted); font-size: 12px; cursor: pointer; }
+.experiment-examples button[aria-pressed='true'] { border-color: var(--runtime); color: var(--text-strong); background: color-mix(in srgb, var(--runtime) 10%, var(--surface)); }
+.experiment-examples button[aria-pressed='true'] svg { color: var(--runtime); }
+.experiment-layout { display: grid; grid-template-columns: 295px minmax(0, 1fr); gap: 20px; align-items: start; }
+.experiment-controls { background: var(--surface-subtle); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.experiment-control-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+.experiment-control-heading h2 { margin: 0; font-size: 16px; letter-spacing: -.25px; }
+.experiment-control-heading button { font-size: 11px; min-height: 32px; }
+.experiment-threshold { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; gap: 10px; }
+.experiment-threshold output { font-size: 26px; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--runtime); }
+.experiment-controls input[type='range'] { width: 100%; margin: 8px 0 0; height: 30px; accent-color: var(--runtime); cursor: pointer; }
+.experiment-range-labels { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 10px; color: var(--text-muted); }
+.experiment-range-labels button { background: transparent; border: 0; font: inherit; color: var(--runtime); padding: 5px; cursor: pointer; min-height: 30px; }
+.experiment-guard { display: flex; align-items: center; gap: 16px; justify-content: space-between; padding: 21px 0; margin-top: 13px; border-block: 1px solid var(--border); cursor: pointer; }
+.experiment-guard strong, .experiment-guard small { display: block; font-size: 12px; line-height: 1.6; }
+.experiment-guard small { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+.experiment-guard input { accent-color: var(--runtime); width: 21px; height: 21px; flex-shrink: 0; cursor: pointer; }
+.experiment-variant-control { margin-top: 18px; }
+.experiment-variant-control > span { display: block; font-size: 11px; color: var(--text-muted); margin-bottom: 8px; }
+.experiment-variant-control > div { display: flex; gap: 6px; }
+.experiment-variant-control button { flex: 1; min-height: 38px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); color: var(--text-muted); font-size: 12px; cursor: pointer; }
+.experiment-variant-control button[aria-pressed='true'] { background: color-mix(in srgb, var(--runtime) 12%, var(--surface)); border-color: var(--runtime); color: var(--text-strong); }
+.experiment-source-preview { margin-top: 21px; }
+.experiment-source-preview > div { display: flex; align-items: center; gap: 7px; font-size: 12px; }
+.experiment-source-preview svg { color: var(--text-muted); }
+.experiment-source-preview blockquote { margin: 12px 0; font-size: 12px; line-height: 1.7; color: var(--text-muted); border-left: 2px solid var(--runtime); padding-left: 12px; }
+.experiment-source-preview button { font-size: 11px; min-height: 36px; }
+.experiment-controlled { margin-top: 17px; display: flex; gap: 8px; font-size: 10px; color: var(--text-muted); line-height: 1.65; }
+.experiment-controlled svg { flex-shrink: 0; margin-top: 2px; color: var(--runtime); }
+.experiment-controlled strong { font-weight: 500; color: var(--text-strong); }
+.experiment-receipts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.experiment-receipt { min-width: 0; padding: 18px 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); --route-color: var(--text-muted); }
+.experiment-receipt.route-interpret { --route-color: var(--llm); }
+.experiment-receipt.route-accept { --route-color: var(--jev); }
+.experiment-receipt:last-child { border-color: color-mix(in srgb, var(--route-color) 65%, var(--border)); }
+.experiment-receipt header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; font-size: 12px; padding-bottom: 17px; border-bottom: 1px solid var(--border); }
+.experiment-receipt header small { color: var(--text-muted); font-size: 10px; }
+.experiment-judgment { display: flex; gap: 10px; align-items: center; margin: 22px 0 20px; flex-wrap: wrap; }
+.experiment-judgment svg { color: var(--jev); }
+.experiment-judgment strong { font-size: 22px; font-weight: 600; letter-spacing: -.5px; }
+.experiment-judgment > span { width: 100%; font-size: 12px; margin-left: 34px; color: var(--text-muted); }
+.experiment-rule { display: flex; gap: 11px; align-items: center; padding: 13px 12px; border: 1px solid color-mix(in srgb, var(--runtime) 35%, var(--border)); border-radius: 8px; background: color-mix(in srgb, var(--runtime) 5%, var(--surface)); }
+.experiment-rule svg { color: var(--runtime); flex-shrink: 0; }
+.experiment-rule small, .experiment-rule strong { display: block; }
+.experiment-rule small { font-size: 10px; color: var(--text-muted); margin-bottom: 5px; }
+.experiment-rule strong { font-size: 12px; line-height: 1.5; font-weight: 550; }
+.experiment-route { position: relative; display: flex; gap: 13px; align-items: center; padding: 25px 11px 9px; color: var(--route-color); }
+.experiment-route-line { position: absolute; left: 21px; top: 0; height: 22px; width: 4px; border-radius: 2px; background: var(--route-color); }
+.experiment-route-line::after { content: ''; position: absolute; left: -3px; bottom: -1px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid var(--route-color); }
+.experiment-route > svg { flex-shrink: 0; }
+.experiment-route strong, .experiment-route div > span { display: block; }
+.experiment-route strong { font-size: 18px; font-weight: 600; }
+.experiment-route div > span { font-size: 11px; color: var(--text-muted); line-height: 1.55; margin-top: 6px; }
+.experiment-publication-note { display: block; font-size: 10px; color: var(--text-muted); line-height: 1.6; margin: 14px 0 0; }
+.experiment-receipt-placeholder { min-height: 253px; display: flex; flex-direction: column; justify-content: center; gap: 13px; color: var(--text-muted); align-items: center; text-align: center; }
+.experiment-receipt-placeholder > strong { font-weight: 500; font-size: 14px; }
+.experiment-receipt-placeholder > span { font-size: 11px; max-width: 23ch; line-height: 1.6; }
+.experiment-change { display: flex; align-items: center; gap: 10px; margin: 15px 0; min-height: 38px; color: var(--text-muted); font-size: 12px; line-height: 1.6; }
+.experiment-change > svg { color: var(--runtime); flex-shrink: 0; }
+.experiment-change strong { font-size: 12px; color: var(--text-strong); font-weight: 550; }
+.experiment-change small { display: block; font-size: 10px; line-height: 1.6; }
+.experiment-change button { margin-left: auto; }
+.experiment-coverage { border: 1px solid var(--border); border-radius: 10px; padding: 17px 19px; background: var(--surface-subtle); }
+.experiment-coverage > div:first-child { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.experiment-coverage h2 { font-size: 13px; margin: 0; font-weight: 550; }
+.experiment-coverage > div:first-child > span { font-size: 10px; color: var(--text-muted); }
+.experiment-coverage-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 19px; }
+.experiment-coverage-grid > div { min-width: 0; }
+.experiment-coverage-grid > div > span { display: block; font-size: 11px; color: var(--text-muted); margin-bottom: 7px; }
+.experiment-coverage-grid strong { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; font-size: 23px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.experiment-coverage-grid strong > svg { align-self: center; color: var(--text-muted); }
+.experiment-coverage-grid small { font-size: 10px; color: var(--text-muted); font-weight: 400; }
+.experiment-risk strong { color: var(--human); }
+.experiment-inspect { margin-top: 18px; color: var(--text-muted); font-size: 11px; line-height: 1.7; }
+.experiment-inspect > summary { cursor: pointer; font-size: 12px; padding: 7px 0; color: var(--text-strong); }
+.experiment-inspect p { margin: 11px 0; }
+.experiment-inspect dl { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 5px 13px; }
+.experiment-inspect dt { color: var(--text-muted); }
+.experiment-inspect dd { margin: 0; overflow-wrap: anywhere; color: var(--text-strong); }
+.experiment-next { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 24px; border-top: 1px solid var(--border); padding-top: 20px; }
+.experiment-next button { font-size: 12px; min-height: 42px; }
+.experiment-source-provenance { font-size: 11px; color: var(--text-muted); }
+.experiment-full-source { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: 13px; line-height: 1.8; color: var(--text-strong); }
+.experiment-variant-change { padding: 16px; border: 1px solid var(--border); background: var(--surface-subtle); border-radius: 8px; margin: 20px 0; }
+.experiment-variant-change strong { font-size: 12px; }
+.experiment-variant-change blockquote { margin: 12px 0; font-size: 12px; line-height: 1.7; }
+.experiment-variant-change mark { color: var(--text-strong); background: color-mix(in srgb, var(--accent) 20%, transparent); }
+.experiment-variant-change del { color: var(--text-muted); }
+.experiment-variant-change p { font-size: 11px; color: var(--text-muted); line-height: 1.6; }
+.policy-experiment :is(button, input, summary):focus-visible { outline: 2px solid var(--runtime); outline-offset: 4px; }
+@media (max-width: 1080px) {
+  .policy-experiment { padding: 22px; }
+  .experiment-heading { flex-direction: column; gap: 15px; }
+  .experiment-layout { grid-template-columns: 255px minmax(0, 1fr); gap: 14px; }
+  .experiment-controls { padding: 16px; }
+  .experiment-receipt { padding: 16px 13px; }
+  .experiment-judgment strong { font-size: 19px; }
+}
+@media (max-width: 780px) {
+  .policy-experiment { padding: 20px 15px 28px; }
+  .experiment-layout { grid-template-columns: 1fr; }
+  .experiment-examples { gap: 6px; }
+  .experiment-examples button { flex: 1 1 42%; justify-content: flex-start; font-size: 11px; }
+  .experiment-controls { padding: 18px; }
+  .experiment-control-heading { margin-bottom: 14px; }
+  .experiment-source-preview { margin-top: 16px; }
+  .experiment-guard { padding: 14px 0; }
+  .experiment-controlled { margin-top: 12px; }
+  .experiment-next { flex-wrap: wrap; }
+}
+@media (max-width: 480px) {
+  .experiment-receipts { grid-template-columns: 1fr; gap: 10px; }
+  .experiment-receipt { padding: 16px; }
+  .experiment-judgment { margin: 17px 0; }
+  .experiment-judgment > span { width: auto; margin: 0; font-size: 11px; }
+  .experiment-coverage-grid { gap: 17px 12px; }
+  .experiment-coverage-grid strong { gap: 5px; }
+  .experiment-coverage-grid strong small { flex-basis: 100%; }
+  .experiment-simulation { font-size: 10px; max-width: 100%; flex-wrap: wrap; }
+  .experiment-heading h1 { font-size: 27px; }
+  .experiment-next { align-items: stretch; }
+}

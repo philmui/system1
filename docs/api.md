@@ -7,6 +7,12 @@ Start the backend with the [tutorial](tutorial.md). The generated HTTP route con
 | Method and route | Purpose and response |
 | --- | --- |
 | `GET /api/health` | Readiness, execution mode, FTS5, public configuration, and recent run error. `configured` means key presence, not a successful provider request. |
+| `GET /api/lessons` | Read the versioned prepared catalogue: synthetic sources, executed fixture recordings, and isolated safeguard evidence. No operational writes or live provider calls. |
+| `POST /api/lessons/experiment` | Evaluate the actual policy with `example_id`, `threshold`, `guard_enabled`, and optional `original_example_id`; returns retained and simulated decisions plus prepared-reference tradeoffs. No operational writes or provider calls. |
+| `POST /api/lessons/interpret` | Explicit real GPT-5.5 interpretation for an allowed `example_id` and exact `content_version`. Returns measured proposal metadata; no operational review or publication. |
+| `POST /api/lessons/compare-classification` | Measure live Jev + exceptions against live GPT-5.5 classification on the same content-bound source. Returns component/strategy timing, queueing, attempts, and authored-reference agreement; no approval or publication. |
+| `POST /api/lessons/discover` | Execute Find or Compare in temporary storage with `bounded_mode: prepared` (default) or `live`. Returns its snapshot, actual frontier attempts, execution timing, intent agreement, and citation/support check counts. |
+| `POST /api/lessons/review/live` | Explicit GPT-5.5 classification or redaction draft for a fixed `page_id`, exact `content_version`, and `action`. Returns real response and timing; never authorizes release. |
 | `POST /api/documents` | Multipart `files` and optional user-confirmed `document_date`; returns `{documents: [...]}`. |
 | `POST /api/samples` | Idempotently load the 13 readable Atlas samples; does not classify. Explicit reload restores cleared readable samples. |
 | `POST /api/samples/classification` | Idempotently load four readable teaching documents for direct acceptance, uncertainty, and a policy guard; does not classify. |
@@ -28,6 +34,10 @@ Start the backend with the [tutorial](tutorial.md). The generated HTTP route con
 | `POST /api/runs/{run_id}/restart` | Start a linked new run from a terminal/interrupted run; uses current configuration. |
 
 Run states are `queued`, `running`, `awaiting_review`, `interrupted`, `succeeded`, `partially_succeeded`, `failed`, and `cancelled`. A provider failure does not become an empty successful result.
+
+See [live lesson requests](live-lesson-requests.md) for paid-command admission, measurement definitions, prepared signal limits, and response isolation. Live lesson request schemas also come from `src/doc_discovery/lessons.py` and `src/doc_discovery/review_lessons.py`.
+
+New classification runs use `atlas-classification-v2`; legacy `atlas-v1` checkpoints retain their original behavior. A `node_completed` event on `{document_id}:publish` carries the durable `publication` object (document/content version, authorization, category, status, and commit time). Classification acceptance is separate from searchability. See [independent publication](independent-publication.md) for transactional and reclassification semantics. Lesson API models are defined in `src/doc_discovery/lessons.py` and included in the generated public types.
 
 ## A runnable local request sequence
 

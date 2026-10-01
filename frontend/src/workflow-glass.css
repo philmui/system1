@@ -1,0 +1,145 @@
+/* One foreground material for HTML and SVG services. Canvas colors stay separate. */
+.workflow-glass-node {
+  --tile-tint: var(--glass-neutral-fill);
+  --tile-accent: var(--glass-source-ink);
+  --tile-text: var(--glass-tile-text);
+  --tile-muted: var(--glass-tile-muted);
+  --tile-opacity: var(--glass-body-opacity);
+  --tile-fill-top: color-mix(in srgb, color-mix(in srgb, var(--tile-tint) 65%, white) var(--tile-opacity), transparent);
+  --tile-fill-bottom: color-mix(in srgb, var(--tile-tint) var(--tile-opacity), transparent);
+  --tile-rim: var(--glass-rim);
+  --tile-selected-rim: var(--tile-accent);
+  --tile-highlight: var(--glass-highlight);
+  --tile-shadow: var(--glass-shadow);
+  --tile-stripe-width: 2px;
+  color: var(--tile-accent);
+}
+.workflow-glass-node.role-jev { --tile-tint: var(--glass-jev-fill); --tile-accent: var(--glass-jev-ink); }
+.workflow-glass-node.role-runtime { --tile-tint: var(--glass-runtime-fill); --tile-accent: var(--glass-runtime-ink); }
+.workflow-glass-node.role-llm { --tile-tint: var(--glass-llm-fill); --tile-accent: var(--glass-llm-ink); }
+.workflow-glass-node.role-human { --tile-tint: var(--glass-human-fill); --tile-accent: var(--glass-human-ink); }
+.workflow-glass-node.role-source, .workflow-glass-node.role-muted { --tile-tint: var(--glass-source-fill); --tile-accent: var(--glass-source-ink); }
+.workflow-glass-node.role-output { --tile-tint: var(--glass-output-fill); --tile-accent: var(--glass-output-ink); }
+
+/* Keep alternatives readable: change the material, never the opacity of text. */
+.workflow-glass-node:is(.is-dimmed, .state-skipped, .state-outside_preview),
+.workflow-glass-node.is-outcome:not(.is-visited) {
+  --tile-tint: var(--glass-neutral-fill);
+  --tile-accent: var(--glass-source-ink);
+  --tile-stripe-width: 0px;
+}
+.workflow-glass-node:is(.is-on-path, .is-visited) {
+  --tile-opacity: 97%;
+  --tile-rim: var(--tile-selected-rim);
+  --tile-stripe-width: 4px;
+}
+.workflow-glass-node:is(.is-active, .is-current, .is-selected, .state-running) {
+  --tile-opacity: 100%;
+  --tile-rim: var(--tile-selected-rim);
+  --tile-shadow: var(--glass-selected-shadow);
+  --tile-stripe-width: 4px;
+}
+.workflow-glass-node:is(.state-awaiting_review, .state-partially_succeeded) { --tile-rim: var(--glass-human-ink); }
+.workflow-glass-node:is(.state-failed, .state-interrupted) {
+  --tile-rim: var(--glass-danger-ink);
+}
+.workflow-glass-node.state-failed { --tile-tint: var(--glass-danger-fill); --tile-accent: var(--glass-danger-ink); }
+
+.flow-node.workflow-glass-node {
+  position: relative;
+  opacity: 1;
+  color: var(--tile-text);
+  border: 1.5px solid var(--tile-rim);
+  background: linear-gradient(165deg, var(--tile-fill-top), var(--tile-fill-bottom) 82%);
+  box-shadow: inset var(--tile-stripe-width) 0 0 var(--tile-accent), inset 0 1px 0 var(--tile-highlight), inset 0 -1px 0 #20385414, 0 6px 15px var(--tile-shadow);
+  backdrop-filter: blur(10px) saturate(115%);
+  -webkit-backdrop-filter: blur(10px) saturate(115%);
+  transition: border-color 160ms, box-shadow 160ms;
+}
+.flow-node.workflow-glass-node::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 16px;
+  right: 16px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--tile-highlight) 30%, transparent);
+  pointer-events: none;
+}
+.flow-node.workflow-glass-node:is(.is-active, .is-selected, .state-running) {
+  box-shadow: inset 4px 0 0 var(--tile-accent), inset 0 1px 0 var(--tile-highlight), 0 0 0 3px color-mix(in srgb, var(--role-color) 44%, transparent), 0 8px 20px var(--tile-shadow);
+}
+.flow-node.workflow-glass-node:is(.is-dimmed, .state-skipped, .state-outside_preview) { border-style: dashed; }
+.flow-node.workflow-glass-node:hover { border-color: var(--tile-accent); }
+.flow-node.workflow-glass-node.is-compact { --tile-opacity: 100%; backdrop-filter: none; -webkit-backdrop-filter: none; }
+.flow-node.workflow-glass-node :is(.component-title, .flow-node-header > strong, .component-meta) { color: var(--tile-text); }
+.flow-node.workflow-glass-node :is(.component-role, .component-footer > b, .component-meta b) { color: var(--tile-accent); }
+.flow-node.workflow-glass-node :is(.component-footer > span, .node-signals span) { color: var(--tile-muted); }
+.flow-node.workflow-glass-node .component-icon {
+  color: var(--tile-accent);
+  background: #ffffff70;
+  box-shadow: inset 0 1px 0 #ffffffa6, 0 1px 2px #152e4012;
+  border: 1px solid color-mix(in srgb, var(--tile-accent) 18%, transparent);
+}
+.flow-node.workflow-glass-node .node-signals { border-color: color-mix(in srgb, var(--tile-accent) 25%, transparent); }
+.flow-node.workflow-glass-node .node-signals b { color: var(--tile-accent); background: #ffffff5c; }
+.flow-node.workflow-glass-node .node-signals b:is(.warning, .caution) { color: var(--glass-human-ink); }
+.flow-node.workflow-glass-node .node-signals b:is(.danger, .error) { color: var(--glass-danger-ink); }
+.flow-node.workflow-glass-node .flow-state { color: var(--tile-accent); }
+.flow-node.workflow-glass-node .flow-state i { border-color: var(--tile-muted); }
+.flow-node.workflow-glass-node .flow-state.state-running i { background: var(--tile-accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--tile-accent) 12%, transparent); }
+.flow-node.workflow-glass-node .flow-state:is(.state-awaiting_review, .state-partially_succeeded) { color: var(--glass-human-ink); }
+.flow-node.workflow-glass-node .flow-state:is(.state-failed, .state-cancelled, .state-interrupted) { color: var(--glass-danger-ink); }
+.flow-node.workflow-glass-node .flow-state.state-outside_preview { color: var(--tile-muted); }
+
+/* SVG uses the same stops/inks, with no costly backdrop filter for every shape. */
+.workflow-glass-base { stroke: var(--tile-rim); stroke-width: 1.5; filter: drop-shadow(0 4px 5px var(--tile-shadow)); }
+.workflow-glass-rim { fill: none; stroke: var(--tile-highlight); stroke-width: .75; opacity: .65; pointer-events: none; }
+.workflow-glass-glint { fill: none; stroke: var(--tile-highlight); stroke-width: 1.25; stroke-linecap: round; pointer-events: none; }
+.workflow-glass-accent { fill: none; stroke: var(--tile-accent); stroke-width: var(--tile-stripe-width); stroke-linecap: round; pointer-events: none; }
+.workflow-glass-node:is(.is-active, .is-current, .is-selected) .workflow-glass-base { stroke-width: 2.5; }
+.workflow-glass-node.is-outcome:not(.is-visited) .workflow-glass-base { stroke-dasharray: 5 3; }
+.workflow-glass-focus-ring { fill: none; stroke: var(--role-color); stroke-width: 2.5; opacity: 0; pointer-events: none; }
+.workflow-glass-node:is(.is-active, .is-current, .is-selected) .workflow-glass-focus-ring { opacity: .8; }
+.workflow-glass-node:focus-visible .workflow-glass-focus-ring { opacity: 1; stroke: var(--text-strong); stroke-width: 3; }
+.workflow-glass-node:hover .workflow-glass-base { stroke: var(--tile-accent); stroke-width: 2.5; }
+.flow-canvas .react-flow__node:focus-visible { outline: 3px solid var(--text-strong); outline-offset: 5px; }
+
+/* Quiet supporting surfaces share the rim/reflection without competing with work. */
+.example-choice, .lesson-example, .input-trace-button,
+.performance-summary, .workflow-dock, .batch-controls, .lesson-playback {
+  background-image: linear-gradient(155deg, var(--glass-chrome-top), var(--glass-chrome-bottom) 65%);
+  box-shadow: inset 0 1px 0 var(--glass-chrome-rim);
+}
+.example-choice.selected, .lesson-example.selected {
+  box-shadow: inset 0 1px 0 var(--glass-chrome-rim), inset 0 -2px 0 var(--accent), 0 3px 12px var(--shadow-color);
+}
+.lesson-route-key i { background: var(--glass-jev-fill); border: 2px solid var(--glass-jev-ink); box-shadow: inset 3px 0 0 var(--glass-jev-ink); }
+
+@supports not (backdrop-filter: blur(1px)) {
+  .flow-node.workflow-glass-node { --tile-opacity: 100%; }
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .workflow-glass-node { --tile-opacity: 100%; --tile-rim: var(--tile-accent); }
+  .flow-node.workflow-glass-node { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--tile-tint); }
+  .flow-node.workflow-glass-node::before, .workflow-glass-rim, .workflow-glass-glint { display: none; }
+  .workflow-glass-base { fill: var(--tile-tint); filter: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-node.workflow-glass-node { transition: none; }
+  .flow-node.workflow-glass-node .flow-state.state-running i { animation: none; }
+}
+@media (forced-colors: active) {
+  .workflow-glass-node {
+    --tile-text: CanvasText; --tile-muted: CanvasText; --tile-accent: CanvasText; --tile-rim: CanvasText; --tile-highlight: Canvas;
+    --glass-jev-ink: CanvasText; --glass-runtime-ink: CanvasText; --glass-llm-ink: CanvasText;
+    --glass-human-ink: CanvasText; --glass-source-ink: CanvasText; --glass-output-ink: CanvasText; --glass-danger-ink: CanvasText;
+  }
+  .flow-node.workflow-glass-node { background: Canvas; color: CanvasText; border-color: CanvasText; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .flow-node.workflow-glass-node:is(.is-active, .is-selected), .flow-canvas .react-flow__node:focus-visible { outline: 3px solid Highlight; outline-offset: 4px; }
+  .workflow-glass-base { fill: Canvas; stroke: CanvasText; filter: none; }
+  .workflow-glass-node .model-core { fill: Canvas; stroke: CanvasText; }
+  .flow-node.workflow-glass-node .component-icon { background: Canvas; border-color: CanvasText; box-shadow: none; }
+  .workflow-glass-node:is(.is-active, .is-current, .is-selected, :focus-visible) .workflow-glass-focus-ring { stroke: Highlight; opacity: 1; }
+  .workflow-glass-rim, .workflow-glass-glint, .flow-node.workflow-glass-node::before { display: none; }
+}

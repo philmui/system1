@@ -37,7 +37,7 @@ export function Discover({
     <div className="page discover-page">
       <div className="discover-intro">
         <h1>Discover</h1>
-        <p>Follow a question through the graph to its sources.</p>
+        <p>Enter a question or choose an example, then press Discover to search your indexed documents. <a href="#explore/discover?example=find">Try the search simulation</a> to learn the workflow.</p>
       </div>
       <form
         className="query-box"

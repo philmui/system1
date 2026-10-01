@@ -6,6 +6,192 @@
     "version": "1.0.0"
   },
   "paths": {
+    "/api/lessons": {
+      "get": {
+        "tags": [
+          "educational lessons"
+        ],
+        "summary": "Get Lessons",
+        "operationId": "get_lessons_api_lessons_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LessonCatalogue"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/lessons/experiment": {
+      "post": {
+        "tags": [
+          "educational lessons"
+        ],
+        "summary": "Experiment",
+        "operationId": "experiment_api_lessons_experiment_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PolicyExperimentRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PolicyExperimentResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/lessons/interpret": {
+      "post": {
+        "tags": [
+          "educational lessons"
+        ],
+        "summary": "Live Interpret",
+        "description": "One explicit production-provider call; no run, Jev request, review or publication.",
+        "operationId": "live_interpret_api_lessons_interpret_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LiveInterpretRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LiveInterpretResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/lessons/discover": {
+      "post": {
+        "tags": [
+          "educational lessons"
+        ],
+        "summary": "Live Discover",
+        "operationId": "live_discover_api_lessons_discover_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LiveDiscoveryRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LiveDiscoveryResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/lessons/review/live": {
+      "post": {
+        "tags": [
+          "Lessons"
+        ],
+        "summary": "Live Review",
+        "operationId": "live_review_api_lessons_review_live_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LiveReviewRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LiveReviewResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/health": {
       "get": {
         "summary": "Health",
@@ -819,6 +1005,132 @@
         ],
         "title": "Body_upload_api_documents_post"
       },
+      "ChoiceSignal": {
+        "additionalProperties": false,
+        "properties": {
+          "provider": {
+            "enum": [
+              "jev",
+              "openai",
+              "fixture"
+            ],
+            "title": "Provider",
+            "type": "string"
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Request Id"
+          },
+          "configured_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Configured Model"
+          },
+          "returned_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Returned Model"
+          },
+          "elapsed_ms": {
+            "minimum": 0,
+            "title": "Elapsed Ms",
+            "type": "number"
+          },
+          "usage": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Usage"
+          },
+          "rubric_version": {
+            "default": "atlas-rubric-v1",
+            "title": "Rubric Version",
+            "type": "string"
+          },
+          "kind": {
+            "const": "choice",
+            "default": "choice",
+            "title": "Kind",
+            "type": "string"
+          },
+          "choice": {
+            "title": "Choice",
+            "type": "string"
+          },
+          "confidence": {
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Confidence",
+            "type": "number"
+          },
+          "probabilities": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "title": "Probabilities",
+            "type": "object"
+          }
+        },
+        "required": [
+          "provider",
+          "elapsed_ms",
+          "choice",
+          "confidence",
+          "probabilities"
+        ],
+        "title": "ChoiceSignal",
+        "type": "object"
+      },
+      "ClassificationLesson": {
+        "properties": {
+          "snapshot": {
+            "$ref": "#/components/schemas/RunSnapshot"
+          },
+          "documents": {
+            "items": {
+              "$ref": "#/components/schemas/LessonDocument"
+            },
+            "type": "array",
+            "title": "Documents"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "snapshot",
+          "documents"
+        ],
+        "title": "ClassificationLesson"
+      },
       "ClassificationRequest": {
         "properties": {
           "document_ids": {
@@ -836,6 +1148,39 @@
           "document_ids"
         ],
         "title": "ClassificationRequest"
+      },
+      "DiscoveryLesson": {
+        "properties": {
+          "documents": {
+            "items": {
+              "$ref": "#/components/schemas/LessonDocument"
+            },
+            "type": "array",
+            "title": "Documents"
+          },
+          "find": {
+            "$ref": "#/components/schemas/RunSnapshot"
+          },
+          "compare": {
+            "$ref": "#/components/schemas/RunSnapshot"
+          },
+          "empty": {
+            "$ref": "#/components/schemas/RunSnapshot"
+          },
+          "unsupported": {
+            "$ref": "#/components/schemas/RunSnapshot"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "documents",
+          "find",
+          "compare",
+          "empty",
+          "unsupported"
+        ],
+        "title": "DiscoveryLesson"
       },
       "DiscoveryRequest": {
         "properties": {
@@ -1278,6 +1623,50 @@
           }
         ]
       },
+      "ExperimentCoverage": {
+        "properties": {
+          "eligible": {
+            "type": "integer",
+            "title": "Eligible"
+          },
+          "accepted": {
+            "type": "integer",
+            "title": "Accepted"
+          },
+          "escalated": {
+            "type": "integer",
+            "title": "Escalated"
+          },
+          "acceptance_coverage": {
+            "type": "number",
+            "title": "Acceptance Coverage"
+          },
+          "accepted_reference_mistakes": {
+            "type": "integer",
+            "title": "Accepted Reference Mistakes"
+          },
+          "accepted_policy_violations": {
+            "type": "integer",
+            "title": "Accepted Policy Violations"
+          },
+          "quality_basis": {
+            "type": "string",
+            "title": "Quality Basis",
+            "default": "Prepared reference categories and default review policy; not a model evaluation."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "eligible",
+          "accepted",
+          "escalated",
+          "acceptance_coverage",
+          "accepted_reference_mistakes",
+          "accepted_policy_violations"
+        ],
+        "title": "ExperimentCoverage"
+      },
       "HTTPValidationError": {
         "properties": {
           "detail": {
@@ -1290,6 +1679,631 @@
         },
         "type": "object",
         "title": "HTTPValidationError"
+      },
+      "LessonCatalogue": {
+        "properties": {
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "policy_version": {
+            "type": "string",
+            "title": "Policy Version"
+          },
+          "provenance": {
+            "$ref": "#/components/schemas/LessonProvenance"
+          },
+          "classification": {
+            "$ref": "#/components/schemas/ClassificationLesson"
+          },
+          "discovery": {
+            "$ref": "#/components/schemas/DiscoveryLesson"
+          },
+          "safeguards": {
+            "items": {
+              "$ref": "#/components/schemas/SafeguardLesson"
+            },
+            "type": "array",
+            "title": "Safeguards"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "version",
+          "policy_version",
+          "provenance",
+          "classification",
+          "discovery",
+          "safeguards"
+        ],
+        "title": "LessonCatalogue"
+      },
+      "LessonDocument": {
+        "properties": {
+          "example_id": {
+            "type": "string",
+            "title": "Example Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "cue": {
+            "type": "string",
+            "title": "Cue"
+          },
+          "document": {
+            "$ref": "#/components/schemas/Document"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "passages": {
+            "items": {
+              "$ref": "#/components/schemas/Passage"
+            },
+            "type": "array",
+            "title": "Passages"
+          },
+          "source_excerpt": {
+            "type": "string",
+            "title": "Source Excerpt"
+          },
+          "reference_category": {
+            "type": "string",
+            "enum": [
+              "invoice",
+              "contract",
+              "policy",
+              "report",
+              "correspondence",
+              "other",
+              "unknown"
+            ],
+            "title": "Reference Category"
+          },
+          "expected_reason": {
+            "type": "string",
+            "title": "Expected Reason"
+          },
+          "controlled_signal": {
+            "type": "boolean",
+            "title": "Controlled Signal",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "example_id",
+          "title",
+          "cue",
+          "document",
+          "text",
+          "passages",
+          "source_excerpt",
+          "reference_category",
+          "expected_reason"
+        ],
+        "title": "LessonDocument"
+      },
+      "LessonProvenance": {
+        "properties": {
+          "documents": {
+            "type": "string",
+            "const": "synthetic",
+            "title": "Documents",
+            "default": "synthetic"
+          },
+          "providers": {
+            "type": "string",
+            "const": "simulated",
+            "title": "Providers",
+            "default": "simulated"
+          },
+          "runtime": {
+            "type": "string",
+            "const": "executed",
+            "title": "Runtime",
+            "default": "executed"
+          },
+          "timing": {
+            "type": "string",
+            "const": "fixture wall time, not model performance",
+            "title": "Timing",
+            "default": "fixture wall time, not model performance"
+          },
+          "review": {
+            "type": "string",
+            "const": "scripted approval",
+            "title": "Review",
+            "default": "scripted approval"
+          },
+          "storage": {
+            "type": "string",
+            "const": "isolated temporary store",
+            "title": "Storage",
+            "default": "isolated temporary store"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "LessonProvenance"
+      },
+      "LiveDiscoveryProvenance": {
+        "properties": {
+          "documents": {
+            "type": "string",
+            "const": "synthetic",
+            "title": "Documents",
+            "default": "synthetic"
+          },
+          "bounded_judgments": {
+            "type": "string",
+            "const": "prepared",
+            "title": "Bounded Judgments",
+            "default": "prepared"
+          },
+          "frontier": {
+            "type": "string",
+            "const": "live GPT-5.5 when selected",
+            "title": "Frontier",
+            "default": "live GPT-5.5 when selected"
+          },
+          "runtime": {
+            "type": "string",
+            "const": "executed",
+            "title": "Runtime",
+            "default": "executed"
+          },
+          "citation_checks": {
+            "type": "string",
+            "const": "executed exact checks",
+            "title": "Citation Checks",
+            "default": "executed exact checks"
+          },
+          "support_checks": {
+            "type": "string",
+            "const": "prepared signals; not independent verification",
+            "title": "Support Checks",
+            "default": "prepared signals; not independent verification"
+          },
+          "timing": {
+            "type": "string",
+            "const": "mixed: measured frontier round trips; fixture bounded durations",
+            "title": "Timing",
+            "default": "mixed: measured frontier round trips; fixture bounded durations"
+          },
+          "storage": {
+            "type": "string",
+            "const": "isolated temporary store",
+            "title": "Storage",
+            "default": "isolated temporary store"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "LiveDiscoveryProvenance"
+      },
+      "LiveDiscoveryRequest": {
+        "properties": {
+          "example_id": {
+            "type": "string",
+            "enum": [
+              "find",
+              "compare"
+            ],
+            "title": "Example Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "example_id"
+        ],
+        "title": "LiveDiscoveryRequest"
+      },
+      "LiveDiscoveryResponse": {
+        "properties": {
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "example_id": {
+            "type": "string",
+            "enum": [
+              "find",
+              "compare"
+            ],
+            "title": "Example Id"
+          },
+          "snapshot": {
+            "$ref": "#/components/schemas/RunSnapshot"
+          },
+          "documents": {
+            "items": {
+              "$ref": "#/components/schemas/LessonDocument"
+            },
+            "type": "array",
+            "title": "Documents"
+          },
+          "operational_writes": {
+            "type": "integer",
+            "const": 0,
+            "title": "Operational Writes",
+            "default": 0
+          },
+          "frontier_calls": {
+            "type": "integer",
+            "minimum": 0.0,
+            "title": "Frontier Calls"
+          },
+          "provenance": {
+            "$ref": "#/components/schemas/LiveDiscoveryProvenance"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "version",
+          "example_id",
+          "snapshot",
+          "documents",
+          "frontier_calls"
+        ],
+        "title": "LiveDiscoveryResponse"
+      },
+      "LiveInterpretRequest": {
+        "properties": {
+          "example_id": {
+            "type": "string",
+            "enum": [
+              "ambiguous",
+              "proposed"
+            ],
+            "title": "Example Id"
+          },
+          "content_version": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Content Version"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "example_id",
+          "content_version"
+        ],
+        "title": "LiveInterpretRequest"
+      },
+      "LiveInterpretResponse": {
+        "properties": {
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "example_id": {
+            "type": "string",
+            "enum": [
+              "ambiguous",
+              "proposed"
+            ],
+            "title": "Example Id"
+          },
+          "document_id": {
+            "type": "string",
+            "title": "Document Id"
+          },
+          "content_version": {
+            "type": "string",
+            "title": "Content Version"
+          },
+          "proposal": {
+            "$ref": "#/components/schemas/ProposalSignal"
+          },
+          "policy": {
+            "$ref": "#/components/schemas/PolicyReceipt"
+          },
+          "requires_review": {
+            "type": "boolean",
+            "const": true,
+            "title": "Requires Review",
+            "default": true
+          },
+          "published": {
+            "type": "boolean",
+            "const": false,
+            "title": "Published",
+            "default": false
+          },
+          "operational_writes": {
+            "type": "integer",
+            "const": 0,
+            "title": "Operational Writes",
+            "default": 0
+          },
+          "provider_calls": {
+            "type": "integer",
+            "const": 1,
+            "title": "Provider Calls",
+            "default": 1
+          },
+          "provider_source": {
+            "type": "string",
+            "const": "live",
+            "title": "Provider Source",
+            "default": "live"
+          },
+          "signal_source": {
+            "type": "string",
+            "const": "prepared",
+            "title": "Signal Source",
+            "default": "prepared"
+          },
+          "timing": {
+            "type": "string",
+            "const": "measured provider round trip",
+            "title": "Timing",
+            "default": "measured provider round trip"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "version",
+          "example_id",
+          "document_id",
+          "content_version",
+          "proposal",
+          "policy"
+        ],
+        "title": "LiveInterpretResponse"
+      },
+      "LiveRedactionDraft": {
+        "properties": {
+          "redacted_text": {
+            "type": "string",
+            "maxLength": 12000,
+            "minLength": 1,
+            "title": "Redacted Text"
+          },
+          "removed_spans": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 30,
+            "title": "Removed Spans"
+          },
+          "explanation": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Explanation"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "redacted_text",
+          "removed_spans",
+          "explanation"
+        ],
+        "title": "LiveRedactionDraft"
+      },
+      "LiveReviewJudgment": {
+        "properties": {
+          "responsive": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "uncertain"
+            ],
+            "title": "Responsive"
+          },
+          "personal_info": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "uncertain"
+            ],
+            "title": "Personal Info"
+          },
+          "privileged": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "uncertain"
+            ],
+            "title": "Privileged"
+          },
+          "explanation": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Explanation"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "responsive",
+          "personal_info",
+          "privileged",
+          "explanation"
+        ],
+        "title": "LiveReviewJudgment"
+      },
+      "LiveReviewRequest": {
+        "properties": {
+          "page_id": {
+            "type": "string",
+            "enum": [
+              "ARC-000141",
+              "ARC-000212",
+              "ARC-000377",
+              "ARC-000401",
+              "ARC-000455",
+              "ARC-000508"
+            ],
+            "title": "Page Id"
+          },
+          "content_version": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "title": "Content Version"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "classify",
+              "redact"
+            ],
+            "title": "Action"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "page_id",
+          "content_version",
+          "action"
+        ],
+        "title": "LiveReviewRequest"
+      },
+      "LiveReviewResponse": {
+        "properties": {
+          "version": {
+            "type": "string",
+            "const": "review-pages-v1",
+            "title": "Version",
+            "default": "review-pages-v1"
+          },
+          "page_id": {
+            "type": "string",
+            "enum": [
+              "ARC-000141",
+              "ARC-000212",
+              "ARC-000377",
+              "ARC-000401",
+              "ARC-000455",
+              "ARC-000508"
+            ],
+            "title": "Page Id"
+          },
+          "content_version": {
+            "type": "string",
+            "title": "Content Version"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "classify",
+              "redact"
+            ],
+            "title": "Action"
+          },
+          "metadata": {
+            "$ref": "#/components/schemas/ProviderMeta"
+          },
+          "judgment": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LiveReviewJudgment"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "proposed_route": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "produce",
+                  "aside",
+                  "redact",
+                  "attorney"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Proposed Route"
+          },
+          "redaction": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LiveRedactionDraft"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "validation": {
+            "type": "string",
+            "enum": [
+              "structured judgment",
+              "exact source rewrite"
+            ],
+            "title": "Validation"
+          },
+          "requires_review": {
+            "type": "boolean",
+            "const": true,
+            "title": "Requires Review",
+            "default": true
+          },
+          "published": {
+            "type": "boolean",
+            "const": false,
+            "title": "Published",
+            "default": false
+          },
+          "operational_writes": {
+            "type": "integer",
+            "const": 0,
+            "title": "Operational Writes",
+            "default": 0
+          },
+          "provider_calls": {
+            "type": "integer",
+            "const": 1,
+            "title": "Provider Calls",
+            "default": 1
+          },
+          "provider_source": {
+            "type": "string",
+            "const": "live",
+            "title": "Provider Source",
+            "default": "live"
+          },
+          "timing": {
+            "type": "string",
+            "const": "measured provider round trip",
+            "title": "Timing",
+            "default": "measured provider round trip"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "page_id",
+          "content_version",
+          "action",
+          "metadata",
+          "validation"
+        ],
+        "title": "LiveReviewResponse"
       },
       "MetadataUpdate": {
         "properties": {
@@ -1379,25 +2393,445 @@
         ],
         "title": "Passage"
       },
+      "PolicyExperimentRequest": {
+        "properties": {
+          "example_id": {
+            "type": "string",
+            "enum": [
+              "clear",
+              "policy",
+              "ambiguous",
+              "proposed",
+              "finalized"
+            ],
+            "title": "Example Id",
+            "default": "proposed"
+          },
+          "original_example_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "clear",
+                  "policy",
+                  "ambiguous",
+                  "proposed",
+                  "finalized"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Original Example Id"
+          },
+          "threshold": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Threshold",
+            "default": 0.8
+          },
+          "guard_enabled": {
+            "type": "boolean",
+            "title": "Guard Enabled",
+            "default": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "PolicyExperimentRequest"
+      },
+      "PolicyExperimentResponse": {
+        "properties": {
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "policy_version": {
+            "type": "string",
+            "title": "Policy Version"
+          },
+          "no_write": {
+            "type": "boolean",
+            "const": true,
+            "title": "No Write",
+            "default": true
+          },
+          "provider_calls": {
+            "type": "integer",
+            "const": 0,
+            "title": "Provider Calls",
+            "default": 0
+          },
+          "original": {
+            "$ref": "#/components/schemas/PolicyReceipt"
+          },
+          "simulated": {
+            "$ref": "#/components/schemas/PolicyReceipt"
+          },
+          "original_coverage": {
+            "$ref": "#/components/schemas/ExperimentCoverage"
+          },
+          "simulated_coverage": {
+            "$ref": "#/components/schemas/ExperimentCoverage"
+          },
+          "outcomes": {
+            "items": {
+              "$ref": "#/components/schemas/PolicyReceipt"
+            },
+            "type": "array",
+            "title": "Outcomes"
+          },
+          "changed_fields": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Changed Fields"
+          },
+          "controlled_assumption": {
+            "type": "string",
+            "title": "Controlled Assumption"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "version",
+          "policy_version",
+          "original",
+          "simulated",
+          "original_coverage",
+          "simulated_coverage",
+          "outcomes",
+          "changed_fields",
+          "controlled_assumption"
+        ],
+        "title": "PolicyExperimentResponse"
+      },
+      "PolicyReceipt": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "enum": [
+              "recorded",
+              "simulation",
+              "executed"
+            ],
+            "title": "Source",
+            "default": "simulation"
+          },
+          "decision_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Decision Id"
+          },
+          "policy_version": {
+            "type": "string",
+            "title": "Policy Version",
+            "default": "atlas-policy-v1"
+          },
+          "example_id": {
+            "type": "string",
+            "enum": [
+              "clear",
+              "policy",
+              "ambiguous",
+              "proposed",
+              "finalized"
+            ],
+            "title": "Example Id"
+          },
+          "content_version": {
+            "type": "string",
+            "title": "Content Version"
+          },
+          "signal": {
+            "$ref": "#/components/schemas/ChoiceSignal"
+          },
+          "threshold": {
+            "type": "number",
+            "title": "Threshold"
+          },
+          "guard_enabled": {
+            "type": "boolean",
+            "title": "Guard Enabled"
+          },
+          "guard_matched": {
+            "type": "boolean",
+            "title": "Guard Matched"
+          },
+          "selected_route": {
+            "type": "string",
+            "enum": [
+              "accept",
+              "interpret"
+            ],
+            "title": "Selected Route"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "explanation": {
+            "type": "string",
+            "title": "Explanation"
+          },
+          "requires_review": {
+            "type": "boolean",
+            "title": "Requires Review"
+          },
+          "source_excerpt": {
+            "type": "string",
+            "title": "Source Excerpt"
+          },
+          "reference_category": {
+            "type": "string",
+            "enum": [
+              "invoice",
+              "contract",
+              "policy",
+              "report",
+              "correspondence",
+              "other",
+              "unknown"
+            ],
+            "title": "Reference Category"
+          },
+          "reference_mismatch": {
+            "type": "boolean",
+            "title": "Reference Mismatch"
+          },
+          "policy_violation": {
+            "type": "boolean",
+            "title": "Policy Violation"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "example_id",
+          "content_version",
+          "signal",
+          "threshold",
+          "guard_enabled",
+          "guard_matched",
+          "selected_route",
+          "reason",
+          "explanation",
+          "requires_review",
+          "source_excerpt",
+          "reference_category",
+          "reference_mismatch",
+          "policy_violation"
+        ],
+        "title": "PolicyReceipt"
+      },
+      "ProposalSignal": {
+        "additionalProperties": false,
+        "properties": {
+          "provider": {
+            "enum": [
+              "jev",
+              "openai",
+              "fixture"
+            ],
+            "title": "Provider",
+            "type": "string"
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Request Id"
+          },
+          "configured_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Configured Model"
+          },
+          "returned_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Returned Model"
+          },
+          "elapsed_ms": {
+            "minimum": 0,
+            "title": "Elapsed Ms",
+            "type": "number"
+          },
+          "usage": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Usage"
+          },
+          "rubric_version": {
+            "default": "atlas-rubric-v1",
+            "title": "Rubric Version",
+            "type": "string"
+          },
+          "kind": {
+            "const": "proposal",
+            "default": "proposal",
+            "title": "Kind",
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "invoice",
+              "contract",
+              "policy",
+              "report",
+              "correspondence",
+              "other",
+              "unknown"
+            ],
+            "title": "Category",
+            "type": "string"
+          },
+          "explanation": {
+            "title": "Explanation",
+            "type": "string"
+          }
+        },
+        "required": [
+          "provider",
+          "elapsed_ms",
+          "category",
+          "explanation"
+        ],
+        "title": "ProposalSignal",
+        "type": "object"
+      },
+      "ProviderMeta": {
+        "properties": {
+          "provider": {
+            "type": "string",
+            "enum": [
+              "jev",
+              "openai",
+              "fixture"
+            ],
+            "title": "Provider"
+          },
+          "request_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Request Id"
+          },
+          "configured_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Configured Model"
+          },
+          "returned_model": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Returned Model"
+          },
+          "elapsed_ms": {
+            "type": "number",
+            "minimum": 0.0,
+            "title": "Elapsed Ms"
+          },
+          "usage": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Usage"
+          },
+          "rubric_version": {
+            "type": "string",
+            "title": "Rubric Version",
+            "default": "atlas-rubric-v1"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "provider",
+          "elapsed_ms"
+        ],
+        "title": "ProviderMeta"
+      },
       "ReviewDecision": {
+        "additionalProperties": false,
         "properties": {
           "document_id": {
-            "type": "string",
-            "title": "Document Id"
+            "title": "Document Id",
+            "type": "string"
           },
           "action": {
-            "type": "string",
             "enum": [
               "accept",
               "correct",
               "exclude"
             ],
-            "title": "Action"
+            "title": "Action",
+            "type": "string"
           },
           "category": {
             "anyOf": [
               {
-                "type": "string",
                 "enum": [
                   "invoice",
                   "contract",
@@ -1406,22 +2840,23 @@
                   "correspondence",
                   "other",
                   "unknown"
-                ]
+                ],
+                "type": "string"
               },
               {
                 "type": "null"
               }
             ],
+            "default": null,
             "title": "Category"
           }
         },
-        "additionalProperties": false,
-        "type": "object",
         "required": [
           "document_id",
           "action"
         ],
-        "title": "ReviewDecision"
+        "title": "ReviewDecision",
+        "type": "object"
       },
       "ReviewItem": {
         "additionalProperties": false,
@@ -1687,6 +3122,60 @@
         ],
         "title": "RunSnapshot"
       },
+      "SafeguardLesson": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "explanation": {
+            "type": "string",
+            "title": "Explanation"
+          },
+          "snapshot": {
+            "$ref": "#/components/schemas/RunSnapshot"
+          },
+          "documents": {
+            "items": {
+              "$ref": "#/components/schemas/LessonDocument"
+            },
+            "type": "array",
+            "title": "Documents"
+          },
+          "observed": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Observed"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "explanation",
+          "snapshot",
+          "documents",
+          "observed"
+        ],
+        "title": "SafeguardLesson"
+      },
       "SearchFilters": {
         "properties": {
           "categories": {
@@ -1820,6 +3309,64 @@
           "citations"
         ],
         "title": "Claim",
+        "type": "object"
+      },
+      "Publication": {
+        "additionalProperties": false,
+        "description": "A durable search-index commit, authorized by a recorded decision or review.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "document_id": {
+            "title": "Document Id",
+            "type": "string"
+          },
+          "content_version": {
+            "title": "Content Version",
+            "type": "string"
+          },
+          "authorization_id": {
+            "title": "Authorization Id",
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "invoice",
+              "contract",
+              "policy",
+              "report",
+              "correspondence",
+              "other",
+              "unknown"
+            ],
+            "title": "Category",
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "searchable",
+              "withdrawn"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "committed_at": {
+            "title": "Committed At",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "document_id",
+          "content_version",
+          "authorization_id",
+          "category",
+          "status",
+          "committed_at"
+        ],
+        "title": "Publication",
         "type": "object"
       },
       "QueryPlan": {
@@ -2061,6 +3608,17 @@
             "maxItems": 8,
             "title": "Draft Claims",
             "type": "array"
+          },
+          "publication": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Publication"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
           }
         },
         "required": [
@@ -2092,111 +3650,6 @@
           "label"
         ],
         "title": "EdgePayload",
-        "type": "object"
-      },
-      "ChoiceSignal": {
-        "additionalProperties": false,
-        "properties": {
-          "provider": {
-            "enum": [
-              "jev",
-              "openai",
-              "fixture"
-            ],
-            "title": "Provider",
-            "type": "string"
-          },
-          "request_id": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Request Id"
-          },
-          "configured_model": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Configured Model"
-          },
-          "returned_model": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Returned Model"
-          },
-          "elapsed_ms": {
-            "minimum": 0,
-            "title": "Elapsed Ms",
-            "type": "number"
-          },
-          "usage": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Usage"
-          },
-          "rubric_version": {
-            "default": "atlas-rubric-v1",
-            "title": "Rubric Version",
-            "type": "string"
-          },
-          "kind": {
-            "const": "choice",
-            "default": "choice",
-            "title": "Kind",
-            "type": "string"
-          },
-          "choice": {
-            "title": "Choice",
-            "type": "string"
-          },
-          "confidence": {
-            "maximum": 1,
-            "minimum": 0,
-            "title": "Confidence",
-            "type": "number"
-          },
-          "probabilities": {
-            "additionalProperties": {
-              "type": "number"
-            },
-            "title": "Probabilities",
-            "type": "object"
-          }
-        },
-        "required": [
-          "provider",
-          "elapsed_ms",
-          "choice",
-          "confidence",
-          "probabilities"
-        ],
-        "title": "ChoiceSignal",
         "type": "object"
       },
       "NoulSignal": {
@@ -2289,110 +3742,6 @@
           "noul"
         ],
         "title": "NoulSignal",
-        "type": "object"
-      },
-      "ProposalSignal": {
-        "additionalProperties": false,
-        "properties": {
-          "provider": {
-            "enum": [
-              "jev",
-              "openai",
-              "fixture"
-            ],
-            "title": "Provider",
-            "type": "string"
-          },
-          "request_id": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Request Id"
-          },
-          "configured_model": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Configured Model"
-          },
-          "returned_model": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Returned Model"
-          },
-          "elapsed_ms": {
-            "minimum": 0,
-            "title": "Elapsed Ms",
-            "type": "number"
-          },
-          "usage": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "default": null,
-            "title": "Usage"
-          },
-          "rubric_version": {
-            "default": "atlas-rubric-v1",
-            "title": "Rubric Version",
-            "type": "string"
-          },
-          "kind": {
-            "const": "proposal",
-            "default": "proposal",
-            "title": "Kind",
-            "type": "string"
-          },
-          "category": {
-            "enum": [
-              "invoice",
-              "contract",
-              "policy",
-              "report",
-              "correspondence",
-              "other",
-              "unknown"
-            ],
-            "title": "Category",
-            "type": "string"
-          },
-          "explanation": {
-            "title": "Explanation",
-            "type": "string"
-          }
-        },
-        "required": [
-          "provider",
-          "elapsed_ms",
-          "category",
-          "explanation"
-        ],
-        "title": "ProposalSignal",
         "type": "object"
       },
       "Decision": {
@@ -2561,6 +3910,13 @@
             "minimum": 0,
             "title": "Count",
             "type": "integer"
+          },
+          "decisions": {
+            "items": {
+              "$ref": "#/components/schemas/ReviewDecision"
+            },
+            "title": "Decisions",
+            "type": "array"
           }
         },
         "required": [

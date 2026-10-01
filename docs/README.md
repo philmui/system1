@@ -1,5 +1,15 @@
 # Document Discovery Studio guides
 
+Start with the [education-first redesign](education-redesign-review.md) for Explore, Compare, Experiment, and their verification boundaries. [Independent publication](independent-publication.md) describes the new classification behavior and historical compatibility.
+
+The [component performance reports](performance-reports-review.md) explain measured service and overall elapsed time, live strategy comparisons, authored-reference checks, and the limits of calling those checks accuracy. [Live lesson commands](live-lesson-requests.md) document the actual provider calls and their isolation.
+
+The [Find & compare layout review](discovery-layout-review.md) describes the compact workflow stage, on-demand timing and result drawers, and current verification limits.
+
+The [Discovery tree and classification preview review](decision-tree-preview-review.md) describes the simpler capability tree, recorded routing evidence, explicit publication boundary, and measured latency comparison.
+
+The [shared river-path review](flow-river-review.md) describes directional dashes across the workflow views, independent wait/completion behavior, and pause, speed, and reduced-motion handling.
+
 Start with the [tutorial](tutorial.md) to install the app, classify the fictional Atlas documents, resolve a review, and follow a query to its evidence. The [root README](../README.md) gives the shorter startup path.
 
 To understand timing, parallel work, and intermediate outputs, read [how to read a run](reading-a-run.md). It explains why a draft is not yet a supported answer and why request durations cannot be added to obtain parallel wall time.

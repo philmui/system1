@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-01T05:17:35.091647+00:00",
+  "provider": "jev",
+  "configured_model": "jev-1.13.0",
+  "synthetic_only": true,
+  "scope": "Client-observed API request duration, including transport and SDK response handling; not server inference time or a performance benchmark.",
+  "requests": [],
+  "status": "unavailable",
+  "error": {
+    "task": "intent",
+    "code": "connection"
+  }
+}

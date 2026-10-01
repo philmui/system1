@@ -23,13 +23,14 @@ function stateOf(instances: (Instance | undefined)[], status: string) {
   return states[0];
 }
 function measuredMedian(instances: (Instance | undefined)[]) {
-  const values = instances.flatMap(instance => {
+  const observed = instances.filter((instance): instance is Instance => !!instance && instance.state !== 'queued');
+  const values = observed.flatMap(instance => {
     try {
       const metadata = JSON.parse(instance?.detail || '{}');
-      return typeof metadata.elapsed_ms === 'number' ? [metadata.elapsed_ms as number] : [];
+      return instance.state === 'succeeded' && ['openai', 'jev'].includes(metadata.provider) && typeof metadata.elapsed_ms === 'number' && Number.isFinite(metadata.elapsed_ms) && metadata.elapsed_ms >= 0 ? [metadata.elapsed_ms as number] : [];
     } catch { return []; }
   }).sort((a, b) => a - b);
-  if (!values.length) return undefined;
+  if (!values.length || values.length !== observed.length) return undefined;
   const mid = Math.floor(values.length / 2);
   return `${duration(values.length % 2 ? values[mid] : (values[mid - 1] + values[mid]) / 2)}${values.length > 1 ? ' med.' : ''}`;
 }
@@ -117,9 +118,13 @@ export function buildExecutionGraph({ run, execution, selected, focused, expande
       mapped.set(`${taskId}:retrieve`, retrieveId);
       mapped.set(`${taskId}:screen`, screenId);
     }
-    nodes.push(flowAnnotation('request-caption', '01 / REQUEST', 0, -55, 'jev'));
-    nodes.push(flowAnnotation('evidence-caption', '02 / EVIDENCE', 500, -55, 'runtime'));
-    nodes.push(flowAnnotation('answer-caption', '03 / GROUNDED RESULTS', 1250, -55, 'output'));
+    // Node roles already name the vertical journey. Desktop column captions
+    // would otherwise widen fitView to 1,470 px on a narrow screen.
+    if (!narrow) {
+      nodes.push(flowAnnotation('request-caption', '01 / REQUEST', 0, -55, 'jev'));
+      nodes.push(flowAnnotation('evidence-caption', '02 / EVIDENCE', 500, -55, 'runtime'));
+      nodes.push(flowAnnotation('answer-caption', '03 / GROUNDED RESULTS', 1250, -55, 'output'));
+    }
   }
   const groupFor = (suffix: string, fallback: string) => mapped.get(ids(suffix)[0]) || (focused && classification ? mapped.get(`${focusedDocument}${suffix}`) : undefined) || fallback;
   const judge = groupFor(':jev', 'judge'), interpret = groupFor(':interpret', 'interpret');
@@ -335,9 +340,10 @@ export function ExecutionGraph({ run, execution, recording, selected, onSelect, 
   // Changing playback controls must not recreate nodes: React Flow temporarily
   // removes edges while measuring new nodes, which would restart the paper.
   const diagram = useMemo(() => buildExecutionGraph({ run, execution, selected, focused, expanded, moving: true, speed: 1, narrow, replayStep, documentLabel }), [run, execution, selected, focused, expanded, narrow, replayStep, documentLabel]);
+  const flowing = moving && execution.status !== 'awaiting_review' && !terminal(execution.status);
   const animatedEdges = useMemo(() => diagram.edges.map(edge => ({ ...edge, data: edge.data ? { ...edge.data,
-    moving: moving && (edge.data.current || edge.data.moving), speed,
-  } : undefined })), [diagram.edges, moving, speed]);
+    flowing, moving: moving && (edge.data.current || edge.data.moving), speed,
+  } : undefined })), [diagram.edges, moving, flowing, speed]);
   const focus = (id: string) => { onFollowInput(id); if (!classification) onSelect(id || null); };
   useEffect(() => {
     const element = tray.current?.querySelector<HTMLElement>('[aria-pressed="true"]');

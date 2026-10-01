@@ -41,7 +41,7 @@ def test_teaching_corpus_records_both_branches_and_the_actual_policy_reason(tmp_
                 event["type"] == "edge_selected"
                 and event["payload"]["source_instance_id"] == f"{by_name[name]}:jev"
                 and event["payload"]["target_instance_id"]
-                == f"{by_name[name]}:{'interpret' if route == 'interpret' else 'outcome'}"
+                == f"{by_name[name]}:{'interpret' if route == 'interpret' else 'publish'}"
                 for event in events
             )
         guarded = decisions[f"{by_name['lesson-unsigned-agreement-email.md']}:jev"]

@@ -30,6 +30,18 @@ export const policyTitles: Record<PolicyReason, string> = {
   exception: 'The recorded policy requires interpretation',
 };
 
+/** Show the rule that selected the action, not every guard that happened to match. */
+export function runtimeRuleLabel(reason: string, threshold?: number): string {
+  switch (reason) {
+    case 'accepted': return 'Acceptance rule passed';
+    case 'mixed_purpose': return 'Mixed-purpose guard';
+    case 'below_threshold': return typeof threshold === 'number' ? `Below ${Math.round(threshold * 100)}% threshold` : 'Below acceptance threshold';
+    case 'unknown': return 'Unknown category';
+    case 'tied': return 'Tied category signals';
+    default: return 'Interpretation required';
+  }
+}
+
 export function exampleKind(execution: Execution, documentId: string): ExampleKind | undefined {
   if (['failed', 'skipped', 'cancelled', 'interrupted'].includes(execution.instances[`worker:${documentId}`]?.state || '')) return undefined;
   const decision = classificationDecision(execution, documentId);

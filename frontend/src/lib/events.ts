@@ -15,6 +15,7 @@ export interface Instance {
   expected?: number;
   elapsedMs?: number;
   queueWaitMs?: number;
+  publication?: { status: string; document_id: string; category?: string; committed_at?: string };
 }
 export interface Execution {
   instances: Record<string, Instance>;
@@ -56,6 +57,7 @@ export function reduceEvents(events: Event[]): Execution {
         expected: node.expected ?? undefined,
         elapsedMs: node.elapsed_ms ?? undefined,
         queueWaitMs: node.queue_wait_ms ?? undefined,
+        publication: (payload.publication as Instance['publication']) || state.instances[event.instance_id]?.publication,
       };
       if (event.type === 'worker_created' && !state.workers.includes(event.instance_id))
         state.workers.push(event.instance_id);

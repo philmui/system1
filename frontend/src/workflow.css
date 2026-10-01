@@ -123,13 +123,7 @@ button.primary, a.primary { background: var(--accent); color: var(--on-accent); 
 .flow-canvas .react-flow__node:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .flow-canvas .react-flow__node-annotation { cursor: default; }
 .flow-annotation { color: var(--text-faint); font: 9px ui-monospace, monospace; letter-spacing: 1.2px; white-space: nowrap; }
-.flow-node { width: 100%; height: 100%; padding: 17px; background: linear-gradient(135deg, color-mix(in srgb, var(--role-color) 6%, var(--surface)), var(--surface) 70%); color: var(--text-strong); border: 1px solid color-mix(in srgb, var(--role-color) 28%, var(--border)); border-radius: 11px; box-shadow: 0 5px 14px var(--shadow-color); transition: border-color 160ms, opacity 160ms, box-shadow 160ms; overflow: visible; }
-.flow-node.is-selected { border-color: var(--role-color); box-shadow: 0 0 0 4px color-mix(in srgb, var(--role-color) 12%, transparent), 0 8px 24px var(--shadow-color); }
-.flow-node.is-dimmed { opacity: .55; }
-.flow-node.state-running { border-color: color-mix(in srgb, var(--role-color) 70%, var(--border)); }
-.flow-node.state-awaiting_review { border-color: var(--human); box-shadow: 0 0 24px color-mix(in srgb, var(--human) 8%, transparent); }
-.flow-node.state-failed { border-color: color-mix(in srgb, var(--danger) 55%, var(--border)); }
-.flow-node.state-skipped { opacity: .5; }
+.flow-node { width: 100%; height: 100%; padding: 17px; border-radius: 12px; overflow: visible; }
 .flow-node-header { display: flex; align-items: center; gap: 9px; margin-bottom: 10px; }
 .component-icon { width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; border-radius: 8px; color: var(--role-color); background: color-mix(in srgb, var(--role-color) 10%, transparent); }
 .component-role { color: var(--role-color); font-size: 9px; line-height: 1.5; font-weight: 500; }

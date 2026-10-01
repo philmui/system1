@@ -7,7 +7,7 @@ from test_api import configured, settle
 
 from doc_discovery.api import create_app
 from doc_discovery.ingestion import ingest
-from doc_discovery.schemas import SearchFilters
+from doc_discovery.schemas import CLASSIFICATION_GRAPH_VERSION, SearchFilters
 from doc_discovery.storage import Storage, data_lease
 from doc_discovery.teaching_runs import seed_teaching_runs
 
@@ -23,6 +23,8 @@ async def test_completed_teaching_runs_are_replayable_searchable_and_idempotent(
             run = store.get_run(run_id)
             events = store.events(run_id)
             assert run.status == "succeeded" and run.mode == "test-fixture"
+            assert run.graph_version == CLASSIFICATION_GRAPH_VERSION
+            assert run.request["teaching_pack"] == "classification-teaching-v2"
             assert run.request["simulated_review"] == (expected[1] > 0)
             assert run.result["indexed_count"] == expected[0]
             assert [event.sequence for event in events] == list(range(1, run.last_event_sequence + 1))
@@ -39,6 +41,12 @@ async def test_completed_teaching_runs_are_replayable_searchable_and_idempotent(
                 for event in events
                 if event.type == "decision"
             )
+            committed = [event.payload["publication"] for event in events if event.payload.get("publication")]
+            assert len(committed) == expected[0]
+            assert all(
+                store.publication(run_id, item["document_id"]).model_dump(mode="json") == item
+                for item in committed
+            )
         documents = store.documents().documents
         assert len(documents) == 4
         for document in documents:
@@ -53,6 +61,37 @@ async def test_completed_teaching_runs_are_replayable_searchable_and_idempotent(
         assert repeated["run_ids"] == result["run_ids"]
         assert repeated["created_run_ids"] == []
         assert len(store.runs()) == 3 and len(store.documents().documents) == 4
+    finally:
+        store.close()
+
+
+async def test_new_teaching_version_preserves_existing_legacy_recordings(tmp_path):
+    store = Storage(tmp_path)
+    try:
+        historical, _ = store.create_run(
+            "classification",
+            "test-fixture",
+            {"document_ids": [], "teaching_pack": "classification-teaching-v1"},
+            {},
+            idempotency_key="classification-teaching-v1:clear",
+        )
+        store.update_run(
+            historical.id,
+            graph_version="atlas-v1",
+            status="succeeded",
+            result={"outcomes": {}, "indexed_count": 0},
+        )
+        store.append_event(
+            historical.id,
+            "run_completed",
+            "run",
+            {"status": "succeeded", "result": {"outcomes": {}, "indexed_count": 0}},
+        )
+        before = store.snapshot(historical.id)
+        seeded = await seed_teaching_runs(tmp_path)
+        assert len(seeded["created_run_ids"]) == 3
+        assert store.snapshot(historical.id) == before
+        assert historical.id not in seeded["run_ids"]
     finally:
         store.close()
 

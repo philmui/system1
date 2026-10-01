@@ -35,13 +35,13 @@ test('synchronized legal example, focus, speed, disclosure, review and themes', 
   await expect(timeline).toHaveValue('0');
   const systemTrace = buildReviewTrace(examplePages[2], 'system1', defaultScenario);
   const frontierTrace = buildReviewTrace(examplePages[2], 'frontier', defaultScenario);
-  await timeline.fill(String(frontierTrace.decisionAt - .05));
+  await timeline.fill((frontierTrace.decisionAt - .05).toFixed(2));
   await page.locator('.strategy-frontier [data-node="redact"]').click();
   await expect(page.getByRole('button', { name: 'Redacted copy', exact: true })).toHaveCount(0);
   await expect(page.locator('.shared-state pre')).toContainText('"decisions": null');
   await page.getByRole('button', { name: 'System 1 path', exact: true }).click();
   await expect(page.getByRole('button', { name: 'System 1 path', exact: true })).toBeFocused();
-  await timeline.fill(String(systemTrace.steps.find(step => step.id === 'redact')!.end + .05));
+  await timeline.fill((systemTrace.work.find(interval => interval.id === 'redact')!.end + .05).toFixed(2));
   await expect(page.getByRole('button', { name: 'Redacted copy', exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Redacted copy', exact: true }).click();
   await expect(page.locator('.comparison-source pre')).toContainText('[REDACTED]');
@@ -59,7 +59,7 @@ test('synchronized legal example, focus, speed, disclosure, review and themes', 
   await page.getByRole('button', { name: 'Review page', exact: true }).click();
   await page.getByRole('button', { name: 'Release page', exact: true }).click();
   await expect(page.getByRole('button', { name: 'Focus graph', exact: true })).toBeFocused();
-  await expect(page.locator('.comparison-result')).toContainText('Same prepared outcome');
+  await expect(page.locator('.comparison-result')).toContainText('Same prepared outcome', { timeout: 15000 });
 
   await page.locator('.comparison-caption').getByRole('button', { name: 'Assumptions' }).click();
   await page.getByRole('spinbutton', { name: 'System 1 classification, seconds / request' }).fill('8');

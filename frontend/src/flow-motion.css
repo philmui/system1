@@ -1,22 +1,28 @@
-/* Shared across recorded execution graphs and the /#workflow comparison. */
+/* One directional river across lessons, recorded runs, and strategy comparisons. */
 .flow-route .react-flow__edge-path,
 .diagram-edge { vector-effect: non-scaling-stroke; stroke-width: 1.5; stroke-dasharray: 4 6; stroke-opacity: .62; }
 .flow-route.is-traversed .react-flow__edge-path,
 .diagram-edge.is-visited { stroke: var(--role-color); stroke-width: 3.5; stroke-dasharray: none; stroke-opacity: 1; }
 .flow-route.is-current .react-flow__edge-path,
 .diagram-edge.is-active { stroke: var(--role-color); stroke-width: 6; stroke-dasharray: none; stroke-opacity: 1; }
-.flow-trail { pointer-events: none; }
-.flow-trail .route-highlight { stroke: var(--role-color); stroke-width: 18; opacity: .16; vector-effect: non-scaling-stroke; }
-.flow-trail .route-forward-flow { stroke: color-mix(in srgb, var(--role-color) 12%, var(--text-strong)); stroke-width: 2.8; stroke-linecap: round; stroke-dasharray: 5 19; opacity: 1; vector-effect: non-scaling-stroke; animation: route-forward .8s linear infinite; }
+.flow-trail { pointer-events: none; stroke-dashoffset: 0; }
+.flow-trail path { vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
+.flow-trail .route-highlight { stroke: var(--role-color); stroke-width: 16; opacity: .1; }
+/* Both dash patterns total 32px, matching FlowTrail's phase-preserving animation. */
+.flow-trail .route-forward-flow { stroke: color-mix(in srgb, var(--role-color) 48%, var(--text-strong)); stroke-width: 3.6; stroke-dasharray: 11 21; opacity: .95; }
+.flow-trail .route-river-glint { stroke: var(--text-strong); stroke-width: 1.25; stroke-dasharray: 2 30; opacity: .75; }
+.flow-trail.is-route-history .route-highlight { stroke-width: 10; opacity: .045; }
+.flow-trail.is-route-history .route-forward-flow { stroke-width: 2.6; opacity: .62; }
+.flow-trail.is-route-history .route-river-glint { opacity: .28; }
 .flow-paper { filter: drop-shadow(0 2px 5px var(--shadow-color)); }
 .flow-paper .packet-halo { fill: var(--role-color); opacity: .21; stroke: none; }
 .flow-paper .packet-paper { fill: var(--role-color); stroke: var(--canvas); stroke-width: 1.5; }
 .flow-paper .packet-fold { stroke: var(--canvas); fill: none; stroke-width: 1.4; }
 .flow-paper text { font: 700 11px ui-monospace, monospace; fill: var(--canvas); }
-.diagram-node.is-active .node-card { filter: drop-shadow(0 0 6px color-mix(in srgb, var(--role-color) 38%, transparent)); }
 .flow-route .edge-packet { display: inline; }
 @media (prefers-reduced-motion: reduce) {
-  .flow-trail .route-forward-flow { animation: none; }
+  /* The component also cancels its Web Animation when this preference changes. */
+  .flow-trail { stroke-dashoffset: 0 !important; }
+  .flow-trail .route-river-glint { display: none; }
   .page-packet, .tracked-packet { display: inline; }
-  .diagram-node.is-active .node-card { filter: none; }
 }

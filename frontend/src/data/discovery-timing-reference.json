@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-09-28",
+  "provider": "jev",
+  "model": "jev-1.13.0",
+  "sample_count": 6,
+  "request_elapsed_ms": {
+    "min": 106.61108396016061,
+    "median": 125.25929199182428,
+    "max": 257.1167919668369
+  },
+  "scope": "Client-observed API requests, including transport and response handling. One synthetic workflow; not server inference time or a performance benchmark.",
+  "source": "docs/latency-results.json"
+}

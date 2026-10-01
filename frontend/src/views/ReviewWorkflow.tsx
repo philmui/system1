@@ -2,9 +2,12 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { Icon } from '../components/Icon';
 import { PlaybackSpeed } from '../components/PlaybackSpeed';
 import { ReviewLane } from '../components/ReviewLane';
+import { LiveReview } from '../components/LiveReview';
+import { MeasurementGuide } from '../components/MeasurementGuide';
+import '../live-review.css';
 import { examplePages } from '../lib/reviewExample';
 import { useMediaQuery } from '../lib/useMediaQuery';
-import { buildReviewTrace, defaultScenario, money, nextTraceStep, scenarioFields, traceSnapshot, validateScenario, type HumanVerdict, type ReviewNodeId, type Scenario, type Strategy } from '../lib/workflowComparison';
+import { advanceReviewClock, buildReviewTrace, defaultScenario, money, nextTraceStep, reviewClockRate, reviewDecisionComparison, scenarioFields, traceSnapshot, validateScenario, type HumanVerdict, type ReviewNodeId, type Scenario, type Strategy } from '../lib/workflowComparison';
 
 const workDetails: Record<ReviewNodeId, { title: string; description: string }> = {
   input: { title: 'Read page · code', description: 'Code loads a page into shared state. The moving paper represents that same page throughout both graphs.' },
@@ -18,11 +21,13 @@ const workDetails: Record<ReviewNodeId, { title: string; description: string }> 
 type Panel = 'page' | 'step' | 'assumptions' | 'key' | null;
 const toDraft = (scenario: Scenario) => Object.fromEntries(Object.entries(scenario).map(([key, value]) => [key, String(value)])) as Record<keyof Scenario, string>;
 
-export function ReviewWorkflow() {
+export function ReviewWorkflow({ initialExperience = 'live' }: { initialExperience?: 'live' | 'illustration' } = {}) {
+  const [experience, setExperience] = useState<'live' | 'illustration'>(initialExperience);
   const narrow = useMediaQuery('(max-width: 1050px)');
   const [pageIndex, setPageIndex] = useState(0);
   const [time, setTime] = useState(0);
   const [playing, setPlaying] = useState(false);
+  useEffect(() => { const pause = () => setPlaying(false); window.addEventListener('pause-workflow-playback', pause); return () => window.removeEventListener('pause-workflow-playback', pause); }, []);
   const [speed, setSpeed] = useState(1);
   const [scenario, setScenario] = useState(defaultScenario);
   const [draft, setDraft] = useState(() => toDraft(defaultScenario));
@@ -38,6 +43,10 @@ export function ReviewWorkflow() {
   const page = examplePages[pageIndex];
   const traces = useMemo(() => [buildReviewTrace(page, 'system1', scenario, verdict), buildReviewTrace(page, 'frontier', scenario, verdict)], [page, scenario, verdict]);
   const duration = Math.max(...traces.map(trace => trace.end));
+  // Native range inputs normalize long floating-point decimal strings. Keep
+  // their endpoint stable, while seeking it still selects the exact trace end.
+  const timelineEnd = Number(duration.toFixed(9));
+  const clockRate = reviewClockRate(scenario);
   const snapshots = traces.map(trace => traceSnapshot(trace, time));
   const bothComplete = snapshots.every(snapshot => snapshot.finished);
   const pending = snapshots.some(snapshot => snapshot.awaiting) && (!verdict || verdict.at > time);
@@ -51,7 +60,7 @@ export function ReviewWorkflow() {
     const advance = (now: number) => {
       const elapsed = Math.min(.1, (now - previous) / 1000);
       previous = now;
-      setTime(value => Math.min(duration, value + elapsed * speed));
+      setTime(value => advanceReviewClock(value, elapsed, speed, duration));
       frame = requestAnimationFrame(advance);
     };
     frame = requestAnimationFrame(advance);
@@ -80,6 +89,7 @@ export function ReviewWorkflow() {
     setSelected({ node, strategy }); setPanel(node === 'input' ? 'page' : 'step'); setPlaying(false);
   };
   const openPanel = (next: Panel) => {
+    setPlaying(false);
     setPanel(current => current === next ? null : next);
     if (next === 'assumptions') { setDraft(toDraft(scenario)); setAssumptionError(''); setPlaying(false); }
   };
@@ -98,18 +108,16 @@ export function ReviewWorkflow() {
   const review = (outcome: HumanVerdict['outcome']) => { setVerdict({ outcome, at: time }); setPanel(null); setPlaying(true); focusButton.current?.focus(); };
   const panelTitle = panel === 'assumptions' ? 'Scenario assumptions' : panel === 'key' ? 'Reading AgentGraph' : panel === 'page' ? page.title : workDetails[selected.node].title;
 
-  return <div className={`review-workspace comparison-workspace ${focused ? 'focus-workflow' : ''}`}>
+  return <div className={`review-workspace comparison-workspace ${experience === 'illustration' ? 'is-prepared' : 'is-live'} ${focused ? 'focus-workflow' : ''}`}>
     <h1 className="visually-hidden">Document review · compare AgentGraph workflows</h1>
-    <div className="comparison-stage" aria-label="Synchronized workflow comparison">
-      {traces.map(trace => <ReviewLane key={trace.strategy} page={page} trace={trace} time={time} narrow={narrow}
-        moving={isPlaying} speed={speed}
-        maxMachineSeconds={maxMachineSeconds} selected={panel === 'step' && selected.strategy === trace.strategy ? selected.node : undefined}
-        onSelect={node => inspect(node, trace.strategy)} />)}
-    </div>
+    <div className="review-experience-controls"><div className="segmented" role="group" aria-label="Review experience"><button aria-pressed={experience === 'live'} onClick={() => { setExperience('live'); setPlaying(false); setFocused(false); setPanel(null); }}>Live requests</button><button aria-pressed={experience === 'illustration'} onClick={() => { setExperience('illustration'); setPlaying(false); }}>Prepared comparison</button></div>
+      {experience === 'live' && <label>Fictional page<select value={pageIndex} onChange={event => choosePage(Number(event.target.value))}>{examplePages.map((item, index) => <option key={item.id} value={index}>{item.title}</option>)}</select></label>}</div>
+    {!focused && <><p className="page-task-guide">{experience === 'illustration' ? 'Prepared simulation · no model calls. Choose a page and press Run simulation. Both approaches use assumed times and the same prepared outcomes; quality is not measured.' : 'Choose a fictional page, then Classify page or Generate redaction. These are real model requests; every draft still needs review.'}</p><MeasurementGuide /></>}
+    {experience === 'live' ? <LiveReview key={page.id} page={page} /> : <>
     <div className="workflow-dock">
       <div className="dock-main">
         <div className="dock-transport">
-          <button className="primary dock-play" aria-label={isPlaying ? 'Pause example' : time >= duration ? 'Replay example' : 'Play example'} title={isPlaying ? 'Pause' : 'Play'} onClick={play}><Icon name={isPlaying ? 'pause' : 'play'} size={16} /></button>
+          <button className="primary dock-play" aria-label={isPlaying ? 'Pause simulation' : time >= duration ? 'Replay simulation' : 'Run simulation'} onClick={play}><Icon name={isPlaying ? 'pause' : 'play'} size={16} /><span>{isPlaying ? 'Pause simulation' : time >= duration ? 'Replay simulation' : 'Run simulation'}</span></button>
           <button className="icon-button" aria-label="Step example forward" title="Next step in either graph" disabled={time >= duration} onClick={() => { setPlaying(false); setTime(nextTraceStep(traces, time)); }}><Icon name="step" size={17} /></button>
           <button className="icon-button" aria-label="Reset example" title="Reset page and review decisions" onClick={reset}><Icon name="refresh" size={16} /></button>
         </div>
@@ -121,13 +129,26 @@ export function ReviewWorkflow() {
         </div>
       </div>
       <div id="comparison-controls" className="dock-secondary" hidden={!controls}>
-        <label className="timeline"><span>Playback</span><input type="range" min={0} max={duration} step="0.01" value={time} aria-label="Example timeline" aria-valuetext={`${time.toFixed(2)} of ${duration.toFixed(2)} seconds of illustrated playback`} onChange={event => { setPlaying(false); setTime(Number(event.target.value)); }} /><output>{time.toFixed(1)} / {duration.toFixed(1)}s</output></label>
+        <label className="timeline"><span>Animation</span><input type="range" min={0} max={timelineEnd} step="any" value={Math.min(time, timelineEnd)} aria-label="Example timeline" aria-valuetext={`${Math.round(time / duration * 100)} percent of animation; handoffs include extra reading time`} onChange={event => { setPlaying(false); const selectedTime = Number(event.target.value); setTime(selectedTime >= timelineEnd ? duration : selectedTime); }} /><output>{Math.round(time / duration * 100)}%</output></label>
         <div className="dock-detail-buttons"><button className="quiet small" aria-expanded={panel === 'page'} onClick={() => openPanel('page')}><Icon name="file" size={14} />Page & state</button><button className="quiet small" aria-expanded={panel === 'assumptions'} onClick={() => openPanel('assumptions')}><Icon name="sliders" size={14} />Assumptions</button><button className="quiet small" aria-expanded={panel === 'key'} onClick={() => openPanel('key')}><Icon name="info" size={14} />Graph key</button></div>
       </div>
-      <div className="comparison-caption"><span><i />Illustrated pace · node waits compressed · timings & costs are assumptions</span><button className="text-button" onClick={() => openPanel('assumptions')}>Assumptions<Icon name="chevron" size={11} /></button></div>
+      <div className="comparison-decision-timing" role="group" aria-label="Assumed classification time comparison">
+        <div className="decision-timing-label"><strong>Assumed decision time</strong><span>Same page · 3 decisions / request</span></div>
+        {([{ label: 'System 1', seconds: scenario.systemSeconds, role: 'jev' }, { label: 'Frontier', seconds: scenario.frontierSeconds, role: 'llm' }] as const).map(model => <div key={model.role} className={`decision-timing-model role-${model.role}`}>
+          <span>{model.label}<strong>{model.seconds.toFixed(2)} s</strong></span><i aria-hidden="true"><b style={{ width: `${model.seconds / Math.max(scenario.systemSeconds, scenario.frontierSeconds) * 100}%` }} /></i>
+        </div>)}
+        <strong className="decision-timing-ratio">{reviewDecisionComparison(scenario)}</strong>
+      </div>
+      <div className="comparison-caption"><span><i />Model work uses the same time scale. File handoffs are slowed for readability and excluded from latency.</span><button className="text-button" onClick={() => openPanel('assumptions')}>Assumptions<Icon name="chevron" size={11} /></button></div>
       {pending && <div className="comparison-review-prompt"><span><Icon name="pause" size={14} />This page is waiting for an attorney.</span><button className="secondary small" onClick={() => inspect('attorney', snapshots[0].awaiting ? 'system1' : 'frontier')}>Review page<Icon name="chevron" size={12} /></button></div>}
       {bothComplete && <div className="comparison-result" role="status"><Icon name="checkCircle" size={14} /><span>Same prepared outcome.</span><strong>{Math.abs(latencyDelta) < .00001 ? 'Equal machine time' : `System 1 path: ${Math.abs(latencyDelta).toFixed(2)}s ${latencyDelta > 0 ? 'less' : 'more'} machine time`}</strong><span>{Math.abs(costDelta) < .0000001 ? 'Equal modeled cost' : `${money(Math.abs(costDelta))} ${costDelta > 0 ? 'lower' : 'higher'} modeled cost`}</span></div>}
       <p className="visually-hidden" role="status">{page.title}. Disaggregated: {snapshots[0].current.activity}. Frontier: {snapshots[1].current.activity}.</p>
+    </div>
+    <div className="comparison-stage" aria-label="Synchronized workflow comparison">
+      {traces.map(trace => <ReviewLane key={trace.strategy} page={page} trace={trace} time={time} narrow={narrow}
+        moving={isPlaying} speed={speed}
+        maxMachineSeconds={maxMachineSeconds} selected={panel === 'step' && selected.strategy === trace.strategy ? selected.node : undefined}
+        onSelect={node => inspect(node, trace.strategy)} />)}
     </div>
     {panel && <section className="workflow-drawer" aria-label={panelTitle}>
       <header><h3 ref={drawerHeading} tabIndex={-1}>{panelTitle}</h3><button className="icon-button" aria-label="Close workflow details" onClick={() => { setPanel(null); focusButton.current?.focus(); }}><Icon name="close" size={16} /></button></header>
@@ -139,7 +160,7 @@ export function ReviewWorkflow() {
       }}>
         <p>These are editable teaching assumptions, not measured results or provider prices. Both graphs use the same page, prepared answers, rules, and one classification request for all three decisions. This isolates which model does the work.</p>
         <div className="scenario-fields">{scenarioFields.map(field => <label key={field.key}><span>{field.label}</span><div><input type="number" min={field.min} max={field.max} step="any" value={draft[field.key]} required aria-label={`${field.label}, ${field.unit}`} onChange={event => setDraft(values => ({ ...values, [field.key]: event.target.value }))} /><small>{field.unit}</small></div></label>)}</div>
-        <p className="scenario-notes">Animation holds are compressed for readability and do not represent latency. Modeled machine time still sums the full assumed model work and wrapper checks. Human waiting and animated handoffs are excluded. Costs accrue when requests complete. No models are called. Accuracy, consistency and reliability need evaluation; this illustration measures none of them.</p>
+        <p className="scenario-notes">At 1× playback, model work runs at {clockRate.toFixed(2)} modeled seconds per screen second in both lanes. Changing speed scales the entire animation equally. Each file handoff gets at least 0.8 screen seconds; longer paths take longer. Short code steps also get reading time. These presentation holds add no modeled latency. Machine time sums the assumed requests and checks; human waiting stays separate. The decision-time ratio compares classification only: redaction uses the same frontier model in both lanes, so the whole-workflow advantage depends on the route. Costs accrue when requests complete. No models are called. Accuracy, consistency and reliability need evaluation; this illustration measures none of them.</p>
         {assumptionError && <p role="alert" className="error-banner">{assumptionError}</p>}
         <div className="drawer-actions"><a href="https://gist.github.com/sydney-runkle/a632ba4ea0b2b72501dfa4b6ab2a7d8a" target="_blank" rel="noreferrer">Reference workflow<Icon name="link" size={12} /></a><button type="button" className="secondary small" onClick={() => setDraft(toDraft(defaultScenario))}>Restore defaults</button><button className="primary small" type="submit">Apply & reset</button></div>
       </form> : panel === 'key' ? <div className="graph-key-details">
@@ -156,5 +177,6 @@ export function ReviewWorkflow() {
         <div className="shared-state"><div><strong>Shared state</strong><div className="segmented"><button aria-pressed={selected.strategy === 'system1'} onClick={() => setSelected(value => ({ ...value, strategy: 'system1' }))}>System 1 path</button><button aria-pressed={selected.strategy === 'frontier'} onClick={() => setSelected(value => ({ ...value, strategy: 'frontier' }))}>Frontier path</button></div></div><pre>{JSON.stringify(state, null, 2)}</pre></div>
       </div>}
     </section>}
+    </>}
   </div>;
 }

@@ -1,0 +1,170 @@
+import { expect, test } from '@playwright/test';
+import { mockLiveClassification } from './helpers/liveClassificationFixture';
+import { mockLiveDiscovery } from './helpers/liveDiscoveryFixture';
+
+for (const width of [1440, 390]) test(`workflow timing stays beside playback and independent of replay position at ${width}px`, async ({ page }) => {
+  await page.setViewportSize({ width, height: 1000 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  let requests = 0;
+  await page.route('**/api/lessons/classify/live', route => { requests++; return route.fulfill({ json: mockLiveClassification('proposed') }); });
+  await page.goto('/#explore/classify?example=clear');
+  const summary = page.getByRole('complementary', { name: 'Workflow timing summary' });
+  await expect(summary).toContainText('Illustrative');
+  await expect(summary).toContainText('370 ms');
+  await expect(summary).toContainText('Skipped');
+  const timeline = page.getByRole('slider', { name: 'Lesson progress', exact: true });
+  const text = await summary.innerText();
+  await page.getByRole('combobox', { name: 'Playback speed', exact: true }).selectOption('2');
+  await timeline.focus(); await timeline.press('End');
+  expect(await summary.innerText()).toBe(text);
+  await timeline.press('Home');
+  expect(await summary.innerText()).toBe(text);
+  await page.getByRole('button', { name: /^Unsigned agreement/ }).click();
+  await expect(summary).toContainText('3.61 s');
+  await expect(summary.locator('.workflow-timing-total')).toHaveText('Total workflow time3.61 s');
+  await expect(summary.locator('.workflow-timing-parts')).toContainText('Other steps160 ms');
+  const shares = await summary.locator('.workflow-timing-composition > span').evaluateAll(parts => parts.map(part => parseFloat((part as HTMLElement).style.width)));
+  expect(shares.reduce((sum, share) => sum + share, 0)).toBeCloseTo(100, 2);
+  expect(shares[1]).toBeCloseTo(3200 / 3610 * 100, 2);
+  const details = summary.getByText('Break down other steps', { exact: true });
+  await details.focus(); await details.press('Enter');
+  await expect(summary.locator('.workflow-timing-details')).toHaveAttribute('open', '');
+  await expect(summary.locator('.workflow-timing-details dl')).toHaveText('Runtime policy40 msProposal validation40 msPublishing80 ms');
+  await expect(summary).toContainText('Add human review');
+  const bar = (await page.locator('.lesson-playback-with-timing').boundingBox())!;
+  const graph = (await page.locator('.lesson-classification-flow').boundingBox())!;
+  expect(Math.abs(bar.y + bar.height - graph.y)).toBeLessThanOrEqual(1);
+  expect(requests).toBe(0);
+  await page.getByRole('group', { name: 'Classification mode', exact: true }).getByRole('button', { name: 'Live models', exact: true }).click();
+  await expect(summary).toHaveCount(0);
+  await page.getByRole('button', { name: 'Run document', exact: true }).click();
+  await expect(summary).toContainText('Measured');
+  await expect(summary).toContainText('6.32 s');
+  await expect(summary).toContainText('175 ms');
+  await expect(summary).toContainText('6.07 s');
+  await expect(summary).toContainText('74 ms');
+  await expect(summary).toContainText('Approval & publication are outside this preview.');
+  await page.getByRole('combobox', { name: 'Route animation speed', exact: true }).selectOption('2');
+  await expect(summary).toContainText('6.32 s');
+  expect(requests).toBe(1);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test('first visit offers an explicit workflow and navigation preserves the selected document without making model calls', async ({ page }) => {
+  let requests = 0;
+  await page.route('**/api/lessons/classify/live', route => { requests++; return route.fulfill({ json: mockLiveClassification() }); });
+  await page.goto('/');
+  await expect(page.getByRole('heading', { name: 'Classify documents', exact: true })).toBeVisible();
+  await expect(page.locator('.lesson-subject').getByRole('button', { name: 'Run simulation', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Watch prepared replay', exact: true })).toHaveCount(0);
+  await page.getByRole('button', { name: /^Clear invoice/ }).click();
+  await expect(page.locator('[data-id="judge"]')).toContainText('Category + confidence');
+  await page.getByRole('button', { name: /Mixed-purpose report.*Report \+ proposed terms/ }).click();
+  await expect(page.locator('[data-id="judge"]')).toContainText('Category + confidence');
+  await expect(page.getByRole('slider', { name: 'Lesson progress' })).toBeVisible();
+  await expect(page.locator('.performance-report')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Compare this batch', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Compare strategies', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Illustrative workload', exact: true }).click();
+  await page.getByRole('button', { name: 'Review case', exact: true }).click();
+  await page.getByRole('button', { name: 'This recorded batch', exact: true }).click();
+  await page.getByRole('button', { name: 'Follow this decision', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Mixed-purpose report', exact: true })).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole('heading', { name: 'Mixed-purpose report', exact: true })).toBeVisible();
+  await expect(page.locator('[data-id="judge"]')).toContainText('Category + confidence');
+  await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Experiment' }).click();
+  await expect(page.getByText('Simulation · does not change this run', { exact: false })).toBeVisible();
+  expect(requests).toBe(0);
+});
+
+test('mobile first action stays above the ready graph and source inspection makes no request', async ({ page }) => {
+  let requests = 0;
+  await page.route('**/api/lessons/classify/live', route => { requests++; return route.fulfill({ json: mockLiveClassification('clear') }); });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/#explore/classify?example=clear');
+  await expect(page.locator('.lesson-subject').getByRole('button', { name: 'Run simulation', exact: true })).toBeInViewport();
+  const source = page.getByRole('button', { name: 'View document', exact: true });
+  await source.click();
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('dialog')).not.toBeVisible();
+  await expect(source).toBeFocused();
+  await expect(page.locator('[data-id="judge"]')).toContainText('Category + confidence');
+  await expect(page.locator('.lesson-classification-flow .is-on-path')).toHaveCount(0);
+  await expect(page.getByRole('slider', { name: 'Lesson progress' })).toBeVisible();
+  expect(requests).toBe(0);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test('Discovery makes the frontier role depend on the requested task', async ({ page }) => {
+  let requests = 0;
+  await page.route('**/api/lessons/discover', route => {
+    requests++;
+    const task = route.request().postDataJSON().example_id as 'find' | 'compare';
+    return route.fulfill({ json: mockLiveDiscovery(task) });
+  });
+  await page.goto('/#explore/discover?example=find');
+  await page.getByRole('group', { name: 'Discovery mode', exact: true }).getByRole('button', { name: 'Live models', exact: true }).click();
+  await page.getByRole('button', { name: 'Run Find', exact: true }).click();
+  await expect(page.locator('.discovery-run-summary')).toContainText('Whole returned run');
+  await page.getByRole('button', { name: 'Timing & checks', exact: true }).click();
+  await expect(page.getByRole('dialog')).toContainText('0 frontier attempts');
+  await page.keyboard.press('Escape');
+  await page.getByRole('slider', { name: 'Lesson progress' }).focus();
+  await page.getByRole('slider', { name: 'Lesson progress' }).press('End');
+  await expect(page.locator('.discovery-prefix-count')).toHaveText('At this step: 0 frontier requests');
+  await page.getByRole('button', { name: 'View results', exact: true }).click();
+  await expect(page.getByRole('dialog').getByRole('heading', { name: 'Relevant passages', exact: true })).toBeVisible();
+  await page.keyboard.press('Escape');
+  await page.getByRole('button', { name: /Compare policies/ }).click();
+  expect(requests).toBe(1);
+  await page.getByRole('button', { name: 'Run Compare', exact: true }).click();
+  await expect(page.locator('.discovery-run-summary')).toContainText('Whole returned run');
+  await page.getByRole('button', { name: 'Timing & checks', exact: true }).click();
+  await expect(page.getByRole('dialog')).toContainText('2 frontier attempts');
+  await page.keyboard.press('Escape');
+  await page.getByRole('slider', { name: 'Lesson progress' }).focus();
+  await page.getByRole('slider', { name: 'Lesson progress' }).press('End');
+  await expect(page.locator('.discovery-prefix-count')).toHaveText('At this step: 2 frontier requests');
+  await page.getByRole('button', { name: 'View results', exact: true }).click();
+  await expect(page.getByRole('dialog').getByRole('heading', { name: 'An answer, with its evidence', exact: true })).toBeVisible();
+  expect(requests).toBe(2);
+});
+
+test('a prepared wording experiment opens the selected document without running a live model', async ({ page }) => {
+  await page.goto('/#experiment/classify?example=proposed');
+  await page.getByRole('group', { name: 'Prepared agreement variant' }).getByRole('button', { name: 'Finalized', exact: true }).click();
+  await expect(page.getByText('The runtime selected a different route.', { exact: false })).toBeVisible();
+  await page.getByRole('button', { name: 'Open this document', exact: true }).click();
+  await expect(page).toHaveURL(/#explore\/classify\?example=finalized/);
+  await expect(page.getByRole('heading', { name: 'Finalized agreement', exact: true })).toBeVisible();
+  await expect(page.locator('[data-id="judge"]')).toContainText('Category + confidence');
+});
+
+for (const width of [1440, 1024, 390]) test(`Explore routes and captions stay legible at ${width}px in both themes`, async ({ page }) => {
+  await page.setViewportSize({ width, height: 1000 });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.route('**/api/lessons/classify/live', route => route.fulfill({ json: mockLiveClassification('proposed') }));
+  await page.goto('/#explore/classify?example=proposed&source=illustrative');
+  await page.getByRole('group', { name: 'Classification mode', exact: true }).getByRole('button', { name: 'Live models', exact: true }).click();
+  await page.locator('.lesson-subject').getByRole('button', { name: 'Run document', exact: true }).click();
+  const graph = page.locator('.lesson-classification-flow');
+  await graph.scrollIntoViewIfNeeded();
+  await expect(graph.locator('.is-on-path')).toHaveCount(3);
+  await expect(graph.locator('[data-id="review"]')).toContainText('Approval required to publish');
+  await expect(graph.locator('[data-id="publish"]')).toContainText('Outside preview');
+  for (const theme of ['dark', 'light']) {
+    await page.getByTitle(`${theme === 'dark' ? 'Dark' : 'Light'} mode`, { exact: true }).click();
+    await expect(graph.locator('[data-id="interpret"] .is-on-path')).toBeVisible();
+    await expect.poll(async () => graph.locator('[data-id="interpret"]').evaluate(node => {
+      const element = node as HTMLElement;
+      const role = element.querySelector('.component-role')!;
+      return parseFloat(getComputedStyle(role).fontSize) * element.getBoundingClientRect().width / element.offsetWidth;
+    })).toBeGreaterThanOrEqual(13.8);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  }
+  await expect(page.getByRole('region', { name: 'Step timing & provenance' })).toContainText('Measured live route');
+  await expect(page.getByRole('region', { name: 'Step timing & provenance' })).toContainText('6.07 s');
+});

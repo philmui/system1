@@ -1,17 +1,19 @@
 """Export the authoritative public Python models for browser type generation."""
+
 import json
 from pathlib import Path
 
 from pydantic import BaseModel, create_model
 
-from doc_discovery import schemas
+from doc_discovery import classification_measurements, lessons, review_lessons, schemas
 
 models = {
     name: (model, ...)
-    for name, model in vars(schemas).items()
+    for module in (schemas, lessons, review_lessons, classification_measurements)
+    for name, model in vars(module).items()
     if isinstance(model, type)
     and issubclass(model, BaseModel)
-    and model.__module__ == schemas.__name__
+    and model.__module__ == module.__name__
     and name != "Model"
 }
 # Public responses serialize defaults too; require those fields in browser records.

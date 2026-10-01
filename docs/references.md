@@ -63,7 +63,7 @@ These primary pages were read in the preparation record and checked against the 
 | [System One](https://docs.typesafe.ai/concepts/system-one) | Typed judgments do not supply a narrative explanation for every decision. | Explain the recorded rule and input; do not invent hidden reasoning. |
 | [Passage classification cookbook](https://docs.typesafe.ai/cookbooks/classifying_rag_passages) | Relevance, conflict, and useful evidence are distinct judgments. | Screen candidates and preserve conflict information. |
 | [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs) | Responses typed parsing needs refusal/incomplete-output handling. | Bounded Pydantic plans/proposals/answers and independent citation checks. |
-| [GPT-4.1 mini model](https://developers.openai.com/api/docs/models/gpt-4.1-mini) | Official model page lists Responses and structured-output support. | Configurable compact default; recorded model rather than inherited Anthropic dependency. |
+| [GPT-5.5 model](https://developers.openai.com/api/docs/models/gpt-5.5) | Official model page lists Responses, structured outputs, and low reasoning effort support. | Current frontier default and explicit live lesson target. Historical model evidence remains unchanged. |
 
 ## Execution, tracing, and interface contracts
 

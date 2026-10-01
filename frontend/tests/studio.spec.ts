@@ -99,7 +99,7 @@ test('classification fan-out, persistent review, grounded discovery, reconnect, 
       )
       .toBe('succeeded');
   }
-  await page.getByRole('link', { name: 'Discover', exact: true }).click();
+  await page.goto('/#discover');
   await page.getByRole('button', { name: /Compare the details/ }).click();
   await page.getByRole('button', { name: 'Discover', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'An answer, with its evidence' })).toBeVisible();
@@ -171,7 +171,7 @@ test('classification fan-out, persistent review, grounded discovery, reconnect, 
   await page.getByRole('button', { name: 'Results & sources', exact: true }).click();
   await page.locator('.results-title').scrollIntoViewIfNeeded();
   await page.screenshot({ path: resolve(screenshots, 'results-mobile.png'), fullPage: false });
-  await page.getByRole('link', { name: 'Discover', exact: true }).click();
+  await page.goto('/#discover');
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: resolve(screenshots, 'discover-mobile.png'), fullPage: true });
   await page.getByRole('textbox', { name: 'Your question' }).fill('Find invoices containing Atlas');
@@ -182,7 +182,7 @@ test('classification fan-out, persistent review, grounded discovery, reconnect, 
   await expect(page.locator('.passage-card')).toHaveCount(2);
   await expect(page.locator('.search-scope')).toContainText('unknown dates excluded');
   await expect(page.locator('.claim')).toHaveCount(0);
-  await page.getByRole('link', { name: 'Discover', exact: true }).click();
+  await page.goto('/#discover');
   await page
     .getByRole('textbox', { name: 'Your question' })
     .fill('What is the Atlas submarine insurance policy number?');

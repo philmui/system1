@@ -14,13 +14,13 @@ from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver
 
 from .events import Events
 from .ingestion import ingest
-from .schemas import ReviewSubmission, Run
+from .schemas import CLASSIFICATION_GRAPH_VERSION, ReviewSubmission, Run
 from .settings import Settings
 from .storage import Storage, data_lease
 from .teaching import TEACHING_FOLDER, fixture_example
 from .workflows.engine import WorkflowEngine
 
-PACK = "classification-teaching-v1"
+PACK = "classification-teaching-v2"
 CASES = (
     {
         "key": "clear",
@@ -123,6 +123,7 @@ def _publish(source: Storage, target: Storage, runs: list[Run]) -> tuple[list[st
                 run.status != "succeeded"
                 or run.mode != "test-fixture"
                 or run.request.get("teaching_pack") != PACK
+                or run.graph_version != CLASSIFICATION_GRAPH_VERSION
             ):
                 raise ValueError("Only completed simulated teaching runs can be published")
             row = source.db.execute("SELECT * FROM runs WHERE id=?", (run.id,)).fetchone()
@@ -135,6 +136,7 @@ def _publish(source: Storage, target: Storage, runs: list[Run]) -> tuple[list[st
                     saved.mode != "test-fixture"
                     or saved.status != "succeeded"
                     or saved.request != run.request
+                    or saved.graph_version != run.graph_version
                 ):
                     raise ValueError("An existing teaching identity has incompatible recorded data")
                 published.append(saved.id)
@@ -178,6 +180,15 @@ def _publish(source: Storage, target: Storage, runs: list[Run]) -> tuple[list[st
                     tuple(event)
                     for event in source.db.execute(
                         "SELECT * FROM events WHERE run_id=? ORDER BY sequence", (run.id,)
+                    )
+                ],
+            )
+            target.db.executemany(
+                "INSERT INTO publications VALUES (?, ?, ?, ?, ?)",
+                [
+                    tuple(publication)
+                    for publication in source.db.execute(
+                        "SELECT * FROM publications WHERE run_id=?", (run.id,)
                     )
                 ],
             )

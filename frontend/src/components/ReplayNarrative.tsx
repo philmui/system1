@@ -1,5 +1,6 @@
 import type { ReplayStage, ReplayStep } from '../lib/replay';
 import { readableFilename } from '../lib/replay';
+import { displayName } from '../lib/naming';
 import { Icon } from './Icon';
 
 const stageNames: Record<ReplayStage, string> = {
@@ -28,8 +29,8 @@ export function ReplayNarrative({ step, history, filename, documentNumber, total
       <div className="replay-step-meta"><span className={`replay-status ${playing ? 'is-playing' : ''}`}><i />{status}</span>
         {step?.badge && <span className="replay-decision-badge">{step.badge}</span>}
       </div>
-      <strong className="replay-step-title">{step?.title || 'Follow the document, step by step'}</strong>
-      <p>{step?.detail || 'Press play to see the document move through classification, the chosen route, and its outcome.'}</p>
+      <strong className="replay-step-title">{displayName(step?.title || 'Follow the document, step by step')}</strong>
+      <p>{displayName(step?.detail || 'Press play to see the document move through classification, the chosen route, and its outcome.')}</p>
     </div>
     <button className="quiet small replay-inspect" disabled={!step} onClick={() => step && onInspect(step.source || step.instanceId)} title="Pause and inspect this step">
       <Icon name="search" size={14} /><span>Inspect step</span>

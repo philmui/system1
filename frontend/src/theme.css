@@ -21,6 +21,32 @@
   --on-accent: #0b241e;
   --shadow-color: #00000026;
   --overlay: #060b1480;
+  /* Bright foreground material. Inks are independent of canvas/accent colors. */
+  --glass-tile-text: #172b40;
+  --glass-tile-muted: #34495f;
+  --glass-jev-fill: #b9eadb;
+  --glass-runtime-fill: #c7ddfa;
+  --glass-llm-fill: #dfd0fa;
+  --glass-human-fill: #f6ddb5;
+  --glass-source-fill: #d8e4ef;
+  --glass-output-fill: #c3eed1;
+  --glass-neutral-fill: #dae3ef;
+  --glass-jev-ink: #13533f;
+  --glass-runtime-ink: #254976;
+  --glass-llm-ink: #583883;
+  --glass-human-ink: #724410;
+  --glass-source-ink: #394e65;
+  --glass-output-ink: #175134;
+  --glass-danger-ink: #842e3b;
+  --glass-danger-fill: #f4d5dc;
+  --glass-body-opacity: 90%;
+  --glass-rim: #f6fbffb8;
+  --glass-highlight: #ffffffb3;
+  --glass-shadow: #02091345;
+  --glass-selected-shadow: #02091359;
+  --glass-chrome-top: #ffffff0a;
+  --glass-chrome-bottom: #ffffff02;
+  --glass-chrome-rim: #ffffff16;
 }
 :root[data-theme='light'] {
   color-scheme: light;
@@ -44,4 +70,29 @@
   --on-accent: #ffffff;
   --shadow-color: #2336540d;
   --overlay: #1b2e4840;
+  --glass-tile-text: #172b40;
+  --glass-tile-muted: #34495f;
+  --glass-jev-fill: #d9f3e9;
+  --glass-runtime-fill: #e0eafa;
+  --glass-llm-fill: #eae0fa;
+  --glass-human-fill: #faedd6;
+  --glass-source-fill: #eaf0f6;
+  --glass-output-fill: #dcf3e3;
+  --glass-neutral-fill: #e9eef4;
+  --glass-jev-ink: #13533f;
+  --glass-runtime-ink: #254976;
+  --glass-llm-ink: #583883;
+  --glass-human-ink: #724410;
+  --glass-source-ink: #394e65;
+  --glass-output-ink: #175134;
+  --glass-danger-ink: #842e3b;
+  --glass-danger-fill: #f8e0e5;
+  --glass-body-opacity: 94%;
+  --glass-rim: #6d8299;
+  --glass-highlight: #ffffffed;
+  --glass-shadow: #273f601f;
+  --glass-selected-shadow: #273f602e;
+  --glass-chrome-top: #ffffffb8;
+  --glass-chrome-bottom: #ffffff38;
+  --glass-chrome-rim: #ffffffd9;
 }

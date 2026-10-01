@@ -14,6 +14,38 @@ function port(node: FlowNode, handle: string) {
   };
   return { x: x + offsets[handle][0], y: y + offsets[handle][1] };
 }
+
+function graphBounds(nodes: FlowNode[]) {
+  // Include annotation style dimensions, as the canvas fit calculation does.
+  const left = Math.min(...nodes.map(node => node.position.x));
+  const right = Math.max(...nodes.map(node => node.position.x + (node.width ?? Number(node.style?.width))));
+  const top = Math.min(...nodes.map(node => node.position.y));
+  const bottom = Math.max(...nodes.map(node => node.position.y + (node.height ?? Number(node.style?.height))));
+  return { left, right, top, bottom, width: right - left };
+}
+
+for (const expanded of [false, true]) test(`Discovery ${expanded ? 'focused worker' : 'grouped'} portrait bounds include every node and caption`, () => {
+  const run = { kind: 'discovery', request: {} } as Run;
+  const execution: Execution = {
+    instances: {
+      'worker:task-1': { id: 'worker:task-1', node: 'retrieval_worker', label: 'Search access policies', taskId: 'task-1', state: 'running', attempt: 1 },
+      'task-1:retrieve': { id: 'task-1:retrieve', parent: 'worker:task-1', node: 'retrieve', label: 'Retrieve', state: 'succeeded', attempt: 1 },
+      'task-1:screen': { id: 'task-1:screen', parent: 'worker:task-1', node: 'screen', label: 'Screen', state: 'running', attempt: 1 },
+    }, workers: ['worker:task-1'], decisions: {}, edges: [], status: 'running',
+  };
+  const input = { run, execution, expanded, focused: expanded ? 'worker:task-1' : '', selected: null, moving: false, speed: 1 };
+  const desktop = buildExecutionGraph({ ...input, narrow: false });
+  const portrait = buildExecutionGraph({ ...input, narrow: true });
+  expect(desktop.nodes.filter(node => node.type === 'annotation').map(node => node.id)).toEqual(['request-caption', 'evidence-caption', 'answer-caption']);
+  expect(graphBounds(desktop.nodes).right).toBeGreaterThan(1000);
+  const componentBounds = graphBounds(portrait.nodes.filter(node => node.type === 'component'));
+  const allBounds = graphBounds(portrait.nodes);
+  expect(allBounds.left).toBeGreaterThanOrEqual(componentBounds.left);
+  expect(allBounds.right).toBeLessThanOrEqual(componentBounds.right);
+  expect(allBounds.width).toBeLessThan(500);
+  expect(allBounds.bottom - allBounds.top).toBeGreaterThan(allBounds.width);
+  expect(portrait.nodes.filter(node => node.type === 'component').map(node => node.id)).toEqual(desktop.nodes.filter(node => node.type === 'component').map(node => node.id));
+});
 for (const kind of ['classification', 'discovery'] as const) for (const narrow of [false, true]) for (const expanded of [false, true]) {
   test(`${kind} ${narrow ? 'vertical' : 'horizontal'} ${expanded ? 'expanded' : 'grouped'} live graph keeps connections outside unrelated work`, () => {
     const run = { kind, request: { document_ids: ['document'] } } as unknown as Run;

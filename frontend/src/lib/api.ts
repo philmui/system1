@@ -7,10 +7,19 @@ import type {
   Run,
   RunSnapshot,
   SearchFilters,
+  LiveInterpretResponse,
+  LiveDiscoveryResponse,
+  LiveReviewResponse,
+  LiveClassificationComparisonRequest,
+  LiveClassificationComparisonResponse,
+  LiveClassificationResponse,
 } from './api.generated';
 import { displayName } from './naming';
+import { defaultFrontierModel, type FrontierModel } from './frontierModels';
 
-export const API_BASE = (import.meta.env?.VITE_API_BASE_URL || 'http://127.0.0.1:8000').replace(/\/$/, '');
+// Local development uses Vite's /api proxy; deployments can specify an external
+// API origin. Never silently send a hosted app's requests to a user's loopback.
+export const API_BASE = (import.meta.env?.VITE_API_BASE_URL || '').trim().replace(/\/+$/, '');
 export interface Health {
   status: string;
   mode: 'live' | 'test-fixture';
@@ -33,13 +42,16 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
       credentials: 'include',
       ...options,
       headers: {
-        ...(options.body instanceof FormData ? {} : { 'Content-Type': 'application/json' }),
+        ...(typeof options.body === 'string' ? { 'Content-Type': 'application/json' } : {}),
         ...options.headers,
       },
     });
   } catch {
+    const origin = typeof window === 'undefined' ? 'this frontend origin' : window.location.origin;
     throw new ApiError(
-      'The backend is unavailable. Check that it is running and permits this frontend origin.',
+      API_BASE
+        ? `Could not reach the backend at ${API_BASE}. Check that it is running and allows requests from ${origin}.`
+        : 'Could not connect to the app’s API. Check your connection and that the app server is running.',
       0,
     );
   }
@@ -53,7 +65,15 @@ async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
           : `Request failed (${response.status}).`;
     throw new ApiError(detail, response.status);
   }
-  return response.json() as Promise<T>;
+  try {
+    return await response.json() as T;
+  } catch {
+    // A malformed successful response may follow an accepted command. Keep its
+    // idempotency key on a deliberate retry, just as for a lost response.
+    throw new ApiError(response.headers.get('Content-Type')?.includes('text/html')
+      ? 'The API returned a web page instead of data. Check VITE_API_BASE_URL or the /api proxy configuration.'
+      : 'The backend returned an unreadable response. Check the API connection and try again.', 0);
+  }
 }
 const pendingCommands = new Map<string, string>();
 async function command<T>(path: string, body?: unknown, idempotent = false): Promise<T> {
@@ -77,6 +97,11 @@ async function command<T>(path: string, body?: unknown, idempotent = false): Pro
   }
 }
 export const api = {
+  classifyLesson: (example_id: LiveClassificationComparisonRequest['example_id'], content_version: string, frontier_model: FrontierModel = defaultFrontierModel) => command<LiveClassificationResponse>('/api/lessons/classify/live', { example_id, content_version, frontier_model }),
+  compareClassification: (example_id: LiveClassificationComparisonRequest['example_id'], content_version: string, frontier_model: FrontierModel = defaultFrontierModel) => command<LiveClassificationComparisonResponse>('/api/lessons/compare-classification', { example_id, content_version, frontier_model }),
+  interpretLesson: (example_id: 'ambiguous' | 'proposed', content_version: string, frontier_model: FrontierModel = defaultFrontierModel) => command<LiveInterpretResponse>('/api/lessons/interpret', { example_id, content_version, frontier_model }),
+  discoverLesson: (example_id: 'find' | 'compare', bounded_mode: 'prepared' | 'live' = 'prepared', frontier_model: FrontierModel = defaultFrontierModel) => command<LiveDiscoveryResponse>('/api/lessons/discover', { example_id, bounded_mode, frontier_model }),
+  reviewLesson: (page_id: string, content_version: string, action: 'classify' | 'redact', frontier_model: FrontierModel = defaultFrontierModel) => command<LiveReviewResponse>('/api/lessons/review/live', { page_id, content_version, action, frontier_model }),
   health: () => request<Health>('/api/health'),
   documents: (filters?: SearchFilters, includeArchived = false) => {
     const params = new URLSearchParams();

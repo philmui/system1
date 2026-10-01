@@ -47,9 +47,7 @@
 .classification-graph .replay-explanation p { font-size: 11px; margin-top: 4px; line-height: 1.5; }
 .classification-graph .replay-stages { min-height: 27px; padding: 7px 0 10px; margin-top: 0; gap: 11px; }
 .classification-graph .replay-stages li { gap: 11px; }
-.classification-graph .flow-node { padding: 12px; border-radius: 9px; background: var(--surface); box-shadow: 0 3px 9px var(--shadow-color); }
-.classification-graph .flow-node.is-active { padding: 11px; background: color-mix(in srgb, var(--role-color) 8%, var(--surface)); box-shadow: 0 0 0 6px color-mix(in srgb, var(--role-color) 13%, transparent); }
-.classification-graph .flow-node.is-dimmed { opacity: .7; }
+.classification-graph .flow-node { padding: 12px; border-radius: 11px; }
 .classification-graph .flow-node-header { margin-bottom: 8px; gap: 7px; }
 .classification-graph .component-icon { width: 27px; height: 27px; border-radius: 6px; }
 .classification-graph .component-icon svg { width: 18px; height: 18px; }
@@ -67,10 +65,6 @@
 .classification-graph .flow-route.is-traversed { opacity: 1; }
 .classification-graph .flow-route.is-traversed .react-flow__edge-path { stroke: var(--role-color); stroke-width: 3.5; stroke-dasharray: none; }
 .classification-graph .flow-route.is-current .react-flow__edge-path { stroke: var(--role-color); stroke-width: 6; stroke-dasharray: none; }
-.classification-graph .flow-route .route-highlight { stroke-width: 17; opacity: .15; vector-effect: non-scaling-stroke; }
-.route-forward-flow { stroke: color-mix(in srgb, var(--role-color) 15%, var(--text-strong)); stroke-width: 2.7; stroke-linecap: round; stroke-dasharray: 5 19; opacity: .95; vector-effect: non-scaling-stroke; animation: route-forward 1.15s linear infinite; pointer-events: none; }
-@keyframes route-forward { to { stroke-dashoffset: -48; } }
-.classification-graph .flow-route marker { markerWidth: 4px; markerHeight: 4px; }
 .classification-graph .node-document { max-width: 250px; font-size: 11px; top: -37px; padding: 6px 8px; }
 .classification-graph .react-flow__node[data-id='dispatch'] .node-document { max-width: 200px; }
 .runtime-continuation { display: flex; align-items: center; justify-content: center; gap: 9px; flex-wrap: wrap; padding: 11px 17px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 10px; }
@@ -161,7 +155,4 @@
   .comparison-counts strong { font-size: 23px; }
   .comparison-counts strong small { display: block; }
   .comparison-counts > svg { margin-top: 42px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .route-forward-flow { animation: none; }
 }

@@ -14,6 +14,7 @@ from ..providers.common import ProviderError, safe_error
 from ..providers.jev import JevProvider
 from ..providers.openai import OpenAIProvider
 from ..schemas import (
+    CLASSIFICATION_GRAPH_VERSION,
     GRAPH_VERSION,
     POLICY_VERSION,
     Answer,
@@ -52,11 +53,29 @@ class WorkflowEngine:
         self._attempts: dict[tuple[str, str], int] = {}
         self._node_starts: dict[tuple[str, str, int], float] = {}
         self._node_durations: dict[tuple[str, str, int], float] = {}
-        self.classification = build_classification(self, checkpointer)
+        self.classification = build_classification(self, checkpointer, independent=True)
+        self.legacy_classification = build_classification(self, checkpointer, independent=False)
         self.discovery = build_discovery(self, checkpointer)
 
     def graph(self, run):
-        return self.classification if run.kind == "classification" else self.discovery
+        if run.kind != "classification":
+            return self.discovery
+        return (
+            self.classification
+            if run.graph_version == CLASSIFICATION_GRAPH_VERSION
+            else self.legacy_classification
+        )
+
+    def compatible(self, run):
+        versions = (
+            {GRAPH_VERSION, CLASSIFICATION_GRAPH_VERSION} if run.kind == "classification" else {GRAPH_VERSION}
+        )
+        return (
+            run.graph_version in versions
+            and run.policy_version == POLICY_VERSION
+            and run.mode == self.settings.app_mode
+            and run.configuration == self.settings.public_config()
+        )
 
     def config(self, run):
         return {
@@ -120,6 +139,23 @@ class WorkflowEngine:
             {"source_instance_id": source, "target_instance_id": target, "label": label},
             key=f"edge:{source}:{target}:{label}",
         )
+
+    async def publish(self, run_id, doc_id, content_version, authorization_id):
+        self.ensure_active(run_id)
+        await self.node(
+            run_id,
+            f"{doc_id}:publish",
+            "publish",
+            "running",
+            parent=f"worker:{doc_id}",
+            document_id=doc_id,
+            label="Publish document",
+        )
+        event = self.storage.publish_document(run_id, doc_id, content_version, authorization_id)
+        # The transaction wrote the event before notification. SSE also polls the log.
+        async with self.events.changed:
+            self.events.changed.notify_all()
+        return event.payload["publication"]
 
     def synthetic_trace_context(self, refs):
         """Verify every source identity; never trust a filename or provider assertion."""
@@ -304,13 +340,10 @@ class WorkflowEngine:
 
     async def can_recover(self, run_id):
         run = self.storage.get_run(run_id)
-        if (
-            run.graph_version != GRAPH_VERSION
-            or run.policy_version != POLICY_VERSION
-            or run.mode != self.settings.app_mode
-            or run.configuration != self.settings.public_config()
-        ):
+        if not self.compatible(run):
             return False, "The original graph, provider mode, or policy configuration is incompatible"
+        if self.storage.superseded_classification(run_id):
+            return False, "A newer classification command superseded this document assignment"
         with tracing_context(enabled=False):
             snapshot = await self.graph(run).aget_state(self.config(run))
         if not snapshot.values or not snapshot.next:
@@ -329,15 +362,9 @@ class WorkflowEngine:
                 )
         if run.status == "cancelled":
             return
-        if run.mode != self.settings.app_mode:
-            raise ValueError("Execution mode differs from the recorded run")
+        if not self.compatible(run):
+            raise ValueError("The recorded graph, mode, or policy configuration is incompatible")
         if resume is not None:
-            if (
-                run.graph_version != GRAPH_VERSION
-                or run.policy_version != POLICY_VERSION
-                or run.configuration != self.settings.public_config()
-            ):
-                raise ValueError("The original review graph or policy configuration is incompatible")
             self.validate_review(run, resume)
             value: Any = Command(resume=resume)
         elif recover:
@@ -398,7 +425,13 @@ class WorkflowEngine:
                     run_id,
                     status="awaiting_review",
                     review=review,
-                    result={"outcomes": snapshot.values.get("outcomes", {}), "indexed_count": 0},
+                    result={
+                        "outcomes": snapshot.values.get("outcomes", {}),
+                        "indexed_count": sum(
+                            value.get("publication", {}).get("status") == "searchable"
+                            for value in snapshot.values.get("outcomes", {}).values()
+                        ),
+                    },
                 )
                 await self.events.emit(
                     run_id,

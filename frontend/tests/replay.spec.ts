@@ -131,6 +131,19 @@ test('a cancelled recording never claims that an accepted worker was indexed', (
   expect(last.instanceId).not.toBe('done');
 });
 
+test('a committed V2 publication stays searchable when unrelated batch work is cancelled', () => {
+  const events = log([
+    ['decision', 'a:jev', decision()],
+    ['edge_selected', 'a:jev', edge('a:jev', 'a:publish')],
+    ['node_completed', 'a:publish', { ...node('publish', 'succeeded', 'a'), publication: { document_id: 'a', status: 'searchable', category: 'invoice' } }],
+    ['node_completed', 'worker:a', node('worker', 'succeeded', 'a', 'accepted')],
+    ['run_completed', 'run', { status: 'cancelled', result: null }],
+  ]);
+  expect(documentProgress(reduceEvents(events.slice(0, 2)), 'a')).not.toBe('Indexed');
+  expect(classificationReplaySteps(events, 'a').at(-1)?.title).toBe('Searchable; batch cancelled');
+  expect(documentProgress(reduceEvents(events), 'a')).toBe('Indexed');
+});
+
 test('a successful retry clears the earlier failure from the current route explanation', () => {
   const events = log([
     ['node_failed', 'a:jev', node('jev', 'failed', 'a')],

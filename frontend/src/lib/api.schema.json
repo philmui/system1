@@ -26,6 +26,82 @@
       "title": "Answer",
       "type": "object"
     },
+    "AuthoredReferenceAgreement": {
+      "additionalProperties": false,
+      "properties": {
+        "matching": {
+          "enum": [
+            0,
+            1
+          ],
+          "title": "Matching",
+          "type": "integer"
+        },
+        "evaluated": {
+          "enum": [
+            0,
+            1
+          ],
+          "title": "Evaluated",
+          "type": "integer"
+        },
+        "reference_category": {
+          "enum": [
+            "invoice",
+            "contract",
+            "policy",
+            "report",
+            "correspondence",
+            "other",
+            "unknown"
+          ],
+          "title": "Reference Category",
+          "type": "string"
+        },
+        "observed_category": {
+          "anyOf": [
+            {
+              "enum": [
+                "invoice",
+                "contract",
+                "policy",
+                "report",
+                "correspondence",
+                "other",
+                "unknown"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Observed Category"
+        },
+        "basis": {
+          "const": "authored lesson reference",
+          "default": "authored lesson reference",
+          "title": "Basis",
+          "type": "string"
+        },
+        "scope": {
+          "const": "one synthetic document; not a benchmark",
+          "default": "one synthetic document; not a benchmark",
+          "title": "Scope",
+          "type": "string"
+        }
+      },
+      "required": [
+        "matching",
+        "evaluated",
+        "reference_category",
+        "observed_category",
+        "basis",
+        "scope"
+      ],
+      "title": "AuthoredReferenceAgreement",
+      "type": "object"
+    },
     "ChoiceSignal": {
       "additionalProperties": false,
       "properties": {
@@ -186,6 +262,123 @@
       "title": "Claim",
       "type": "object"
     },
+    "ClassificationComparisonProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "documents": {
+          "const": "synthetic content-bound source",
+          "default": "synthetic content-bound source",
+          "title": "Documents",
+          "type": "string"
+        },
+        "bounded_provider": {
+          "const": "live Jev",
+          "default": "live Jev",
+          "title": "Bounded Provider",
+          "type": "string"
+        },
+        "frontier_provider": {
+          "default": "live GPT-5.5",
+          "title": "Frontier Provider",
+          "type": "string"
+        },
+        "policy": {
+          "const": "same taxonomy, 0.80 threshold, and text guard",
+          "default": "same taxonomy, 0.80 threshold, and text guard",
+          "title": "Policy",
+          "type": "string"
+        },
+        "confidence_note": {
+          "default": "The equal numeric threshold is a policy assumption. The models' confidence signals are not calibrated or equivalent probabilities of correctness.",
+          "title": "Confidence Note",
+          "type": "string"
+        },
+        "timing_scope": {
+          "default": "Concurrent preview from a common start; includes client request/adapter work and local policy, excludes human review and publication. Shared capacity and provider contention can affect both strategies.",
+          "title": "Timing Scope",
+          "type": "string"
+        },
+        "stopping_point": {
+          "const": "accepted category or unapproved proposal",
+          "default": "accepted category or unapproved proposal",
+          "title": "Stopping Point",
+          "type": "string"
+        },
+        "quality_scope": {
+          "default": "Agreement with one authored synthetic reference, reported separately for judgment and final preview. These are the same document, not independent samples or benchmark accuracy.",
+          "title": "Quality Scope",
+          "type": "string"
+        },
+        "sample_count": {
+          "const": 1,
+          "default": 1,
+          "title": "Sample Count",
+          "type": "integer"
+        },
+        "max_in_flight_provider_requests": {
+          "maximum": 2,
+          "minimum": 1,
+          "title": "Max In Flight Provider Requests",
+          "type": "integer"
+        },
+        "automatic_retries": {
+          "const": 0,
+          "default": 0,
+          "title": "Automatic Retries",
+          "type": "integer"
+        },
+        "human_review": {
+          "const": "not performed",
+          "default": "not performed",
+          "title": "Human Review",
+          "type": "string"
+        },
+        "publication": {
+          "const": "not performed",
+          "default": "not performed",
+          "title": "Publication",
+          "type": "string"
+        }
+      },
+      "required": [
+        "documents",
+        "bounded_provider",
+        "frontier_provider",
+        "policy",
+        "confidence_note",
+        "timing_scope",
+        "stopping_point",
+        "quality_scope",
+        "sample_count",
+        "max_in_flight_provider_requests",
+        "automatic_retries",
+        "human_review",
+        "publication"
+      ],
+      "title": "ClassificationComparisonProvenance",
+      "type": "object"
+    },
+    "ClassificationLesson": {
+      "additionalProperties": false,
+      "properties": {
+        "snapshot": {
+          "$ref": "#/$defs/RunSnapshot"
+        },
+        "documents": {
+          "items": {
+            "$ref": "#/$defs/LessonDocument"
+          },
+          "title": "Documents",
+          "type": "array"
+        }
+      },
+      "required": [
+        "snapshot",
+        "documents"
+      ],
+      "title": "ClassificationLesson",
+      "type": "object"
+    },
     "ClassificationRequest": {
       "additionalProperties": false,
       "properties": {
@@ -321,6 +514,94 @@
         "policy_reason"
       ],
       "title": "Decision",
+      "type": "object"
+    },
+    "DiscoveryIntentAgreement": {
+      "additionalProperties": false,
+      "properties": {
+        "matching": {
+          "enum": [
+            0,
+            1
+          ],
+          "title": "Matching",
+          "type": "integer"
+        },
+        "evaluated": {
+          "enum": [
+            0,
+            1
+          ],
+          "title": "Evaluated",
+          "type": "integer"
+        },
+        "reference_intent": {
+          "enum": [
+            "find",
+            "compare"
+          ],
+          "title": "Reference Intent",
+          "type": "string"
+        },
+        "observed_intent": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Observed Intent"
+        },
+        "basis": {
+          "const": "authored lesson intent; not benchmark accuracy",
+          "default": "authored lesson intent; not benchmark accuracy",
+          "title": "Basis",
+          "type": "string"
+        }
+      },
+      "required": [
+        "matching",
+        "evaluated",
+        "reference_intent",
+        "observed_intent",
+        "basis"
+      ],
+      "title": "DiscoveryIntentAgreement",
+      "type": "object"
+    },
+    "DiscoveryLesson": {
+      "additionalProperties": false,
+      "properties": {
+        "documents": {
+          "items": {
+            "$ref": "#/$defs/LessonDocument"
+          },
+          "title": "Documents",
+          "type": "array"
+        },
+        "find": {
+          "$ref": "#/$defs/RunSnapshot"
+        },
+        "compare": {
+          "$ref": "#/$defs/RunSnapshot"
+        },
+        "empty": {
+          "$ref": "#/$defs/RunSnapshot"
+        },
+        "unsupported": {
+          "$ref": "#/$defs/RunSnapshot"
+        }
+      },
+      "required": [
+        "documents",
+        "find",
+        "compare",
+        "empty",
+        "unsupported"
+      ],
+      "title": "DiscoveryLesson",
       "type": "object"
     },
     "DiscoveryRequest": {
@@ -628,6 +909,1634 @@
       "title": "Event",
       "type": "object"
     },
+    "ExperimentCoverage": {
+      "additionalProperties": false,
+      "properties": {
+        "eligible": {
+          "title": "Eligible",
+          "type": "integer"
+        },
+        "accepted": {
+          "title": "Accepted",
+          "type": "integer"
+        },
+        "escalated": {
+          "title": "Escalated",
+          "type": "integer"
+        },
+        "acceptance_coverage": {
+          "title": "Acceptance Coverage",
+          "type": "number"
+        },
+        "accepted_reference_mistakes": {
+          "title": "Accepted Reference Mistakes",
+          "type": "integer"
+        },
+        "accepted_policy_violations": {
+          "title": "Accepted Policy Violations",
+          "type": "integer"
+        },
+        "quality_basis": {
+          "default": "Prepared reference categories and default review policy; not a model evaluation.",
+          "title": "Quality Basis",
+          "type": "string"
+        }
+      },
+      "required": [
+        "eligible",
+        "accepted",
+        "escalated",
+        "acceptance_coverage",
+        "accepted_reference_mistakes",
+        "accepted_policy_violations",
+        "quality_basis"
+      ],
+      "title": "ExperimentCoverage",
+      "type": "object"
+    },
+    "InterpretationPreviewMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "total_elapsed_ms": {
+          "minimum": 0,
+          "title": "Total Elapsed Ms",
+          "type": "number"
+        },
+        "policy_elapsed_ms": {
+          "minimum": 0,
+          "title": "Policy Elapsed Ms",
+          "type": "number"
+        },
+        "reference_category": {
+          "enum": [
+            "invoice",
+            "contract",
+            "policy",
+            "report",
+            "correspondence",
+            "other",
+            "unknown"
+          ],
+          "title": "Reference Category",
+          "type": "string"
+        },
+        "proposal_matches_reference": {
+          "title": "Proposal Matches Reference",
+          "type": "boolean"
+        },
+        "evaluated_documents": {
+          "const": 1,
+          "default": 1,
+          "title": "Evaluated Documents",
+          "type": "integer"
+        },
+        "quality_basis": {
+          "const": "authored lesson reference; not benchmark accuracy",
+          "default": "authored lesson reference; not benchmark accuracy",
+          "title": "Quality Basis",
+          "type": "string"
+        },
+        "timing_scope": {
+          "const": "interpretation preview",
+          "default": "interpretation preview",
+          "title": "Timing Scope",
+          "type": "string"
+        }
+      },
+      "required": [
+        "total_elapsed_ms",
+        "policy_elapsed_ms",
+        "reference_category",
+        "proposal_matches_reference",
+        "evaluated_documents",
+        "quality_basis",
+        "timing_scope"
+      ],
+      "title": "InterpretationPreviewMetrics",
+      "type": "object"
+    },
+    "LessonCatalogue": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "policy_version": {
+          "title": "Policy Version",
+          "type": "string"
+        },
+        "provenance": {
+          "$ref": "#/$defs/LessonProvenance"
+        },
+        "classification": {
+          "$ref": "#/$defs/ClassificationLesson"
+        },
+        "discovery": {
+          "$ref": "#/$defs/DiscoveryLesson"
+        },
+        "safeguards": {
+          "items": {
+            "$ref": "#/$defs/SafeguardLesson"
+          },
+          "title": "Safeguards",
+          "type": "array"
+        }
+      },
+      "required": [
+        "version",
+        "policy_version",
+        "provenance",
+        "classification",
+        "discovery",
+        "safeguards"
+      ],
+      "title": "LessonCatalogue",
+      "type": "object"
+    },
+    "LessonDocument": {
+      "additionalProperties": false,
+      "properties": {
+        "example_id": {
+          "title": "Example Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "cue": {
+          "title": "Cue",
+          "type": "string"
+        },
+        "document": {
+          "$ref": "#/$defs/Document"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "passages": {
+          "items": {
+            "$ref": "#/$defs/Passage"
+          },
+          "title": "Passages",
+          "type": "array"
+        },
+        "source_excerpt": {
+          "title": "Source Excerpt",
+          "type": "string"
+        },
+        "reference_category": {
+          "enum": [
+            "invoice",
+            "contract",
+            "policy",
+            "report",
+            "correspondence",
+            "other",
+            "unknown"
+          ],
+          "title": "Reference Category",
+          "type": "string"
+        },
+        "expected_reason": {
+          "title": "Expected Reason",
+          "type": "string"
+        },
+        "controlled_signal": {
+          "default": false,
+          "title": "Controlled Signal",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "example_id",
+        "title",
+        "cue",
+        "document",
+        "text",
+        "passages",
+        "source_excerpt",
+        "reference_category",
+        "expected_reason",
+        "controlled_signal"
+      ],
+      "title": "LessonDocument",
+      "type": "object"
+    },
+    "LessonProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "documents": {
+          "const": "synthetic",
+          "default": "synthetic",
+          "title": "Documents",
+          "type": "string"
+        },
+        "providers": {
+          "const": "simulated",
+          "default": "simulated",
+          "title": "Providers",
+          "type": "string"
+        },
+        "runtime": {
+          "const": "executed",
+          "default": "executed",
+          "title": "Runtime",
+          "type": "string"
+        },
+        "timing": {
+          "const": "fixture wall time, not model performance",
+          "default": "fixture wall time, not model performance",
+          "title": "Timing",
+          "type": "string"
+        },
+        "review": {
+          "const": "scripted approval",
+          "default": "scripted approval",
+          "title": "Review",
+          "type": "string"
+        },
+        "storage": {
+          "const": "isolated temporary store",
+          "default": "isolated temporary store",
+          "title": "Storage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "documents",
+        "providers",
+        "runtime",
+        "timing",
+        "review",
+        "storage"
+      ],
+      "title": "LessonProvenance",
+      "type": "object"
+    },
+    "LiveClassificationComparisonRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "example_id": {
+          "enum": [
+            "clear",
+            "policy",
+            "ambiguous",
+            "proposed",
+            "finalized"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "content_version": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Content Version",
+          "type": "string"
+        },
+        "frontier_model": {
+          "default": "gpt-5.5",
+          "enum": [
+            "gpt-4.1",
+            "gpt-5.5",
+            "gpt-5.6-sol"
+          ],
+          "title": "Frontier Model",
+          "type": "string"
+        }
+      },
+      "required": [
+        "example_id",
+        "content_version",
+        "frontier_model"
+      ],
+      "title": "LiveClassificationComparisonRequest",
+      "type": "object"
+    },
+    "LiveClassificationComparisonResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "comparison_id": {
+          "title": "Comparison Id",
+          "type": "string"
+        },
+        "example_id": {
+          "enum": [
+            "clear",
+            "policy",
+            "ambiguous",
+            "proposed",
+            "finalized"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "content_version": {
+          "title": "Content Version",
+          "type": "string"
+        },
+        "reference_category": {
+          "enum": [
+            "invoice",
+            "contract",
+            "policy",
+            "report",
+            "correspondence",
+            "other",
+            "unknown"
+          ],
+          "title": "Reference Category",
+          "type": "string"
+        },
+        "started_at": {
+          "title": "Started At",
+          "type": "string"
+        },
+        "total_elapsed_ms": {
+          "minimum": 0,
+          "title": "Total Elapsed Ms",
+          "type": "number"
+        },
+        "strategies": {
+          "items": {
+            "$ref": "#/$defs/MeasuredClassificationStrategy"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "title": "Strategies",
+          "type": "array"
+        },
+        "provenance": {
+          "$ref": "#/$defs/ClassificationComparisonProvenance"
+        },
+        "operational_writes": {
+          "const": 0,
+          "default": 0,
+          "title": "Operational Writes",
+          "type": "integer"
+        },
+        "published": {
+          "const": false,
+          "default": false,
+          "title": "Published",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "version",
+        "comparison_id",
+        "example_id",
+        "document_id",
+        "content_version",
+        "reference_category",
+        "started_at",
+        "total_elapsed_ms",
+        "strategies",
+        "provenance",
+        "operational_writes",
+        "published"
+      ],
+      "title": "LiveClassificationComparisonResponse",
+      "type": "object"
+    },
+    "LiveClassificationProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "documents": {
+          "const": "synthetic content-bound source",
+          "default": "synthetic content-bound source",
+          "title": "Documents",
+          "type": "string"
+        },
+        "bounded_provider": {
+          "const": "live Jev",
+          "default": "live Jev",
+          "title": "Bounded Provider",
+          "type": "string"
+        },
+        "frontier_provider": {
+          "default": "live GPT-5.5 when selected",
+          "title": "Frontier Provider",
+          "type": "string"
+        },
+        "policy": {
+          "const": "executed taxonomy, 0.80 threshold, and text guard",
+          "default": "executed taxonomy, 0.80 threshold, and text guard",
+          "title": "Policy",
+          "type": "string"
+        },
+        "confidence_note": {
+          "default": "Confidence is a model signal, not a measured probability of correctness.",
+          "title": "Confidence Note",
+          "type": "string"
+        },
+        "timing_scope": {
+          "default": "Measured classification from judgment through local policy and any interpretation; excludes source preparation, human review, and publication.",
+          "title": "Timing Scope",
+          "type": "string"
+        },
+        "stopping_point": {
+          "const": "accepted category or unapproved proposal",
+          "default": "accepted category or unapproved proposal",
+          "title": "Stopping Point",
+          "type": "string"
+        },
+        "quality_scope": {
+          "default": "Agreement with one authored synthetic reference, reported separately for judgment and final preview. These are the same document, not independent samples or benchmark accuracy.",
+          "title": "Quality Scope",
+          "type": "string"
+        },
+        "sample_count": {
+          "const": 1,
+          "default": 1,
+          "title": "Sample Count",
+          "type": "integer"
+        },
+        "automatic_retries": {
+          "const": 0,
+          "default": 0,
+          "title": "Automatic Retries",
+          "type": "integer"
+        },
+        "human_review": {
+          "const": "not performed",
+          "default": "not performed",
+          "title": "Human Review",
+          "type": "string"
+        },
+        "publication": {
+          "const": "not performed",
+          "default": "not performed",
+          "title": "Publication",
+          "type": "string"
+        }
+      },
+      "required": [
+        "documents",
+        "bounded_provider",
+        "frontier_provider",
+        "policy",
+        "confidence_note",
+        "timing_scope",
+        "stopping_point",
+        "quality_scope",
+        "sample_count",
+        "automatic_retries",
+        "human_review",
+        "publication"
+      ],
+      "title": "LiveClassificationProvenance",
+      "type": "object"
+    },
+    "LiveClassificationRequest": {
+      "additionalProperties": false,
+      "description": "A single live strategy; no frontier-first baseline request.",
+      "properties": {
+        "example_id": {
+          "enum": [
+            "clear",
+            "policy",
+            "ambiguous",
+            "proposed",
+            "finalized"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "content_version": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Content Version",
+          "type": "string"
+        },
+        "frontier_model": {
+          "default": "gpt-5.5",
+          "enum": [
+            "gpt-4.1",
+            "gpt-5.5",
+            "gpt-5.6-sol"
+          ],
+          "title": "Frontier Model",
+          "type": "string"
+        }
+      },
+      "required": [
+        "example_id",
+        "content_version",
+        "frontier_model"
+      ],
+      "title": "LiveClassificationRequest",
+      "type": "object"
+    },
+    "LiveClassificationResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "example_id": {
+          "enum": [
+            "clear",
+            "policy",
+            "ambiguous",
+            "proposed",
+            "finalized"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "content_version": {
+          "title": "Content Version",
+          "type": "string"
+        },
+        "reference_category": {
+          "enum": [
+            "invoice",
+            "contract",
+            "policy",
+            "report",
+            "correspondence",
+            "other",
+            "unknown"
+          ],
+          "title": "Reference Category",
+          "type": "string"
+        },
+        "started_at": {
+          "title": "Started At",
+          "type": "string"
+        },
+        "total_elapsed_ms": {
+          "minimum": 0,
+          "title": "Total Elapsed Ms",
+          "type": "number"
+        },
+        "strategy": {
+          "$ref": "#/$defs/MeasuredClassificationStrategy"
+        },
+        "provenance": {
+          "$ref": "#/$defs/LiveClassificationProvenance"
+        },
+        "operational_writes": {
+          "const": 0,
+          "default": 0,
+          "title": "Operational Writes",
+          "type": "integer"
+        },
+        "published": {
+          "const": false,
+          "default": false,
+          "title": "Published",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "version",
+        "example_id",
+        "document_id",
+        "content_version",
+        "reference_category",
+        "started_at",
+        "total_elapsed_ms",
+        "strategy",
+        "provenance",
+        "operational_writes",
+        "published"
+      ],
+      "title": "LiveClassificationResponse",
+      "type": "object"
+    },
+    "LiveDiscoveryMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "total_elapsed_ms": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Elapsed Ms"
+        },
+        "timing_scope": {
+          "const": "discovery execution; source preparation excluded",
+          "default": "discovery execution; source preparation excluded",
+          "title": "Timing Scope",
+          "type": "string"
+        },
+        "intent_agreement": {
+          "$ref": "#/$defs/DiscoveryIntentAgreement"
+        },
+        "citation_claims_checked": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Citation Claims Checked"
+        },
+        "citation_claims_valid": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Citation Claims Valid"
+        },
+        "citation_claims_removed": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Citation Claims Removed"
+        },
+        "support_claims_checked": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Support Claims Checked"
+        },
+        "support_claims_retained": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Support Claims Retained"
+        },
+        "quality_scope": {
+          "const": "answer quality not evaluated; citation validity and support retention are checks",
+          "default": "answer quality not evaluated; citation validity and support retention are checks",
+          "title": "Quality Scope",
+          "type": "string"
+        }
+      },
+      "required": [
+        "total_elapsed_ms",
+        "timing_scope",
+        "intent_agreement",
+        "citation_claims_checked",
+        "citation_claims_valid",
+        "citation_claims_removed",
+        "support_claims_checked",
+        "support_claims_retained",
+        "quality_scope"
+      ],
+      "title": "LiveDiscoveryMetrics",
+      "type": "object"
+    },
+    "LiveDiscoveryProvenance": {
+      "additionalProperties": false,
+      "properties": {
+        "documents": {
+          "const": "synthetic",
+          "default": "synthetic",
+          "title": "Documents",
+          "type": "string"
+        },
+        "bounded_judgments": {
+          "default": "prepared",
+          "enum": [
+            "prepared",
+            "live"
+          ],
+          "title": "Bounded Judgments",
+          "type": "string"
+        },
+        "frontier": {
+          "default": "live GPT-5.5 when selected",
+          "title": "Frontier",
+          "type": "string"
+        },
+        "runtime": {
+          "const": "executed",
+          "default": "executed",
+          "title": "Runtime",
+          "type": "string"
+        },
+        "citation_checks": {
+          "const": "executed exact checks",
+          "default": "executed exact checks",
+          "title": "Citation Checks",
+          "type": "string"
+        },
+        "support_checks": {
+          "default": "prepared signals; not independent verification",
+          "enum": [
+            "prepared signals; not independent verification",
+            "live Jev signals; fallible semantic check"
+          ],
+          "title": "Support Checks",
+          "type": "string"
+        },
+        "timing": {
+          "default": "mixed: measured frontier round trips; fixture bounded durations",
+          "enum": [
+            "mixed: measured frontier round trips; fixture bounded durations",
+            "measured client request stages and executed local work"
+          ],
+          "title": "Timing",
+          "type": "string"
+        },
+        "storage": {
+          "const": "isolated temporary store",
+          "default": "isolated temporary store",
+          "title": "Storage",
+          "type": "string"
+        },
+        "source_preparation": {
+          "const": "prepared classification and indexing outside this discovery run",
+          "default": "prepared classification and indexing outside this discovery run",
+          "title": "Source Preparation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "documents",
+        "bounded_judgments",
+        "frontier",
+        "runtime",
+        "citation_checks",
+        "support_checks",
+        "timing",
+        "storage",
+        "source_preparation"
+      ],
+      "title": "LiveDiscoveryProvenance",
+      "type": "object"
+    },
+    "LiveDiscoveryRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "example_id": {
+          "enum": [
+            "find",
+            "compare"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "bounded_mode": {
+          "default": "prepared",
+          "enum": [
+            "prepared",
+            "live"
+          ],
+          "title": "Bounded Mode",
+          "type": "string"
+        },
+        "frontier_model": {
+          "default": "gpt-5.5",
+          "enum": [
+            "gpt-4.1",
+            "gpt-5.5",
+            "gpt-5.6-sol"
+          ],
+          "title": "Frontier Model",
+          "type": "string"
+        }
+      },
+      "required": [
+        "example_id",
+        "bounded_mode",
+        "frontier_model"
+      ],
+      "title": "LiveDiscoveryRequest",
+      "type": "object"
+    },
+    "LiveDiscoveryResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "example_id": {
+          "enum": [
+            "find",
+            "compare"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "snapshot": {
+          "$ref": "#/$defs/RunSnapshot"
+        },
+        "documents": {
+          "items": {
+            "$ref": "#/$defs/LessonDocument"
+          },
+          "title": "Documents",
+          "type": "array"
+        },
+        "operational_writes": {
+          "const": 0,
+          "default": 0,
+          "title": "Operational Writes",
+          "type": "integer"
+        },
+        "frontier_calls": {
+          "minimum": 0,
+          "title": "Frontier Calls",
+          "type": "integer"
+        },
+        "provenance": {
+          "$ref": "#/$defs/LiveDiscoveryProvenance"
+        },
+        "metrics": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LiveDiscoveryMetrics"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "version",
+        "example_id",
+        "snapshot",
+        "documents",
+        "operational_writes",
+        "frontier_calls",
+        "provenance",
+        "metrics"
+      ],
+      "title": "LiveDiscoveryResponse",
+      "type": "object"
+    },
+    "LiveInterpretRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "example_id": {
+          "enum": [
+            "ambiguous",
+            "proposed"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "content_version": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Content Version",
+          "type": "string"
+        },
+        "frontier_model": {
+          "default": "gpt-5.5",
+          "enum": [
+            "gpt-4.1",
+            "gpt-5.5",
+            "gpt-5.6-sol"
+          ],
+          "title": "Frontier Model",
+          "type": "string"
+        }
+      },
+      "required": [
+        "example_id",
+        "content_version",
+        "frontier_model"
+      ],
+      "title": "LiveInterpretRequest",
+      "type": "object"
+    },
+    "LiveInterpretResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "example_id": {
+          "enum": [
+            "ambiguous",
+            "proposed"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "content_version": {
+          "title": "Content Version",
+          "type": "string"
+        },
+        "proposal": {
+          "$ref": "#/$defs/ProposalSignal"
+        },
+        "policy": {
+          "$ref": "#/$defs/PolicyReceipt"
+        },
+        "requires_review": {
+          "const": true,
+          "default": true,
+          "title": "Requires Review",
+          "type": "boolean"
+        },
+        "published": {
+          "const": false,
+          "default": false,
+          "title": "Published",
+          "type": "boolean"
+        },
+        "operational_writes": {
+          "const": 0,
+          "default": 0,
+          "title": "Operational Writes",
+          "type": "integer"
+        },
+        "provider_calls": {
+          "const": 1,
+          "default": 1,
+          "title": "Provider Calls",
+          "type": "integer"
+        },
+        "provider_source": {
+          "const": "live",
+          "default": "live",
+          "title": "Provider Source",
+          "type": "string"
+        },
+        "signal_source": {
+          "const": "prepared",
+          "default": "prepared",
+          "title": "Signal Source",
+          "type": "string"
+        },
+        "timing": {
+          "const": "measured provider round trip",
+          "default": "measured provider round trip",
+          "title": "Timing",
+          "type": "string"
+        },
+        "metrics": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/InterpretationPreviewMetrics"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "version",
+        "example_id",
+        "document_id",
+        "content_version",
+        "proposal",
+        "policy",
+        "requires_review",
+        "published",
+        "operational_writes",
+        "provider_calls",
+        "provider_source",
+        "signal_source",
+        "timing",
+        "metrics"
+      ],
+      "title": "LiveInterpretResponse",
+      "type": "object"
+    },
+    "LiveRedactionDraft": {
+      "additionalProperties": false,
+      "properties": {
+        "redacted_text": {
+          "maxLength": 12000,
+          "minLength": 1,
+          "title": "Redacted Text",
+          "type": "string"
+        },
+        "removed_spans": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 30,
+          "title": "Removed Spans",
+          "type": "array"
+        },
+        "explanation": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "redacted_text",
+        "removed_spans",
+        "explanation"
+      ],
+      "title": "LiveRedactionDraft",
+      "type": "object"
+    },
+    "LiveReviewJudgment": {
+      "additionalProperties": false,
+      "properties": {
+        "responsive": {
+          "enum": [
+            "yes",
+            "no",
+            "uncertain"
+          ],
+          "title": "Responsive",
+          "type": "string"
+        },
+        "personal_info": {
+          "enum": [
+            "yes",
+            "no",
+            "uncertain"
+          ],
+          "title": "Personal Info",
+          "type": "string"
+        },
+        "privileged": {
+          "enum": [
+            "yes",
+            "no",
+            "uncertain"
+          ],
+          "title": "Privileged",
+          "type": "string"
+        },
+        "explanation": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "responsive",
+        "personal_info",
+        "privileged",
+        "explanation"
+      ],
+      "title": "LiveReviewJudgment",
+      "type": "object"
+    },
+    "LiveReviewRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "page_id": {
+          "enum": [
+            "ARC-000141",
+            "ARC-000212",
+            "ARC-000377",
+            "ARC-000401",
+            "ARC-000455",
+            "ARC-000508"
+          ],
+          "title": "Page Id",
+          "type": "string"
+        },
+        "content_version": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Content Version",
+          "type": "string"
+        },
+        "action": {
+          "enum": [
+            "classify",
+            "redact"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "frontier_model": {
+          "default": "gpt-5.5",
+          "enum": [
+            "gpt-4.1",
+            "gpt-5.5",
+            "gpt-5.6-sol"
+          ],
+          "title": "Frontier Model",
+          "type": "string"
+        }
+      },
+      "required": [
+        "page_id",
+        "content_version",
+        "action",
+        "frontier_model"
+      ],
+      "title": "LiveReviewRequest",
+      "type": "object"
+    },
+    "LiveReviewResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": "review-pages-v1",
+          "default": "review-pages-v1",
+          "title": "Version",
+          "type": "string"
+        },
+        "page_id": {
+          "enum": [
+            "ARC-000141",
+            "ARC-000212",
+            "ARC-000377",
+            "ARC-000401",
+            "ARC-000455",
+            "ARC-000508"
+          ],
+          "title": "Page Id",
+          "type": "string"
+        },
+        "content_version": {
+          "title": "Content Version",
+          "type": "string"
+        },
+        "action": {
+          "enum": [
+            "classify",
+            "redact"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "metadata": {
+          "$ref": "#/$defs/ProviderMeta"
+        },
+        "judgment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LiveReviewJudgment"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "proposed_route": {
+          "anyOf": [
+            {
+              "enum": [
+                "produce",
+                "aside",
+                "redact",
+                "attorney"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Proposed Route"
+        },
+        "redaction": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LiveRedactionDraft"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "validation": {
+          "enum": [
+            "structured judgment",
+            "exact source rewrite"
+          ],
+          "title": "Validation",
+          "type": "string"
+        },
+        "requires_review": {
+          "const": true,
+          "default": true,
+          "title": "Requires Review",
+          "type": "boolean"
+        },
+        "published": {
+          "const": false,
+          "default": false,
+          "title": "Published",
+          "type": "boolean"
+        },
+        "operational_writes": {
+          "const": 0,
+          "default": 0,
+          "title": "Operational Writes",
+          "type": "integer"
+        },
+        "provider_calls": {
+          "const": 1,
+          "default": 1,
+          "title": "Provider Calls",
+          "type": "integer"
+        },
+        "provider_source": {
+          "const": "live",
+          "default": "live",
+          "title": "Provider Source",
+          "type": "string"
+        },
+        "timing": {
+          "const": "measured provider round trip",
+          "default": "measured provider round trip",
+          "title": "Timing",
+          "type": "string"
+        },
+        "metrics": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ReviewActionMetrics"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "version",
+        "page_id",
+        "content_version",
+        "action",
+        "metadata",
+        "judgment",
+        "proposed_route",
+        "redaction",
+        "validation",
+        "requires_review",
+        "published",
+        "operational_writes",
+        "provider_calls",
+        "provider_source",
+        "timing",
+        "metrics"
+      ],
+      "title": "LiveReviewResponse",
+      "type": "object"
+    },
+    "MeasuredClassificationStrategy": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "enum": [
+            "system1",
+            "frontier_first"
+          ],
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "completed",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "started_after_ms": {
+          "minimum": 0,
+          "title": "Started After Ms",
+          "type": "number"
+        },
+        "finished_after_ms": {
+          "minimum": 0,
+          "title": "Finished After Ms",
+          "type": "number"
+        },
+        "elapsed_ms": {
+          "minimum": 0,
+          "title": "Elapsed Ms",
+          "type": "number"
+        },
+        "components": {
+          "items": {
+            "$ref": "#/$defs/MeasuredComponent"
+          },
+          "title": "Components",
+          "type": "array"
+        },
+        "judgment": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ChoiceSignal"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "policy": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MeasuredPolicyDecision"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "interpretation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProposalSignal"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "output_category": {
+          "anyOf": [
+            {
+              "enum": [
+                "invoice",
+                "contract",
+                "policy",
+                "report",
+                "correspondence",
+                "other",
+                "unknown"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Category"
+        },
+        "output_kind": {
+          "enum": [
+            "accepted_category",
+            "proposal",
+            "unavailable"
+          ],
+          "title": "Output Kind",
+          "type": "string"
+        },
+        "requires_review": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Requires Review"
+        },
+        "bounded_attempts": {
+          "minimum": 0,
+          "title": "Bounded Attempts",
+          "type": "integer"
+        },
+        "frontier_attempts": {
+          "minimum": 0,
+          "title": "Frontier Attempts",
+          "type": "integer"
+        },
+        "provider_work_ms": {
+          "minimum": 0,
+          "title": "Provider Work Ms",
+          "type": "number"
+        },
+        "judgment_agreement": {
+          "$ref": "#/$defs/AuthoredReferenceAgreement"
+        },
+        "output_agreement": {
+          "$ref": "#/$defs/AuthoredReferenceAgreement"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "status",
+        "started_after_ms",
+        "finished_after_ms",
+        "elapsed_ms",
+        "components",
+        "judgment",
+        "policy",
+        "interpretation",
+        "output_category",
+        "output_kind",
+        "requires_review",
+        "bounded_attempts",
+        "frontier_attempts",
+        "provider_work_ms",
+        "judgment_agreement",
+        "output_agreement",
+        "error"
+      ],
+      "title": "MeasuredClassificationStrategy",
+      "type": "object"
+    },
+    "MeasuredComponent": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "enum": [
+            "judge",
+            "policy",
+            "interpret"
+          ],
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "bounded_judgment",
+            "runtime_policy",
+            "frontier_interpretation"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "succeeded",
+            "failed"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "started_after_ms": {
+          "minimum": 0,
+          "title": "Started After Ms",
+          "type": "number"
+        },
+        "elapsed_ms": {
+          "minimum": 0,
+          "title": "Elapsed Ms",
+          "type": "number"
+        },
+        "queue_elapsed_ms": {
+          "minimum": 0,
+          "title": "Queue Elapsed Ms",
+          "type": "number"
+        },
+        "provider": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProviderMeta"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "kind",
+        "status",
+        "started_after_ms",
+        "elapsed_ms",
+        "queue_elapsed_ms",
+        "provider",
+        "error"
+      ],
+      "title": "MeasuredComponent",
+      "type": "object"
+    },
+    "MeasuredPolicyDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "policy_version": {
+          "default": "atlas-policy-v1",
+          "title": "Policy Version",
+          "type": "string"
+        },
+        "threshold": {
+          "title": "Threshold",
+          "type": "number"
+        },
+        "guard_matched": {
+          "title": "Guard Matched",
+          "type": "boolean"
+        },
+        "selected_route": {
+          "enum": [
+            "accept",
+            "interpret"
+          ],
+          "title": "Selected Route",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "policy_version",
+        "threshold",
+        "guard_matched",
+        "selected_route",
+        "reason",
+        "explanation"
+      ],
+      "title": "MeasuredPolicyDecision",
+      "type": "object"
+    },
     "MetadataUpdate": {
       "additionalProperties": false,
       "properties": {
@@ -829,6 +2738,17 @@
           "maxItems": 8,
           "title": "Draft Claims",
           "type": "array"
+        },
+        "publication": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Publication"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -848,7 +2768,8 @@
         "removed_count",
         "passage_ids",
         "query_plan",
-        "draft_claims"
+        "draft_claims",
+        "publication"
       ],
       "title": "NodePayload",
       "type": "object"
@@ -1019,6 +2940,260 @@
         "end"
       ],
       "title": "Passage",
+      "type": "object"
+    },
+    "PolicyExperimentRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "example_id": {
+          "default": "proposed",
+          "enum": [
+            "clear",
+            "policy",
+            "ambiguous",
+            "proposed",
+            "finalized"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "original_example_id": {
+          "anyOf": [
+            {
+              "enum": [
+                "clear",
+                "policy",
+                "ambiguous",
+                "proposed",
+                "finalized"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Original Example Id"
+        },
+        "threshold": {
+          "default": 0.8,
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Threshold",
+          "type": "number"
+        },
+        "guard_enabled": {
+          "default": true,
+          "title": "Guard Enabled",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "example_id",
+        "original_example_id",
+        "threshold",
+        "guard_enabled"
+      ],
+      "title": "PolicyExperimentRequest",
+      "type": "object"
+    },
+    "PolicyExperimentResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "policy_version": {
+          "title": "Policy Version",
+          "type": "string"
+        },
+        "no_write": {
+          "const": true,
+          "default": true,
+          "title": "No Write",
+          "type": "boolean"
+        },
+        "provider_calls": {
+          "const": 0,
+          "default": 0,
+          "title": "Provider Calls",
+          "type": "integer"
+        },
+        "original": {
+          "$ref": "#/$defs/PolicyReceipt"
+        },
+        "simulated": {
+          "$ref": "#/$defs/PolicyReceipt"
+        },
+        "original_coverage": {
+          "$ref": "#/$defs/ExperimentCoverage"
+        },
+        "simulated_coverage": {
+          "$ref": "#/$defs/ExperimentCoverage"
+        },
+        "outcomes": {
+          "items": {
+            "$ref": "#/$defs/PolicyReceipt"
+          },
+          "title": "Outcomes",
+          "type": "array"
+        },
+        "changed_fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Changed Fields",
+          "type": "array"
+        },
+        "controlled_assumption": {
+          "title": "Controlled Assumption",
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "policy_version",
+        "no_write",
+        "provider_calls",
+        "original",
+        "simulated",
+        "original_coverage",
+        "simulated_coverage",
+        "outcomes",
+        "changed_fields",
+        "controlled_assumption"
+      ],
+      "title": "PolicyExperimentResponse",
+      "type": "object"
+    },
+    "PolicyReceipt": {
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "default": "simulation",
+          "enum": [
+            "recorded",
+            "simulation",
+            "executed"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "decision_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Decision Id"
+        },
+        "policy_version": {
+          "default": "atlas-policy-v1",
+          "title": "Policy Version",
+          "type": "string"
+        },
+        "example_id": {
+          "enum": [
+            "clear",
+            "policy",
+            "ambiguous",
+            "proposed",
+            "finalized"
+          ],
+          "title": "Example Id",
+          "type": "string"
+        },
+        "content_version": {
+          "title": "Content Version",
+          "type": "string"
+        },
+        "signal": {
+          "$ref": "#/$defs/ChoiceSignal"
+        },
+        "threshold": {
+          "title": "Threshold",
+          "type": "number"
+        },
+        "guard_enabled": {
+          "title": "Guard Enabled",
+          "type": "boolean"
+        },
+        "guard_matched": {
+          "title": "Guard Matched",
+          "type": "boolean"
+        },
+        "selected_route": {
+          "enum": [
+            "accept",
+            "interpret"
+          ],
+          "title": "Selected Route",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "requires_review": {
+          "title": "Requires Review",
+          "type": "boolean"
+        },
+        "source_excerpt": {
+          "title": "Source Excerpt",
+          "type": "string"
+        },
+        "reference_category": {
+          "enum": [
+            "invoice",
+            "contract",
+            "policy",
+            "report",
+            "correspondence",
+            "other",
+            "unknown"
+          ],
+          "title": "Reference Category",
+          "type": "string"
+        },
+        "reference_mismatch": {
+          "title": "Reference Mismatch",
+          "type": "boolean"
+        },
+        "policy_violation": {
+          "title": "Policy Violation",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "source",
+        "decision_id",
+        "policy_version",
+        "example_id",
+        "content_version",
+        "signal",
+        "threshold",
+        "guard_enabled",
+        "guard_matched",
+        "selected_route",
+        "reason",
+        "explanation",
+        "requires_review",
+        "source_excerpt",
+        "reference_category",
+        "reference_mismatch",
+        "policy_violation"
+      ],
+      "title": "PolicyReceipt",
       "type": "object"
     },
     "ProposalSignal": {
@@ -1215,6 +3390,64 @@
       "title": "ProviderMeta",
       "type": "object"
     },
+    "Publication": {
+      "additionalProperties": false,
+      "description": "A durable search-index commit, authorized by a recorded decision or review.",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "content_version": {
+          "title": "Content Version",
+          "type": "string"
+        },
+        "authorization_id": {
+          "title": "Authorization Id",
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "invoice",
+            "contract",
+            "policy",
+            "report",
+            "correspondence",
+            "other",
+            "unknown"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "searchable",
+            "withdrawn"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "committed_at": {
+          "title": "Committed At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "document_id",
+        "content_version",
+        "authorization_id",
+        "category",
+        "status",
+        "committed_at"
+      ],
+      "title": "Publication",
+      "type": "object"
+    },
     "QueryPlan": {
       "additionalProperties": false,
       "properties": {
@@ -1247,6 +3480,67 @@
         "explanation"
       ],
       "title": "QueryPlan",
+      "type": "object"
+    },
+    "ReviewActionMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "handler_wall_ms": {
+          "minimum": 0,
+          "title": "Handler Wall Ms",
+          "type": "number"
+        },
+        "input_checks_ms": {
+          "minimum": 0,
+          "title": "Input Checks Ms",
+          "type": "number"
+        },
+        "provider_ms": {
+          "minimum": 0,
+          "title": "Provider Ms",
+          "type": "number"
+        },
+        "code_validation_ms": {
+          "minimum": 0,
+          "title": "Code Validation Ms",
+          "type": "number"
+        },
+        "reference_evaluation_ms": {
+          "minimum": 0,
+          "title": "Reference Evaluation Ms",
+          "type": "number"
+        },
+        "reference": {
+          "$ref": "#/$defs/ReviewReferenceResult"
+        },
+        "timing_scope": {
+          "default": "One preview action: handler entry to response construction, excluding HTTP transport, serialization, and attorney approval.",
+          "title": "Timing Scope",
+          "type": "string"
+        },
+        "workflow_elapsed_ms": {
+          "default": null,
+          "title": "Workflow Elapsed Ms",
+          "type": "null"
+        },
+        "workflow_quality": {
+          "default": null,
+          "title": "Workflow Quality",
+          "type": "null"
+        }
+      },
+      "required": [
+        "handler_wall_ms",
+        "input_checks_ms",
+        "provider_ms",
+        "code_validation_ms",
+        "reference_evaluation_ms",
+        "reference",
+        "timing_scope",
+        "workflow_elapsed_ms",
+        "workflow_quality"
+      ],
+      "title": "ReviewActionMetrics",
       "type": "object"
     },
     "ReviewDecision": {
@@ -1333,6 +3627,111 @@
       "title": "ReviewItem",
       "type": "object"
     },
+    "ReviewReferenceCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion": {
+          "title": "Criterion",
+          "type": "string"
+        },
+        "expected": {
+          "title": "Expected",
+          "type": "string"
+        },
+        "observed": {
+          "title": "Observed",
+          "type": "string"
+        },
+        "matched": {
+          "title": "Matched",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "criterion",
+        "expected",
+        "observed",
+        "matched"
+      ],
+      "title": "ReviewReferenceCheck",
+      "type": "object"
+    },
+    "ReviewReferenceResult": {
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "title": "Version",
+          "type": "string"
+        },
+        "metric": {
+          "enum": [
+            "fictional_reference_agreement",
+            "authored_pii_span_coverage"
+          ],
+          "title": "Metric",
+          "type": "string"
+        },
+        "matched": {
+          "minimum": 0,
+          "title": "Matched",
+          "type": "integer"
+        },
+        "total": {
+          "minimum": 0,
+          "title": "Total",
+          "type": "integer"
+        },
+        "checks": {
+          "items": {
+            "$ref": "#/$defs/ReviewReferenceCheck"
+          },
+          "title": "Checks",
+          "type": "array"
+        },
+        "extra_removed_characters": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Extra Removed Characters"
+        },
+        "rewrite_integrity": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rewrite Integrity"
+        },
+        "basis": {
+          "default": "Authored fictional examples; not production accuracy or a legal determination.",
+          "title": "Basis",
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "metric",
+        "matched",
+        "total",
+        "checks",
+        "extra_removed_characters",
+        "rewrite_integrity",
+        "basis"
+      ],
+      "title": "ReviewReferenceResult",
+      "type": "object"
+    },
     "ReviewRequest": {
       "additionalProperties": false,
       "properties": {
@@ -1375,12 +3774,20 @@
           "minimum": 0,
           "title": "Count",
           "type": "integer"
+        },
+        "decisions": {
+          "items": {
+            "$ref": "#/$defs/ReviewDecision"
+          },
+          "title": "Decisions",
+          "type": "array"
         }
       },
       "required": [
         "interrupt_id",
         "revision",
-        "count"
+        "count",
+        "decisions"
       ],
       "title": "ReviewResumedPayload",
       "type": "object"
@@ -1698,6 +4105,60 @@
       "title": "RunStartedPayload",
       "type": "object"
     },
+    "SafeguardLesson": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "explanation": {
+          "title": "Explanation",
+          "type": "string"
+        },
+        "snapshot": {
+          "$ref": "#/$defs/RunSnapshot"
+        },
+        "documents": {
+          "items": {
+            "$ref": "#/$defs/LessonDocument"
+          },
+          "title": "Documents",
+          "type": "array"
+        },
+        "observed": {
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "title": "Observed",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "explanation",
+        "snapshot",
+        "documents",
+        "observed"
+      ],
+      "title": "SafeguardLesson",
+      "type": "object"
+    },
     "SearchFilters": {
       "additionalProperties": false,
       "properties": {
@@ -1837,6 +4298,9 @@
     "ReviewSubmission": {
       "$ref": "#/$defs/ReviewSubmission"
     },
+    "Publication": {
+      "$ref": "#/$defs/Publication"
+    },
     "NodePayload": {
       "$ref": "#/$defs/NodePayload"
     },
@@ -1866,6 +4330,111 @@
     },
     "MetadataUpdate": {
       "$ref": "#/$defs/MetadataUpdate"
+    },
+    "LessonProvenance": {
+      "$ref": "#/$defs/LessonProvenance"
+    },
+    "LessonDocument": {
+      "$ref": "#/$defs/LessonDocument"
+    },
+    "ClassificationLesson": {
+      "$ref": "#/$defs/ClassificationLesson"
+    },
+    "DiscoveryLesson": {
+      "$ref": "#/$defs/DiscoveryLesson"
+    },
+    "SafeguardLesson": {
+      "$ref": "#/$defs/SafeguardLesson"
+    },
+    "LessonCatalogue": {
+      "$ref": "#/$defs/LessonCatalogue"
+    },
+    "PolicyExperimentRequest": {
+      "$ref": "#/$defs/PolicyExperimentRequest"
+    },
+    "PolicyReceipt": {
+      "$ref": "#/$defs/PolicyReceipt"
+    },
+    "ExperimentCoverage": {
+      "$ref": "#/$defs/ExperimentCoverage"
+    },
+    "PolicyExperimentResponse": {
+      "$ref": "#/$defs/PolicyExperimentResponse"
+    },
+    "LiveInterpretRequest": {
+      "$ref": "#/$defs/LiveInterpretRequest"
+    },
+    "InterpretationPreviewMetrics": {
+      "$ref": "#/$defs/InterpretationPreviewMetrics"
+    },
+    "LiveInterpretResponse": {
+      "$ref": "#/$defs/LiveInterpretResponse"
+    },
+    "LiveDiscoveryRequest": {
+      "$ref": "#/$defs/LiveDiscoveryRequest"
+    },
+    "LiveDiscoveryProvenance": {
+      "$ref": "#/$defs/LiveDiscoveryProvenance"
+    },
+    "DiscoveryIntentAgreement": {
+      "$ref": "#/$defs/DiscoveryIntentAgreement"
+    },
+    "LiveDiscoveryMetrics": {
+      "$ref": "#/$defs/LiveDiscoveryMetrics"
+    },
+    "LiveDiscoveryResponse": {
+      "$ref": "#/$defs/LiveDiscoveryResponse"
+    },
+    "LiveReviewRequest": {
+      "$ref": "#/$defs/LiveReviewRequest"
+    },
+    "LiveReviewJudgment": {
+      "$ref": "#/$defs/LiveReviewJudgment"
+    },
+    "LiveRedactionDraft": {
+      "$ref": "#/$defs/LiveRedactionDraft"
+    },
+    "ReviewReferenceCheck": {
+      "$ref": "#/$defs/ReviewReferenceCheck"
+    },
+    "ReviewReferenceResult": {
+      "$ref": "#/$defs/ReviewReferenceResult"
+    },
+    "ReviewActionMetrics": {
+      "$ref": "#/$defs/ReviewActionMetrics"
+    },
+    "LiveReviewResponse": {
+      "$ref": "#/$defs/LiveReviewResponse"
+    },
+    "LiveClassificationComparisonRequest": {
+      "$ref": "#/$defs/LiveClassificationComparisonRequest"
+    },
+    "LiveClassificationRequest": {
+      "$ref": "#/$defs/LiveClassificationRequest"
+    },
+    "AuthoredReferenceAgreement": {
+      "$ref": "#/$defs/AuthoredReferenceAgreement"
+    },
+    "MeasuredPolicyDecision": {
+      "$ref": "#/$defs/MeasuredPolicyDecision"
+    },
+    "MeasuredComponent": {
+      "$ref": "#/$defs/MeasuredComponent"
+    },
+    "MeasuredClassificationStrategy": {
+      "$ref": "#/$defs/MeasuredClassificationStrategy"
+    },
+    "ClassificationComparisonProvenance": {
+      "$ref": "#/$defs/ClassificationComparisonProvenance"
+    },
+    "LiveClassificationComparisonResponse": {
+      "$ref": "#/$defs/LiveClassificationComparisonResponse"
+    },
+    "LiveClassificationProvenance": {
+      "$ref": "#/$defs/LiveClassificationProvenance"
+    },
+    "LiveClassificationResponse": {
+      "$ref": "#/$defs/LiveClassificationResponse"
     }
   },
   "required": [
@@ -1888,6 +4457,7 @@
     "ReviewRequest",
     "ReviewDecision",
     "ReviewSubmission",
+    "Publication",
     "NodePayload",
     "EdgePayload",
     "RunStartedPayload",
@@ -1897,7 +4467,42 @@
     "Run",
     "DocumentList",
     "RunSnapshot",
-    "MetadataUpdate"
+    "MetadataUpdate",
+    "LessonProvenance",
+    "LessonDocument",
+    "ClassificationLesson",
+    "DiscoveryLesson",
+    "SafeguardLesson",
+    "LessonCatalogue",
+    "PolicyExperimentRequest",
+    "PolicyReceipt",
+    "ExperimentCoverage",
+    "PolicyExperimentResponse",
+    "LiveInterpretRequest",
+    "InterpretationPreviewMetrics",
+    "LiveInterpretResponse",
+    "LiveDiscoveryRequest",
+    "LiveDiscoveryProvenance",
+    "DiscoveryIntentAgreement",
+    "LiveDiscoveryMetrics",
+    "LiveDiscoveryResponse",
+    "LiveReviewRequest",
+    "LiveReviewJudgment",
+    "LiveRedactionDraft",
+    "ReviewReferenceCheck",
+    "ReviewReferenceResult",
+    "ReviewActionMetrics",
+    "LiveReviewResponse",
+    "LiveClassificationComparisonRequest",
+    "LiveClassificationRequest",
+    "AuthoredReferenceAgreement",
+    "MeasuredPolicyDecision",
+    "MeasuredComponent",
+    "MeasuredClassificationStrategy",
+    "ClassificationComparisonProvenance",
+    "LiveClassificationComparisonResponse",
+    "LiveClassificationProvenance",
+    "LiveClassificationResponse"
   ],
   "title": "ApiContract",
   "type": "object"

@@ -1,10 +1,12 @@
 import { classificationDecision, policyReason } from '../lib/classification';
+import { buildClassificationPublicationGraph } from './ClassificationPublicationGraph';
 import type { ExecutionGraphInput } from './ExecutionGraph';
 import { flowAnnotation, flowNode, flowRoute, type FlowData, type FlowNode, type FlowRole, type FlowRoute } from './FlowCanvas';
 
 /** The policy box exposes the recorded deterministic decision, not a model call.
  * The accept box exposes the direct outcome. Neither creates a backend event. */
 export function buildClassificationGraph({ run, execution, selected, focused, expanded, moving, speed, narrow, replayStep, documentLabel }: ExecutionGraphInput) {
+  if (run.graph_version === 'atlas-classification-v2') return buildClassificationPublicationGraph({ run, execution, selected, focused, expanded, moving, speed, narrow, replayStep, documentLabel });
   const documentId = focused.replace(/^worker:/, '');
   const all = Array.isArray(run.request.document_ids) ? run.request.document_ids as string[] : [];
   const documents = documentId ? [documentId] : all;

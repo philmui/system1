@@ -44,8 +44,6 @@
 .replay-stages li.is-current > span > i { background: var(--role-color); border-color: var(--role-color); }
 .replay-stages li.is-visited > span { color: var(--text-strong); }
 .replay-stages li.is-visited > span > svg { color: var(--accent); }
-.classification-graph .flow-node.is-active { border: 2px solid var(--role-color); padding: 16px; box-shadow: 0 0 0 5px color-mix(in srgb, var(--role-color) 12%, transparent), 0 0 35px color-mix(in srgb, var(--role-color) 8%, transparent); background: linear-gradient(135deg, color-mix(in srgb, var(--role-color) 14%, var(--surface)), var(--surface) 90%); }
-.classification-graph .flow-node.is-dimmed { opacity: .32; }
 .classification-graph .node-document { max-width: 228px; top: -35px; gap: 6px; padding: 5px 8px; border-color: var(--role-color); color: var(--text-strong); background: var(--surface); box-shadow: 0 3px 10px var(--shadow-color); font-size: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .classification-graph .node-document svg { flex-shrink: 0; color: var(--role-color); }
 .flow-route.is-current { opacity: 1; }

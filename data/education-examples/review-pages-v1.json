@@ -1,0 +1,90 @@
+{
+  "version": "review-pages-v1",
+  "pages": [
+    {
+      "id": "ARC-000141",
+      "title": "Quarterly revenue",
+      "kind": "Financial report",
+      "responsive": "yes",
+      "pii": "no",
+      "privileged": "no",
+      "text": "Q3 REVENUE REVIEW\n\nFinance is assessing the timing of revenue booked near the quarter end. A group of shipments left the facility in October but was included in September totals. The team will reconcile the entries before the next reporting cycle.",
+      "content_version": "a0be29d5b81eae5adc325996a37cc0d3dd5df6c865e6d0fa31e9a0060509aeb8",
+      "reference_pii_spans": []
+    },
+    {
+      "id": "ARC-000212",
+      "title": "Facilities update",
+      "kind": "Internal notice",
+      "responsive": "no",
+      "pii": "no",
+      "privileged": "no",
+      "text": "FACILITIES UPDATE\n\nThe east loading area is scheduled for maintenance next week. Please use the west entrance during the work. The staff kitchen will remain open. This notice does not address revenue recognition or the quarterly accounts.",
+      "content_version": "7409e608cd5fe0a82321549cfb2480adb1f660aaaac0f7db4250194cbff6c4b2",
+      "reference_pii_spans": []
+    },
+    {
+      "id": "ARC-000377",
+      "title": "Cutoff approvals",
+      "kind": "Approval record",
+      "responsive": "yes",
+      "pii": "yes",
+      "privileged": "no",
+      "text": "QUARTER-END ADJUSTMENT\n\nThe finance team approved a change to the Q3 cutoff entries.\n\nApprover: Jordan Lee\nEmail: jordan.lee@arcadia.example\nPhone: 555-0134\nEmployee number: 44192\n\nThe adjustment is documented in the supporting revenue workpapers.",
+      "redacted": "QUARTER-END ADJUSTMENT\n\nThe finance team approved a change to the Q3 cutoff entries.\n\nApprover: [REDACTED]\nEmail: [REDACTED]\nPhone: [REDACTED]\nEmployee number: [REDACTED]\n\nThe adjustment is documented in the supporting revenue workpapers.",
+      "content_version": "cba362c74b9850e98c9321b51e786f022136461ea455273c098712783054045b",
+      "reference_pii_spans": [
+        {
+          "kind": "name",
+          "text": "Jordan Lee"
+        },
+        {
+          "kind": "email",
+          "text": "jordan.lee@arcadia.example"
+        },
+        {
+          "kind": "phone",
+          "text": "555-0134"
+        },
+        {
+          "kind": "employee identifier",
+          "text": "44192"
+        }
+      ]
+    },
+    {
+      "id": "ARC-000401",
+      "title": "Counsel’s advice",
+      "kind": "Attorney communication",
+      "responsive": "yes",
+      "pii": "no",
+      "privileged": "yes",
+      "text": "CONFIDENTIAL LEGAL ADVICE\n\nTo the finance leadership team:\n\nThis communication contains counsel’s assessment of litigation exposure relating to the revenue cutoff. Please restrict circulation to those seeking legal advice. Counsel should review whether this page may be produced.",
+      "content_version": "2326fde71a3d2f9ad9d15d88ef7dd06d8cb9acf1a291e14ba02755c086d8fc5f",
+      "reference_pii_spans": []
+    },
+    {
+      "id": "ARC-000455",
+      "title": "Partial handwritten note",
+      "kind": "Incomplete OCR",
+      "responsive": "uncertain",
+      "pii": "no",
+      "privileged": "uncertain",
+      "text": "PARTIAL TRANSCRIPTION\n\n… quarter end? Check with legal before [unreadable] … timing adjustment … not for the presentation … [unreadable].\n\nThe fragment does not provide enough context to make a confident responsiveness or privilege decision.",
+      "content_version": "eabb4eff598775fada19062c087f79061a54e0b6eecf872df16d74a18eae54bd",
+      "reference_pii_spans": []
+    },
+    {
+      "id": "ARC-000508",
+      "title": "Committee minutes",
+      "kind": "Meeting record",
+      "responsive": "yes",
+      "pii": "no",
+      "privileged": "no",
+      "text": "AUDIT COMMITTEE — REVENUE TIMING\n\nThe committee requested an analysis comparing the quarterly figures under two possible cutoff dates. Finance will prepare a reconciliation of the affected shipments. The committee deferred its decision pending those figures.",
+      "content_version": "e76b06c9cf92cda7217baa511aeeda1a75f8004cf5507dfa7fa1e1fcf874a077",
+      "reference_pii_spans": []
+    }
+  ],
+  "reference_version": "review-references-v1"
+}

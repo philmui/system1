@@ -19,6 +19,8 @@ This guide configures the deployment. A successful local build is recorded separ
 
 Set `VITE_API_BASE_URL` separately for development, preview, and production environments as needed. Vite embeds public environment values at build time, so changing the value requires a rebuild. Never expose provider credentials through `VITE_` names or spread the entire process environment into the bundle. See [Vite environment variables](https://vite.dev/guide/env-and-mode).
 
+For local development, leave `VITE_API_BASE_URL` blank. Vite proxies `/api` to `DEV_API_PROXY_TARGET` (default `http://127.0.0.1:8000`), including uploads and event streams. This keeps browser requests on the frontend origin even when its port changes. The proxy preserves Host and Origin; the backend accepts their exact match only when both the host and connection are local loopback. Other live browser origins still require the explicit allowlist. This development proxy does not add an API service to a static Vercel deployment: keep the external HTTPS API setting above, or configure an actual same-origin API reverse proxy on the deployment host.
+
 Local Vite may read the repository root `.env`. Vercel builds use deployment variables and must not require `../.env`: a project root limits access to files outside that directory. The Vite configuration accounts for this boundary. [Vercel build configuration](https://vercel.com/docs/builds/configure-a-build) and [Vite envDir](https://vite.dev/config/shared-options.html#envdir) describe these behaviors.
 
 From the repository root, check that boundary before deploying:

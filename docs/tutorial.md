@@ -38,7 +38,7 @@ Create the local environment file only if it is absent. This command does not re
 uv run python -c "from pathlib import Path; p=Path('.env'); p.write_text(Path('.env.example').read_text()) if not p.exists() else None"
 ```
 
-Edit `.env` locally. The backend loads this root file independently of the working directory; deployment environment variables take precedence. `.env` is ignored by Git. Never put a provider key in a `VITE_` variable, a sample document, or a screenshot.
+Edit `.env` locally. The backend reads this root file as UTF-8 through Pydantic Settings' `python-dotenv` source, independently of the working directory. Explicit settings take precedence over deployment environment variables, which take precedence over `.env`. The loader does not copy local credentials into the process environment; isolated fixtures can disable the file with `_env_file=None`. `.env` is ignored by Git. Never put a provider key in a `VITE_` variable, a sample document, or a screenshot.
 
 | Variable | Local setting and purpose |
 | --- | --- |
@@ -46,7 +46,7 @@ Edit `.env` locally. The backend loads this root file independently of the worki
 | `TYPESAFE_API_KEY` | Direct TypeSafe credential needed for live Jev judgments. |
 | `TYPESAFE_DEFAULT_MODEL` | Default `jev-1.13.0`; the adapter records configured and returned model IDs. |
 | `OPENAI_API_KEY` | OpenAI credential needed for live interpretation, planning, and synthesis. |
-| `OPENAI_MODEL` | Default `gpt-4.1-mini`, chosen for a bounded structured-output demo. |
+| `OPENAI_MODEL` | Default `gpt-5.5`; live frontier requests use structured outputs. Historical recordings retain their original model metadata. |
 | `LANGSMITH_API_KEY` | Credential for optional trace delivery. |
 | `LANGSMITH_TRACING` | `true` to send traces; default `false`. |
 | `LANGSMITH_TRACE_SYNTHETIC_TEXT` | Default `false`. Explicit opt-in sends bounded retained fictional-source excerpts to policy trace spans only when every input reference is verified synthetic. |
